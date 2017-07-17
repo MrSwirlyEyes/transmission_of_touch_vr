@@ -57,8 +57,15 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -68,6 +75,92 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="tFaceplateCover" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="bFaceplateCover" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Unresolved" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="Resolved" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Generic" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="tFaceplate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="bFaceplate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="160" name="tMountFaceplate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="161" name="bMountFaceplate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="162" name="tCopperArt" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="163" name="bCopperArt" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="164" name="tRubout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="165" name="bRubout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="167" name="Fiducials" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="169" name="internal" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -78,6 +171,220 @@
 <text x="57.15" y="49.53" size="1.778" layer="1">initializing touch_glove</text>
 </plain>
 <libraries>
+<library name="MrSwirlyEyes">
+<packages>
+<package name="SSOP24">
+<wire x1="2.5" y1="4.25" x2="2.5" y2="-4.25" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-4.25" x2="-2.5" y2="-4.25" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-4.25" x2="-2.5" y2="4.25" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="4.25" x2="2.5" y2="4.25" width="0.2032" layer="21"/>
+<circle x="-1.778" y="3.556" radius="0.2231" width="0.2032" layer="21"/>
+<smd name="24" x="3.656" y="3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="23" x="3.656" y="2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="22" x="3.656" y="2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="20" x="3.656" y="0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="21" x="3.656" y="1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="19" x="3.656" y="0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="18" x="3.656" y="-0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="17" x="3.656" y="-0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="16" x="3.656" y="-1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="15" x="3.656" y="-2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="1" x="-3.656" y="3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="-3.656" y="2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="3" x="-3.656" y="2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="4" x="-3.656" y="1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="5" x="-3.656" y="0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="6" x="-3.656" y="0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="7" x="-3.656" y="-0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="8" x="-3.656" y="-0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="9" x="-3.656" y="-1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="10" x="-3.656" y="-2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="11" x="-3.656" y="-2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="12" x="-3.656" y="-3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="13" x="3.656" y="-3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R90"/>
+<smd name="14" x="3.656" y="-2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R90"/>
+<text x="0" y="5.08" size="0.4064" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+</package>
+<package name="CAP_CER_SMD-805_10UF-25V-10%">
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">10uF/25V</text>
+</package>
+<package name="CAP_CER_SMD-805_0.1UF-50V-10%">
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">0.1uF/50V</text>
+</package>
+<package name="TSSOP28">
+<wire x1="-2.2828" y1="4.4646" x2="-2.2828" y2="-4.4646" width="0.1524" layer="51"/>
+<wire x1="2.2828" y1="-4.4646" x2="-2.2828" y2="-4.4646" width="0.1524" layer="21"/>
+<wire x1="2.2828" y1="-4.4646" x2="2.2828" y2="4.4646" width="0.1524" layer="51"/>
+<wire x1="-2.2828" y1="4.4646" x2="2.2828" y2="4.4646" width="0.1524" layer="21"/>
+<circle x="-1.6002" y="3.8296" radius="0.254" width="0.1524" layer="21"/>
+<smd name="1" x="-2.9178" y="4.225" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="-2.9178" y="3.575" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="3" x="-2.9178" y="2.925" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="4" x="-2.9178" y="2.275" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="5" x="-2.9178" y="1.625" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="6" x="-2.9178" y="0.975" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="7" x="-2.9178" y="0.325" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="8" x="-2.9178" y="-0.325" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="21" x="2.9178" y="-0.325" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="22" x="2.9178" y="0.325" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="23" x="2.9178" y="0.975" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="24" x="2.9178" y="1.625" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="25" x="2.9178" y="2.275" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="26" x="2.9178" y="2.925" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="27" x="2.9178" y="3.575" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="28" x="2.9178" y="4.225" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="9" x="-2.9178" y="-0.975" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="10" x="-2.9178" y="-1.625" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="20" x="2.9178" y="-0.975" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="19" x="2.9178" y="-1.625" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="11" x="-2.9178" y="-2.275" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="12" x="-2.9178" y="-2.925" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="13" x="-2.9178" y="-3.575" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="14" x="-2.9178" y="-4.225" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="15" x="2.9178" y="-4.225" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="16" x="2.9178" y="-3.575" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="17" x="2.9178" y="-2.925" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<smd name="18" x="2.9178" y="-2.275" dx="0.3048" dy="0.9906" layer="1" roundness="50" rot="R270"/>
+<rectangle x1="-2.8035" y1="3.8059" x2="-2.6003" y2="4.6441" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="3.1559" x2="-2.6003" y2="3.9941" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="2.5059" x2="-2.6003" y2="3.3441" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="1.8559" x2="-2.6003" y2="2.6941" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="1.2059" x2="-2.6003" y2="2.0441" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="0.5559" x2="-2.6003" y2="1.3941" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-0.0941" x2="-2.6003" y2="0.7441" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-0.7441" x2="-2.6003" y2="0.0941" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-0.7441" x2="2.8035" y2="0.0941" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-0.0941" x2="2.8035" y2="0.7441" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="0.5559" x2="2.8035" y2="1.3941" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="1.2059" x2="2.8035" y2="2.0441" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="1.8559" x2="2.8035" y2="2.6941" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="2.5059" x2="2.8035" y2="3.3441" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="3.1559" x2="2.8035" y2="3.9941" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="3.8059" x2="2.8035" y2="4.6441" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-1.3941" x2="-2.6003" y2="-0.5559" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-2.0441" x2="-2.6003" y2="-1.2059" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-1.3941" x2="2.8035" y2="-0.5559" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-2.0441" x2="2.8035" y2="-1.2059" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-2.6941" x2="-2.6003" y2="-1.8559" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-3.3441" x2="-2.6003" y2="-2.5059" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-3.9941" x2="-2.6003" y2="-3.1559" layer="51" rot="R270"/>
+<rectangle x1="-2.8035" y1="-4.6441" x2="-2.6003" y2="-3.8059" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-4.6441" x2="2.8035" y2="-3.8059" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-3.9941" x2="2.8035" y2="-3.1559" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-3.3441" x2="2.8035" y2="-2.5059" layer="51" rot="R270"/>
+<rectangle x1="2.6003" y1="-2.6941" x2="2.8035" y2="-1.8559" layer="51" rot="R270"/>
+<text x="0" y="4.826" size="0.4064" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
+</package>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="G" x="-0.95" y="-1.3" dx="1" dy="1.5" layer="1" roundness="50"/>
+<smd name="S" x="0.95" y="-1.3" dx="1" dy="1.5" layer="1" roundness="50"/>
+<smd name="D" x="0" y="1" dx="2.9" dy="2.05" layer="1" roundness="50"/>
+<wire x1="-1.7" y1="-2.3" x2="-1.7" y2="2.3" width="0.127" layer="39"/>
+<wire x1="1.7" y1="-2.3" x2="1.7" y2="2.3" width="0.127" layer="39"/>
+<wire x1="1.7" y1="-2.3" x2="-1.7" y2="-2.3" width="0.127" layer="39"/>
+<wire x1="1.7" y1="2.3" x2="-1.7" y2="2.3" width="0.127" layer="39"/>
+<text x="0" y="3.048" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
+</package>
+<package name="RES_SMD-805_10K-5%-1/8W">
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">10K</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Retired">
+<description>&lt;h3&gt;SparkFun Electronics' Retired foot prints&lt;/h3&gt;
+In this library you'll find all manner of retired footprints for resistors, capacitors, board names, ICs, etc., that are &lt;b&gt; no longer used&lt;/b&gt; in our catalog.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="MSOP-10-GNDPAD">
+<description>10-lead MSOP w/ center GND pad</description>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.6508" y1="1.5" x2="-1.6508" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.6508" y1="1.5" x2="1.6508" y2="-1.5" width="0.127" layer="21"/>
+<circle x="-1.5494" y="-1.9812" radius="0.0567" width="0.127" layer="21"/>
+<smd name="GND" x="0" y="0" dx="2" dy="1.8" layer="1" rot="R180" cream="no"/>
+<smd name="8" x="0" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="7" x="0.5" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="6" x="1" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="9" x="-0.5" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="10" x="-1" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="3" x="0" y="-2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="4" x="0.5" y="-2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="5" x="1" y="-2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="2" x="-0.5" y="-2.1095" dx="0.305" dy="0.889" layer="1"/>
+<smd name="1" x="-1" y="-2.1095" dx="0.305" dy="0.889" layer="1"/>
+<text x="-1.778" y="-1.35" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="1.778" y="-1.35" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
+<rectangle x1="-1.1" y1="1.6" x2="-0.9" y2="2.45" layer="51"/>
+<rectangle x1="-0.6" y1="1.6" x2="-0.4" y2="2.45" layer="51"/>
+<rectangle x1="-0.1" y1="1.6" x2="0.1" y2="2.45" layer="51"/>
+<rectangle x1="0.4" y1="1.6" x2="0.6" y2="2.45" layer="51"/>
+<rectangle x1="0.9" y1="1.6" x2="1.1" y2="2.45" layer="51"/>
+<rectangle x1="-1.1" y1="-2.45" x2="-0.9" y2="-1.6" layer="51"/>
+<rectangle x1="-0.6" y1="-2.45" x2="-0.4" y2="-1.6" layer="51"/>
+<rectangle x1="-0.1" y1="-2.45" x2="0.1" y2="-1.6" layer="51"/>
+<rectangle x1="0.4" y1="-2.45" x2="0.6" y2="-1.6" layer="51"/>
+<rectangle x1="0.9" y1="-2.45" x2="1.1" y2="-1.6" layer="51"/>
+<rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="31"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -267,8 +574,352 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
+<element name="DEMUX" library="MrSwirlyEyes" package="SSOP24" value="CD74HC4067-SM96_16:1_MUX-DEMUX" x="5.08" y="-6.35">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="296-9226-1-ND" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Texas Instruments" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CD74HC4067SM96" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-5.08" y="6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C1" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="3.81" y="-25.4">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-5.08" y="-2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PWM_DRIVER" library="MrSwirlyEyes" package="TSSOP28" value="PCA9685_16-CH_12-BIT_PWM-DRIVER" x="5.08" y="-17.78">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="568-11925-1-ND" x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="NXP USA Inc." x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="PCA9685PW,118" x="-13.97" y="0" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C2" library="MrSwirlyEyes" package="CAP_CER_SMD-805_10UF-25V-10%" value="CAP_CER_SMD-805_10UF-25V-10%" x="11.43" y="-25.4">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-5523-1-ND" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73L" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-13.97" y="-7.62" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U1" library="SparkFun-Retired" package="MSOP-10-GNDPAD" value="DRV8830" x="-3.81" y="-24.13">
+<attribute name="PROD_ID" value="IC-11646" x="-3.81" y="-24.13" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_T1" library="MrSwirlyEyes" package="SOT23-3" value="SI2302CDS-MOSFET-N-CH_2.6A_20V_57MΩ_SOT23-3" x="-7.62" y="-39.37">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/68645/si2302cds.pdf" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Siliconix" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SI2302CDS-T1-E3" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-7.62" y="-39.37" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R1" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-15.24" y="-41.91">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-15.24" y="-41.91" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_T2" library="MrSwirlyEyes" package="SOT23-3" value="SI2302CDS-MOSFET-N-CH_2.6A_20V_57MΩ_SOT23-3" x="-11.43" y="-49.53">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/68645/si2302cds.pdf" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Siliconix" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SI2302CDS-T1-E3" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-11.43" y="-49.53" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R2" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-15.24" y="-55.88">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-20.32" y="-50.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_T3" library="MrSwirlyEyes" package="SOT23-3" value="SI2302CDS-MOSFET-N-CH_2.6A_20V_57MΩ_SOT23-3" x="-11.43" y="-63.5">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/68645/si2302cds.pdf" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Siliconix" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SI2302CDS-T1-E3" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-11.43" y="-63.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R3" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-15.24" y="-69.85">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-20.32" y="-64.77" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_T4" library="MrSwirlyEyes" package="SOT23-3" value="SI2302CDS-MOSFET-N-CH_2.6A_20V_57MΩ_SOT23-3" x="-11.43" y="-77.47">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/68645/si2302cds.pdf" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Siliconix" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SI2302CDS-T1-E3" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-11.43" y="-77.47" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R4" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-15.24" y="-83.82">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-20.32" y="-78.74" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_T5" library="MrSwirlyEyes" package="SOT23-3" value="SI2302CDS-MOSFET-N-CH_2.6A_20V_57MΩ_SOT23-3" x="-11.43" y="-91.44">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/68645/si2302cds.pdf" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Siliconix" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="SI2302CDS-T1-E3" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-11.43" y="-91.44" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R5" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-15.24" y="-97.79">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
+<signal name="GND">
+<contactref element="DEMUX" pad="15"/>
+<contactref element="DEMUX" pad="12"/>
+<contactref element="C1" pad="2"/>
+<contactref element="PWM_DRIVER" pad="23"/>
+<contactref element="PWM_DRIVER" pad="25"/>
+<contactref element="PWM_DRIVER" pad="14"/>
+<contactref element="PWM_DRIVER" pad="1"/>
+<contactref element="PWM_DRIVER" pad="2"/>
+<contactref element="PWM_DRIVER" pad="3"/>
+<contactref element="PWM_DRIVER" pad="4"/>
+<contactref element="PWM_DRIVER" pad="5"/>
+<contactref element="PWM_DRIVER" pad="24"/>
+<contactref element="C2" pad="2"/>
+<contactref element="U1" pad="5"/>
+<contactref element="VIBE_T1" pad="S"/>
+<contactref element="R1" pad="1"/>
+<contactref element="VIBE_T2" pad="S"/>
+<contactref element="R2" pad="1"/>
+<contactref element="VIBE_T3" pad="S"/>
+<contactref element="R3" pad="1"/>
+<contactref element="VIBE_T4" pad="S"/>
+<contactref element="R4" pad="1"/>
+<contactref element="VIBE_T5" pad="S"/>
+<contactref element="R5" pad="1"/>
+<wire x1="-10.48" y1="-92.74" x2="-16.19" y2="-97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.19" y1="-83.82" x2="-10.48" y2="-92.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.48" y1="-78.77" x2="-16.19" y2="-83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.19" y1="-69.85" x2="-10.48" y2="-78.77" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.48" y1="-64.8" x2="-16.19" y2="-69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.19" y1="-55.88" x2="-10.48" y2="-64.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.48" y1="-50.83" x2="-16.19" y2="-55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-6.67" y1="-40.67" x2="-10.48" y2="-50.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.19" y1="-41.91" x2="-6.67" y2="-40.67" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.81" y1="-26.2395" x2="-6.67" y2="-40.67" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-22.005" x2="-2.81" y2="-26.2395" width="0" layer="19" extent="1-1"/>
+<wire x1="4.76" y1="-25.4" x2="2.1622" y2="-22.005" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-16.155" x2="2.1622" y2="-22.005" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-15.505" x2="2.1622" y2="-16.155" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-14.855" x2="2.1622" y2="-15.505" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-14.205" x2="2.1622" y2="-14.855" width="0" layer="19" extent="1-1"/>
+<wire x1="2.1622" y1="-13.555" x2="2.1622" y2="-14.205" width="0" layer="19" extent="1-1"/>
+<wire x1="1.424" y1="-9.925" x2="2.1622" y2="-13.555" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-15.505" x2="2.1622" y2="-15.505" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-16.155" x2="7.9978" y2="-15.505" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-16.805" x2="7.9978" y2="-16.155" width="0" layer="19" extent="1-1"/>
+<wire x1="8.736" y1="-8.625" x2="7.9978" y2="-15.505" width="0" layer="19" extent="1-1"/>
+<wire x1="12.38" y1="-25.4" x2="4.76" y2="-25.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC">
+<contactref element="C1" pad="1"/>
+<contactref element="DEMUX" pad="24"/>
+<contactref element="U1" pad="4"/>
+<contactref element="PWM_DRIVER" pad="28"/>
+<contactref element="C2" pad="1"/>
+<contactref element="VIBE_T1" pad="D"/>
+<contactref element="VIBE_T2" pad="D"/>
+<contactref element="VIBE_T3" pad="D"/>
+<contactref element="VIBE_T4" pad="D"/>
+<contactref element="VIBE_T5" pad="D"/>
+<wire x1="-11.43" y1="-76.47" x2="-11.43" y2="-90.44" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-62.5" x2="-11.43" y2="-76.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-48.53" x2="-11.43" y2="-62.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-38.37" x2="-11.43" y2="-48.53" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.31" y1="-26.2395" x2="-7.62" y2="-38.37" width="0" layer="19" extent="1-1"/>
+<wire x1="2.86" y1="-25.4" x2="-3.31" y2="-26.2395" width="0" layer="19" extent="1-1"/>
+<wire x1="10.48" y1="-25.4" x2="2.86" y2="-25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-13.555" x2="10.48" y2="-25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="8.736" y1="-2.775" x2="7.9978" y2="-13.555" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="S0">
+<contactref element="DEMUX" pad="10"/>
+</signal>
+<signal name="S1">
+<contactref element="DEMUX" pad="11"/>
+</signal>
+<signal name="S2">
+<contactref element="DEMUX" pad="14"/>
+</signal>
+<signal name="S3">
+<contactref element="DEMUX" pad="13"/>
+</signal>
+<signal name="SIG">
+<contactref element="DEMUX" pad="1"/>
+</signal>
+<signal name="STRAIN_1">
+<contactref element="DEMUX" pad="9"/>
+</signal>
+<signal name="STRAIN_2">
+<contactref element="DEMUX" pad="8"/>
+</signal>
+<signal name="STRAIN_3">
+<contactref element="DEMUX" pad="7"/>
+</signal>
+<signal name="STRAIN_4">
+<contactref element="DEMUX" pad="6"/>
+</signal>
+<signal name="STRAIN_5">
+<contactref element="DEMUX" pad="5"/>
+</signal>
+<signal name="C5">
+<contactref element="DEMUX" pad="4"/>
+</signal>
+<signal name="C6">
+<contactref element="DEMUX" pad="3"/>
+</signal>
+<signal name="C7">
+<contactref element="DEMUX" pad="2"/>
+</signal>
+<signal name="C8">
+<contactref element="DEMUX" pad="23"/>
+</signal>
+<signal name="C9">
+<contactref element="DEMUX" pad="22"/>
+</signal>
+<signal name="C10">
+<contactref element="DEMUX" pad="21"/>
+</signal>
+<signal name="C11">
+<contactref element="DEMUX" pad="20"/>
+</signal>
+<signal name="C12">
+<contactref element="DEMUX" pad="19"/>
+</signal>
+<signal name="C13">
+<contactref element="DEMUX" pad="18"/>
+</signal>
+<signal name="C14">
+<contactref element="DEMUX" pad="17"/>
+</signal>
+<signal name="C15">
+<contactref element="DEMUX" pad="16"/>
+</signal>
+<signal name="SDA">
+<contactref element="PWM_DRIVER" pad="27"/>
+</signal>
+<signal name="SCL">
+<contactref element="PWM_DRIVER" pad="26"/>
+</signal>
+<signal name="TEC_1_HOT">
+<contactref element="PWM_DRIVER" pad="6"/>
+</signal>
+<signal name="TEC_1_COLD">
+<contactref element="PWM_DRIVER" pad="7"/>
+</signal>
+<signal name="TEC_2_HOT">
+<contactref element="PWM_DRIVER" pad="8"/>
+</signal>
+<signal name="TEC_2_COLD">
+<contactref element="PWM_DRIVER" pad="9"/>
+</signal>
+<signal name="TEC_3_HOT">
+<contactref element="PWM_DRIVER" pad="10"/>
+</signal>
+<signal name="TEC_3_COLD">
+<contactref element="PWM_DRIVER" pad="11"/>
+</signal>
+<signal name="TEC_4_HOT">
+<contactref element="PWM_DRIVER" pad="12"/>
+</signal>
+<signal name="TEC_4_COLD">
+<contactref element="PWM_DRIVER" pad="13"/>
+</signal>
+<signal name="TEC_5_HOT">
+<contactref element="PWM_DRIVER" pad="15"/>
+</signal>
+<signal name="TEC_5_COLD">
+<contactref element="PWM_DRIVER" pad="16"/>
+</signal>
+<signal name="PWM10">
+<contactref element="PWM_DRIVER" pad="17"/>
+</signal>
+<signal name="VIBE_1">
+<contactref element="PWM_DRIVER" pad="18"/>
+<contactref element="VIBE_T1" pad="G"/>
+<contactref element="R1" pad="2"/>
+<wire x1="-8.57" y1="-40.67" x2="-14.29" y2="-41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-20.055" x2="-8.57" y2="-40.67" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VIBE_2">
+<contactref element="PWM_DRIVER" pad="19"/>
+<contactref element="VIBE_T2" pad="G"/>
+<contactref element="R2" pad="2"/>
+<wire x1="-12.38" y1="-50.83" x2="-14.29" y2="-55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-19.405" x2="-12.38" y2="-50.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VIBE_3">
+<contactref element="PWM_DRIVER" pad="20"/>
+<contactref element="VIBE_T3" pad="G"/>
+<contactref element="R3" pad="2"/>
+<wire x1="-12.38" y1="-64.8" x2="-14.29" y2="-69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-18.755" x2="-12.38" y2="-64.8" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VIBE_4">
+<contactref element="PWM_DRIVER" pad="21"/>
+<contactref element="VIBE_T4" pad="G"/>
+<contactref element="R4" pad="2"/>
+<wire x1="-12.38" y1="-78.77" x2="-14.29" y2="-83.82" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-18.105" x2="-12.38" y2="-78.77" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VIBE_5">
+<contactref element="PWM_DRIVER" pad="22"/>
+<contactref element="VIBE_T5" pad="G"/>
+<contactref element="R5" pad="2"/>
+<wire x1="-12.38" y1="-92.74" x2="-14.29" y2="-97.79" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-17.455" x2="-12.38" y2="-92.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="OUT2">
+<contactref element="U1" pad="1"/>
+</signal>
+<signal name="OUT1">
+<contactref element="U1" pad="3"/>
+</signal>
+<signal name="PPAD">
+<contactref element="U1" pad="GND"/>
+</signal>
 </signals>
 </board>
 </drawing>

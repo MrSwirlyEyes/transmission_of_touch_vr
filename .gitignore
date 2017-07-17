@@ -6,12 +6,11 @@ code/touch_glove/.DS_Store
 
 eagle/.DS_Store
 eagle/robotic_arm/.DS_Store
-eagle/robotic_arm/*.s#*
-eagle/robotic_arm/*.b#*
-eagle/robotic_arm/.*lck
+eagle/robotic_arm/*.s$*
+eagle/robotic_arm/*.b$*
+eagle/robotic_arm/*.*lck
 
 eagle/touch_glove/.DS_Store
-eagle/touch_glove/*.s#*
-eagle/touch_glove/*.b#*
-eagle/touch_glove/.*lck
-
+eagle/touch_glove/*.s$*
+eagle/touch_glove/*.b$*
+eagle/touch_glove/*.*lck
