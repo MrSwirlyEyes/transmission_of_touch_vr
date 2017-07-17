@@ -814,14 +814,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="63.5" y="33.02" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="C10" class="0">
+<net name="C9" class="0">
 <segment>
 <pinref part="DEMUX" gate="G$1" pin="C9"/>
 <wire x1="63.5" y1="30.48" x2="60.96" y2="30.48" width="0.1524" layer="91"/>
 <label x="63.5" y="30.48" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="C10" class="0">
 <segment>
 <pinref part="DEMUX" gate="G$1" pin="C10"/>
 <wire x1="63.5" y1="27.94" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
@@ -912,77 +912,77 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="170.18" y="43.18" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="PWM5" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM5"/>
 <wire x1="170.18" y1="40.64" x2="167.64" y2="40.64" width="0.1524" layer="91"/>
 <label x="170.18" y="40.64" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="PWM6" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM6"/>
 <wire x1="170.18" y1="38.1" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
 <label x="170.18" y="38.1" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$21" class="0">
+<net name="PWM7" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM7"/>
 <wire x1="170.18" y1="35.56" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <label x="170.18" y="35.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$22" class="0">
+<net name="PWM8" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM8"/>
 <wire x1="170.18" y1="33.02" x2="167.64" y2="33.02" width="0.1524" layer="91"/>
 <label x="170.18" y="33.02" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$23" class="0">
+<net name="PWM9" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM9"/>
 <wire x1="170.18" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <label x="170.18" y="30.48" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="PWM10" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM10"/>
 <wire x1="170.18" y1="27.94" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
 <label x="170.18" y="27.94" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="PWM11" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM11"/>
 <wire x1="170.18" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <label x="170.18" y="25.4" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="PWM12" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM12"/>
 <wire x1="170.18" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <label x="170.18" y="22.86" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="PWM13" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM13"/>
 <wire x1="170.18" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
 <label x="170.18" y="20.32" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$28" class="0">
+<net name="PWM14" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM14"/>
 <wire x1="170.18" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
 <label x="170.18" y="17.78" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="PWM15" class="0">
 <segment>
 <pinref part="SERVO_DRIVER" gate="G$1" pin="PWM15"/>
 <wire x1="170.18" y1="15.24" x2="167.64" y2="15.24" width="0.1524" layer="91"/>

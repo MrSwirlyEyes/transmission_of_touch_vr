@@ -332,6 +332,19 @@
 <text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
 <text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">10K</text>
 </package>
+<package name="CONNECTOR-01X02">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-2.54" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="-1.27" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
+<text x="-1.143" y="0.508" size="1.27" layer="21" font="vector" ratio="10" align="center">+</text>
+<text x="1.397" y="0.508" size="1.27" layer="21" font="vector" ratio="10" align="center">-</text>
+<text x="0" y="2.159" size="1.27" layer="21" font="vector" ratio="10" align="center">&gt;Name</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Retired">
@@ -702,6 +715,51 @@ design rules under a new name.</description>
 <attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="-20.32" y="-92.71" size="1.778" layer="27" display="off"/>
 </element>
+<element name="VIBE_1" library="MrSwirlyEyes" package="CONNECTOR-01X02" value="VIBE_MOTOR" x="-6.35" y="-109.22">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-6.35" y="-109.22" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_2" library="MrSwirlyEyes" package="CONNECTOR-01X02" value="VIBE_MOTOR" x="-6.35" y="-128.27">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-6.35" y="-128.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_3" library="MrSwirlyEyes" package="CONNECTOR-01X02" value="VIBE_MOTOR" x="-6.35" y="-147.32">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-6.35" y="-147.32" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_4" library="MrSwirlyEyes" package="CONNECTOR-01X02" value="VIBE_MOTOR" x="-6.35" y="-166.37">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-6.35" y="-166.37" size="1.778" layer="27" display="off"/>
+</element>
+<element name="VIBE_5" library="MrSwirlyEyes" package="CONNECTOR-01X02" value="VIBE_MOTOR" x="-6.35" y="-185.42">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -759,16 +817,16 @@ design rules under a new name.</description>
 <contactref element="U1" pad="4"/>
 <contactref element="PWM_DRIVER" pad="28"/>
 <contactref element="C2" pad="1"/>
-<contactref element="VIBE_T1" pad="D"/>
-<contactref element="VIBE_T2" pad="D"/>
-<contactref element="VIBE_T3" pad="D"/>
-<contactref element="VIBE_T4" pad="D"/>
-<contactref element="VIBE_T5" pad="D"/>
-<wire x1="-11.43" y1="-76.47" x2="-11.43" y2="-90.44" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.43" y1="-62.5" x2="-11.43" y2="-76.47" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.43" y1="-48.53" x2="-11.43" y2="-62.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.62" y1="-38.37" x2="-11.43" y2="-48.53" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.31" y1="-26.2395" x2="-7.62" y2="-38.37" width="0" layer="19" extent="1-1"/>
+<contactref element="VIBE_1" pad="1"/>
+<contactref element="VIBE_5" pad="1"/>
+<contactref element="VIBE_4" pad="1"/>
+<contactref element="VIBE_3" pad="1"/>
+<contactref element="VIBE_2" pad="1"/>
+<wire x1="-7.62" y1="-167.64" x2="-7.62" y2="-186.69" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-148.59" x2="-7.62" y2="-167.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-129.54" x2="-7.62" y2="-148.59" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-110.49" x2="-7.62" y2="-129.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.31" y1="-26.2395" x2="-7.62" y2="-110.49" width="0" layer="19" extent="1-1"/>
 <wire x1="2.86" y1="-25.4" x2="-3.31" y2="-26.2395" width="0" layer="19" extent="1-1"/>
 <wire x1="10.48" y1="-25.4" x2="2.86" y2="-25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-13.555" x2="10.48" y2="-25.4" width="0" layer="19" extent="1-1"/>
@@ -919,6 +977,31 @@ design rules under a new name.</description>
 </signal>
 <signal name="PPAD">
 <contactref element="U1" pad="GND"/>
+</signal>
+<signal name="N$1">
+<contactref element="VIBE_T1" pad="D"/>
+<contactref element="VIBE_1" pad="2"/>
+<wire x1="-7.62" y1="-38.37" x2="-5.08" y2="-110.49" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="VIBE_5" pad="2"/>
+<contactref element="VIBE_T5" pad="D"/>
+<wire x1="-11.43" y1="-90.44" x2="-5.08" y2="-186.69" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="VIBE_T4" pad="D"/>
+<contactref element="VIBE_4" pad="2"/>
+<wire x1="-11.43" y1="-76.47" x2="-5.08" y2="-167.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="VIBE_T3" pad="D"/>
+<contactref element="VIBE_3" pad="2"/>
+<wire x1="-11.43" y1="-62.5" x2="-5.08" y2="-148.59" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="VIBE_2" pad="2"/>
+<contactref element="VIBE_T2" pad="D"/>
+<wire x1="-11.43" y1="-48.53" x2="-5.08" y2="-129.54" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

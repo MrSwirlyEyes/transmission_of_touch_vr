@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -325,6 +325,19 @@
 <text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
 <text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">10K</text>
 </package>
+<package name="CONNECTOR-01X02">
+<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-2.54" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="-1.27" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
+<text x="-1.143" y="0.508" size="1.27" layer="21" font="vector" ratio="10" align="center">+</text>
+<text x="1.397" y="0.508" size="1.27" layer="21" font="vector" ratio="10" align="center">-</text>
+<text x="0" y="2.159" size="1.27" layer="21" font="vector" ratio="10" align="center">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CD74HC4067-SM96_16:1_MUX-DEMUX">
@@ -462,6 +475,19 @@
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="0" y="2.032" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;Name</text>
 <text x="0" y="-2.032" size="1.27" layer="96" font="vector" ratio="10" align="center">10K</text>
+</symbol>
+<symbol name="VIBE_MOTOR">
+<circle x="0" y="0" radius="2.54" width="0.508" layer="94"/>
+<polygon width="1.016" layer="94">
+<vertex x="0" y="-1.524" curve="90"/>
+<vertex x="1.524" y="0" curve="90"/>
+<vertex x="0" y="1.524" curve="90"/>
+<vertex x="-1.524" y="0" curve="90"/>
+</polygon>
+<pin name="+" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="3.556" y="1.27" size="1.27" layer="95" font="vector" ratio="10" align="center-left">&gt;Name</text>
+<text x="3.556" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="center-left">C0825B002F</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -685,6 +711,30 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="VIBE_MOTOR" prefix="V">
+<gates>
+<gate name="G$1" symbol="VIBE_MOTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CONNECTOR-01X02">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTPN" value="1670-1002-ND" constant="no"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." constant="no"/>
+<attribute name="MPN" value="C0825B002F" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="SparkFun-PowerSymbols">
@@ -878,6 +928,11 @@ TSSOP-10 with exposed power pad&lt;br&gt;
 <part name="SUPPLY7" library="MrSwirlyEyes" deviceset="VCC" device=""/>
 <part name="R5" library="MrSwirlyEyes" deviceset="RES_SMD-805_10K-5%-1/8W" device=""/>
 <part name="GND14" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="VIBE_1" library="MrSwirlyEyes" deviceset="VIBE_MOTOR" device=""/>
+<part name="VIBE_2" library="MrSwirlyEyes" deviceset="VIBE_MOTOR" device=""/>
+<part name="VIBE_3" library="MrSwirlyEyes" deviceset="VIBE_MOTOR" device=""/>
+<part name="VIBE_4" library="MrSwirlyEyes" deviceset="VIBE_MOTOR" device=""/>
+<part name="VIBE_5" library="MrSwirlyEyes" deviceset="VIBE_MOTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -895,11 +950,11 @@ STRAIN SENSORS</text>
 <text x="137.16" y="81.28" size="5.08" layer="97" font="vector" ratio="20" align="center">PWM DRIVER
 [TEC + VIBE]</text>
 <text x="129.54" y="15.24" size="1.27" layer="91" font="vector" ratio="10">I2C ADDR: x40</text>
-<wire x1="185.42" y1="10.16" x2="185.42" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="396.24" y1="10.16" x2="396.24" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="185.42" y1="58.42" x2="396.24" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="185.42" y1="10.16" x2="185.42" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="396.24" y1="10.16" x2="396.24" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="185.42" y1="71.12" x2="396.24" y2="71.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="185.42" y1="10.16" x2="396.24" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
-<text x="289.56" y="63.5" size="5.08" layer="97" font="vector" ratio="20" align="center">VIBE MOTOR DRIVERS</text>
+<text x="289.56" y="78.74" size="5.08" layer="97" font="vector" ratio="20" align="center">VIBE MOTOR DRIVERS</text>
 </plain>
 <instances>
 <instance part="DEMUX" gate="G$1" x="50.8" y="43.18"/>
@@ -915,29 +970,34 @@ STRAIN SENSORS</text>
 <instance part="VIBE_T1" gate="G$1" x="215.9" y="40.64"/>
 <instance part="GND5" gate="GND" x="218.44" y="30.48"/>
 <instance part="SUPPLY2" gate="VCC" x="104.14" y="63.5"/>
-<instance part="SUPPLY3" gate="VCC" x="218.44" y="48.26"/>
+<instance part="SUPPLY3" gate="VCC" x="218.44" y="60.96"/>
 <instance part="R1" gate="G$1" x="205.74" y="30.48" rot="R90"/>
 <instance part="GND6" gate="GND" x="205.74" y="20.32"/>
 <instance part="VIBE_T2" gate="G$1" x="256.54" y="40.64"/>
 <instance part="GND7" gate="GND" x="259.08" y="30.48"/>
-<instance part="SUPPLY4" gate="VCC" x="259.08" y="48.26"/>
+<instance part="SUPPLY4" gate="VCC" x="259.08" y="60.96"/>
 <instance part="R2" gate="G$1" x="246.38" y="30.48" rot="R90"/>
 <instance part="GND8" gate="GND" x="246.38" y="20.32"/>
 <instance part="VIBE_T3" gate="G$1" x="297.18" y="40.64"/>
 <instance part="GND9" gate="GND" x="299.72" y="30.48"/>
-<instance part="SUPPLY5" gate="VCC" x="299.72" y="48.26"/>
+<instance part="SUPPLY5" gate="VCC" x="299.72" y="60.96"/>
 <instance part="R3" gate="G$1" x="287.02" y="30.48" rot="R90"/>
 <instance part="GND10" gate="GND" x="287.02" y="20.32"/>
 <instance part="VIBE_T4" gate="G$1" x="337.82" y="40.64"/>
 <instance part="GND11" gate="GND" x="340.36" y="30.48"/>
-<instance part="SUPPLY6" gate="VCC" x="340.36" y="48.26"/>
+<instance part="SUPPLY6" gate="VCC" x="340.36" y="60.96"/>
 <instance part="R4" gate="G$1" x="327.66" y="30.48" rot="R90"/>
 <instance part="GND12" gate="GND" x="327.66" y="20.32"/>
 <instance part="VIBE_T5" gate="G$1" x="378.46" y="40.64"/>
 <instance part="GND13" gate="GND" x="381" y="30.48"/>
-<instance part="SUPPLY7" gate="VCC" x="381" y="48.26"/>
+<instance part="SUPPLY7" gate="VCC" x="381" y="60.96"/>
 <instance part="R5" gate="G$1" x="368.3" y="30.48" rot="R90"/>
 <instance part="GND14" gate="GND" x="368.3" y="20.32"/>
+<instance part="VIBE_1" gate="G$1" x="218.44" y="53.34"/>
+<instance part="VIBE_2" gate="G$1" x="259.08" y="53.34"/>
+<instance part="VIBE_3" gate="G$1" x="299.72" y="53.34"/>
+<instance part="VIBE_4" gate="G$1" x="340.36" y="53.34"/>
+<instance part="VIBE_5" gate="G$1" x="381" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -1072,29 +1132,29 @@ STRAIN SENSORS</text>
 <pinref part="SUPPLY2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="VIBE_T1" gate="G$1" pin="D"/>
-<wire x1="218.44" y1="45.72" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="VIBE_1" gate="G$1" pin="+"/>
 <pinref part="SUPPLY3" gate="VCC" pin="VCC"/>
+<wire x1="218.44" y1="58.42" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="VIBE_T2" gate="G$1" pin="D"/>
-<wire x1="259.08" y1="45.72" x2="259.08" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="VIBE_T3" gate="G$1" pin="D"/>
-<wire x1="299.72" y1="45.72" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="VIBE_T4" gate="G$1" pin="D"/>
-<wire x1="340.36" y1="45.72" x2="340.36" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="VIBE_T5" gate="G$1" pin="D"/>
-<wire x1="381" y1="45.72" x2="381" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="SUPPLY7" gate="VCC" pin="VCC"/>
+<pinref part="VIBE_5" gate="G$1" pin="+"/>
+<wire x1="381" y1="60.96" x2="381" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VIBE_4" gate="G$1" pin="+"/>
+<pinref part="SUPPLY6" gate="VCC" pin="VCC"/>
+<wire x1="340.36" y1="58.42" x2="340.36" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY5" gate="VCC" pin="VCC"/>
+<pinref part="VIBE_3" gate="G$1" pin="+"/>
+<wire x1="299.72" y1="60.96" x2="299.72" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="VCC" pin="VCC"/>
+<pinref part="VIBE_2" gate="G$1" pin="+"/>
+<wire x1="259.08" y1="60.96" x2="259.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S0" class="0">
@@ -1413,6 +1473,41 @@ STRAIN SENSORS</text>
 <wire x1="368.3" y1="38.1" x2="368.3" y2="35.56" width="0.1524" layer="91"/>
 <junction x="368.3" y="38.1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="VIBE_T1" gate="G$1" pin="D"/>
+<pinref part="VIBE_1" gate="G$1" pin="-"/>
+<wire x1="218.44" y1="48.26" x2="218.44" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="VIBE_5" gate="G$1" pin="-"/>
+<pinref part="VIBE_T5" gate="G$1" pin="D"/>
+<wire x1="381" y1="48.26" x2="381" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="VIBE_T4" gate="G$1" pin="D"/>
+<pinref part="VIBE_4" gate="G$1" pin="-"/>
+<wire x1="340.36" y1="45.72" x2="340.36" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="VIBE_T3" gate="G$1" pin="D"/>
+<pinref part="VIBE_3" gate="G$1" pin="-"/>
+<wire x1="299.72" y1="45.72" x2="299.72" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="VIBE_2" gate="G$1" pin="-"/>
+<pinref part="VIBE_T2" gate="G$1" pin="D"/>
+<wire x1="259.08" y1="48.26" x2="259.08" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
