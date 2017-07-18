@@ -345,6 +345,31 @@
 <text x="1.397" y="0.508" size="1.27" layer="21" font="vector" ratio="10" align="center">-</text>
 <text x="0" y="2.159" size="1.27" layer="21" font="vector" ratio="10" align="center">&gt;Name</text>
 </package>
+<package name="DIODE_SMD_1A-50V-SOD123F">
+<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
+<wire x1="0" y1="-0.35" x2="0" y2="0.35" width="0.05" layer="39"/>
+<wire x1="-0.35" y1="0" x2="0.35" y2="0" width="0.05" layer="39"/>
+<smd name="K" x="1.65" y="0" dx="1.4" dy="1.9" layer="1" roundness="50" rot="R180"/>
+<smd name="A" x="-1.65" y="0" dx="1.4" dy="1.9" layer="1" roundness="50" rot="R180"/>
+<wire x1="1.75" y1="0.8" x2="0.5" y2="0.8" width="0.12" layer="21"/>
+<wire x1="0.5" y1="0.8" x2="-1.75" y2="0.8" width="0.12" layer="21"/>
+<wire x1="1.75" y1="-0.8" x2="0.5" y2="-0.8" width="0.12" layer="21"/>
+<wire x1="0.5" y1="-0.8" x2="-1.75" y2="-0.8" width="0.12" layer="21"/>
+<wire x1="-1.75" y1="-0.8" x2="-1.75" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-0.8" x2="1.75" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.2" x2="2.6" y2="-1.2" width="0.05" layer="39"/>
+<wire x1="-2.6" y1="1.2" x2="2.6" y2="1.2" width="0.05" layer="39"/>
+<wire x1="-2.6" y1="-1.2" x2="-2.6" y2="1.2" width="0.05" layer="39"/>
+<wire x1="2.6" y1="-1.2" x2="2.6" y2="1.2" width="0.05" layer="39"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.6" y="-0.8"/>
+<vertex x="-0.6" y="0.8"/>
+<vertex x="0.5" y="0"/>
+</polygon>
+<wire x1="0.5" y1="0.8" x2="0.5" y2="-0.8" width="0.127" layer="21"/>
+<text x="0" y="2.064" size="1.27" layer="21" font="vector" ratio="10" rot="R180" align="center">&gt;Name</text>
+<text x="0" y="-2.032" size="1.27" layer="21" font="vector" ratio="10" rot="R180" align="center">1A/50V</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Retired">
@@ -760,6 +785,141 @@ design rules under a new name.</description>
 <attribute name="MPN" value="C0825B002F" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="-6.35" y="-185.42" size="1.778" layer="27" display="off"/>
 </element>
+<element name="C3" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="-12.7" y="-199.39">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-12.7" y="-199.39" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C4" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="-12.7" y="-204.47">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-12.7" y="-204.47" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C5" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="-12.7" y="-209.55">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-12.7" y="-209.55" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C6" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="-12.7" y="-214.63">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-12.7" y="-214.63" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C7" library="MrSwirlyEyes" package="CAP_CER_SMD-805_0.1UF-50V-10%" value="CAP_CER_SMD-805_0.1UF-50V-10%" x="-12.7" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-12.7" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R6" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-20.32" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-20.32" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R7" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-25.4" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-25.4" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R8" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-30.48" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-30.48" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R9" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-35.56" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-35.56" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R10" library="MrSwirlyEyes" package="RES_SMD-805_10K-5%-1/8W" value="RES_SMD-805_10K-5%-1/8W" x="-40.64" y="-219.71">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.yageo.com.tw/exep/pages/download/literatures/PYu-R_INT-thick_7.pdf" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Yageo" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-40.64" y="-219.71" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D1" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="DIODE_SMD_GP_1A-50V-SOD123F" x="-38.1" y="-226.06">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-38.1" y="-226.06" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D2" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="DIODE_SMD_GP_1A-50V-SOD123F" x="-38.1" y="-232.41">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-38.1" y="-232.41" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D3" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="DIODE_SMD_GP_1A-50V-SOD123F" x="-38.1" y="-238.76">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-38.1" y="-238.76" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D4" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="DIODE_SMD_GP_1A-50V-SOD123F" x="-38.1" y="-245.11">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-38.1" y="-245.11" size="1.778" layer="27" display="off"/>
+</element>
+<element name="D5" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="DIODE_SMD_GP_1A-50V-SOD123F" x="-38.1" y="-251.46">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-38.1" y="-251.46" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -822,10 +982,30 @@ design rules under a new name.</description>
 <contactref element="VIBE_4" pad="1"/>
 <contactref element="VIBE_3" pad="1"/>
 <contactref element="VIBE_2" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C5" pad="1"/>
+<contactref element="C6" pad="1"/>
+<contactref element="C7" pad="1"/>
+<contactref element="D1" pad="K"/>
+<contactref element="D5" pad="K"/>
+<contactref element="D4" pad="K"/>
+<contactref element="D3" pad="K"/>
+<contactref element="D2" pad="K"/>
+<wire x1="-13.65" y1="-214.63" x2="-13.65" y2="-219.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.65" y1="-209.55" x2="-13.65" y2="-214.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.65" y1="-204.47" x2="-13.65" y2="-209.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.65" y1="-199.39" x2="-13.65" y2="-204.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.62" y1="-186.69" x2="-13.65" y2="-199.39" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-167.64" x2="-7.62" y2="-186.69" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-148.59" x2="-7.62" y2="-167.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-129.54" x2="-7.62" y2="-148.59" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-110.49" x2="-7.62" y2="-129.54" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.45" y1="-226.06" x2="-13.65" y2="-219.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.45" y1="-232.41" x2="-36.45" y2="-226.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.45" y1="-238.76" x2="-36.45" y2="-232.41" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.45" y1="-245.11" x2="-36.45" y2="-238.76" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.45" y1="-251.46" x2="-36.45" y2="-245.11" width="0" layer="19" extent="1-1"/>
 <wire x1="-3.31" y1="-26.2395" x2="-7.62" y2="-110.49" width="0" layer="19" extent="1-1"/>
 <wire x1="2.86" y1="-25.4" x2="-3.31" y2="-26.2395" width="0" layer="19" extent="1-1"/>
 <wire x1="10.48" y1="-25.4" x2="2.86" y2="-25.4" width="0" layer="19" extent="1-1"/>
@@ -938,6 +1118,8 @@ design rules under a new name.</description>
 <contactref element="PWM_DRIVER" pad="18"/>
 <contactref element="VIBE_T1" pad="G"/>
 <contactref element="R1" pad="2"/>
+<contactref element="R6" pad="2"/>
+<wire x1="-14.29" y1="-41.91" x2="-19.37" y2="-219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-8.57" y1="-40.67" x2="-14.29" y2="-41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-20.055" x2="-8.57" y2="-40.67" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -945,6 +1127,8 @@ design rules under a new name.</description>
 <contactref element="PWM_DRIVER" pad="19"/>
 <contactref element="VIBE_T2" pad="G"/>
 <contactref element="R2" pad="2"/>
+<contactref element="R7" pad="2"/>
+<wire x1="-14.29" y1="-55.88" x2="-24.45" y2="-219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.38" y1="-50.83" x2="-14.29" y2="-55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-19.405" x2="-12.38" y2="-50.83" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -952,6 +1136,8 @@ design rules under a new name.</description>
 <contactref element="PWM_DRIVER" pad="20"/>
 <contactref element="VIBE_T3" pad="G"/>
 <contactref element="R3" pad="2"/>
+<contactref element="R8" pad="2"/>
+<wire x1="-14.29" y1="-69.85" x2="-29.53" y2="-219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.38" y1="-64.8" x2="-14.29" y2="-69.85" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-18.755" x2="-12.38" y2="-64.8" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -959,6 +1145,8 @@ design rules under a new name.</description>
 <contactref element="PWM_DRIVER" pad="21"/>
 <contactref element="VIBE_T4" pad="G"/>
 <contactref element="R4" pad="2"/>
+<contactref element="R9" pad="2"/>
+<wire x1="-14.29" y1="-83.82" x2="-34.61" y2="-219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.38" y1="-78.77" x2="-14.29" y2="-83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-18.105" x2="-12.38" y2="-78.77" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -966,8 +1154,10 @@ design rules under a new name.</description>
 <contactref element="PWM_DRIVER" pad="22"/>
 <contactref element="VIBE_T5" pad="G"/>
 <contactref element="R5" pad="2"/>
+<contactref element="R10" pad="2"/>
 <wire x1="-12.38" y1="-92.74" x2="-14.29" y2="-97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="7.9978" y1="-17.455" x2="-12.38" y2="-92.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.69" y1="-219.71" x2="-14.29" y2="-97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OUT2">
 <contactref element="U1" pad="1"/>
@@ -981,27 +1171,62 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="VIBE_T1" pad="D"/>
 <contactref element="VIBE_1" pad="2"/>
+<contactref element="C3" pad="2"/>
+<contactref element="D1" pad="A"/>
+<wire x1="-39.75" y1="-226.06" x2="-11.75" y2="-199.39" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-110.49" x2="-11.75" y2="-199.39" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.62" y1="-38.37" x2="-5.08" y2="-110.49" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$2">
-<contactref element="VIBE_5" pad="2"/>
-<contactref element="VIBE_T5" pad="D"/>
-<wire x1="-11.43" y1="-90.44" x2="-5.08" y2="-186.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="VIBE_T4" pad="D"/>
 <contactref element="VIBE_4" pad="2"/>
+<contactref element="C6" pad="2"/>
+<contactref element="D4" pad="A"/>
+<wire x1="-39.75" y1="-245.11" x2="-11.75" y2="-214.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-167.64" x2="-11.75" y2="-214.63" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.43" y1="-76.47" x2="-5.08" y2="-167.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="VIBE_T3" pad="D"/>
 <contactref element="VIBE_3" pad="2"/>
+<contactref element="C5" pad="2"/>
+<contactref element="D3" pad="A"/>
+<wire x1="-39.75" y1="-238.76" x2="-11.75" y2="-209.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-148.59" x2="-11.75" y2="-209.55" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.43" y1="-62.5" x2="-5.08" y2="-148.59" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$5">
+<signal name="N$6">
+<contactref element="R6" pad="1"/>
+</signal>
+<signal name="N$7">
+<contactref element="R10" pad="1"/>
+</signal>
+<signal name="N$8">
+<contactref element="R9" pad="1"/>
+</signal>
+<signal name="N$9">
+<contactref element="R8" pad="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="R7" pad="1"/>
+</signal>
+<signal name="N$11">
+<contactref element="D2" pad="A"/>
 <contactref element="VIBE_2" pad="2"/>
 <contactref element="VIBE_T2" pad="D"/>
+<contactref element="C4" pad="2"/>
+<wire x1="-39.75" y1="-232.41" x2="-11.75" y2="-204.47" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.08" y1="-129.54" x2="-11.75" y2="-204.47" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.43" y1="-48.53" x2="-5.08" y2="-129.54" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="D5" pad="A"/>
+<contactref element="VIBE_5" pad="2"/>
+<contactref element="VIBE_T5" pad="D"/>
+<contactref element="C7" pad="2"/>
+<wire x1="-5.08" y1="-186.69" x2="-11.75" y2="-219.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.75" y1="-251.46" x2="-11.75" y2="-219.71" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-90.44" x2="-5.08" y2="-186.69" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
