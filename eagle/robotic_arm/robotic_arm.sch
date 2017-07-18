@@ -167,36 +167,36 @@
 <library name="MrSwirlyEyes">
 <packages>
 <package name="SSOP24">
-<wire x1="-4.25" y1="2.5" x2="4.25" y2="2.5" width="0.2032" layer="21"/>
-<wire x1="4.25" y1="2.5" x2="4.25" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="4.25" y1="-2.5" x2="-4.25" y2="-2.5" width="0.2032" layer="21"/>
-<wire x1="-4.25" y1="-2.5" x2="-4.25" y2="2.5" width="0.2032" layer="21"/>
-<circle x="-3.556" y="-1.778" radius="0.2231" width="0.2032" layer="21"/>
-<smd name="24" x="-3.575" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="23" x="-2.925" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="22" x="-2.275" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="20" x="-0.975" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="21" x="-1.625" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="19" x="-0.325" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="18" x="0.325" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="17" x="0.975" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="16" x="1.625" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="15" x="2.275" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="1" x="-3.575" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="2" x="-2.925" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="3" x="-2.275" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="4" x="-1.625" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="5" x="-0.975" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="6" x="-0.325" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="7" x="0.325" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="8" x="0.975" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="9" x="1.625" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="10" x="2.275" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="11" x="2.925" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="12" x="3.575" y="-3.656" dx="0.348" dy="1.397" layer="1" roundness="50"/>
-<smd name="13" x="3.575" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R180"/>
-<smd name="14" x="2.925" y="3.656" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R180"/>
-<text x="-3.81" y="0" size="0.4064" layer="25" font="vector" ratio="10" align="center-left">&gt;NAME</text>
+<wire x1="2.5" y1="4.25" x2="2.5" y2="-4.25" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-4.25" x2="-2.5" y2="-4.25" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-4.25" x2="-2.5" y2="4.25" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="4.25" x2="2.5" y2="4.25" width="0.2032" layer="21"/>
+<circle x="-1.778" y="3.556" radius="0.2231" width="0.2032" layer="21"/>
+<smd name="24" x="3.656" y="3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="23" x="3.656" y="2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="22" x="3.656" y="2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="20" x="3.656" y="0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="21" x="3.656" y="1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="19" x="3.656" y="0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="18" x="3.656" y="-0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="17" x="3.656" y="-0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="16" x="3.656" y="-1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="15" x="3.656" y="-2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="1" x="-3.656" y="3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="-3.656" y="2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="3" x="-3.656" y="2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="4" x="-3.656" y="1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="5" x="-3.656" y="0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="6" x="-3.656" y="0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="7" x="-3.656" y="-0.325" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="8" x="-3.656" y="-0.975" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="9" x="-3.656" y="-1.625" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="10" x="-3.656" y="-2.275" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="11" x="-3.656" y="-2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="12" x="-3.656" y="-3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R270"/>
+<smd name="13" x="3.656" y="-3.575" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R90"/>
+<smd name="14" x="3.656" y="-2.925" dx="0.348" dy="1.397" layer="1" roundness="50" rot="R90"/>
+<text x="0" y="5.08" size="0.4064" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 </package>
 <package name="CAP_CER_SMD-805_10UF-25V-10%">
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
@@ -225,7 +225,7 @@
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1" roundness="50"/>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
-<text x="-1.016" y="1.016" size="0.8128" layer="25" font="vector" ratio="10">&gt;Name</text>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;Name</text>
 <text x="0" y="-1.524" size="0.8128" layer="27" font="vector" ratio="10" align="center">0.1uF/50V</text>
 </package>
 <package name="TSSOP28">
@@ -294,7 +294,7 @@
 </package>
 </packages>
 <symbols>
-<symbol name="CD74HCT4067_16-CH_MUX-DEMUX">
+<symbol name="CD74HC4067-SM96_16:1_MUX-DEMUX">
 <wire x1="-10.16" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
 <wire x1="10.16" y1="20.32" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
@@ -309,7 +309,7 @@
 <pin name="S1" x="-12.7" y="-2.54" visible="pin" length="short" direction="pas"/>
 <pin name="S2" x="-12.7" y="-5.08" visible="pin" length="short" direction="pas"/>
 <pin name="S3" x="-12.7" y="-7.62" visible="pin" length="short" direction="pas"/>
-<pin name="!E" x="-12.7" y="-17.78" visible="pin" length="short" direction="pas"/>
+<pin name="!EN" x="-12.7" y="-17.78" visible="pin" length="short" direction="pas"/>
 <pin name="GND" x="-12.7" y="-20.32" visible="pin" length="short" direction="pas"/>
 <pin name="C11" x="12.7" y="-10.16" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="C10" x="12.7" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
@@ -378,14 +378,14 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CD74HCT4067_16-CH_MUX-DEMUX" prefix="U">
+<deviceset name="CD74HC4067-SM96_16:1_MUX-DEMUX" prefix="U">
 <gates>
-<gate name="G$1" symbol="CD74HCT4067_16-CH_MUX-DEMUX" x="0" y="0"/>
+<gate name="G$1" symbol="CD74HC4067-SM96_16:1_MUX-DEMUX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SSOP24">
 <connects>
-<connect gate="G$1" pin="!E" pad="15"/>
+<connect gate="G$1" pin="!EN" pad="15"/>
 <connect gate="G$1" pin="C0" pad="9"/>
 <connect gate="G$1" pin="C1" pad="8"/>
 <connect gate="G$1" pin="C10" pad="21"/>
@@ -413,11 +413,11 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hct4067-q1.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTPN" value="296-37976-1-ND" constant="no"/>
+<attribute name="DISTPN" value="296-9226-1-ND" constant="no"/>
 <attribute name="MFR" value="Texas Instruments" constant="no"/>
-<attribute name="MPN" value="CD74HCT4067QM96Q1" constant="no"/>
+<attribute name="MPN" value="CD74HC4067SM96" constant="no"/>
 <attribute name="TESTED" value="NO" constant="no"/>
 </technology>
 </technologies>
@@ -595,7 +595,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="DEMUX" library="MrSwirlyEyes" deviceset="CD74HCT4067_16-CH_MUX-DEMUX" device=""/>
+<part name="DEMUX" library="MrSwirlyEyes" deviceset="CD74HC4067-SM96_16:1_MUX-DEMUX" device=""/>
 <part name="C1" library="MrSwirlyEyes" deviceset="CAP_CER_SMD-805_0.1UF-50V-10%" device=""/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -638,7 +638,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="DEMUX" gate="G$1" pin="!E"/>
+<pinref part="DEMUX" gate="G$1" pin="!EN"/>
 <wire x1="35.56" y1="17.78" x2="33.02" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="DEMUX" gate="G$1" pin="GND"/>
