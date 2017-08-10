@@ -82,10 +82,10 @@ void loop()
 }
 
 bool valid_pkt_check(Packet & pkt) {
-  if(pkt.start_check =! 0xFEEAED){
+  if(pkt.start_check != 0xFEEAED){
     return false;
   }
-  else if(pkt.end_check =! 0xDAAABD){
+  else if(pkt.end_check != 0xDAAABD){
     return false;
   }
   return true;
