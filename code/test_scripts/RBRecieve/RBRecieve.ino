@@ -10,38 +10,20 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 Radio radio(CHANNEL);  // Initialize ATmega128RFA1 radio on channel CHANNEL (can be 11-26)
 
-int servoNum, angle, i;
-
 struct Packet {
-
   int start_check = 0;
-
-  int sensordat[16];
-  
-//  int test1= 0;
-//
-//  int test2= 0;
-//
-//  int test3= 0;
-
+  int sensordat[16] = {0,};
   int end_check = 0;
-  
-};
+} pkt;
 
-Packet pkt;
-
-
-
+int servoNum, angle, i;
 
 void setup()
 {
   Serial.begin(9600);
-
    //Set up PWM.
   pwm.begin();
   pwm.setPWMFreq(60);
-
-  
 }
 
 void loop()
@@ -68,24 +50,22 @@ void loop()
         angle = map(pkt.sensordat[j],800,200,0,180);
         turnTo(j, angle);
       }
-    
-//      Serial.print("Test1: ");
-//      Serial.println(pkt.test1);
-//      Serial.print("Test2: ");
-//      Serial.println(pkt.test2);
-//      Serial.print("Test3: ");
-//      Serial.println(pkt.test3);
     }
-    else { Serial.print("Error");
+    else { 
+      Serial.println("Error");
     }
   }
 }
 
 bool valid_pkt_check(Packet & pkt) {
-  if(pkt.start_check != 0xFEEAED){
+  Serial.print("start_check");
+  Serial.println(pkt.start_check,HEX);
+  Serial.print("end_check");
+  Serial.println(pkt.end_check,HEX);
+  if(pkt.start_check != 0xFFFFFEED){
     return false;
   }
-  else if(pkt.end_check != 0xDAAABD){
+  else if(pkt.end_check != 0xFFFFDEAD){
     return false;
   }
   return true;
