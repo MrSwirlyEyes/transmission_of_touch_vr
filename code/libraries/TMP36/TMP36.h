@@ -4,8 +4,8 @@ Created by Colin "MrSwirlyEyes"
 For Project in a Box, University of California, San Diego.
 */
 
-#ifndef Motor_h
-#define Motor_h
+#ifndef TMP36_h
+#define TMP36_h
 
 #include <Arduino.h>
 
