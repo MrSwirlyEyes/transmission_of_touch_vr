@@ -1,4 +1,4 @@
-#include <radio.h>
+#include <Radio.h>
 
 #define s0 2 
 #define s1 6 
@@ -6,7 +6,7 @@
 #define s3 10
 #define SIGpin 0
 
-Radio radio(11);  // Initialize ATmega128RFA1 radio on channel CHANNEL (can be 11-26)
+//Radio radio(11);  // Initialize ATmega128RFA1 radio on channel CHANNEL (can be 11-26)
 
 struct Packet {
   int start_check = 0xFEED;
@@ -41,7 +41,7 @@ bool muxChannel[16][4]={
 
 
 void setup() {
-  analogReference(EXTERNAL);
+//  analogReference(EXTERNAL);
   pkt.start_check=0xFFFFFEED;
   pkt.end_check=0xFFFFDEAD;
   // put your setup code here, to run once:
@@ -63,19 +63,19 @@ void setup() {
 void loop() {
   
 //  test();
-  for(int j = 0; j<10; j++) {
+  for(int j = 0; j<5; j++) {
     for(int i = 0; i<4; i++){
       digitalWrite(controlPin[i], muxChannel[j][i]);
     }
 //    Serial.println(analogRead(SIGpin));
     
     pkt.sensordat[j] = analogRead(SIGpin);
-//    Serial.println(pkt.sensordat[j]);
+    Serial.println(pkt.sensordat[j]);
     
   }
-  radio.rfWrite((uint8_t *) & pkt, sizeof(Packet));
-  Serial.println(pkt.start_check,HEX);
-  Serial.println(pkt.end_check,HEX);
+//  radio.rfWrite((uint8_t *) & pkt, sizeof(Packet));
+//  Serial.println(pkt.start_check,HEX);
+//  Serial.println(pkt.end_check,HEX);
 }
 
 
