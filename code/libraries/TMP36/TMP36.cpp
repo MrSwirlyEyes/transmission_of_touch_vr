@@ -10,7 +10,7 @@ For Project in a Box, University of California, San Diego.
 
 // CONSTRUCTOR
 
-TMP36::TMP36(int _pin,float _vcc) : _pin(_pin),_vcc(_vcc),_temperature_C(0.0),_temperature_F(0.0) {
+TMP36::TMP36(byte _pin,float _vcc) : _pin(_pin),_vcc(_vcc),_temperature_C(0.0),_temperature_F(0.0) {
 	analogReference(EXTERNAL);
 }
 

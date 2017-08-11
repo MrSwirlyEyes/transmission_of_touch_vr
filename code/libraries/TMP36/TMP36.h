@@ -11,14 +11,14 @@ For Project in a Box, University of California, San Diego.
 
 class TMP36 {
 	public:
-        TMP36(int _pin,float _vcc);
+        TMP36(byte _pin,float _vcc);
 
         void read();
         float get_temperature_C();
         float get_temperature_F();
 
     private:
-        int _pin;    
+        byte _pin;    
         float _vcc;
         float _temperature_C;
         float _temperature_F;
