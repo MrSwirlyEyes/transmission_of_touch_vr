@@ -41,11 +41,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  for(int j = 0; j < 10 ; j++) {
+  for(int j = 0; j < 5 ; j++) {
     for(int i = 0; i < 4; i++){
       digitalWrite(controlPin[i], muxChannel[j][i]);
+      delay(100);
     }
     //read the value at the SIG pin  
     Serial.println(analogRead(SIGpin));
   }
+  Serial.println(' ');
 }
