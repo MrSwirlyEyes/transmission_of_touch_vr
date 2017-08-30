@@ -1,22 +1,18 @@
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //library needs to be downloaded
 
-#define SERVOMIN  150 //This is the 'minimum' pulse length count (out of 4096).
-#define SERVOMAX  600 //This is the 'maximum' pulse length count (out of 4096).
+#define SERVOMIN  130 //This is the 'minimum' pulse length count (out of 4096).
+#define SERVOMAX  290 //This is the 'maximum' pulse length count (out of 4096).
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 int servoNum, angle, i;
 
 //Mux control pins
-#define s0 8
-#define s1 9
-#define s2 10
-#define s3 11
-//int s0 = 8;
-//int s1 = 9;
-//int s2 = 10;
-//int s3 = 11;
+#define s0 2
+#define s1 6
+#define s2 7
+#define s3 10
 
 //Mux in "SIG" pin
 int SIG_pin = 0;
@@ -38,7 +34,7 @@ void setup()
 
   //Set up PWM.
   pwm.begin();
-  pwm.setPWMFreq(60);
+  pwm.setPWMFreq(40);
 }
 
 void loop() 
@@ -46,6 +42,7 @@ void loop()
   
   //Loop through and read all 16 values
   //Reports back Value at channel 6 is: 346
+
   for(int i = 0; i < 5; i ++)
   {
     Serial.print("Value at channel ");
@@ -55,29 +52,15 @@ void loop()
     Serial.print("Mapped Value at channel ");
     Serial.print(i);
     Serial.print(" is : ");
-    Serial.println(map(readMux(i),70,860,0,180));
-    angle = map(readMux(i),0,1000,0,180*4);
-    turnTo(i, angle);
+    Serial.println(map(readMux(i),380,675,0,90));
+    angle = map(readMux(i),380,675,0,90);
+    turnTo(i+1, angle);
   }
-  
-//  for(int i = 10; i < 15; i ++)
-//  {
-//    Serial.print("Value at channel ");
-//    Serial.print(i);
-//    Serial.print("is : ");
-//    Serial.println(readMux(i));
-//    Serial.print("Mapped Value at channel ");
-//    Serial.print(i);
-//    Serial.print("is : ");
-//    Serial.println(map(readMux(i),700,200,0,180));
-//    angle = map(readMux(i),700,200,0,180*4);
-//    turnTo(i-5, angle);
-//  }
 }
 
 void turnTo(int servoNum, int angle)
 {
-  angle = map(angle, 0, 180*4, SERVOMIN, SERVOMAX);
+  angle = map(angle, 0, 90, SERVOMIN, SERVOMAX);
   pwm.setPWM(servoNum, 0, angle);
 }
 
