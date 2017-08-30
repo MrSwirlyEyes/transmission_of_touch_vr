@@ -1,16 +1,16 @@
 .DS_Store
 
-code/.DS_Store
-code/robotic_arm/.DS_Store
-code/touch_glove/.DS_Store
+#code/.DS_Store
+#code/robotic_arm/.DS_Store
+#code/touch_glove/.DS_Store
 
-eagle/.DS_Store
-eagle/robotic_arm/.DS_Store
-eagle/robotic_arm/*.s$*
-eagle/robotic_arm/*.b$*
-eagle/robotic_arm/*.*lck
+#eagle/.DS_Store
+#eagle/robotic_arm/.DS_Store
+*.s$*
+*.b$*
+*.*lck
 
-eagle/touch_glove/.DS_Store
-eagle/touch_glove/*.s$*
-eagle/touch_glove/*.b$*
-eagle/touch_glove/*.*lck
+#eagle/touch_glove/.DS_Store
+#eagle/touch_glove/*.s$*
+#eagle/touch_glove/*.b$*
+#eagle/touch_glove/*.*lck
