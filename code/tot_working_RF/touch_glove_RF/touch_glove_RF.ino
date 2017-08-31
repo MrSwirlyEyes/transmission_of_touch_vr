@@ -1,7 +1,7 @@
 //USE THIS IF YOU HAVE Radio.h library instead of radio.h
-//#include <Radio.h>
+#include <Radio.h>
 
-#include <radio.h>
+//#include <radio.h>
 
 //include this library from github
 #include <CD74HC4067.h>
@@ -37,10 +37,11 @@ void loop() {
   pkt.pinky = demux.read_channel(4);
   pkt.checkSum = pkt.thumb + pkt.pointer + pkt.middle + pkt.ring + pkt.pinky;
   radio.rfWrite((uint8_t *) & pkt, sizeof(Packet));
-  Serial.println(pkt.thumb);
-  Serial.println(pkt.pointer);
-  Serial.println(pkt.middle);
-  Serial.println(pkt.ring);
-  Serial.println(pkt.pinky);
-  Serial.println(pkt.checkSum);
+  Serial.print("(");
+  Serial.print(pkt.thumb);  Serial.print(",");
+  Serial.print(pkt.pointer);  Serial.print(",");
+  Serial.print(pkt.middle); Serial.print(",");
+  Serial.print(pkt.ring); Serial.print(",");
+  Serial.print(pkt.pinky);  Serial.println(")");
+//  Serial.print(pkt.checkSum); Serial.println(")");
 }

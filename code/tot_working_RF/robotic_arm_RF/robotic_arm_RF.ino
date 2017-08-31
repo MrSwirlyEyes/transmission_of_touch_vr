@@ -1,11 +1,11 @@
 //USE THIS IF YOU HAVE Radio.h library instead of radio.h
-//#include <Radio.h>
+#include <Radio.h>
 
-#include <radio.h>
+//#include <radio.h>
 
 //include this library from github
 #include <CD74HC4067.h>
-#include <Wire.h>
+//#include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //library needs to be downloaded
 
 #define SERVOMIN  130 //This is the 'minimum' pulse length count (out of 4096).
@@ -51,20 +51,21 @@ void loop()
       //motor 3: pointer finger
       //motor 4: pinky
       //motor 5: thumb
+      Serial.print("(");
       angle1 = map(pkt.thumb,400,700,0,90);
-      Serial.println(angle1);
+      Serial.print(angle1); Serial.print(",");
       turnTo(5, angle1);
       angle2 = map(pkt.pointer,400,700,0,90);
-      Serial.println(angle2);
-      turnTo(3, angle2);
+      Serial.print(angle2); Serial.print(",");
+      turnTo(3, angle2);  
       angle3 = map(pkt.middle,400,700,0,90);
-      Serial.println(angle3);
-      turnTo(2, angle3);
+      Serial.print(angle3);
+      turnTo(2, angle3);  Serial.print(",");
       angle4 = map(pkt.ring,400,700,0,90);
-      Serial.println(angle4);
-      turnTo(1, angle4);
+      Serial.print(angle4);
+      turnTo(1, angle4);  Serial.print(",");
       angle5 = map(pkt.pinky,400,700,0,90);
-      Serial.println(angle5);
+      Serial.print(angle5); Serial.println(")");
       turnTo(4, angle5);
   }
 }
