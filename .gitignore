@@ -6,8 +6,8 @@
 
 #eagle/.DS_Store
 #eagle/robotic_arm/.DS_Store
-*.s$*
-*.b$*
+*.s#*
+*.b#*
 *.*lck
 
 #eagle/touch_glove/.DS_Store

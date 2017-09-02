@@ -30,18 +30,78 @@ void setup() {
 }
 
 void loop() {
-  pkt.thumb = demux.read_channel(0);
-  pkt.pointer = demux.read_channel(1);
-  pkt.middle = demux.read_channel(2);
-  pkt.ring = demux.read_channel(3);
-  pkt.pinky = demux.read_channel(4);
-  pkt.checkSum = pkt.thumb + pkt.pointer + pkt.middle + pkt.ring + pkt.pinky;
-  radio.rfWrite((uint8_t *) & pkt, sizeof(Packet));
+
+  read_flex();
+  
+  print_flex();
+
+//  transmit();
+//  Serial.print(pkt.checkSum); Serial.println(")");
+}
+
+void print_flex() {
   Serial.print("(");
   Serial.print(pkt.thumb);  Serial.print(",");
   Serial.print(pkt.pointer);  Serial.print(",");
   Serial.print(pkt.middle); Serial.print(",");
   Serial.print(pkt.ring); Serial.print(",");
   Serial.print(pkt.pinky);  Serial.println(")");
-//  Serial.print(pkt.checkSum); Serial.println(")");
 }
+
+void read_flex() {
+  delay(5);
+  pkt.thumb = demux.read_channel(0);
+  delay(5);
+  pkt.thumb = demux.read_channel(0);  
+  delay(5);
+  pkt.pointer = demux.read_channel(1);
+  delay(5);
+  pkt.pointer = demux.read_channel(1);  
+  delay(5);
+  pkt.middle = demux.read_channel(2);
+  delay(5);
+  pkt.middle = demux.read_channel(2);  
+  delay(5);
+  pkt.ring = demux.read_channel(3);
+  delay(5);
+  pkt.ring = demux.read_channel(3);  
+  delay(5);
+  pkt.pinky = demux.read_channel(4);
+  delay(5);
+  pkt.pinky = demux.read_channel(4);
+  delay(5);
+  
+//  delay(50);
+
+  demux.read_channel(5);
+  demux.read_channel(5);
+  demux.read_channel(5);
+//  delay(5);
+//  demux.read_channel(6);
+//  delay(5);
+//  demux.read_channel(7);
+//  delay(5);
+//  demux.read_channel(8);
+//  delay(5);
+//  demux.read_channel(9);
+//  delay(5);
+//  demux.read_channel(10);
+//  delay(5);
+//  demux.read_channel(11);
+//  delay(5);
+//  demux.read_channel(12);
+//  delay(5);
+//  demux.read_channel(13);
+//  delay(5);
+//  demux.read_channel(14);
+//  delay(5);
+//  demux.read_channel(15);
+//  delay(5);
+  
+}
+
+void transmit() {
+  pkt.checkSum = pkt.thumb + pkt.pointer + pkt.middle + pkt.ring + pkt.pinky;
+  radio.rfWrite((uint8_t *) & pkt, sizeof(Packet));
+}
+
