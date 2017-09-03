@@ -107,8 +107,8 @@ bool is_valid_pkt() {
 
 
 void start_up_sequence() {
-//  delay(3000);
-//  test_vibrotactiles();
+  delay(3000);
+  test_vibrotactiles();
   delay(3000);
   test_thermoelectrics();
   delay(3000);
