@@ -1,5 +1,5 @@
-#include <radio.h> //include this library from github
-//#include <Radio.h> if you're Colin
+//#include <radio.h> //include this library from github
+#include <Radio.h> //if you're Colin
 #include <CD74HC4067.h> //include this library from github
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //download library from adafruit website
@@ -39,6 +39,8 @@ struct ArmPacket {
 
 void setup() 
 {
+  delay(1000);
+  
   Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(40);
@@ -47,27 +49,101 @@ void setup()
     gpkt.gFinger[i] = 0;
     apkt.aFinger[i] = 0;
   }
+  
+  start_up_sequence();
 }
 
 void loop() {
   //GLOVE PACKET: SENDING FLEX SENSOR VALUES FROM GLOVE TO MOVE SERVO MOTORS ON ROBO ARM
+  read_flex_sensors();
+
+  transmit();
+
+  //ARM PACKET: RECEIVING PRESSURE SENSOR VALS FROM ROBO ARM TO MOVE VIB MOTORS
+  receive();
+
+  if(is_valid_pkt()) {  
+    for (int i = 0; i < 5; i++) {
+      pwm.setPWM(i, 0, map(apkt.aFinger[i], PRESSMIN, PRESSMAX, VIBMIN,VIBMAX));
+    }
+  }
+}
+
+
+void read_flex_sensors() {
   for (int i = 0; i < 5; i++){
     delay(5);
     gpkt.gFinger[i] = demux.read_channel(i);
     delay(5);
     gpkt.gFinger[i] = demux.read_channel(i);
   }
+}
+
+
+void transmit() {
   gpkt.gCheckSum = gpkt.gThumb + gpkt.gPointer + gpkt.gMiddle + gpkt.gRing + gpkt.gPinky;
   radio.rfWrite((uint8_t *) & gpkt, sizeof(GlovePacket));
+}
 
-  //ARM PACKET: RECEIVING PRESSURE SENSOR VALS FROM ROBO ARM TO MOVE VIB MOTORS
+
+void receive() {
   if(radio.rfAvailable()) {
     radio.rfRead((uint8_t *) & apkt, sizeof(ArmPacket));
   }
-  int aCheckSumTot = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4];
-  if(aCheckSumTot == apkt.aCheckSum) {
-    for (int i = 0; i < 5; i++) {
-      pwm.setPWM(i, 0, map(apkt.aFinger[i], PRESSMIN, PRESSMAX, VIBMIN,VIBMAX));
-    }
-  }
 }
+
+
+bool is_valid_pkt() {
+  int aCheckSumTot = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4];
+
+  return (aCheckSumTot == apkt.aCheckSum);
+}
+
+
+void start_up_sequence() {
+  delay(3000);
+  test_vibrotactiles();
+  delay(3000);
+  test_thermoelectrics();
+  delay(3000);
+}
+
+
+void test_vibrotactiles() {
+  for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 255; j++) {
+      pwm.setPWM(i, 0, map(j, 0, 255, VIBMIN,VIBMAX));
+      delay(5);
+    }
+    delay(300);
+    for (int j = 255; j >= 0; j--) {
+      pwm.setPWM(i, 0, map(j, 0, 255, VIBMIN,VIBMAX));
+      delay(5);
+    }
+    delay(300);
+  }
+
+  delay(300);
+    
+  for (int j = 0; j < 255; j++) {
+    for (int i = 0; i < 5; i++) {
+      pwm.setPWM(i, 0, map(j, 0, 255, VIBMIN,VIBMAX));
+      
+    }    
+    delay(10);
+  }
+  delay(300);
+  for (int j = 255; j >= 0; j--) {
+    for (int i = 0; i < 5; i++) {
+      pwm.setPWM(i, 0, map(j, 0, 255, VIBMIN,VIBMAX));
+      
+    } 
+    delay(10);   
+  }
+  delay(300);
+}
+
+void test_thermoelectrics() {
+  
+}
+
