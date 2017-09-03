@@ -1072,6 +1072,83 @@
 <wire x1="4.2" y1="-1.7" x2="-4.2" y2="-1.7" width="0.127" layer="39"/>
 <wire x1="-4.2" y1="-1.7" x2="-4.2" y2="1.7" width="0.127" layer="39"/>
 </package>
+<package name="LSM9DS1_LGA24L">
+<description>SMD IMU, Chip; 3.50 mm L X 3.00 mm W X 1.00 mm H body; LGA24L Package</description>
+<wire x1="-1.75" y1="1.5" x2="-1.75" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="1.5" x2="1.75" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.75" y1="1.5" x2="1.75" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-1.5" x2="-1.75" y2="-1.5" width="0.127" layer="51"/>
+<circle x="-2.25" y="1.37" radius="0.125" width="0.25" layer="21"/>
+<smd name="22" x="-0.215" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="21" x="0.215" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="20" x="0.645" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="19" x="1.075" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="23" x="-0.645" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="24" x="-1.075" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="18" x="1.505" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R270" stop="no"/>
+<smd name="14" x="1.975" y="-0.645" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="17" x="1.975" y="0.645" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="16" x="1.975" y="0.215" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="15" x="1.975" y="-0.215" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="5" x="-1.975" y="-0.645" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="2" x="-1.975" y="0.645" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="3" x="-1.975" y="0.215" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="4" x="-1.975" y="-0.215" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R180" stop="no"/>
+<smd name="10" x="0.215" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="9" x="-0.215" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="8" x="-0.645" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="7" x="-1.075" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="11" x="0.645" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="12" x="1.075" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="13" x="1.505" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="6" x="-1.505" y="-1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<smd name="1" x="-1.505" y="1.725" dx="1.35" dy="0.23" layer="1" roundness="25" rot="R90" stop="no"/>
+<text x="-1.85" y="2.51" size="0.8128" layer="25">&gt;NAME</text>
+<rectangle x1="1.226125" y1="0.4557625" x2="2.713625" y2="0.8307625" layer="29" rot="R180"/>
+<rectangle x1="1.226125" y1="0.0257625" x2="2.713625" y2="0.4007625" layer="29" rot="R180"/>
+<rectangle x1="1.226125" y1="-0.4042375" x2="2.713625" y2="-0.0292375" layer="29" rot="R180"/>
+<rectangle x1="1.226125" y1="-0.8342375" x2="2.713625" y2="-0.4592375" layer="29" rot="R180"/>
+<wire x1="-1.825" y1="0.925" x2="-1.825" y2="1.525" width="0.127" layer="21"/>
+<wire x1="-1.825" y1="1.525" x2="-1.7375" y2="1.525" width="0.127" layer="21"/>
+<wire x1="1.6875" y1="1.5375" x2="1.8125" y2="1.5375" width="0.127" layer="21"/>
+<wire x1="1.8125" y1="1.5375" x2="1.8125" y2="0.875" width="0.127" layer="21"/>
+<wire x1="1.825" y1="-0.8375" x2="1.825" y2="-1.575" width="0.127" layer="21"/>
+<wire x1="1.825" y1="-1.575" x2="1.725" y2="-1.575" width="0.127" layer="21"/>
+<wire x1="-1.6875" y1="-1.575" x2="-1.825" y2="-1.575" width="0.127" layer="21"/>
+<wire x1="-1.825" y1="-1.575" x2="-1.825" y2="-0.9" width="0.127" layer="21"/>
+<rectangle x1="-2.713625" y1="0.4557625" x2="-1.226125" y2="0.8307625" layer="29"/>
+<rectangle x1="-2.713625" y1="0.0257625" x2="-1.226125" y2="0.4007625" layer="29"/>
+<rectangle x1="-2.713625" y1="-0.4042375" x2="-1.226125" y2="-0.0292375" layer="29"/>
+<rectangle x1="-2.713625" y1="-0.8342375" x2="-1.226125" y2="-0.4592375" layer="29"/>
+<rectangle x1="0.764265625" y1="1.53735" x2="2.251765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="0.334265625" y1="1.53735" x2="1.821765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="-0.095734375" y1="1.53735" x2="1.391765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="-0.525734375" y1="1.53735" x2="0.961765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="-0.955734375" y1="1.53735" x2="0.531765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="-1.385734375" y1="1.53735" x2="0.101765625" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="-1.815734375" y1="1.53735" x2="-0.328234375" y2="1.91235" layer="29" rot="R270"/>
+<rectangle x1="0.758234375" y1="-1.91235" x2="2.245734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-2.241765625" y1="-1.91235" x2="-0.754265625" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-1.811765625" y1="-1.91235" x2="-0.324265625" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-1.381765625" y1="-1.91235" x2="0.105734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-0.951765625" y1="-1.91235" x2="0.535734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-0.521765625" y1="-1.91235" x2="0.965734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-0.091765625" y1="-1.91235" x2="1.395734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="0.338234375" y1="-1.91235" x2="1.825734375" y2="-1.53735" layer="29" rot="R90"/>
+<rectangle x1="-2.245734375" y1="1.53735" x2="-0.758234375" y2="1.91235" layer="29" rot="R270"/>
+<wire x1="-2.79" y1="0.9" x2="-1.78" y2="0.9" width="0.127" layer="39"/>
+<wire x1="-1.78" y1="0.9" x2="-1.76" y2="2.58" width="0.127" layer="39"/>
+<wire x1="-1.76" y1="2.58" x2="1.81" y2="2.58" width="0.127" layer="39"/>
+<wire x1="1.81" y1="2.58" x2="1.81" y2="0.91" width="0.127" layer="39"/>
+<wire x1="1.81" y1="0.91" x2="2.82" y2="0.91" width="0.127" layer="39"/>
+<wire x1="2.82" y1="0.91" x2="2.82" y2="-0.93" width="0.127" layer="39"/>
+<wire x1="2.82" y1="-0.93" x2="1.84" y2="-0.94" width="0.127" layer="39"/>
+<wire x1="1.84" y1="-0.94" x2="1.85" y2="-2.58" width="0.127" layer="39"/>
+<wire x1="1.85" y1="-2.58" x2="-1.77" y2="-2.57" width="0.127" layer="39"/>
+<wire x1="-1.77" y1="-2.57" x2="-1.77" y2="-0.91" width="0.127" layer="39"/>
+<wire x1="-1.77" y1="-0.91" x2="-2.79" y2="-0.91" width="0.127" layer="39"/>
+<wire x1="-2.79" y1="-0.91" x2="-2.79" y2="0.9" width="0.127" layer="39"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -2460,6 +2537,56 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM216R61E105KA12D " x="-170.18" y="-942.34" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="-170.18" y="-942.34" size="1.778" layer="27" display="off"/>
 </element>
+<element name="IMU1" library="lib_kenmei" package="LSM9DS1_LGA24L" value="LM9DS1" x="-176.53" y="-942.34">
+<attribute name="CREATOR" value="Kenmei" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://www.st.com/content/ccc/resource/technical/document/datasheet/1e/3f/2a/d6/25/eb/48/46/DM00103319.pdf/files/DM00103319.pdf/jcr:content/translations/en.DM00103319.pdf" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/stmicroelectronics/LSM9DS1TR/497-14946-1-ND/4988079" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="497-14946-1-ND" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="STMicroelectronics" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LSM9DS1TR" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="LM9DS1" x="-176.53" y="-942.34" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C48" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.22uF/50V" x="-181.61" y="-942.34">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H224KA01%23.pdf" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1670-1-ND" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1670-1-ND" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H224KA01L" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-181.61" y="-942.34" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C49" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="-186.69" y="-942.34">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-5523-1-ND" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73L" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-186.69" y="-942.34" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C50" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="-191.77" y="-942.34">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-5523-1-ND" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73L" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-191.77" y="-942.34" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C51" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="-196.85" y="-942.34">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+<attribute name="TESTED" value="NO" x="-196.85" y="-942.34" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2563,6 +2690,17 @@ design rules under a new name.</description>
 <contactref element="C41" pad="2"/>
 <contactref element="C40" pad="2"/>
 <contactref element="C39" pad="2"/>
+<contactref element="IMU1" pad="19"/>
+<contactref element="IMU1" pad="20"/>
+<contactref element="IMU1" pad="18"/>
+<contactref element="IMU1" pad="17"/>
+<contactref element="IMU1" pad="16"/>
+<contactref element="C49" pad="2"/>
+<contactref element="C48" pad="2"/>
+<contactref element="IMU1" pad="14"/>
+<contactref element="IMU1" pad="15"/>
+<contactref element="C50" pad="2"/>
+<contactref element="C51" pad="2"/>
 <wire x1="-92.96" y1="-920.551" x2="-94.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
 <wire x1="-97.591" y1="-916.92" x2="-94.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
 <wire x1="-97.591" y1="-916.42" x2="-97.591" y2="-916.92" width="0" layer="19" extent="1-1"/>
@@ -2589,6 +2727,17 @@ design rules under a new name.</description>
 <wire x1="-155.21" y1="-932.18" x2="-150.13" y2="-932.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-164.1" y1="-942.34" x2="-155.21" y2="-932.18" width="0" layer="19" extent="1-1"/>
 <wire x1="-169.18" y1="-942.34" x2="-164.1" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-174.555" y1="-942.555" x2="-169.18" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-174.555" y1="-942.985" x2="-174.555" y2="-942.555" width="0" layer="19" extent="1-1"/>
+<wire x1="-174.555" y1="-942.125" x2="-174.555" y2="-942.555" width="0" layer="19" extent="1-1"/>
+<wire x1="-174.555" y1="-941.695" x2="-174.555" y2="-942.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-175.025" y1="-940.615" x2="-174.555" y2="-941.695" width="0" layer="19" extent="1-1"/>
+<wire x1="-175.455" y1="-940.615" x2="-175.025" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-175.885" y1="-940.615" x2="-175.455" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-180.61" y1="-942.34" x2="-175.885" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-185.69" y1="-942.34" x2="-180.61" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-190.77" y1="-942.34" x2="-185.69" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-195.85" y1="-942.34" x2="-190.77" y2="-942.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-99.33" y1="-881.38" x2="-99.33" y2="-906.78" width="0" layer="19" extent="1-1"/>
 <wire x1="-96.25" y1="-881.38" x2="-99.33" y2="-881.38" width="0" layer="19" extent="1-1"/>
 <wire x1="-99.33" y1="-855.98" x2="-99.33" y2="-881.38" width="0" layer="19" extent="1-1"/>
@@ -2736,6 +2885,12 @@ design rules under a new name.</description>
 <contactref element="C46" pad="1"/>
 <contactref element="U6" pad="59"/>
 <contactref element="C47" pad="1"/>
+<contactref element="IMU1" pad="3"/>
+<contactref element="IMU1" pad="1"/>
+<contactref element="IMU1" pad="22"/>
+<contactref element="IMU1" pad="23"/>
+<contactref element="C50" pad="1"/>
+<contactref element="C51" pad="1"/>
 <wire x1="-93.96" y1="-920.551" x2="-94.46" y2="-920.551" width="0" layer="19" extent="1-1"/>
 <wire x1="-93.46" y1="-920.551" x2="-93.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
 <wire x1="-87.829" y1="-918.92" x2="-93.46" y2="-920.551" width="0" layer="19" extent="1-1"/>
@@ -2784,6 +2939,12 @@ design rules under a new name.</description>
 <wire x1="-160.29" y1="-942.34" x2="-136.89" y2="-919.48" width="0" layer="19" extent="1-1"/>
 <wire x1="-166.1" y1="-942.34" x2="-160.29" y2="-942.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-171.18" y1="-942.34" x2="-166.1" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-176.745" y1="-940.615" x2="-171.18" y2="-942.34" width="0" layer="19" extent="1-1"/>
+<wire x1="-177.175" y1="-940.615" x2="-176.745" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-178.035" y1="-940.615" x2="-177.175" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-178.505" y1="-942.125" x2="-178.035" y2="-940.615" width="0" layer="19" extent="1-1"/>
+<wire x1="-192.77" y1="-942.34" x2="-178.505" y2="-942.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-197.85" y1="-942.34" x2="-192.77" y2="-942.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.34" y1="-542.29" x2="-91.17" y2="-659.13" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.34" y1="-537.21" x2="-54.34" y2="-542.29" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.61" y1="-530.86" x2="-54.34" y2="-537.21" width="0" layer="19" extent="1-1"/>
@@ -2875,17 +3036,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="SDA">
 <contactref element="PWM_DRIVER" pad="27"/>
-<contactref element="R12" pad="1"/>
 <contactref element="U6" pad="26"/>
-<wire x1="-51.8" y1="-530.86" x2="-91.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
-<wire x1="7.9978" y1="-14.205" x2="-51.8" y2="-530.86" width="0" layer="19" extent="1-1"/>
+<contactref element="R13" pad="1"/>
+<contactref element="IMU1" pad="4"/>
+<wire x1="-178.505" y1="-942.555" x2="-91.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.61" y1="-530.86" x2="-91.96" y2="-920.551" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-14.205" x2="-55.61" y2="-530.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="PWM_DRIVER" pad="26"/>
-<contactref element="R13" pad="1"/>
 <contactref element="U6" pad="25"/>
-<wire x1="-55.61" y1="-530.86" x2="-92.46" y2="-920.551" width="0" layer="19" extent="1-1"/>
-<wire x1="7.9978" y1="-14.855" x2="-55.61" y2="-530.86" width="0" layer="19" extent="1-1"/>
+<contactref element="R12" pad="1"/>
+<contactref element="IMU1" pad="2"/>
+<wire x1="-178.505" y1="-941.695" x2="-92.46" y2="-920.551" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.8" y1="-530.86" x2="-92.46" y2="-920.551" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9978" y1="-14.855" x2="-51.8" y2="-530.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TEC_1_HOT">
 <contactref element="PWM_DRIVER" pad="6"/>
@@ -3367,6 +3532,16 @@ design rules under a new name.</description>
 <contactref element="U6" pad="12"/>
 <contactref element="R38" pad="1"/>
 <wire x1="-162.29" y1="-942.34" x2="-97.591" y2="-917.42" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$36">
+<contactref element="C49" pad="1"/>
+<contactref element="IMU1" pad="21"/>
+<wire x1="-176.315" y1="-940.615" x2="-187.69" y2="-942.34" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$37">
+<contactref element="IMU1" pad="24"/>
+<contactref element="C48" pad="1"/>
+<wire x1="-177.605" y1="-940.615" x2="-182.61" y2="-942.34" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

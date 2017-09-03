@@ -24,6 +24,12 @@ void TMP36::read() {
 	this->_temperature_F = (this->_temperature_C * (9.0 / 5.0)) + 32.0;	
 }
 
+void TMP36::demux_read(int voltage) {
+	float _voltage = ((voltage * this->_vcc) / 1024.0);
+	this->_temperature_C = (_voltage - 0.5) * 100;
+	this->_temperature_F = (this->_temperature_C * (9.0 / 5.0)) + 32.0;	
+}
+
 float TMP36::get_temperature_C() {
 	return this->_temperature_C;
 }

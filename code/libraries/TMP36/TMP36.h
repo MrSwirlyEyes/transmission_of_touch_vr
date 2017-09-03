@@ -14,6 +14,7 @@ class TMP36 {
         TMP36(byte _pin,float _vcc);
 
         void read();
+        void demux_read(int voltage);
         float get_temperature_C();
         float get_temperature_F();
 
