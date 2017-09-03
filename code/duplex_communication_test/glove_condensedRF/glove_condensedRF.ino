@@ -19,6 +19,12 @@
 #define VIBMIN 0
 #define VIBMAX 4095
 
+//defined vib motor values
+#define TECMIN 0
+#define TECMAX 3095 // 1.5V MAX on TECs
+
+#define TECDELAY 20
+
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 Radio radio(11);
 CD74HC4067 demux(s0,s1,s2,s3,sig_pin);
@@ -101,8 +107,8 @@ bool is_valid_pkt() {
 
 
 void start_up_sequence() {
-  delay(3000);
-  test_vibrotactiles();
+//  delay(3000);
+//  test_vibrotactiles();
   delay(3000);
   test_thermoelectrics();
   delay(3000);
@@ -144,6 +150,93 @@ void test_vibrotactiles() {
 }
 
 void test_thermoelectrics() {
+  actuate_thermoelectric(15,14);
+  actuate_thermoelectric(13,12);
+  actuate_thermoelectric(11,10);
+  actuate_thermoelectric(9,8);
+  actuate_thermoelectric(7,6);
   
+  actuate_all_thermoelectrics();
 }
 
+
+void actuate_thermoelectric(byte _en, byte _ph) {
+  
+  Serial.print("Actuating thermoelectric: ");
+  Serial.print("(");
+  Serial.print(_en);  Serial.print(",");
+  Serial.print(_en);  Serial.println(")");
+  pwm.setPWM(_ph, 0, 0);
+  drive_thermoelectric(_en);  
+
+  pwm.setPWM(_ph, 0, TECMAX);
+  drive_thermoelectric(_en);
+}
+
+void drive_thermoelectric(byte _en) {
+  for (int j = 0; j < 255; j++) {
+    Serial.println(j);
+    pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX));
+    delay(TECDELAY);
+  }
+  delay(500);
+  for (int j = 255; j >= 0; j--) {
+    Serial.println(j);
+    pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX));
+    delay(TECDELAY);
+  }
+  delay(500);
+}
+
+void actuate_all_thermoelectrics() {
+  Serial.print("Actuating ALL thermoelectrics: ");
+  pwm.setPWM(14, 0, 0);
+  pwm.setPWM(12, 0, 0);
+  pwm.setPWM(10, 0, 0);
+  pwm.setPWM(8, 0, 0);
+  pwm.setPWM(6, 0, 0);
+
+  for (int j = 0; j < 255; j++) {
+    for (int i = 7; i <= 15 ; i+=2) {
+      
+      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      delay(TECDELAY);
+    }
+    Serial.println(j);
+  }
+  delay(500);
+  for (int j = 255; j >= 0; j--) {
+    for (int i = 7; i <= 15 ; i+=2) {
+      
+      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      delay(TECDELAY);
+    }
+    Serial.println(j);
+  }
+  
+  delay(250);
+  pwm.setPWM(14, 0, TECMAX);
+  pwm.setPWM(12, 0, TECMAX);
+  pwm.setPWM(10, 0, TECMAX);
+  pwm.setPWM(8, 0, TECMAX);
+  pwm.setPWM(6, 0, TECMAX);
+  delay(250);
+
+  for (int j = 0; j < 255; j++) {
+    for (int i = 7; i <= 15 ; i+=2) {
+      
+      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      delay(TECDELAY);
+    }
+    Serial.println(j);
+  }
+  delay(500);
+  for (int j = 255; j >= 0; j--) {
+    for (int i = 7; i <= 15 ; i+=2) {
+      
+      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      delay(TECDELAY);
+    }
+    Serial.println(j);
+  }
+}
