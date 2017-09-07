@@ -38,8 +38,8 @@ TMP36 temp[NUM_TEMP_SENSORS] = {
 #define sig_pin 0
 
 //defined flex sensor values
-#define FLEXMIN 400
-#define FLEXMAX 700
+#define FLEXMIN 450
+#define FLEXMAX 800
 
 //defined servo values
 #define SERVOMIN  130
@@ -51,18 +51,18 @@ CD74HC4067 demux(s0,s1,s2,s3,sig_pin);
 
 //servo motors
 struct GlovePacket {
-  int gThumb, gPointer, gMiddle, gRing, gPinky;
-  int gFinger[5] = {gThumb, gPointer, gMiddle, gRing, gPinky};
+//  int gThumb, gPointer, gMiddle, gRing, gPinky;
+  int gFinger[5] = {0,};
   int gCheckSum = 0;
 } gpkt;
 
 
 //pressure sensors
 struct ArmPacket {
-  int aThumb, aPointer, aMiddle, aRing, aPinky;
-  int aFinger[5] = {aThumb, aPointer, aMiddle, aRing, aPinky};
+//  int aThumb, aPointer, aMiddle, aRing, aPinky;
+  int aFinger[5] = {0, 1, 2, 3, 4};
   float temp_readings[5]={0.0,};
-  int aCheckSum = 0;
+  float aCheckSum = 0.0;
 } apkt;
 
 void setup() 
@@ -91,14 +91,31 @@ void loop()
   //GLOVE PACKET: RECEIVING FLEX VALS FROM GLOVE TO MOVE SERVO MOTORS ON ROBO ARM
   if(radio.rfAvailable()) {
     radio.rfRead((uint8_t *) & gpkt, sizeof(GlovePacket));
+    radio.rfFlush();
   }
   int gCheckSumTot = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];
   if(gCheckSumTot == gpkt.gCheckSum) {
     for (int i = 0; i < 5; i++) {
-      pwm.setPWM(i, 0, map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+      int calibrated_servo = map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX);
+      Serial.println(calibrated_servo);
+      pwm.setPWM(i, 0, calibrated_servo);
     }
+    Serial.print("(");
+  for ( int i = 0 ; i < 5 ; i++ ) {
+    Serial.print(gpkt.gFinger[i]);
+//    if ( i < 4 ) {
+      Serial.print(",");
+//    }
+  }
+  Serial.print(gpkt.gCheckSum);
+  Serial.println(")");
+
+  } else {
+    Serial.print("ERROR, checksum=");
+    Serial.println(gpkt.gCheckSum);
   }
 
+  
   //ARM PACKET: SENDING PRESSURE SENSOR VALS FROM ROBO ARM TO MOVE VIB MOTORS
   for (int i = 0; i < 5; i++){
     delay(5);
@@ -110,22 +127,23 @@ void loop()
   // Get temp readings
   for (int i = 0; i < 5; i++){
     
-//    apkt.aFinger[i] = demux.read_channel(i);
 //    Serial.println(demux.read_channel(temp_pin[i]));
     temp[i].demux_read(demux.read_channel(temp_pin[i]));
+    delay(1);
     apkt.temp_readings[i]=temp[i].get_temperature_C();
-    delay(7);
-//    apkt.aFinger[i] = demux.read_channel(i);
-    Serial.println(demux.read_channel(temp_pin[i]));
+    delay(4);
+//    Serial.println(demux.read_channel(temp_pin[i]));
     temp[i].demux_read(demux.read_channel(temp_pin[i]));
+    delay(1);
     apkt.temp_readings[i]=temp[i].get_temperature_C();
-    delay(7);
+    delay(4);
   }
   
-  apkt.aCheckSum = apkt.aThumb + apkt.aPointer + apkt.aMiddle + apkt.aRing + apkt.aPinky;
+  apkt.aCheckSum = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4]
+                  + apkt.temp_readings[0] + apkt.temp_readings[1] + apkt.temp_readings[2] + apkt.temp_readings[3] + apkt.temp_readings[4];
   radio.rfWrite((uint8_t *) & apkt, sizeof(ArmPacket));
 
-  print_sensor_readings();
+//  print_sensor_readings();
   
 }
 

@@ -31,16 +31,17 @@ CD74HC4067 demux(s0,s1,s2,s3,sig_pin);
 
 //flex sensors
 struct GlovePacket {
-  int gThumb, gPointer, gMiddle, gRing, gPinky;
-  int gFinger[5] = {gThumb, gPointer, gMiddle, gRing, gPinky};
+//  int gThumb, gPointer, gMiddle, gRing, gPinky;
+  int gFinger[5] = {0,};
   int gCheckSum = 0;
 } gpkt;
 
 //vibration motors
 struct ArmPacket {
-  int aThumb, aPointer, aMiddle, aRing, aPinky;
-  int aFinger[5] = {aThumb, aPointer, aMiddle, aRing, aPinky};
-  int aCheckSum = 0;
+//  int aThumb, aPointer, aMiddle, aRing, aPinky;
+  int aFinger[5] = {0,};
+  float temp_readings[5]={0.0,};
+  float aCheckSum = 0.0;
 } apkt;
 
 void setup() 
@@ -56,7 +57,7 @@ void setup()
     apkt.aFinger[i] = 0;
   }
   
-  start_up_sequence();
+//  start_up_sequence();
 }
 
 void loop() {
@@ -72,22 +73,46 @@ void loop() {
     for (int i = 0; i < 5; i++) {
       pwm.setPWM(i, 0, map(apkt.aFinger[i], PRESSMIN, PRESSMAX, VIBMIN,VIBMAX));
     }
+    Serial.print("(");
+  for(int i = 0; i < 5; i++) {
+    Serial.print(apkt.aFinger[i]);
+    Serial.print(",");
+  }
+
+  for(int i = 0; i < 5; i++) {
+    Serial.print(apkt.temp_readings[i]);
+//    if( i < 4 ) {
+      Serial.print(",");
+//    }
+  }
+  Serial.print(apkt.aCheckSum);
+  Serial.println(")");
+  } else {
+    Serial.println("ERROR");
   }
 }
 
 
 void read_flex_sensors() {
-  for (int i = 0; i < 5; i++){
-    delay(5);
+//  Serial.print("(");
+  for (int i = 0; i < 5; i++){    
     gpkt.gFinger[i] = demux.read_channel(i);
     delay(5);
     gpkt.gFinger[i] = demux.read_channel(i);
+    delay(5);
+//    Serial.print(gpkt.gFinger[i]);
+//    if(i<4)
+//     Serial.print(",");    
   }
+  
+  gpkt.gCheckSum = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];
+//  Serial.print(gpkt.gCheckSum);
+//  Serial.println(")");
 }
 
 
 void transmit() {
-  gpkt.gCheckSum = gpkt.gThumb + gpkt.gPointer + gpkt.gMiddle + gpkt.gRing + gpkt.gPinky;
+  
   radio.rfWrite((uint8_t *) & gpkt, sizeof(GlovePacket));
 }
 
@@ -95,12 +120,14 @@ void transmit() {
 void receive() {
   if(radio.rfAvailable()) {
     radio.rfRead((uint8_t *) & apkt, sizeof(ArmPacket));
-  }
+    radio.rfFlush();
+  } 
 }
 
 
 bool is_valid_pkt() {
-  int aCheckSumTot = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4];
+  float aCheckSumTot = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4]
+                     + apkt.temp_readings[0] + apkt.temp_readings[1] + apkt.temp_readings[2] + apkt.temp_readings[3] + apkt.temp_readings[4];
 
   return (aCheckSumTot == apkt.aCheckSum);
 }
