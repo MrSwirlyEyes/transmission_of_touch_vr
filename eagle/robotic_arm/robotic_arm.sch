@@ -3948,7 +3948,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="D6" library="MrSwirlyEyes" deviceset="DIODE_GEN-PURP" device="SMD_GP_1A-50V-SOD123F" value="1A/50V"/>
 <part name="GND125" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="D7" library="MrSwirlyEyes" deviceset="DIODE_GEN-PURP" device="SMD_GP_1A-50V-SOD123F" value="1A/50V"/>
-<part name="GND126" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="C80" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_220UF-16V-20%" value="220uF/16V"/>
 <part name="C81" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C82" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_10UF-25V-10%" value="10uF/25V"/>
@@ -4056,6 +4055,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY49" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="NGND24" library="MrSwirlyEyes" deviceset="AGND" device=""/>
 <part name="SUPPLY50" library="MrSwirlyEyes" deviceset="AVCC" device=""/>
+<part name="NGND27" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -4261,7 +4261,6 @@ RESISTORS</text>
 <instance part="D6" gate="G$1" x="273.05" y="185.42" rot="R90"/>
 <instance part="GND125" gate="GND" x="274.32" y="154.94"/>
 <instance part="D7" gate="G$1" x="273.05" y="139.7" rot="R90"/>
-<instance part="GND126" gate="GND" x="274.32" y="109.22"/>
 <instance part="C80" gate="G$1" x="210.82" y="170.18"/>
 <instance part="C81" gate="G$1" x="233.68" y="170.18"/>
 <instance part="C82" gate="G$1" x="226.06" y="170.18"/>
@@ -4369,6 +4368,7 @@ RESISTORS</text>
 <instance part="SUPPLY49" gate="5V" x="294.64" y="134.62"/>
 <instance part="NGND24" gate="G$1" x="388.62" y="297.18"/>
 <instance part="SUPPLY50" gate="G$1" x="200.66" y="317.5"/>
+<instance part="NGND27" gate="G$1" x="274.32" y="109.22"/>
 </instances>
 <busses>
 </busses>
@@ -4527,27 +4527,6 @@ RESISTORS</text>
 <wire x1="264.16" y1="170.18" x2="261.62" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="170.18" x2="261.62" y2="160.02" width="0.1524" layer="91"/>
 <junction x="261.62" y="160.02"/>
-</segment>
-<segment>
-<wire x1="261.62" y1="116.84" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="114.3" x2="274.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="114.3" x2="287.02" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="119.38" x2="274.32" y2="114.3" width="0.1524" layer="91"/>
-<junction x="274.32" y="114.3"/>
-<wire x1="274.32" y1="114.3" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="GND126" gate="GND" pin="GND"/>
-<pinref part="C83" gate="G$1" pin="2"/>
-<pinref part="C94" gate="G$1" pin="2"/>
-<wire x1="294.64" y1="116.84" x2="294.64" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
-<junction x="287.02" y="114.3"/>
-<pinref part="C98" gate="G$1" pin="2"/>
-<pinref part="C97" gate="G$1" pin="2"/>
-<wire x1="254" y1="116.84" x2="254" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="254" y1="114.3" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
-<junction x="261.62" y="114.3"/>
-<pinref part="VREG1" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C80" gate="G$1" pin="K"/>
@@ -5571,6 +5550,27 @@ RESISTORS</text>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="158.75" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="G$1" pin="NGND"/>
+</segment>
+<segment>
+<wire x1="261.62" y1="116.84" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="114.3" x2="274.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="114.3" x2="287.02" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="119.38" x2="274.32" y2="114.3" width="0.1524" layer="91"/>
+<junction x="274.32" y="114.3"/>
+<wire x1="274.32" y1="114.3" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="C83" gate="G$1" pin="2"/>
+<pinref part="C94" gate="G$1" pin="2"/>
+<wire x1="294.64" y1="116.84" x2="294.64" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="114.3" x2="287.02" y2="114.3" width="0.1524" layer="91"/>
+<junction x="287.02" y="114.3"/>
+<pinref part="C98" gate="G$1" pin="2"/>
+<pinref part="C97" gate="G$1" pin="2"/>
+<wire x1="254" y1="116.84" x2="254" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="254" y1="114.3" x2="261.62" y2="114.3" width="0.1524" layer="91"/>
+<junction x="261.62" y="114.3"/>
+<pinref part="VREG1" gate="G$1" pin="GND"/>
+<pinref part="NGND27" gate="G$1" pin="NGND"/>
 </segment>
 </net>
 <net name="N$43" class="0">
