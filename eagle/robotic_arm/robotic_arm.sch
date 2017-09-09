@@ -519,7 +519,7 @@
 <text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 <wire x1="3.778" y1="0" x2="4.286" y2="0" width="0.1524" layer="21"/>
 <text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="10" align="center">CHECK DIAMETER OF LEADS</text>
-<circle x="0" y="0" radius="7.25" width="0.1524" layer="39"/>
+<circle x="0" y="0" radius="6.75" width="0.1524" layer="39"/>
 </package>
 <package name="CAP_POL_DIA16-LS7.5-H37.5">
 <wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
