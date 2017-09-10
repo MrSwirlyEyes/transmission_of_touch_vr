@@ -4144,6 +4144,7 @@ RESISTORS</text>
 <text x="246.38" y="419.1" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">ROBOTIC ARM</text>
 <text x="246.38" y="406.4" size="8.128" layer="97" font="vector" ratio="20" align="bottom-center">Rev 1</text>
 <text x="228.6" y="350.52" size="0.8128" layer="97" font="vector" ratio="20" align="bottom-center">add diode CD1206-S01575</text>
+<text x="287.02" y="269.24" size="1.778" layer="91">WIRE DEMUX</text>
 </plain>
 <instances>
 <instance part="TEMP_PINKY" gate="G$1" x="421.64" y="157.48"/>
@@ -4805,62 +4806,62 @@ RESISTORS</text>
 </net>
 <net name="SERVO_PINKY" class="0">
 <segment>
-<pinref part="SERVO_PINKY" gate="G$1" pin="SIG"/>
-<wire x1="50.8" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<label x="50.8" y="162.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
 <pinref part="PWM_DRIVER" gate="G$1" pin="PWM0"/>
 <wire x1="86.36" y1="335.28" x2="83.82" y2="335.28" width="0.1524" layer="91"/>
 <label x="86.36" y="335.28" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SERVO_WRIST" gate="G$1" pin="SIG"/>
+<wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="50.8" y="35.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
 </net>
 <net name="SERVO_RING" class="0">
-<segment>
-<pinref part="SERVO_RING" gate="G$1" pin="SIG"/>
-<wire x1="50.8" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
-<label x="50.8" y="137.16" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
 <segment>
 <pinref part="PWM_DRIVER" gate="G$1" pin="PWM1"/>
 <wire x1="86.36" y1="332.74" x2="83.82" y2="332.74" width="0.1524" layer="91"/>
 <label x="86.36" y="332.74" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
-</net>
-<net name="SERVO_MIDDLE" class="0">
-<segment>
-<pinref part="SERVO_MIDDLE" gate="G$1" pin="SIG"/>
-<wire x1="50.8" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
-<label x="50.8" y="111.76" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
-<pinref part="PWM_DRIVER" gate="G$1" pin="PWM2"/>
-<wire x1="86.36" y1="330.2" x2="83.82" y2="330.2" width="0.1524" layer="91"/>
-<label x="86.36" y="330.2" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-</net>
-<net name="SERVO_INDEX" class="0">
-<segment>
-<pinref part="SERVO_INDEX" gate="G$1" pin="SIG"/>
-<wire x1="50.8" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
-<label x="50.8" y="86.36" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
-<pinref part="PWM_DRIVER" gate="G$1" pin="PWM3"/>
-<wire x1="86.36" y1="327.66" x2="83.82" y2="327.66" width="0.1524" layer="91"/>
-<label x="86.36" y="327.66" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-</net>
-<net name="SERVO_THUMB" class="0">
 <segment>
 <pinref part="SERVO_THUMB" gate="G$1" pin="SIG"/>
 <wire x1="50.8" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
 <label x="50.8" y="60.96" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
+</net>
+<net name="SERVO_MIDDLE" class="0">
+<segment>
+<pinref part="PWM_DRIVER" gate="G$1" pin="PWM2"/>
+<wire x1="86.36" y1="330.2" x2="83.82" y2="330.2" width="0.1524" layer="91"/>
+<label x="86.36" y="330.2" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SERVO_INDEX" gate="G$1" pin="SIG"/>
+<wire x1="50.8" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
+<label x="50.8" y="86.36" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+</net>
+<net name="SERVO_INDEX" class="0">
+<segment>
+<pinref part="PWM_DRIVER" gate="G$1" pin="PWM3"/>
+<wire x1="86.36" y1="327.66" x2="83.82" y2="327.66" width="0.1524" layer="91"/>
+<label x="86.36" y="327.66" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SERVO_MIDDLE" gate="G$1" pin="SIG"/>
+<wire x1="50.8" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="50.8" y="111.76" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+</net>
+<net name="SERVO_THUMB" class="0">
 <segment>
 <pinref part="PWM_DRIVER" gate="G$1" pin="PWM4"/>
 <wire x1="86.36" y1="325.12" x2="83.82" y2="325.12" width="0.1524" layer="91"/>
 <label x="86.36" y="325.12" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SERVO_RING" gate="G$1" pin="SIG"/>
+<wire x1="50.8" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
+<label x="50.8" y="137.16" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PWM10" class="0">
@@ -4957,9 +4958,9 @@ RESISTORS</text>
 <label x="419.1" y="312.42" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEMP_PINKY" gate="G$1" pin="VOUT"/>
-<wire x1="426.72" y1="157.48" x2="429.26" y2="157.48" width="0.1524" layer="91"/>
-<label x="429.26" y="157.48" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="TEMP_THUMB" gate="G$1" pin="VOUT"/>
+<wire x1="426.72" y1="38.1" x2="429.26" y2="38.1" width="0.1524" layer="91"/>
+<label x="429.26" y="38.1" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEMP_RING" class="0">
@@ -4969,9 +4970,9 @@ RESISTORS</text>
 <label x="419.1" y="309.88" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEMP_RING" gate="G$1" pin="VOUT"/>
-<wire x1="426.72" y1="127" x2="429.26" y2="127" width="0.1524" layer="91"/>
-<label x="429.26" y="127" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="TEMP_INDEX" gate="G$1" pin="VOUT"/>
+<wire x1="426.72" y1="66.04" x2="429.26" y2="66.04" width="0.1524" layer="91"/>
+<label x="429.26" y="66.04" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEMP_MIDDLE" class="0">
@@ -4993,9 +4994,9 @@ RESISTORS</text>
 <label x="419.1" y="304.8" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEMP_INDEX" gate="G$1" pin="VOUT"/>
-<wire x1="426.72" y1="66.04" x2="429.26" y2="66.04" width="0.1524" layer="91"/>
-<label x="429.26" y="66.04" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="TEMP_RING" gate="G$1" pin="VOUT"/>
+<wire x1="426.72" y1="127" x2="429.26" y2="127" width="0.1524" layer="91"/>
+<label x="429.26" y="127" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PWM6" class="0">
@@ -5068,9 +5069,9 @@ RESISTORS</text>
 <label x="419.1" y="302.26" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="TEMP_THUMB" gate="G$1" pin="VOUT"/>
-<wire x1="426.72" y1="38.1" x2="429.26" y2="38.1" width="0.1524" layer="91"/>
-<label x="429.26" y="38.1" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="TEMP_PINKY" gate="G$1" pin="VOUT"/>
+<wire x1="426.72" y1="157.48" x2="429.26" y2="157.48" width="0.1524" layer="91"/>
+<label x="429.26" y="157.48" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="SSN" class="0">
@@ -5708,14 +5709,14 @@ RESISTORS</text>
 </net>
 <net name="SERVO_WRIST" class="0">
 <segment>
-<pinref part="SERVO_WRIST" gate="G$1" pin="SIG"/>
-<wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="35.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
 <pinref part="PWM_DRIVER" gate="G$1" pin="PWM5"/>
 <wire x1="86.36" y1="322.58" x2="83.82" y2="322.58" width="0.1524" layer="91"/>
 <label x="86.36" y="322.58" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SERVO_PINKY" gate="G$1" pin="SIG"/>
+<wire x1="50.8" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
+<label x="50.8" y="162.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
