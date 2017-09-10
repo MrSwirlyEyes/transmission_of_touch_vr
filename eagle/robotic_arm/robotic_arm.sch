@@ -1465,24 +1465,6 @@
 <pad name="+" x="-1.6" y="0" drill="1" diameter="2"/>
 <pad name="-" x="1.6" y="0" drill="1" diameter="2"/>
 </package>
-<package name="NET_BRIDGE">
-<smd name="P$1" x="0" y="0" dx="1" dy="0.2" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="P$2" x="0.05" y="0" dx="1" dy="0.2" layer="1" stop="no" thermals="no" cream="no"/>
-<wire x1="-0.6" y1="0.15" x2="0.6" y2="0.15" width="0.127" layer="39"/>
-<wire x1="0.6" y1="0.15" x2="0.6" y2="-0.15" width="0.127" layer="39"/>
-<wire x1="0.6" y1="-0.15" x2="-0.6" y2="-0.15" width="0.127" layer="39"/>
-<wire x1="-0.6" y1="-0.15" x2="-0.6" y2="0.15" width="0.127" layer="39"/>
-<wire x1="-0.5" y1="0.1" x2="0.5" y2="0.1" width="0.127" layer="51"/>
-<wire x1="0.5" y1="0.1" x2="0.5" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="0.5" y1="-0.1" x2="-0.5" y2="-0.1" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="-0.1" x2="-0.5" y2="0.1" width="0.127" layer="51"/>
-<wire x1="-0.4492" y1="0.1" x2="-0.5" y2="0.1" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="0.1" x2="-0.5" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-0.1" x2="-0.4492" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.4508" y1="-0.1" x2="0.5" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.5" y1="-0.1" x2="0.5" y2="0.1" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.1" x2="0.4508" y2="0.1" width="0.127" layer="21"/>
-</package>
 <package name="SW_SPDT_SLIDE_RA_SMD_4V_300MA">
 <wire x1="-3.35" y1="1.3" x2="-3.35" y2="-1.3" width="0.127" layer="51"/>
 <wire x1="-3.35" y1="-1.3" x2="3.35" y2="-1.3" width="0.127" layer="51"/>
@@ -2060,13 +2042,6 @@
 <pin name="P" x="-5.08" y="0" visible="off" length="middle"/>
 <wire x1="1.524" y1="0" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="NET_BRIDGE">
-<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.6096" layer="94"/>
-<pin name="P$1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<text x="-5.08" y="-2.54" size="1.016" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="2.54" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="NGND">
 <description>&lt;h3&gt;Ground Supply&lt;/h3&gt;</description>
@@ -3417,30 +3392,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
-<deviceset name="NET_BRIDGE">
-<description>Used to bridge two connections without the use of a zero-ohm resistor.
- This model has no tStop objects, so the mask will be placed on top.</description>
-<gates>
-<gate name="G$1" symbol="NET_BRIDGE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="NET_BRIDGE">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="BRIAN"/>
-<attribute name="DIST" value="''"/>
-<attribute name="DISTPN" value="''"/>
-<attribute name="MFR" value="''"/>
-<attribute name="MPN" value="''"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="NGND" prefix="NGND">
 <description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
@@ -3823,6 +3774,69 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-PowerSymbols">
+<description>&lt;h3&gt;SparkFun Power Symbols&lt;/h3&gt;
+This library contains power, ground, and voltage-supply symbols.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="2PT_GND_TIE">
+<smd name="P$1" x="0" y="0.635" dx="1.27" dy="0.635" layer="1" stop="no" cream="no"/>
+<smd name="P$2" x="0" y="-0.635" dx="1.27" dy="0.635" layer="1" stop="no" cream="no"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.4064" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="2PT_GND_TIE">
+<wire x1="-3.556" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="-2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-3.556" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.556" y1="-2.54" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.556" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-4.064" width="0.1524" layer="94" style="shortdash"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2PT_GND_TIE" prefix="SUPPLY">
+<description>&lt;h3&gt;Dual Ground Supply&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for connecting two grounds.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11611"&gt;SparkFun AutoDriver - Stepper Motor Driver&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="2PT_GND_TIE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2PT_GND_TIE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3941,7 +3955,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND123" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="SUPPLY84" library="MrSwirlyEyes" deviceset="VCC" device=""/>
 <part name="BATT1" library="MrSwirlyEyes" deviceset="BATTERY" device="PTH_HOLES"/>
-<part name="U$1" library="MrSwirlyEyes" deviceset="NET_BRIDGE" device=""/>
 <part name="GND124" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="NGND1" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SW1" library="MrSwirlyEyes" deviceset="SWITCH_SPDT" device="5A-28V_13L-7W" value="5A/28V"/>
@@ -3955,7 +3968,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND128" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="GND129" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="SUPPLY85" library="MrSwirlyEyes" deviceset="VCC" device=""/>
-<part name="U$2" library="MrSwirlyEyes" deviceset="NET_BRIDGE" device=""/>
 <part name="L1" library="MrSwirlyEyes" deviceset="INDUCTOR" device="SMD-805_10UH-0.5A-0.65OHM-10%" value="10uH"/>
 <part name="C83" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C84" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
@@ -4056,6 +4068,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="NGND24" library="MrSwirlyEyes" deviceset="AGND" device=""/>
 <part name="SUPPLY50" library="MrSwirlyEyes" deviceset="AVCC" device=""/>
 <part name="NGND27" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
+<part name="SUPPLY51" library="SparkFun-PowerSymbols" deviceset="2PT_GND_TIE" device=""/>
+<part name="SUPPLY52" library="SparkFun-PowerSymbols" deviceset="2PT_GND_TIE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4255,7 +4269,6 @@ RESISTORS</text>
 <instance part="GND123" gate="GND" x="154.94" y="27.94"/>
 <instance part="SUPPLY84" gate="VCC" x="154.94" y="48.26"/>
 <instance part="BATT1" gate="G$1" x="170.18" y="165.1" rot="R270"/>
-<instance part="U$1" gate="G$1" x="137.16" y="137.16" rot="R90"/>
 <instance part="GND124" gate="GND" x="152.4" y="127"/>
 <instance part="NGND1" gate="G$1" x="137.16" y="127"/>
 <instance part="SW1" gate="G$1" x="185.42" y="172.72"/>
@@ -4269,7 +4282,6 @@ RESISTORS</text>
 <instance part="GND128" gate="GND" x="226.06" y="160.02"/>
 <instance part="GND129" gate="GND" x="233.68" y="160.02"/>
 <instance part="SUPPLY85" gate="VCC" x="294.64" y="177.8"/>
-<instance part="U$2" gate="G$1" x="167.64" y="137.16" rot="R270"/>
 <instance part="L1" gate="G$1" x="302.26" y="175.26"/>
 <instance part="C83" gate="G$1" x="287.02" y="121.92"/>
 <instance part="C84" gate="G$1" x="218.44" y="170.18"/>
@@ -4360,7 +4372,7 @@ RESISTORS</text>
 <instance part="GND5" gate="GND" x="287.02" y="30.48"/>
 <instance part="SUPPLY47" gate="VCC" x="287.02" y="43.18"/>
 <instance part="SUPPLY48" gate="G$1" x="309.88" y="177.8"/>
-<instance part="NGND2" gate="G$1" x="167.64" y="127"/>
+<instance part="NGND2" gate="G$1" x="180.34" y="127"/>
 <instance part="NGND25" gate="G$1" x="368.3" y="327.66"/>
 <instance part="NGND26" gate="G$1" x="378.46" y="327.66"/>
 <instance part="SUPPLY18" gate="G$1" x="388.62" y="342.9"/>
@@ -4370,6 +4382,8 @@ RESISTORS</text>
 <instance part="NGND24" gate="G$1" x="388.62" y="297.18"/>
 <instance part="SUPPLY50" gate="G$1" x="200.66" y="317.5"/>
 <instance part="NGND27" gate="G$1" x="274.32" y="109.22"/>
+<instance part="SUPPLY51" gate="G$1" x="144.78" y="144.78"/>
+<instance part="SUPPLY52" gate="G$1" x="172.72" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -4492,16 +4506,15 @@ RESISTORS</text>
 </segment>
 <segment>
 <pinref part="GND124" gate="GND" pin="GND"/>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
 <wire x1="152.4" y1="144.78" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="142.24" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="144.78" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
 <junction x="152.4" y="144.78"/>
 <pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="144.78" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="GND@2"/>
 <wire x1="149.86" y1="167.64" x2="152.4" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="167.64" x2="152.4" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY51" gate="G$1" pin="P$2"/>
+<wire x1="152.4" y1="144.78" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="256.54" y1="162.56" x2="256.54" y2="160.02" width="0.1524" layer="91"/>
@@ -5452,9 +5465,10 @@ RESISTORS</text>
 </net>
 <net name="NGND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="NGND1" gate="G$1" pin="NGND"/>
+<wire x1="137.16" y1="129.54" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY51" gate="G$1" pin="P$1"/>
+<wire x1="137.16" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="30.48" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
@@ -5589,8 +5603,7 @@ RESISTORS</text>
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="144.78" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<wire x1="167.64" y1="142.24" x2="167.64" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY52" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -5906,11 +5919,6 @@ RESISTORS</text>
 <pinref part="NGND3" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<wire x1="167.64" y1="132.08" x2="167.64" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="NGND2" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="368.3" y1="330.2" x2="368.3" y2="332.74" width="0.1524" layer="91"/>
 <pinref part="NGND25" gate="G$1" pin="AGND"/>
@@ -5929,6 +5937,12 @@ RESISTORS</text>
 <wire x1="391.16" y1="302.26" x2="388.62" y2="302.26" width="0.1524" layer="91"/>
 <junction x="388.62" y="302.26"/>
 <pinref part="NGND24" gate="G$1" pin="AGND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY52" gate="G$1" pin="P$2"/>
+<wire x1="177.8" y1="144.78" x2="180.34" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="144.78" x2="180.34" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="NGND2" gate="G$1" pin="AGND"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
