@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -33,13 +33,13 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
@@ -59,8 +59,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -2266,16 +2266,16 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="68016-406HLF" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="PRICE" value="0.33" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="BATT1" library="MrSwirlyEyes" package="DUAL_PTH_PADS" value="BATTERYPTH_HOLES" x="74.422" y="29.718"/>
-<element name="SW1" library="MrSwirlyEyes" package="SW-SLIDE_SPDT_5A-28V_13L-7W" value="5A/28V" x="76.962" y="41.148" rot="R90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="https://www.e-switch.com/system/asset/product_line/data_sheet/129/100.pdf" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=%09EG2355-ND" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="EG2355-ND" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="E-Switch" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="100SP1T1B4M2QE" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TESTED" value="NO" x="494.03" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="BATT1" library="MrSwirlyEyes" package="DUAL_PTH_PADS" value="BATTERYPTH_HOLES" x="75.692" y="30.734" rot="R270"/>
+<element name="SW1" library="MrSwirlyEyes" package="SW-SLIDE_SPDT_5A-28V_13L-7W" value="5A/28V" x="75.692" y="41.148" rot="R90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="https://www.e-switch.com/system/asset/product_line/data_sheet/129/100.pdf" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=%09EG2355-ND" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="EG2355-ND" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="E-Switch" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="100SP1T1B4M2QE" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="NO" x="492.76" y="-467.868" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D6" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="1A/50V" x="41.91" y="37.084">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-503.428" y="-288.798" size="1.778" layer="27" display="off"/>
@@ -2356,14 +2356,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="EEE-FK1C101P" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="L2" library="MrSwirlyEyes" package="INDUCTOR_SMD-805" value="10uH" x="81.026" y="21.844" rot="MR90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CB2012T100KR&amp;fileName=CB2012T100KR_SS&amp;mode=specSheetDownload" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-2452-1-ND" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTPN" value="587-2452-1-ND" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MFR" value="Taiyo Yuden" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="CB2012T100KR" x="-241.3" y="-549.148" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="L2" library="MrSwirlyEyes" package="INDUCTOR_SMD-805" value="10uH" x="81.026" y="26.416" rot="MR90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CB2012T100KR&amp;fileName=CB2012T100KR_SS&amp;mode=specSheetDownload" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-2452-1-ND" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTPN" value="587-2452-1-ND" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFR" value="Taiyo Yuden" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="CB2012T100KR" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C85" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="1uF/25V" x="13.208" y="46.228">
 <attribute name="CREATOR" value="Kenmei" x="-553.72" y="-276.098" size="1.778" layer="27" display="off"/>
@@ -2585,8 +2585,8 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="CGRKM4001-HF" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="TESTED" value="NO" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="SUPPLY51" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="73.152" y="20.201" rot="MR180"/>
-<element name="SUPPLY52" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="81.026" y="24.892" rot="MR180"/>
+<element name="SUPPLY51" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="81.4" y="14.986" rot="MR180"/>
+<element name="SUPPLY52" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="81.026" y="29.21" rot="MR180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2652,10 +2652,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="10.16" y="-5.08"/>
 </polygon>
 <contactref element="SUPPLY51" pad="P$2"/>
-<wire x1="76.32" y1="20.836" x2="73.152" y2="20.836" width="0.3048" layer="16"/>
-<wire x1="81.026" y1="20.844" x2="79.748" y2="20.836" width="0.3048" layer="16"/>
-<wire x1="79.748" y1="20.836" x2="76.32" y2="20.836" width="0.3048" layer="16"/>
-<wire x1="64.516" y1="25.544" x2="73.152" y2="20.836" width="0" layer="19" extent="1-16"/>
+<wire x1="81.4" y1="15.621" x2="81.4" y2="16.898" width="0.3048" layer="16"/>
+<wire x1="81.4" y1="16.898" x2="81.28" y2="17.018" width="0.3048" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="PWM_DRIVER" pad="28"/>
@@ -3162,7 +3160,7 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="N$41">
 <contactref element="JP1" pad="DTR"/>
 <contactref element="C79" pad="1"/>
-<wire x1="30.734" y1="51.546" x2="30.734" y2="54.356" width="0" layer="19" extent="1-1"/>
+<wire x1="30.734" y1="51.546" x2="30.734" y2="54.356" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$42">
 <contactref element="JP1" pad="CTS"/>
@@ -3201,27 +3199,19 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="54.864" y="22.86"/>
 </polygon>
 <polygon width="0.1524" layer="16" isolate="0.254" rank="5">
-<vertex x="91.44" y="22.86"/>
+<vertex x="91.44" y="14.732"/>
 <vertex x="91.44" y="-7.62"/>
 <vertex x="29.972" y="-7.62"/>
 <vertex x="29.972" y="27.94"/>
-<vertex x="49.784" y="27.94"/>
-<vertex x="54.864" y="22.86"/>
+<vertex x="55.88" y="27.94"/>
+<vertex x="55.88" y="14.732"/>
 </polygon>
 <contactref element="SUPPLY51" pad="P$1"/>
-<wire x1="73.152" y1="19.566" x2="73.152" y2="18.796" width="0.3048" layer="16"/>
-</signal>
-<signal name="N$43">
-<contactref element="BATT1" pad="+"/>
-<contactref element="SW1" pad="P$2"/>
-<contactref element="J2" pad="PWR"/>
-<wire x1="72.822" y1="29.718" x2="76.962" y2="41.148" width="0" layer="19" extent="1-1"/>
-<wire x1="70.02" y1="20.836" x2="72.822" y2="29.718" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$38">
 <contactref element="L2" pad="2"/>
 <contactref element="SUPPLY52" pad="P$1"/>
-<wire x1="81.026" y1="24.257" x2="81.026" y2="22.844" width="0.3048" layer="16"/>
+<wire x1="81.026" y1="28.575" x2="81.026" y2="27.416" width="0.3048" layer="16"/>
 </signal>
 <signal name="5V">
 <contactref element="C17" pad="A"/>
@@ -3321,7 +3311,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C20" pad="+"/>
 <contactref element="VREG1" pad="2"/>
 <contactref element="VREG1" pad="1"/>
-<wire x1="66.802" y1="35.068" x2="76.962" y2="36.448" width="0" layer="19" extent="16-16"/>
+<wire x1="66.802" y1="35.068" x2="75.692" y2="36.448" width="0" layer="19" extent="16-16"/>
 <wire x1="64.516" y1="36.212" x2="66.802" y2="35.068" width="0" layer="19" extent="1-16"/>
 <wire x1="66.802" y1="31.988" x2="66.802" y2="35.068" width="0" layer="19" extent="16-16"/>
 <wire x1="64.516" y1="30.844" x2="66.802" y2="31.988" width="0" layer="19" extent="1-16"/>
@@ -3337,10 +3327,15 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.619" y1="22.528" x2="33.619" y2="24.228" width="0" layer="19" extent="1-1"/>
 <wire x1="28.956" y1="22.628" x2="32.004" y2="24.368" width="0" layer="19" extent="1-16"/>
 </signal>
-<signal name="N$2">
+<signal name="BATT_-">
 <contactref element="BATT1" pad="-"/>
 <contactref element="J2" pad="GND@2"/>
-<wire x1="73.02" y1="25.836" x2="76.022" y2="29.718" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16" isolate="0.254">
+<vertex x="70.612" y="24.384"/>
+<vertex x="70.612" y="30.48"/>
+<vertex x="78.232" y="30.48"/>
+<vertex x="78.232" y="24.384"/>
+</polygon>
 </signal>
 <signal name="AGND">
 <contactref element="MCU" pad="61"/>
@@ -3384,16 +3379,16 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="33.782" y="51.054"/>
 <vertex x="40.64" y="44.196"/>
 <vertex x="77.978" y="44.196"/>
-<vertex x="78.74" y="43.688"/>
-<vertex x="78.74" y="25.4"/>
-<vertex x="93.726" y="25.4"/>
+<vertex x="78.486" y="43.688"/>
+<vertex x="78.486" y="29.464"/>
+<vertex x="93.726" y="29.464"/>
 <vertex x="93.98" y="73.66"/>
 <vertex x="10.16" y="73.66"/>
 <vertex x="10.16" y="41.402"/>
 <vertex x="20.066" y="41.402"/>
 </polygon>
 <contactref element="SUPPLY52" pad="P$2"/>
-<wire x1="81.026" y1="25.527" x2="81.026" y2="29.972" width="0.3048" layer="16"/>
+<wire x1="81.026" y1="29.845" x2="81.026" y2="29.972" width="0.3048" layer="16"/>
 <wire x1="20.356" y1="40.441" x2="20.356" y2="39.116" width="0.254" layer="1"/>
 <via x="20.356" y="39.116" extent="1-16" drill="0.35"/>
 <wire x1="14.208" y1="46.228" x2="15.748" y2="46.228" width="0.254" layer="1"/>
@@ -3443,11 +3438,11 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="10.16" y="41.402"/>
 <vertex x="10.16" y="71.12"/>
 <vertex x="91.44" y="71.12"/>
-<vertex x="91.44" y="55.372"/>
-<vertex x="49.784" y="55.372"/>
-<vertex x="49.53" y="55.118"/>
-<vertex x="49.53" y="41.656"/>
-<vertex x="49.276" y="41.402"/>
+<vertex x="91.44" y="52.832"/>
+<vertex x="52.324" y="52.832"/>
+<vertex x="52.07" y="52.578"/>
+<vertex x="52.07" y="41.656"/>
+<vertex x="51.816" y="41.402"/>
 <vertex x="43.434" y="41.402"/>
 <vertex x="33.782" y="51.054"/>
 <vertex x="33.782" y="58.166"/>
@@ -3483,6 +3478,21 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$4">
 <via x="37.846" y="20.828" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="BATT_+">
+<polygon width="0.1524" layer="1" isolate="0.254" rank="2">
+<vertex x="72.39" y="43.942"/>
+<vertex x="72.39" y="39.116"/>
+<vertex x="79.248" y="39.116"/>
+<vertex x="79.248" y="33.782"/>
+<vertex x="68.072" y="33.782"/>
+<vertex x="68.072" y="17.78"/>
+<vertex x="99.06" y="17.78"/>
+<vertex x="96.52" y="43.942"/>
+</polygon>
+<contactref element="BATT1" pad="+"/>
+<contactref element="SW1" pad="P$2"/>
+<contactref element="J2" pad="PWR"/>
 </signal>
 </signals>
 </board>

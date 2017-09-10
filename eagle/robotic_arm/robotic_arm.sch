@@ -4159,6 +4159,7 @@ RESISTORS</text>
 <text x="246.38" y="406.4" size="8.128" layer="97" font="vector" ratio="20" align="bottom-center">Rev 1</text>
 <text x="228.6" y="350.52" size="0.8128" layer="97" font="vector" ratio="20" align="bottom-center">add diode CD1206-S01575</text>
 <text x="287.02" y="269.24" size="1.778" layer="91">WIRE DEMUX</text>
+<text x="177.8" y="182.88" size="1.778" layer="91">TODO: LOTS OF VIAS</text>
 </plain>
 <instances>
 <instance part="TEMP_PINKY" gate="G$1" x="421.64" y="157.48"/>
@@ -5588,7 +5589,7 @@ RESISTORS</text>
 <pinref part="NGND27" gate="G$1" pin="NGND"/>
 </segment>
 </net>
-<net name="N$43" class="0">
+<net name="BATT_+" class="0">
 <segment>
 <pinref part="BATT1" gate="G$1" pin="P"/>
 <wire x1="170.18" y1="170.18" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
@@ -5791,7 +5792,7 @@ RESISTORS</text>
 <junction x="264.16" y="129.54"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BATT_-" class="0">
 <segment>
 <pinref part="BATT1" gate="G$1" pin="N"/>
 <wire x1="170.18" y1="157.48" x2="170.18" y2="152.4" width="0.1524" layer="91"/>
