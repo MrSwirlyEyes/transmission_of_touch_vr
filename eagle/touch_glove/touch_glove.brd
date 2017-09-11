@@ -203,34 +203,34 @@
 <smd name="12" x="-3.75" y="-3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
 <smd name="13" x="3.75" y="-3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R90"/>
 <smd name="14" x="3.75" y="-2.925" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R90"/>
-<rectangle x1="-3.9" y1="0.175" x2="-2.65" y2="0.475" layer="21"/>
-<rectangle x1="-3.9" y1="0.825" x2="-2.65" y2="1.125" layer="21"/>
-<rectangle x1="-3.9" y1="1.475" x2="-2.65" y2="1.775" layer="21"/>
-<rectangle x1="-3.9" y1="2.125" x2="-2.65" y2="2.425" layer="21"/>
-<rectangle x1="-3.9" y1="2.775" x2="-2.65" y2="3.075" layer="21"/>
-<rectangle x1="-3.9" y1="3.425" x2="-2.65" y2="3.725" layer="21"/>
-<rectangle x1="-3.9" y1="-0.475" x2="-2.65" y2="-0.175" layer="21"/>
-<rectangle x1="-3.9" y1="-1.125" x2="-2.65" y2="-0.825" layer="21"/>
-<rectangle x1="-3.9" y1="-1.775" x2="-2.65" y2="-1.475" layer="21"/>
-<rectangle x1="-3.9" y1="-2.425" x2="-2.65" y2="-2.125" layer="21"/>
-<rectangle x1="-3.9" y1="-3.075" x2="-2.65" y2="-2.775" layer="21"/>
-<rectangle x1="-3.9" y1="-3.725" x2="-2.65" y2="-3.425" layer="21"/>
-<rectangle x1="2.65" y1="3.425" x2="3.9" y2="3.725" layer="21"/>
-<rectangle x1="2.65" y1="2.775" x2="3.9" y2="3.075" layer="21"/>
-<rectangle x1="2.65" y1="2.125" x2="3.9" y2="2.425" layer="21"/>
-<rectangle x1="2.65" y1="1.475" x2="3.9" y2="1.775" layer="21"/>
-<rectangle x1="2.65" y1="0.825" x2="3.9" y2="1.125" layer="21"/>
-<rectangle x1="2.65" y1="0.175" x2="3.9" y2="0.475" layer="21"/>
-<rectangle x1="2.65" y1="-0.475" x2="3.9" y2="-0.175" layer="21"/>
-<rectangle x1="2.65" y1="-1.125" x2="3.9" y2="-0.825" layer="21"/>
-<rectangle x1="2.65" y1="-1.775" x2="3.9" y2="-1.475" layer="21"/>
-<rectangle x1="2.65" y1="-2.425" x2="3.9" y2="-2.125" layer="21"/>
-<rectangle x1="2.65" y1="-3.075" x2="3.9" y2="-2.775" layer="21"/>
-<rectangle x1="2.65" y1="-3.725" x2="3.9" y2="-3.425" layer="21"/>
-<wire x1="-4.826" y1="-4.318" x2="4.826" y2="-4.318" width="0.127" layer="41"/>
-<wire x1="4.826" y1="-4.318" x2="4.826" y2="4.318" width="0.127" layer="41"/>
-<wire x1="4.826" y1="4.318" x2="-4.826" y2="4.318" width="0.127" layer="41"/>
-<wire x1="-4.826" y1="4.318" x2="-4.826" y2="-4.318" width="0.127" layer="41"/>
+<rectangle x1="-3.9" y1="0.175" x2="-2.65" y2="0.475" layer="51"/>
+<rectangle x1="-3.9" y1="0.825" x2="-2.65" y2="1.125" layer="51"/>
+<rectangle x1="-3.9" y1="1.475" x2="-2.65" y2="1.775" layer="51"/>
+<rectangle x1="-3.9" y1="2.125" x2="-2.65" y2="2.425" layer="51"/>
+<rectangle x1="-3.9" y1="2.775" x2="-2.65" y2="3.075" layer="51"/>
+<rectangle x1="-3.9" y1="3.425" x2="-2.65" y2="3.725" layer="51"/>
+<rectangle x1="-3.9" y1="-0.475" x2="-2.65" y2="-0.175" layer="51"/>
+<rectangle x1="-3.9" y1="-1.125" x2="-2.65" y2="-0.825" layer="51"/>
+<rectangle x1="-3.9" y1="-1.775" x2="-2.65" y2="-1.475" layer="51"/>
+<rectangle x1="-3.9" y1="-2.425" x2="-2.65" y2="-2.125" layer="51"/>
+<rectangle x1="-3.9" y1="-3.075" x2="-2.65" y2="-2.775" layer="51"/>
+<rectangle x1="-3.9" y1="-3.725" x2="-2.65" y2="-3.425" layer="51"/>
+<rectangle x1="2.65" y1="3.425" x2="3.9" y2="3.725" layer="51"/>
+<rectangle x1="2.65" y1="2.775" x2="3.9" y2="3.075" layer="51"/>
+<rectangle x1="2.65" y1="2.125" x2="3.9" y2="2.425" layer="51"/>
+<rectangle x1="2.65" y1="1.475" x2="3.9" y2="1.775" layer="51"/>
+<rectangle x1="2.65" y1="0.825" x2="3.9" y2="1.125" layer="51"/>
+<rectangle x1="2.65" y1="0.175" x2="3.9" y2="0.475" layer="51"/>
+<rectangle x1="2.65" y1="-0.475" x2="3.9" y2="-0.175" layer="51"/>
+<rectangle x1="2.65" y1="-1.125" x2="3.9" y2="-0.825" layer="51"/>
+<rectangle x1="2.65" y1="-1.775" x2="3.9" y2="-1.475" layer="51"/>
+<rectangle x1="2.65" y1="-2.425" x2="3.9" y2="-2.125" layer="51"/>
+<rectangle x1="2.65" y1="-3.075" x2="3.9" y2="-2.775" layer="51"/>
+<rectangle x1="2.65" y1="-3.725" x2="3.9" y2="-3.425" layer="51"/>
+<wire x1="-4.826" y1="-4.318" x2="4.826" y2="-4.318" width="0.127" layer="39"/>
+<wire x1="4.826" y1="-4.318" x2="4.826" y2="4.318" width="0.127" layer="39"/>
+<wire x1="4.826" y1="4.318" x2="-4.826" y2="4.318" width="0.127" layer="39"/>
+<wire x1="-4.826" y1="4.318" x2="-4.826" y2="-4.318" width="0.127" layer="39"/>
 <text x="0" y="4.826" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-4.572" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
@@ -324,10 +324,10 @@
 <rectangle x1="2.2" y1="4.1025" x2="3.2" y2="4.3475" layer="51"/>
 <text x="0" y="5.588" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-5.334" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="-4.064" y1="-5.08" x2="4.064" y2="-5.08" width="0.1524" layer="41"/>
-<wire x1="4.064" y1="-5.08" x2="4.064" y2="5.08" width="0.1524" layer="41"/>
-<wire x1="4.064" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="41"/>
-<wire x1="-4.064" y1="5.08" x2="-4.064" y2="-5.08" width="0.1524" layer="41"/>
+<wire x1="-4.064" y1="-5.08" x2="4.064" y2="-5.08" width="0.1524" layer="39"/>
+<wire x1="4.064" y1="-5.08" x2="4.064" y2="5.08" width="0.1524" layer="39"/>
+<wire x1="4.064" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="39"/>
+<wire x1="-4.064" y1="5.08" x2="-4.064" y2="-5.08" width="0.1524" layer="39"/>
 </package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -1346,6 +1346,8 @@
 <vertex x="2.794" y="5.969"/>
 <vertex x="5.11175" y="5.334"/>
 </polygon>
+<text x="0" y="-3.81" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-4.953" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="SOIC-8_W3.9MM">
 <wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.127" layer="21"/>
@@ -1371,10 +1373,10 @@
 <smd name="8" x="2.7" y="1.905" dx="1.55" dy="0.6" layer="1" roundness="50"/>
 <text x="0" y="3.048" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-3.048" size="0.6096" layer="25" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="-3.81" y1="-2.794" x2="-3.81" y2="2.794" width="0.127" layer="41"/>
-<wire x1="-3.81" y1="2.794" x2="3.81" y2="2.794" width="0.127" layer="41"/>
-<wire x1="3.81" y1="2.794" x2="3.81" y2="-2.794" width="0.127" layer="41"/>
-<wire x1="3.81" y1="-2.794" x2="-3.81" y2="-2.794" width="0.127" layer="41"/>
+<wire x1="-3.81" y1="-2.794" x2="-3.81" y2="2.794" width="0.127" layer="39"/>
+<wire x1="-3.81" y1="2.794" x2="3.81" y2="2.794" width="0.127" layer="39"/>
+<wire x1="3.81" y1="2.794" x2="3.81" y2="-2.794" width="0.127" layer="39"/>
+<wire x1="3.81" y1="-2.794" x2="-3.81" y2="-2.794" width="0.127" layer="39"/>
 </package>
 </packages>
 </library>
@@ -3030,13 +3032,14 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM21BR61E106KA73L" x="-173.99" y="-73.66" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="-173.99" y="-73.66" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J1" library="MrSwirlyEyes" package="2X3-NS" value="" x="-123.19" y="144.78">
+<element name="J1" library="MrSwirlyEyes" package="2X3-NS" value="AVR ISP" x="-123.19" y="144.78">
 <attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3234-ND" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="609-3234-ND" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Amphenol FCI" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="67997-206HLF" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="AVR ISP" x="-123.19" y="144.78" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C62" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="-138.43" y="137.16">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-138.43" y="137.16" size="1.778" layer="27" display="off"/>
@@ -3188,14 +3191,14 @@ design rules under a new name.</description>
 <attribute name="MPN" value="GRM216R61E105KA12D " x="-224.79" y="38.1" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="-224.79" y="38.1" size="1.778" layer="27" display="off"/>
 </element>
-<element name="VREG4" library="MrSwirlyEyes" package="DDPAK-5" value="3A/2.5V" x="68.453" y="40.64">
+<element name="VREG4" library="MrSwirlyEyes" package="DDPAK-5" value="3A/1.8V" x="68.453" y="40.64">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="http://cds.linear.com/docs/en/datasheet/1764fb.pdf" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=LT1764EQ-2.5%23PBF-ND" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="LT1764EQ-2.5#PBF-ND" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=LT1764EQ-1.8%23PBF" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="LT1764EQ-1.8#PBF-ND" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Linear Technology" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LT1764EQ-2.5#PBF" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LT1764EQ-1.8#PBF" x="68.453" y="40.64" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C72" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="-229.87" y="17.78">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-229.87" y="17.78" size="1.778" layer="27" display="off"/>
