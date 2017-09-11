@@ -21,9 +21,12 @@
 
 //defined vib motor values
 #define TECMIN 0
-#define TECMAX 3095 // 1.5V MAX on TECs
+#define TECMAX 4095 // 1.5V MAX on TECs
 
-#define TECDELAY 20
+#define TECMAX_HOT 2095
+#define TECMAX_COLD 4095
+
+#define TECDELAY 30
 
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 Radio radio(11);
@@ -46,7 +49,7 @@ struct ArmPacket {
 
 void setup() 
 {
-  delay(1000);
+  delay(5000);
   
   Serial.begin(9600);
   pwm.begin();
@@ -57,7 +60,7 @@ void setup()
     apkt.aFinger[i] = 0;
   }
   
-//  start_up_sequence();
+  start_up_sequence();
 }
 
 void loop() {
@@ -193,23 +196,36 @@ void actuate_thermoelectric(byte _en, byte _ph) {
   Serial.print("(");
   Serial.print(_en);  Serial.print(",");
   Serial.print(_en);  Serial.println(")");
-  pwm.setPWM(_ph, 0, 0);
-  drive_thermoelectric(_en);  
 
+  // COLD
+  pwm.setPWM(_ph, 0, 0);
+  bool dir=0;
+  drive_thermoelectric(_en,dir);  
+
+  // HOT
   pwm.setPWM(_ph, 0, TECMAX);
-  drive_thermoelectric(_en);
+  dir=1;
+  drive_thermoelectric(_en,dir);
 }
 
-void drive_thermoelectric(byte _en) {
+void drive_thermoelectric(byte _en, bool dir) {
   for (int j = 0; j < 255; j++) {
     Serial.println(j);
-    pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX));
+    if(dir) {
+      pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX_HOT));
+    } else {
+      pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX_COLD));
+    }
     delay(TECDELAY);
   }
   delay(500);
   for (int j = 255; j >= 0; j--) {
     Serial.println(j);
-    pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX));
+    if(dir) {
+      pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX_HOT));
+    } else {
+      pwm.setPWM(_en, 0, map(j, 0, 255, TECMIN,TECMAX_COLD));
+    }
     delay(TECDELAY);
   }
   delay(500);
@@ -222,32 +238,42 @@ void actuate_all_thermoelectrics() {
   pwm.setPWM(10, 0, 0);
   pwm.setPWM(8, 0, 0);
   pwm.setPWM(6, 0, 0);
+  bool dir=0;
 
   for (int j = 0; j < 255; j++) {
     for (int i = 7; i <= 15 ; i+=2) {
       
-      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      if(dir) {
+        pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX_HOT));
+      } else {
+        pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX_COLD));
+      }
       delay(TECDELAY);
     }
     Serial.println(j);
   }
   delay(500);
+  dir=1;
   for (int j = 255; j >= 0; j--) {
     for (int i = 7; i <= 15 ; i+=2) {
       
-      pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX));
+      if(dir) {
+        pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX_HOT));
+      } else {
+        pwm.setPWM(i, 0, map(j, 0, 255, TECMIN,TECMAX_COLD));
+      }
       delay(TECDELAY);
     }
     Serial.println(j);
   }
   
-  delay(250);
+  delay(500);
   pwm.setPWM(14, 0, TECMAX);
   pwm.setPWM(12, 0, TECMAX);
   pwm.setPWM(10, 0, TECMAX);
   pwm.setPWM(8, 0, TECMAX);
   pwm.setPWM(6, 0, TECMAX);
-  delay(250);
+  delay(500);
 
   for (int j = 0; j < 255; j++) {
     for (int i = 7; i <= 15 ; i+=2) {
@@ -257,7 +283,7 @@ void actuate_all_thermoelectrics() {
     }
     Serial.println(j);
   }
-  delay(500);
+  delay(1000);
   for (int j = 255; j >= 0; j--) {
     for (int i = 7; i <= 15 ; i+=2) {
       
