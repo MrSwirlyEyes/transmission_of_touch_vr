@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1718,6 +1718,51 @@
 <wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.127" layer="21"/>
 <wire x1="0" y1="-0.762" x2="-0.635" y2="0.508" width="0.127" layer="21"/>
 </package>
+<package name="LED_SMD-805_">
+<smd name="K" x="1.2" y="0" dx="1.4" dy="1.5" layer="1" roundness="50" rot="R180"/>
+<smd name="A" x="-1.2" y="0" dx="1.4" dy="1.5" layer="1" roundness="50" rot="R180"/>
+<wire x1="-1.05" y1="-0.68" x2="-1.05" y2="0.68" width="0.12" layer="51"/>
+<wire x1="-1.05" y1="0.68" x2="1.05" y2="0.68" width="0.12" layer="51"/>
+<text x="0" y="1.3" size="0.6096" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="-1.316" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="1.05" y1="-0.68" x2="-1.05" y2="-0.68" width="0.12" layer="51"/>
+<wire x1="1.05" y1="0.68" x2="1.05" y2="-0.68" width="0.12" layer="51"/>
+<rectangle x1="-1" y1="-0.625" x2="-0.5" y2="0.625" layer="51"/>
+<rectangle x1="0.5" y1="-0.625" x2="1" y2="0.625" layer="51"/>
+<wire x1="-0.5" y1="0" x2="-0.3" y2="0" width="0.1" layer="21"/>
+<wire x1="0.3" y1="0" x2="0.5" y2="0" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0.4" x2="0.25" y2="0" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0" x2="0.25" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0" x2="-0.25" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="0.4" x2="-0.25" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="-0.4" x2="0.25" y2="0" width="0.1" layer="21"/>
+<rectangle x1="0.2" y1="0.5" x2="0.5" y2="0.7" layer="21"/>
+<rectangle x1="0.2" y1="-0.7" x2="0.5" y2="-0.5" layer="21"/>
+<wire x1="-2.159" y1="0.889" x2="-2.159" y2="-0.889" width="0.1" layer="21"/>
+<wire x1="-2.159" y1="-0.889" x2="2.159" y2="-0.889" width="0.1" layer="21"/>
+<wire x1="2.159" y1="-0.889" x2="2.159" y2="0.889" width="0.1" layer="21"/>
+<wire x1="2.159" y1="0.889" x2="-2.159" y2="0.889" width="0.1" layer="21"/>
+<wire x1="-2.286" y1="-1.016" x2="2.286" y2="-1.016" width="0.1" layer="39"/>
+<wire x1="2.286" y1="-1.016" x2="2.286" y2="1.016" width="0.1" layer="39"/>
+<wire x1="2.286" y1="1.016" x2="-2.286" y2="1.016" width="0.1" layer="39"/>
+<wire x1="-2.286" y1="1.016" x2="-2.286" y2="-1.016" width="0.1" layer="39"/>
+</package>
+<package name="LED_PTH-5MM">
+<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
+<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CD74HC4067-SM96_16:1_MUX-DEMUX">
@@ -2214,6 +2259,31 @@
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="0" y="2.032" size="0.8128" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="-1.016" size="0.8128" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="LED_GREEN_SMD-805">
+<pin name="K" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
+<text x="0.254" y="0.254" size="0.8128" layer="95" font="vector" ratio="10">&gt;NAME</text>
+<text x="0.254" y="-3.556" size="0.8128" layer="96" font="vector" ratio="10">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3649,6 +3719,120 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
+<deviceset name="LED" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED_GREEN_SMD-805" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SMD-805_DISCRETE_GREEN" package="LED_SMD-805_">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS22-2000-073/LTST-C170KGKT.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1414-1-ND" constant="no"/>
+<attribute name="DISTPN" value="160-1414-1-ND" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170KGKT" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-805_DISCRETE_RED" package="LED_SMD-805_">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS-22-99-0150/LTST-C170KRKT.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1415-1-ND" constant="no"/>
+<attribute name="DISTPN" value="160-1415-1-ND" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170KRKT" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-805_DISCRETE_BLUE" package="LED_SMD-805_">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS-22-99-0226/LTST-C170TBKT.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1579-1-ND" constant="no"/>
+<attribute name="DISTPN" value="160-1579-1-ND" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170TBKT" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="BLUE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-805_DISCRETE_ORANGE" package="LED_SMD-805_">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS-22-99-0185/LTST-C170KFKT.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1413-1-ND" constant="no"/>
+<attribute name="DISTPN" value="160-1413-1-ND" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170KFKT" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="ORANGE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-805_DISCRETE_YELLOW" package="LED_SMD-805_">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS-22-99-0188/LTST-C170KSKT.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1416-1-ND" constant="no"/>
+<attribute name="DISTPN" value="160-1416-1-ND" constant="no"/>
+<attribute name="MFR" value="Lite-On Inc." constant="no"/>
+<attribute name="MPN" value="LTST-C170KSKT" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="YELLOW" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH-5MM_NO-COLOR" package="LED_PTH-5MM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="lib_kenmei">
@@ -4007,7 +4191,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY36" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="SUPPLY37" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="J2" library="MrSwirlyEyes" deviceset="POWER_JACK-BARREL_ID2.1MM-OD5.5MM" device="" value="(ID,OD)=(2.1,5.5)MM"/>
-<part name="C20" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_PTH_1000UF-50V-20%" value="1000uF/50V"/>
+<part name="C20" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_220UF-16V-20%" value="220uF/16V"/>
 <part name="GND4" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="VREG1" library="MrSwirlyEyes" deviceset="VREG_MIC29501-5.0_LINEAR_ULDO_5A-5V" device="MIC29501-5.0_5A-5V" value="5A/5V"/>
 <part name="S7" library="MrSwirlyEyes" deviceset="SWITCH_MOMENTARY_SPST" device="SPST-SMD-50MA-12V_L5.2-W5.2" value="TACTILE-SW_500mA/12V"/>
@@ -4070,6 +4254,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="NGND27" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SUPPLY51" library="SparkFun-PowerSymbols" deviceset="2PT_GND_TIE" device=""/>
 <part name="SUPPLY52" library="SparkFun-PowerSymbols" deviceset="2PT_GND_TIE" device=""/>
+<part name="L3" library="MrSwirlyEyes" deviceset="LED" device="_SMD-805_DISCRETE_BLUE" value="BLUE"/>
+<part name="R1" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="GND6" library="MrSwirlyEyes" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4160,6 +4347,7 @@ RESISTORS</text>
 <text x="228.6" y="350.52" size="0.8128" layer="97" font="vector" ratio="20" align="bottom-center">add diode CD1206-S01575</text>
 <text x="287.02" y="269.24" size="1.778" layer="91">WIRE DEMUX</text>
 <text x="177.8" y="182.88" size="1.778" layer="91">TODO: LOTS OF VIAS</text>
+<text x="203.2" y="177.8" size="1.778" layer="91">CHANGE TO 470 UF</text>
 </plain>
 <instances>
 <instance part="TEMP_PINKY" gate="G$1" x="421.64" y="157.48"/>
@@ -4276,17 +4464,17 @@ RESISTORS</text>
 <instance part="D6" gate="G$1" x="273.05" y="185.42" rot="R90"/>
 <instance part="GND125" gate="GND" x="274.32" y="154.94"/>
 <instance part="D7" gate="G$1" x="273.05" y="139.7" rot="R90"/>
-<instance part="C80" gate="G$1" x="210.82" y="170.18"/>
-<instance part="C81" gate="G$1" x="233.68" y="170.18"/>
-<instance part="C82" gate="G$1" x="226.06" y="170.18"/>
-<instance part="GND127" gate="GND" x="210.82" y="160.02"/>
-<instance part="GND128" gate="GND" x="226.06" y="160.02"/>
-<instance part="GND129" gate="GND" x="233.68" y="160.02"/>
+<instance part="C80" gate="G$1" x="210.82" y="163.83"/>
+<instance part="C81" gate="G$1" x="233.68" y="163.83"/>
+<instance part="C82" gate="G$1" x="226.06" y="163.83"/>
+<instance part="GND127" gate="GND" x="210.82" y="147.32"/>
+<instance part="GND128" gate="GND" x="226.06" y="147.32"/>
+<instance part="GND129" gate="GND" x="233.68" y="147.32"/>
 <instance part="SUPPLY85" gate="VCC" x="294.64" y="177.8"/>
 <instance part="L1" gate="G$1" x="302.26" y="175.26"/>
 <instance part="C83" gate="G$1" x="287.02" y="121.92"/>
-<instance part="C84" gate="G$1" x="218.44" y="170.18"/>
-<instance part="GND130" gate="GND" x="218.44" y="160.02"/>
+<instance part="C84" gate="G$1" x="218.44" y="163.83"/>
+<instance part="GND130" gate="GND" x="218.44" y="147.32"/>
 <instance part="L2" gate="G$1" x="160.02" y="144.78"/>
 <instance part="C85" gate="G$1" x="309.88" y="167.64"/>
 <instance part="C92" gate="G$1" x="294.64" y="167.64"/>
@@ -4322,8 +4510,8 @@ RESISTORS</text>
 <instance part="SUPPLY36" gate="5V" x="50.8" y="40.64"/>
 <instance part="SUPPLY37" gate="5V" x="86.36" y="40.64"/>
 <instance part="J2" gate="G$1" x="142.24" y="170.18"/>
-<instance part="C20" gate="G$1" x="203.2" y="170.18"/>
-<instance part="GND4" gate="GND" x="203.2" y="160.02"/>
+<instance part="C20" gate="G$1" x="203.2" y="163.83"/>
+<instance part="GND4" gate="GND" x="203.2" y="147.32"/>
 <instance part="VREG1" gate="G$1" x="274.32" y="127"/>
 <instance part="S7" gate="G$1" x="200.66" y="340.36"/>
 <instance part="GND15" gate="GND" x="193.04" y="335.28"/>
@@ -4385,6 +4573,9 @@ RESISTORS</text>
 <instance part="NGND27" gate="G$1" x="274.32" y="109.22"/>
 <instance part="SUPPLY51" gate="G$1" x="144.78" y="144.78"/>
 <instance part="SUPPLY52" gate="G$1" x="172.72" y="144.78"/>
+<instance part="L3" gate="G$1" x="195.58" y="170.18"/>
+<instance part="R1" gate="G$1" x="195.58" y="157.48" rot="R90"/>
+<instance part="GND6" gate="GND" x="195.58" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -4545,27 +4736,27 @@ RESISTORS</text>
 </segment>
 <segment>
 <pinref part="C80" gate="G$1" pin="K"/>
-<wire x1="210.82" y1="165.1" x2="210.82" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="158.75" x2="210.82" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND127" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C82" gate="G$1" pin="2"/>
 <pinref part="GND128" gate="GND" pin="GND"/>
-<wire x1="226.06" y1="162.56" x2="226.06" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="149.86" x2="226.06" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C81" gate="G$1" pin="2"/>
 <pinref part="GND129" gate="GND" pin="GND"/>
-<wire x1="233.68" y1="162.56" x2="233.68" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="149.86" x2="233.68" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND130" gate="GND" pin="GND"/>
 <pinref part="C84" gate="G$1" pin="K"/>
-<wire x1="218.44" y1="162.56" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="149.86" x2="218.44" y2="158.75" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C20" gate="G$1" pin="K"/>
-<wire x1="203.2" y1="165.1" x2="203.2" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="158.75" x2="203.2" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -4601,6 +4792,11 @@ RESISTORS</text>
 <wire x1="287.02" y1="33.02" x2="287.02" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="AVR_ISP" gate="G$1" pin="6"/>
 <wire x1="287.02" y1="35.56" x2="284.48" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="152.4" x2="195.58" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="GND6" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5744,7 +5940,8 @@ RESISTORS</text>
 <junction x="261.62" y="129.54"/>
 <wire x1="261.62" y1="129.54" x2="261.62" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="S1"/>
-<wire x1="190.5" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="175.26" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="175.26" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="175.26" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="175.26" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
@@ -5759,16 +5956,16 @@ RESISTORS</text>
 <wire x1="241.3" y1="129.54" x2="241.3" y2="175.26" width="0.1524" layer="91"/>
 <junction x="241.3" y="175.26"/>
 <pinref part="C81" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="172.72" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="166.37" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
 <junction x="233.68" y="175.26"/>
 <pinref part="C82" gate="G$1" pin="1"/>
-<wire x1="226.06" y1="172.72" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="166.37" x2="226.06" y2="175.26" width="0.1524" layer="91"/>
 <junction x="226.06" y="175.26"/>
 <pinref part="C80" gate="G$1" pin="A"/>
-<wire x1="210.82" y1="172.72" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="166.37" x2="210.82" y2="175.26" width="0.1524" layer="91"/>
 <junction x="210.82" y="175.26"/>
 <pinref part="C84" gate="G$1" pin="A"/>
-<wire x1="218.44" y1="172.72" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="166.37" x2="218.44" y2="175.26" width="0.1524" layer="91"/>
 <junction x="218.44" y="175.26"/>
 <pinref part="C96" gate="G$1" pin="1"/>
 <pinref part="C95" gate="G$1" pin="1"/>
@@ -5784,12 +5981,15 @@ RESISTORS</text>
 <wire x1="261.62" y1="185.42" x2="261.62" y2="175.26" width="0.1524" layer="91"/>
 <junction x="261.62" y="175.26"/>
 <pinref part="C20" gate="G$1" pin="A"/>
-<wire x1="203.2" y1="172.72" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="166.37" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <junction x="203.2" y="175.26"/>
 <pinref part="VREG1" gate="G$1" pin="VIN"/>
 <pinref part="VREG1" gate="G$1" pin="EN"/>
 <wire x1="264.16" y1="127" x2="264.16" y2="129.54" width="0.1524" layer="91"/>
 <junction x="264.16" y="129.54"/>
+<pinref part="L3" gate="G$1" pin="A"/>
+<wire x1="195.58" y1="172.72" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+<junction x="195.58" y="175.26"/>
 </segment>
 </net>
 <net name="BATT_-" class="0">
@@ -6103,9 +6303,73 @@ RESISTORS</text>
 <pinref part="SUPPLY50" gate="G$1" pin="AVCC"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="L3" gate="G$1" pin="K"/>
+<wire x1="195.58" y1="165.1" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,269.24,248.92,A0,,,,,"/>
+<approved hash="106,1,269.24,246.38,A1,,,,,"/>
+<approved hash="106,1,269.24,243.84,A2,,,,,"/>
+<approved hash="106,1,269.24,241.3,A3,,,,,"/>
+<approved hash="106,1,269.24,238.76,A4,,,,,"/>
+<approved hash="106,1,269.24,236.22,A5,,,,,"/>
+<approved hash="106,1,269.24,233.68,A6,,,,,"/>
+<approved hash="106,1,269.24,231.14,A7,,,,,"/>
+<approved hash="106,1,416.56,327.66,C5,,,,,"/>
+<approved hash="106,1,416.56,325.12,C6,,,,,"/>
+<approved hash="106,1,416.56,322.58,C7,,,,,"/>
+<approved hash="106,1,416.56,320.04,C8,,,,,"/>
+<approved hash="106,1,416.56,317.5,C9,,,,,"/>
+<approved hash="106,1,416.56,314.96,C10,,,,,"/>
+<approved hash="106,1,152.4,35.56,N$42,,,,,"/>
+<approved hash="106,1,269.24,325.12,PB4,,,,,"/>
+<approved hash="106,1,269.24,322.58,PB5,,,,,"/>
+<approved hash="106,1,269.24,320.04,PB6,,,,,"/>
+<approved hash="106,1,269.24,317.5,PB7,,,,,"/>
+<approved hash="106,1,269.24,302.26,PD4,,,,,"/>
+<approved hash="106,1,269.24,299.72,PD5,,,,,"/>
+<approved hash="106,1,269.24,297.18,PD6,,,,,"/>
+<approved hash="106,1,269.24,294.64,PD7,,,,,"/>
+<approved hash="106,1,269.24,284.48,PE2,,,,,"/>
+<approved hash="106,1,269.24,281.94,PE3,,,,,"/>
+<approved hash="106,1,269.24,279.4,PE4,,,,,"/>
+<approved hash="106,1,269.24,276.86,PE5,,,,,"/>
+<approved hash="106,1,269.24,274.32,PE6,,,,,"/>
+<approved hash="106,1,269.24,271.78,PE7,,,,,"/>
+<approved hash="106,1,269.24,266.7,PG0,,,,,"/>
+<approved hash="106,1,269.24,264.16,PG1,,,,,"/>
+<approved hash="106,1,269.24,261.62,PG2,,,,,"/>
+<approved hash="106,1,269.24,259.08,PG3,,,,,"/>
+<approved hash="106,1,269.24,256.54,PG4,,,,,"/>
+<approved hash="106,1,269.24,254,PG5,,,,,"/>
+<approved hash="106,1,83.82,320.04,PWM6,,,,,"/>
+<approved hash="106,1,83.82,317.5,PWM7,,,,,"/>
+<approved hash="106,1,83.82,314.96,PWM8,,,,,"/>
+<approved hash="106,1,83.82,312.42,PWM9,,,,,"/>
+<approved hash="106,1,83.82,309.88,PWM10,,,,,"/>
+<approved hash="106,1,83.82,307.34,PWM11,,,,,"/>
+<approved hash="106,1,83.82,304.8,PWM12,,,,,"/>
+<approved hash="106,1,83.82,302.26,PWM13,,,,,"/>
+<approved hash="106,1,83.82,299.72,PWM14,,,,,"/>
+<approved hash="106,1,83.82,297.18,PWM15,,,,,"/>
+<approved hash="106,1,269.24,307.34,RX1,,,,,"/>
+<approved hash="106,1,391.16,322.58,S0,,,,,"/>
+<approved hash="106,1,391.16,320.04,S1,,,,,"/>
+<approved hash="106,1,391.16,317.5,S2,,,,,"/>
+<approved hash="106,1,391.16,314.96,S3,,,,,"/>
+<approved hash="106,1,391.16,332.74,SIG,,,,,"/>
+<approved hash="106,1,269.24,335.28,SSN,,,,,"/>
+<approved hash="106,1,269.24,304.8,TX1,,,,,"/>
+<approved hash="110,1,290.83,312.42,SCL,SDA,,,,"/>
+<approved hash="110,1,290.83,312.42,SCL,SDA,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

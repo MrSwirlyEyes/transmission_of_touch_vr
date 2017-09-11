@@ -9,7 +9,7 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -1299,26 +1299,6 @@
 <wire x1="5" y1="4.28" x2="5" y2="2.08" width="0" layer="46"/>
 <wire x1="5" y1="2.08" x2="4.5" y2="1.58" width="0" layer="46" curve="-90"/>
 </package>
-<package name="CAP_POL_DIA12.5-LS5-H27">
-<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-4.286" y1="0" x2="-3.778" y2="0" width="0.1524" layer="21"/>
-<wire x1="-4.032" y1="-0.254" x2="-4.032" y2="0.254" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6.25" width="0.1524" layer="21"/>
-<pad name="-" x="2.5" y="0" drill="0.762" diameter="1.397"/>
-<pad name="+" x="-2.5" y="0" drill="0.762" diameter="1.397" shape="square"/>
-<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
-<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="3.778" y1="0" x2="4.286" y2="0" width="0.1524" layer="21"/>
-<text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="10" align="center">CHECK DIAMETER OF LEADS</text>
-<circle x="0" y="0" radius="6.75" width="0.1524" layer="39"/>
-</package>
 <package name="TO-263-5">
 <wire x1="-5.1815" y1="4.39025" x2="-5.1815" y2="-4.39025" width="0.127" layer="21"/>
 <wire x1="-5.1815" y1="-4.39025" x2="5.1815" y2="-4.39025" width="0.127" layer="21"/>
@@ -1393,6 +1373,35 @@
 <wire x1="-4.064" y1="-2.794" x2="4.064" y2="-2.794" width="0.1" layer="39"/>
 <wire x1="4.064" y1="-2.794" x2="4.064" y2="2.794" width="0.1" layer="39"/>
 <wire x1="4.064" y1="2.794" x2="-4.064" y2="2.794" width="0.1" layer="39"/>
+</package>
+<package name="LED_SMD-805_">
+<smd name="K" x="1.2" y="0" dx="1.4" dy="1.5" layer="1" roundness="50" rot="R180"/>
+<smd name="A" x="-1.2" y="0" dx="1.4" dy="1.5" layer="1" roundness="50" rot="R180"/>
+<wire x1="-1.05" y1="-0.68" x2="-1.05" y2="0.68" width="0.12" layer="51"/>
+<wire x1="-1.05" y1="0.68" x2="1.05" y2="0.68" width="0.12" layer="51"/>
+<text x="0" y="1.3" size="0.6096" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
+<text x="0" y="-1.316" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="1.05" y1="-0.68" x2="-1.05" y2="-0.68" width="0.12" layer="51"/>
+<wire x1="1.05" y1="0.68" x2="1.05" y2="-0.68" width="0.12" layer="51"/>
+<rectangle x1="-1" y1="-0.625" x2="-0.5" y2="0.625" layer="51"/>
+<rectangle x1="0.5" y1="-0.625" x2="1" y2="0.625" layer="51"/>
+<wire x1="-0.5" y1="0" x2="-0.3" y2="0" width="0.1" layer="21"/>
+<wire x1="0.3" y1="0" x2="0.5" y2="0" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0.4" x2="0.25" y2="0" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0" x2="0.25" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="0.25" y1="0" x2="-0.25" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="0.4" x2="-0.25" y2="-0.4" width="0.1" layer="21"/>
+<wire x1="-0.25" y1="-0.4" x2="0.25" y2="0" width="0.1" layer="21"/>
+<rectangle x1="0.2" y1="0.5" x2="0.5" y2="0.7" layer="21"/>
+<rectangle x1="0.2" y1="-0.7" x2="0.5" y2="-0.5" layer="21"/>
+<wire x1="-2.159" y1="0.889" x2="-2.159" y2="-0.889" width="0.1" layer="21"/>
+<wire x1="-2.159" y1="-0.889" x2="2.159" y2="-0.889" width="0.1" layer="21"/>
+<wire x1="2.159" y1="-0.889" x2="2.159" y2="0.889" width="0.1" layer="21"/>
+<wire x1="2.159" y1="0.889" x2="-2.159" y2="0.889" width="0.1" layer="21"/>
+<wire x1="-2.286" y1="-1.016" x2="2.286" y2="-1.016" width="0.1" layer="39"/>
+<wire x1="2.286" y1="-1.016" x2="2.286" y2="1.016" width="0.1" layer="39"/>
+<wire x1="2.286" y1="1.016" x2="-2.286" y2="1.016" width="0.1" layer="39"/>
+<wire x1="-2.286" y1="1.016" x2="-2.286" y2="-1.016" width="0.1" layer="39"/>
 </package>
 </packages>
 </library>
@@ -1901,44 +1910,44 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="GRM21BR71H104KA01L" x="73.152" y="58.166" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="TESTED" value="NO" x="73.152" y="58.166" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="DEMUX1" library="MrSwirlyEyes" package="SSOP-24" value="CH16_MUX-DEMUX" x="49.53" y="48.514" rot="R180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=296-9226-1-ND" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="296-9226-1-ND" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Texas Instruments" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="CD74HC4067SM96" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="TESTED" value="NO" x="124.968" y="-40.132" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="DEMUX1" library="MrSwirlyEyes" package="SSOP-24" value="CH16_MUX-DEMUX" x="48.006" y="53.34" rot="R180">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=296-9226-1-ND" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="296-9226-1-ND" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Texas Instruments" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CD74HC4067SM96" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="TESTED" value="NO" x="123.444" y="-35.306" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C18" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="49.53" y="50.038" rot="MR180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TESTED" value="NO" x="-45.72" y="-71.374" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="C18" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="48.006" y="54.864" rot="MR180">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DISTPN" value="490-5523-1-ND" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73L" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="TESTED" value="NO" x="-47.244" y="-66.548" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="PWM_DRIVER" library="MrSwirlyEyes" package="TSSOP-28" value="PCA9685" x="21.336" y="7.62" rot="R180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DATASHEET" value="http://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=568-11925-1-ND" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="568-11925-1-ND" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="NXP USA Inc." x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="PCA9685PW,118" x="90.424" y="-82.55" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="PWM_DRIVER" library="MrSwirlyEyes" package="TSSOP-28" value="PCA9685" x="22.352" y="5.588" rot="R180">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DATASHEET" value="http://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=568-11925-1-ND" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="568-11925-1-ND" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="NXP USA Inc." x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="PCA9685PW,118" x="91.44" y="-84.582" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C19" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="22.606" y="4.318" rot="MR90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DIST" value="Digikey" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTPN" value="490-1666-1-ND" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="GRM21BR71H104KA01L" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="TESTED" value="NO" x="132.588" y="-128.27" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="C19" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="23.622" y="3.556" rot="MR90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIST" value="Digikey" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="TESTED" value="NO" x="133.604" y="-129.032" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R16" library="MrSwirlyEyes" package="RESISTOR_SMD-805" value="10KΩ" x="61.976" y="52.324" rot="MR90">
 <attribute name="CREATOR" value="Kenmei" x="58.928" y="-120.65" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -1967,25 +1976,25 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFR" value="Yageo" x="-163.068" y="24.13" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0805JR-074K7L" x="-163.068" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C25" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="20.066" y="4.318" rot="MR90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DIST" value="Digikey" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
-<attribute name="TESTED" value="NO" x="6.858" y="-217.17" size="1.778" layer="28" rot="MR90" display="off"/>
+<element name="C25" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="10uF/25V" x="21.082" y="3.556" rot="MR90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIST" value="Digikey" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DISTPN" value="490-5523-1-ND" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73L" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="TESTED" value="NO" x="7.874" y="-217.932" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C26" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="49.53" y="47.752" rot="MR180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTPN" value="490-1666-1-ND" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="GRM21BR71H104KA01L" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TESTED" value="NO" x="-107.696" y="66.04" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="C26" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="48.006" y="52.578" rot="MR180">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="TESTED" value="NO" x="-109.22" y="70.866" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C47" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="59.436" y="52.324" rot="MR270">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="190.5" y="463.296" size="1.778" layer="28" rot="MR270" display="off"/>
@@ -2220,14 +2229,14 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFR" value="Linx Technologies Inc." x="514.09599375" y="292.353996875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ANT-2.45-CHP-T" x="514.09599375" y="292.353996875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R43" library="MrSwirlyEyes" package="RESISTOR_SMD-805" value="10KΩ" x="13.462" y="21.844" rot="MR180">
-<attribute name="CREATOR" value="Kenmei" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-10KARCT-ND" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTPN" value="311-10KARCT-ND" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR" value="Yageo" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="RC0805JR-0710KL" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TESTED" value="YES" x="-453.644" y="228.6" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="R43" library="MrSwirlyEyes" package="RESISTOR_SMD-805" value="10KΩ" x="13.462" y="7.874" rot="MR0">
+<attribute name="CREATOR" value="Kenmei" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIST" value="Digikey" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-10KARCT-ND" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFR" value="Yageo" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TESTED" value="YES" x="480.568" y="-198.882" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C63" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="27.94" y="44.704" rot="R90">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="249.936" y="-395.732" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2239,32 +2248,32 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="GRM21BR71H104KA01L" x="249.936" y="-395.732" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="249.936" y="-395.732" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="AVR_ISP" library="MrSwirlyEyes" package="2X3-NS" value="AVR ISP" x="22.352" y="18.796" rot="R90">
-<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3234-ND" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="609-3234-ND" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Amphenol FCI" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="67997-206HLF" x="376.428" y="-563.88" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="AVR ISP" x="22.352" y="18.796" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="AVR_ISP" library="MrSwirlyEyes" package="2X3-NS" value="AVR ISP" x="36.322" y="43.688" rot="R315">
+<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="DIST" value="Digikey" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3234-ND" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="DISTPN" value="609-3234-ND" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MFR" value="Amphenol FCI" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="MPN" value="67997-206HLF" x="-626.061690625" y="205.332609375" size="1.778" layer="27" rot="R315" display="off"/>
+<attribute name="VALUE" value="AVR ISP" x="36.322" y="43.688" size="1.778" layer="27" rot="R315" display="off"/>
 </element>
-<element name="C79" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="30.734" y="50.546" rot="R270">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="490-1666-1-ND" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="GRM21BR71H104KA01L" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TESTED" value="NO" x="-212.598" y="607.568" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C79" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="31.496" y="52.578" rot="R270">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DATASHEET" value="http://psearch.en.murata.com/capacitor/product/GRM21BR71H104KA01%23.pdf" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-1666-1-ND" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="490-1666-1-ND" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="GRM21BR71H104KA01L" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TESTED" value="NO" x="-211.836" y="609.6" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="JP1" library="MrSwirlyEyes" package="FTDI_BASIC-6PIN-MALE-RA" value="FTDIPTH-RA" x="30.734" y="54.356" rot="R180">
-<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/68015.pdf" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="609-3327-ND" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Amphenol FCI" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="68016-406HLF" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PRICE" value="0.33" x="562.864" y="399.034" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="JP1" library="MrSwirlyEyes" package="FTDI_BASIC-6PIN-MALE-RA" value="FTDIPTH-RA" x="31.496" y="56.388" rot="R180">
+<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/68015.pdf" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="609-3327-ND" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Amphenol FCI" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="68016-406HLF" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PRICE" value="0.33" x="563.626" y="401.066" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="BATT1" library="MrSwirlyEyes" package="DUAL_PTH_PADS" value="BATTERYPTH_HOLES" x="75.692" y="30.734" rot="R270"/>
 <element name="SW1" library="MrSwirlyEyes" package="SW-SLIDE_SPDT_5A-28V_13L-7W" value="5A/28V" x="75.692" y="41.148" rot="R90">
@@ -2297,15 +2306,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="CGRKM4001-HF" x="354.838" y="-547.878" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="354.838" y="-547.878" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C80" library="MrSwirlyEyes" package="CAP_POL_SMD_L6.6-W6.6" value="220uF/16V" x="64.516" y="28.194" rot="R270">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET" value="https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P15089CT-ND" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="P15089CT-ND" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Panasonic Electronic Components" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="EEE-FT1C221AP" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TESTED" value="NO" x="-276.098" y="590.042" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="C80" library="MrSwirlyEyes" package="CAP_POL_SMD_L6.6-W6.6" value="220uF/16V" x="60.198" y="36.068" rot="R90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P15089CT-ND" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="P15089CT-ND" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="EEE-FT1C221AP" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="NO" x="400.812" y="-525.78" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C81" library="MrSwirlyEyes" package="CAP_CER_SMD-805" value="0.1uF/50V" x="66.802" y="36.068" rot="MR90">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-256.794" y="-554.228" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2346,15 +2355,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="GRM21BR71H104KA01L" x="-292.862" y="-590.296" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="TESTED" value="NO" x="-292.862" y="-590.296" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C84" library="MrSwirlyEyes" package="CAP_POL_SMD_L6.6-W6.6" value="100UF/16V" x="64.516" y="38.862" rot="R90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+ABA0120+EEEFK1C101P+7+WW" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=PCE3783CT-ND" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="PCE3783CT-ND" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Panasonic Electronic Components" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="EEE-FK1C101P" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TESTED" value="NO" x="414.02" y="-557.53" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C84" library="MrSwirlyEyes" package="CAP_POL_SMD_L6.6-W6.6" value="100UF/16V" x="67.818" y="36.068" rot="R90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+ABA0120+EEEFK1C101P+7+WW" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=PCE3783CT-ND" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="PCE3783CT-ND" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="EEE-FK1C101P" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="NO" x="417.322" y="-560.324" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L2" library="MrSwirlyEyes" package="INDUCTOR_SMD-805" value="10uH" x="81.026" y="26.416" rot="MR90">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-241.3" y="-544.576" size="1.778" layer="28" rot="MR90" display="off"/>
@@ -2546,15 +2555,15 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MPN" value="EJ508A" x="76.2" y="21.336" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="76.2" y="21.336" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C20" library="MrSwirlyEyes" package="CAP_POL_DIA12.5-LS5-H27" value="1000uF/50V" x="53.848" y="36.322" rot="R90">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DATASHEET" value="http://nichicon-us.com/english/products/pdfs/e-uvr.pdf" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/nichicon/UVR1H102MHD/493-1111-ND/588852" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="493-1111-ND" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Nichicon" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="UVR1H102MHD" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="TESTED" value="NO" x="53.848" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C20" library="MrSwirlyEyes" package="CAP_POL_SMD_L6.6-W6.6" value="220uF/16V" x="52.578" y="36.068" rot="R90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1240.pdf" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P15089CT-ND" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="P15089CT-ND" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="EEE-FT1C221AP" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="NO" x="52.578" y="36.068" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="VREG1" library="MrSwirlyEyes" package="TO-263-5" value="5A/5V" x="42.164" y="20.828" rot="R270">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="42.164" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2565,28 +2574,47 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="MFR" value="Microchip Technology" x="42.164" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MIC29501-5.0WU" x="42.164" y="20.828" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="S7" library="MrSwirlyEyes" package="SW_MOMENTARY_SPST-NO_SMD_12V_50MA_5.2MM" value="TACTILE-SW_500mA/12V" x="13.462" y="18.796" rot="R270">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/C&amp;K/RS-187R05-DS%20MT_RT.pdf" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=CKN10361CT-ND" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="CKN10361CT-ND" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="C&amp;K" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RS-187R05A2-DS MT RT" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TESTED" value="NO" x="13.462" y="18.796" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="S7" library="MrSwirlyEyes" package="SW_MOMENTARY_SPST-NO_SMD_12V_50MA_5.2MM" value="TACTILE-SW_500mA/12V" x="13.462" y="10.922" rot="R90">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/C&amp;K/RS-187R05-DS%20MT_RT.pdf" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=CKN10361CT-ND" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="CKN10361CT-ND" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="C&amp;K" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RS-187R05A2-DS MT RT" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="NO" x="13.462" y="10.922" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D1" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="1A/50V" x="13.462" y="19.304" rot="MR180">
-<attribute name="CREATOR" value="MrSwirlyEyes" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIST" value="Digikey" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=641-1511-1-ND" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DISTPN" value="641-1511-1-ND" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MFR" value="Comchip Technology" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="MPN" value="CGRKM4001-HF" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="TESTED" value="NO" x="13.462" y="19.304" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="D1" library="MrSwirlyEyes" package="DIODE_SMD_1A-50V-SOD123F" value="1A/50V" x="13.462" y="10.414" rot="MR0">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIST" value="Digikey" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=641-1511-1-ND" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DISTPN" value="641-1511-1-ND" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MFR" value="Comchip Technology" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MPN" value="CGRKM4001-HF" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TESTED" value="NO" x="13.462" y="10.414" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="SUPPLY51" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="81.4" y="14.986" rot="MR180"/>
 <element name="SUPPLY52" library="SparkFun-PowerSymbols" package="2PT_GND_TIE" value="2PT_GND_TIE" x="81.026" y="29.21" rot="MR180"/>
+<element name="L3" library="MrSwirlyEyes" package="LED_SMD-805_" value="BLUE" x="64.008" y="28.702" rot="R270">
+<attribute name="CREATOR" value="MrSwirlyEyes" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DATASHEET" value="http://optoelectronics.liteon.com/upload/download/DS-22-99-0226/LTST-C170TBKT.pdf" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=160-1579-1-ND" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="160-1579-1-ND" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="Lite-On Inc." x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C170TBKT" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TESTED" value="NO" x="64.008" y="28.702" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R1" library="MrSwirlyEyes" package="RESISTOR_SMD-805" value="10KΩ" x="66.294" y="26.162" rot="R90">
+<attribute name="CREATOR" value="Kenmei" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-10KARCT-ND" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Yageo" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TESTED" value="YES" x="66.294" y="26.162" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2627,7 +2655,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C81" pad="2"/>
 <contactref element="C84" pad="K"/>
 <contactref element="J2" pad="GND@1"/>
-<contactref element="C20" pad="-"/>
+<contactref element="C20" pad="K"/>
 <contactref element="S7" pad="1"/>
 <contactref element="MCU" pad="20"/>
 <contactref element="MCU" pad="24"/>
@@ -2654,6 +2682,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="SUPPLY51" pad="P$2"/>
 <wire x1="81.4" y1="15.621" x2="81.4" y2="16.898" width="0.3048" layer="16"/>
 <wire x1="81.4" y1="16.898" x2="81.28" y2="17.018" width="0.3048" layer="16"/>
+<contactref element="R1" pad="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="PWM_DRIVER" pad="28"/>
@@ -2683,7 +2712,14 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C52" pad="1"/>
 <contactref element="MCU" pad="21"/>
 <contactref element="MCU" pad="22"/>
-<wire x1="27.94" y1="43.704" x2="23.114" y2="54.356" width="0" layer="19" extent="1-1"/>
+<wire x1="21.082" y1="1.27" x2="21.082" y2="2.556" width="0.3048" layer="16"/>
+<via x="21.082" y="1.27" extent="1-16" drill="0.35"/>
+<wire x1="23.622" y1="2.556" x2="23.622" y2="1.27" width="0.3048" layer="16"/>
+<via x="23.622" y="1.27" extent="1-16" drill="0.35"/>
+<wire x1="19.252" y1="1.363" x2="20.989" y2="1.363" width="0.3048" layer="1"/>
+<wire x1="20.989" y1="1.363" x2="21.082" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="21.082" y1="1.27" x2="23.622" y2="1.27" width="0.3048" layer="1"/>
+<wire x1="27.94" y1="43.704" x2="23.876" y2="56.388" width="0" layer="19" extent="1-1"/>
 <wire x1="23.856" y1="40.441" x2="27.94" y2="43.704" width="0" layer="19" extent="1-1"/>
 <wire x1="27.487" y1="37.31" x2="23.856" y2="40.441" width="0" layer="19" extent="1-1"/>
 <wire x1="30.988" y1="37.354" x2="27.487" y2="37.31" width="0" layer="19" extent="1-1"/>
@@ -2702,13 +2738,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.336" y1="27.178" x2="20.856" y2="30.679" width="0" layer="19" extent="1-16"/>
 <wire x1="20.082" y1="27.178" x2="20.336" y2="27.178" width="0" layer="19" extent="1-16"/>
 <wire x1="20.336" y1="24.892" x2="20.336" y2="27.178" width="0" layer="19" extent="16-16"/>
-<wire x1="14.462" y1="21.844" x2="20.336" y2="24.892" width="0" layer="19" extent="16-16"/>
-<wire x1="15.262" y1="19.304" x2="14.462" y2="21.844" width="0" layer="19" extent="16-16"/>
-<wire x1="21.082" y1="16.256" x2="15.262" y2="19.304" width="0" layer="19" extent="16-16"/>
+<wire x1="35.423971875" y1="46.382075" x2="27.94" y2="43.704" width="0" layer="19" extent="1-1"/>
 <wire x1="14.208" y1="43.942" x2="23.856" y2="40.441" width="0" layer="19" extent="1-1"/>
-<wire x1="20.066" y1="3.318" x2="21.082" y2="16.256" width="0" layer="19" extent="16-16"/>
-<wire x1="18.236" y1="3.395" x2="20.066" y2="3.318" width="0" layer="19" extent="1-16"/>
-<wire x1="22.606" y1="3.318" x2="20.066" y2="3.318" width="0" layer="19" extent="16-16"/>
+<wire x1="11.662" y1="10.414" x2="20.336" y2="24.892" width="0" layer="19" extent="16-16"/>
+<wire x1="12.462" y1="7.874" x2="11.662" y2="10.414" width="0" layer="19" extent="16-16"/>
+<wire x1="19.252" y1="1.363" x2="12.462" y2="7.874" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="S0">
 <contactref element="DEMUX1" pad="10"/>
@@ -2747,76 +2781,78 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="PWM_DRIVER" pad="27"/>
 <contactref element="MCU" pad="26"/>
 <contactref element="R18" pad="1"/>
-<wire x1="24.146" y1="27.178" x2="23.356" y2="30.679" width="0" layer="19" extent="1-1"/>
-<wire x1="18.236" y1="4.045" x2="24.146" y2="27.178" width="0" layer="19" extent="1-1"/>
+<wire x1="24.146" y1="27.178" x2="23.356" y2="27.968" width="0.1524" layer="1"/>
+<wire x1="23.356" y1="27.968" x2="23.356" y2="30.679" width="0.1524" layer="1"/>
+<wire x1="19.252" y1="2.013" x2="24.146" y2="27.178" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="PWM_DRIVER" pad="26"/>
 <contactref element="MCU" pad="25"/>
 <contactref element="R17" pad="1"/>
-<wire x1="22.082" y1="27.178" x2="22.856" y2="30.679" width="0" layer="19" extent="1-1"/>
-<wire x1="18.236" y1="4.695" x2="22.082" y2="27.178" width="0" layer="19" extent="1-1"/>
+<wire x1="22.082" y1="27.178" x2="22.856" y2="27.952" width="0.1524" layer="1"/>
+<wire x1="22.856" y1="27.952" x2="22.856" y2="30.679" width="0.1524" layer="1"/>
+<wire x1="19.252" y1="2.663" x2="22.082" y2="27.178" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO_PINKY">
 <contactref element="PWM_DRIVER" pad="6"/>
 <contactref element="SERVO_WRIST" pad="1"/>
-<wire x1="27.686" y1="0.508" x2="27.432" y2="0.762" width="0.1524" layer="16"/>
-<via x="26.67" y="6.645" extent="1-16" drill="0.35"/>
-<wire x1="26.67" y1="6.645" x2="24.436" y2="6.645" width="0.1524" layer="1"/>
-<wire x1="27.432" y1="0.762" x2="27.432" y2="6.35" width="0.1524" layer="16"/>
-<wire x1="27.432" y1="6.35" x2="27.137" y2="6.645" width="0.1524" layer="16"/>
-<wire x1="27.137" y1="6.645" x2="26.67" y2="6.645" width="0.1524" layer="16"/>
+<wire x1="28.702" y1="0.508" x2="28.448" y2="0.762" width="0.1524" layer="16"/>
+<via x="27.686" y="4.572" extent="1-16" drill="0.35"/>
+<wire x1="27.686" y1="4.572" x2="25.452" y2="4.613" width="0.1524" layer="1"/>
+<wire x1="28.448" y1="0.762" x2="28.448" y2="4.318" width="0.1524" layer="16"/>
+<wire x1="28.448" y1="4.318" x2="28.153" y2="4.613" width="0.1524" layer="16"/>
+<wire x1="28.153" y1="4.613" x2="27.686" y2="4.572" width="0.1524" layer="16"/>
 <wire x1="77.216" y1="3.556" x2="77.216" y2="1.016" width="0.1524" layer="16"/>
 <wire x1="77.216" y1="1.016" x2="76.708" y2="0.508" width="0.1524" layer="16"/>
-<wire x1="76.708" y1="0.508" x2="27.686" y2="0.508" width="0.1524" layer="16"/>
+<wire x1="76.708" y1="0.508" x2="28.702" y2="0.508" width="0.1524" layer="16"/>
 </signal>
 <signal name="SERVO_RING">
 <contactref element="PWM_DRIVER" pad="7"/>
 <contactref element="SERVO_THUMB" pad="1"/>
-<wire x1="27.686" y1="0.508" x2="27.432" y2="0.762" width="0.1524" layer="1"/>
-<wire x1="27.432" y1="0.762" x2="27.432" y2="7.112" width="0.1524" layer="1"/>
-<wire x1="27.432" y1="7.112" x2="27.249" y2="7.295" width="0.1524" layer="1"/>
-<wire x1="27.249" y1="7.295" x2="24.436" y2="7.295" width="0.1524" layer="1"/>
+<wire x1="28.702" y1="0.508" x2="28.448" y2="0.762" width="0.1524" layer="1"/>
+<wire x1="28.448" y1="0.762" x2="28.448" y2="5.08" width="0.1524" layer="1"/>
+<wire x1="28.448" y1="5.08" x2="28.265" y2="5.263" width="0.1524" layer="1"/>
+<wire x1="28.265" y1="5.263" x2="25.452" y2="5.263" width="0.1524" layer="1"/>
 <wire x1="69.596" y1="3.556" x2="69.596" y2="1.016" width="0.1524" layer="1"/>
 <wire x1="69.596" y1="1.016" x2="69.088" y2="0.508" width="0.1524" layer="1"/>
-<wire x1="69.088" y1="0.508" x2="27.686" y2="0.508" width="0.1524" layer="1"/>
+<wire x1="69.088" y1="0.508" x2="28.702" y2="0.508" width="0.1524" layer="1"/>
 </signal>
 <signal name="SERVO_MIDDLE">
 <contactref element="PWM_DRIVER" pad="8"/>
 <contactref element="SERVO_INDEX" pad="1"/>
-<wire x1="28.194" y1="1.016" x2="27.94" y2="1.27" width="0.1524" layer="16"/>
-<wire x1="27.94" y1="7.366" x2="27.94" y2="1.27" width="0.1524" layer="16"/>
-<via x="26.67" y="7.945" extent="1-16" drill="0.35"/>
-<wire x1="26.67" y1="7.945" x2="24.436" y2="7.945" width="0.1524" layer="1"/>
-<wire x1="26.67" y1="7.945" x2="27.361" y2="7.945" width="0.1524" layer="16"/>
-<wire x1="27.361" y1="7.945" x2="27.94" y2="7.366" width="0.1524" layer="16"/>
+<wire x1="29.21" y1="1.016" x2="28.956" y2="1.27" width="0.1524" layer="16"/>
+<wire x1="28.956" y1="5.334" x2="28.956" y2="1.27" width="0.1524" layer="16"/>
+<via x="27.686" y="5.913" extent="1-16" drill="0.35"/>
+<wire x1="27.686" y1="5.913" x2="25.452" y2="5.913" width="0.1524" layer="1"/>
+<wire x1="27.686" y1="5.913" x2="28.377" y2="5.913" width="0.1524" layer="16"/>
+<wire x1="28.377" y1="5.913" x2="28.956" y2="5.334" width="0.1524" layer="16"/>
 <wire x1="61.976" y1="3.556" x2="61.976" y2="1.524" width="0.1524" layer="16"/>
 <wire x1="61.976" y1="1.524" x2="61.468" y2="1.016" width="0.1524" layer="16"/>
-<wire x1="61.468" y1="1.016" x2="28.194" y2="1.016" width="0.1524" layer="16"/>
+<wire x1="61.468" y1="1.016" x2="29.21" y2="1.016" width="0.1524" layer="16"/>
 </signal>
 <signal name="SERVO_INDEX">
 <contactref element="PWM_DRIVER" pad="9"/>
 <contactref element="SERVO_MIDDLE" pad="1"/>
-<wire x1="28.194" y1="1.016" x2="27.94" y2="1.27" width="0.1524" layer="1"/>
-<wire x1="27.94" y1="1.27" x2="27.94" y2="7.874" width="0.1524" layer="1"/>
-<wire x1="27.94" y1="7.874" x2="27.219" y2="8.595" width="0.1524" layer="1"/>
-<wire x1="27.219" y1="8.595" x2="24.436" y2="8.595" width="0.1524" layer="1"/>
+<wire x1="29.21" y1="1.016" x2="28.956" y2="1.27" width="0.1524" layer="1"/>
+<wire x1="28.956" y1="1.27" x2="28.956" y2="5.842" width="0.1524" layer="1"/>
+<wire x1="28.956" y1="5.842" x2="28.235" y2="6.563" width="0.1524" layer="1"/>
+<wire x1="28.235" y1="6.563" x2="25.452" y2="6.563" width="0.1524" layer="1"/>
 <wire x1="54.356" y1="3.556" x2="54.356" y2="1.524" width="0.1524" layer="1"/>
 <wire x1="54.356" y1="1.524" x2="53.848" y2="1.016" width="0.1524" layer="1"/>
-<wire x1="53.848" y1="1.016" x2="28.194" y2="1.016" width="0.1524" layer="1"/>
+<wire x1="53.848" y1="1.016" x2="29.21" y2="1.016" width="0.1524" layer="1"/>
 </signal>
 <signal name="SERVO_THUMB">
 <contactref element="PWM_DRIVER" pad="10"/>
 <contactref element="SERVO_RING" pad="1"/>
-<wire x1="28.702" y1="1.524" x2="28.448" y2="1.778" width="0.1524" layer="16"/>
-<wire x1="28.448" y1="1.778" x2="28.448" y2="8.128" width="0.1524" layer="16"/>
-<via x="26.67" y="9.245" extent="1-16" drill="0.35"/>
-<wire x1="26.67" y1="9.245" x2="24.436" y2="9.245" width="0.1524" layer="1"/>
-<wire x1="27.331" y1="9.245" x2="26.67" y2="9.245" width="0.1524" layer="16"/>
-<wire x1="28.448" y1="8.128" x2="27.331" y2="9.245" width="0.1524" layer="16"/>
+<wire x1="29.718" y1="1.524" x2="29.464" y2="1.778" width="0.1524" layer="16"/>
+<wire x1="29.464" y1="1.778" x2="29.464" y2="6.096" width="0.1524" layer="16"/>
+<via x="27.686" y="7.213" extent="1-16" drill="0.35"/>
+<wire x1="27.686" y1="7.213" x2="25.452" y2="7.213" width="0.1524" layer="1"/>
+<wire x1="28.347" y1="7.213" x2="27.686" y2="7.213" width="0.1524" layer="16"/>
+<wire x1="29.464" y1="6.096" x2="28.347" y2="7.213" width="0.1524" layer="16"/>
 <wire x1="46.736" y1="3.556" x2="46.736" y2="2.032" width="0.1524" layer="16"/>
 <wire x1="46.736" y1="2.032" x2="46.228" y2="1.524" width="0.1524" layer="16"/>
-<wire x1="46.228" y1="1.524" x2="28.702" y2="1.524" width="0.1524" layer="16"/>
+<wire x1="46.228" y1="1.524" x2="29.718" y2="1.524" width="0.1524" layer="16"/>
 </signal>
 <signal name="PWM10">
 <contactref element="PWM_DRIVER" pad="17"/>
@@ -2826,28 +2862,36 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R16" pad="2"/>
 <contactref element="FSR_PINKY" pad="-"/>
 <wire x1="61.96" y1="53.34" x2="61.976" y2="53.324" width="0.1524" layer="16"/>
-<wire x1="60.706" y1="50.546" x2="60.299" y2="50.139" width="0.1524" layer="16"/>
-<wire x1="55.662215625" y1="50.139" x2="53.28" y2="50.139" width="0.1524" layer="1"/>
+<wire x1="54.138215625" y1="54.965" x2="51.756" y2="54.965" width="0.1524" layer="1"/>
 <wire x1="61.976" y1="53.324" x2="60.706" y2="52.054" width="0.1524" layer="16"/>
 <wire x1="60.706" y1="52.054" x2="60.706" y2="50.546" width="0.1524" layer="16"/>
-<via x="55.662215625" y="50.139" extent="1-16" drill="0.35"/>
-<wire x1="60.299" y1="50.139" x2="55.662215625" y2="50.139" width="0.1524" layer="16"/>
+<via x="54.138215625" y="54.965" extent="1-16" drill="0.35"/>
 <wire x1="61.976" y1="53.324" x2="61.976" y2="55.626" width="0.1524" layer="16"/>
+<wire x1="60.706" y1="50.546" x2="60.299" y2="50.139" width="0.1524" layer="16"/>
+<wire x1="60.299" y1="50.139" x2="58.573" y2="50.139" width="0.1524" layer="16"/>
+<wire x1="58.573" y1="50.139" x2="58.166" y2="50.546" width="0.1524" layer="16"/>
+<wire x1="58.166" y1="50.546" x2="58.166" y2="54.61" width="0.1524" layer="16"/>
+<wire x1="58.166" y1="54.61" x2="57.811" y2="54.965" width="0.1524" layer="16"/>
+<wire x1="57.811" y1="54.965" x2="54.138215625" y2="54.965" width="0.1524" layer="16"/>
 </signal>
 <signal name="FSR_RING">
 <contactref element="DEMUX1" pad="8"/>
 <contactref element="R39" pad="2"/>
 <contactref element="FSR_RING" pad="-"/>
 <wire x1="67.04" y1="53.34" x2="67.056" y2="53.324" width="0.1524" layer="16"/>
-<wire x1="61.214" y1="50.292" x2="60.411" y2="49.489" width="0.1524" layer="16"/>
-<wire x1="56.64765" y1="49.489" x2="60.411" y2="49.489" width="0.1524" layer="16"/>
 <wire x1="67.056" y1="53.324" x2="65.786" y2="52.054" width="0.1524" layer="16"/>
 <wire x1="65.786" y1="52.054" x2="65.786" y2="50.546" width="0.1524" layer="16"/>
 <wire x1="65.786" y1="50.546" x2="65.532" y2="50.292" width="0.1524" layer="16"/>
 <wire x1="65.532" y1="50.292" x2="61.214" y2="50.292" width="0.1524" layer="16"/>
-<via x="56.64765" y="49.489" extent="1-16" drill="0.35"/>
-<wire x1="53.28" y1="49.489" x2="56.64765" y2="49.489" width="0.1524" layer="1"/>
+<via x="55.12365" y="54.315" extent="1-16" drill="0.35"/>
+<wire x1="51.756" y1="54.315" x2="55.12365" y2="54.315" width="0.1524" layer="1"/>
 <wire x1="67.056" y1="53.324" x2="67.056" y2="55.626" width="0.1524" layer="16"/>
+<wire x1="60.452" y1="49.53" x2="58.42" y2="49.53" width="0.1524" layer="16"/>
+<wire x1="58.42" y1="49.53" x2="57.658" y2="50.292" width="0.1524" layer="16"/>
+<wire x1="57.658" y1="50.292" x2="57.658" y2="54.102" width="0.1524" layer="16"/>
+<wire x1="57.658" y1="54.102" x2="57.445" y2="54.315" width="0.1524" layer="16"/>
+<wire x1="57.445" y1="54.315" x2="55.12365" y2="54.315" width="0.1524" layer="16"/>
+<wire x1="61.214" y1="50.292" x2="60.452" y2="49.53" width="0.1524" layer="16"/>
 </signal>
 <signal name="FSR_MIDDLE">
 <contactref element="DEMUX1" pad="7"/>
@@ -2855,24 +2899,27 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="FSR_MIDDLE" pad="-"/>
 <wire x1="72.12" y1="53.34" x2="72.136" y2="53.324" width="0.1524" layer="16"/>
 <wire x1="72.136" y1="53.324" x2="70.866" y2="52.054" width="0.1524" layer="16"/>
-<wire x1="61.468" y1="49.784" x2="60.523" y2="48.839" width="0.1524" layer="16"/>
-<wire x1="55.654696875" y1="48.839" x2="60.523" y2="48.839" width="0.1524" layer="16"/>
 <wire x1="70.866" y1="52.054" x2="70.866" y2="50.546" width="0.1524" layer="16"/>
 <wire x1="70.866" y1="50.546" x2="70.612" y2="50.292" width="0.1524" layer="16"/>
 <wire x1="70.612" y1="50.292" x2="66.294" y2="50.292" width="0.1524" layer="16"/>
 <wire x1="66.294" y1="50.292" x2="65.786" y2="49.784" width="0.1524" layer="16"/>
 <wire x1="65.786" y1="49.784" x2="61.468" y2="49.784" width="0.1524" layer="16"/>
 <wire x1="72.136" y1="53.324" x2="72.136" y2="55.626" width="0.1524" layer="16"/>
-<wire x1="53.28" y1="48.839" x2="55.654696875" y2="48.839" width="0.1524" layer="1"/>
-<via x="55.654696875" y="48.839" extent="1-16" drill="0.35"/>
+<wire x1="51.756" y1="53.665" x2="54.130696875" y2="53.665" width="0.1524" layer="1"/>
+<via x="54.130696875" y="53.665" extent="1-16" drill="0.35"/>
+<wire x1="60.706" y1="49.022" x2="58.166" y2="49.022" width="0.1524" layer="16"/>
+<wire x1="58.166" y1="49.022" x2="57.15" y2="50.038" width="0.1524" layer="16"/>
+<wire x1="57.15" y1="50.038" x2="57.15" y2="53.34" width="0.1524" layer="16"/>
+<wire x1="57.15" y1="53.34" x2="56.825" y2="53.665" width="0.1524" layer="16"/>
+<wire x1="56.825" y1="53.665" x2="54.130696875" y2="53.665" width="0.1524" layer="16"/>
+<wire x1="61.468" y1="49.784" x2="60.706" y2="49.022" width="0.1524" layer="16"/>
 </signal>
 <signal name="FSR_INDEX">
 <contactref element="DEMUX1" pad="6"/>
 <contactref element="R41" pad="2"/>
 <contactref element="FSR_INDEX" pad="-"/>
 <wire x1="75.946" y1="52.054" x2="77.216" y2="53.324" width="0.1524" layer="16"/>
-<wire x1="61.722" y1="49.276" x2="60.635" y2="48.189" width="0.1524" layer="16"/>
-<wire x1="56.63671875" y1="48.189" x2="60.635" y2="48.189" width="0.1524" layer="16"/>
+<wire x1="61.722" y1="49.276" x2="60.96" y2="48.514" width="0.1524" layer="16"/>
 <wire x1="75.946" y1="52.054" x2="75.946" y2="50.546" width="0.1524" layer="16"/>
 <wire x1="75.946" y1="50.546" x2="75.692" y2="50.292" width="0.1524" layer="16"/>
 <wire x1="75.692" y1="50.292" x2="71.374" y2="50.292" width="0.1524" layer="16"/>
@@ -2881,16 +2928,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="66.548" y1="49.784" x2="66.04" y2="49.276" width="0.1524" layer="16"/>
 <wire x1="66.04" y1="49.276" x2="61.722" y2="49.276" width="0.1524" layer="16"/>
 <wire x1="77.216" y1="53.324" x2="77.216" y2="55.626" width="0.1524" layer="16"/>
-<via x="56.63671875" y="48.189" extent="1-16" drill="0.35"/>
-<wire x1="53.28" y1="48.189" x2="56.63671875" y2="48.189" width="0.1524" layer="1"/>
+<via x="55.11271875" y="53.015" extent="1-16" drill="0.35"/>
+<wire x1="51.756" y1="53.015" x2="55.11271875" y2="53.015" width="0.1524" layer="1"/>
+<wire x1="60.96" y1="48.514" x2="57.912" y2="48.514" width="0.1524" layer="16"/>
+<wire x1="57.912" y1="48.514" x2="56.642" y2="49.784" width="0.1524" layer="16"/>
+<wire x1="56.642" y1="49.784" x2="56.642" y2="52.832" width="0.1524" layer="16"/>
+<wire x1="56.642" y1="52.832" x2="56.459" y2="53.015" width="0.1524" layer="16"/>
+<wire x1="56.459" y1="53.015" x2="55.11271875" y2="53.015" width="0.1524" layer="16"/>
 </signal>
 <signal name="FSR_THUMB">
 <contactref element="DEMUX1" pad="5"/>
 <contactref element="R42" pad="2"/>
 <contactref element="FSR_THUMB" pad="-"/>
 <wire x1="81.026" y1="52.054" x2="82.296" y2="53.324" width="0.1524" layer="16"/>
-<wire x1="61.976" y1="48.768" x2="60.747" y2="47.539" width="0.1524" layer="16"/>
-<wire x1="55.587196875" y1="47.539" x2="60.747" y2="47.539" width="0.1524" layer="16"/>
+<wire x1="61.976" y1="48.768" x2="61.214" y2="48.006" width="0.1524" layer="16"/>
 <wire x1="81.026" y1="52.054" x2="81.026" y2="50.546" width="0.1524" layer="16"/>
 <wire x1="81.026" y1="50.546" x2="80.772" y2="50.292" width="0.1524" layer="16"/>
 <wire x1="80.772" y1="50.292" x2="76.454" y2="50.292" width="0.1524" layer="16"/>
@@ -2901,8 +2952,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="66.802" y1="49.276" x2="66.294" y2="48.768" width="0.1524" layer="16"/>
 <wire x1="66.294" y1="48.768" x2="61.976" y2="48.768" width="0.1524" layer="16"/>
 <wire x1="82.296" y1="53.324" x2="82.296" y2="55.626" width="0.1524" layer="16"/>
-<wire x1="53.28" y1="47.539" x2="55.587196875" y2="47.539" width="0.1524" layer="1"/>
-<via x="55.587196875" y="47.539" extent="1-16" drill="0.35"/>
+<wire x1="51.756" y1="52.365" x2="54.063196875" y2="52.365" width="0.1524" layer="1"/>
+<via x="54.063196875" y="52.365" extent="1-16" drill="0.35"/>
+<wire x1="61.214" y1="48.006" x2="57.658" y2="48.006" width="0.1524" layer="16"/>
+<wire x1="57.658" y1="48.006" x2="56.134" y2="49.53" width="0.1524" layer="16"/>
+<wire x1="56.134" y1="49.53" x2="56.134" y2="52.07" width="0.1524" layer="16"/>
+<wire x1="56.134" y1="52.07" x2="55.839" y2="52.365" width="0.1524" layer="16"/>
+<wire x1="55.839" y1="52.365" x2="54.063196875" y2="52.365" width="0.1524" layer="16"/>
 </signal>
 <signal name="TEMP_PINKY">
 <contactref element="DEMUX1" pad="20"/>
@@ -2911,9 +2967,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="74.676" y1="62.738" x2="74.422" y2="62.992" width="0.1524" layer="1"/>
 <wire x1="39.624" y1="62.992" x2="39.37" y2="62.738" width="0.1524" layer="1"/>
 <wire x1="74.422" y1="62.992" x2="39.624" y2="62.992" width="0.1524" layer="1"/>
-<wire x1="39.37" y1="62.738" x2="39.37" y2="51.308" width="0.1524" layer="1"/>
-<wire x1="39.37" y1="51.308" x2="43.139" y2="47.539" width="0.1524" layer="1"/>
-<wire x1="43.139" y1="47.539" x2="45.78" y2="47.539" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="62.738" x2="39.37" y2="54.61" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="54.61" x2="41.615" y2="52.365" width="0.1524" layer="1"/>
+<wire x1="41.615" y1="52.365" x2="44.256" y2="52.365" width="0.1524" layer="1"/>
 </signal>
 <signal name="TEMP_RING">
 <contactref element="DEMUX1" pad="19"/>
@@ -2922,11 +2978,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="67.056" y1="62.738" x2="66.802" y2="62.992" width="0.1524" layer="16"/>
 <wire x1="39.624" y1="62.992" x2="39.37" y2="62.738" width="0.1524" layer="16"/>
 <wire x1="66.802" y1="62.992" x2="39.624" y2="62.992" width="0.1524" layer="16"/>
-<wire x1="39.37" y1="62.738" x2="39.37" y2="51.816" width="0.1524" layer="16"/>
-<via x="43.434" y="48.189" extent="1-16" drill="0.35"/>
-<wire x1="43.434" y1="48.189" x2="45.78" y2="48.189" width="0.1524" layer="1"/>
-<wire x1="39.37" y1="51.816" x2="42.997" y2="48.189" width="0.1524" layer="16"/>
-<wire x1="42.997" y1="48.189" x2="43.434" y2="48.189" width="0.1524" layer="16"/>
+<wire x1="39.37" y1="62.738" x2="39.37" y2="54.61" width="0.1524" layer="16"/>
+<via x="41.91" y="53.015" extent="1-16" drill="0.35"/>
+<wire x1="41.91" y1="53.015" x2="44.256" y2="53.015" width="0.1524" layer="1"/>
+<wire x1="39.37" y1="54.61" x2="40.965" y2="53.015" width="0.1524" layer="16"/>
+<wire x1="40.965" y1="53.015" x2="41.91" y2="53.015" width="0.1524" layer="16"/>
 </signal>
 <signal name="TEMP_MIDDLE">
 <contactref element="DEMUX1" pad="18"/>
@@ -2935,9 +2991,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="59.436" y1="62.23" x2="59.182" y2="62.484" width="0.1524" layer="1"/>
 <wire x1="40.132" y1="62.484" x2="39.878" y2="62.23" width="0.1524" layer="1"/>
 <wire x1="59.182" y1="62.484" x2="40.132" y2="62.484" width="0.1524" layer="1"/>
-<wire x1="39.878" y1="52.07" x2="43.109" y2="48.839" width="0.1524" layer="1"/>
-<wire x1="43.109" y1="48.839" x2="45.78" y2="48.839" width="0.1524" layer="1"/>
-<wire x1="39.878" y1="62.23" x2="39.878" y2="52.07" width="0.1524" layer="1"/>
+<wire x1="39.878" y1="55.372" x2="41.585" y2="53.665" width="0.1524" layer="1"/>
+<wire x1="41.585" y1="53.665" x2="44.256" y2="53.665" width="0.1524" layer="1"/>
+<wire x1="39.878" y1="62.23" x2="39.878" y2="55.372" width="0.1524" layer="1"/>
 </signal>
 <signal name="TEMP_INDEX">
 <contactref element="DEMUX1" pad="17"/>
@@ -2946,11 +3002,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="51.816" y1="62.23" x2="51.562" y2="62.484" width="0.1524" layer="16"/>
 <wire x1="40.132" y1="62.484" x2="39.878" y2="62.23" width="0.1524" layer="16"/>
 <wire x1="51.562" y1="62.484" x2="40.132" y2="62.484" width="0.1524" layer="16"/>
-<wire x1="43.434" y1="49.489" x2="45.78" y2="49.489" width="0.1524" layer="1"/>
-<wire x1="39.878" y1="52.07" x2="42.459" y2="49.489" width="0.1524" layer="16"/>
-<wire x1="42.459" y1="49.489" x2="43.434" y2="49.489" width="0.1524" layer="16"/>
-<via x="43.434" y="49.489" extent="1-16" drill="0.35"/>
-<wire x1="39.878" y1="62.23" x2="39.878" y2="52.07" width="0.1524" layer="16"/>
+<wire x1="41.91" y1="54.315" x2="44.256" y2="54.315" width="0.1524" layer="1"/>
+<wire x1="39.878" y1="55.372" x2="40.935" y2="54.315" width="0.1524" layer="16"/>
+<wire x1="40.935" y1="54.315" x2="41.91" y2="54.315" width="0.1524" layer="16"/>
+<via x="41.91" y="54.315" extent="1-16" drill="0.35"/>
+<wire x1="39.878" y1="62.23" x2="39.878" y2="55.372" width="0.1524" layer="16"/>
 </signal>
 <signal name="PWM6">
 <contactref element="PWM_DRIVER" pad="12"/>
@@ -2986,9 +3042,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="44.196" y1="61.722" x2="43.942" y2="61.976" width="0.1524" layer="1"/>
 <wire x1="43.942" y1="61.976" x2="40.64" y2="61.976" width="0.1524" layer="1"/>
 <wire x1="40.64" y1="61.976" x2="40.386" y2="61.722" width="0.1524" layer="1"/>
-<wire x1="40.386" y1="52.324" x2="42.571" y2="50.139" width="0.1524" layer="1"/>
-<wire x1="42.571" y1="50.139" x2="45.78" y2="50.139" width="0.1524" layer="1"/>
-<wire x1="40.386" y1="61.722" x2="40.386" y2="52.324" width="0.1524" layer="1"/>
+<wire x1="40.386" y1="55.626" x2="41.047" y2="54.965" width="0.1524" layer="1"/>
+<wire x1="41.047" y1="54.965" x2="44.256" y2="54.965" width="0.1524" layer="1"/>
+<wire x1="40.386" y1="61.722" x2="40.386" y2="55.626" width="0.1524" layer="1"/>
 </signal>
 <signal name="SSN">
 <contactref element="MCU" pad="36"/>
@@ -2996,17 +3052,17 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="SCK">
 <contactref element="MCU" pad="37"/>
 <contactref element="AVR_ISP" pad="3"/>
-<wire x1="23.622" y1="18.796" x2="27.487" y2="33.81" width="0" layer="19" extent="1-1"/>
+<wire x1="27.487" y1="33.81" x2="35.423971875" y2="42.789971875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU" pad="38"/>
 <contactref element="AVR_ISP" pad="4"/>
-<wire x1="21.082" y1="18.796" x2="27.487" y2="34.31" width="0" layer="19" extent="1-1"/>
+<wire x1="27.487" y1="34.31" x2="37.220025" y2="44.586025" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="MCU" pad="39"/>
 <contactref element="AVR_ISP" pad="1"/>
-<wire x1="23.622" y1="16.256" x2="27.487" y2="34.81" width="0" layer="19" extent="1-1"/>
+<wire x1="27.487" y1="34.81" x2="33.627921875" y2="44.586025" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB4">
 <contactref element="MCU" pad="40"/>
@@ -3041,12 +3097,12 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="RX0">
 <contactref element="MCU" pad="46"/>
 <contactref element="JP1" pad="TXO"/>
-<wire x1="27.487" y1="38.31" x2="25.654" y2="54.356" width="0" layer="19" extent="1-1"/>
+<wire x1="27.487" y1="38.31" x2="26.416" y2="56.388" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TX0">
 <contactref element="MCU" pad="47"/>
 <contactref element="JP1" pad="RXI"/>
-<wire x1="27.487" y1="38.81" x2="28.194" y2="54.356" width="0" layer="19" extent="1-1"/>
+<wire x1="27.487" y1="38.81" x2="28.956" y2="56.388" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PE2">
 <contactref element="MCU" pad="48"/>
@@ -3151,16 +3207,16 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C79" pad="2"/>
 <contactref element="S7" pad="3"/>
 <contactref element="D1" pad="A"/>
-<wire x1="17.725" y1="33.81" x2="30.734" y2="49.546" width="0" layer="19" extent="1-1"/>
-<wire x1="12.462" y1="21.844" x2="17.725" y2="33.81" width="0" layer="19" extent="1-16"/>
-<wire x1="11.612" y1="21.796" x2="12.462" y2="21.844" width="0" layer="19" extent="1-16"/>
-<wire x1="11.662" y1="19.304" x2="11.612" y2="21.796" width="0" layer="19" extent="1-16"/>
-<wire x1="23.622" y1="21.336" x2="12.462" y2="21.844" width="0" layer="19" extent="16-16"/>
+<wire x1="37.220025" y1="40.993921875" x2="31.496" y2="51.578" width="0" layer="19" extent="1-1"/>
+<wire x1="17.725" y1="33.81" x2="37.220025" y2="40.993921875" width="0" layer="19" extent="1-1"/>
+<wire x1="15.262" y1="10.414" x2="17.725" y2="33.81" width="0" layer="19" extent="1-16"/>
+<wire x1="15.312" y1="7.922" x2="15.262" y2="10.414" width="0" layer="19" extent="1-16"/>
+<wire x1="14.462" y1="7.874" x2="15.312" y2="7.922" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$41">
 <contactref element="JP1" pad="DTR"/>
 <contactref element="C79" pad="1"/>
-<wire x1="30.734" y1="51.546" x2="30.734" y2="54.356" width="0.1524" layer="1"/>
+<wire x1="31.496" y1="53.578" x2="31.496" y2="56.388" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$42">
 <contactref element="JP1" pad="CTS"/>
@@ -3286,13 +3342,13 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="SERVO_WRIST">
 <contactref element="PWM_DRIVER" pad="11"/>
 <contactref element="SERVO_PINKY" pad="1"/>
-<wire x1="28.702" y1="1.524" x2="28.448" y2="1.778" width="0.1524" layer="1"/>
-<wire x1="28.448" y1="1.778" x2="28.448" y2="8.636" width="0.1524" layer="1"/>
-<wire x1="28.448" y1="8.636" x2="27.189" y2="9.895" width="0.1524" layer="1"/>
-<wire x1="27.189" y1="9.895" x2="24.436" y2="9.895" width="0.1524" layer="1"/>
+<wire x1="29.718" y1="1.524" x2="29.464" y2="1.778" width="0.1524" layer="1"/>
+<wire x1="29.464" y1="1.778" x2="29.464" y2="6.604" width="0.1524" layer="1"/>
+<wire x1="29.464" y1="6.604" x2="28.205" y2="7.863" width="0.1524" layer="1"/>
+<wire x1="28.205" y1="7.863" x2="25.452" y2="7.863" width="0.1524" layer="1"/>
 <wire x1="39.116" y1="3.556" x2="39.116" y2="2.032" width="0.1524" layer="1"/>
 <wire x1="39.116" y1="2.032" x2="38.608" y2="1.524" width="0.1524" layer="1"/>
-<wire x1="38.608" y1="1.524" x2="28.702" y2="1.524" width="0.1524" layer="1"/>
+<wire x1="38.608" y1="1.524" x2="29.718" y2="1.524" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="D6" pad="K"/>
@@ -3308,15 +3364,17 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C97" pad="1"/>
 <contactref element="VREG3" pad="3"/>
 <contactref element="VREG3" pad="4"/>
-<contactref element="C20" pad="+"/>
+<contactref element="C20" pad="A"/>
 <contactref element="VREG1" pad="2"/>
 <contactref element="VREG1" pad="1"/>
-<wire x1="66.802" y1="35.068" x2="75.692" y2="36.448" width="0" layer="19" extent="16-16"/>
-<wire x1="64.516" y1="36.212" x2="66.802" y2="35.068" width="0" layer="19" extent="1-16"/>
-<wire x1="66.802" y1="31.988" x2="66.802" y2="35.068" width="0" layer="19" extent="16-16"/>
-<wire x1="64.516" y1="30.844" x2="66.802" y2="31.988" width="0" layer="19" extent="1-16"/>
-<wire x1="53.848" y1="33.822" x2="64.516" y2="36.212" width="0" layer="19" extent="1-1"/>
-<wire x1="48.006" y1="33.766" x2="53.848" y2="33.822" width="0" layer="19" extent="16-16"/>
+<contactref element="L3" pad="A"/>
+<wire x1="67.818" y1="33.418" x2="75.692" y2="36.448" width="0" layer="19" extent="1-1"/>
+<wire x1="66.802" y1="31.988" x2="67.818" y2="33.418" width="0" layer="19" extent="1-16"/>
+<wire x1="66.802" y1="35.068" x2="67.818" y2="33.418" width="0" layer="19" extent="1-16"/>
+<wire x1="64.008" y1="29.902" x2="66.802" y2="31.988" width="0" layer="19" extent="1-16"/>
+<wire x1="60.198" y1="33.418" x2="64.008" y2="29.902" width="0" layer="19" extent="1-1"/>
+<wire x1="52.578" y1="33.418" x2="60.198" y2="33.418" width="0" layer="19" extent="1-1"/>
+<wire x1="48.006" y1="33.766" x2="52.578" y2="33.418" width="0" layer="19" extent="1-16"/>
 <wire x1="44.61" y1="33.401" x2="48.006" y2="33.766" width="0" layer="19" extent="1-16"/>
 <wire x1="44.61" y1="34.671" x2="44.61" y2="33.401" width="0" layer="19" extent="1-1"/>
 <wire x1="43.18" y1="33.766" x2="44.61" y2="33.401" width="0" layer="19" extent="1-16"/>
@@ -3395,10 +3453,10 @@ Please make sure your boards conform to these design rules.</description>
 <via x="15.748" y="46.228" extent="1-16" drill="0.35"/>
 <wire x1="21.856" y1="40.441" x2="21.856" y2="39.116" width="0.254" layer="1"/>
 <via x="21.856" y="39.116" extent="1-16" drill="0.35"/>
-<wire x1="53.28" y1="52.089" x2="55.626" y2="52.089" width="0.3048" layer="1"/>
-<via x="55.626" y="52.089" extent="1-16" drill="0.35"/>
-<wire x1="45.78" y1="50.789" x2="43.434" y2="50.789" width="0.3048" layer="1"/>
-<via x="43.434" y="50.789" extent="1-16" drill="0.35"/>
+<wire x1="51.756" y1="56.915" x2="54.102" y2="56.915" width="0.3048" layer="1"/>
+<via x="54.102" y="56.915" extent="1-16" drill="0.35"/>
+<wire x1="44.256" y1="55.615" x2="41.91" y2="55.615" width="0.3048" layer="1"/>
+<via x="41.91" y="55.615" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="AVCC">
 <contactref element="FSR_PINKY" pad="+"/>
@@ -3439,11 +3497,11 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="10.16" y="71.12"/>
 <vertex x="91.44" y="71.12"/>
 <vertex x="91.44" y="52.832"/>
-<vertex x="52.324" y="52.832"/>
-<vertex x="52.07" y="52.578"/>
-<vertex x="52.07" y="41.656"/>
-<vertex x="51.816" y="41.402"/>
-<vertex x="43.434" y="41.402"/>
+<vertex x="52.324" y="53.34"/>
+<vertex x="52.07" y="53.086"/>
+<vertex x="52.07" y="46.99"/>
+<vertex x="49.276" y="44.196"/>
+<vertex x="40.64" y="44.196"/>
 <vertex x="33.782" y="51.054"/>
 <vertex x="33.782" y="58.166"/>
 <vertex x="33.528" y="58.42"/>
@@ -3468,13 +3526,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="64.516" y1="58.182" x2="64.516" y2="60.706" width="0.3048" layer="16"/>
 <wire x1="72.152" y1="58.166" x2="72.136" y2="58.182" width="0.3048" layer="16"/>
 <wire x1="72.136" y1="58.182" x2="72.136" y2="60.706" width="0.3048" layer="16"/>
-<wire x1="48.53" y1="50.038" x2="48.514" y2="50.054" width="0.3048" layer="16"/>
-<wire x1="48.514" y1="50.054" x2="48.514" y2="51.562" width="0.3048" layer="16"/>
-<via x="48.514" y="51.562" extent="1-16" drill="0.35"/>
-<wire x1="48.514" y1="47.736" x2="48.53" y2="47.752" width="0.3048" layer="16"/>
-<wire x1="48.514" y1="47.736" x2="48.514" y2="45.974" width="0.3048" layer="16"/>
-<via x="48.514" y="45.974" extent="1-16" drill="0.35"/>
-<wire x1="48.53" y1="47.752" x2="48.53" y2="50.038" width="0.3048" layer="16"/>
+<wire x1="47.006" y1="54.864" x2="46.99" y2="54.88" width="0.3048" layer="16"/>
+<wire x1="46.99" y1="54.88" x2="46.99" y2="56.388" width="0.3048" layer="16"/>
+<via x="46.99" y="56.388" extent="1-16" drill="0.35"/>
+<wire x1="46.99" y1="52.562" x2="47.006" y2="52.578" width="0.3048" layer="16"/>
+<wire x1="46.99" y1="52.562" x2="46.99" y2="50.8" width="0.3048" layer="16"/>
+<via x="46.99" y="50.8" extent="1-16" drill="0.35"/>
+<wire x1="47.006" y1="52.578" x2="47.006" y2="54.864" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$4">
 <via x="37.846" y="20.828" extent="1-16" drill="0.35"/>
@@ -3493,6 +3551,11 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="BATT1" pad="+"/>
 <contactref element="SW1" pad="P$2"/>
 <contactref element="J2" pad="PWR"/>
+</signal>
+<signal name="N$2">
+<contactref element="L3" pad="K"/>
+<contactref element="R1" pad="2"/>
+<wire x1="64.008" y1="27.502" x2="66.294" y2="27.162" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
