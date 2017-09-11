@@ -4061,35 +4061,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TEMP_INDEX" library="MrSwirlyEyes" deviceset="TEMPERATURE-SENSOR_TMP36" device="" value="TMP36"/>
 <part name="C6" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="TEMP_THUMB" library="MrSwirlyEyes" deviceset="TEMPERATURE-SENSOR_TMP36" device="" value="TMP36"/>
-<part name="SERVO_PINKY" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_WRIST" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C8" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C9" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND20" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SUPPLY13" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="GND21" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="GND22" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
-<part name="SERVO_RING" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_THUMB" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C10" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C11" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND23" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SUPPLY14" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="GND24" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="GND25" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
-<part name="SERVO_MIDDLE" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_INDEX" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C12" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C13" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND26" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SUPPLY15" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="GND27" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="GND28" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
-<part name="SERVO_INDEX" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_MIDDLE" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C14" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C15" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND29" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="SUPPLY16" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="GND30" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
 <part name="GND31" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
-<part name="SERVO_THUMB" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_RING" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C16" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C17" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND32" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
@@ -4202,7 +4202,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY32" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="SUPPLY33" library="MrSwirlyEyes" deviceset="5V" device=""/>
 <part name="SUPPLY34" library="MrSwirlyEyes" deviceset="5V" device=""/>
-<part name="SERVO_WRIST" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
+<part name="SERVO_PINKY" library="MrSwirlyEyes" deviceset="SERVO" device="-HK15298B" value="HK15298B"/>
 <part name="C1" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C2" library="MrSwirlyEyes" deviceset="CAP_POLARIZED" device="_ALUM-ELECTROLYTIC_SMD_100UF-16V-20%" value="100UF/16V"/>
 <part name="GND1" library="MrSwirlyEyes" deviceset="NGND" device="" value="NGND"/>
@@ -4285,6 +4285,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="GND8" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="SUPPLY53" library="MrSwirlyEyes" deviceset="VBATT" device=""/>
+<part name="R4" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R5" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND9" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="R6" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R7" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND10" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="R8" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R9" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND11" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="R10" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R11" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND12" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="R12" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R13" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND13" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="R14" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
+<part name="R15" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_100_5%" value="100Ω"/>
+<part name="GND14" library="MrSwirlyEyes" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4295,12 +4313,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="459.74" y1="20.32" x2="408.94" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
 <text x="434.34" y="175.26" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">TEMP SENSORS</text>
 <text x="403.86" y="208.28" size="1.27" layer="97" font="vector" ratio="10">NOTE: Value depends on sensitivity</text>
-<wire x1="33.02" y1="20.32" x2="33.02" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="93.98" y1="20.32" x2="93.98" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="93.98" y1="177.8" x2="33.02" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="93.98" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
-<text x="63.5" y="180.34" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">SERVOS</text>
-<text x="81.28" y="180.34" size="1.27" layer="97" font="vector" ratio="10">NEED TO FULLY DEFINE THE SERVO DEVICE</text>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="15.24" x2="106.68" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="106.68" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="97" style="shortdash"/>
+<text x="50.8" y="180.34" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">SERVOS</text>
+<text x="93.98" y="180.34" size="1.27" layer="97" font="vector" ratio="10">NEED TO FULLY DEFINE THE SERVO DEVICE</text>
 <wire x1="360.68" y1="353.06" x2="436.88" y2="353.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="436.88" y1="353.06" x2="436.88" y2="289.56" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="436.88" y1="289.56" x2="360.68" y2="289.56" width="0.1524" layer="97" style="shortdash"/>
@@ -4330,9 +4348,9 @@ RESISTORS</text>
 <wire x1="398.78" y1="20.32" x2="398.78" y2="213.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="398.78" y1="213.36" x2="345.44" y2="213.36" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="398.78" y1="20.32" x2="345.44" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="116.84" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="116.84" y1="10.16" x2="116.84" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="116.84" y1="5.08" x2="10.16" y2="5.08" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="116.84" y1="5.08" x2="116.84" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="116.84" y1="370.84" x2="10.16" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
 <text x="66.04" y="373.38" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">ACTUATORS</text>
 <wire x1="469.9" y1="370.84" x2="327.66" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
@@ -4373,7 +4391,6 @@ RESISTORS</text>
 <text x="246.38" y="419.1" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">ROBOTIC ARM</text>
 <text x="246.38" y="406.4" size="8.128" layer="97" font="vector" ratio="20" align="bottom-center">Rev 1</text>
 <text x="228.6" y="350.52" size="0.8128" layer="97" font="vector" ratio="20" align="bottom-center">add diode CD1206-S01575</text>
-<text x="287.02" y="269.24" size="1.778" layer="91">WIRE DEMUX</text>
 <text x="177.8" y="182.88" size="1.778" layer="91">TODO: LOTS OF VIAS</text>
 <text x="203.2" y="177.8" size="1.778" layer="91">CHANGE TO 470 UF</text>
 <text x="375.92" y="322.58" size="1.778" layer="97">D2</text>
@@ -4396,41 +4413,41 @@ RESISTORS</text>
 <instance part="TEMP_INDEX" gate="G$1" x="421.64" y="66.04"/>
 <instance part="C6" gate="G$1" x="452.12" y="67.31"/>
 <instance part="TEMP_THUMB" gate="G$1" x="421.64" y="38.1"/>
-<instance part="SERVO_PINKY" gate="G$1" x="43.18" y="162.56"/>
-<instance part="C8" gate="G$1" x="76.2" y="163.83"/>
-<instance part="C9" gate="G$1" x="86.36" y="163.83"/>
-<instance part="GND20" gate="G$1" x="50.8" y="154.94"/>
-<instance part="SUPPLY13" gate="5V" x="76.2" y="167.64"/>
-<instance part="GND21" gate="G$1" x="76.2" y="154.94"/>
-<instance part="GND22" gate="G$1" x="86.36" y="154.94"/>
-<instance part="SERVO_RING" gate="G$1" x="43.18" y="137.16"/>
-<instance part="C10" gate="G$1" x="76.2" y="138.43"/>
-<instance part="C11" gate="G$1" x="86.36" y="138.43"/>
-<instance part="GND23" gate="G$1" x="50.8" y="129.54"/>
-<instance part="SUPPLY14" gate="5V" x="76.2" y="142.24"/>
-<instance part="GND24" gate="G$1" x="76.2" y="129.54"/>
-<instance part="GND25" gate="G$1" x="86.36" y="129.54"/>
-<instance part="SERVO_MIDDLE" gate="G$1" x="43.18" y="111.76"/>
-<instance part="C12" gate="G$1" x="76.2" y="113.03"/>
-<instance part="C13" gate="G$1" x="86.36" y="113.03"/>
-<instance part="GND26" gate="G$1" x="50.8" y="104.14"/>
-<instance part="SUPPLY15" gate="5V" x="76.2" y="116.84"/>
-<instance part="GND27" gate="G$1" x="76.2" y="104.14"/>
-<instance part="GND28" gate="G$1" x="86.36" y="104.14"/>
-<instance part="SERVO_INDEX" gate="G$1" x="43.18" y="86.36"/>
-<instance part="C14" gate="G$1" x="76.2" y="87.63"/>
-<instance part="C15" gate="G$1" x="86.36" y="87.63"/>
-<instance part="GND29" gate="G$1" x="50.8" y="78.74"/>
-<instance part="SUPPLY16" gate="5V" x="76.2" y="91.44"/>
-<instance part="GND30" gate="G$1" x="76.2" y="78.74"/>
-<instance part="GND31" gate="G$1" x="86.36" y="78.74"/>
-<instance part="SERVO_THUMB" gate="G$1" x="43.18" y="60.96"/>
-<instance part="C16" gate="G$1" x="76.2" y="62.23"/>
-<instance part="C17" gate="G$1" x="86.36" y="62.23"/>
-<instance part="GND32" gate="G$1" x="50.8" y="53.34"/>
-<instance part="SUPPLY17" gate="5V" x="76.2" y="66.04"/>
-<instance part="GND33" gate="G$1" x="76.2" y="53.34"/>
-<instance part="GND34" gate="G$1" x="86.36" y="53.34"/>
+<instance part="SERVO_WRIST" gate="G$1" x="30.48" y="162.56"/>
+<instance part="C8" gate="G$1" x="88.9" y="163.83"/>
+<instance part="C9" gate="G$1" x="99.06" y="163.83"/>
+<instance part="GND20" gate="G$1" x="38.1" y="154.94"/>
+<instance part="SUPPLY13" gate="5V" x="88.9" y="167.64"/>
+<instance part="GND21" gate="G$1" x="88.9" y="154.94"/>
+<instance part="GND22" gate="G$1" x="99.06" y="154.94"/>
+<instance part="SERVO_THUMB" gate="G$1" x="30.48" y="137.16"/>
+<instance part="C10" gate="G$1" x="88.9" y="138.43"/>
+<instance part="C11" gate="G$1" x="99.06" y="138.43"/>
+<instance part="GND23" gate="G$1" x="38.1" y="129.54"/>
+<instance part="SUPPLY14" gate="5V" x="88.9" y="142.24"/>
+<instance part="GND24" gate="G$1" x="88.9" y="129.54"/>
+<instance part="GND25" gate="G$1" x="99.06" y="129.54"/>
+<instance part="SERVO_INDEX" gate="G$1" x="30.48" y="111.76"/>
+<instance part="C12" gate="G$1" x="88.9" y="113.03"/>
+<instance part="C13" gate="G$1" x="99.06" y="113.03"/>
+<instance part="GND26" gate="G$1" x="38.1" y="104.14"/>
+<instance part="SUPPLY15" gate="5V" x="88.9" y="116.84"/>
+<instance part="GND27" gate="G$1" x="88.9" y="104.14"/>
+<instance part="GND28" gate="G$1" x="99.06" y="104.14"/>
+<instance part="SERVO_MIDDLE" gate="G$1" x="30.48" y="86.36"/>
+<instance part="C14" gate="G$1" x="88.9" y="87.63"/>
+<instance part="C15" gate="G$1" x="99.06" y="87.63"/>
+<instance part="GND29" gate="G$1" x="38.1" y="78.74"/>
+<instance part="SUPPLY16" gate="5V" x="88.9" y="91.44"/>
+<instance part="GND30" gate="G$1" x="88.9" y="78.74"/>
+<instance part="GND31" gate="G$1" x="99.06" y="78.74"/>
+<instance part="SERVO_RING" gate="G$1" x="30.48" y="60.96"/>
+<instance part="C16" gate="G$1" x="88.9" y="62.23"/>
+<instance part="C17" gate="G$1" x="99.06" y="62.23"/>
+<instance part="GND32" gate="G$1" x="38.1" y="53.34"/>
+<instance part="SUPPLY17" gate="5V" x="88.9" y="66.04"/>
+<instance part="GND33" gate="G$1" x="88.9" y="53.34"/>
+<instance part="GND34" gate="G$1" x="99.06" y="53.34"/>
 <instance part="C7" gate="G$1" x="452.12" y="39.37"/>
 <instance part="DEMUX1" gate="G$1" x="403.86" y="322.58"/>
 <instance part="C18" gate="G$1" x="368.3" y="337.82"/>
@@ -4527,25 +4544,25 @@ RESISTORS</text>
 <instance part="FSR_MIDDLE" gate="G$1" x="355.6" y="124.46"/>
 <instance part="FSR_INDEX" gate="G$1" x="355.6" y="86.36"/>
 <instance part="FSR_THUMB" gate="G$1" x="355.6" y="48.26"/>
-<instance part="SUPPLY11" gate="5V" x="50.8" y="66.04"/>
-<instance part="SUPPLY12" gate="5V" x="50.8" y="91.44"/>
-<instance part="SUPPLY20" gate="5V" x="50.8" y="116.84"/>
-<instance part="SUPPLY21" gate="5V" x="50.8" y="142.24"/>
-<instance part="SUPPLY22" gate="5V" x="50.8" y="167.64"/>
-<instance part="SUPPLY23" gate="5V" x="86.36" y="66.04"/>
-<instance part="SUPPLY24" gate="5V" x="86.36" y="91.44"/>
-<instance part="SUPPLY32" gate="5V" x="86.36" y="116.84"/>
-<instance part="SUPPLY33" gate="5V" x="86.36" y="142.24"/>
-<instance part="SUPPLY34" gate="5V" x="86.36" y="167.64"/>
-<instance part="SERVO_WRIST" gate="G$1" x="43.18" y="35.56"/>
-<instance part="C1" gate="G$1" x="76.2" y="36.83"/>
-<instance part="C2" gate="G$1" x="86.36" y="36.83"/>
-<instance part="GND1" gate="G$1" x="50.8" y="27.94"/>
-<instance part="SUPPLY35" gate="5V" x="76.2" y="40.64"/>
-<instance part="GND2" gate="G$1" x="76.2" y="27.94"/>
-<instance part="GND3" gate="G$1" x="86.36" y="27.94"/>
-<instance part="SUPPLY36" gate="5V" x="50.8" y="40.64"/>
-<instance part="SUPPLY37" gate="5V" x="86.36" y="40.64"/>
+<instance part="SUPPLY11" gate="5V" x="38.1" y="66.04"/>
+<instance part="SUPPLY12" gate="5V" x="38.1" y="91.44"/>
+<instance part="SUPPLY20" gate="5V" x="38.1" y="116.84"/>
+<instance part="SUPPLY21" gate="5V" x="38.1" y="142.24"/>
+<instance part="SUPPLY22" gate="5V" x="38.1" y="167.64"/>
+<instance part="SUPPLY23" gate="5V" x="99.06" y="66.04"/>
+<instance part="SUPPLY24" gate="5V" x="99.06" y="91.44"/>
+<instance part="SUPPLY32" gate="5V" x="99.06" y="116.84"/>
+<instance part="SUPPLY33" gate="5V" x="99.06" y="142.24"/>
+<instance part="SUPPLY34" gate="5V" x="99.06" y="167.64"/>
+<instance part="SERVO_PINKY" gate="G$1" x="30.48" y="35.56"/>
+<instance part="C1" gate="G$1" x="88.9" y="36.83"/>
+<instance part="C2" gate="G$1" x="99.06" y="36.83"/>
+<instance part="GND1" gate="G$1" x="38.1" y="27.94"/>
+<instance part="SUPPLY35" gate="5V" x="88.9" y="40.64"/>
+<instance part="GND2" gate="G$1" x="88.9" y="27.94"/>
+<instance part="GND3" gate="G$1" x="99.06" y="27.94"/>
+<instance part="SUPPLY36" gate="5V" x="38.1" y="40.64"/>
+<instance part="SUPPLY37" gate="5V" x="99.06" y="40.64"/>
 <instance part="J2" gate="G$1" x="142.24" y="170.18"/>
 <instance part="C20" gate="G$1" x="203.2" y="163.83"/>
 <instance part="GND4" gate="GND" x="203.2" y="147.32"/>
@@ -4620,6 +4637,24 @@ RESISTORS</text>
 <instance part="GND7" gate="GND" x="304.8" y="292.1"/>
 <instance part="GND8" gate="GND" x="312.42" y="292.1"/>
 <instance part="SUPPLY53" gate="G$1" x="195.58" y="177.8"/>
+<instance part="R4" gate="G$1" x="50.8" y="78.74" rot="R90"/>
+<instance part="R5" gate="G$1" x="43.18" y="86.36"/>
+<instance part="GND9" gate="GND" x="50.8" y="68.58"/>
+<instance part="R6" gate="G$1" x="50.8" y="104.14" rot="R90"/>
+<instance part="R7" gate="G$1" x="43.18" y="111.76"/>
+<instance part="GND10" gate="GND" x="50.8" y="93.98"/>
+<instance part="R8" gate="G$1" x="50.8" y="129.54" rot="R90"/>
+<instance part="R9" gate="G$1" x="43.18" y="137.16"/>
+<instance part="GND11" gate="GND" x="50.8" y="119.38"/>
+<instance part="R10" gate="G$1" x="50.8" y="154.94" rot="R90"/>
+<instance part="R11" gate="G$1" x="43.18" y="162.56"/>
+<instance part="GND12" gate="GND" x="50.8" y="144.78"/>
+<instance part="R12" gate="G$1" x="50.8" y="27.94" rot="R90"/>
+<instance part="R13" gate="G$1" x="43.18" y="35.56"/>
+<instance part="GND13" gate="GND" x="50.8" y="17.78"/>
+<instance part="R14" gate="G$1" x="50.8" y="53.34" rot="R90"/>
+<instance part="R15" gate="G$1" x="43.18" y="60.96"/>
+<instance part="GND14" gate="GND" x="50.8" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -4852,6 +4887,36 @@ RESISTORS</text>
 <wire x1="312.42" y1="297.18" x2="312.42" y2="294.64" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="GND9" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="71.12" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="96.52" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="GND11" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="121.92" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="GND12" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="147.32" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="GND13" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="20.32" x2="50.8" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="45.72" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -5040,9 +5105,13 @@ RESISTORS</text>
 <label x="86.36" y="335.28" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_WRIST" gate="G$1" pin="SIG"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="33.02" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
-<label x="50.8" y="35.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<junction x="50.8" y="35.56"/>
+<label x="53.34" y="35.56" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="SERVO_RING" class="0">
@@ -5052,9 +5121,13 @@ RESISTORS</text>
 <label x="86.36" y="332.74" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_THUMB" gate="G$1" pin="SIG"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="58.42" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
-<label x="50.8" y="60.96" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="60.96" x2="53.34" y2="60.96" width="0.1524" layer="91"/>
+<junction x="50.8" y="60.96"/>
+<label x="53.34" y="60.96" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="SERVO_MIDDLE" class="0">
@@ -5064,9 +5137,13 @@ RESISTORS</text>
 <label x="86.36" y="330.2" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_INDEX" gate="G$1" pin="SIG"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="83.82" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="86.36" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
-<label x="50.8" y="86.36" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
+<junction x="50.8" y="86.36"/>
+<label x="53.34" y="86.36" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="SERVO_INDEX" class="0">
@@ -5076,9 +5153,13 @@ RESISTORS</text>
 <label x="86.36" y="327.66" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_MIDDLE" gate="G$1" pin="SIG"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="109.22" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
-<label x="50.8" y="111.76" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<junction x="50.8" y="111.76"/>
+<label x="53.34" y="111.76" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="SERVO_THUMB" class="0">
@@ -5088,9 +5169,13 @@ RESISTORS</text>
 <label x="86.36" y="325.12" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_RING" gate="G$1" pin="SIG"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="134.62" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="137.16" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
-<label x="50.8" y="137.16" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<junction x="50.8" y="137.16"/>
+<label x="53.34" y="137.16" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PWM10" class="0">
@@ -5724,99 +5809,99 @@ RESISTORS</text>
 <wire x1="137.16" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="30.48" x2="50.8" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="SERVO_WRIST" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="30.48" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SERVO_PINKY" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="SERVO_THUMB" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="58.42" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="55.88" x2="38.1" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="SERVO_RING" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND32" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="81.28" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="SERVO_INDEX" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="81.28" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="SERVO_MIDDLE" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="106.68" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SERVO_MIDDLE" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="106.68" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="SERVO_INDEX" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="109.22" x2="35.56" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND26" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="132.08" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="SERVO_RING" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="134.62" x2="48.26" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="132.08" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SERVO_THUMB" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="134.62" x2="35.56" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<wire x1="50.8" y1="157.48" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SERVO_PINKY" gate="G$1" pin="GND"/>
-<wire x1="50.8" y1="160.02" x2="48.26" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="157.48" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="SERVO_WRIST" gate="G$1" pin="GND"/>
+<wire x1="38.1" y1="160.02" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="31.75" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="31.75" x2="88.9" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="30.48" x2="86.36" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="30.48" x2="99.06" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="57.15" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="57.15" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="55.88" x2="86.36" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="55.88" x2="99.06" y2="57.15" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="82.55" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="82.55" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="81.28" x2="86.36" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="81.28" x2="99.06" y2="82.55" width="0.1524" layer="91"/>
 <pinref part="GND31" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="107.95" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="107.95" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="106.68" x2="86.36" y2="107.95" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="106.68" x2="99.06" y2="107.95" width="0.1524" layer="91"/>
 <pinref part="GND28" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="132.08" x2="86.36" y2="133.35" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="132.08" x2="99.06" y2="133.35" width="0.1524" layer="91"/>
 <pinref part="GND25" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="133.35" x2="76.2" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="133.35" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="GND24" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="K"/>
-<wire x1="86.36" y1="157.48" x2="86.36" y2="158.75" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="157.48" x2="99.06" y2="158.75" width="0.1524" layer="91"/>
 <pinref part="GND22" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="158.75" x2="76.2" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="158.75" x2="88.9" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="GND21" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
@@ -5861,100 +5946,100 @@ RESISTORS</text>
 </net>
 <net name="5V" class="0">
 <segment>
-<pinref part="SERVO_THUMB" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_RING" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY11" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="63.5" x2="50.8" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="63.5" x2="48.26" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="63.5" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="5V" pin="5V"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="64.77" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="64.77" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C17" gate="G$1" pin="A"/>
 <pinref part="SUPPLY23" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="66.04" x2="86.36" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="66.04" x2="99.06" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERVO_INDEX" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_MIDDLE" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY12" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="88.9" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="88.9" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="88.9" x2="35.56" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="5V" pin="5V"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="90.17" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="90.17" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="A"/>
 <pinref part="SUPPLY24" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="91.44" x2="86.36" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="90.17" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERVO_MIDDLE" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_INDEX" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY20" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="114.3" x2="50.8" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="114.3" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="114.3" x2="35.56" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY15" gate="5V" pin="5V"/>
 <pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="115.57" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="115.57" x2="88.9" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="A"/>
 <pinref part="SUPPLY32" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="116.84" x2="86.36" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="116.84" x2="99.06" y2="115.57" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERVO_RING" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_THUMB" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY21" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="139.7" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="139.7" x2="48.26" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="139.7" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="5V" pin="5V"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="140.97" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="140.97" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C11" gate="G$1" pin="A"/>
 <pinref part="SUPPLY33" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="140.97" x2="86.36" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="140.97" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERVO_PINKY" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_WRIST" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY22" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="165.1" x2="50.8" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="165.1" x2="48.26" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="165.1" x2="38.1" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="165.1" x2="35.56" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="5V" pin="5V"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="166.37" x2="76.2" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="166.37" x2="88.9" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="A"/>
 <pinref part="SUPPLY34" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="167.64" x2="86.36" y2="166.37" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="167.64" x2="99.06" y2="166.37" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SERVO_WRIST" gate="G$1" pin="VCC"/>
+<pinref part="SERVO_PINKY" gate="G$1" pin="VCC"/>
 <pinref part="SUPPLY36" gate="5V" pin="5V"/>
-<wire x1="50.8" y1="38.1" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="38.1" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY35" gate="5V" pin="5V"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="39.37" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="39.37" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="A"/>
 <pinref part="SUPPLY37" gate="5V" pin="5V"/>
-<wire x1="86.36" y1="40.64" x2="86.36" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="40.64" x2="99.06" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="287.02" y1="124.46" x2="287.02" y2="129.54" width="0.1524" layer="91"/>
@@ -5980,9 +6065,13 @@ RESISTORS</text>
 <label x="86.36" y="322.58" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SERVO_PINKY" gate="G$1" pin="SIG"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="160.02" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<label x="50.8" y="162.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<wire x1="50.8" y1="162.56" x2="53.34" y2="162.56" width="0.1524" layer="91"/>
+<junction x="50.8" y="162.56"/>
+<label x="53.34" y="162.56" size="1.27" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="BATT_-" class="0">
@@ -6380,6 +6469,48 @@ RESISTORS</text>
 <junction x="195.58" y="175.26"/>
 <pinref part="SUPPLY53" gate="G$1" pin="VBATT"/>
 <wire x1="195.58" y1="177.8" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="SERVO_WRIST" gate="G$1" pin="SIG"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="SERVO_THUMB" gate="G$1" pin="SIG"/>
+<wire x1="38.1" y1="137.16" x2="35.56" y2="137.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="SERVO_INDEX" gate="G$1" pin="SIG"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="111.76" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="SERVO_MIDDLE" gate="G$1" pin="SIG"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="SERVO_RING" gate="G$1" pin="SIG"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="SERVO_PINKY" gate="G$1" pin="SIG"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="35.56" x2="38.1" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
