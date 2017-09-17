@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -401,15 +401,21 @@
 <text x="0" y="2.032" size="0.8128" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
 <rectangle x1="-3.75" y1="-0.325" x2="-0.9" y2="0.325" layer="51"/>
 <rectangle x1="0.9" y1="-0.325" x2="3.75" y2="0.325" layer="51"/>
-<wire x1="4.873" y1="3.673" x2="-4.873" y2="3.673" width="0.1" layer="39"/>
-<wire x1="-4.873" y1="3.673" x2="-4.873" y2="-3.673" width="0.1" layer="39"/>
-<wire x1="-4.873" y1="-3.673" x2="4.873" y2="-3.673" width="0.1" layer="39"/>
-<wire x1="4.873" y1="-3.673" x2="4.873" y2="3.673" width="0.1" layer="39"/>
 <wire x1="-1.27" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="1.27" y1="0" x2="0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="-0.762" x2="-0.254" y2="0" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="0" x2="-0.254" y2="0.762" width="0.127" layer="21"/>
 <wire x1="0.4445" y1="-0.762" x2="0.4445" y2="0.762" width="0.127" layer="21" curve="-68.760689"/>
+<wire x1="3.556" y1="-3.556" x2="-2.286" y2="-3.556" width="0.127" layer="39"/>
+<wire x1="-2.286" y1="-3.556" x2="-4.572" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="-4.572" y1="-1.27" x2="-4.572" y2="1.27" width="0.127" layer="39"/>
+<wire x1="-4.572" y1="1.27" x2="-2.286" y2="3.556" width="0.127" layer="39"/>
+<wire x1="-2.286" y1="3.556" x2="3.556" y2="3.556" width="0.127" layer="39"/>
+<wire x1="3.556" y1="3.556" x2="3.556" y2="2.286" width="0.127" layer="39"/>
+<wire x1="3.556" y1="2.286" x2="4.572" y2="1.27" width="0.127" layer="39"/>
+<wire x1="4.572" y1="1.27" x2="4.572" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="4.572" y1="-1.27" x2="3.556" y2="-2.286" width="0.127" layer="39"/>
+<wire x1="3.556" y1="-2.286" x2="3.556" y2="-3.556" width="0.127" layer="39"/>
 </package>
 <package name="CONNECTOR_FSR">
 <pad name="+" x="-1.27" y="-1.27" drill="0.8128" diameter="1.8796"/>
@@ -500,26 +506,6 @@
 <wire x1="1.778" y1="0" x2="2.286" y2="0" width="0.1524" layer="21"/>
 <text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="10" align="center">CHECK DIAMETER OF LEADS</text>
 <circle x="0" y="0" radius="14" width="0.1524" layer="39"/>
-</package>
-<package name="CAP_POL_DIA12.5-LS5-H27">
-<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-4.286" y1="0" x2="-3.778" y2="0" width="0.1524" layer="21"/>
-<wire x1="-4.032" y1="-0.254" x2="-4.032" y2="0.254" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="6.25" width="0.1524" layer="21"/>
-<pad name="-" x="2.5" y="0" drill="0.762" diameter="1.397"/>
-<pad name="+" x="-2.5" y="0" drill="0.762" diameter="1.397" shape="square"/>
-<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
-<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="3.778" y1="0" x2="4.286" y2="0" width="0.1524" layer="21"/>
-<text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="10" align="center">CHECK DIAMETER OF LEADS</text>
-<circle x="0" y="0" radius="6.75" width="0.1524" layer="39"/>
 </package>
 <package name="CAP_POL_DIA16-LS7.5-H37.5">
 <wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
@@ -1498,10 +1484,10 @@
 <wire x1="6.5" y1="-3.5" x2="6.5" y2="3.5" width="0.1" layer="21"/>
 <wire x1="6.5" y1="3.5" x2="-6.5" y2="3.5" width="0.1" layer="21"/>
 <wire x1="-6.5" y1="3.5" x2="-6.5" y2="-3.5" width="0.1" layer="21"/>
-<wire x1="6.858" y1="-3.81" x2="-6.858" y2="-3.81" width="0.127" layer="39"/>
-<wire x1="-6.858" y1="-3.81" x2="-6.858" y2="3.81" width="0.127" layer="39"/>
-<wire x1="-6.858" y1="3.81" x2="6.858" y2="3.81" width="0.127" layer="39"/>
-<wire x1="6.858" y1="3.81" x2="6.858" y2="-3.81" width="0.127" layer="39"/>
+<wire x1="6.604" y1="-3.556" x2="-6.604" y2="-3.556" width="0.127" layer="39"/>
+<wire x1="-6.604" y1="-3.556" x2="-6.604" y2="3.556" width="0.127" layer="39"/>
+<wire x1="-6.604" y1="3.556" x2="6.604" y2="3.556" width="0.127" layer="39"/>
+<wire x1="6.604" y1="3.556" x2="6.604" y2="-3.556" width="0.127" layer="39"/>
 </package>
 <package name="INDUCTOR_SMD-805">
 <description>Resistor, Chip; 2.00 mm L X 1.25 mm W X 0.60 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -1762,6 +1748,26 @@
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
 <circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="51"/>
+</package>
+<package name="CAP_POL_DIA12.5-LS5-H27">
+<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-4.286" y1="0" x2="-3.778" y2="0" width="0.1524" layer="21"/>
+<wire x1="-4.032" y1="-0.254" x2="-4.032" y2="0.254" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="6.25" width="0.1524" layer="21"/>
+<pad name="-" x="2.5" y="0" drill="0.762" diameter="1.397"/>
+<pad name="+" x="-2.5" y="0" drill="0.762" diameter="1.397" shape="square"/>
+<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="3.778" y1="0" x2="4.286" y2="0" width="0.1524" layer="21"/>
+<text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="10" align="center">CHECK DIAMETER OF LEADS</text>
+<circle x="0" y="0" radius="7.25" width="0.1524" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -2610,8 +2616,6 @@ Sorted as [PACKAGE_VALUE_V-RATING_TOLERANCE]</description>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR" prefix="R" uservalue="yes">
-<description>Resistors
-Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -2624,6 +2628,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-100ARCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-100ARCT-ND"/>
@@ -2642,6 +2647,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-10KARCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-10KARCT-ND"/>
@@ -2660,6 +2666,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-330ARCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-330ARCT-ND"/>
@@ -2678,6 +2685,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-5.1KARCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-5.1KARCT-ND"/>
@@ -2696,6 +2704,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-10.7CRCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-10.7CRCT-ND"/>
@@ -2714,6 +2723,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-4.99CRCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-4.99CRCT-ND"/>
@@ -2732,6 +2742,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-220KJRCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-220KJRCT-ND"/>
@@ -2750,6 +2761,7 @@ Variants follow as [PACKAGE-TYPE_POWER-RATING_VALUE_TOLERANCE]</description>
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Kenmei" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-51ARCT-ND" constant="no"/>
 <attribute name="DISTPN" value="311-51ARCT-ND " constant="no"/>
@@ -3322,6 +3334,7 @@ Variants sorted as [TYPE_PACKAGE_VALUE_V-RATING_TOLERANCE]</description>
 <attribute name="MFR" value="Atmel"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZU "/>
 <attribute name="TESTED" value="YES" constant="no"/>
+<attribute name="VALUE" value="ATMEGA128RFA1" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3346,7 +3359,6 @@ Variants sorted as [TYPE_PACKAGE_VALUE_V-RATING_TOLERANCE]</description>
 <attribute name="DISTPN" value="535-9122-1-ND"/>
 <attribute name="MFR" value="Abracon LLC"/>
 <attribute name="MPN" value="ABM3B-16.000MHZ-B2-T"/>
-<attribute name="PROD_ID" value="XTAL-08218" constant="no"/>
 <attribute name="VALUE" value="16MHz" constant="no"/>
 </technology>
 </technologies>
@@ -3718,8 +3730,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DIST" value="Sparkfun" constant="no"/>
 <attribute name="DISTLINK" value="https://www.sparkfun.com/products/10302" constant="no"/>
 <attribute name="DISTPN" value="COM-10302" constant="no"/>
-<attribute name="MFR" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
+<attribute name="MFR" value="N/A" constant="no"/>
+<attribute name="MPN" value="N/A" constant="no"/>
 <attribute name="VALUE" value="50mA/12V" constant="no"/>
 </technology>
 </technologies>
@@ -3879,19 +3891,27 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-1.3" y1="-1.5" x2="-1.3" y2="1.5" width="0.127" layer="39"/>
 </package>
 <package name="ANTENNA-CHIP5">
-<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
-<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
-<text x="-1.64" y="2.431" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<text x="0.508" y="0.127" size="0.8128" layer="51" font="vector">AF</text>
+<text x="0" y="2.286" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="51" font="vector" align="center">AF</text>
 <wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
 <wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
 <wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
 <smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
 <smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
-<wire x1="-4.2" y1="1.7" x2="4.2" y2="1.7" width="0.127" layer="39"/>
-<wire x1="4.2" y1="1.7" x2="4.2" y2="-1.7" width="0.127" layer="39"/>
-<wire x1="4.2" y1="-1.7" x2="-4.2" y2="-1.7" width="0.127" layer="39"/>
-<wire x1="-4.2" y1="-1.7" x2="-4.2" y2="1.7" width="0.127" layer="39"/>
+<text x="2.032" y="-0.762" size="0.4064" layer="21" font="vector" ratio="10" align="center">2.4</text>
+<text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="3.25" y1="1.1" x2="3.25" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="3.25" y1="-1.1" x2="-3.25" y2="-1.1" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-1.1" x2="-3.25" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="1.1" x2="3.25" y2="1.1" width="0.127" layer="51"/>
+<wire x1="-4" y1="1.4" x2="4" y2="1.4" width="0.127" layer="21"/>
+<wire x1="4" y1="1.4" x2="4" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="4" y1="-1.4" x2="-4" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-1.4" x2="-4" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-4.318" y1="1.778" x2="-4.318" y2="-1.778" width="0.127" layer="39"/>
+<wire x1="-4.318" y1="-1.778" x2="4.318" y2="-1.778" width="0.127" layer="39"/>
+<wire x1="4.318" y1="-1.778" x2="4.318" y2="1.778" width="0.127" layer="39"/>
+<wire x1="4.318" y1="1.778" x2="-4.318" y2="1.778" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -3900,8 +3920,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
-<text x="-3.81" y="-1.27" size="0.6096" layer="96" ratio="10" align="center-right">&gt;VALUE</text>
-<text x="-3.81" y="1.27" size="0.8128" layer="95" font="vector" ratio="10" align="center-right">&gt;NAME</text>
+<text x="0.508" y="0" size="0.6096" layer="96" ratio="10" rot="R90" align="center">&gt;VALUE</text>
+<text x="-0.508" y="0" size="0.8128" layer="95" font="vector" ratio="10" rot="R90" align="center">&gt;NAME</text>
 <wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
@@ -3946,7 +3966,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="732-2230-6-ND"/>
 <attribute name="MFR" value="Wurth Electronics Inc"/>
 <attribute name="MPN" value="748421245"/>
-<attribute name="VALUE" value="748421245" constant="no"/>
+<attribute name="VALUE" value="Impedence UNBAL/BAL (50Ω/100Ω)" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3972,6 +3992,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <attribute name="DISTPN" value="ANT-2.45-CHPCT-ND"/>
 <attribute name="MFR" value="Linx Technologies Inc."/>
 <attribute name="MPN" value="ANT-2.45-CHP-T"/>
+<attribute name="VALUE" value="2.4GHz/802.11/0.5dBi/3W" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4123,7 +4144,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C50" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="R42" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
 <part name="C51" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
-<part name="MCU" library="MrSwirlyEyes" deviceset="ATMEGA128RFA1" device=""/>
+<part name="MCU" library="MrSwirlyEyes" deviceset="ATMEGA128RFA1" device="" value="ATMEGA128RFA1"/>
 <part name="C52" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
 <part name="C53" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805-1UF-25V-10%" value="1uF/25V"/>
 <part name="C54" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
@@ -4136,12 +4157,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C60" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_12PF-250V-5%" value="12pF/250V"/>
 <part name="GND96" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="GND97" library="MrSwirlyEyes" deviceset="AGND" device=""/>
-<part name="B1" library="lib_kenmei" deviceset="BALUN" device="0805" value="748421245"/>
+<part name="B1" library="lib_kenmei" deviceset="BALUN" device="0805" value="Impedence UNBAL/BAL (50Ω/100Ω)"/>
 <part name="C61" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_22PF-250V-5%" value="22PF/250V"/>
 <part name="GND98" library="MrSwirlyEyes" deviceset="GND" device=""/>
 <part name="C62" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805-0.75PF-100V-33%" value="0.75PF/100V"/>
 <part name="GND99" library="MrSwirlyEyes" deviceset="GND" device=""/>
-<part name="A6" library="lib_kenmei" deviceset="ANTENNA" device="SMD5"/>
+<part name="A6" library="lib_kenmei" deviceset="ANTENNA" device="SMD5" value="2.4GHz/802.11/0.5dBi/3W"/>
 <part name="R43" library="MrSwirlyEyes" deviceset="RESISTOR" device="SMD-0805_1/8W_10K_5%" value="10KΩ"/>
 <part name="SUPPLY71" library="MrSwirlyEyes" deviceset="VCC" device=""/>
 <part name="C63" library="MrSwirlyEyes" deviceset="CAP_CERAMIC" device="_SMD-805_0.1UF-50V-10%" value="0.1uF/50V"/>
