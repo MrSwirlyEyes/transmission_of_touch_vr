@@ -6,16 +6,16 @@
 #define S4 A3
 #define S5 A4
 
-#define L1 5
-#define L2 6
-#define L3 9
-#define L4 10
-#define L5 11
-#define L6 2
-#define L7 3
-#define L8 4
-#define L9 7
-#define L10 8
+//#define L1 5
+//#define L2 6
+//#define L3 9
+//#define L4 10
+//#define L5 11
+//#define L6 2
+//#define L7 3
+//#define L8 4
+//#define L9 7
+//#define L10 8
 
 //defined flex sensor values
 #define FLEXMIN 0
@@ -46,6 +46,7 @@ struct ActuatorPacket {
   int pwm8 = 0;
   int pwm9 = 0;
   int pwm10 = 0;
+  int pwm11 = 0;
 } inpkt;
 
 byte numRead;
@@ -107,16 +108,29 @@ void updateSensors() {
 }
 
 void updateActuators() {
+  //fingers
   pwm.setPWM(0, 0, map(inpkt.pwm1,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
   pwm.setPWM(1, 0, map(inpkt.pwm2,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
   pwm.setPWM(2, 0, map(inpkt.pwm3,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
   pwm.setPWM(3, 0, map(inpkt.pwm4,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
   pwm.setPWM(4, 0, map(inpkt.pwm5,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
-//  analogWrite(L1, inpkt.pwm1);
-//  analogWrite(L2, inpkt.pwm2);
-//  analogWrite(L3, inpkt.pwm3);
-//  analogWrite(L4, inpkt.pwm4);
-//  analogWrite(L5, inpkt.pwm5);
+
+  //wrist
+  pwm.setPWM(5, 0, map(inpkt.pwm11,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+
+  //leds
+  pwm.setPWM(6, 0, map(inpkt.pwm6,FLEXMIN,FLEXMAX,0, 4095));
+  pwm.setPWM(7, 0, map(inpkt.pwm7,FLEXMIN,FLEXMAX,0, 4095));
+  pwm.setPWM(8, 0, map(inpkt.pwm8,FLEXMIN,FLEXMAX,0, 4095));
+  pwm.setPWM(9, 0, map(inpkt.pwm9,FLEXMIN,FLEXMAX,0, 4095));
+  pwm.setPWM(10, 0, map(inpkt.pwm10,FLEXMIN,FLEXMAX,0, 4095));
+  
+//  analogWrite(L1, inpkt.pwm6);
+//  analogWrite(L2, inpkt.pwm7);
+//  analogWrite(L3, inpkt.pwm8);
+//  analogWrite(L4, inpkt.pwm9);
+//  analogWrite(L5, inpkt.pwm10);
+//  analogWrite(L5, inpkt.pwm11);
 //  digitalWrite(L6, thresholdPWM(inpkt.pwm6));
 //  digitalWrite(L7, thresholdPWM(inpkt.pwm7));
 //  digitalWrite(L8, thresholdPWM(inpkt.pwm8));
