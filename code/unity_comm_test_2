@@ -1,3 +1,5 @@
+#include "Adafruit_PWMServoDriver.h" //download library from adafruit website
+
 #define S1 A0
 #define S2 A1
 #define S3 A2
@@ -14,6 +16,16 @@
 #define L8 4
 #define L9 7
 #define L10 8
+
+//defined flex sensor values
+#define FLEXMIN 0
+#define FLEXMAX 255
+
+//defined servo values
+#define SERVOMIN  130
+#define SERVOMAX  290 // Need another define for wrist servo
+
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 struct SensorPacket {
   int s1 = 0;
@@ -41,9 +53,15 @@ byte numRead;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  Serial.setTimeout(2000);
   while (!Serial);
   Serial.println("ON");
+
+  pwm.begin();
+  pwm.setPWMFreq(40);
+
+  for (int i = 0; i < 6; i++) {
+    pwm.setPWM(i, 0, 0); 
+  }
 
   numRead = sizeof(int);
 }
@@ -89,16 +107,21 @@ void updateSensors() {
 }
 
 void updateActuators() {
-  analogWrite(L1, inpkt.pwm1);
-  analogWrite(L2, inpkt.pwm2);
-  analogWrite(L3, inpkt.pwm3);
-  analogWrite(L4, inpkt.pwm4);
-  analogWrite(L5, inpkt.pwm5);
-  digitalWrite(L6, thresholdPWM(inpkt.pwm6));
-  digitalWrite(L7, thresholdPWM(inpkt.pwm7));
-  digitalWrite(L8, thresholdPWM(inpkt.pwm8));
-  digitalWrite(L9, thresholdPWM(inpkt.pwm9));
-  digitalWrite(L10, thresholdPWM(inpkt.pwm10));
+  pwm.setPWM(0, 0, map(inpkt.pwm1,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+  pwm.setPWM(1, 0, map(inpkt.pwm2,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+  pwm.setPWM(2, 0, map(inpkt.pwm3,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+  pwm.setPWM(3, 0, map(inpkt.pwm4,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+  pwm.setPWM(4, 0, map(inpkt.pwm5,FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX));
+//  analogWrite(L1, inpkt.pwm1);
+//  analogWrite(L2, inpkt.pwm2);
+//  analogWrite(L3, inpkt.pwm3);
+//  analogWrite(L4, inpkt.pwm4);
+//  analogWrite(L5, inpkt.pwm5);
+//  digitalWrite(L6, thresholdPWM(inpkt.pwm6));
+//  digitalWrite(L7, thresholdPWM(inpkt.pwm7));
+//  digitalWrite(L8, thresholdPWM(inpkt.pwm8));
+//  digitalWrite(L9, thresholdPWM(inpkt.pwm9));
+//  digitalWrite(L10, thresholdPWM(inpkt.pwm10));
 }
 
 byte thresholdPWM(byte val) {
