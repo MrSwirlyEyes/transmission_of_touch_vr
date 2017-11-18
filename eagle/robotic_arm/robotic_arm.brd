@@ -30,16 +30,16 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
@@ -49,9 +49,9 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -169,7 +169,6 @@
 <wire x1="83.82" y1="-2.54" x2="83.82" y2="58.42" width="0" layer="20"/>
 <wire x1="83.82" y1="58.42" x2="2.54" y2="58.42" width="0" layer="20"/>
 <wire x1="2.54" y1="58.42" x2="2.54" y2="-2.54" width="0" layer="20"/>
-<text x="73.66" y="-12.7" size="1.778" layer="48">RENAME TO GND?</text>
 <hole x="81.788" y="-0.508" drill="2"/>
 <hole x="4.572" y="-0.508" drill="2"/>
 <hole x="81.788" y="56.388" drill="2"/>
@@ -2045,10 +2044,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="-82.042" y="-52.07" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="PWM_DRIVER" library="PiB" package="TSSOP-28" value="PCA9685" x="25.908" y="3.81" rot="R90">
@@ -2102,10 +2101,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="30.48" y="-213.614" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C26" library="PiB_capacitors" package="_CER_SMD-805" value="0.1uF/50V" x="41.656" y="43.18" rot="R90">
@@ -2388,6 +2387,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP1" library="PiB_connectors" package="FTDI_BASIC-6PIN-MALE-RA" value="FTDIPTH-RA" x="31.496" y="48.768" rot="R180">
 <attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/68015.pdf" x="563.626" y="393.446" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="563.626" y="393.446" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3327-ND" x="31.496" y="48.768" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="609-3327-ND" x="563.626" y="393.446" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Amphenol FCI" x="563.626" y="393.446" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="68016-406HLF" x="563.626" y="393.446" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2448,10 +2448,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="386.842" y="-580.136" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L1" library="PiB_inductors" package="_SMD-805" value="10uH" x="16.256" y="45.212" rot="R270">
@@ -2496,10 +2496,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="402.336" y="-636.778" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C93" library="PiB_capacitors" package="_CER_SMD-805" value="0.1uF/50V" x="40.386" y="36.068" rot="R90">
@@ -2516,20 +2516,20 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digikey" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="TESTED" value="NO" x="-317.246" y="704.596" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C95" library="PiB_capacitors" package="_CER_SMD-805" value="10uF/25V" x="53.34" y="36.068" rot="R90">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="TESTED" value="NO" x="417.576" y="-660.654" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C96" library="PiB_capacitors" package="_CER_SMD-805" value="0.1uF/50V" x="51.054" y="36.068" rot="R90">
@@ -2546,10 +2546,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="CREATOR" value="MrSwirlyEyes" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="490-5523-1-ND" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="490-16824-1-ND" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="TESTED" value="NO" x="760.984" y="392.43" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C98" library="PiB_capacitors" package="_CER_SMD-805" value="0.1uF/50V" x="50.038" y="25.908" rot="R180">

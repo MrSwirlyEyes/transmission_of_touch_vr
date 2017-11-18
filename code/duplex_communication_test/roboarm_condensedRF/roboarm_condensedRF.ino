@@ -35,7 +35,7 @@ TMP36 temp[NUM_TEMP_SENSORS] = {
 #define s1 6 
 #define s2 7 
 #define s3 10
-#define sig_pin 0
+#define sig_pin 5
 
 //defined flex sensor values
 #define FLEXMIN 450
@@ -70,6 +70,8 @@ void setup()
   Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(40);
+
+  //TODO: Analog as input?
   
   for (int i = 0; i < 5; i++){
     gpkt.gFinger[i] = 0;
@@ -100,15 +102,15 @@ void loop()
       Serial.println(calibrated_servo);
       pwm.setPWM(i, 0, calibrated_servo);
     }
-    Serial.print("(");
-  for ( int i = 0 ; i < 5 ; i++ ) {
-    Serial.print(gpkt.gFinger[i]);
-//    if ( i < 4 ) {
-      Serial.print(",");
-//    }
-  }
-  Serial.print(gpkt.gCheckSum);
-  Serial.println(")");
+//    Serial.print("(");
+//  for ( int i = 0 ; i < 5 ; i++ ) {
+//    Serial.print(gpkt.gFinger[i]);
+////    if ( i < 4 ) {
+//      Serial.print(",");
+////    }
+//  }
+//  Serial.print(gpkt.gCheckSum);
+//  Serial.println(")");
 
   } else {
     Serial.print("ERROR, checksum=");
@@ -143,7 +145,7 @@ void loop()
                   + apkt.temp_readings[0] + apkt.temp_readings[1] + apkt.temp_readings[2] + apkt.temp_readings[3] + apkt.temp_readings[4];
   radio.rfWrite((uint8_t *) & apkt, sizeof(ArmPacket));
 
-//  print_sensor_readings();
+  print_sensor_readings();
   
 }
 

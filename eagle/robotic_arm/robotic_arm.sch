@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -934,44 +934,44 @@
 <pin name="DVDD" x="-27.94" y="27.94" length="short"/>
 <pin name="DVSS" x="-27.94" y="-50.8" length="short"/>
 <pin name="EVDD" x="-27.94" y="40.64" length="short"/>
-<pin name="PB0(SSN/PCINT0)" x="27.94" y="50.8" length="short" rot="R180"/>
-<pin name="PB1(SCK/PCINT1)" x="27.94" y="48.26" length="short" rot="R180"/>
-<pin name="PB2(MOSI/PDI/PCINT2)" x="27.94" y="45.72" length="short" rot="R180"/>
-<pin name="PB3(MISO/PDO/PCINT3)" x="27.94" y="43.18" length="short" rot="R180"/>
-<pin name="PB4(OC2A/PCINT4)" x="27.94" y="40.64" length="short" rot="R180"/>
-<pin name="PB5(OC1A/PCINT5)" x="27.94" y="38.1" length="short" rot="R180"/>
-<pin name="PB6(OC1B/PCINT6)" x="27.94" y="35.56" length="short" rot="R180"/>
-<pin name="PB7(OC0A/OC1C/PCINT7)" x="27.94" y="33.02" length="short" rot="R180"/>
-<pin name="PD0(SCL/INT0)" x="27.94" y="27.94" length="short" rot="R180"/>
-<pin name="PD1(SDA/INT1)" x="27.94" y="25.4" length="short" rot="R180"/>
-<pin name="PD2(RXD1/INT2)" x="27.94" y="22.86" length="short" rot="R180"/>
-<pin name="PD3(TXD1/INT3)" x="27.94" y="20.32" length="short" rot="R180"/>
-<pin name="PD4(ICP1)" x="27.94" y="17.78" length="short" rot="R180"/>
-<pin name="PD5(XCK1)" x="27.94" y="15.24" length="short" rot="R180"/>
-<pin name="PD6(T1)" x="27.94" y="12.7" length="short" rot="R180"/>
-<pin name="PD7(T0)" x="27.94" y="10.16" length="short" rot="R180"/>
-<pin name="PE0(RXD0/PCINT8)" x="27.94" y="5.08" length="short" rot="R180"/>
-<pin name="PE1(TXD0)" x="27.94" y="2.54" length="short" rot="R180"/>
-<pin name="PE2(XCK0/AIN0)" x="27.94" y="0" length="short" rot="R180"/>
-<pin name="PE3(OC3A/AIN1)" x="27.94" y="-2.54" length="short" rot="R180"/>
-<pin name="PE4(OC3B/INT4)" x="27.94" y="-5.08" length="short" rot="R180"/>
-<pin name="PE5(OC3C/INT5)" x="27.94" y="-7.62" length="short" rot="R180"/>
-<pin name="PE6(T3/INT6)" x="27.94" y="-10.16" length="short" rot="R180"/>
-<pin name="PE7(ICP3/INT7/CLKO)" x="27.94" y="-12.7" length="short" rot="R180"/>
-<pin name="PF0(ADC0)" x="27.94" y="-35.56" length="short" rot="R180"/>
-<pin name="PF1(ADC1)" x="27.94" y="-38.1" length="short" rot="R180"/>
-<pin name="PF2(ADC2/DIG2)" x="27.94" y="-40.64" length="short" rot="R180"/>
-<pin name="PF3(ADC3/DIG4)" x="27.94" y="-43.18" length="short" rot="R180"/>
-<pin name="PF4(ADC4/TCK)" x="27.94" y="-45.72" length="short" rot="R180"/>
-<pin name="PF5(ADC5/TMS)" x="27.94" y="-48.26" length="short" rot="R180"/>
-<pin name="PF6(ADC6/TDO)" x="27.94" y="-50.8" length="short" rot="R180"/>
-<pin name="PF7(ADC7/TDI)" x="27.94" y="-53.34" length="short" rot="R180"/>
-<pin name="PG0(DIG3)" x="27.94" y="-17.78" length="short" rot="R180"/>
-<pin name="PG1(DIG1)" x="27.94" y="-20.32" length="short" rot="R180"/>
-<pin name="PG2(AMR)" x="27.94" y="-22.86" length="short" rot="R180"/>
-<pin name="PG3(TOSC2)" x="27.94" y="-25.4" length="short" rot="R180"/>
-<pin name="PG4(TOSC1)" x="27.94" y="-27.94" length="short" rot="R180"/>
-<pin name="PG5(OC0B)" x="27.94" y="-30.48" length="short" rot="R180"/>
+<pin name="(PCINT0/SSN/D10)PB0" x="27.94" y="50.8" length="short" rot="R180"/>
+<pin name="(PCINT1/SCK/D13)PB1" x="27.94" y="48.26" length="short" rot="R180"/>
+<pin name="(PDI/PCINT2/MOSI/D11)PB2" x="27.94" y="45.72" length="short" rot="R180"/>
+<pin name="(PDO/PCINT3/MISO/D12)PB3" x="27.94" y="43.18" length="short" rot="R180"/>
+<pin name="(PCINT4/OC2A/D9-PWM9)PB4" x="27.94" y="40.64" length="short" rot="R180"/>
+<pin name="(PCINT5/OC1A/D8-PWM8)PB5" x="27.94" y="38.1" length="short" rot="R180"/>
+<pin name="(PCINT6/OC1B/D34-PWM34)PB6" x="27.94" y="35.56" length="short" rot="R180"/>
+<pin name="(PCINT7/OC0A/OC1C/D35-PWM35)PB7" x="27.94" y="33.02" length="short" rot="R180"/>
+<pin name="(INT0/SCL/D15)PD0" x="27.94" y="27.94" length="short" rot="R180"/>
+<pin name="(INT1/SDA/D14)PD1" x="27.94" y="25.4" length="short" rot="R180"/>
+<pin name="(INT2/RXD1/D20)PD2" x="27.94" y="22.86" length="short" rot="R180"/>
+<pin name="(INT3/TXD1/D21)PD3" x="27.94" y="20.32" length="short" rot="R180"/>
+<pin name="(ICP1/D22)PD4" x="27.94" y="17.78" length="short" rot="R180"/>
+<pin name="(XCK1/D23)PD5" x="27.94" y="15.24" length="short" rot="R180"/>
+<pin name="(T1/D24)PD6" x="27.94" y="12.7" length="short" rot="R180"/>
+<pin name="(T0/D25)PD7" x="27.94" y="10.16" length="short" rot="R180"/>
+<pin name="(PCINT8/RXD0/D0)PE0" x="27.94" y="5.08" length="short" rot="R180"/>
+<pin name="(TXD0/D1)PE1" x="27.94" y="2.54" length="short" rot="R180"/>
+<pin name="(XCK0/AIN0/D2)PE2" x="27.94" y="0" length="short" rot="R180"/>
+<pin name="(AIN1/OC3A/D3-PWM3)PE3" x="27.94" y="-2.54" length="short" rot="R180"/>
+<pin name="(INT4/OC3B/D4-PWM4)PE4" x="27.94" y="-5.08" length="short" rot="R180"/>
+<pin name="(INT5/OC3C/D5-PWM5)PE5" x="27.94" y="-7.62" length="short" rot="R180"/>
+<pin name="(T3/INT6/D6)PE6" x="27.94" y="-10.16" length="short" rot="R180"/>
+<pin name="(ICP3/INT7/CLKO/D7)PE7" x="27.94" y="-12.7" length="short" rot="R180"/>
+<pin name="(ADC0/A0*)PF0" x="27.94" y="-35.56" length="short" rot="R180"/>
+<pin name="(ADC1/A1*)PF1" x="27.94" y="-38.1" length="short" rot="R180"/>
+<pin name="(ADC2/DIG2/A2*)PF2" x="27.94" y="-40.64" length="short" rot="R180"/>
+<pin name="(ADC3/DIG4/A3*)PF3" x="27.94" y="-43.18" length="short" rot="R180"/>
+<pin name="(ADC4/TCK/A4*)PF4" x="27.94" y="-45.72" length="short" rot="R180"/>
+<pin name="(ADC5/TMS/A5*)PF5" x="27.94" y="-48.26" length="short" rot="R180"/>
+<pin name="(ADC6/TDO/A6*)PF6" x="27.94" y="-50.8" length="short" rot="R180"/>
+<pin name="(ADC7/TDI/A7*)PF7" x="27.94" y="-53.34" length="short" rot="R180"/>
+<pin name="(DIG3/D16)PG0" x="27.94" y="-17.78" length="short" rot="R180"/>
+<pin name="(DIG1/D17)PG1" x="27.94" y="-20.32" length="short" rot="R180"/>
+<pin name="(AMR/D18)PG2" x="27.94" y="-22.86" length="short" rot="R180"/>
+<pin name="(TOSC2)PG3" x="27.94" y="-25.4" length="short" rot="R180"/>
+<pin name="(TOSC1)PG4" x="27.94" y="-27.94" length="short" rot="R180"/>
+<pin name="(OC0B/D19-PWM19)PG5" x="27.94" y="-30.48" length="short" rot="R180"/>
 <pin name="RFN" x="-27.94" y="-30.48" length="short"/>
 <pin name="RFP" x="-27.94" y="-10.16" length="short"/>
 <pin name="RSTN" x="-27.94" y="50.8" length="short"/>
@@ -981,6 +981,7 @@
 <pin name="XTAL2" x="-27.94" y="-2.54" length="short"/>
 <text x="0" y="-56.642" size="0.8128" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <wire x1="25.4" y1="53.34" x2="-25.4" y2="53.34" width="0.254" layer="94"/>
+<text x="24.892" y="-55.372" size="0.6096" layer="97" font="vector" align="bottom-right">*Cannot use AX in Arduino IDE, just do NOT pinMode</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -993,6 +994,44 @@
 <devices>
 <device name="_VFQFN-64_EXPOSED-PAD" package="VFQFN-64">
 <connects>
+<connect gate="G$1" pin="(ADC0/A0*)PF0" pad="63"/>
+<connect gate="G$1" pin="(ADC1/A1*)PF1" pad="64"/>
+<connect gate="G$1" pin="(ADC2/DIG2/A2*)PF2" pad="1"/>
+<connect gate="G$1" pin="(ADC3/DIG4/A3*)PF3" pad="2"/>
+<connect gate="G$1" pin="(ADC4/TCK/A4*)PF4" pad="3"/>
+<connect gate="G$1" pin="(ADC5/TMS/A5*)PF5" pad="4"/>
+<connect gate="G$1" pin="(ADC6/TDO/A6*)PF6" pad="5"/>
+<connect gate="G$1" pin="(ADC7/TDI/A7*)PF7" pad="6"/>
+<connect gate="G$1" pin="(AIN1/OC3A/D3-PWM3)PE3" pad="49"/>
+<connect gate="G$1" pin="(AMR/D18)PG2" pad="16"/>
+<connect gate="G$1" pin="(DIG1/D17)PG1" pad="15"/>
+<connect gate="G$1" pin="(DIG3/D16)PG0" pad="14"/>
+<connect gate="G$1" pin="(ICP1/D22)PD4" pad="29"/>
+<connect gate="G$1" pin="(ICP3/INT7/CLKO/D7)PE7" pad="53"/>
+<connect gate="G$1" pin="(INT0/SCL/D15)PD0" pad="25"/>
+<connect gate="G$1" pin="(INT1/SDA/D14)PD1" pad="26"/>
+<connect gate="G$1" pin="(INT2/RXD1/D20)PD2" pad="27"/>
+<connect gate="G$1" pin="(INT3/TXD1/D21)PD3" pad="28"/>
+<connect gate="G$1" pin="(INT4/OC3B/D4-PWM4)PE4" pad="50"/>
+<connect gate="G$1" pin="(INT5/OC3C/D5-PWM5)PE5" pad="51"/>
+<connect gate="G$1" pin="(OC0B/D19-PWM19)PG5" pad="19"/>
+<connect gate="G$1" pin="(PCINT0/SSN/D10)PB0" pad="36"/>
+<connect gate="G$1" pin="(PCINT1/SCK/D13)PB1" pad="37"/>
+<connect gate="G$1" pin="(PCINT4/OC2A/D9-PWM9)PB4" pad="40"/>
+<connect gate="G$1" pin="(PCINT5/OC1A/D8-PWM8)PB5" pad="41"/>
+<connect gate="G$1" pin="(PCINT6/OC1B/D34-PWM34)PB6" pad="42"/>
+<connect gate="G$1" pin="(PCINT7/OC0A/OC1C/D35-PWM35)PB7" pad="43"/>
+<connect gate="G$1" pin="(PCINT8/RXD0/D0)PE0" pad="46"/>
+<connect gate="G$1" pin="(PDI/PCINT2/MOSI/D11)PB2" pad="38"/>
+<connect gate="G$1" pin="(PDO/PCINT3/MISO/D12)PB3" pad="39"/>
+<connect gate="G$1" pin="(T0/D25)PD7" pad="32"/>
+<connect gate="G$1" pin="(T1/D24)PD6" pad="31"/>
+<connect gate="G$1" pin="(T3/INT6/D6)PE6" pad="52"/>
+<connect gate="G$1" pin="(TOSC1)PG4" pad="18"/>
+<connect gate="G$1" pin="(TOSC2)PG3" pad="17"/>
+<connect gate="G$1" pin="(TXD0/D1)PE1" pad="47"/>
+<connect gate="G$1" pin="(XCK0/AIN0/D2)PE2" pad="48"/>
+<connect gate="G$1" pin="(XCK1/D23)PD5" pad="30"/>
 <connect gate="G$1" pin="AREF" pad="62"/>
 <connect gate="G$1" pin="AVDD" pad="60"/>
 <connect gate="G$1" pin="AVSS" pad="58 61"/>
@@ -1003,44 +1042,6 @@
 <connect gate="G$1" pin="DVDD" pad="21 22"/>
 <connect gate="G$1" pin="DVSS" pad="20 24 35 45 55"/>
 <connect gate="G$1" pin="EVDD" pad="59"/>
-<connect gate="G$1" pin="PB0(SSN/PCINT0)" pad="36"/>
-<connect gate="G$1" pin="PB1(SCK/PCINT1)" pad="37"/>
-<connect gate="G$1" pin="PB2(MOSI/PDI/PCINT2)" pad="38"/>
-<connect gate="G$1" pin="PB3(MISO/PDO/PCINT3)" pad="39"/>
-<connect gate="G$1" pin="PB4(OC2A/PCINT4)" pad="40"/>
-<connect gate="G$1" pin="PB5(OC1A/PCINT5)" pad="41"/>
-<connect gate="G$1" pin="PB6(OC1B/PCINT6)" pad="42"/>
-<connect gate="G$1" pin="PB7(OC0A/OC1C/PCINT7)" pad="43"/>
-<connect gate="G$1" pin="PD0(SCL/INT0)" pad="25"/>
-<connect gate="G$1" pin="PD1(SDA/INT1)" pad="26"/>
-<connect gate="G$1" pin="PD2(RXD1/INT2)" pad="27"/>
-<connect gate="G$1" pin="PD3(TXD1/INT3)" pad="28"/>
-<connect gate="G$1" pin="PD4(ICP1)" pad="29"/>
-<connect gate="G$1" pin="PD5(XCK1)" pad="30"/>
-<connect gate="G$1" pin="PD6(T1)" pad="31"/>
-<connect gate="G$1" pin="PD7(T0)" pad="32"/>
-<connect gate="G$1" pin="PE0(RXD0/PCINT8)" pad="46"/>
-<connect gate="G$1" pin="PE1(TXD0)" pad="47"/>
-<connect gate="G$1" pin="PE2(XCK0/AIN0)" pad="48"/>
-<connect gate="G$1" pin="PE3(OC3A/AIN1)" pad="49"/>
-<connect gate="G$1" pin="PE4(OC3B/INT4)" pad="50"/>
-<connect gate="G$1" pin="PE5(OC3C/INT5)" pad="51"/>
-<connect gate="G$1" pin="PE6(T3/INT6)" pad="52"/>
-<connect gate="G$1" pin="PE7(ICP3/INT7/CLKO)" pad="53"/>
-<connect gate="G$1" pin="PF0(ADC0)" pad="63"/>
-<connect gate="G$1" pin="PF1(ADC1)" pad="64"/>
-<connect gate="G$1" pin="PF2(ADC2/DIG2)" pad="1"/>
-<connect gate="G$1" pin="PF3(ADC3/DIG4)" pad="2"/>
-<connect gate="G$1" pin="PF4(ADC4/TCK)" pad="3"/>
-<connect gate="G$1" pin="PF5(ADC5/TMS)" pad="4"/>
-<connect gate="G$1" pin="PF6(ADC6/TDO)" pad="5"/>
-<connect gate="G$1" pin="PF7(ADC7/TDI)" pad="6"/>
-<connect gate="G$1" pin="PG0(DIG3)" pad="14"/>
-<connect gate="G$1" pin="PG1(DIG1)" pad="15"/>
-<connect gate="G$1" pin="PG2(AMR)" pad="16"/>
-<connect gate="G$1" pin="PG3(TOSC2)" pad="17"/>
-<connect gate="G$1" pin="PG4(TOSC1)" pad="18"/>
-<connect gate="G$1" pin="PG5(OC0B)" pad="19"/>
 <connect gate="G$1" pin="RFN" pad="9"/>
 <connect gate="G$1" pin="RFP" pad="8"/>
 <connect gate="G$1" pin="RSTN" pad="12"/>
@@ -1278,10 +1279,10 @@
 <attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
 <attribute name="DATASHEET" value="http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61E106KA73-01.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-5523-1-ND" constant="no"/>
-<attribute name="DISTPN" value="490-5523-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM21BR61E106KA73K/490-16824-1-ND/7595732" constant="no"/>
+<attribute name="DISTPN" value="490-16824-1-ND" constant="no"/>
 <attribute name="MFR" value="Murata Electronics North America" constant="no"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L" constant="no"/>
+<attribute name="MPN" value="GRM21BR61E106KA73K" constant="no"/>
 <attribute name="TESTED" value="NO" constant="no"/>
 <attribute name="VALUE" value="10uF/25V" constant="no"/>
 </technology>
@@ -3177,6 +3178,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <technology name="">
 <attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/68015.pdf"/>
 <attribute name="DIST" value="Digikey"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3327-ND" constant="no"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
 <attribute name="MFR" value="Amphenol FCI"/>
 <attribute name="MPN" value="68016-406HLF"/>
@@ -4270,14 +4272,14 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="459.74" y1="172.72" x2="408.94" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="459.74" y1="20.32" x2="459.74" y2="172.72" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="459.74" y1="20.32" x2="408.94" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
-<text x="434.34" y="175.26" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">TEMP SENSORS</text>
-<text x="403.86" y="208.28" size="1.27" layer="97" font="vector" ratio="10">NOTE: Value depends on sensitivity</text>
+<text x="441.96" y="175.26" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">TEMP SENSORS</text>
+<text x="416.56" y="208.28" size="1.27" layer="97" font="vector" ratio="10">NOTE: Value depends on sensitivity</text>
 <wire x1="20.32" y1="15.24" x2="20.32" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="106.68" y1="15.24" x2="106.68" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="106.68" y1="177.8" x2="20.32" y2="177.8" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="106.68" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="97" style="shortdash"/>
-<text x="50.8" y="180.34" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">SERVOS</text>
-<text x="93.98" y="180.34" size="1.27" layer="97" font="vector" ratio="10">NEED TO FULLY DEFINE THE SERVO DEVICE</text>
+<text x="63.5" y="180.34" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">SERVOS</text>
+<text x="81.28" y="180.34" size="1.27" layer="97" font="vector" ratio="10">NEED TO FULLY DEFINE THE SERVO DEVICE</text>
 <wire x1="360.68" y1="353.06" x2="436.88" y2="353.06" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="436.88" y1="353.06" x2="436.88" y2="289.56" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="436.88" y1="289.56" x2="360.68" y2="289.56" width="0.1524" layer="97" style="shortdash"/>
@@ -4295,9 +4297,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="365.76" y="76.2" size="1.27" layer="91" font="vector" ratio="10">47K?</text>
 <text x="365.76" y="38.1" size="1.27" layer="91" font="vector" ratio="10">47K?</text>
 <wire x1="345.44" y1="20.32" x2="345.44" y2="213.36" width="0.1524" layer="97" style="shortdash"/>
-<text x="370.84" y="215.9" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">FORCE SENSITIVE
+<text x="373.38" y="215.9" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">FORCE SENSITIVE
 RESISTORS</text>
-<text x="403.86" y="213.36" size="1.27" layer="91" font="vector" ratio="10">Might add op amps</text>
+<text x="416.56" y="213.36" size="1.27" layer="91" font="vector" ratio="10">Might add op amps</text>
 <text x="213.36" y="332.74" size="1.27" layer="97" font="vector" ratio="10" rot="MR0">NC</text>
 <wire x1="317.5" y1="370.84" x2="127" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="127" y1="218.44" x2="127" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
@@ -4317,7 +4319,7 @@ RESISTORS</text>
 <wire x1="327.66" y1="10.16" x2="327.66" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="469.9" y1="10.16" x2="469.9" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="469.9" y1="10.16" x2="327.66" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
-<text x="208.28" y="63.5" size="1.27" layer="91" font="vector" ratio="10">CHECK THESE FOR ACCURACY</text>
+<text x="208.28" y="5.08" size="1.27" layer="91" font="vector" ratio="10">CHECK THESE FOR ACCURACY</text>
 <wire x1="307.34" y1="20.32" x2="248.92" y2="20.32" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="248.92" y1="20.32" x2="248.92" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="307.34" y1="58.42" x2="248.92" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
@@ -4335,9 +4337,9 @@ RESISTORS</text>
 <wire x1="317.5" y1="10.16" x2="127" y2="10.16" width="0.1524" layer="97" style="shortdash"/>
 <text x="223.52" y="78.74" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">PROGRAMMER</text>
 <wire x1="127" y1="101.6" x2="127" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="317.5" y1="193.04" x2="127" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="317.5" y1="101.6" x2="317.5" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
-<wire x1="317.5" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="322.58" y1="193.04" x2="127" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="322.58" y1="101.6" x2="322.58" y2="193.04" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="322.58" y1="101.6" x2="127" y2="101.6" width="0.1524" layer="97" style="shortdash"/>
 <text x="223.52" y="195.58" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">POWER SYSTEM</text>
 <text x="190.5" y="170.18" size="1.27" layer="97" font="vector" ratio="10">NC</text>
 <text x="299.72" y="185.42" size="1.778" layer="97">MCU</text>
@@ -5020,7 +5022,7 @@ RESISTORS</text>
 <wire x1="50.8" y1="330.2" x2="53.34" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD1(SDA/INT1)"/>
+<pinref part="MCU" gate="G$1" pin="(INT1/SDA/D14)PD1"/>
 <wire x1="292.1" y1="309.88" x2="289.56" y2="309.88" width="0.1524" layer="91"/>
 <label x="292.1" y="309.88" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="R18" gate="G$1" pin="1"/>
@@ -5039,7 +5041,7 @@ RESISTORS</text>
 <wire x1="50.8" y1="327.66" x2="53.34" y2="327.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD0(SCL/INT0)"/>
+<pinref part="MCU" gate="G$1" pin="(INT0/SCL/D15)PD0"/>
 <wire x1="292.1" y1="312.42" x2="284.48" y2="312.42" width="0.1524" layer="91"/>
 <label x="292.1" y="312.42" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -5340,7 +5342,7 @@ RESISTORS</text>
 </net>
 <net name="SSN" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB0(SSN/PCINT0)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT0/SSN/D10)PB0"/>
 <wire x1="271.78" y1="335.28" x2="269.24" y2="335.28" width="0.1524" layer="91"/>
 <label x="271.78" y="335.28" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5352,7 +5354,7 @@ RESISTORS</text>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB1(SCK/PCINT1)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT1/SCK/D13)PB1"/>
 <wire x1="271.78" y1="332.74" x2="269.24" y2="332.74" width="0.1524" layer="91"/>
 <label x="271.78" y="332.74" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5364,7 +5366,7 @@ RESISTORS</text>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB2(MOSI/PDI/PCINT2)"/>
+<pinref part="MCU" gate="G$1" pin="(PDI/PCINT2/MOSI/D11)PB2"/>
 <wire x1="271.78" y1="330.2" x2="269.24" y2="330.2" width="0.1524" layer="91"/>
 <label x="271.78" y="330.2" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5376,7 +5378,7 @@ RESISTORS</text>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB3(MISO/PDO/PCINT3)"/>
+<pinref part="MCU" gate="G$1" pin="(PDO/PCINT3/MISO/D12)PB3"/>
 <wire x1="271.78" y1="327.66" x2="269.24" y2="327.66" width="0.1524" layer="91"/>
 <label x="271.78" y="327.66" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5388,21 +5390,21 @@ RESISTORS</text>
 </net>
 <net name="PB4" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB4(OC2A/PCINT4)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT4/OC2A/D9-PWM9)PB4"/>
 <wire x1="271.78" y1="325.12" x2="269.24" y2="325.12" width="0.1524" layer="91"/>
 <label x="271.78" y="325.12" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PB5" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB5(OC1A/PCINT5)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT5/OC1A/D8-PWM8)PB5"/>
 <wire x1="271.78" y1="322.58" x2="269.24" y2="322.58" width="0.1524" layer="91"/>
 <label x="271.78" y="322.58" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PB6" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB6(OC1B/PCINT6)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT6/OC1B/D34-PWM34)PB6"/>
 <wire x1="271.78" y1="320.04" x2="269.24" y2="320.04" width="0.1524" layer="91"/>
 <label x="271.78" y="320.04" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5415,7 +5417,7 @@ RESISTORS</text>
 </net>
 <net name="PB7" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PB7(OC0A/OC1C/PCINT7)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT7/OC0A/OC1C/D35-PWM35)PB7"/>
 <wire x1="271.78" y1="317.5" x2="269.24" y2="317.5" width="0.1524" layer="91"/>
 <label x="271.78" y="317.5" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5428,49 +5430,49 @@ RESISTORS</text>
 </net>
 <net name="RX1" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD2(RXD1/INT2)"/>
+<pinref part="MCU" gate="G$1" pin="(INT2/RXD1/D20)PD2"/>
 <wire x1="271.78" y1="307.34" x2="269.24" y2="307.34" width="0.1524" layer="91"/>
 <label x="271.78" y="307.34" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TX1" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD3(TXD1/INT3)"/>
+<pinref part="MCU" gate="G$1" pin="(INT3/TXD1/D21)PD3"/>
 <wire x1="271.78" y1="304.8" x2="269.24" y2="304.8" width="0.1524" layer="91"/>
 <label x="271.78" y="304.8" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PD4" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD4(ICP1)"/>
+<pinref part="MCU" gate="G$1" pin="(ICP1/D22)PD4"/>
 <wire x1="271.78" y1="302.26" x2="269.24" y2="302.26" width="0.1524" layer="91"/>
 <label x="271.78" y="302.26" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PD5" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD5(XCK1)"/>
+<pinref part="MCU" gate="G$1" pin="(XCK1/D23)PD5"/>
 <wire x1="271.78" y1="299.72" x2="269.24" y2="299.72" width="0.1524" layer="91"/>
 <label x="271.78" y="299.72" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PD6" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD6(T1)"/>
+<pinref part="MCU" gate="G$1" pin="(T1/D24)PD6"/>
 <wire x1="271.78" y1="297.18" x2="269.24" y2="297.18" width="0.1524" layer="91"/>
 <label x="271.78" y="297.18" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PD7" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PD7(T0)"/>
+<pinref part="MCU" gate="G$1" pin="(T0/D25)PD7"/>
 <wire x1="271.78" y1="294.64" x2="269.24" y2="294.64" width="0.1524" layer="91"/>
 <label x="271.78" y="294.64" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="RX0" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE0(RXD0/PCINT8)"/>
+<pinref part="MCU" gate="G$1" pin="(PCINT8/RXD0/D0)PE0"/>
 <wire x1="271.78" y1="289.56" x2="269.24" y2="289.56" width="0.1524" layer="91"/>
 <label x="271.78" y="289.56" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5482,7 +5484,7 @@ RESISTORS</text>
 </net>
 <net name="TX0" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE1(TXD0)"/>
+<pinref part="MCU" gate="G$1" pin="(TXD0/D1)PE1"/>
 <wire x1="271.78" y1="287.02" x2="269.24" y2="287.02" width="0.1524" layer="91"/>
 <label x="271.78" y="287.02" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5494,7 +5496,7 @@ RESISTORS</text>
 </net>
 <net name="PE2" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE2(XCK0/AIN0)"/>
+<pinref part="MCU" gate="G$1" pin="(XCK0/AIN0/D2)PE2"/>
 <wire x1="271.78" y1="284.48" x2="269.24" y2="284.48" width="0.1524" layer="91"/>
 <label x="271.78" y="284.48" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5506,28 +5508,28 @@ RESISTORS</text>
 </net>
 <net name="PE3" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE3(OC3A/AIN1)"/>
+<pinref part="MCU" gate="G$1" pin="(AIN1/OC3A/D3-PWM3)PE3"/>
 <wire x1="271.78" y1="281.94" x2="269.24" y2="281.94" width="0.1524" layer="91"/>
 <label x="271.78" y="281.94" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PE4" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE4(OC3B/INT4)"/>
+<pinref part="MCU" gate="G$1" pin="(INT4/OC3B/D4-PWM4)PE4"/>
 <wire x1="271.78" y1="279.4" x2="269.24" y2="279.4" width="0.1524" layer="91"/>
 <label x="271.78" y="279.4" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PE5" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE5(OC3C/INT5)"/>
+<pinref part="MCU" gate="G$1" pin="(INT5/OC3C/D5-PWM5)PE5"/>
 <wire x1="271.78" y1="276.86" x2="269.24" y2="276.86" width="0.1524" layer="91"/>
 <label x="271.78" y="276.86" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PE6" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE6(T3/INT6)"/>
+<pinref part="MCU" gate="G$1" pin="(T3/INT6/D6)PE6"/>
 <wire x1="271.78" y1="274.32" x2="269.24" y2="274.32" width="0.1524" layer="91"/>
 <label x="271.78" y="274.32" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5539,7 +5541,7 @@ RESISTORS</text>
 </net>
 <net name="PE7" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PE7(ICP3/INT7/CLKO)"/>
+<pinref part="MCU" gate="G$1" pin="(ICP3/INT7/CLKO/D7)PE7"/>
 <wire x1="271.78" y1="271.78" x2="269.24" y2="271.78" width="0.1524" layer="91"/>
 <label x="271.78" y="271.78" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5551,77 +5553,77 @@ RESISTORS</text>
 </net>
 <net name="PG0" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG0(DIG3)"/>
+<pinref part="MCU" gate="G$1" pin="(DIG3/D16)PG0"/>
 <wire x1="271.78" y1="266.7" x2="269.24" y2="266.7" width="0.1524" layer="91"/>
 <label x="271.78" y="266.7" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PG1" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG1(DIG1)"/>
+<pinref part="MCU" gate="G$1" pin="(DIG1/D17)PG1"/>
 <wire x1="271.78" y1="264.16" x2="269.24" y2="264.16" width="0.1524" layer="91"/>
 <label x="271.78" y="264.16" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PG2" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG2(AMR)"/>
+<pinref part="MCU" gate="G$1" pin="(AMR/D18)PG2"/>
 <wire x1="271.78" y1="261.62" x2="269.24" y2="261.62" width="0.1524" layer="91"/>
 <label x="271.78" y="261.62" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PG3" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG3(TOSC2)"/>
+<pinref part="MCU" gate="G$1" pin="(TOSC2)PG3"/>
 <wire x1="271.78" y1="259.08" x2="269.24" y2="259.08" width="0.1524" layer="91"/>
 <label x="271.78" y="259.08" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PG4" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG4(TOSC1)"/>
+<pinref part="MCU" gate="G$1" pin="(TOSC1)PG4"/>
 <wire x1="271.78" y1="256.54" x2="269.24" y2="256.54" width="0.1524" layer="91"/>
 <label x="271.78" y="256.54" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="PG5" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PG5(OC0B)"/>
+<pinref part="MCU" gate="G$1" pin="(OC0B/D19-PWM19)PG5"/>
 <wire x1="269.24" y1="254" x2="271.78" y2="254" width="0.1524" layer="91"/>
 <label x="271.78" y="254" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF0(ADC0)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC0/A0*)PF0"/>
 <wire x1="271.78" y1="248.92" x2="269.24" y2="248.92" width="0.1524" layer="91"/>
 <label x="271.78" y="248.92" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF1(ADC1)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC1/A1*)PF1"/>
 <wire x1="271.78" y1="246.38" x2="269.24" y2="246.38" width="0.1524" layer="91"/>
 <label x="271.78" y="246.38" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF3(ADC3/DIG4)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC3/DIG4/A3*)PF3"/>
 <wire x1="271.78" y1="241.3" x2="269.24" y2="241.3" width="0.1524" layer="91"/>
 <label x="271.78" y="241.3" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF4(ADC4/TCK)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC4/TCK/A4*)PF4"/>
 <wire x1="271.78" y1="238.76" x2="269.24" y2="238.76" width="0.1524" layer="91"/>
 <label x="271.78" y="238.76" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF5(ADC5/TMS)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC5/TMS/A5*)PF5"/>
 <wire x1="271.78" y1="236.22" x2="269.24" y2="236.22" width="0.1524" layer="91"/>
 <label x="271.78" y="236.22" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5633,7 +5635,7 @@ RESISTORS</text>
 </net>
 <net name="A6" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF6(ADC6/TDO)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC6/TDO/A6*)PF6"/>
 <wire x1="271.78" y1="233.68" x2="269.24" y2="233.68" width="0.1524" layer="91"/>
 <label x="271.78" y="233.68" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -5651,7 +5653,7 @@ RESISTORS</text>
 </net>
 <net name="A7" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF7(ADC7/TDI)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC7/TDI/A7*)PF7"/>
 <wire x1="271.78" y1="231.14" x2="269.24" y2="231.14" width="0.1524" layer="91"/>
 <label x="271.78" y="231.14" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -6487,7 +6489,7 @@ RESISTORS</text>
 </net>
 <net name="A2" class="0">
 <segment>
-<pinref part="MCU" gate="G$1" pin="PF2(ADC2/DIG2)"/>
+<pinref part="MCU" gate="G$1" pin="(ADC2/DIG2/A2*)PF2"/>
 <wire x1="271.78" y1="243.84" x2="269.24" y2="243.84" width="0.1524" layer="91"/>
 <label x="271.78" y="243.84" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
