@@ -4363,6 +4363,7 @@ RESISTORS</text>
 <text x="279.4" y="274.32" size="1.778" layer="97">D6 --&gt; S1 of DEMUX</text>
 <text x="279.4" y="271.78" size="1.778" layer="97">D7 --&gt; S2 of DEMUX</text>
 <text x="279.4" y="335.28" size="1.778" layer="97">D10 --&gt; S3 of DEMUX</text>
+<text x="492.76" y="368.3" size="1.778" layer="91">NOTES: Add more spots for another vibe motor?</text>
 </plain>
 <instances>
 <instance part="TEMP_PINKY" gate="G$1" x="421.64" y="157.48"/>

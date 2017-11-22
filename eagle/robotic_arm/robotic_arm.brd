@@ -228,7 +228,7 @@
 <vertex x="21.9622" y="28.2926"/>
 </polygon>
 <text x="6.604" y="1.524" size="1.27" layer="21" font="vector" ratio="20" rot="R90">Transmission of Touch VR
-Robotic Arm     Rev 1</text>
+Robotic Arm     Rev 2</text>
 <text x="8.128" y="1.524" size="0.8128" layer="21" font="vector" ratio="20" rot="R90">Designed by: MrSwirlyEyes</text>
 <text x="6.604" y="1.524" size="1.27" layer="22" font="vector" ratio="20" rot="MR90">Transmission of Touch VR
 Robotic Arm     Rev 1</text>
@@ -3130,6 +3130,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="24.257" y1="28.829" x2="24.257" y2="28.067" width="0.254" layer="1"/>
 <wire x1="25.594" y1="26.73" x2="24.257" y2="28.067" width="0.254" layer="1"/>
 <wire x1="25.019" y1="28.067" x2="24.257" y2="28.829" width="0.254" layer="1"/>
+<via x="22.606" y="30.48" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VCC">
 <contactref element="PWM_DRIVER" pad="28"/>
@@ -4451,9 +4452,6 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="A2">
 <contactref element="MCU" pad="1"/>
-</signal>
-<signal name="N$12">
-<via x="22.606" y="30.48" extent="1-16" drill="0.35"/>
 </signal>
 </signals>
 <errors>
