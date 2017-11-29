@@ -7,7 +7,7 @@
 //defined mux pins from redboard
 #define s0 2 
 #define s1 6 
-#define s2 7 
+#define s2 7
 #define s3 10
 #define sig_pin 0
 
@@ -54,13 +54,13 @@ void setup()
   Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(40);
-  
+  pinMode(sig_pin,INPUT);
   for (int i = 0; i < 5; i++){
     gpkt.gFinger[i] = 0;
     apkt.aFinger[i] = 0;
   }
   
-  start_up_sequence();
+//  start_up_sequence();
 }
 
 void loop() {
@@ -103,9 +103,9 @@ void read_flex_sensors() {
     delay(5);
     gpkt.gFinger[i] = demux.read_channel(i);
     delay(5);
-//    Serial.print(gpkt.gFinger[i]);
-//    if(i<4)
-//     Serial.print(",");    
+    Serial.print(gpkt.gFinger[i]);
+    if(i<4)
+     Serial.print(",");    
   }
   
   gpkt.gCheckSum = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];

@@ -100,15 +100,15 @@ void loop()
     for (int i = 0; i < 5; i++) {
       int calibrated_servo = map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX);
       Serial.println(calibrated_servo);
-      pwm.setPWM(i, 0, calibrated_servo);
+//      pwm.setPWM(i, 0, calibrated_servo);
     }
-//    Serial.print("(");
-//  for ( int i = 0 ; i < 5 ; i++ ) {
-//    Serial.print(gpkt.gFinger[i]);
-////    if ( i < 4 ) {
-//      Serial.print(",");
-////    }
-//  }
+    Serial.print("(");
+  for ( int i = 0 ; i < 5 ; i++ ) {
+    Serial.print(gpkt.gFinger[i]);
+    if ( i < 4 ) {
+      Serial.print(",");
+    }
+  }
 //  Serial.print(gpkt.gCheckSum);
 //  Serial.println(")");
 
