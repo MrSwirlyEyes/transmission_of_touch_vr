@@ -1330,14 +1330,14 @@
 <wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
 <rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
 <rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-<wire x1="-0.758" y1="0.31" x2="-0.758" y2="-0.31" width="0.05" layer="39"/>
-<wire x1="-0.758" y1="-0.31" x2="0.758" y2="-0.31" width="0.05" layer="39"/>
-<wire x1="0.758" y1="-0.31" x2="0.758" y2="0.31" width="0.05" layer="39"/>
-<wire x1="0.758" y1="0.31" x2="-0.758" y2="0.31" width="0.05" layer="39"/>
-<wire x1="-0.76" y1="0.31" x2="-0.76" y2="-0.31" width="0.05" layer="21"/>
-<wire x1="-0.76" y1="-0.31" x2="0.76" y2="-0.31" width="0.05" layer="21"/>
-<wire x1="0.76" y1="-0.31" x2="0.76" y2="0.31" width="0.05" layer="21"/>
-<wire x1="0.76" y1="0.31" x2="-0.76" y2="0.31" width="0.05" layer="21"/>
+<wire x1="-0.758" y1="0.32" x2="-0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="-0.758" y1="-0.32" x2="0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="-0.32" x2="0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="0.32" x2="-0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="-0.76" y1="0.32" x2="-0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="-0.76" y1="-0.32" x2="0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="-0.32" x2="0.76" y2="0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="0.32" x2="-0.76" y2="0.32" width="0.05" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3095,14 +3095,14 @@
 <wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
 <rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
 <rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-<wire x1="-0.758" y1="0.31" x2="-0.758" y2="-0.31" width="0.05" layer="39"/>
-<wire x1="-0.758" y1="-0.31" x2="0.758" y2="-0.31" width="0.05" layer="39"/>
-<wire x1="0.758" y1="-0.31" x2="0.758" y2="0.31" width="0.05" layer="39"/>
-<wire x1="0.758" y1="0.31" x2="-0.758" y2="0.31" width="0.05" layer="39"/>
-<wire x1="-0.76" y1="0.31" x2="-0.76" y2="-0.31" width="0.05" layer="21"/>
-<wire x1="-0.76" y1="-0.31" x2="0.76" y2="-0.31" width="0.05" layer="21"/>
-<wire x1="0.76" y1="-0.31" x2="0.76" y2="0.31" width="0.05" layer="21"/>
-<wire x1="0.76" y1="0.31" x2="-0.76" y2="0.31" width="0.05" layer="21"/>
+<wire x1="-0.758" y1="0.32" x2="-0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="-0.758" y1="-0.32" x2="0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="-0.32" x2="0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="0.32" x2="-0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="-0.76" y1="0.32" x2="-0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="-0.76" y1="-0.32" x2="0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="-0.32" x2="0.76" y2="0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="0.32" x2="-0.76" y2="0.32" width="0.05" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4585,24 +4585,24 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <package name="SOD-923F/0402">
 <smd name="A" x="-0.425" y="0" dx="0.6" dy="0.55" layer="1" roundness="50"/>
 <smd name="K" x="0.425" y="0" dx="0.6" dy="0.55" layer="1" roundness="50"/>
+<rectangle x1="0.5" y1="-0.32" x2="0.76" y2="0.32" layer="21"/>
+<text x="1.07" y="0.06" size="0.6096" layer="21" align="center">-</text>
 <wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.05" layer="51"/>
 <wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.05" layer="51"/>
-<text x="0" y="0.792" size="0.6096" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
-<text x="0" y="-0.808" size="0.4064" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-0.889" y="0.127" size="0.254" layer="25" font="vector" ratio="10" rot="R180" align="center-left">&gt;NAME</text>
+<text x="-0.889" y="-0.127" size="0.254" layer="27" font="vector" ratio="10" rot="R180" align="center-left">&gt;VALUE</text>
 <wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.05" layer="51"/>
 <wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.05" layer="51"/>
 <rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
 <rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51"/>
-<wire x1="-0.878" y1="0.416" x2="-0.878" y2="-0.416" width="0.1" layer="39"/>
-<wire x1="-0.878" y1="-0.416" x2="0.878" y2="-0.416" width="0.1" layer="39"/>
-<wire x1="0.878" y1="-0.416" x2="0.878" y2="0.416" width="0.1" layer="39"/>
-<wire x1="0.878" y1="0.416" x2="-0.878" y2="0.416" width="0.1" layer="39"/>
-<wire x1="-0.851" y1="0.389" x2="-0.851" y2="-0.389" width="0.1" layer="21"/>
-<wire x1="-0.851" y1="-0.389" x2="0.851" y2="-0.389" width="0.1" layer="21"/>
-<wire x1="0.851" y1="-0.389" x2="0.851" y2="0.389" width="0.1" layer="21"/>
-<wire x1="0.851" y1="0.389" x2="-0.851" y2="0.389" width="0.1" layer="21"/>
-<rectangle x1="0.546" y1="-0.389" x2="0.846" y2="0.389" layer="21"/>
-<text x="1.27" y="-0.254" size="0.6096" layer="21">-</text>
+<wire x1="-0.758" y1="0.32" x2="-0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="-0.758" y1="-0.32" x2="0.758" y2="-0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="-0.32" x2="0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="0.758" y1="0.32" x2="-0.758" y2="0.32" width="0.05" layer="39"/>
+<wire x1="-0.76" y1="0.32" x2="-0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="-0.76" y1="-0.32" x2="0.76" y2="-0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="-0.32" x2="0.76" y2="0.32" width="0.05" layer="21"/>
+<wire x1="0.76" y1="0.32" x2="-0.76" y2="0.32" width="0.05" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4974,11 +4974,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R37" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
 <part name="FLEX5" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C34" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
-<part name="C52" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
-<part name="C53" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
-<part name="C54" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
-<part name="C55" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
-<part name="C56" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="C57" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_10V-20%" value="10uF/10V"/>
 <part name="C58" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_10V-20%" value="10uF/10V"/>
 <part name="C59" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_10V-20%" value="10uF/10V"/>
@@ -5084,7 +5079,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C1" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R13" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" value="100Ω"/>
 <part name="D12" library="PiB_discrete_semiconductors" deviceset="DIODE_GENERAL-PURPOSE" device="_SMD-0402_GP_120MA-75V" value="150mA/75V"/>
-<part name="C24" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="C35" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_10V-20%" value="10uF/10V"/>
 <part name="VREG6" library="PiB_ic_power" deviceset="VREG_LINEAR_FIXED" device="_TL1963A-33_LDO_1.5A-3.3V" value="TL1963A-33 1.5A/3.3V"/>
 <part name="D13" library="MrSwirlyEyes" deviceset="DIODE_GEN-PURP" device="SMD_GP_1A-50V-SOD123F" value="1A/50V"/>
@@ -5166,27 +5160,21 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY105" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY106" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY107" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY108" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY109" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY110" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY111" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY112" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY113" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY114" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY115" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY116" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY117" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY118" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY119" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY121" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY125" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY129" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY130" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY131" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY132" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY133" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY134" library="PiB_power_symbols" deviceset="NGND" device=""/>
-<part name="SUPPLY135" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY136" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY137" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY138" library="PiB_power_symbols" deviceset="NGND" device=""/>
@@ -5226,22 +5214,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY43" library="PiB_power_symbols" deviceset="1.8V" device=""/>
 <part name="SUPPLY44" library="PiB_power_symbols" deviceset="1.8V" device=""/>
 <part name="SUPPLY1" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY3" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY4" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY6" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY7" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY19" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY20" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY57" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY58" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY59" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY61" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY60" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY62" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY63" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY64" library="PiB_power_symbols" deviceset="3.3V" device=""/>
-<part name="SUPPLY65" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY66" library="PiB_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY85" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="SUPPLY120" library="PiB_power_symbols" deviceset="VCC" device=""/>
@@ -5466,11 +5448,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="R37" gate="G$1" x="518.16" y="223.52" rot="R90"/>
 <instance part="FLEX5" gate="G$1" x="510.54" y="233.68"/>
 <instance part="C34" gate="G$1" x="543.56" y="233.68"/>
-<instance part="C52" gate="G$1" x="251.46" y="381"/>
-<instance part="C53" gate="G$1" x="251.46" y="322.58"/>
-<instance part="C54" gate="G$1" x="251.46" y="264.16"/>
-<instance part="C55" gate="G$1" x="251.46" y="205.74"/>
-<instance part="C56" gate="G$1" x="251.46" y="147.32"/>
 <instance part="C57" gate="G$1" x="259.08" y="147.32"/>
 <instance part="C58" gate="G$1" x="259.08" y="205.74"/>
 <instance part="C59" gate="G$1" x="259.08" y="264.16"/>
@@ -5576,7 +5553,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="C1" gate="G$1" x="218.44" y="85.09"/>
 <instance part="R13" gate="G$1" x="210.82" y="66.04"/>
 <instance part="D12" gate="G$1" x="210.82" y="85.09" rot="MR0"/>
-<instance part="C24" gate="G$1" x="251.46" y="88.9"/>
 <instance part="C35" gate="G$1" x="259.08" y="88.9"/>
 <instance part="VREG6" gate="G$1" x="434.34" y="254"/>
 <instance part="D13" gate="G$1" x="433.07" y="266.7" rot="R90"/>
@@ -5658,27 +5634,21 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="SUPPLY105" gate="G$1" x="170.18" y="167.64"/>
 <instance part="SUPPLY106" gate="G$1" x="218.44" y="48.26"/>
 <instance part="SUPPLY107" gate="G$1" x="228.6" y="48.26"/>
-<instance part="SUPPLY108" gate="G$1" x="251.46" y="78.74"/>
 <instance part="SUPPLY109" gate="G$1" x="259.08" y="78.74"/>
 <instance part="SUPPLY110" gate="G$1" x="218.44" y="106.68"/>
 <instance part="SUPPLY111" gate="G$1" x="228.6" y="106.68"/>
-<instance part="SUPPLY112" gate="G$1" x="251.46" y="137.16"/>
 <instance part="SUPPLY113" gate="G$1" x="259.08" y="137.16"/>
 <instance part="SUPPLY114" gate="G$1" x="218.44" y="165.1"/>
 <instance part="SUPPLY115" gate="G$1" x="228.6" y="165.1"/>
-<instance part="SUPPLY116" gate="G$1" x="251.46" y="195.58"/>
 <instance part="SUPPLY117" gate="G$1" x="259.08" y="195.58"/>
 <instance part="SUPPLY118" gate="G$1" x="218.44" y="223.52"/>
 <instance part="SUPPLY119" gate="G$1" x="228.6" y="223.52"/>
-<instance part="SUPPLY121" gate="G$1" x="251.46" y="254"/>
 <instance part="SUPPLY125" gate="G$1" x="259.08" y="254"/>
 <instance part="SUPPLY129" gate="G$1" x="218.44" y="281.94"/>
 <instance part="SUPPLY130" gate="G$1" x="228.6" y="281.94"/>
-<instance part="SUPPLY131" gate="G$1" x="251.46" y="312.42"/>
 <instance part="SUPPLY132" gate="G$1" x="259.08" y="312.42"/>
 <instance part="SUPPLY133" gate="G$1" x="218.44" y="340.36"/>
 <instance part="SUPPLY134" gate="G$1" x="228.6" y="340.36"/>
-<instance part="SUPPLY135" gate="G$1" x="251.46" y="370.84"/>
 <instance part="SUPPLY136" gate="G$1" x="259.08" y="370.84"/>
 <instance part="SUPPLY137" gate="G$1" x="170.18" y="370.84"/>
 <instance part="SUPPLY138" gate="G$1" x="162.56" y="370.84"/>
@@ -5718,22 +5688,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="SUPPLY43" gate="G$1" x="162.56" y="182.88"/>
 <instance part="SUPPLY44" gate="G$1" x="170.18" y="182.88"/>
 <instance part="SUPPLY1" gate="3.3V" x="228.6" y="386.08"/>
-<instance part="SUPPLY3" gate="3.3V" x="251.46" y="386.08"/>
 <instance part="SUPPLY4" gate="3.3V" x="259.08" y="386.08"/>
 <instance part="SUPPLY5" gate="3.3V" x="228.6" y="327.66"/>
-<instance part="SUPPLY6" gate="3.3V" x="251.46" y="327.66"/>
 <instance part="SUPPLY7" gate="3.3V" x="259.08" y="327.66"/>
 <instance part="SUPPLY19" gate="3.3V" x="228.6" y="269.24"/>
-<instance part="SUPPLY20" gate="3.3V" x="251.46" y="269.24"/>
 <instance part="SUPPLY57" gate="3.3V" x="259.08" y="269.24"/>
 <instance part="SUPPLY58" gate="3.3V" x="259.08" y="210.82"/>
-<instance part="SUPPLY59" gate="3.3V" x="251.46" y="210.82"/>
 <instance part="SUPPLY61" gate="3.3V" x="228.6" y="210.82"/>
 <instance part="SUPPLY60" gate="3.3V" x="228.6" y="152.4"/>
-<instance part="SUPPLY62" gate="3.3V" x="251.46" y="152.4"/>
 <instance part="SUPPLY63" gate="3.3V" x="259.08" y="152.4"/>
 <instance part="SUPPLY64" gate="3.3V" x="228.6" y="93.98"/>
-<instance part="SUPPLY65" gate="3.3V" x="251.46" y="93.98"/>
 <instance part="SUPPLY66" gate="3.3V" x="259.08" y="93.98"/>
 <instance part="SUPPLY85" gate="VCC" x="314.96" y="50.8"/>
 <instance part="SUPPLY120" gate="VCC" x="447.04" y="45.72"/>
@@ -6411,9 +6375,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="58.42" y="375.92" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM10"/>
-<wire x1="167.64" y1="434.34" x2="165.1" y2="434.34" width="0.1524" layer="91"/>
-<label x="167.64" y="434.34" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM7"/>
+<wire x1="167.64" y1="441.96" x2="165.1" y2="441.96" width="0.1524" layer="91"/>
+<label x="167.64" y="441.96" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_1_COLD" class="0">
@@ -6423,9 +6387,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="93.98" y="365.76" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM11"/>
-<wire x1="167.64" y1="431.8" x2="165.1" y2="431.8" width="0.1524" layer="91"/>
-<label x="167.64" y="431.8" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM6"/>
+<wire x1="167.64" y1="444.5" x2="165.1" y2="444.5" width="0.1524" layer="91"/>
+<label x="167.64" y="444.5" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_2_HOT" class="0">
@@ -6435,9 +6399,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="58.42" y="325.12" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM12"/>
-<wire x1="167.64" y1="429.26" x2="165.1" y2="429.26" width="0.1524" layer="91"/>
-<label x="167.64" y="429.26" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM15"/>
+<wire x1="167.64" y1="421.64" x2="165.1" y2="421.64" width="0.1524" layer="91"/>
+<label x="167.64" y="421.64" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_2_COLD" class="0">
@@ -6447,9 +6411,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="93.98" y="314.96" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM13"/>
-<wire x1="167.64" y1="426.72" x2="165.1" y2="426.72" width="0.1524" layer="91"/>
-<label x="167.64" y="426.72" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM14"/>
+<wire x1="167.64" y1="424.18" x2="165.1" y2="424.18" width="0.1524" layer="91"/>
+<label x="167.64" y="424.18" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_3_HOT" class="0">
@@ -6459,9 +6423,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="58.42" y="274.32" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM14"/>
-<wire x1="167.64" y1="424.18" x2="165.1" y2="424.18" width="0.1524" layer="91"/>
-<label x="167.64" y="424.18" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM13"/>
+<wire x1="167.64" y1="426.72" x2="165.1" y2="426.72" width="0.1524" layer="91"/>
+<label x="167.64" y="426.72" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_3_COLD" class="0">
@@ -6471,9 +6435,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="93.98" y="264.16" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM15"/>
-<wire x1="167.64" y1="421.64" x2="165.1" y2="421.64" width="0.1524" layer="91"/>
-<label x="167.64" y="421.64" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM12"/>
+<wire x1="167.64" y1="429.26" x2="165.1" y2="429.26" width="0.1524" layer="91"/>
+<label x="167.64" y="429.26" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_4_HOT" class="0">
@@ -6483,9 +6447,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="58.42" y="223.52" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM6"/>
-<wire x1="167.64" y1="444.5" x2="165.1" y2="444.5" width="0.1524" layer="91"/>
-<label x="167.64" y="444.5" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM11"/>
+<wire x1="167.64" y1="431.8" x2="165.1" y2="431.8" width="0.1524" layer="91"/>
+<label x="167.64" y="431.8" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_4_COLD" class="0">
@@ -6495,9 +6459,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM7"/>
-<wire x1="167.64" y1="441.96" x2="165.1" y2="441.96" width="0.1524" layer="91"/>
-<label x="167.64" y="441.96" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM10"/>
+<wire x1="167.64" y1="434.34" x2="165.1" y2="434.34" width="0.1524" layer="91"/>
+<label x="167.64" y="434.34" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_5_HOT" class="0">
@@ -6507,9 +6471,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="58.42" y="172.72" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM8"/>
-<wire x1="167.64" y1="439.42" x2="165.1" y2="439.42" width="0.1524" layer="91"/>
-<label x="167.64" y="439.42" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM9"/>
+<wire x1="167.64" y1="436.88" x2="165.1" y2="436.88" width="0.1524" layer="91"/>
+<label x="167.64" y="436.88" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC_5_COLD" class="0">
@@ -6519,9 +6483,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="93.98" y="162.56" size="1.27" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM9"/>
-<wire x1="167.64" y1="436.88" x2="165.1" y2="436.88" width="0.1524" layer="91"/>
-<label x="167.64" y="436.88" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+<pinref part="PWM_DRIVER1" gate="G$1" pin="PWM8"/>
+<wire x1="167.64" y1="439.42" x2="165.1" y2="439.42" width="0.1524" layer="91"/>
+<label x="167.64" y="439.42" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="VIBE_2" class="0">
@@ -7176,11 +7140,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY107" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="83.82" x2="251.46" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SUPPLY108" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
 <pinref part="C35" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="81.28" x2="259.08" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY109" gate="G$1" pin="NGND"/>
@@ -7194,11 +7153,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="Q5" gate="G$1" pin="S"/>
 <wire x1="228.6" y1="121.92" x2="228.6" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY111" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
-<pinref part="C56" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="142.24" x2="251.46" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="SUPPLY112" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C57" gate="G$1" pin="2"/>
@@ -7216,11 +7170,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY115" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<pinref part="C55" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="200.66" x2="251.46" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY116" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
 <pinref part="C58" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="198.12" x2="259.08" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="SUPPLY117" gate="G$1" pin="NGND"/>
@@ -7234,11 +7183,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="Q3" gate="G$1" pin="S"/>
 <wire x1="228.6" y1="238.76" x2="228.6" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="SUPPLY119" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
-<pinref part="C54" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="259.08" x2="251.46" y2="256.54" width="0.1524" layer="91"/>
-<pinref part="SUPPLY121" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C59" gate="G$1" pin="2"/>
@@ -7256,11 +7200,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY130" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<pinref part="C53" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="317.5" x2="251.46" y2="314.96" width="0.1524" layer="91"/>
-<pinref part="SUPPLY131" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
 <pinref part="C60" gate="G$1" pin="2"/>
 <wire x1="259.08" y1="314.96" x2="259.08" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY132" gate="G$1" pin="NGND"/>
@@ -7274,11 +7213,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="228.6" y1="355.6" x2="228.6" y2="342.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY134" gate="G$1" pin="NGND"/>
-</segment>
-<segment>
-<pinref part="C52" gate="G$1" pin="2"/>
-<wire x1="251.46" y1="375.92" x2="251.46" y2="373.38" width="0.1524" layer="91"/>
-<pinref part="SUPPLY135" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
 <pinref part="C61" gate="G$1" pin="2"/>
@@ -7368,11 +7302,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY1" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="C52" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="383.54" x2="251.46" y2="386.08" width="0.1524" layer="91"/>
-<pinref part="SUPPLY3" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="C61" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="383.54" x2="259.08" y2="386.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="3.3V" pin="3.3V"/>
@@ -7390,11 +7319,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <junction x="218.44" y="325.12"/>
 <junction x="228.6" y="325.12"/>
 <pinref part="SUPPLY5" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="C53" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="325.12" x2="251.46" y2="327.66" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="C60" gate="G$1" pin="1"/>
@@ -7416,11 +7340,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY19" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="C54" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="266.7" x2="251.46" y2="269.24" width="0.1524" layer="91"/>
-<pinref part="SUPPLY20" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="C59" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="266.7" x2="259.08" y2="269.24" width="0.1524" layer="91"/>
 <pinref part="SUPPLY57" gate="3.3V" pin="3.3V"/>
@@ -7429,11 +7348,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="C58" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="208.28" x2="259.08" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY58" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="C55" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="208.28" x2="251.46" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="SUPPLY59" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="VIBE4" gate="G$1" pin="+"/>
@@ -7464,11 +7378,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY60" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="C56" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="149.86" x2="251.46" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="SUPPLY62" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
 <pinref part="C57" gate="G$1" pin="1"/>
 <wire x1="259.08" y1="149.86" x2="259.08" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY63" gate="3.3V" pin="3.3V"/>
@@ -7486,11 +7395,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <junction x="218.44" y="91.44"/>
 <junction x="228.6" y="91.44"/>
 <pinref part="SUPPLY64" gate="3.3V" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="C24" gate="G$1" pin="1"/>
-<wire x1="251.46" y1="91.44" x2="251.46" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="SUPPLY65" gate="3.3V" pin="3.3V"/>
 </segment>
 <segment>
 <pinref part="C35" gate="G$1" pin="1"/>
