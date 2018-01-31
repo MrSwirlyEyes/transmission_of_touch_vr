@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1639,6 +1639,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -5648,6 +5649,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,54f95a51c48e3cbb"/>
 <approved hash="19,16,78821c7a1c3b78c3"/>
 <approved hash="19,16,37f4d3045ca25387"/>
+<approved hash="19,16,279b2b6b99c954ec"/>
+<approved hash="19,16,326a8d982258ac61"/>
+<approved hash="19,16,316bb4244274aae2"/>
+<approved hash="19,16,9495303c532a9a5a"/>
+<approved hash="19,16,12a9108b10111233"/>
+<approved hash="19,16,81b267640ff2d8ef"/>
+<approved hash="19,16,73e9531de43b1052"/>
+<approved hash="19,16,ad98b930828c42b9"/>
+<approved hash="19,16,3842066006213803"/>
 </errors>
 </board>
 </drawing>
