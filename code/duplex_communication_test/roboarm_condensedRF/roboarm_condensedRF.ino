@@ -1,7 +1,7 @@
 //#include <radio.h> //include this library from github
 #include <Radio.h> //if you're Colin
 #include <CD74HC4067.h> //include this library from github
-#include <Wire.h>
+//#include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //download library from adafruit website
 
 #include <TMP36.h>  // Temperature sensor
@@ -84,8 +84,8 @@ void setup()
 
 //  delay(3000);
 
-//  start_up_sequence();
-//  delay(3000);
+  start_up_sequence();
+  delay(3000);
 }
 
 void loop() 
@@ -100,7 +100,7 @@ void loop()
     for (int i = 0; i < 5; i++) {
       int calibrated_servo = map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX);
       Serial.println(calibrated_servo);
-//      pwm.setPWM(i, 0, calibrated_servo);
+      pwm.setPWM(i, 0, calibrated_servo);
     }
     Serial.print("(");
   for ( int i = 0 ; i < 5 ; i++ ) {

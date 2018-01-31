@@ -1,15 +1,15 @@
 //#include <radio.h> //include this library from github
 #include <Radio.h> //if you're Colin
 #include <CD74HC4067.h> //include this library from github
-#include <Wire.h>
+//#include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //download library from adafruit website
 
 //defined mux pins from redboard
-#define s0 2 
-#define s1 6 
-#define s2 7
-#define s3 10
-#define sig_pin 0
+#define s0 22  // 2
+#define s1 23  // 6
+#define s2 24  // 7
+#define s3 25 // 10
+#define sig_pin 1
 
 //defined vib motor values
 #define PRESSMIN 115
