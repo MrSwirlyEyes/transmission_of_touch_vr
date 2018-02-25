@@ -2,14 +2,13 @@
 using System;
 using System.Collections;
 using System.Reflection;
-//using System.IO.Ports;
-using System.IO;
+using System.IO.Ports;
 
 public class Communicator : MonoBehaviour {
 
 	public static Communicator instance = null;
-	public string port;
-	public int baudrate;
+	public string port = "COM6";
+	public int baudrate = 9600;
 
 	private SerialPort stream;
 
@@ -27,9 +26,17 @@ public class Communicator : MonoBehaviour {
 	public KnuckleValues knuckles;
 	/* END HAND DATA */
 
+	private bool reading = false;
+
+	
+
+
+
 	public void Open() {
 		stream = new SerialPort (port, baudrate);
-		stream.ReadTimeout = 50;
+//		Debug.Log ("initialized stream on " + port + " at " + baudrate);
+		stream.ReadTimeout = 10;
+//		stream.DataReceived += new SerialDataReceivedEventHandler(handleData);
 		stream.Open ();
 	}
 
@@ -43,51 +50,26 @@ public class Communicator : MonoBehaviour {
 		//		stream.BaseStream.Flush ();
 	}
 
-	public string ReadFromArduino (int timeout = 100) {
-		stream.ReadTimeout = timeout;
-		try {
-			return stream.ReadLine ();
-		} catch (TimeoutException e) {
-			Debug.Log ("Timeout Exception " + e);
-			stream.BaseStream.Flush ();
-			return null;
-		}
-	}
-
-	public IEnumerator AsynchronousReadFromArduino (Action<string> callback, 
-		Action fail = null,
-		float timeout = float.PositiveInfinity
-	) {
-		DateTime initialTime = DateTime.Now;
-		DateTime nowTime;
-		TimeSpan diff = default(TimeSpan);
-
+	public IEnumerator ReadFromArduino (Action<string> callback) {
 		string dataString = null;
 
-		do {
-			//			try {
-			dataString = stream.ReadLine ();
-			Debug.Log("Receiving " + dataString);
-			//				stream.BaseStream.Flush();
-			//			} catch (TimeoutException e) {
-			//				Debug.LogError(e);
-			//				dataString = null;
-			//			}
+		while (true) {
+			try {
+				dataString = stream.ReadLine ();
+//				stream.BaseStream.Flush();
+			} catch (TimeoutException e) {
+//				Debug.LogError(e);
+				dataString = null;
+			}
 
 			if (dataString != null) {
 				callback (dataString);
+				reading = false;
 				yield break;
 			} else {
 				yield return new WaitForSeconds (0.05f);
 			}
-
-			nowTime = DateTime.Now;
-			diff = nowTime - initialTime;
-		} while (diff.Milliseconds < timeout);
-
-		if (fail != null)
-			fail ();
-		yield return null;
+		}
 	}
 
 	public void Close() {
@@ -106,17 +88,23 @@ public class Communicator : MonoBehaviour {
 
 	void Update() {
 		WriteToArduino ("PING");
-//		StartCoroutine (
-//			AsynchronousReadFromArduino (handleData, writeDefault
-//				//				() => Debug.LogError ("READ FAIL"),
-//				//				10f
-//			)
-//		);
+
+		if (!reading) {
+			reading = true;
+			StartCoroutine (
+				ReadFromArduino (handleData)
+			);
+		}
 	}
 
-	void handleData(string s) {
+//	void handleData(object sender, SerialDataReceivedEventArgs e) {
+	void handleData(string inData) {
+//		SerialPort sp = (SerialPort)sender;
+//		string inData = sp.ReadExisting ();
+
 		char[] delimiters = { ',' };
-		string[] values = s.Split (delimiters);
+		string[] values = inData.Split (delimiters);
+		Debug.Log("Receiving " + inData);
 
 		knuckles.thumb = map(System.Convert.ToInt32 (values [0]),maxFlex,minFlex,minFinger,maxThumb);
 		knuckles.index = map(System.Convert.ToInt32 (values [1]),maxFlex,minFlex,minFinger,maxFinger);
