@@ -24,6 +24,8 @@ public class HandController : MonoBehaviour {
 	public Transform thumb2;
 	public Transform thumb3;
 
+	private int pressure;
+
 	// Use this for initialization
 	void Start () {
 		

@@ -12,18 +12,25 @@ public class Communicator : MonoBehaviour {
 
 	private SerialPort stream;
 
-	public int minFlex = 60;
-	public int maxFlex = 240;
-	public int minFinger = 10;
-	public int maxFinger = 90;
-	public int maxThumb = 50;
+	public int minFlex;
+	public int maxFlex;
+	public int minFinger;
+	public int maxFinger;
+	public int maxThumb;
+
+	private int numVibes = 5;
 
 	/* DATA FOR THE HAND */
 	public struct KnuckleValues {
 		public int index, middle, ring, pinky, thumb;
 	}
 
+	public struct VibeValues {
+		public short index, middle, ring, pinky, thumb;
+	}
+
 	public KnuckleValues knuckles;
+	public VibeValues vibes;
 	/* END HAND DATA */
 
 	private bool reading = false;
@@ -40,8 +47,11 @@ public class Communicator : MonoBehaviour {
 		stream.Open ();
 	}
 
-	public void WriteToArduino(byte[] message) {
-		stream.Write(message,0,message.Length);
+	public void WriteToArduino() {
+		short[] vibeValues = new short[] { vibes.thumb, vibes.index, vibes.middle, vibes.ring, vibes.pinky };
+		byte[] bytes = new byte[numVibes * sizeof(short)];
+		Buffer.BlockCopy (vibeValues, 0, bytes, 0, bytes.Length);
+		stream.Write(bytes,0,bytes.Length);
 		stream.BaseStream.Flush ();
 	}
 
@@ -84,12 +94,18 @@ public class Communicator : MonoBehaviour {
 			Destroy (gameObject);
 		}
 		Open ();
+
+		vibes.thumb = 0;
+		vibes.index = 0;
+		vibes.middle = 0;
+		vibes.ring = 0;
+		vibes.pinky = 0;
 	}
 
 	void Update() {
-		WriteToArduino ("PING");
 
 		if (!reading) {
+			WriteToArduino ();
 			reading = true;
 			StartCoroutine (
 				ReadFromArduino (handleData)
@@ -106,18 +122,19 @@ public class Communicator : MonoBehaviour {
 		string[] values = inData.Split (delimiters);
 //		Debug.Log("Receiving " + inData);
 
-		knuckles.thumb = map(System.Convert.ToInt32 (values [0]),minFlex,maxFlex,minFinger,maxThumb);
-		knuckles.index = map(System.Convert.ToInt32 (values [1]),maxFlex,minFlex,minFinger,maxFinger);
-		knuckles.middle =  map(System.Convert.ToInt32 (values [2]),maxFlex,minFlex,minFinger,maxFinger);
-		knuckles.ring =  map(System.Convert.ToInt32 (values [3]),maxFlex,minFlex,minFinger,maxFinger);
-		knuckles.pinky = map(System.Convert.ToInt32 (values [4]),maxFlex,minFlex,minFinger,maxFinger);
-		Debug.Log ("Thumb: " + knuckles.thumb);
+		knuckles.thumb = mapInvert(System.Convert.ToInt32 (values [0]),minFlex,maxFlex,minFinger,maxThumb);
+		knuckles.index = mapInvert(System.Convert.ToInt32 (values [1]),minFlex,maxFlex,minFinger,maxFinger);
+		knuckles.middle =  mapInvert(System.Convert.ToInt32 (values [2]),minFlex,maxFlex,minFinger,maxFinger);
+		knuckles.ring =  mapInvert(System.Convert.ToInt32 (values [3]),minFlex,maxFlex,minFinger,maxFinger);
+		knuckles.pinky = mapInvert(System.Convert.ToInt32 (values [4]),minFlex,maxFlex,minFinger,maxFinger);
+//		Debug.Log ("Index: " + knuckles.index);
 	}
 
-	int map(int x, int in_min, int in_max, int out_min, int out_max) {
-		Debug.Log (x);
-		Debug.Log (((x - in_min) * ((out_max - out_min) / (in_max - in_min))) + out_min);
-		return (int) (out_max - (x - in_min)*1f*(out_max - out_min)/(in_max - in_min) + out_min);
+	int mapInvert(int x, int in_min, int in_max, int out_min, int out_max) {
+		float slope = (float)(out_min - out_max)/(in_max-in_min);
+		float stretched = slope * (x-in_min);
+		float b = ((float)out_max / in_min / slope);
+		return out_max + (int)(stretched+b);
 	}
 
 	void writeDefault() {
