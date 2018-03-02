@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2460,7 +2460,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="CD74HC4067SM96" x="62.738" y="26.416" size="1.778" layer="27" display="off"/>
 <attribute name="TESTED" value="NO" x="62.738" y="26.416" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX1" library="PiB" package="CONNECTOR_FSR" value="10K" x="67.31" y="40.132">
+<element name="FLEX9" library="PiB" package="CONNECTOR_FSR" value="10K" x="67.31" y="40.132">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="67.31" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="67.31" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="67.31" y="40.132" size="1.778" layer="27" display="off"/>
@@ -2469,7 +2469,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="67.31" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="67.31" y="40.132" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX10" library="PiB" package="CONNECTOR_FSR" value="10K" x="51.054" y="35.814">
+<element name="FLEX8" library="PiB" package="CONNECTOR_FSR" value="10K" x="51.054" y="35.814">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="51.054" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="51.054" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="51.054" y="35.814" size="1.778" layer="27" display="off"/>
@@ -2478,7 +2478,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="51.054" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="51.054" y="35.814" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX2" library="PiB" package="CONNECTOR_FSR" value="10K" x="63.246" y="40.132">
+<element name="FLEX1" library="PiB" package="CONNECTOR_FSR" value="10K" x="63.246" y="40.132">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="63.246" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="63.246" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="63.246" y="40.132" size="1.778" layer="27" display="off"/>
@@ -2496,7 +2496,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="59.182" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="59.182" y="40.132" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX4" library="PiB" package="CONNECTOR_FSR" value="10K" x="55.118" y="40.132">
+<element name="FLEX5" library="PiB" package="CONNECTOR_FSR" value="10K" x="55.118" y="40.132">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="55.118" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="55.118" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="55.118" y="40.132" size="1.778" layer="27" display="off"/>
@@ -2505,7 +2505,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="55.118" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="55.118" y="40.132" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX5" library="PiB" package="CONNECTOR_FSR" value="10K" x="51.054" y="40.132">
+<element name="FLEX7" library="PiB" package="CONNECTOR_FSR" value="10K" x="51.054" y="40.132">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="51.054" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="51.054" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="51.054" y="40.132" size="1.778" layer="27" display="off"/>
@@ -2514,7 +2514,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="51.054" y="40.132" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="51.054" y="40.132" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX6" library="PiB" package="CONNECTOR_FSR" value="10K" x="67.31" y="35.814">
+<element name="FLEX100" library="PiB" package="CONNECTOR_FSR" value="10K" x="67.31" y="35.814">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="67.31" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="67.31" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="67.31" y="35.814" size="1.778" layer="27" display="off"/>
@@ -2523,7 +2523,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="67.31" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="67.31" y="35.814" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX7" library="PiB" package="CONNECTOR_FSR" value="10K" x="63.246" y="35.814">
+<element name="FLEX2" library="PiB" package="CONNECTOR_FSR" value="10K" x="63.246" y="35.814">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="63.246" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="63.246" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="63.246" y="35.814" size="1.778" layer="27" display="off"/>
@@ -2532,7 +2532,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="63.246" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="63.246" y="35.814" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX8" library="PiB" package="CONNECTOR_FSR" value="10K" x="59.182" y="35.814">
+<element name="FLEX4" library="PiB" package="CONNECTOR_FSR" value="10K" x="59.182" y="35.814">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="59.182" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="59.182" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="59.182" y="35.814" size="1.778" layer="27" display="off"/>
@@ -2541,7 +2541,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Spectra Symbol" x="59.182" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="FS-L-0055-103-ST?" x="59.182" y="35.814" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FLEX9" library="PiB" package="CONNECTOR_FSR" value="10K" x="55.118" y="35.814">
+<element name="FLEX6" library="PiB" package="CONNECTOR_FSR" value="10K" x="55.118" y="35.814">
 <attribute name="CREATOR" value="MrSwirlyEyes" x="55.118" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/FLEX%20SENSOR%20DATA%20SHEET%202014.pdf" x="55.118" y="35.814" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Sparkfun" x="55.118" y="35.814" size="1.778" layer="27" display="off"/>
@@ -3794,7 +3794,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="60.071" y1="24.892" x2="60.071" y2="25.09594375" width="0.1524" layer="1"/>
 <wire x1="60.071" y1="25.09594375" x2="62.3316" y2="27.35654375" width="0.1524" layer="1"/>
 <contactref element="R34" pad="2"/>
-<contactref element="FLEX2" pad="-"/>
+<contactref element="FLEX1" pad="-"/>
 <wire x1="64.262" y1="38.846" x2="64.262" y2="37.382" width="0.1524" layer="1"/>
 <wire x1="64.262" y1="38.846" x2="64.246" y2="38.862" width="0.1524" layer="1"/>
 <wire x1="64.262" y1="37.382" x2="64.306" y2="37.338" width="0.1524" layer="1"/>
@@ -3812,7 +3812,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="58.988" y1="25.441" x2="59.985" y2="25.441" width="0.1524" layer="1"/>
 <wire x1="59.985" y1="25.441" x2="62.0268" y2="27.4828" width="0.1524" layer="1"/>
 <contactref element="R39" pad="2"/>
-<contactref element="FLEX7" pad="-"/>
+<contactref element="FLEX2" pad="-"/>
 <wire x1="64.262" y1="34.528" x2="64.262" y2="33.064" width="0.1524" layer="1"/>
 <wire x1="64.262" y1="34.528" x2="64.246" y2="34.544" width="0.1524" layer="1"/>
 <wire x1="64.262" y1="33.064" x2="64.306" y2="33.02" width="0.1524" layer="1"/>
@@ -3846,7 +3846,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="58.988" y1="26.741" x2="60.015" y2="26.741" width="0.1524" layer="1"/>
 <wire x1="60.015" y1="26.741" x2="61.4172" y2="28.1432" width="0.1524" layer="1"/>
 <contactref element="R42" pad="2"/>
-<contactref element="FLEX8" pad="-"/>
+<contactref element="FLEX4" pad="-"/>
 <wire x1="60.198" y1="34.528" x2="60.198" y2="33.064" width="0.1524" layer="1"/>
 <wire x1="60.198" y1="34.528" x2="60.182" y2="34.544" width="0.1524" layer="1"/>
 <wire x1="60.198" y1="33.064" x2="60.242" y2="33.02" width="0.1524" layer="1"/>
@@ -3864,7 +3864,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="61.1124" y1="28.6004" x2="61.1124" y2="30.85876875" width="0.1524" layer="1"/>
 <wire x1="61.1124" y1="30.85876875" x2="60.42436875" y2="31.5468" width="0.1524" layer="1"/>
 <contactref element="R36" pad="2"/>
-<contactref element="FLEX4" pad="-"/>
+<contactref element="FLEX5" pad="-"/>
 <wire x1="56.118" y1="37.4234" x2="56.134" y2="37.382" width="0.1524" layer="1"/>
 <wire x1="56.118" y1="37.4234" x2="56.118" y2="38.862" width="0.1524" layer="1"/>
 <wire x1="56.134" y1="37.382" x2="56.178" y2="37.338" width="0.1524" layer="1"/>
@@ -5116,24 +5116,24 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C134" pad="1"/>
 <contactref element="C122" pad="1"/>
 <contactref element="C34" pad="1"/>
-<contactref element="FLEX5" pad="+"/>
-<contactref element="FLEX10" pad="+"/>
+<contactref element="FLEX7" pad="+"/>
+<contactref element="FLEX8" pad="+"/>
 <contactref element="C51" pad="1"/>
 <contactref element="C50" pad="1"/>
-<contactref element="FLEX9" pad="+"/>
-<contactref element="FLEX4" pad="+"/>
+<contactref element="FLEX6" pad="+"/>
+<contactref element="FLEX5" pad="+"/>
 <contactref element="C33" pad="1"/>
 <contactref element="FLEX3" pad="+"/>
 <contactref element="C32" pad="1"/>
-<contactref element="FLEX8" pad="+"/>
+<contactref element="FLEX4" pad="+"/>
 <contactref element="C49" pad="1"/>
 <contactref element="C48" pad="1"/>
-<contactref element="FLEX7" pad="+"/>
-<contactref element="C31" pad="1"/>
 <contactref element="FLEX2" pad="+"/>
+<contactref element="C31" pad="1"/>
 <contactref element="FLEX1" pad="+"/>
+<contactref element="FLEX9" pad="+"/>
 <contactref element="C30" pad="1"/>
-<contactref element="FLEX6" pad="+"/>
+<contactref element="FLEX100" pad="+"/>
 <contactref element="C47" pad="1"/>
 <contactref element="L3" pad="2"/>
 <contactref element="C136" pad="1"/>
@@ -5334,7 +5334,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="60.8076" y1="28.9306" x2="60.8076" y2="30.7325125" width="0.1524" layer="1"/>
 <wire x1="60.8076" y1="30.7325125" x2="60.2981125" y2="31.242" width="0.1524" layer="1"/>
 <contactref element="R43" pad="2"/>
-<contactref element="FLEX9" pad="-"/>
+<contactref element="FLEX6" pad="-"/>
 <wire x1="56.134" y1="34.528" x2="56.134" y2="33.064" width="0.1524" layer="1"/>
 <wire x1="56.134" y1="34.528" x2="56.118" y2="34.544" width="0.1524" layer="1"/>
 <wire x1="56.134" y1="33.064" x2="56.178" y2="33.02" width="0.1524" layer="1"/>
@@ -5350,7 +5350,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="58.999" y1="28.702" x2="59.944" y2="28.702" width="0.1524" layer="1"/>
 <wire x1="59.944" y1="28.702" x2="60.5028" y2="29.2608" width="0.1524" layer="1"/>
 <contactref element="R37" pad="2"/>
-<contactref element="FLEX5" pad="-"/>
+<contactref element="FLEX7" pad="-"/>
 <wire x1="52.054" y1="37.4234" x2="52.07" y2="37.382" width="0.1524" layer="1"/>
 <wire x1="52.054" y1="37.4234" x2="52.054" y2="38.862" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="37.382" x2="52.114" y2="37.338" width="0.1524" layer="1"/>
@@ -5372,7 +5372,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="58.992" y1="29.337" x2="59.944" y2="29.337" width="0.1524" layer="1"/>
 <wire x1="59.944" y1="29.337" x2="60.198" y2="29.591" width="0.1524" layer="1"/>
 <contactref element="R44" pad="2"/>
-<contactref element="FLEX10" pad="-"/>
+<contactref element="FLEX8" pad="-"/>
 <wire x1="52.07" y1="34.528" x2="52.07" y2="33.064" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="34.528" x2="52.054" y2="34.544" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="33.064" x2="52.114" y2="33.02" width="0.1524" layer="1"/>
@@ -5392,7 +5392,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="65.491" y1="25.441" x2="65.278" y2="25.654" width="0.1524" layer="1"/>
 <wire x1="65.278" y1="25.654" x2="65.278" y2="30.48" width="0.1524" layer="1"/>
 <contactref element="R11" pad="2"/>
-<contactref element="FLEX1" pad="-"/>
+<contactref element="FLEX9" pad="-"/>
 <wire x1="68.326" y1="38.846" x2="68.326" y2="37.382" width="0.1524" layer="1"/>
 <wire x1="68.326" y1="38.846" x2="68.31" y2="38.862" width="0.1524" layer="1"/>
 <wire x1="68.326" y1="37.382" x2="68.37" y2="37.338" width="0.1524" layer="1"/>
@@ -5413,7 +5413,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="64.9732" y1="30.60625625" x2="65.91374375" y2="31.5468" width="0.1524" layer="1"/>
 <wire x1="64.9732" y1="25.1968" x2="64.9732" y2="30.60625625" width="0.1524" layer="1"/>
 <contactref element="R38" pad="2"/>
-<contactref element="FLEX6" pad="-"/>
+<contactref element="FLEX100" pad="-"/>
 <wire x1="68.326" y1="34.528" x2="68.326" y2="33.064" width="0.1524" layer="1"/>
 <wire x1="68.326" y1="34.528" x2="68.31" y2="34.544" width="0.1524" layer="1"/>
 <wire x1="68.326" y1="33.064" x2="68.37" y2="33.02" width="0.1524" layer="1"/>
@@ -5640,15 +5640,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 </signals>
 <errors>
-<approved hash="19,16,0f51d5c71ff1a89c"/>
-<approved hash="19,16,ef75ce05a954e5df"/>
-<approved hash="19,16,d2e90a910a08d270"/>
-<approved hash="19,16,41887babd724dcfe"/>
-<approved hash="19,16,a3821a869b6e1393"/>
-<approved hash="19,16,4f94336067c7edae"/>
-<approved hash="19,16,54f95a51c48e3cbb"/>
-<approved hash="19,16,78821c7a1c3b78c3"/>
-<approved hash="19,16,37f4d3045ca25387"/>
 <approved hash="19,16,279b2b6b99c954ec"/>
 <approved hash="19,16,326a8d982258ac61"/>
 <approved hash="19,16,316bb4244274aae2"/>

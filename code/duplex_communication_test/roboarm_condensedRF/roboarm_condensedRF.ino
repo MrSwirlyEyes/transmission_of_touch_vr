@@ -1,12 +1,14 @@
 //#include <radio.h> //include this library from github
-#include <Radio.h> //if you're Colin
-#include <CD74HC4067.h> //include this library from github
+#include "Radio.h" //if you're Colin
+#include "CD74HC4067.h" //include this library from github
 //#include <Wire.h>
-#include <Adafruit_PWMServoDriver.h> //download library from adafruit website
+#include "Adafruit_PWMServoDriver.h" //download library from adafruit website
 
-#include <TMP36.h>  // Temperature sensor
+#include "TMP36.h"  // Temperature sensor
 #define NUM_TEMP_SENSORS 5
 #define VCC 3.3
+
+#define DEBUG false
 
 #define TEMP_PINKY 11
 #define TEMP_RING 12
@@ -38,8 +40,8 @@ TMP36 temp[NUM_TEMP_SENSORS] = {
 #define sig_pin 5
 
 //defined flex sensor values
-#define FLEXMIN 450
-#define FLEXMAX 800
+#define FLEXMIN 700
+#define FLEXMAX 100
 
 //defined servo values
 #define SERVOMIN  130
@@ -67,11 +69,14 @@ struct ArmPacket {
 
 void setup() 
 {
-  Serial.begin(9600);
+  delay(2000);
+  if(DEBUG)
+    Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(40);
 
   //TODO: Analog as input?
+//  pinMode(sig_pin,INPUT);
   
   for (int i = 0; i < 5; i++){
     gpkt.gFinger[i] = 0;
@@ -84,8 +89,8 @@ void setup()
 
 //  delay(3000);
 
-  start_up_sequence();
-  delay(3000);
+//  start_up_sequence();
+//  delay(3000);
 }
 
 void loop() 
@@ -93,28 +98,35 @@ void loop()
   //GLOVE PACKET: RECEIVING FLEX VALS FROM GLOVE TO MOVE SERVO MOTORS ON ROBO ARM
   if(radio.rfAvailable()) {
     radio.rfRead((uint8_t *) & gpkt, sizeof(GlovePacket));
-    radio.rfFlush();
+//    radio.rfFlush();
   }
+  radio.rfFlush();
   int gCheckSumTot = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];
   if(gCheckSumTot == gpkt.gCheckSum) {
     for (int i = 0; i < 5; i++) {
       int calibrated_servo = map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX);
-      Serial.println(calibrated_servo);
+      if(DEBUG)
+        Serial.println(calibrated_servo);
       pwm.setPWM(i, 0, calibrated_servo);
     }
-    Serial.print("(");
+    if(DEBUG)
+      Serial.print("(");
   for ( int i = 0 ; i < 5 ; i++ ) {
-    Serial.print(gpkt.gFinger[i]);
+    if(DEBUG)
+      Serial.print(gpkt.gFinger[i]);
     if ( i < 4 ) {
-      Serial.print(",");
+      if(DEBUG)
+        Serial.print(",");
     }
   }
-//  Serial.print(gpkt.gCheckSum);
-//  Serial.println(")");
+  if(DEBUG) {
+    Serial.print(gpkt.gCheckSum);
+    Serial.println(")");
+  }
 
   } else {
-    Serial.print("ERROR, checksum=");
-    Serial.println(gpkt.gCheckSum);
+//    Serial.print("ERROR, checksum=");
+//    Serial.println(gpkt.gCheckSum);
   }
 
   
@@ -144,8 +156,8 @@ void loop()
   apkt.aCheckSum = apkt.aFinger[0] + apkt.aFinger[1] + apkt.aFinger[2] + apkt.aFinger[3] + apkt.aFinger[4]
                   + apkt.temp_readings[0] + apkt.temp_readings[1] + apkt.temp_readings[2] + apkt.temp_readings[3] + apkt.temp_readings[4];
   radio.rfWrite((uint8_t *) & apkt, sizeof(ArmPacket));
-
-  print_sensor_readings();
+  if(DEBUG)
+    print_sensor_readings();
   
 }
 

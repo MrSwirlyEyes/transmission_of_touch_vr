@@ -1,5 +1,5 @@
-#include <radio.h> //include this library from github
-//#include <Radio.h> if you're Colin
+//#include <radio.h> //include this library from github
+#include <Radio.h> if you're Colin
 #include <CD74HC4067.h> //include this library from github
 #include <Wire.h>
 #include <Adafruit_PWMServoDriver.h> //download library from adafruit website

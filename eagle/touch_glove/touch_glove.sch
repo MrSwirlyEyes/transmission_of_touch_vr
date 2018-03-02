@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.5.0">
+<eagle version="8.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -5044,19 +5044,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R28" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" value="10KΩ"/>
 <part name="R29" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" value="100Ω"/>
 <part name="GND45" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="FLEX1" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX9" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C30" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R34" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX2" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX1" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C31" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R35" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
 <part name="FLEX3" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C32" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R36" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX4" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX5" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C33" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R37" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX5" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX7" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C34" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="DEMUX1" library="PiB" deviceset="CD74HC4067-SM96_16:1_MUX-DEMUX" device="" value="CH16_MUX-DEMUX"/>
 <part name="C97" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_10V-20%" value="10uF/10V"/>
@@ -5172,19 +5172,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C45" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="C46" library="PiB_capacitors" deviceset="100UF" device="_CER_SMD-1210_16V-20%" value="100uF/16V"/>
 <part name="R38" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX6" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX100" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C47" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R39" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX7" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX2" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C48" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R42" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX8" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX4" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C49" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R43" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX9" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX6" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C50" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="R44" library="PiB_resistors" deviceset="47KΩ" device="_SMD-0402_1/16W-5%" value="47KΩ"/>
-<part name="FLEX10" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
+<part name="FLEX8" library="PiB" deviceset="FLEX-SENSOR" device="10K_2.2IN" value="10K"/>
 <part name="C51" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" value="0.1uF/50V"/>
 <part name="SUPPLY2" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY18" library="PiB_power_symbols" deviceset="AGND" device=""/>
@@ -5511,19 +5511,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="R28" gate="G$1" x="76.2" y="358.14" rot="R90"/>
 <instance part="R29" gate="G$1" x="68.58" y="375.92"/>
 <instance part="GND45" gate="GND" x="76.2" y="347.98"/>
-<instance part="FLEX1" gate="G$1" x="510.54" y="309.88"/>
+<instance part="FLEX9" gate="G$1" x="510.54" y="309.88"/>
 <instance part="C30" gate="G$1" x="543.56" y="309.88"/>
 <instance part="R34" gate="G$1" x="518.16" y="337.82" rot="R90"/>
-<instance part="FLEX2" gate="G$1" x="510.54" y="347.98"/>
+<instance part="FLEX1" gate="G$1" x="510.54" y="347.98"/>
 <instance part="C31" gate="G$1" x="543.56" y="347.98"/>
 <instance part="R35" gate="G$1" x="518.16" y="375.92" rot="R90"/>
 <instance part="FLEX3" gate="G$1" x="510.54" y="386.08"/>
 <instance part="C32" gate="G$1" x="543.56" y="386.08"/>
 <instance part="R36" gate="G$1" x="518.16" y="261.62" rot="R90"/>
-<instance part="FLEX4" gate="G$1" x="510.54" y="271.78"/>
+<instance part="FLEX5" gate="G$1" x="510.54" y="271.78"/>
 <instance part="C33" gate="G$1" x="543.56" y="271.78"/>
 <instance part="R37" gate="G$1" x="518.16" y="223.52" rot="R90"/>
-<instance part="FLEX5" gate="G$1" x="510.54" y="233.68"/>
+<instance part="FLEX7" gate="G$1" x="510.54" y="233.68"/>
 <instance part="C34" gate="G$1" x="543.56" y="233.68"/>
 <instance part="DEMUX1" gate="G$1" x="558.8" y="447.04"/>
 <instance part="C97" gate="G$1" x="523.24" y="462.28"/>
@@ -5639,19 +5639,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="C45" gate="G$1" x="421.64" y="248.92"/>
 <instance part="C46" gate="G$1" x="378.46" y="290.83"/>
 <instance part="R38" gate="G$1" x="579.12" y="375.92" rot="R90"/>
-<instance part="FLEX6" gate="G$1" x="571.5" y="386.08"/>
+<instance part="FLEX100" gate="G$1" x="571.5" y="386.08"/>
 <instance part="C47" gate="G$1" x="604.52" y="386.08"/>
 <instance part="R39" gate="G$1" x="579.12" y="337.82" rot="R90"/>
-<instance part="FLEX7" gate="G$1" x="571.5" y="347.98"/>
+<instance part="FLEX2" gate="G$1" x="571.5" y="347.98"/>
 <instance part="C48" gate="G$1" x="604.52" y="347.98"/>
 <instance part="R42" gate="G$1" x="579.12" y="299.72" rot="R90"/>
-<instance part="FLEX8" gate="G$1" x="571.5" y="309.88"/>
+<instance part="FLEX4" gate="G$1" x="571.5" y="309.88"/>
 <instance part="C49" gate="G$1" x="604.52" y="309.88"/>
 <instance part="R43" gate="G$1" x="579.12" y="261.62" rot="R90"/>
-<instance part="FLEX9" gate="G$1" x="571.5" y="271.78"/>
+<instance part="FLEX6" gate="G$1" x="571.5" y="271.78"/>
 <instance part="C50" gate="G$1" x="604.52" y="271.78"/>
 <instance part="R44" gate="G$1" x="579.12" y="223.52" rot="R90"/>
-<instance part="FLEX10" gate="G$1" x="571.5" y="233.68"/>
+<instance part="FLEX8" gate="G$1" x="571.5" y="233.68"/>
 <instance part="C51" gate="G$1" x="604.52" y="233.68"/>
 <instance part="SUPPLY2" gate="G$1" x="579.12" y="213.36"/>
 <instance part="SUPPLY18" gate="G$1" x="604.52" y="223.52"/>
@@ -6274,7 +6274,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="525.78" y="345.44" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="525.78" y1="345.44" x2="518.16" y2="345.44" width="0.1524" layer="91"/>
 <junction x="518.16" y="345.44"/>
-<pinref part="FLEX2" gate="G$1" pin="-"/>
+<pinref part="FLEX1" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_2" class="0">
@@ -6290,7 +6290,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="586.74" y="345.44" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="586.74" y1="345.44" x2="579.12" y2="345.44" width="0.1524" layer="91"/>
 <junction x="579.12" y="345.44"/>
-<pinref part="FLEX7" gate="G$1" pin="-"/>
+<pinref part="FLEX2" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_3" class="0">
@@ -6322,7 +6322,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="586.74" y="307.34" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="586.74" y1="307.34" x2="579.12" y2="307.34" width="0.1524" layer="91"/>
 <junction x="579.12" y="307.34"/>
-<pinref part="FLEX8" gate="G$1" pin="-"/>
+<pinref part="FLEX4" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_5" class="0">
@@ -6338,7 +6338,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="525.78" y="269.24" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="525.78" y1="269.24" x2="518.16" y2="269.24" width="0.1524" layer="91"/>
 <junction x="518.16" y="269.24"/>
-<pinref part="FLEX4" gate="G$1" pin="-"/>
+<pinref part="FLEX5" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="C10" class="0">
@@ -7688,13 +7688,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="513.08" y1="233.68" x2="518.16" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="233.68" x2="518.16" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="FLEX5" gate="G$1" pin="+"/>
+<pinref part="FLEX7" gate="G$1" pin="+"/>
 <pinref part="SUPPLY72" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
 <wire x1="574.04" y1="233.68" x2="579.12" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="233.68" x2="579.12" y2="238.76" width="0.1524" layer="91"/>
-<pinref part="FLEX10" gate="G$1" pin="+"/>
+<pinref part="FLEX8" gate="G$1" pin="+"/>
 <pinref part="SUPPLY73" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7710,13 +7710,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="574.04" y1="271.78" x2="579.12" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="271.78" x2="579.12" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="FLEX9" gate="G$1" pin="+"/>
+<pinref part="FLEX6" gate="G$1" pin="+"/>
 <pinref part="SUPPLY76" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
 <wire x1="513.08" y1="271.78" x2="518.16" y2="271.78" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="271.78" x2="518.16" y2="276.86" width="0.1524" layer="91"/>
-<pinref part="FLEX4" gate="G$1" pin="+"/>
+<pinref part="FLEX5" gate="G$1" pin="+"/>
 <pinref part="SUPPLY77" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7738,7 +7738,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="574.04" y1="309.88" x2="579.12" y2="309.88" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="309.88" x2="579.12" y2="314.96" width="0.1524" layer="91"/>
-<pinref part="FLEX8" gate="G$1" pin="+"/>
+<pinref part="FLEX4" gate="G$1" pin="+"/>
 <pinref part="SUPPLY90" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7754,7 +7754,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="574.04" y1="347.98" x2="579.12" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="347.98" x2="579.12" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="FLEX7" gate="G$1" pin="+"/>
+<pinref part="FLEX2" gate="G$1" pin="+"/>
 <pinref part="SUPPLY93" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7765,13 +7765,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="513.08" y1="347.98" x2="518.16" y2="347.98" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="347.98" x2="518.16" y2="353.06" width="0.1524" layer="91"/>
-<pinref part="FLEX2" gate="G$1" pin="+"/>
+<pinref part="FLEX1" gate="G$1" pin="+"/>
 <pinref part="SUPPLY95" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
 <wire x1="513.08" y1="309.88" x2="518.16" y2="309.88" width="0.1524" layer="91"/>
 <wire x1="518.16" y1="309.88" x2="518.16" y2="314.96" width="0.1524" layer="91"/>
-<pinref part="FLEX1" gate="G$1" pin="+"/>
+<pinref part="FLEX9" gate="G$1" pin="+"/>
 <pinref part="SUPPLY96" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7782,7 +7782,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="574.04" y1="386.08" x2="579.12" y2="386.08" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="386.08" x2="579.12" y2="391.16" width="0.1524" layer="91"/>
-<pinref part="FLEX6" gate="G$1" pin="+"/>
+<pinref part="FLEX100" gate="G$1" pin="+"/>
 <pinref part="SUPPLY98" gate="G$1" pin="AVCC"/>
 </segment>
 <segment>
@@ -7951,7 +7951,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="586.74" y="269.24" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="586.74" y1="269.24" x2="579.12" y2="269.24" width="0.1524" layer="91"/>
 <junction x="579.12" y="269.24"/>
-<pinref part="FLEX9" gate="G$1" pin="-"/>
+<pinref part="FLEX6" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_7" class="0">
@@ -7967,7 +7967,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="525.78" y="231.14" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="525.78" y1="231.14" x2="518.16" y2="231.14" width="0.1524" layer="91"/>
 <junction x="518.16" y="231.14"/>
-<pinref part="FLEX5" gate="G$1" pin="-"/>
+<pinref part="FLEX7" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_8" class="0">
@@ -7983,7 +7983,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="586.74" y="231.14" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="586.74" y1="231.14" x2="579.12" y2="231.14" width="0.1524" layer="91"/>
 <junction x="579.12" y="231.14"/>
-<pinref part="FLEX10" gate="G$1" pin="-"/>
+<pinref part="FLEX8" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_9" class="0">
@@ -7999,7 +7999,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="525.78" y="307.34" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="525.78" y1="307.34" x2="518.16" y2="307.34" width="0.1524" layer="91"/>
 <junction x="518.16" y="307.34"/>
-<pinref part="FLEX1" gate="G$1" pin="-"/>
+<pinref part="FLEX9" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="STRAIN_10" class="0">
@@ -8015,7 +8015,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <label x="586.74" y="383.54" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="586.74" y1="383.54" x2="579.12" y2="383.54" width="0.1524" layer="91"/>
 <junction x="579.12" y="383.54"/>
-<pinref part="FLEX6" gate="G$1" pin="-"/>
+<pinref part="FLEX100" gate="G$1" pin="-"/>
 </segment>
 </net>
 <net name="VIBE_6" class="0">
