@@ -1,11 +1,11 @@
 .DS_Store
-
 #code/.DS_Store
 #code/robotic_arm/.DS_Store
 #code/touch_glove/.DS_Store
 
 #eagle/.DS_Store
 #eagle/robotic_arm/.DS_Store
+eagle.epf
 *.s#*
 *.b#*
 *.*lck
