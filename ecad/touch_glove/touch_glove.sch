@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4202,6 +4202,26 @@
 <smd name="5" x="2.54" y="-1.27" dx="1.8796" dy="1.8796" layer="1" roundness="100"/>
 <smd name="6" x="2.54" y="1.27" dx="1.8796" dy="1.8796" layer="1" roundness="100"/>
 </package>
+<package name="SMT-JUMPER_2_NO_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X3-NS" urn="urn:adsk.eagle:package:2993074/2" locally_modified="yes" type="model">
@@ -4279,6 +4299,15 @@
 <pin name="RXI" x="5.08" y="0" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="DTR" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="VCC" x="5.08" y="5.08" visible="pin" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_NO">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4400,6 +4429,32 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="MPN_CONNECTOR" value="68016-406HLF" constant="no"/>
 <attribute name="VALUE" value="FTDI" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
+<description>Normally open jumper</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7183,6 +7238,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY116" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY120" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY121" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
+<part name="JP2" library="PiB_connectors" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
+<part name="SUPPLY13" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7468,7 +7525,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="GND138" gate="GND" x="322.58" y="330.2"/>
 <instance part="NGND25" gate="G$1" x="312.42" y="403.86"/>
 <instance part="GND139" gate="GND" x="408.94" y="91.44"/>
-<instance part="SUPPLY126" gate="G$1" x="312.42" y="431.8"/>
+<instance part="SUPPLY126" gate="G$1" x="304.8" y="431.8"/>
 <instance part="BR_NOISE" gate="G$1" x="264.16" y="251.46"/>
 <instance part="LED1" gate="G$1" x="314.96" y="276.86"/>
 <instance part="R48" gate="G$1" x="314.96" y="264.16" rot="R90"/>
@@ -7642,6 +7699,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="SUPPLY116" gate="G$1" x="482.6" y="447.04"/>
 <instance part="SUPPLY120" gate="G$1" x="492.76" y="447.04"/>
 <instance part="SUPPLY121" gate="G$1" x="502.92" y="447.04"/>
+<instance part="JP2" gate="G$1" x="322.58" y="424.18"/>
+<instance part="SUPPLY13" gate="G$1" x="314.96" y="431.8"/>
 </instances>
 <busses>
 </busses>
@@ -9442,16 +9501,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <segment>
 <wire x1="304.8" y1="424.18" x2="312.42" y2="424.18" width="0.1524" layer="91"/>
 <pinref part="SUPPLY126" gate="G$1" pin="AVCC"/>
-<wire x1="312.42" y1="431.8" x2="312.42" y2="429.26" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="431.8" x2="304.8" y2="429.26" width="0.1524" layer="91"/>
 <pinref part="MCU" gate="G$1" pin="EVDD"/>
-<wire x1="330.2" y1="429.26" x2="312.42" y2="429.26" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="429.26" x2="304.8" y2="429.26" width="0.1524" layer="91"/>
 <pinref part="C29" gate="G$1" pin="1"/>
 <wire x1="304.8" y1="414.02" x2="304.8" y2="424.18" width="0.1524" layer="91"/>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="312.42" y1="414.02" x2="312.42" y2="424.18" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="424.18" x2="312.42" y2="429.26" width="0.1524" layer="91"/>
-<junction x="312.42" y="424.18"/>
-<junction x="312.42" y="429.26"/>
+<junction x="304.8" y="429.26"/>
+<wire x1="304.8" y1="429.26" x2="304.8" y2="424.18" width="0.1524" layer="91" style="longdash"/>
+<junction x="304.8" y="424.18"/>
 </segment>
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
@@ -10049,6 +10108,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="DEMUX1" gate="G$1" pin="VCC"/>
 <wire x1="502.92" y1="444.5" x2="505.46" y2="444.5" width="0.1524" layer="91"/>
 <pinref part="SUPPLY121" gate="G$1" pin="VSENSOR"/>
+</segment>
+<segment>
+<pinref part="SUPPLY13" gate="G$1" pin="VSENSOR"/>
+<wire x1="314.96" y1="431.8" x2="314.96" y2="424.18" width="0.1524" layer="91" style="longdash"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="314.96" y1="424.18" x2="317.5" y2="424.18" width="0.1524" layer="91" style="longdash"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="MCU" gate="G$1" pin="AREF"/>
+<wire x1="327.66" y1="424.18" x2="330.2" y2="424.18" width="0.1524" layer="91" style="longdash"/>
 </segment>
 </net>
 </nets>
