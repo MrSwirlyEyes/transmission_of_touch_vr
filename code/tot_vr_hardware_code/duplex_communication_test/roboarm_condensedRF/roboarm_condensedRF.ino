@@ -69,9 +69,9 @@ struct ArmPacket {
 
 void setup() 
 {
-  delay(2000);
-  if(DEBUG)
-    Serial.begin(9600);
+//  delay(2000);
+//  if(DEBUG)
+//    Serial.begin(9600);
   pwm.begin();
   pwm.setPWMFreq(40);
 
@@ -98,31 +98,34 @@ void loop()
   //GLOVE PACKET: RECEIVING FLEX VALS FROM GLOVE TO MOVE SERVO MOTORS ON ROBO ARM
   if(radio.rfAvailable()) {
     radio.rfRead((uint8_t *) & gpkt, sizeof(GlovePacket));
-//    radio.rfFlush();
+    radio.rfFlush();
+    Serial.print("Checksum=");
+    Serial.println(gpkt.gCheckSum);
   }
-  radio.rfFlush();
-  int gCheckSumTot = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];
+//  radio.rfFlush();
+  float gCheckSumTot = gpkt.gFinger[0] + gpkt.gFinger[1] + gpkt.gFinger[2] + gpkt.gFinger[3] + gpkt.gFinger[4];
   if(gCheckSumTot == gpkt.gCheckSum) {
     for (int i = 0; i < 5; i++) {
       int calibrated_servo = map(gpkt.gFinger[i],FLEXMIN,FLEXMAX,SERVOMIN, SERVOMAX);
-      if(DEBUG)
-        Serial.println(calibrated_servo);
-      pwm.setPWM(i, 0, calibrated_servo);
+//      if(DEBUG)
+//        Serial.println(calibrated_servo);
+//      pwm.setPWM(i, 0, calibrated_servo);
+      pwm.setPWM(i, 0, 0); // TODO: delete me
     }
-    if(DEBUG)
-      Serial.print("(");
-  for ( int i = 0 ; i < 5 ; i++ ) {
-    if(DEBUG)
-      Serial.print(gpkt.gFinger[i]);
-    if ( i < 4 ) {
-      if(DEBUG)
-        Serial.print(",");
-    }
-  }
-  if(DEBUG) {
-    Serial.print(gpkt.gCheckSum);
-    Serial.println(")");
-  }
+//    if(DEBUG)
+//      Serial.print("(");
+//  for ( int i = 0 ; i < 5 ; i++ ) {
+//    if(DEBUG)
+//      Serial.print(gpkt.gFinger[i]);
+//    if ( i < 4 ) {
+//      if(DEBUG)
+//        Serial.print(",");
+//    }
+//  }
+//  if(DEBUG) {
+//    Serial.print(gpkt.gCheckSum);
+//    Serial.println(")");
+//  }
 
   } else {
 //    Serial.print("ERROR, checksum=");
@@ -136,6 +139,7 @@ void loop()
     apkt.aFinger[i] = demux.read_channel(i);
     delay(5);
     apkt.aFinger[i] = demux.read_channel(i);
+    apkt.aFinger[i] = 255;
   }
 
   // Get temp readings
