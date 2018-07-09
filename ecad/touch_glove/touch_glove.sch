@@ -167,127 +167,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="MrSwirlyEyes">
-<packages>
-</packages>
-<symbols>
-<symbol name="VCC">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.27" layer="96" font="vector" ratio="10" align="bottom-center">VCC</text>
-</symbol>
-<symbol name="GND">
-<description>&lt;h3&gt;Ground Supply&lt;/h3&gt;</description>
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">GND</text>
-<wire x1="-1.397" y1="-0.508" x2="1.397" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-0.889" y1="-1.016" x2="0.889" y2="-1.016" width="0.254" layer="94"/>
-</symbol>
-<symbol name="AGND">
-<description>&lt;h3&gt;Ground Supply&lt;/h3&gt;</description>
-<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-<text x="0" y="-1.27" size="1.27" layer="96" font="vector" ratio="10" align="top-center">AGND</text>
-<wire x1="-0.762" y1="0" x2="-0.508" y2="0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.508" y1="0.254" x2="-0.254" y2="0" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.254" y1="0" x2="0" y2="-0.254" width="0.1524" layer="94" curve="90"/>
-<wire x1="0" y1="-0.254" x2="0.254" y2="0" width="0.1524" layer="94" curve="90"/>
-<wire x1="0.254" y1="0" x2="0.508" y2="0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="0.508" y1="0.254" x2="0.762" y2="0" width="0.1524" layer="94" curve="-90"/>
-<wire x1="0.762" y1="0" x2="1.016" y2="-0.254" width="0.1524" layer="94" curve="90"/>
-<wire x1="1.016" y1="-0.254" x2="1.27" y2="0" width="0.1524" layer="94" curve="90"/>
-<wire x1="-1.016" y1="-0.254" x2="-0.762" y2="0" width="0.1524" layer="94" curve="90"/>
-<wire x1="-1.27" y1="0" x2="-1.016" y2="-0.254" width="0.1524" layer="94" curve="90"/>
-<wire x1="-1.524" y1="0.254" x2="-1.27" y2="0" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-1.778" y1="0" x2="-1.524" y2="0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="1.27" y1="0" x2="1.524" y2="0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="1.524" y1="0.254" x2="1.778" y2="0" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.508" y1="-0.254" x2="-0.254" y2="-0.508" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.762" y1="-0.508" x2="-0.508" y2="-0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-1.016" y1="-0.762" x2="-0.762" y2="-0.508" width="0.1524" layer="94" curve="90"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.016" y2="-0.762" width="0.1524" layer="94" curve="90"/>
-<wire x1="-0.254" y1="-0.508" x2="0" y2="-0.762" width="0.1524" layer="94" curve="90"/>
-<wire x1="0" y1="-0.762" x2="0.254" y2="-0.508" width="0.1524" layer="94" curve="90"/>
-<wire x1="0.508" y1="-0.254" x2="0.762" y2="-0.508" width="0.1524" layer="94" curve="-90"/>
-<wire x1="0.254" y1="-0.508" x2="0.508" y2="-0.254" width="0.1524" layer="94" curve="-90"/>
-<wire x1="0.762" y1="-0.508" x2="1.016" y2="-0.762" width="0.1524" layer="94" curve="90"/>
-<wire x1="1.016" y1="-0.762" x2="1.27" y2="-0.508" width="0.1524" layer="94" curve="90"/>
-<wire x1="-0.508" y1="-0.762" x2="-0.254" y2="-1.016" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.762" y1="-1.016" x2="-0.508" y2="-0.762" width="0.1524" layer="94" curve="-90"/>
-<wire x1="-0.254" y1="-1.016" x2="0" y2="-1.27" width="0.1524" layer="94" curve="90"/>
-<wire x1="0" y1="-1.27" x2="0.254" y2="-1.016" width="0.1524" layer="94" curve="90"/>
-<wire x1="0.254" y1="-1.016" x2="0.508" y2="-0.762" width="0.1524" layer="94" curve="-90"/>
-<wire x1="0.508" y1="-0.762" x2="0.762" y2="-1.016" width="0.1524" layer="94" curve="-90"/>
-</symbol>
-<symbol name="AVCC">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="AVCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.27" layer="96" font="vector" ratio="10" align="bottom-center">AVCC</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VCC" prefix="SUPPLY">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GND" prefix="GND">
-<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="GND" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AGND" prefix="NGND">
-<description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="AGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="AVCC" prefix="SUPPLY">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="AVCC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PiB_ic_microcontrollers">
 <packages>
 <package name="QFN50P900X900X90-64" urn="urn:adsk.eagle:footprint:2900264/2" locally_modified="yes">
@@ -4089,6 +3968,28 @@
 <smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="SMT-JUMPER_3_NO_NO-SILK" urn="urn:adsk.eagle:footprint:3035499/1">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_3_NO_SILK" urn="urn:adsk.eagle:footprint:3035500/1">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="2X3-NS" urn="urn:adsk.eagle:package:2993074/7" locally_modified="yes" type="model">
@@ -4180,6 +4081,22 @@
 <text x="0" y="1.778" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="SMT-JUMPER_3_NO">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.381" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4325,6 +4242,35 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER_SMD_3-PAD_NO" prefix="JP">
+<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has three pads in close proximity to each other. Apply solder to close the connection(s).&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_3_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_3_NO_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_3_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6657,99 +6603,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </deviceset>
 </devicesets>
 </library>
-<library name="PiB_connectors" urn="urn:adsk.eagle:library:2993000">
-<packages>
-<package name="SMT-JUMPER_3_NO_NO-SILK" urn="urn:adsk.eagle:footprint:2993046/1" library_version="2" library_locally_modified="yes">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_3_NO_SILK" urn="urn:adsk.eagle:footprint:2993047/1" library_version="2" library_locally_modified="yes">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
-<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SMT-JUMPER_3_NO_NO-SILK" urn="urn:adsk.eagle:package:2993084/1" type="box" library_version="2" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="SMT-JUMPER_3_NO_NO-SILK"/>
-</packageinstances>
-</package3d>
-<package3d name="SMT-JUMPER_3_NO_SILK" urn="urn:adsk.eagle:package:2993085/1" type="box" library_version="2" library_locally_modified="yes">
-<packageinstances>
-<packageinstance name="SMT-JUMPER_3_NO_SILK"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="SMT-JUMPER_3_NO" urn="urn:adsk.eagle:symbol:2993015/1" library_version="2" library_locally_modified="yes">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.381" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JUMPER-SMT_3_NO" urn="urn:adsk.eagle:component:2993112/1" prefix="JP" library_version="2" library_locally_modified="yes">
-<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
-&lt;p&gt;This jumper has three pads in close proximity to each other. Apply solder to close the connection(s).&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_3_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_3_NO_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2993084/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_3_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2993085/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="PiB_op_amps">
 <packages>
 <package name="SOIC127P600X175-8" urn="urn:adsk.eagle:footprint:4041947/1" locally_modified="yes">
@@ -6967,9 +6820,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="HBRIDGE-THUMB" library="PiB" deviceset="DRV883X_H-BRIDGE" device="_DRV8837C_1A" package3d_urn="urn:adsk.eagle:package:2992818/3" value="DRV8837C 1A"/>
 <part name="SUPPLY38" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C51" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="GND47" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="GND47" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C56" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="SUPPLY40" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY40" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R39" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R23" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND51" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -6980,9 +6833,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="HBRIDGE-INDEX" library="PiB" deviceset="DRV883X_H-BRIDGE" device="_DRV8837C_1A" package3d_urn="urn:adsk.eagle:package:2992818/3" value="DRV8837C 1A"/>
 <part name="SUPPLY8" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C52" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="GND16" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="GND16" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C57" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="SUPPLY10" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY10" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R41" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R25" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND20" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -6993,9 +6846,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="HBRIDGE-MIDDLE" library="PiB" deviceset="DRV883X_H-BRIDGE" device="_DRV8837C_1A" package3d_urn="urn:adsk.eagle:package:2992818/3" value="DRV8837C 1A"/>
 <part name="SUPPLY14" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C53" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="GND23" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="GND23" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C58" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="SUPPLY16" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY16" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R43" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R27" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND27" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -7006,9 +6859,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="HBRIDGE-RING" library="PiB" deviceset="DRV883X_H-BRIDGE" device="_DRV8837C_1A" package3d_urn="urn:adsk.eagle:package:2992818/3" value="DRV8837C 1A"/>
 <part name="SUPPLY27" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C54" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="GND30" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="GND30" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C59" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="SUPPLY29" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY29" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R45" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R29" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND34" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -7019,9 +6872,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="HBRIDGE-PINKY" library="PiB" deviceset="DRV883X_H-BRIDGE" device="_DRV8837C_1A" package3d_urn="urn:adsk.eagle:package:2992818/3" value="DRV8837C 1A"/>
 <part name="SUPPLY33" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C55" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="GND40" library="MrSwirlyEyes" deviceset="GND" device=""/>
+<part name="GND40" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C60" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="SUPPLY35" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY35" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R47" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R31" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND44" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -7048,15 +6901,15 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND113" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="C50" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="GND114" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="SUPPLY78" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY78" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="R2" library="PiB_resistors" deviceset="4.7KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="4.7K"/>
 <part name="R3" library="PiB_resistors" deviceset="4.7KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="4.7K"/>
-<part name="SUPPLY79" library="MrSwirlyEyes" deviceset="VCC" device=""/>
-<part name="SUPPLY80" library="MrSwirlyEyes" deviceset="VCC" device=""/>
-<part name="SUPPLY81" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY79" library="PiB_power_symbols" deviceset="VCC" device=""/>
+<part name="SUPPLY80" library="PiB_power_symbols" deviceset="VCC" device=""/>
+<part name="SUPPLY81" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C49" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_6.3V-20%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V"/>
 <part name="GND115" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="SUPPLY82" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY82" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C38" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="MCU" library="PiB_ic_microcontrollers" deviceset="ATMEGA128RFA1" device="_VFQFN-64_NO-EXPOSED-PAD" package3d_urn="urn:adsk.eagle:package:2900263/1" value="ATMEGA128RFA1_VFQFN-64_NO-EXPOSED-PAD"/>
 <part name="C27" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
@@ -7074,7 +6927,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C35" library="PiB_capacitors" deviceset="0.75PF" device="_CER_SMD-0402_50V-33%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V"/>
 <part name="ANT" library="PiB_radio_frequency" deviceset="ANTENNA" device="_SMD_CHP-2.45GHZ-0.5DBI-3W" package3d_urn="urn:adsk.eagle:package:2933495/1" value="2.45GHz"/>
 <part name="R1" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="SUPPLY83" library="MrSwirlyEyes" deviceset="VCC" device=""/>
 <part name="C23" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="GND120" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="GND121" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -7082,7 +6934,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND123" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="GND124" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="GND125" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="SUPPLY84" library="MrSwirlyEyes" deviceset="VCC" device=""/>
+<part name="SUPPLY84" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="AVR_ISP" library="PiB_connectors" deviceset="AVR_SPI_PRG_6" device="_PTH_VERT-MALE" package3d_urn="urn:adsk.eagle:package:2993074/7" value="AVRISP"/>
 <part name="C22" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="FTDI" library="PiB_connectors" deviceset="FTDI" device="_PTH_RA-MALE" package3d_urn="urn:adsk.eagle:package:2993075/7" value="FTDI"/>
@@ -7101,9 +6953,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="VREG-MCU" library="PiB_ic_power" deviceset="VREG_TPS768XX_ULDO_FAST-TRANSIENT" device="_TPS76833QDR_1A-3.3V" package3d_urn="urn:adsk.eagle:package:2899754/1" value="1A/3.3V"/>
 <part name="D4" library="PiB_discrete_semiconductors" deviceset="DIODE_GENERAL-PURPOSE" device="_SMD-0402_GP_150MA-75V" package3d_urn="urn:adsk.eagle:package:2933421/1" value="150mA/75V"/>
 <part name="GND138" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="NGND25" library="MrSwirlyEyes" deviceset="AGND" device=""/>
+<part name="NGND25" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="GND139" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="SUPPLY126" library="MrSwirlyEyes" deviceset="AVCC" device=""/>
+<part name="SUPPLY126" library="PiB_power_symbols" deviceset="AVCC" device=""/>
 <part name="BR_NOISE" library="PiB_power_symbols" deviceset="2PT_GND_TIE" device=""/>
 <part name="LED1" library="PiB_leds" deviceset="LED" device="_SMD-0402_DISCRETE_BLUE" package3d_urn="urn:adsk.eagle:package:2899303/3" value="BLUE"/>
 <part name="R48" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
@@ -7237,7 +7089,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY59" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY62" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY63" library="PiB_power_symbols" deviceset="AGND" device=""/>
-<part name="NGND1" library="MrSwirlyEyes" deviceset="AGND" device=""/>
+<part name="NGND1" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY65" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY11" library="PiB_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY17" library="PiB_power_symbols" deviceset="NGND" device=""/>
@@ -7250,7 +7102,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND1" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="BR_ANALOG" library="PiB_power_symbols" deviceset="2PT_GND_TIE" device=""/>
 <part name="SUPPLY20" library="PiB_power_symbols" deviceset="AVCC" device=""/>
-<part name="JP1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:2993000" deviceset="JUMPER-SMT_3_NO" device="_SILK" package3d_urn="urn:adsk.eagle:package:2993085/1"/>
+<part name="JP1" library="PiB_connectors" deviceset="JUMPER_SMD_3-PAD_NO" device="_NO-SILK"/>
 <part name="SUPPLY117" library="PiB_power_symbols" deviceset="AVCC" device=""/>
 <part name="SUPPLY118" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY71" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
@@ -7288,6 +7140,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="OPAMP3" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3"/>
 <part name="SUPPLY122" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY123" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
+<part name="SUPPLY83" library="PiB_power_symbols" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7330,7 +7183,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="398.78" y1="170.18" x2="398.78" y2="459.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="515.62" y1="170.18" x2="515.62" y2="459.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="515.62" y1="170.18" x2="398.78" y2="170.18" width="0.1524" layer="97" style="longdash"/>
-<text x="302.26" y="60.96" size="1.27" layer="91" font="vector" ratio="10">CHECK THESE FOR ACCURACY</text>
 <wire x1="383.54" y1="78.74" x2="335.28" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="335.28" y1="78.74" x2="335.28" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="383.54" y1="106.68" x2="335.28" y2="106.68" width="0.1524" layer="97" style="shortdash"/>
@@ -7528,7 +7380,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="C35" gate="G$1" x="259.08" y="356.87"/>
 <instance part="ANT" gate="G$1" x="259.08" y="373.38" rot="MR0"/>
 <instance part="R1" gate="G$1" x="299.72" y="439.42" rot="R90"/>
-<instance part="SUPPLY83" gate="VCC" x="299.72" y="449.58"/>
 <instance part="C23" gate="G$1" x="233.68" y="398.78"/>
 <instance part="GND120" gate="GND" x="233.68" y="391.16"/>
 <instance part="GND121" gate="GND" x="241.3" y="391.16"/>
@@ -7742,6 +7593,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="OPAMP3" gate="G$1" x="546.1" y="208.28"/>
 <instance part="SUPPLY122" gate="G$1" x="546.1" y="187.96"/>
 <instance part="SUPPLY123" gate="G$1" x="546.1" y="223.52"/>
+<instance part="SUPPLY83" gate="VCC" x="299.72" y="449.58"/>
 </instances>
 <busses>
 </busses>
@@ -8126,16 +7978,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="78.74" y1="436.88" x2="78.74" y2="434.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="444.5" x2="299.72" y2="447.04" width="0.1524" layer="91"/>
-<pinref part="SUPPLY83" gate="VCC" pin="VCC"/>
-<pinref part="D4" gate="G$1" pin="K"/>
-<wire x1="299.72" y1="447.04" x2="299.72" y2="449.58" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="443.23" x2="292.1" y2="447.04" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="447.04" x2="299.72" y2="447.04" width="0.1524" layer="91"/>
-<junction x="299.72" y="447.04"/>
-</segment>
-<segment>
 <wire x1="350.52" y1="266.7" x2="350.52" y2="271.78" width="0.1524" layer="91"/>
 <junction x="350.52" y="271.78"/>
 <wire x1="350.52" y1="271.78" x2="358.14" y2="271.78" width="0.1524" layer="91"/>
@@ -8191,6 +8033,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY58" gate="VCC" pin="VCC"/>
 <wire x1="241.3" y1="190.5" x2="241.3" y2="187.96" width="0.1524" layer="91"/>
 <junction x="241.3" y="187.96"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="444.5" x2="299.72" y2="447.04" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="K"/>
+<wire x1="299.72" y1="447.04" x2="299.72" y2="449.58" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="443.23" x2="292.1" y2="447.04" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="447.04" x2="299.72" y2="447.04" width="0.1524" layer="91"/>
+<junction x="299.72" y="447.04"/>
+<pinref part="SUPPLY83" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="FLEX-RING1" class="0">
@@ -10182,11 +10034,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </schematic>
 </drawing>
 <compatibility>
-<note version="8.2" severity="warning">
-Since Version 8.2, EAGLE supports online libraries. The ids
-of those online libraries will not be understood (or retained)
-with this version.
-</note>
 <note version="8.3" severity="warning">
 Since Version 8.3, EAGLE supports URNs for individual library
 assets (packages, symbols, and devices). The URNs of those assets
