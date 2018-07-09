@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -270,573 +270,6 @@
 <pad name="P$4" x="-1.5" y="-1.5" drill="0.254" stop="no" thermals="no"/>
 <pad name="P$5" x="0" y="0" drill="0.254" stop="no" thermals="no"/>
 </package>
-<package name="VFQFN-64" urn="urn:adsk.eagle:footprint:3645115/1">
-<circle x="-3.2134" y="3.196" radius="0.635" width="0" layer="21"/>
-<text x="0" y="6.27" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-6.27" size="0.6096" layer="21" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="-4.5" y1="-4.5" x2="-4.2" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="-4.5" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="4.5" y2="-4.5" width="0.05" layer="51"/>
-<wire x1="-4.5" y1="4.2" x2="-4.2" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.05" layer="51"/>
-<wire x1="4.5" y1="-4.5" x2="4.2" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-4.5" x2="4.5" y2="-4.2" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-4.5" x2="4.5" y2="4.5" width="0.05" layer="51"/>
-<wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.05" layer="51"/>
-<wire x1="4.5" y1="4.5" x2="4.2" y2="4.5" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="4.5" x2="4.5" y2="4.2" width="0.2032" layer="21"/>
-<wire x1="-5.842" y1="5.842" x2="5.842" y2="5.842" width="0.127" layer="39"/>
-<wire x1="5.842" y1="5.842" x2="5.842" y2="-5.842" width="0.127" layer="39"/>
-<wire x1="5.842" y1="-5.842" x2="-5.842" y2="-5.842" width="0.127" layer="39"/>
-<wire x1="-5.842" y1="-5.842" x2="-5.842" y2="5.842" width="0.127" layer="39"/>
-<smd name="1" x="-4.881" y="3.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="10" x="-4.881" y="-0.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="11" x="-4.881" y="-1.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="12" x="-4.881" y="-1.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="13" x="-4.881" y="-2.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="14" x="-4.881" y="-2.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="15" x="-4.881" y="-3.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="16" x="-4.881" y="-3.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="17" x="-3.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="18" x="-3.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="19" x="-2.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="2" x="-4.881" y="3.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="20" x="-2.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="21" x="-1.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="22" x="-1.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="23" x="-0.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="24" x="-0.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="25" x="0.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="26" x="0.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="27" x="1.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="28" x="1.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R180"/>
-<smd name="29" x="2.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="3" x="-4.881" y="2.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="30" x="2.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="31" x="3.25" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="32" x="3.75" y="-4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="33" x="4.881" y="-3.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="34" x="4.881" y="-3.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="35" x="4.881" y="-2.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="36" x="4.881" y="-2.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="37" x="4.881" y="-1.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="38" x="4.881" y="-1.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="39" x="4.881" y="-0.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="4" x="-4.881" y="2.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="40" x="4.881" y="-0.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="41" x="4.881" y="0.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="42" x="4.881" y="0.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="43" x="4.881" y="1.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="44" x="4.881" y="1.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="45" x="4.881" y="2.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="46" x="4.881" y="2.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="47" x="4.881" y="3.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="48" x="4.881" y="3.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R90"/>
-<smd name="49" x="3.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="5" x="-4.881" y="1.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="50" x="3.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="51" x="2.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="52" x="2.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="53" x="1.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="54" x="1.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="55" x="0.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="56" x="0.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="57" x="-0.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="58" x="-0.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="59" x="-1.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="6" x="-4.881" y="1.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="60" x="-1.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="61" x="-2.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="62" x="-2.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="63" x="-3.25" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="64" x="-3.75" y="4.881" dx="0.28" dy="1.562" layer="1" roundness="50"/>
-<smd name="7" x="-4.881" y="0.75" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="8" x="-4.881" y="0.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<smd name="9" x="-4.881" y="-0.25" dx="0.28" dy="1.562" layer="1" roundness="50" rot="R270"/>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-0.875"/>
-<vertex x="4.5" y="-0.625"/>
-<vertex x="4.2" y="-0.625" curve="90"/>
-<vertex x="4.1" y="-0.75" curve="90"/>
-<vertex x="4.2" y="-0.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-0.375"/>
-<vertex x="4.5" y="-0.125"/>
-<vertex x="4.2" y="-0.125" curve="90"/>
-<vertex x="4.1" y="-0.25" curve="90"/>
-<vertex x="4.2" y="-0.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="0.125"/>
-<vertex x="4.5" y="0.375"/>
-<vertex x="4.2" y="0.375" curve="90"/>
-<vertex x="4.1" y="0.25" curve="90"/>
-<vertex x="4.2" y="0.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="0.625"/>
-<vertex x="4.5" y="0.875"/>
-<vertex x="4.2" y="0.875" curve="90"/>
-<vertex x="4.1" y="0.75" curve="90"/>
-<vertex x="4.2" y="0.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="1.125"/>
-<vertex x="4.5" y="1.375"/>
-<vertex x="4.2" y="1.375" curve="90"/>
-<vertex x="4.1" y="1.25" curve="90"/>
-<vertex x="4.2" y="1.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="1.125"/>
-<vertex x="4.5" y="1.375"/>
-<vertex x="4.2" y="1.375" curve="90"/>
-<vertex x="4.1" y="1.25" curve="90"/>
-<vertex x="4.2" y="1.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="1.125"/>
-<vertex x="4.5" y="1.375"/>
-<vertex x="4.2" y="1.375" curve="90"/>
-<vertex x="4.1" y="1.25" curve="90"/>
-<vertex x="4.2" y="1.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="1.625"/>
-<vertex x="4.5" y="1.875"/>
-<vertex x="4.2" y="1.875" curve="90"/>
-<vertex x="4.1" y="1.75" curve="90"/>
-<vertex x="4.2" y="1.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="2.125"/>
-<vertex x="4.5" y="2.375"/>
-<vertex x="4.2" y="2.375" curve="90"/>
-<vertex x="4.1" y="2.25" curve="90"/>
-<vertex x="4.2" y="2.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="2.625"/>
-<vertex x="4.5" y="2.875"/>
-<vertex x="4.2" y="2.875" curve="90"/>
-<vertex x="4.1" y="2.75" curve="90"/>
-<vertex x="4.2" y="2.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="3.125"/>
-<vertex x="4.5" y="3.375"/>
-<vertex x="4.2" y="3.375" curve="90"/>
-<vertex x="4.1" y="3.25" curve="90"/>
-<vertex x="4.2" y="3.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="3.125"/>
-<vertex x="4.5" y="3.375"/>
-<vertex x="4.2" y="3.375" curve="90"/>
-<vertex x="4.1" y="3.25" curve="90"/>
-<vertex x="4.2" y="3.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="3.625"/>
-<vertex x="4.5" y="3.875"/>
-<vertex x="4.2" y="3.875" curve="90"/>
-<vertex x="4.1" y="3.75" curve="90"/>
-<vertex x="4.2" y="3.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="3.875"/>
-<vertex x="-4.5" y="3.625"/>
-<vertex x="-4.2" y="3.625" curve="90"/>
-<vertex x="-4.1" y="3.75" curve="90"/>
-<vertex x="-4.2" y="3.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="3.375"/>
-<vertex x="-4.5" y="3.125"/>
-<vertex x="-4.2" y="3.125" curve="90"/>
-<vertex x="-4.1" y="3.25" curve="90"/>
-<vertex x="-4.2" y="3.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="3.375"/>
-<vertex x="-4.5" y="3.125"/>
-<vertex x="-4.2" y="3.125" curve="90"/>
-<vertex x="-4.1" y="3.25" curve="90"/>
-<vertex x="-4.2" y="3.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="2.875"/>
-<vertex x="-4.5" y="2.625"/>
-<vertex x="-4.2" y="2.625" curve="90"/>
-<vertex x="-4.1" y="2.75" curve="90"/>
-<vertex x="-4.2" y="2.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="2.375"/>
-<vertex x="-4.5" y="2.125"/>
-<vertex x="-4.2" y="2.125" curve="90"/>
-<vertex x="-4.1" y="2.25" curve="90"/>
-<vertex x="-4.2" y="2.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="1.875"/>
-<vertex x="-4.5" y="1.625"/>
-<vertex x="-4.2" y="1.625" curve="90"/>
-<vertex x="-4.1" y="1.75" curve="90"/>
-<vertex x="-4.2" y="1.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="1.375"/>
-<vertex x="-4.5" y="1.125"/>
-<vertex x="-4.2" y="1.125" curve="90"/>
-<vertex x="-4.1" y="1.25" curve="90"/>
-<vertex x="-4.2" y="1.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="0.875"/>
-<vertex x="-4.5" y="0.625"/>
-<vertex x="-4.2" y="0.625" curve="90"/>
-<vertex x="-4.1" y="0.75" curve="90"/>
-<vertex x="-4.2" y="0.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="0.375"/>
-<vertex x="-4.5" y="0.125"/>
-<vertex x="-4.2" y="0.125" curve="90"/>
-<vertex x="-4.1" y="0.25" curve="90"/>
-<vertex x="-4.2" y="0.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-0.125"/>
-<vertex x="-4.5" y="-0.375"/>
-<vertex x="-4.2" y="-0.375" curve="90"/>
-<vertex x="-4.1" y="-0.25" curve="90"/>
-<vertex x="-4.2" y="-0.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-0.625"/>
-<vertex x="-4.5" y="-0.875"/>
-<vertex x="-4.2" y="-0.875" curve="90"/>
-<vertex x="-4.1" y="-0.75" curve="90"/>
-<vertex x="-4.2" y="-0.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-1.125"/>
-<vertex x="-4.5" y="-1.375"/>
-<vertex x="-4.2" y="-1.375" curve="90"/>
-<vertex x="-4.1" y="-1.25" curve="90"/>
-<vertex x="-4.2" y="-1.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-1.625"/>
-<vertex x="-4.5" y="-1.875"/>
-<vertex x="-4.2" y="-1.875" curve="90"/>
-<vertex x="-4.1" y="-1.75" curve="90"/>
-<vertex x="-4.2" y="-1.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-2.125"/>
-<vertex x="-4.5" y="-2.375"/>
-<vertex x="-4.2" y="-2.375" curve="90"/>
-<vertex x="-4.1" y="-2.25" curve="90"/>
-<vertex x="-4.2" y="-2.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-2.625"/>
-<vertex x="-4.5" y="-2.875"/>
-<vertex x="-4.2" y="-2.875" curve="90"/>
-<vertex x="-4.1" y="-2.75" curve="90"/>
-<vertex x="-4.2" y="-2.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-3.125"/>
-<vertex x="-4.5" y="-3.375"/>
-<vertex x="-4.2" y="-3.375" curve="90"/>
-<vertex x="-4.1" y="-3.25" curve="90"/>
-<vertex x="-4.2" y="-3.125"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-4.5" y="-3.625"/>
-<vertex x="-4.5" y="-3.875"/>
-<vertex x="-4.2" y="-3.875" curve="90"/>
-<vertex x="-4.1" y="-3.75" curve="90"/>
-<vertex x="-4.2" y="-3.625"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-3.875" y="-4.5"/>
-<vertex x="-3.625" y="-4.5"/>
-<vertex x="-3.625" y="-4.2" curve="90"/>
-<vertex x="-3.75" y="-4.1" curve="90"/>
-<vertex x="-3.875" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-3.375" y="-4.5"/>
-<vertex x="-3.125" y="-4.5"/>
-<vertex x="-3.125" y="-4.2" curve="90"/>
-<vertex x="-3.25" y="-4.1" curve="90"/>
-<vertex x="-3.375" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-2.875" y="-4.5"/>
-<vertex x="-2.625" y="-4.5"/>
-<vertex x="-2.625" y="-4.2" curve="90"/>
-<vertex x="-2.75" y="-4.1" curve="90"/>
-<vertex x="-2.875" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-2.375" y="-4.5"/>
-<vertex x="-2.125" y="-4.5"/>
-<vertex x="-2.125" y="-4.2" curve="90"/>
-<vertex x="-2.25" y="-4.1" curve="90"/>
-<vertex x="-2.375" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-1.875" y="-4.5"/>
-<vertex x="-1.625" y="-4.5"/>
-<vertex x="-1.625" y="-4.2" curve="90"/>
-<vertex x="-1.75" y="-4.1" curve="90"/>
-<vertex x="-1.875" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-1.375" y="-4.5"/>
-<vertex x="-1.125" y="-4.5"/>
-<vertex x="-1.125" y="-4.2" curve="90"/>
-<vertex x="-1.25" y="-4.1" curve="90"/>
-<vertex x="-1.375" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-0.875" y="-4.5"/>
-<vertex x="-0.625" y="-4.5"/>
-<vertex x="-0.625" y="-4.2" curve="90"/>
-<vertex x="-0.75" y="-4.1" curve="90"/>
-<vertex x="-0.875" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-0.375" y="-4.5"/>
-<vertex x="-0.125" y="-4.5"/>
-<vertex x="-0.125" y="-4.2" curve="90"/>
-<vertex x="-0.25" y="-4.1" curve="90"/>
-<vertex x="-0.375" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="0.125" y="-4.5"/>
-<vertex x="0.375" y="-4.5"/>
-<vertex x="0.375" y="-4.2" curve="90"/>
-<vertex x="0.25" y="-4.1" curve="90"/>
-<vertex x="0.125" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="0.625" y="-4.5"/>
-<vertex x="0.875" y="-4.5"/>
-<vertex x="0.875" y="-4.2" curve="90"/>
-<vertex x="0.75" y="-4.1" curve="90"/>
-<vertex x="0.625" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="1.125" y="-4.5"/>
-<vertex x="1.375" y="-4.5"/>
-<vertex x="1.375" y="-4.2" curve="90"/>
-<vertex x="1.25" y="-4.1" curve="90"/>
-<vertex x="1.125" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="1.625" y="-4.5"/>
-<vertex x="1.875" y="-4.5"/>
-<vertex x="1.875" y="-4.2" curve="90"/>
-<vertex x="1.75" y="-4.1" curve="90"/>
-<vertex x="1.625" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="2.125" y="-4.5"/>
-<vertex x="2.375" y="-4.5"/>
-<vertex x="2.375" y="-4.2" curve="90"/>
-<vertex x="2.25" y="-4.1" curve="90"/>
-<vertex x="2.125" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="2.625" y="-4.5"/>
-<vertex x="2.875" y="-4.5"/>
-<vertex x="2.875" y="-4.2" curve="90"/>
-<vertex x="2.75" y="-4.1" curve="90"/>
-<vertex x="2.625" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="3.125" y="-4.5"/>
-<vertex x="3.375" y="-4.5"/>
-<vertex x="3.375" y="-4.2" curve="90"/>
-<vertex x="3.25" y="-4.1" curve="90"/>
-<vertex x="3.125" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="3.625" y="-4.5"/>
-<vertex x="3.875" y="-4.5"/>
-<vertex x="3.875" y="-4.2" curve="90"/>
-<vertex x="3.75" y="-4.1" curve="90"/>
-<vertex x="3.625" y="-4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-3.875"/>
-<vertex x="4.5" y="-3.625"/>
-<vertex x="4.2" y="-3.625" curve="90"/>
-<vertex x="4.1" y="-3.75" curve="90"/>
-<vertex x="4.2" y="-3.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-3.375"/>
-<vertex x="4.5" y="-3.125"/>
-<vertex x="4.2" y="-3.125" curve="90"/>
-<vertex x="4.1" y="-3.25" curve="90"/>
-<vertex x="4.2" y="-3.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-2.875"/>
-<vertex x="4.5" y="-2.625"/>
-<vertex x="4.2" y="-2.625" curve="90"/>
-<vertex x="4.1" y="-2.75" curve="90"/>
-<vertex x="4.2" y="-2.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-2.375"/>
-<vertex x="4.5" y="-2.125"/>
-<vertex x="4.2" y="-2.125" curve="90"/>
-<vertex x="4.1" y="-2.25" curve="90"/>
-<vertex x="4.2" y="-2.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-1.875"/>
-<vertex x="4.5" y="-1.625"/>
-<vertex x="4.2" y="-1.625" curve="90"/>
-<vertex x="4.1" y="-1.75" curve="90"/>
-<vertex x="4.2" y="-1.875"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="4.5" y="-1.375"/>
-<vertex x="4.5" y="-1.125"/>
-<vertex x="4.2" y="-1.125" curve="90"/>
-<vertex x="4.1" y="-1.25" curve="90"/>
-<vertex x="4.2" y="-1.375"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="3.875" y="4.5"/>
-<vertex x="3.625" y="4.5"/>
-<vertex x="3.625" y="4.2" curve="90"/>
-<vertex x="3.75" y="4.1" curve="90"/>
-<vertex x="3.875" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="3.375" y="4.5"/>
-<vertex x="3.125" y="4.5"/>
-<vertex x="3.125" y="4.2" curve="90"/>
-<vertex x="3.25" y="4.1" curve="90"/>
-<vertex x="3.375" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="2.875" y="4.5"/>
-<vertex x="2.625" y="4.5"/>
-<vertex x="2.625" y="4.2" curve="90"/>
-<vertex x="2.75" y="4.1" curve="90"/>
-<vertex x="2.875" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="2.375" y="4.5"/>
-<vertex x="2.125" y="4.5"/>
-<vertex x="2.125" y="4.2" curve="90"/>
-<vertex x="2.25" y="4.1" curve="90"/>
-<vertex x="2.375" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="1.875" y="4.5"/>
-<vertex x="1.625" y="4.5"/>
-<vertex x="1.625" y="4.2" curve="90"/>
-<vertex x="1.75" y="4.1" curve="90"/>
-<vertex x="1.875" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="1.375" y="4.5"/>
-<vertex x="1.125" y="4.5"/>
-<vertex x="1.125" y="4.2" curve="90"/>
-<vertex x="1.25" y="4.1" curve="90"/>
-<vertex x="1.375" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="0.875" y="4.5"/>
-<vertex x="0.625" y="4.5"/>
-<vertex x="0.625" y="4.2" curve="90"/>
-<vertex x="0.75" y="4.1" curve="90"/>
-<vertex x="0.875" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="0.375" y="4.5"/>
-<vertex x="0.125" y="4.5"/>
-<vertex x="0.125" y="4.2" curve="90"/>
-<vertex x="0.25" y="4.1" curve="90"/>
-<vertex x="0.375" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-0.125" y="4.5"/>
-<vertex x="-0.375" y="4.5"/>
-<vertex x="-0.375" y="4.2" curve="90"/>
-<vertex x="-0.25" y="4.1" curve="90"/>
-<vertex x="-0.125" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-0.625" y="4.5"/>
-<vertex x="-0.875" y="4.5"/>
-<vertex x="-0.875" y="4.2" curve="90"/>
-<vertex x="-0.75" y="4.1" curve="90"/>
-<vertex x="-0.625" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-0.625" y="4.5"/>
-<vertex x="-0.875" y="4.5"/>
-<vertex x="-0.875" y="4.2" curve="90"/>
-<vertex x="-0.75" y="4.1" curve="90"/>
-<vertex x="-0.625" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-1.125" y="4.5"/>
-<vertex x="-1.375" y="4.5"/>
-<vertex x="-1.375" y="4.2" curve="90"/>
-<vertex x="-1.25" y="4.1" curve="90"/>
-<vertex x="-1.125" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-1.625" y="4.5"/>
-<vertex x="-1.875" y="4.5"/>
-<vertex x="-1.875" y="4.2" curve="90"/>
-<vertex x="-1.75" y="4.1" curve="90"/>
-<vertex x="-1.625" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-2.125" y="4.5"/>
-<vertex x="-2.375" y="4.5"/>
-<vertex x="-2.375" y="4.2" curve="90"/>
-<vertex x="-2.25" y="4.1" curve="90"/>
-<vertex x="-2.125" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-2.625" y="4.5"/>
-<vertex x="-2.875" y="4.5"/>
-<vertex x="-2.875" y="4.2" curve="90"/>
-<vertex x="-2.75" y="4.1" curve="90"/>
-<vertex x="-2.625" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-3.125" y="4.5"/>
-<vertex x="-3.375" y="4.5"/>
-<vertex x="-3.375" y="4.2" curve="90"/>
-<vertex x="-3.25" y="4.1" curve="90"/>
-<vertex x="-3.125" y="4.2"/>
-</polygon>
-<polygon width="0.001" layer="51">
-<vertex x="-3.625" y="4.5"/>
-<vertex x="-3.875" y="4.5"/>
-<vertex x="-3.875" y="4.2" curve="90"/>
-<vertex x="-3.75" y="4.1" curve="90"/>
-<vertex x="-3.625" y="4.2"/>
-</polygon>
-</package>
 </packages>
 <packages3d>
 <package3d name="QFN50P900X900X90-64" urn="urn:adsk.eagle:package:2900263/1" locally_modified="yes" type="model">
@@ -844,11 +277,6 @@
 &lt;p&gt;64-pin QFN package with 0.5 mm pitch with body size 9 X 9 X 0.9 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="QFN50P900X900X90-64"/>
-</packageinstances>
-</package3d>
-<package3d name="VFQFN-64" urn="urn:adsk.eagle:package:2750538/3" locally_modified="yes" type="model">
-<packageinstances>
-<packageinstance name="VFQFN-64"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -929,82 +357,7 @@
 <gate name="G$1" symbol="ATMEGA128RFA1" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_VFQFN-64_EXPOSED-PAD" package="VFQFN-64">
-<connects>
-<connect gate="G$1" pin="(ADC0/A0*)PF0" pad="63"/>
-<connect gate="G$1" pin="(ADC1/A1*)PF1" pad="64"/>
-<connect gate="G$1" pin="(ADC2/DIG2/A2*)PF2" pad="1"/>
-<connect gate="G$1" pin="(ADC3/DIG4/A3*)PF3" pad="2"/>
-<connect gate="G$1" pin="(ADC4/TCK/A4*)PF4" pad="3"/>
-<connect gate="G$1" pin="(ADC5/TMS/A5*)PF5" pad="4"/>
-<connect gate="G$1" pin="(ADC6/TDO/A6*)PF6" pad="5"/>
-<connect gate="G$1" pin="(ADC7/TDI/A7*)PF7" pad="6"/>
-<connect gate="G$1" pin="(AIN1/OC3A/D3-PWM3)PE3" pad="49"/>
-<connect gate="G$1" pin="(AMR/D18)PG2" pad="16"/>
-<connect gate="G$1" pin="(DIG1/D17)PG1" pad="15"/>
-<connect gate="G$1" pin="(DIG3/D16)PG0" pad="14"/>
-<connect gate="G$1" pin="(ICP1/D22)PD4" pad="29"/>
-<connect gate="G$1" pin="(ICP3/INT7/CLKO/D7)PE7" pad="53"/>
-<connect gate="G$1" pin="(INT0/SCL/D15)PD0" pad="25"/>
-<connect gate="G$1" pin="(INT1/SDA/D14)PD1" pad="26"/>
-<connect gate="G$1" pin="(INT2/RXD1/D20)PD2" pad="27"/>
-<connect gate="G$1" pin="(INT3/TXD1/D21)PD3" pad="28"/>
-<connect gate="G$1" pin="(INT4/OC3B/D4-PWM4)PE4" pad="50"/>
-<connect gate="G$1" pin="(INT5/OC3C/D5-PWM5)PE5" pad="51"/>
-<connect gate="G$1" pin="(OC0B/D19-PWM19)PG5" pad="19"/>
-<connect gate="G$1" pin="(PCINT0/SSN/D10)PB0" pad="36"/>
-<connect gate="G$1" pin="(PCINT1/SCK/D13)PB1" pad="37"/>
-<connect gate="G$1" pin="(PCINT4/OC2A/D9-PWM9)PB4" pad="40"/>
-<connect gate="G$1" pin="(PCINT5/OC1A/D8-PWM8)PB5" pad="41"/>
-<connect gate="G$1" pin="(PCINT6/OC1B/D34-PWM34)PB6" pad="42"/>
-<connect gate="G$1" pin="(PCINT7/OC0A/OC1C/D35-PWM35)PB7" pad="43"/>
-<connect gate="G$1" pin="(PCINT8/RXD0/D0)PE0" pad="46"/>
-<connect gate="G$1" pin="(PDI/PCINT2/MOSI/D11)PB2" pad="38"/>
-<connect gate="G$1" pin="(PDO/PCINT3/MISO/D12)PB3" pad="39"/>
-<connect gate="G$1" pin="(T0/D25)PD7" pad="32"/>
-<connect gate="G$1" pin="(T1/D24)PD6" pad="31"/>
-<connect gate="G$1" pin="(T3/INT6/D6)PE6" pad="52"/>
-<connect gate="G$1" pin="(TOSC1)PG4" pad="18"/>
-<connect gate="G$1" pin="(TOSC2)PG3" pad="17"/>
-<connect gate="G$1" pin="(TXD0/D1)PE1" pad="47"/>
-<connect gate="G$1" pin="(XCK0/AIN0/D2)PE2" pad="48"/>
-<connect gate="G$1" pin="(XCK1/D23)PD5" pad="30"/>
-<connect gate="G$1" pin="AREF" pad="62"/>
-<connect gate="G$1" pin="AVDD" pad="60"/>
-<connect gate="G$1" pin="AVSS" pad="58 61"/>
-<connect gate="G$1" pin="AVSS_RFN" pad="10"/>
-<connect gate="G$1" pin="AVSS_RFP" pad="7"/>
-<connect gate="G$1" pin="CLKI" pad="33"/>
-<connect gate="G$1" pin="DEVDD" pad="23 34 44 54"/>
-<connect gate="G$1" pin="DVDD" pad="21 22"/>
-<connect gate="G$1" pin="DVSS" pad="20 24 35 45 55"/>
-<connect gate="G$1" pin="EVDD" pad="59"/>
-<connect gate="G$1" pin="RFN" pad="9"/>
-<connect gate="G$1" pin="RFP" pad="8"/>
-<connect gate="G$1" pin="RSTN" pad="12"/>
-<connect gate="G$1" pin="RSTON" pad="13"/>
-<connect gate="G$1" pin="TST" pad="11"/>
-<connect gate="G$1" pin="XTAL1" pad="57"/>
-<connect gate="G$1" pin="XTAL2" pad="56"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2750538/3"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Kenmei" constant="no"/>
-<attribute name="DATASHEET" value="http://www.atmel.com/Images/Atmel-8266-MCU_Wireless-ATmega128RFA1_Datasheet.pdf"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?mpart=ATMEGA128RFA1-ZU" constant="no"/>
-<attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND "/>
-<attribute name="MFR" value="Atmel"/>
-<attribute name="MPN" value="ATMEGA128RFA1-ZU "/>
-<attribute name="TESTED" value="YES" constant="no"/>
-<attribute name="VALUE" value="ATMEGA128RFA1" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_VFQFN-64_NO-EXPOSED-PAD" package="QFN50P900X900X90-64">
+<device name="_VFQFN-64_EXPOSED-PAD" package="QFN50P900X900X90-64">
 <connects>
 <connect gate="G$1" pin="(ADC0/A0*)PF0" pad="63"/>
 <connect gate="G$1" pin="(ADC1/A1*)PF1" pad="64"/>
@@ -1066,7 +419,15 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:2900263/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en590262" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=ATMEGA128RFA1-ZU-ND" constant="no"/>
+<attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND" constant="no"/>
+<attribute name="MFR" value="Microchip Technology" constant="no"/>
+<attribute name="MPN" value="ATMEGA128RFA1-ZU" constant="no"/>
+<attribute name="VALUE" value="ATMEGA128RFA1" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1256,12 +617,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=JMK105CBJ106MV-F&amp;fileName=JMK105CBJ106MV-F_SS&amp;mode=specSheetDownload" constant="no"/>
+<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5868-1-ND" constant="no"/>
-<attribute name="DISTPN" value="587-5868-1-ND" constant="no"/>
-<attribute name="MFR" value="Taiyo Yuden" constant="no"/>
-<attribute name="MPN" value="JMK105CBJ106MV-F" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-13233-1-ND" constant="no"/>
+<attribute name="DISTPN" value="490-13233-1-ND" constant="no"/>
+<attribute name="MFR" value="Murata Electronics North America" constant="no"/>
+<attribute name="MPN" value="GRM155C80J106ME11D" constant="no"/>
 <attribute name="VALUE" value="10uF/6.3V" constant="no"/>
 </technology>
 </technologies>
@@ -1323,12 +684,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGA2B3X5R1H104K050BB.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-12213-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-12213-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-173610-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-173610-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="CGA2B3X5R1H104K050BB" constant="no"/>
+<attribute name="MPN" value="C1005X7R1H104K050BE" constant="no"/>
 <attribute name="VALUE" value="0.1uF/50V" constant="no"/>
 </technology>
 </technologies>
@@ -1409,12 +770,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM1555C2A120JA01-01.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-7300-1-ND" constant="no"/>
-<attribute name="DISTPN" value="490-7300-1-ND" constant="no"/>
-<attribute name="MFR" value="Murata Electronics North America" constant="no"/>
-<attribute name="MPN" value="GRM1555C2A120JA01D" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5001-1-ND" constant="no"/>
+<attribute name="DISTPN" value="587-5001-1-ND" constant="no"/>
+<attribute name="MFR" value="Taiyo Yuden" constant="no"/>
+<attribute name="MPN" value="HMK105CG120JV-F" constant="no"/>
 <attribute name="VALUE" value="12pF/100V" constant="no"/>
 </technology>
 </technologies>
@@ -1648,13 +1009,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGB3B3JB1C105K055AB.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.samsungsem.com/kr/support/product-search/mlcc/CL10A105KB8NNNC.jsp" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-13234-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-13234-1-ND" constant="no"/>
-<attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="CGB3B3JB1C105K055AB" constant="no"/>
-<attribute name="VALUE" value="1uF/16V" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1276-1860-1-ND" constant="no"/>
+<attribute name="DISTPN" value="1276-1860-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics" constant="no"/>
+<attribute name="MPN" value="CL10A105KB8NNNC" constant="no"/>
+<attribute name="VALUE" value="1uF/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2238,8 +1599,8 @@
 <pin name="VI" x="-10.16" y="0" visible="pad" length="short" direction="pwr"/>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 <pin name="VO" x="10.16" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="4.826" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="3.048" size="1.27" layer="96" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="3.048" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2.032" size="0.635" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <text x="-6.985" y="0" size="1.27" layer="97" font="vector" ratio="10" align="center-left">VIN</text>
 <text x="6.985" y="0" size="1.27" layer="97" font="vector" ratio="10" align="center-right">VOUT</text>
 <text x="0" y="-4.445" size="1.27" layer="97" font="vector" ratio="10" align="bottom-center">GND</text>
@@ -2254,8 +1615,8 @@
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 <pin name="SENSE" x="10.16" y="0" visible="pad" length="short" direction="pwr" rot="R180"/>
 <pin name="VOUT" x="10.16" y="2.54" visible="pad" length="short" direction="pwr" rot="R180"/>
-<text x="0" y="5.334" size="1.27" layer="96" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
-<text x="0" y="7.112" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="4.572" size="0.635" layer="96" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<text x="0" y="5.588" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="-6.985" y="2.54" size="1.27" layer="97" font="vector" ratio="10" align="center-left">VIN</text>
 <text x="-6.985" y="0" size="1.27" layer="97" font="vector" ratio="10" align="center-left">!SHDN</text>
 <text x="0" y="-4.445" size="1.27" layer="97" font="vector" ratio="10" align="bottom-center">GND</text>
@@ -2356,7 +1717,15 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:2900305/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="TL1963A-xx DatasheetTL1963A-xx" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=296-24897-1-ND" constant="no"/>
+<attribute name="DISTPN" value="296-24897-1-ND" constant="no"/>
+<attribute name="MFR" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="TL1963A-33DCYR" constant="no"/>
+<attribute name="VALUE" value="TL1963A-33 1.5A/3.3V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2466,67 +1835,6 @@
 </library>
 <library name="PiB">
 <packages>
-<package name="SSOP-24">
-<wire x1="2.65" y1="4.1" x2="2.65" y2="-4.1" width="0.1524" layer="21"/>
-<wire x1="2.65" y1="-4.1" x2="-2.65" y2="-4.1" width="0.1524" layer="21"/>
-<wire x1="-2.65" y1="-4.1" x2="-2.65" y2="4.1" width="0.1524" layer="21"/>
-<wire x1="-2.65" y1="4.1" x2="2.65" y2="4.1" width="0.1524" layer="21"/>
-<circle x="-2.078" y="3.556" radius="0.2231" width="0.1524" layer="21"/>
-<smd name="24" x="3.75" y="3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="23" x="3.75" y="2.925" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="22" x="3.75" y="2.275" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="20" x="3.75" y="0.975" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="21" x="3.75" y="1.625" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="19" x="3.75" y="0.325" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="18" x="3.75" y="-0.325" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="17" x="3.75" y="-0.975" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="16" x="3.75" y="-1.625" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="15" x="3.75" y="-2.275" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="1" x="-3.75" y="3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="-3.75" y="2.925" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="3" x="-3.75" y="2.275" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="4" x="-3.75" y="1.625" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="5" x="-3.75" y="0.975" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="6" x="-3.75" y="0.325" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="7" x="-3.75" y="-0.325" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="8" x="-3.75" y="-0.975" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="9" x="-3.75" y="-1.625" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="10" x="-3.75" y="-2.275" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="11" x="-3.75" y="-2.925" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="12" x="-3.75" y="-3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R270"/>
-<smd name="13" x="3.75" y="-3.575" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R90"/>
-<smd name="14" x="3.75" y="-2.925" dx="0.35" dy="1.6" layer="1" roundness="50" rot="R90"/>
-<rectangle x1="-3.9" y1="0.175" x2="-2.65" y2="0.475" layer="51"/>
-<rectangle x1="-3.9" y1="0.825" x2="-2.65" y2="1.125" layer="51"/>
-<rectangle x1="-3.9" y1="1.475" x2="-2.65" y2="1.775" layer="51"/>
-<rectangle x1="-3.9" y1="2.125" x2="-2.65" y2="2.425" layer="51"/>
-<rectangle x1="-3.9" y1="2.775" x2="-2.65" y2="3.075" layer="51"/>
-<rectangle x1="-3.9" y1="3.425" x2="-2.65" y2="3.725" layer="51"/>
-<rectangle x1="-3.9" y1="-0.475" x2="-2.65" y2="-0.175" layer="51"/>
-<rectangle x1="-3.9" y1="-1.125" x2="-2.65" y2="-0.825" layer="51"/>
-<rectangle x1="-3.9" y1="-1.775" x2="-2.65" y2="-1.475" layer="51"/>
-<rectangle x1="-3.9" y1="-2.425" x2="-2.65" y2="-2.125" layer="51"/>
-<rectangle x1="-3.9" y1="-3.075" x2="-2.65" y2="-2.775" layer="51"/>
-<rectangle x1="-3.9" y1="-3.725" x2="-2.65" y2="-3.425" layer="51"/>
-<rectangle x1="2.65" y1="3.425" x2="3.9" y2="3.725" layer="51"/>
-<rectangle x1="2.65" y1="2.775" x2="3.9" y2="3.075" layer="51"/>
-<rectangle x1="2.65" y1="2.125" x2="3.9" y2="2.425" layer="51"/>
-<rectangle x1="2.65" y1="1.475" x2="3.9" y2="1.775" layer="51"/>
-<rectangle x1="2.65" y1="0.825" x2="3.9" y2="1.125" layer="51"/>
-<rectangle x1="2.65" y1="0.175" x2="3.9" y2="0.475" layer="51"/>
-<rectangle x1="2.65" y1="-0.475" x2="3.9" y2="-0.175" layer="51"/>
-<rectangle x1="2.65" y1="-1.125" x2="3.9" y2="-0.825" layer="51"/>
-<rectangle x1="2.65" y1="-1.775" x2="3.9" y2="-1.475" layer="51"/>
-<rectangle x1="2.65" y1="-2.425" x2="3.9" y2="-2.125" layer="51"/>
-<rectangle x1="2.65" y1="-3.075" x2="3.9" y2="-2.775" layer="51"/>
-<rectangle x1="2.65" y1="-3.725" x2="3.9" y2="-3.425" layer="51"/>
-<wire x1="-4.826" y1="-4.318" x2="4.826" y2="-4.318" width="0.127" layer="39"/>
-<wire x1="4.826" y1="-4.318" x2="4.826" y2="4.318" width="0.127" layer="39"/>
-<wire x1="4.826" y1="4.318" x2="-4.826" y2="4.318" width="0.127" layer="39"/>
-<wire x1="-4.826" y1="4.318" x2="-4.826" y2="-4.318" width="0.127" layer="39"/>
-<text x="0" y="4.826" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-4.572" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-</package>
 <package name="OSCCC500X320X110" urn="urn:adsk.eagle:footprint:2939177/2" locally_modified="yes">
 <description>OSCILLATOR CORNERCONCAVE, 5 X 3.2 X 1.1 mm body
 &lt;p&gt;OSCILLATOR CORNERCONCAVE package with body size 5 X 3.2 X 1.1 mm&lt;/p&gt;</description>
@@ -2899,47 +2207,6 @@
 <gate name="G$1" symbol="CD74HC4067-SM96_16:1_MUX-DEMUX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SSOP-24">
-<connects>
-<connect gate="G$1" pin="!EN" pad="15"/>
-<connect gate="G$1" pin="C0" pad="9"/>
-<connect gate="G$1" pin="C1" pad="8"/>
-<connect gate="G$1" pin="C10" pad="21"/>
-<connect gate="G$1" pin="C11" pad="20"/>
-<connect gate="G$1" pin="C12" pad="19"/>
-<connect gate="G$1" pin="C13" pad="18"/>
-<connect gate="G$1" pin="C14" pad="17"/>
-<connect gate="G$1" pin="C15" pad="16"/>
-<connect gate="G$1" pin="C2" pad="7"/>
-<connect gate="G$1" pin="C3" pad="6"/>
-<connect gate="G$1" pin="C4" pad="5"/>
-<connect gate="G$1" pin="C5" pad="4"/>
-<connect gate="G$1" pin="C6" pad="3"/>
-<connect gate="G$1" pin="C7" pad="2"/>
-<connect gate="G$1" pin="C8" pad="23"/>
-<connect gate="G$1" pin="C9" pad="22"/>
-<connect gate="G$1" pin="GND" pad="12"/>
-<connect gate="G$1" pin="S0" pad="10"/>
-<connect gate="G$1" pin="S1" pad="11"/>
-<connect gate="G$1" pin="S2" pad="14"/>
-<connect gate="G$1" pin="S3" pad="13"/>
-<connect gate="G$1" pin="SIG" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="24"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=296-9226-1-ND" constant="no"/>
-<attribute name="DISTPN" value="296-9226-1-ND" constant="no"/>
-<attribute name="MFR" value="Texas Instruments" constant="no"/>
-<attribute name="MPN" value="CD74HC4067SM96" constant="no"/>
-<attribute name="TESTED" value="NO" constant="no"/>
-<attribute name="VALUE" value="CH16_MUX-DEMUX" constant="no"/>
-</technology>
-</technologies>
-</device>
 <device name="_SOP-24_16:1-MUX-DEMUX" package="SOP65P780X200-24">
 <connects>
 <connect gate="G$1" pin="!EN" pad="15"/>
@@ -2971,7 +2238,14 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:2900211/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=296-9226-1-ND" constant="no"/>
+<attribute name="DISTPN" value="296-9226-1-ND" constant="no"/>
+<attribute name="MFR" value="Texas Instruments" constant="no"/>
+<attribute name="MPN" value="CD74HC4067SM96" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3092,7 +2366,7 @@
 <attribute name="DATASHEET" value="https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
 <attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=568-11925-1-ND" constant="no"/>
-<attribute name="DISTPN" value="NXP USA Inc." constant="no"/>
+<attribute name="DISTPN" value="568-11925-1-ND" constant="no"/>
 <attribute name="MFR" value="NXP USA Inc." constant="no"/>
 <attribute name="MPN" value="PCA9685PW,118" constant="no"/>
 <attribute name="VALUE" value="PCA9685" constant="no"/>
@@ -3362,12 +2636,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3517CT-ND" constant="no"/>
-<attribute name="DISTPN" value="YAG3517CT-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" constant="no"/>
+<attribute name="DISTPN" value="YAG1281CT-ND" constant="no"/>
 <attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="AC0402JR-0710KL" constant="no"/>
+<attribute name="MPN" value="RC0402JR-0710KP" constant="no"/>
 <attribute name="VALUE" value="10K" constant="no"/>
 </technology>
 </technologies>
@@ -3449,12 +2723,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-1.00KLRCT-ND" constant="no"/>
-<attribute name="DISTPN" value="311-1.00KLRCT-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3525CT-ND" constant="no"/>
+<attribute name="DISTPN" value="YAG3525CT-ND" constant="no"/>
 <attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0402FR-071KL" constant="no"/>
+<attribute name="MPN" value="AC0402JR-071KL" constant="no"/>
 <attribute name="VALUE" value="1K" constant="no"/>
 </technology>
 </technologies>
@@ -3496,74 +2770,6 @@
 <attribute name="MFR" value="Yageo" constant="no"/>
 <attribute name="MPN" value="RC0805JR-071KL" constant="no"/>
 <attribute name="VALUE" value="1K" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2KΩ" prefix="R" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_PTH-0207/7_1/4W-5%" package="RESISTOR-PTH-0207/7">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2749854/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/Yageo%20LR_CFR_2013.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=2.0KQBK-ND" constant="no"/>
-<attribute name="DISTPN" value="2.0KQBK-ND" constant="no"/>
-<attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="CFR-25JB-52-2K" constant="no"/>
-<attribute name="VALUE" value="2K" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_SMD-0805_1/8W-5%" package="RESISTOR_SMD-805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2749855/3"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_7.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-2.0KARCT-ND" constant="no"/>
-<attribute name="DISTPN" value="311-2.0KARCT-ND" constant="no"/>
-<attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0805JR-072KL" constant="no"/>
-<attribute name="VALUE" value="2KΩ" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_SMD-0402_1/16W-5%" package="RESC1005X35_SMD-0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2899165/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-2.0KJRCT-ND" constant="no"/>
-<attribute name="DISTPN" value="311-2.0KJRCT-ND" constant="no"/>
-<attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0402JR-072KL" constant="no"/>
-<attribute name="VALUE" value="2K" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3621,12 +2827,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.samsungsem.com/kr/support/product-search/chip-resistor/RCS1005J472CS.jsp" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-4.7KJRCT-ND" constant="no"/>
-<attribute name="DISTPN" value="311-4.7KJRCT-ND" constant="no"/>
-<attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0402JR-074K7L" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1276-7028-1-ND" constant="no"/>
+<attribute name="DISTPN" value="1276-7028-1-ND" constant="no"/>
+<attribute name="MFR" value="Samsung Electro-Mechanics" constant="no"/>
+<attribute name="MPN" value="RCS1005J472CS" constant="no"/>
 <attribute name="VALUE" value="4.7K" constant="no"/>
 </technology>
 </technologies>
@@ -3664,12 +2870,12 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=311-100JRCT-ND" constant="no"/>
-<attribute name="DISTPN" value="311-100JRCT-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" constant="no"/>
+<attribute name="DISTPN" value="YAG3516CT-ND" constant="no"/>
 <attribute name="MFR" value="Yageo" constant="no"/>
-<attribute name="MPN" value="RC0402JR-07100RL" constant="no"/>
+<attribute name="MPN" value="AC0402JR-07100RL" constant="no"/>
 <attribute name="VALUE" value="100" constant="no"/>
 </technology>
 </technologies>
@@ -4152,27 +3358,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <gate name="G$1" symbol="6PINCONNECTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH-RA" package="FTDI_BASIC-6PIN-MALE-RA">
-<connects>
-<connect gate="G$1" pin="CTS" pad="CTS"/>
-<connect gate="G$1" pin="DTR" pad="DTR"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="RXI" pad="RXI"/>
-<connect gate="G$1" pin="TXO" pad="TXO"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/68015.pdf"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3327-ND" constant="no"/>
-<attribute name="DISTPN" value="609-3327-ND"/>
-<attribute name="MFR" value="Amphenol FCI"/>
-<attribute name="MPN" value="68016-406HLF"/>
-<attribute name="PRICE" value="0.33"/>
-</technology>
-</technologies>
-</device>
 <device name="_PTH_RA-MALE" package="FTDI_BASIC-6PIN-MALE-RA">
 <connects>
 <connect gate="G$1" pin="CTS" pad="CTS"/>
@@ -4187,11 +3372,17 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/DEV-09873_Web.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/68015.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1568-1104-ND" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR" value="https://www.digikey.com/products/en?keywords=609-3327-ND" constant="no"/>
+<attribute name="DISTPN" value="1568-1104-ND" constant="no"/>
 <attribute name="DISTPN_CONNECTOR" value="609-3327-ND" constant="no"/>
 <attribute name="DIST_CONNECTOR" value="Digikey" constant="no"/>
+<attribute name="MFR" value="SparkFun Electronics" constant="no"/>
 <attribute name="MFR_CONNECTOR" value="Amphenol FCI" constant="no"/>
+<attribute name="MPN" value="DEV-09873" constant="no"/>
 <attribute name="MPN_CONNECTOR" value="68016-406HLF" constant="no"/>
 <attribute name="VALUE" value="FTDI" constant="no"/>
 </technology>
@@ -4211,19 +3402,25 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://www.sullinscorp.com/drawings/77____C___S___N-OMIT,_M500,_STRAIGHT,_C10436.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/DEV-09873_Web.pdf" constant="no"/>
+<attribute name="DATASHEET_CONNECTOR" value="http://www.sullinscorp.com/drawings/77____C___S___N-OMIT,_M500,_STRAIGHT,_C10436.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=PEC06SAAN" constant="no"/>
-<attribute name="DISTPN" value="S1012E-06-ND" constant="no"/>
-<attribute name="MFR" value="Sullins Connector Solutions" constant="no"/>
-<attribute name="MPN" value="PEC06SAAN" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1568-1104-ND" constant="no"/>
+<attribute name="DISTLINK_CONNECTOR" value="https://www.digikey.com/products/en?keywords=PEC06SAAN" constant="no"/>
+<attribute name="DISTPN" value="1568-1104-ND" constant="no"/>
+<attribute name="DISTPN_CONNECTOR" value="S1012E-06-ND" constant="no"/>
+<attribute name="DIST_CONNECTOR" value="Digikey" constant="no"/>
+<attribute name="MFR" value="SparkFun Electronics" constant="no"/>
+<attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" constant="no"/>
+<attribute name="MPN" value="DEV-09873" constant="no"/>
+<attribute name="MPN_CONNECTOR" value="PEC06SAAN" constant="no"/>
 <attribute name="VALUE" value="FTDI" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
+<deviceset name="JUMPER_SMD_2-PAD_NO" prefix="JP">
 <description>Normally open jumper</description>
 <gates>
 <gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
@@ -6177,7 +5374,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" prefix="LIPO" uservalue="yes">
+<deviceset name="FLEX-SENSOR" prefix="LIPO" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="FSR" x="0" y="0"/>
 </gates>
@@ -6192,27 +5389,27 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/894010210_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/873690200_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/502128000_sd.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1027-1014-ND" constant="no"/>
+<attribute name="DIST" value="Sparkfun" constant="no"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM14854-ND" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM10118-ND" constant="no"/>
 <attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM4561CT-ND" constant="no"/>
-<attribute name="DISTPN" value="1027-1014-ND" constant="no"/>
+<attribute name="DISTPN" value="SEN-08606" constant="no"/>
 <attribute name="DISTPN_CONNECTOR1" value="WM14854-ND" constant="no"/>
 <attribute name="DISTPN_CONNECTOR2" value="WM10118-ND" constant="no"/>
 <attribute name="DISTPN_CRIMP" value="WM4561CT-ND" constant="no"/>
 <attribute name="DIST_CONNECTOR1" value="Digikey" constant="no"/>
 <attribute name="DIST_CONNECTOR2" value="Digikey" constant="no"/>
 <attribute name="DIST_CRIMP" value="Digikey" constant="no"/>
-<attribute name="MFR" value="Interlink Electronics" constant="no"/>
+<attribute name="MFR" value="Spectra Symbol" constant="no"/>
 <attribute name="MFR_CONNECTOR1" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CONNECTOR2" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CRIMP" value="Molex, LLC" constant="no"/>
-<attribute name="MPN" value="34-00004" constant="no"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" constant="no"/>
 <attribute name="MPN_CONNECTOR1" value="0894010210" constant="no"/>
 <attribute name="MPN_CONNECTOR2" value="0873690200" constant="no"/>
 <attribute name="MPN_CRIMP" value="50212-8000" constant="no"/>
@@ -6230,27 +5427,27 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/894000220_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/873690200_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/502128000_sd.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1027-1014-ND" constant="no"/>
+<attribute name="DIST" value="Sparkfun" constant="no"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM4340-ND" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM10118-ND" constant="no"/>
 <attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM4561CT-ND" constant="no"/>
-<attribute name="DISTPN" value="1027-1014-ND" constant="no"/>
+<attribute name="DISTPN" value="SEN-08606" constant="no"/>
 <attribute name="DISTPN_CONNECTOR1" value="WM4340-ND" constant="no"/>
 <attribute name="DISTPN_CONNECTOR2" value="WM10118-ND" constant="no"/>
 <attribute name="DISTPN_CRIMP" value="WM4561CT-ND" constant="no"/>
 <attribute name="DIST_CONNECTOR1" value="Digikey" constant="no"/>
 <attribute name="DIST_CONNECTOR2" value="Digikey" constant="no"/>
 <attribute name="DIST_CRIMP" value="Digikey" constant="no"/>
-<attribute name="MFR" value="Interlink Electronics" constant="no"/>
+<attribute name="MFR" value="Spectra Symbol" constant="no"/>
 <attribute name="MFR_CONNECTOR1" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CONNECTOR2" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CRIMP" value="Molex, LLC" constant="no"/>
-<attribute name="MPN" value="34-00004" constant="no"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" constant="no"/>
 <attribute name="MPN_CONNECTOR1" value="0894000220" constant="no"/>
 <attribute name="MPN_CONNECTOR2" value="0873690200" constant="no"/>
 <attribute name="MPN_CRIMP" value="50212-8000" constant="no"/>
@@ -6268,27 +5465,27 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1027-1014-ND" constant="no"/>
+<attribute name="DIST" value="Sparkfun" constant="no"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" constant="no"/>
 <attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" constant="no"/>
-<attribute name="DISTPN" value="1027-1014-ND" constant="no"/>
+<attribute name="DISTPN" value="SEN-08606" constant="no"/>
 <attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" constant="no"/>
 <attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" constant="no"/>
 <attribute name="DISTPN_CRIMP" value="WM1142CT-ND" constant="no"/>
 <attribute name="DIST_CONNECTOR1" value="Digikey" constant="no"/>
 <attribute name="DIST_CONNECTOR2" value="Digikey" constant="no"/>
 <attribute name="DIST_CRIMP" value="Digikey" constant="no"/>
-<attribute name="MFR" value="Interlink Electronics" constant="no"/>
+<attribute name="MFR" value="Spectra Symbol" constant="no"/>
 <attribute name="MFR_CONNECTOR1" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CONNECTOR2" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CRIMP" value="Molex, LLC" constant="no"/>
-<attribute name="MPN" value="34-00004" constant="no"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" constant="no"/>
 <attribute name="MPN_CONNECTOR1" value="0530470210" constant="no"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" constant="no"/>
 <attribute name="MPN_CRIMP" value="0500798000" constant="no"/>
@@ -6306,27 +5503,27 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" constant="no"/>
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR1" value="53048-0210" constant="no"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" constant="no"/>
 <attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1027-1014-ND" constant="no"/>
+<attribute name="DIST" value="Sparkfun" constant="no"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1742-ND" constant="no"/>
 <attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" constant="no"/>
 <attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" constant="no"/>
-<attribute name="DISTPN" value="1027-1014-ND" constant="no"/>
+<attribute name="DISTPN" value="SEN-08606" constant="no"/>
 <attribute name="DISTPN_CONNECTOR1" value="WM1742-ND" constant="no"/>
 <attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" constant="no"/>
 <attribute name="DISTPN_CRIMP" value="WM1142CT-ND" constant="no"/>
 <attribute name="DIST_CONNECTOR1" value="Digikey" constant="no"/>
 <attribute name="DIST_CONNECTOR2" value="Digikey" constant="no"/>
 <attribute name="DIST_CRIMP" value="Digikey" constant="no"/>
-<attribute name="MFR" value="Interlink Electronics" constant="no"/>
+<attribute name="MFR" value="Spectra Symbol" constant="no"/>
 <attribute name="MFR_CONNECTOR1" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CONNECTOR2" value="Molex, LLC" constant="no"/>
 <attribute name="MFR_CRIMP" value="Molex, LLC" constant="no"/>
-<attribute name="MPN" value="34-00004" constant="no"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" constant="no"/>
 <attribute name="MPN_CONNECTOR1" value="0530480210" constant="no"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" constant="no"/>
 <attribute name="MPN_CRIMP" value="0500798000" constant="no"/>
@@ -6761,7 +5958,15 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <package3dinstance package3d_urn="urn:adsk.eagle:package:2992818/3"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.st.com/content/ccc/resource/technical/document/datasheet/61/46/87/01/98/ed/44/c5/CD00000464.pdf/files/CD00000464.pdf/jcr:content/translations/en.CD00000464.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=497-12007-1-ND" constant="no"/>
+<attribute name="DISTPN" value="497-12007-1-ND" constant="no"/>
+<attribute name="MFR" value="STMicroelectronics" constant="no"/>
+<attribute name="MPN" value="LM358QT" constant="no"/>
+<attribute name="VALUE" value="LM358" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -6881,19 +6086,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R46" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="R30" library="PiB_resistors" deviceset="100Ω" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100"/>
 <part name="GND45" library="PiB_power_symbols" deviceset="GND" device=""/>
-<part name="FLEX-PINKY" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
+<part name="FLEX-PINKY" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
 <part name="C43" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R9" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-RING" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
+<part name="FLEX-RING" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
 <part name="C42" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R8" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-MIDDLE" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
+<part name="FLEX-MIDDLE" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
 <part name="C41" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R7" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-INDEX" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
+<part name="FLEX-INDEX" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
 <part name="C40" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R6" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-THUMB" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
+<part name="FLEX-THUMB" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530480210_RA-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973719/2" value="10K"/>
 <part name="C39" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="DEMUX1" library="PiB" deviceset="CD74HC4067-SM96_16:1_MUX-DEMUX" device="_SOP-24_16:1-MUX-DEMUX" package3d_urn="urn:adsk.eagle:package:2900211/2" value="CH16_MUX-DEMUX"/>
 <part name="C37" library="PiB_capacitors" deviceset="10UF" device="_CER_SMD-0402_6.3V-20%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V"/>
@@ -6911,7 +6116,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND115" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="SUPPLY82" library="PiB_power_symbols" deviceset="VCC" device=""/>
 <part name="C38" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
-<part name="MCU" library="PiB_ic_microcontrollers" deviceset="ATMEGA128RFA1" device="_VFQFN-64_NO-EXPOSED-PAD" package3d_urn="urn:adsk.eagle:package:2900263/1" value="ATMEGA128RFA1_VFQFN-64_NO-EXPOSED-PAD"/>
+<part name="MCU" library="PiB_ic_microcontrollers" deviceset="ATMEGA128RFA1" device="_VFQFN-64_EXPOSED-PAD" package3d_urn="urn:adsk.eagle:package:2900263/1" value="ATMEGA128RFA1"/>
 <part name="C27" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="C24" library="PiB_capacitors" deviceset="1UF" device="_CER_SMD-0402_25V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V"/>
 <part name="C25" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
@@ -6961,7 +6166,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="R48" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
 <part name="LED2" library="PiB_leds" deviceset="LED" device="_SMD-0402_DISCRETE_GREEN" package3d_urn="urn:adsk.eagle:package:2899303/3" value="GREEN"/>
 <part name="LED3" library="PiB_leds" deviceset="LED" device="_SMD-0402_DISCRETE_RED" package3d_urn="urn:adsk.eagle:package:2899303/3" value="RED"/>
-<part name="R5" library="PiB_resistors" deviceset="2KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="2K"/>
+<part name="R5" library="PiB_resistors" deviceset="1KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="1K"/>
 <part name="R4" library="PiB_resistors" deviceset="1KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="1K"/>
 <part name="GND141" library="PiB_power_symbols" deviceset="GND" device=""/>
 <part name="GND142" library="PiB_power_symbols" deviceset="GND" device=""/>
@@ -6990,19 +6195,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C7" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="C3" library="PiB_capacitors" deviceset="100UF" device="_CER_SMD-1210_16V-20%" package3d_urn="urn:adsk.eagle:package:2933640/1" value="100uF/10V"/>
 <part name="R15" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-PINKY2" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FLEX-PINKY2" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="C48" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R14" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-RING2" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FLEX-RING2" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="C47" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R13" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-MIDDLE2" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FLEX-MIDDLE2" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="C46" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R12" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-INDEX2" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FLEX-INDEX2" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="C45" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="R11" library="PiB_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
-<part name="FLEX-THUMB2" library="PiB_sensors" deviceset="FSR_FORCE-SENSATIVE-RESISTOR_PRESS-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FLEX-THUMB2" library="PiB_sensors" deviceset="FLEX-SENSOR" device="_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="C44" library="PiB_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="SUPPLY2" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY18" library="PiB_power_symbols" deviceset="AGND" device=""/>
@@ -7128,16 +6333,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY116" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY120" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY121" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
-<part name="JP2" library="PiB_connectors" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
+<part name="JP2" library="PiB_connectors" deviceset="JUMPER_SMD_2-PAD_NO" device="_SILK"/>
 <part name="SUPPLY13" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY15" library="PiB_power_symbols" deviceset="VBAT" device=""/>
-<part name="OPAMP1" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3"/>
+<part name="OPAMP1" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3" value="LM358"/>
 <part name="SUPPLY32" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY105" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
-<part name="OPAMP2" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3"/>
+<part name="OPAMP2" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3" value="LM358"/>
 <part name="SUPPLY34" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY44" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
-<part name="OPAMP3" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3"/>
+<part name="OPAMP3" library="PiB_op_amps" deviceset="LM358" device="_DFN-EP" package3d_urn="urn:adsk.eagle:package:2992818/3" value="LM358"/>
 <part name="SUPPLY122" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY123" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY83" library="PiB_power_symbols" deviceset="VCC" device=""/>
