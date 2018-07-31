@@ -11423,10 +11423,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="49.5425" y1="31.45" x2="48.85" y2="31.45" width="0.254" layer="1"/>
 <wire x1="48.85" y1="31.45" x2="48.6" y2="31.7" width="0.254" layer="1"/>
 <wire x1="19.575" y1="12.425" x2="19.575" y2="10.6" width="0.508" layer="1"/>
-<via x="15.7" y="5.7" extent="1-16" drill="0.254"/>
-<via x="14.9" y="5.7" extent="1-16" drill="0.254"/>
-<via x="13.8" y="6.7" extent="1-16" drill="0.254"/>
-<via x="13.8" y="5.8" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="3.3V">
 <contactref element="VIBE-PALM" pad="1"/>
