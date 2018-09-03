@@ -1,23 +1,39 @@
 #include "Adafruit_PWMServoDriver.h" //download library from adafruit website
+#include "CD74HC4067.h" //include this library from github
 
-#define S1 A0
-#define S2 A1
-#define S3 A2
-#define S4 A3
-#define S5 A4
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
-#define L1 5
-#define L2 6
-#define L3 9
-#define L4 10
-#define L5 11
+//defined vib motor values
+#define VIBMIN 0
+#define VIBMAX 4095
+#define NUM_VIBE 5
+
+
+// PCB Demux pins
+#define _s0 22  // 2
+#define _s1 23  // 6
+#define _s2 25  // 7
+#define _s3 24 // 10
+// signal Demux pin
+#define sig_pin 0
+
+CD74HC4067 demux(_s0, _s1, _s2, _s3, sig_pin);
+
+#define NUM_FLEX 5
+//int flex[NUM_FLEX] = {0,};
+
+//#define L1 5
+//#define L2 6
+//#define L3 9
+//#define L4 10
+//#define L5 11
 //#define L6 2
 //#define L7 3
 //#define L8 4
 //#define L9 7
 //#define L10 8
 
-#define led 3
+//#define led 3
 
 //defined flex sensor values
 #define FLEXMIN 0
@@ -26,8 +42,6 @@
 //defined servo values
 #define SERVOMIN  130
 #define SERVOMAX  290 // Need another define for wrist servo
-
-Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 struct SensorPacket {
   int s1 = 0;
@@ -66,7 +80,7 @@ void setup() {
   pwm.begin();
   pwm.setPWMFreq(40);
 
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < 5; i++) {
     pwm.setPWM(i, 0, 0); 
   }
 
@@ -78,7 +92,7 @@ void loop() {
   if (Serial.available() > 0) {
       numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
       sendFingers();
-      analogWrite(led, ledVal++);
+//      analogWrite(led, ledVal++);
       updateActuators();
   }
 
@@ -92,26 +106,41 @@ void sendFingers() {
 }
 
 void updateSensors() {
-  delay(5);
-  outpkt.s1 = analogRead(S1);
-  delay(5);
-  outpkt.s1 = analogRead(S1);
-  delay(5);
-  outpkt.s2 = analogRead(S2);
-  delay(5);
-  outpkt.s2 = analogRead(S2);
-  delay(5);
-  outpkt.s3 = analogRead(S3);
-  delay(5);
-  outpkt.s3 = analogRead(S3);
-  delay(5);
-  outpkt.s4 = analogRead(S4);
-  delay(5);
-  outpkt.s4 = analogRead(S4);
-  delay(5);
-  outpkt.s5 = analogRead(S5);
-  delay(5);
-  outpkt.s5 = analogRead(S5);
+//  delay(5);
+//  outpkt.s1 = analogRead(S1);
+//  delay(5);
+//  outpkt.s1 = analogRead(S1);
+//  delay(5);
+//  outpkt.s2 = analogRead(S2);
+//  delay(5);
+//  outpkt.s2 = analogRead(S2);
+//  delay(5);
+//  outpkt.s3 = analogRead(S3);
+//  delay(5);
+//  outpkt.s3 = analogRead(S3);
+//  delay(5);
+//  outpkt.s4 = analogRead(S4);
+//  delay(5);
+//  outpkt.s4 = analogRead(S4);
+//  delay(5);
+//  outpkt.s5 = analogRead(S5);
+//  delay(5);
+//  outpkt.s5 = analogRead(S5);
+
+
+  // Op amp (row "2") flex channels (vert row)
+  outpkt.s1 = demux.read_channel(2);
+  outpkt.s2 = demux.read_channel(1);
+  outpkt.s3 = demux.read_channel(0);
+  outpkt.s4 = demux.read_channel(9);
+  outpkt.s5 = demux.read_channel(8);
+
+  // Non-op amp (row "1") flex channels (horiz row)
+//  outpkt.s1 = demux.read_channel(7);
+//  outpkt.s2 = demux.read_channel(6);
+//  outpkt.s3 = demux.read_channel(5);
+//  outpkt.s4 = demux.read_channel(4);
+//  outpkt.s5 = demux.read_channel(3);
 }
 
 void updateActuators() {
@@ -131,12 +160,19 @@ void updateActuators() {
 //  pwm.setPWM(8, 0, map(inpkt.pwm8,FLEXMIN,FLEXMAX,0, 4095));
 //  pwm.setPWM(9, 0, map(inpkt.pwm9,FLEXMIN,FLEXMAX,0, 4095));
 //  pwm.setPWM(10, 0, map(inpkt.pwm10,FLEXMIN,FLEXMAX,0, 4095));
+
+  // Writes to the vibe motors [0-4095]
+  pwm.setPWM(0,0,inpkt.pwm1);
+  pwm.setPWM(1,0,inpkt.pwm2);
+  pwm.setPWM(2,0,inpkt.pwm3);
+  pwm.setPWM(3,0,inpkt.pwm4);
+  pwm.setPWM(4,0,inpkt.pwm5);
   
-  analogWrite(L1, inpkt.pwm1);
-  analogWrite(L2, inpkt.pwm2);
-  analogWrite(L3, inpkt.pwm3);
-  analogWrite(L4, inpkt.pwm4);
-  analogWrite(L5, inpkt.pwm5);
+//  analogWrite(L1, inpkt.pwm1);
+//  analogWrite(L2, inpkt.pwm2);
+//  analogWrite(L3, inpkt.pwm3);
+//  analogWrite(L4, inpkt.pwm4);
+//  analogWrite(L5, inpkt.pwm5);
 //  analogWrite(L5, inpkt.pwm11);
 //  digitalWrite(L6, thresholdPWM(inpkt.pwm6));
 //  digitalWrite(L7, thresholdPWM(inpkt.pwm7));
