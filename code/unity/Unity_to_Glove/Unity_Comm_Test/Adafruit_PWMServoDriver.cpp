@@ -57,7 +57,7 @@ Adafruit_PWMServoDriver::Adafruit_PWMServoDriver(TwoWire *i2c, uint8_t addr) {
 /**************************************************************************/
 void Adafruit_PWMServoDriver::begin(void) {
   _i2c->begin();
-//  reset();
+  reset();
   // set a default frequency
 //  setPWMFreq(1000);
 }
@@ -192,4 +192,3 @@ void Adafruit_PWMServoDriver::write8(uint8_t addr, uint8_t d) {
   _i2c->write(d);
   _i2c->endTransmission();
 }
-
