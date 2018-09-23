@@ -17,6 +17,12 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 // signal Demux pin
 #define sig_pin 0
 
+#define thumbVibe 4
+#define indexVibe 3
+#define middleVibe 2
+#define ringVibe 1
+#define pinkyVibe 0
+
 CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 
 #define NUM_FLEX 10
@@ -81,18 +87,17 @@ void setup() {
 
 void loop() {
 //  // put your main code here, to run repeatedly:
-//  if (Serial.available() > 0) {
-//      numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
-//      sendFingers();
-////      analogWrite(led, ledVal++);
-//      updateActuators();
-//  }
-//
-//  updateSensors();
+  if (Serial.available() > 0) {
+      numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+      sendFingers();
+      updateActuators();
+  }
 
-read_flex_sensors();
-//
-  print_flex_sensors();
+  updateSensors();
+
+//read_flex_sensors();
+////
+//  print_flex_sensors();
 }
 
 void sendFingers() {
@@ -110,14 +115,6 @@ void updateSensors() {
   outpkt.flex4 = demux.read_channel(9);
   outpkt.flex5 = demux.read_channel(8);
 
-//  Serial.print("(");
-//  Serial.print(outpkt.flex1); Serial.print(",");
-//  Serial.print(outpkt.flex2); Serial.print(",");
-//  Serial.print(outpkt.flex3); Serial.print(",");
-//  Serial.print(outpkt.flex4); Serial.print(",");
-//  Serial.print(outpkt.flex5); 
-//  Serial.println(")");
-
   // Non-op amp (row "1") flex channels (horiz row)
 //  outpkt.s1 = demux.read_channel(7);
 //  outpkt.s2 = demux.read_channel(6);
@@ -128,12 +125,11 @@ void updateSensors() {
 
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
-  pwm.setPWM(0,0,inpkt.pwm1);
-  pwm.setPWM(1,0,inpkt.pwm2);
-  pwm.setPWM(2,0,inpkt.pwm3);
-  pwm.setPWM(3,0,inpkt.pwm4);
-  pwm.setPWM(4,0,inpkt.pwm5);
-  
+  pwm.setPWM(thumbVibe,0,inpkt.pwm1);
+  pwm.setPWM(indexVibe,0,inpkt.pwm2);
+  pwm.setPWM(middleVibe,0,inpkt.pwm3);
+  pwm.setPWM(ringVibe,0,inpkt.pwm4);
+  pwm.setPWM(pinkyVibe,0,inpkt.pwm5);
 }
 
 
@@ -151,161 +147,4 @@ void print_flex_sensors() {
 void read_flex_sensors() {  
   for (int i = 0; i < NUM_FLEX; i++)
     flex[i] = demux.read_channel(i);
-    
-//  byte DELAY = 5;
-////  digitalWrite(s1,0);
-////  digitalWrite(s1,0);
-////  digitalWrite(s2,0);
-////  digitalWrite(s3,0);
-//  digitalWrite(s3,0);
-//  digitalWrite(s2,0);
-//  digitalWrite(s1,0);
-//  digitalWrite(s0,0);
-//  flex[0] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,0);
-////  digitalWrite(s1,0);
-////  digitalWrite(s0,1);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,1);
-//  flex[1] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,0);
-////  digitalWrite(s1,1);
-////  digitalWrite(s0,0);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,0);
-//  flex[2] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,0);
-////  digitalWrite(s1,1);
-////  digitalWrite(s0,1);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,1);
-//  flex[3] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,1);
-////  digitalWrite(s1,0);
-////  digitalWrite(s0,0);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,0);
-//  flex[4] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,1);
-////  digitalWrite(s1,0);
-////  digitalWrite(s0,1);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,1);
-//  flex[5] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,1);
-////  digitalWrite(s1,1);
-////  digitalWrite(s0,0);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,0);
-//  flex[6] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,0);
-////  digitalWrite(s2,1);
-////  digitalWrite(s1,1);
-////  digitalWrite(s0,1);
-//  digitalWrite(s0,0);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,1);
-//  flex[7] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-//
-////  digitalWrite(s3,1);
-////  digitalWrite(s2,0);
-////  digitalWrite(s1,0);
-////  digitalWrite(s0,0);
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,0);
-//  flex[8] = analogRead(sig_pin); 
-//
-//   delay(DELAY);
-//
-////  digitalWrite(s3,1);
-////  digitalWrite(s2,0);
-////  digitalWrite(s1,0);
-////  digitalWrite(s0,1);
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,1);
-//  flex[9] = analogRead(sig_pin);
-//
-//  delay(DELAY);
-
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,0);
-//  flex[10] = analogWrite(sig_pin);
-//
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,0);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,1);
-//  flex[11] = analogWrite(sig_pin);
-//
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,0);
-//  flex[12] = analogWrite(sig_pin);
-//
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,0);
-//  digitalWrite(s3,1);
-//  flex[13] = analogWrite(sig_pin);
-//
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,0);
-//  flex[14] = analogWrite(sig_pin);
-//
-//  digitalWrite(s0,1);
-//  digitalWrite(s1,1);
-//  digitalWrite(s2,1);
-//  digitalWrite(s3,1);
-//  flex[15] = analogWrite(sig_pin);
 }
