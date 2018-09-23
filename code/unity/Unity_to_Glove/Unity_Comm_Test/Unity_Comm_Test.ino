@@ -68,11 +68,11 @@ void setup() {
 //  Serial.println("ON");
 
   pwm.begin();
-//  pwm.setPWMFreq(40);
-//
-//  for (int i = 0; i < 5; i++) {
-//    pwm.setPin(i, 0); 
-//  }
+  pwm.setPWMFreq(40);
+
+  for (int i = 0; i < 5; i++) {
+    pwm.setPin(i, 0); 
+  }
 
 //  analogReference(EXTERNAL);
 
@@ -81,13 +81,13 @@ void setup() {
 
 void loop() {
 //  // put your main code here, to run repeatedly:
-  if (Serial.available() > 0) {
-      numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
-      sendFingers();
-//      analogWrite(led, ledVal++);
-      updateActuators();
-  }
-
+//  if (Serial.available() > 0) {
+//      numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+//      sendFingers();
+////      analogWrite(led, ledVal++);
+//      updateActuators();
+//  }
+//
 //  updateSensors();
 
 read_flex_sensors();
