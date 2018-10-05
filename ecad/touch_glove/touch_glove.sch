@@ -1302,6 +1302,12 @@
 <pin name="VBAT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="0.8128" layer="96" font="vector" ratio="10" align="bottom-center">VBAT</text>
 </symbol>
+<symbol name="A1.8V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="A1.8V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.27" layer="96" font="vector" ratio="10" align="bottom-center">A1.8V</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AVCC" prefix="SUPPLY">
@@ -1419,6 +1425,18 @@
 <deviceset name="VBAT" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="VBAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A1.8V" prefix="SUPPLY">
+<gates>
+<gate name="G$1" symbol="A1.8V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -6373,6 +6391,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY122" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="SUPPLY123" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY83" library="PiB_power_symbols" deviceset="VCC" device=""/>
+<part name="SUPPLY124" library="PiB_power_symbols" deviceset="A1.8V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6459,7 +6478,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="525.78" y1="0" x2="0" y2="0" width="0.1524" layer="97" style="dashdot"/>
 <text x="365.76" y="96.52" size="1.27" layer="97" font="vector" ratio="10">NC</text>
 <text x="246.38" y="104.14" size="1.27" layer="97" font="vector" ratio="10">NC</text>
-<text x="241.3" y="210.82" size="2.54" layer="97" font="vector" ratio="10">NEED 1.8V REGULATOR</text>
 <wire x1="287.02" y1="78.74" x2="287.02" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="121.92" x2="287.02" y2="121.92" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="330.2" y1="78.74" x2="287.02" y2="78.74" width="0.1524" layer="97" style="shortdash"/>
@@ -6826,6 +6844,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="SUPPLY122" gate="G$1" x="546.1" y="187.96"/>
 <instance part="SUPPLY123" gate="G$1" x="546.1" y="223.52"/>
 <instance part="SUPPLY83" gate="VCC" x="299.72" y="449.58"/>
+<instance part="SUPPLY124" gate="G$1" x="279.4" y="190.5"/>
 </instances>
 <busses>
 </busses>
@@ -8796,21 +8815,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="264.16" y1="241.3" x2="261.62" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$33" class="3">
-<segment>
-<wire x1="287.02" y1="187.96" x2="279.4" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="187.96" x2="274.32" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="185.42" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="C14" gate="G$1" pin="1"/>
-<wire x1="279.4" y1="185.42" x2="279.4" y2="187.96" width="0.1524" layer="91"/>
-<junction x="279.4" y="187.96"/>
-<pinref part="VREG-ANALOG" gate="G$1" pin="VO"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="287.02" y1="190.5" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
-<junction x="287.02" y="187.96"/>
-</segment>
-</net>
 <net name="VSENSOR" class="0">
 <segment>
 <pinref part="SUPPLY118" gate="G$1" pin="VSENSOR"/>
@@ -9189,6 +9193,23 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="490.22" y1="314.96" x2="490.22" y2="330.2" width="0.1524" layer="91"/>
 <wire x1="528.32" y1="335.28" x2="490.22" y2="335.28" width="0.1524" layer="91"/>
 <wire x1="490.22" y1="335.28" x2="490.22" y2="330.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A1.8V" class="0">
+<segment>
+<wire x1="287.02" y1="187.96" x2="279.4" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="187.96" x2="274.32" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="185.42" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="279.4" y1="185.42" x2="279.4" y2="187.96" width="0.1524" layer="91"/>
+<junction x="279.4" y="187.96"/>
+<pinref part="VREG-ANALOG" gate="G$1" pin="VO"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="287.02" y1="190.5" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
+<junction x="287.02" y="187.96"/>
+<pinref part="SUPPLY124" gate="G$1" pin="A1.8V"/>
+<wire x1="279.4" y1="190.5" x2="279.4" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
