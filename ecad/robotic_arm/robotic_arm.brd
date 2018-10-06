@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -202,7 +202,7 @@
 <text x="-5.896" y="4.024" size="1.27" layer="21" font="vector" ratio="20" rot="R90">Transmission of Touch VR
 Robotic Arm     Rev 2</text>
 <text x="-0.372" y="4.024" size="0.8128" layer="21" font="vector" ratio="20" rot="R90">Designed by: MrSwirlyEyes</text>
-<text x="-9.896" y="4.024" size="1.27" layer="22" font="vector" ratio="20" rot="MR90">Transmission of Touch VR
+<text x="-10.896" y="4.024" size="1.27" layer="22" font="vector" ratio="20" rot="MR90">Transmission of Touch VR
 Robotic Arm     Rev 1</text>
 <text x="-4.42" y="4.024" size="0.8128" layer="22" font="vector" ratio="20" rot="MR90">Designed by: MrSwirlyEyes</text>
 <circle x="58.9" y="58.9" radius="2" width="0" layer="29"/>
@@ -1426,7 +1426,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="31.6" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="31.6" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="31.6" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="31.6" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.6" y="56.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="31.6" y="57.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C4" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="37.4" y="56.7" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="37.4" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1435,7 +1436,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="37.4" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="37.4" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="37.4" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="37.4" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="37.4" y="56.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="37.4" y="57.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C5" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="43.2" y="56.7" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="43.2" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1444,7 +1446,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="43.2" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="43.2" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="43.2" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="43.2" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.2" y="56.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="43.2" y="57.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C6" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="49" y="56.7" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="49" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1453,7 +1456,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="49" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="49" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="49" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="49" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="49" y="56.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="49" y="57.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C10" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="23.5" y="6.6" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="38.74" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1462,7 +1466,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="38.74" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="38.74" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="38.74" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="23.5" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="23.5" y="5.965" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="23.5" y="7.235" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C12" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="31.7" y="6.6" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="31.7" y="-21.34" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1471,7 +1476,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="31.7" y="-21.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="31.7" y="-21.34" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="31.7" y="-21.34" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="31.7" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.7" y="5.965" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="31.7" y="7.235" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C14" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="39.9" y="6.6" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="47.52" y="12.95" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1480,7 +1486,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="47.52" y="12.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="47.52" y="12.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="47.52" y="12.95" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="39.9" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="39.9" y="5.965" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="39.9" y="7.235" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C16" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="48.1" y="6.6" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="63.34" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1489,7 +1496,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="63.34" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="63.34" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="63.34" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="0.1uF/50V" x="48.1" y="6.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="48.1" y="5.965" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="48.1" y="7.235" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C7" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="54.8" y="56.7" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="54.8" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1498,6 +1506,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="54.8" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="54.8" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="54.8" y="56.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="54.8" y="56.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="54.8" y="57.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="DEMUX1" library="PiB" package="SOP65P780X200-24" package3d_urn="urn:adsk.eagle:package:2900211/2" value="CH16_MUX-DEMUX" x="23.4" y="54.7" rot="R90">
 <attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/cd74hc4067.pdf" x="23.4" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1506,6 +1516,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="296-9226-1-ND" x="23.4" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Texas Instruments" x="23.4" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CD74HC4067SM96" x="23.4" y="54.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="18.955" y="54.7" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="27.845" y="54.7" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C18" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="16.9" y="58.7" rot="R90">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="-104.512" y="-36.55" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1514,6 +1526,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="490-13233-1-ND" x="-104.512" y="-36.55" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="-104.512" y="-36.55" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GRM155C80J106ME11D" x="-104.512" y="-36.55" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="16.265" y="58.7" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="17.535" y="58.7" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="PWM_DRIVER" library="PiB" package="SOP65P650X110-28" package3d_urn="urn:adsk.eagle:package:2900279/2" value="PCA9685" x="14.5" y="5.1">
 <attribute name="DATASHEET" value="https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" x="-54.588" y="95.27" size="1.778" layer="27" display="off"/>
@@ -1522,6 +1536,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="568-11925-1-ND" x="-54.588" y="95.27" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="NXP USA Inc." x="-54.588" y="95.27" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="PCA9685PW,118" x="-54.588" y="95.27" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14.5" y="10.18" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="14.5" y="0.02" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C19" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="17" y="10.9" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="149.588" y="-99.082" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1530,6 +1546,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="149.588" y="-99.082" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="149.588" y="-99.082" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="149.588" y="-99.082" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17" y="10.265" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="17" y="11.535" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R16" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="33.9" y="51.4" rot="R90">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="33.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1538,7 +1556,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="36.948" y="-121.574" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="36.948" y="-121.574" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="36.948" y="-121.574" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="10K" x="33.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="33.265" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="34.535" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="R17" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="19.63" y="27.344">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="-160.964" y="24.296" size="1.778" layer="27" display="off"/>
@@ -1547,7 +1566,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="-160.964" y="24.296" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="-160.964" y="24.296" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="-160.964" y="24.296" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="19.63" y="27.344" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.63" y="27.979" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="19.63" y="26.709" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R18" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="19.63" y="26.058">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="-168.584" y="23.01" size="1.778" layer="27" display="off"/>
@@ -1556,7 +1576,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="-168.584" y="23.01" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="-168.584" y="23.01" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="-168.584" y="23.01" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="19.63" y="26.058" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.63" y="26.693" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="19.63" y="25.423" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C25" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="17" y="12.3" rot="R180">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="238.488" y="25.508" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1565,6 +1586,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="490-13233-1-ND" x="238.488" y="25.508" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="238.488" y="25.508" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="GRM155C80J106ME11D" x="238.488" y="25.508" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17" y="11.665" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="17" y="12.935" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C26" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="18.3" y="58.7" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="36.588" y="-98.526" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1573,6 +1596,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="36.588" y="-98.526" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="36.588" y="-98.526" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="36.588" y="-98.526" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="17.665" y="58.7" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="18.935" y="58.7" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C47" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="32.5" y="51.4" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-98.564" y="462.372" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1581,6 +1606,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-98.564" y="462.372" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-98.564" y="462.372" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-98.564" y="462.372" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="33.135" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="31.865" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="R39" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="38.4" y="51.4" rot="R90">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="38.4" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1589,7 +1616,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="149.144" y="-304.708" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="149.144" y="-304.708" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="149.144" y="-304.708" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="10K" x="38.4" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="37.765" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="39.035" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C48" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="37" y="51.4" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-112.86" y="476.088" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1598,6 +1626,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-112.86" y="476.088" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-112.86" y="476.088" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-112.86" y="476.088" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.635" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.365" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="R40" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="42.9" y="51.4" rot="R90">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="42.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1606,7 +1636,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="172.44" y="-316.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="172.44" y="-316.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="172.44" y="-316.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="10K" x="42.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="42.265" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="43.535" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C49" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="41.5" y="51.4" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-127.156" y="489.804" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1615,6 +1646,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-127.156" y="489.804" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-127.156" y="489.804" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-127.156" y="489.804" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="42.135" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="40.865" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="R41" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="47.4" y="51.4" rot="R90">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="47.4" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1623,7 +1656,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="195.736" y="-329.092" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="195.736" y="-329.092" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="195.736" y="-329.092" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="10K" x="47.4" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="46.765" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="48.035" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C50" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="46" y="51.4" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-141.452" y="503.52" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1632,6 +1666,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-141.452" y="503.52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-141.452" y="503.52" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-141.452" y="503.52" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="46.635" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="45.365" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="R42" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="51.9" y="51.4" rot="R90">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="51.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1640,7 +1676,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="219.032" y="-341.284" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="219.032" y="-341.284" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="219.032" y="-341.284" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="10K" x="51.9" y="51.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="51.265" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="52.535" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C51" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="50.5" y="51.4" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-155.748" y="517.236" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1649,6 +1686,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-155.748" y="517.236" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-155.748" y="517.236" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-155.748" y="517.236" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="51.135" y="51.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="49.865" y="51.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="MCU" library="PiB_ic_microcontrollers" package="QFN50P900X900X90-64" package3d_urn="urn:adsk.eagle:package:2900263/1" value="ATMEGA128RFA1" x="19.9" y="36.9">
 <attribute name="DATASHEET" value="http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en590262" x="19.9" y="36.9" size="1.778" layer="27" display="off"/>
@@ -1657,7 +1696,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND" x="19.9" y="36.9" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Microchip Technology" x="19.9" y="36.9" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZU" x="19.9" y="36.9" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="ATMEGA128RFA1" x="19.9" y="36.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.9" y="42.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="19.9" y="31.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C52" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="19.2" y="29.6" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-187.048" y="518.042" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1666,6 +1706,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-187.048" y="518.042" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-187.048" y="518.042" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-187.048" y="518.042" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="19.835" y="29.6" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="18.565" y="29.6" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C53" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="27.2" y="32.2">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="27.2" y="32.2" size="1.778" layer="27" display="off"/>
@@ -1674,7 +1716,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="27.2" y="32.2" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="27.2" y="32.2" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="27.2" y="32.2" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="27.2" y="32.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.2" y="32.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="27.2" y="31.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C54" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="27.2" y="33.6">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-357.864" y="-167.568" size="1.778" layer="27" display="off"/>
@@ -1683,6 +1726,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="-357.864" y="-167.568" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-357.864" y="-167.568" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="-357.864" y="-167.568" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.2" y="34.235" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="27.2" y="32.965" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C55" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="27.158" y="38.658">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="27.158" y="38.658" size="1.778" layer="27" display="off"/>
@@ -1691,7 +1736,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="27.158" y="38.658" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="27.158" y="38.658" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="27.158" y="38.658" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="27.158" y="38.658" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.158" y="39.293" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="27.158" y="38.023" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C57" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="16.2" y="44.2" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="16.2" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1700,7 +1746,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="16.2" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="16.2" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="16.2" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="16.2" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="15.565" y="44.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="16.835" y="44.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C58" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="20.6" y="29.6" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="20.6" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1709,7 +1756,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="20.6" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="20.6" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="20.6" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="20.6" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.235" y="29.6" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="19.965" y="29.6" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="Y1" library="PiB_crystals_oscillators_resonators" package="OSCCC500X320X110_CRYSTAL" package3d_urn="urn:adsk.eagle:package:2939176/2" value="16 MHz" x="19.9" y="45.2">
 <attribute name="DATASHEET" value="https://abracon.com/Resonators/abm3b.pdf" x="-430.442" y="-172.478" size="1.778" layer="27" display="off"/>
@@ -1718,6 +1766,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="535-9122-1-ND" x="-430.442" y="-172.478" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Abracon LLC" x="-430.442" y="-172.478" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ABM3B-16.000MHZ-B2-T" x="-430.442" y="-172.478" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.9" y="47.232" size="0.5" layer="25" font="vector" ratio="10" rot="SR0" align="bottom-center"/>
+<attribute name="VALUE" x="19.9" y="45.2" size="0.5" layer="21" font="vector" ratio="10" rot="SR0" align="center"/>
 </element>
 <element name="C59" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="12pF/100V" x="21.3" y="48" rot="R180">
 <attribute name="DATASHEET" value="http://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" x="525.236" y="266.948" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1726,6 +1776,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-5001-1-ND" x="525.236" y="266.948" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="525.236" y="266.948" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HMK105CG120JV-F" x="525.236" y="266.948" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="21.3" y="47.365" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="21.3" y="48.635" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C60" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="12pF/100V" x="18.5" y="48">
 <attribute name="DATASHEET" value="http://www.yuden.co.jp/productdata/catalog/mlcc06_e.pdf" x="-495.85" y="-170.948" size="1.778" layer="27" display="off"/>
@@ -1734,6 +1786,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-5001-1-ND" x="-495.85" y="-170.948" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="-495.85" y="-170.948" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="HMK105CG120JV-F" x="-495.85" y="-170.948" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="18.5" y="48.635" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="18.5" y="47.365" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="B1" library="PiB_radio_frequency" package="RESCAXE65P200X125X95-6" package3d_urn="urn:adsk.eagle:package:2933573/1" value="50/100" x="12.4" y="36.9" rot="R90">
 <attribute name="DATASHEET" value="http://katalog.we-online.de/pbs/datasheet/748421245.pdf" x="236.682" y="-431.476" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1742,6 +1796,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="732-2230-6-ND" x="236.682" y="-431.476" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Wurth Electronics Inc." x="236.682" y="-431.476" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="748421245" x="236.682" y="-431.476" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="11" y="36.9" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.8" y="36.9" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C61" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V" x="12.824" y="34.27" rot="R270">
 <attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=HMK105CG220JV-F&amp;fileName=HMK105CG220JV-F_SS&amp;mode=specSheetDownload" x="-211.712" y="559.034" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1750,6 +1806,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-5004-1-ND" x="-211.712" y="559.034" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="-211.712" y="559.034" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="HMK105CG220JV-F" x="-211.712" y="559.034" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.459" y="34.27" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="12.189" y="34.27" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C62" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V" x="11.438" y="34.27" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/C1005C0G1HR75C050BA.pdf" x="-213.098" y="540.746" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1758,6 +1816,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-4853-1-ND" x="-213.098" y="540.746" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-213.098" y="540.746" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005C0G1HR75C050BA" x="-213.098" y="540.746" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="12.073" y="34.27" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="10.803" y="34.27" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="A6" library="PiB_radio_frequency" package="ANTC6522X100" package3d_urn="urn:adsk.eagle:package:2933495/1" value="2.45GHz" x="7.1" y="36.9" rot="R180">
 <attribute name="DATASHEET" value="https://linxtechnologies.com/wp/wp-content/uploads/ant-fff-chp-x.pdf" x="514.08399375" y="293.693996875" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1766,7 +1826,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="ANT-2.45-CHPCT-ND" x="514.08399375" y="293.693996875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Linx Technologies Inc." x="514.08399375" y="293.693996875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="ANT-2.45-CHP-T" x="514.08399375" y="293.693996875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="2.45GHz" x="7.1" y="36.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="7.1" y="35.249" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="7.1" y="38.551" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R43" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="15.5" y="29.6" rot="R270">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="15.5" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1775,7 +1836,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="-191.256" y="496.706" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Yageo" x="-191.256" y="496.706" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="-191.256" y="496.706" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="10K" x="15.5" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="16.135" y="29.6" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="14.865" y="29.6" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C63" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="23.6" y="44.2" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="245.596" y="-396.236" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1784,6 +1846,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="245.596" y="-396.236" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="245.596" y="-396.236" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="245.596" y="-396.236" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="22.965" y="44.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="24.235" y="44.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="AVR_ISP" library="PiB_connectors" package="HDRV6W64P254_2X3_762X483X838B_AVR-ISP" package3d_urn="urn:adsk.eagle:package:4860635/1" value="PTH VERT MALE" x="12.53" y="20.264" rot="R270">
 <attribute name="DATASHEET" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" x="-341.545996875" y="602.939996875" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1792,7 +1856,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="609-3234-ND" x="-341.545996875" y="602.939996875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Amphenol FCI" x="-341.545996875" y="602.939996875" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="67997-206HLF" x="-341.545996875" y="602.939996875" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="PTH VERT MALE" x="12.53" y="20.264" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.8" y="21.788" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="13.8" y="13.66" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C79" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="12.7" y="29.6" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="256.032" y="-527.422" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1801,6 +1866,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="256.032" y="-527.422" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="256.032" y="-527.422" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="256.032" y="-527.422" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.065" y="29.6" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="13.335" y="29.6" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="JP1" library="PiB_connectors" package="HDRV6W64P254_1X6_1524X254X838B_FTDI" package3d_urn="urn:adsk.eagle:package:4861768/1" value="FTDI" x="8.608" y="14.386" rot="R270">
 <attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/DEV-09873_Web.pdf" x="8.608" y="14.386" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1815,7 +1882,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="8.608" y="14.386" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="DEV-09873" x="8.608" y="14.386" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC06SAAN" x="8.608" y="14.386" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="FTDI" x="8.608" y="14.386" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.608" y="15.986" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="8.608" y="0.086" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="SW1" library="PiB_switches" package="SW_TOGGLE_SPDT_5A-28V_13L-7W" package3d_urn="urn:adsk.eagle:package:3033359/4" value="5A/28V" x="57.2" y="47.3">
 <attribute name="DATASHEET" value="http://spec_sheets.e-switch.com/specs/T111597.pdf" x="-451.816" y="-369.768" size="1.778" layer="27" display="off"/>
@@ -1824,6 +1892,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="EG2355-ND" x="-451.816" y="-369.768" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="E-Switch" x="-451.816" y="-369.768" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="100SP1T1B4M2QE" x="-451.816" y="-369.768" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="55.2" y="47.3" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="59.2" y="47.3" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="D7" library="PiB_discrete_semiconductors" package="SODFL3516X170" package3d_urn="urn:adsk.eagle:package:2939213/1" value="1A/50V" x="34" y="20.8" rot="R90">
 <attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="359.882" y="-547.906" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1832,7 +1902,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="641-1511-1-ND" x="359.882" y="-547.906" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Comchip Technology" x="359.882" y="-547.906" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CGRKM4001-HF" x="359.882" y="-547.906" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="1A/50V" x="34" y="20.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="32.73" y="20.8" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="35.27" y="20.8" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C80" library="PiB_capacitors" package="_AE_PTH_DIA8-LS3.5-H21.50" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V" x="40.4" y="45.5" rot="R270">
 <attribute name="DATASHEET" value="http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kzm" x="-300.214" y="607.348" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1841,6 +1912,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="565-3567-ND" x="-300.214" y="607.348" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="United Chemi-Con" x="-300.214" y="607.348" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="EKZM160ELL102MH20D" x="-300.214" y="607.348" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="41.724" y="45.5" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="39.176" y="45.5" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="L1" library="PiB_inductors" package="INDC1608X60-0603" package3d_urn="urn:adsk.eagle:package:2899745/1" value="10uH/380mA" x="12.7" y="51.7" rot="R180">
 <attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CBMF1608T100K&amp;fileName=CBMF1608T100K_SS&amp;mode=specSheetDownload" x="571.5" y="366.406" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1849,6 +1922,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-1720-1-ND" x="571.5" y="366.406" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="571.5" y="366.406" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="Taiyo Yuden" x="571.5" y="366.406" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="12.7" y="50.811" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="12.7" y="52.589" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C83" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="32" y="19.8" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="356.866" y="-588.784" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1857,6 +1932,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="356.866" y="-588.784" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="356.866" y="-588.784" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="356.866" y="-588.784" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.365" y="19.8" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="32.635" y="19.8" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="L2" library="PiB_inductors" package="INDC1608X60-0603" package3d_urn="urn:adsk.eagle:package:2899745/1" value="10uH/380mA" x="59.2" y="39.6">
 <attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CBMF1608T100K&amp;fileName=CBMF1608T100K_SS&amp;mode=specSheetDownload" x="-511.792" y="-282.726" size="1.778" layer="27" display="off"/>
@@ -1865,6 +1942,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-1720-1-ND" x="-511.792" y="-282.726" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="-511.792" y="-282.726" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="Taiyo Yuden" x="-511.792" y="-282.726" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="59.2" y="40.489" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="59.2" y="38.711" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C85" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="14.8" y="44.2" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="337.126" y="-522.728" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1873,6 +1952,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="337.126" y="-522.728" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="337.126" y="-522.728" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="337.126" y="-522.728" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="14.165" y="44.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="15.435" y="44.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C92" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="34" y="43.3" rot="R180">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="706.846" y="407.536" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1881,6 +1962,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="490-13233-1-ND" x="706.846" y="407.536" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="706.846" y="407.536" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="GRM155C80J106ME11D" x="706.846" y="407.536" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34" y="42.665" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="34" y="43.935" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C93" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="34" y="41.9" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="699.988" y="411.216" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1889,6 +1972,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="699.988" y="411.216" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="699.988" y="411.216" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="699.988" y="411.216" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34" y="41.265" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="34" y="42.535" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C94" library="PiB_capacitors" package="CAPC2012X95_SMD-0805" package3d_urn="urn:adsk.eagle:package:2940050/1" value="10uF/25V" x="30.2" y="20" rot="R90">
 <attribute name="DATASHEET" value="https://www.yuden.co.jp/productdata/catalog/mlcc_all_e.pdf" x="394.436" y="-667.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1897,6 +1982,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-2985-1-ND" x="394.436" y="-667.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="394.436" y="-667.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TMK212BBJ106KG-T" x="394.436" y="-667.07" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="28.9614" y="20" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="31.4386" y="20" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C95" library="PiB_capacitors" package="CAPC2012X95_SMD-0805" package3d_urn="urn:adsk.eagle:package:2940050/1" value="10uF/25V" x="33.7" y="31.3" rot="R180">
 <attribute name="DATASHEET" value="https://www.yuden.co.jp/productdata/catalog/mlcc_all_e.pdf" x="730.422" y="395.536" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1905,6 +1992,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-2985-1-ND" x="730.422" y="395.536" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="730.422" y="395.536" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TMK212BBJ106KG-T" x="730.422" y="395.536" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="33.7" y="30.0614" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="33.7" y="32.5386" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C96" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="34.1" y="33.1" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="719.138" y="402.416" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1913,6 +2002,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="719.138" y="402.416" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="719.138" y="402.416" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="719.138" y="402.416" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34.1" y="32.465" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="34.1" y="33.735" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C97" library="PiB_capacitors" package="CAPC2012X95_SMD-0805" package3d_urn="urn:adsk.eagle:package:2940050/1" value="10uF/25V" x="35.3" y="27.6" rot="R180">
 <attribute name="DATASHEET" value="https://www.yuden.co.jp/productdata/catalog/mlcc_all_e.pdf" x="746.246" y="391.836" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1921,6 +2012,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="587-2985-1-ND" x="746.246" y="391.836" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="746.246" y="391.836" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TMK212BBJ106KG-T" x="746.246" y="391.836" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="35.3" y="26.3614" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.3" y="28.8386" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C98" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="35.6" y="25.8" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="735.116" y="395.116" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1929,6 +2022,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="735.116" y="395.116" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="735.116" y="395.116" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="735.116" y="395.116" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="35.6" y="25.165" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="35.6" y="26.435" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="VREG-MCU" library="PiB_ic_power" package="SOIC127P600X265-8" package3d_urn="urn:adsk.eagle:package:2899754/1" value="1A/3.3V" x="32.6" y="37.5" rot="R90">
 <attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/tps768.pdf" x="426.554" y="-674.462" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1937,6 +2032,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="296-46395-1-ND" x="426.554" y="-674.462" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Texas Instruments" x="426.554" y="-674.462" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TPS76833QDR" x="426.554" y="-674.462" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="29.933" y="37.5" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="35.267" y="37.5" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="FSR_PINKY" library="PiB_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="33.2" y="53.8">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="33.2" y="53.8" size="1.778" layer="27" display="off"/>
@@ -1963,6 +2060,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN_CONNECTOR1" value="0530470210" x="33.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" x="33.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CRIMP" value="0500798000" x="33.2" y="53.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.2" y="55.959" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="33.2" y="54.435" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="FSR_RING" library="PiB_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="37.7" y="53.8">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="37.7" y="53.8" size="1.778" layer="27" display="off"/>
@@ -1989,6 +2088,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN_CONNECTOR1" value="0530470210" x="37.7" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" x="37.7" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CRIMP" value="0500798000" x="37.7" y="53.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.7" y="55.959" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="37.7" y="54.435" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="FSR_MIDDLE" library="PiB_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="42.2" y="53.8">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="42.2" y="53.8" size="1.778" layer="27" display="off"/>
@@ -2015,6 +2116,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN_CONNECTOR1" value="0530470210" x="42.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" x="42.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CRIMP" value="0500798000" x="42.2" y="53.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="42.2" y="55.959" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="42.2" y="54.435" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="FSR_INDEX" library="PiB_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="46.7" y="53.8">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="46.7" y="53.8" size="1.778" layer="27" display="off"/>
@@ -2041,6 +2144,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN_CONNECTOR1" value="0530470210" x="46.7" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" x="46.7" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CRIMP" value="0500798000" x="46.7" y="53.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.7" y="55.959" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="46.7" y="54.435" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="FSR_THUMB" library="PiB_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="51.2" y="53.8">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="51.2" y="53.8" size="1.778" layer="27" display="off"/>
@@ -2067,6 +2172,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN_CONNECTOR1" value="0530470210" x="51.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CONNECTOR2" value="51021-0200" x="51.2" y="53.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN_CRIMP" value="0500798000" x="51.2" y="53.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="51.2" y="55.959" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="51.2" y="54.435" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="C1" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="56.3" y="6.6" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="78.144" y="1.52" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2075,6 +2182,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="78.144" y="1.52" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="78.144" y="1.52" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="78.144" y="1.52" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="56.3" y="5.965" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="56.3" y="7.235" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="VREG-SERVOS" library="PiB_ic_power" package="TO170P1363X457-6" package3d_urn="urn:adsk.eagle:package:2899157/1" value="5A/5V" x="43.2" y="20.8">
 <attribute name="DATASHEET" value="http://ww1.microchip.com/downloads/en/DeviceDoc/20005685A.pdf" x="43.2" y="20.8" size="1.778" layer="27" display="off"/>
@@ -2083,6 +2192,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="576-2240-ND" x="43.2" y="20.8" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Microchip Technology" x="43.2" y="20.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="MIC29501-5.0WU" x="43.2" y="20.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="43.2" y="27.1089" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="43.2" y="14.4911" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="D1" library="PiB_discrete_semiconductors" package="DFN100X60X55-2" package3d_urn="urn:adsk.eagle:package:2933421/1" value="150mA/75V" x="14.1" y="29.7" rot="R270">
 <attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CDSQR4148-HF-RevC213424.pdf" x="14.1" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2091,7 +2202,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="641-1677-1-ND" x="14.1" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Comchip Technology" x="14.1" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CDSQR4148-HF" x="14.1" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="150mA/75V" x="14.1" y="29.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="14.8" y="29.7" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="13.4" y="29.7" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="NOISE_BR" library="PiB_power_symbols" package="NET_BRIDGE" value="NET_BRIDGE" x="53.1" y="30.8" rot="MR90"/>
 <element name="L3" library="PiB_leds" package="LEDC1005X40_LED-0402" package3d_urn="urn:adsk.eagle:package:2899303/3" value="BLUE" x="41.1" y="30.3">
@@ -2101,6 +2213,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="492-2203-1-ND" x="41.1" y="30.3" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Bivar Inc." x="41.1" y="30.3" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="SM0402BWC" x="41.1" y="30.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="41.1" y="30.9" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="41.1" y="29.7" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R1" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="43.4" y="30.3" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="43.4" y="30.3" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2109,7 +2223,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="43.4" y="30.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="43.4" y="30.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="43.4" y="30.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="10K" x="43.4" y="30.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.4" y="29.665" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="43.4" y="30.935" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="LED4" library="PiB_leds" package="LEDC1005X40_LED-0402" package3d_urn="urn:adsk.eagle:package:2899303/3" value="GREEN" x="14" y="24.2">
 <attribute name="DATASHEET" value="https://www.bivar.com/portals/0/products/SM0402GC.pdf" x="14" y="24.2" size="1.778" layer="27" display="off"/>
@@ -2118,6 +2233,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="492-2205-1-ND" x="14" y="24.2" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Bivar Inc." x="14" y="24.2" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="SM0402GC" x="14" y="24.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14" y="24.8" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="14" y="23.6" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="LED5" library="PiB_leds" package="LEDC1005X40_LED-0402" package3d_urn="urn:adsk.eagle:package:2899303/3" value="RED" x="14" y="22.8">
 <attribute name="DATASHEET" value="https://www.bivar.com/portals/0/products/SM0402RC.pdf" x="14" y="22.8" size="1.778" layer="27" display="off"/>
@@ -2126,6 +2243,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="492-2208-1-ND" x="14" y="22.8" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Bivar Inc." x="14" y="22.8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="SM0402RC" x="14" y="22.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="14" y="23.4" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="14" y="22.2" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R2" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="1K" x="16.3" y="22.8" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="16.3" y="22.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2134,6 +2253,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3525CT-ND" x="16.3" y="22.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="16.3" y="22.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-071KL" x="16.3" y="22.8" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="16.3" y="22.165" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="16.3" y="23.435" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R3" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="1K" x="16.3" y="24.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="16.3" y="24.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2142,6 +2263,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3525CT-ND" x="16.3" y="24.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="16.3" y="24.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-071KL" x="16.3" y="24.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="16.3" y="23.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="16.3" y="24.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R4" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="40.2" y="2.2">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="40.2" y="2.2" size="1.778" layer="27" display="off"/>
@@ -2150,7 +2273,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="40.2" y="2.2" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="40.2" y="2.2" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="40.2" y="2.2" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="40.2" y="2.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="40.2" y="2.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="40.2" y="1.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R5" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="42.4" y="2.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="42.4" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2159,6 +2283,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3516CT-ND" x="42.4" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="42.4" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-07100RL" x="42.4" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="42.4" y="1.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="42.4" y="2.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R6" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="32" y="2.2">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="32" y="2.2" size="1.778" layer="27" display="off"/>
@@ -2167,7 +2293,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="26.92" y="9.82" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="26.92" y="9.82" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="26.92" y="9.82" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="32" y="2.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="32" y="2.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="32" y="1.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R7" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="34.2" y="2.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="34.2" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2176,6 +2303,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3516CT-ND" x="44.36" y="-10.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="44.36" y="-10.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-07100RL" x="44.36" y="-10.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34.2" y="1.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="34.2" y="2.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R8" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="23.8" y="2.2">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="23.8" y="2.2" size="1.778" layer="27" display="off"/>
@@ -2184,7 +2313,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="18.72" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="18.72" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="18.72" y="7.28" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="23.8" y="2.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23.8" y="2.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="23.8" y="1.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R9" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="26" y="2.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="26" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2193,6 +2323,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3516CT-ND" x="36.16" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="36.16" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-07100RL" x="36.16" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26" y="1.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="26" y="2.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R12" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="56.6" y="2.2">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="56.6" y="2.2" size="1.778" layer="27" display="off"/>
@@ -2201,7 +2333,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="51.52" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="51.52" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="51.52" y="7.28" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="56.6" y="2.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="56.6" y="2.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="56.6" y="1.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R13" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="58.8" y="2.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="58.8" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2210,6 +2343,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3516CT-ND" x="68.96" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="68.96" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-07100RL" x="68.96" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="58.8" y="1.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="58.8" y="2.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R14" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="48.4" y="2.2">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="48.4" y="2.2" size="1.778" layer="27" display="off"/>
@@ -2218,7 +2353,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG1281CT-ND" x="43.32" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Yageo" x="43.32" y="7.28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="RC0402JR-0710KP" x="43.32" y="7.28" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" value="10K" x="48.4" y="2.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="48.4" y="2.835" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="48.4" y="1.565" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="R15" library="PiB_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="50.6" y="2.2" rot="R180">
 <attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="50.6" y="2.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2227,6 +2363,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="YAG3516CT-ND" x="60.76" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Yageo" x="60.76" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="AC0402JR-07100RL" x="60.76" y="-7.96" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="50.6" y="1.565" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="50.6" y="2.835" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C21" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="17.8" y="29.6" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="17.8" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2235,7 +2373,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="17.8" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="17.8" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="17.8" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="17.8" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="18.435" y="29.6" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="17.165" y="29.6" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C20" library="PiB_capacitors" package="_AE_PTH_DIA8-LS3.5-H21.50" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V" x="24.8" y="18.6" rot="R180">
 <attribute name="DATASHEET" value="http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kzm" x="24.8" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2244,6 +2383,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="565-3567-ND" x="24.8" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="United Chemi-Con" x="24.8" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="EKZM160ELL102MH20D" x="24.8" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="24.8" y="17.276" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="24.8" y="19.824" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C23" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="13.4" y="44.2" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="13.4" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2252,7 +2393,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-13185-1-ND" x="13.4" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="13.4" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CGB2A1X5R1E105K033BC" x="13.4" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="1uF/25V" x="13.4" y="44.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="12.765" y="44.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="14.035" y="44.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C22" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="10" y="51.7" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="14.826" y="46.62" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2261,13 +2403,32 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="14.826" y="46.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="14.826" y="46.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="14.826" y="46.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10" y="51.065" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="10" y="52.335" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="JP2" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="11.516" y="42.374" rot="MR270"/>
-<element name="J2" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="30.8" y="58.7"/>
-<element name="J3" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="36.6" y="58.7"/>
-<element name="J4" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="42.4" y="58.7"/>
-<element name="J5" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="48.2" y="58.7"/>
-<element name="J6" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="54" y="58.7"/>
+<element name="JP2" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="11.516" y="42.374" rot="MR270">
+<attribute name="NAME" x="10.373" y="42.374" size="0.5" layer="26" font="vector" ratio="10" rot="MR270" align="bottom-center"/>
+</element>
+<element name="J2" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="30.8" y="58.7">
+<attribute name="NAME" x="30.8" y="57.43" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="30.8" y="59.462" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+</element>
+<element name="J3" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="36.6" y="58.7">
+<attribute name="NAME" x="36.6" y="57.43" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="36.6" y="59.462" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+</element>
+<element name="J4" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="42.4" y="58.7">
+<attribute name="NAME" x="42.4" y="57.43" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="42.4" y="59.462" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+</element>
+<element name="J5" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="48.2" y="58.7">
+<attribute name="NAME" x="48.2" y="57.43" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="48.2" y="59.462" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+</element>
+<element name="J6" library="PiB_connectors" package="_MOLEX-0530470310_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:3035545/2" value="" x="54" y="58.7">
+<attribute name="NAME" x="54" y="57.43" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="54" y="59.462" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+</element>
 <element name="SERVO_THUMB" library="PiB_motors" package="HDRV3W64P254_1X3_762X254X838B" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B" x="26.5" y="4.4" rot="R180">
 <attribute name="DATASHEET" value="N/A" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DATASHEET_CONNECTOR" value="P(G,R,A)xCxxSxxN Drawing, Straight" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2281,7 +2442,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HK15298B" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC03SAAN" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="HK15298B" x="26.5" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.024" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="19.896" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="SERVO_INDEX" library="PiB_motors" package="HDRV3W64P254_1X3_762X254X838B" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B" x="34.7" y="4.4" rot="R180">
 <attribute name="DATASHEET" value="N/A" x="34.7" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2296,7 +2458,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="34.7" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HK15298B" x="34.7" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC03SAAN" x="34.7" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="HK15298B" x="34.7" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="36.224" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="28.096" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="SERVO_MIDDLE" library="PiB_motors" package="HDRV3W64P254_1X3_762X254X838B" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B" x="42.9" y="4.4" rot="R180">
 <attribute name="DATASHEET" value="N/A" x="42.9" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2311,7 +2474,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="42.9" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HK15298B" x="42.9" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC03SAAN" x="42.9" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="HK15298B" x="42.9" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="44.424" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="36.296" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="SERVO_RING" library="PiB_motors" package="HDRV3W64P254_1X3_762X254X838B" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B" x="51.1" y="4.4" rot="R180">
 <attribute name="DATASHEET" value="N/A" x="51.1" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2326,7 +2490,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="51.1" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HK15298B" x="51.1" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC03SAAN" x="51.1" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="HK15298B" x="51.1" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.624" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="44.496" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="SERVO_PINKY" library="PiB_motors" package="HDRV3W64P254_1X3_762X254X838B" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B" x="59.3" y="4.4" rot="R180">
 <attribute name="DATASHEET" value="N/A" x="59.3" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2341,7 +2506,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CONNECTOR" value="Sullins Connector Solutions" x="59.3" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="HK15298B" x="59.3" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN_CONNECTOR" value="PEC03SAAN" x="59.3" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="HK15298B" x="59.3" y="4.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="60.824" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="52.696" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="C27" library="PiB_capacitors" package="_AE_PTH_DIA8-LS3.5-H21.50" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V" x="49.1" y="45.5" rot="R270">
 <attribute name="DATASHEET" value="http://www.chemi-con.co.jp/cgi-bin/CAT_DB/SEARCH/cat_db_al.cgi?e=e&amp;j=p&amp;pdfname=kzm" x="49.1" y="45.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2350,6 +2516,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="565-3567-ND" x="49.1" y="45.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="United Chemi-Con" x="49.1" y="45.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="EKZM160ELL102MH20D" x="49.1" y="45.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="50.424" y="45.5" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="47.876" y="45.5" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="J1" library="PiB_connectors" package="POWER_JACK_PTH_ID2.1MM-OD5.5MM" package3d_urn="urn:adsk.eagle:package:3034525/4" value="5A/28V" x="50.1" y="33.9" rot="R90">
 <attribute name="DATASHEET" value="https://www.cui.com/product/resource/pj-102a.pdf" x="50.1" y="33.9" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2358,6 +2526,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="CP-102A-ND" x="50.1" y="33.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="CUI Inc." x="50.1" y="33.9" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="PJ-102A" x="50.1" y="33.9" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="58.99" y="33.9" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="50.1" y="33.9" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
 <element name="LIPO1" library="PiB_batteries" package="BATTERY_MOLEX-89400_VERT_PITCH-2MM" package3d_urn="urn:adsk.eagle:package:2972596/3" value="7.4V" x="43.3" y="35.4" rot="R90">
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/894000220_sd.pdf" x="43.3" y="35.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2378,12 +2548,29 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="0894000220" x="43.3" y="35.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN_CONNECTOR" value="0873690200" x="43.3" y="35.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN_CRIMP" value="50212-8000" x="43.3" y="35.4" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="40" y="35.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="45.3" y="35.4" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="C9" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="22.9" y="10.1" rot="R180"/>
-<element name="C11" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="31.1" y="10.1" rot="R180"/>
-<element name="C13" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="39.3" y="10.1" rot="R180"/>
-<element name="C15" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="47.5" y="10.1" rot="R180"/>
-<element name="C17" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="55.7" y="10.1" rot="R180"/>
+<element name="C9" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="22.9" y="10.1" rot="R180">
+<attribute name="NAME" x="22.9" y="9.084" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="22.9" y="11.116" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C11" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="31.1" y="10.1" rot="R180">
+<attribute name="NAME" x="31.1" y="9.084" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="31.1" y="11.116" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C13" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="39.3" y="10.1" rot="R180">
+<attribute name="NAME" x="39.3" y="9.084" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="39.3" y="11.116" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C15" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="47.5" y="10.1" rot="R180">
+<attribute name="NAME" x="47.5" y="9.084" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="47.5" y="11.116" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="C17" library="PiB_capacitors" package="_AE_PTH-DIA5-LS2-H11" value="" x="55.7" y="10.1" rot="R180">
+<attribute name="NAME" x="55.7" y="9.084" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="55.7" y="11.116" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
 <element name="C2" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="10" y="54.5" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="10" y="44.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="10" y="44.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2391,6 +2578,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="10" y="44.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="10" y="44.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="10" y="44.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10" y="53.865" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="10" y="55.135" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C8" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="10" y="53.1" rot="R180">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="15" y="46.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2399,6 +2588,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="490-13233-1-ND" x="15" y="46.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="15" y="46.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="GRM155C80J106ME11D" x="15" y="46.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="10" y="52.465" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="10" y="53.735" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C28" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="8" y="58.6" rot="R90">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="1" y="58.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2407,6 +2598,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="1" y="58.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="1" y="58.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="1" y="58.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="7.365" y="58.6" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="8.635" y="58.6" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C29" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="6.6" y="58.6" rot="R90">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="2.6" y="53.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2415,6 +2608,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="490-13233-1-ND" x="2.6" y="53.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="2.6" y="53.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GRM155C80J106ME11D" x="2.6" y="53.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="5.965" y="58.6" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="7.235" y="58.6" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="VREG-ANALOG" library="PiB_ic_power" package="SOT95P237X112-3_SOT-23-3" package3d_urn="urn:adsk.eagle:package:2889826/1" value="MCP1700-1802 1.8V/200mA" x="10.5" y="57.1" rot="R270">
 <attribute name="DATASHEET" value="http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" x="3.5" y="63.1" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2423,8 +2618,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="MCP1700T1802ETTCT-ND" x="3.5" y="63.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Microchip Technology" x="3.5" y="63.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="MCP1700T-1802E/TT" x="3.5" y="63.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="12.405" y="57.1" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="8.722" y="57.1" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="JP3" library="PiB_connectors" package="SMT-JUMPER_3_NO_NO-SILK" value="JUMPER_SMD_3-PAD_NO_NO-SILK" x="29.3" y="52.3" rot="R180"/>
+<element name="JP3" library="PiB_connectors" package="SMT-JUMPER_3_NO_NO-SILK" value="JUMPER_SMD_3-PAD_NO_NO-SILK" x="29.3" y="52.3" rot="R180">
+<attribute name="NAME" x="29.3" y="51.284" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+</element>
 <element name="C24" library="PiB_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="12.9" y="54.7" rot="R270">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="12.9" y="54.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digikey" x="12.9" y="54.7" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2432,6 +2631,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISTPN" value="445-173610-1-ND" x="12.9" y="54.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="12.9" y="54.7" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C1005X7R1H104K050BE" x="12.9" y="54.7" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="13.535" y="54.7" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="12.265" y="54.7" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
 <element name="NOISE_BR1" library="PiB_power_symbols" package="NET_BRIDGE" value="NET_BRIDGE" x="53.1" y="37" rot="MR90"/>
 </elements>
