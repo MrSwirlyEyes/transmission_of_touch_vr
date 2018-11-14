@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5043,24 +5043,24 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="2.8" y1="1.2" x2="-2.8" y2="1.2" width="0.127" layer="40"/>
 </package>
 <package name="1X02_WIRE_CONNECTOR_AWG-18">
-<pad name="-" x="1.77" y="0" drill="1.5" diameter="2.5"/>
-<pad name="+" x="-1.77" y="0" drill="1.5" diameter="2.5"/>
-<text x="-1.67" y="1.4" size="1" layer="21" font="vector" ratio="10" align="bottom-center">+</text>
-<wire x1="-3.6" y1="-1.8" x2="-3.6" y2="2.5" width="0.127" layer="39"/>
-<wire x1="-3.5" y1="-1.7" x2="3.5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.5" y1="2.4" x2="-3.5" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3.6" y1="2.5" x2="3.6" y2="2.5" width="0.127" layer="39"/>
-<text x="0" y="2.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="2.17" y="1.4" size="1" layer="21" font="vector" ratio="10" align="bottom-center">-</text>
-<wire x1="3.6" y1="-1.8" x2="-3.6" y2="-1.8" width="0.127" layer="39"/>
-<wire x1="3.5" y1="-1.7" x2="3.5" y2="2.4" width="0.127" layer="21"/>
-<wire x1="3.5" y1="2.4" x2="-3.5" y2="2.4" width="0.127" layer="21"/>
-<wire x1="3.6" y1="2.5" x2="3.6" y2="-1.8" width="0.127" layer="39"/>
-<text x="0" y="-1.9" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-3.2" y1="1.4" x2="-3.2" y2="-1.4" width="0.127" layer="40"/>
-<wire x1="-3.2" y1="-1.4" x2="3.2" y2="-1.4" width="0.127" layer="40"/>
-<wire x1="3.2" y1="-1.4" x2="3.2" y2="1.4" width="0.127" layer="40"/>
-<wire x1="3.2" y1="1.4" x2="-3.2" y2="1.4" width="0.127" layer="40"/>
+<pad name="-" x="2.27" y="0" drill="2" diameter="3.25"/>
+<pad name="+" x="-2.27" y="0" drill="2" diameter="3.25"/>
+<text x="-2.27" y="1.9" size="1" layer="21" font="vector" ratio="10" align="bottom-center">+</text>
+<wire x1="-4.5" y1="-2.2" x2="-4.5" y2="3.1" width="0.127" layer="39"/>
+<wire x1="-4.3" y1="-2" x2="4.3" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="2.9" x2="-4.3" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="3.1" x2="4.5" y2="3.1" width="0.127" layer="39"/>
+<text x="0" y="3.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="2.27" y="1.9" size="1" layer="21" font="vector" ratio="10" align="bottom-center">-</text>
+<wire x1="4.5" y1="-2.2" x2="-4.5" y2="-2.2" width="0.127" layer="39"/>
+<wire x1="4.3" y1="-2" x2="4.3" y2="2.9" width="0.127" layer="21"/>
+<wire x1="4.3" y1="2.9" x2="-4.3" y2="2.9" width="0.127" layer="21"/>
+<wire x1="4.5" y1="3.1" x2="4.5" y2="-2.2" width="0.127" layer="39"/>
+<text x="0" y="-2.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<wire x1="-4.1" y1="1.8" x2="-4.1" y2="-1.8" width="0.127" layer="40"/>
+<wire x1="-4.1" y1="-1.8" x2="4.1" y2="-1.8" width="0.127" layer="40"/>
+<wire x1="4.1" y1="-1.8" x2="4.1" y2="1.8" width="0.127" layer="40"/>
+<wire x1="4.1" y1="1.8" x2="-4.1" y2="1.8" width="0.127" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -5726,6 +5726,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="NGND31" library="PiB_power_symbols" deviceset="AGND" device=""/>
 <part name="U$19" library="PiB_power_symbols" deviceset="A3.3V" device=""/>
 <part name="SUPPLY41" library="PiB_power_symbols" deviceset="VSENSOR" device=""/>
+<part name="D2" library="PiB_discrete_semiconductors" deviceset="DIODE_GENERAL-PURPOSE" device="_SMD_GP_1A-50V" package3d_urn="urn:adsk.eagle:package:2939213/1" value="1A/50V"/>
 </parts>
 <sheets>
 <sheet>
@@ -6419,6 +6420,10 @@ RESISTORS</text>
 <instance part="NGND31" gate="G$1" x="345.44" y="233.68" smashed="yes"/>
 <instance part="U$19" gate="G$1" x="187.96" y="330.2" smashed="yes"/>
 <instance part="SUPPLY41" gate="G$1" x="198.12" y="330.2" smashed="yes"/>
+<instance part="D2" gate="G$1" x="252.73" y="190.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="253.492" y="192.786" size="1.27" layer="95" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="254.254" y="192.786" size="0.635" layer="96" font="vector" ratio="10" rot="R90" align="top-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7763,6 +7768,9 @@ RESISTORS</text>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="281.94" y1="177.8" x2="281.94" y2="182.88" width="0.1524" layer="91"/>
 <junction x="281.94" y="182.88"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="257.81" y1="190.5" x2="266.7" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="190.5" x2="266.7" y2="182.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VSENSOR" class="0">
@@ -8009,9 +8017,10 @@ RESISTORS</text>
 <wire x1="233.68" y1="137.16" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
 <junction x="233.68" y="142.24"/>
 <pinref part="VREG-MCU" gate="G$1" pin="VIN"/>
-<wire x1="243.84" y1="182.88" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="182.88" x2="241.3" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="VREG-SERVOS" gate="G$1" pin="VIN"/>
 <pinref part="VREG-SERVOS" gate="G$1" pin="EN"/>
+<wire x1="241.3" y1="182.88" x2="236.22" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="139.7" x2="243.84" y2="142.24" width="0.1524" layer="91"/>
 <junction x="243.84" y="142.24"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
@@ -8022,6 +8031,10 @@ RESISTORS</text>
 <pinref part="SUPPLY5" gate="G$1" pin="VBAT"/>
 <pinref part="SW1" gate="G$1" pin="P"/>
 <wire x1="185.42" y1="182.88" x2="193.04" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="K"/>
+<wire x1="250.19" y1="190.5" x2="241.3" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="190.5" x2="241.3" y2="182.88" width="0.1524" layer="91"/>
+<junction x="241.3" y="182.88"/>
 </segment>
 </net>
 <net name="N$1" class="0">
