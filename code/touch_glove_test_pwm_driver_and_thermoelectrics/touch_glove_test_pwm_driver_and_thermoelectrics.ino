@@ -10,12 +10,14 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define TECMAX_HOT 2095
 #define TECMAX_COLD 4095
 
+#define PHASE_COLD 0
+#define PHASE_HOT 1
 #define TECDELAY 1
 
 void setup() {
   // put your setup code here, to run once:
   pwm.begin();
-  pwm.setPWMFreq(40);
+  pwm.setPWMFreq(60);
   Serial.begin(9600);
 }
 
@@ -111,12 +113,12 @@ void actuate_all_thermoelectrics() {
     Serial.println(j);
   }
 
-  delay(500);
-  pwm.setPWM(14, 0, TECMAX);
-  pwm.setPWM(12, 0, TECMAX);
-  pwm.setPWM(10, 0, TECMAX);
-  pwm.setPWM(8, 0, TECMAX);
-  pwm.setPWM(6, 0, TECMAX);
+//  delay(500);
+//  pwm.setPWM(14, 0, TECMAX);
+//  pwm.setPWM(12, 0, TECMAX);
+//  pwm.setPWM(10, 0, TECMAX);
+//  pwm.setPWM(8, 0, TECMAX);
+//  pwm.setPWM(6, 0, TECMAX);
   delay(500);
 
   for (int j = 0; j < 255; j++) {
