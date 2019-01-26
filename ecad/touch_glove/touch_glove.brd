@@ -38,8 +38,8 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
@@ -51,7 +51,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
@@ -6643,10 +6643,10 @@ CHECK RESISTOR VALUE FOR NEW FLEX SENSORS</text>
 <wire x1="1.525" y1="-0.75" x2="1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="1.525" y1="1.65" x2="-1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="-1.525" y1="1.65" x2="-1.525" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-2.286" y1="2.159" x2="-2.286" y2="-1.27" width="0.127" layer="39"/>
-<wire x1="-2.286" y1="-1.27" x2="2.286" y2="-1.27" width="0.127" layer="39"/>
-<wire x1="2.286" y1="-1.27" x2="2.286" y2="2.159" width="0.127" layer="39"/>
-<wire x1="2.286" y1="2.159" x2="-2.286" y2="2.159" width="0.127" layer="39"/>
+<wire x1="-2.186" y1="2.159" x2="-2.186" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="-2.186" y1="-1.27" x2="2.186" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="2.186" y1="-1.27" x2="2.186" y2="2.159" width="0.127" layer="39"/>
+<wire x1="2.186" y1="2.159" x2="-2.186" y2="2.159" width="0.127" layer="39"/>
 <text x="0" y="-1.27" size="0.5" layer="25" font="vector" ratio="10" align="top-center">&gt;NAME</text>
 <text x="0" y="0.762" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.397" y1="-0.762" x2="1.397" y2="-0.762" width="0.127" layer="40"/>
@@ -7254,16 +7254,20 @@ CHECK RESISTOR VALUE FOR NEW FLEX SENSORS</text>
 <smd name="2" x="-3.125" y="0" dx="1.7603" dy="0.9319" layer="1"/>
 <smd name="3" x="-3.125" y="-2.3" dx="1.7603" dy="0.9319" layer="1"/>
 <smd name="TAB" x="3.125" y="0" dx="1.7603" dy="3.1891" layer="1"/>
-<text x="4.318" y="-0.254" size="0.5" layer="25" font="vector" ratio="10" rot="SR270" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="SR270" align="center">&gt;VALUE</text>
-<wire x1="-4.318" y1="3.556" x2="-4.318" y2="-3.556" width="0.127" layer="39"/>
-<wire x1="-4.318" y1="-3.556" x2="2.032" y2="-3.556" width="0.127" layer="39"/>
-<wire x1="4.318" y1="-1.905" x2="4.318" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="3.556" x2="-4.318" y2="3.556" width="0.127" layer="39"/>
-<wire x1="2.032" y1="3.556" x2="2.032" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="1.905" x2="4.318" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="-3.556" x2="2.032" y2="-1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="-1.905" x2="4.318" y2="-1.905" width="0.127" layer="39"/>
+<text x="1" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="SR270" align="bottom-center">&gt;NAME</text>
+<text x="-1" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="SR270" align="top-center">&gt;VALUE</text>
+<wire x1="-4.2" y1="3" x2="-4.2" y2="-3" width="0.127" layer="39"/>
+<wire x1="-2" y1="-3.5" x2="2" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="4.2" y1="-1.8" x2="4.2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="3.5" x2="-2" y2="3.5" width="0.127" layer="39"/>
+<wire x1="2" y1="3.5" x2="2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="1.8" x2="4.2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="-3.5" x2="2" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="-1.8" x2="4.2" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="-4.2" y1="3" x2="-2" y2="3" width="0.127" layer="39"/>
+<wire x1="-2" y1="3" x2="-2" y2="3.5" width="0.127" layer="39"/>
+<wire x1="-4.2" y1="-3" x2="-2" y2="-3" width="0.127" layer="39"/>
+<wire x1="-2" y1="-3" x2="-2" y2="-3.5" width="0.127" layer="39"/>
 </package>
 <package name="SOIC127P600X265-8" urn="urn:adsk.eagle:footprint:2899755/1" locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6 mm span, 4.9 X 3.9 X 2.65 mm body
@@ -7736,15 +7740,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="64.3" y="4.1" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="60.7" y="4.1" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="AVR_ISP" library="_connectors" package="HDRV6W64P254_2X3_762X483X838B_AVR-ISP" package3d_urn="urn:adsk.eagle:package:4860635/1" value="PTH VERT MALE" x="70.76" y="21.53" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3234-ND" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="609-3234-ND" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Amphenol FCI" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="67997-206HLF" x="70.76" y="21.53" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="69.236" y="22.8" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="77.364" y="22.8" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
+<element name="AVR_ISP" library="_connectors" package="HDRV6W64P254_2X3_762X483X838B_AVR-ISP" package3d_urn="urn:adsk.eagle:package:4860635/1" value="PTH VERT MALE" x="70.76" y="21.43" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/67996.pdf" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=609-3234-ND" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="609-3234-ND" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Amphenol FCI" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="67997-206HLF" x="70.76" y="21.43" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="69.236" y="22.7" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="77.364" y="22.7" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="BALUN1" library="_radio_frequency" package="RESCAXE65P200X125X95-6" package3d_urn="urn:adsk.eagle:package:2933573/1" value="50/100" x="62.5" y="9.4" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="http://katalog.we-online.de/pbs/datasheet/748421245.pdf" x="62.5" y="9.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -8096,15 +8100,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="54.9" y="33.5" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="54.9" y="34.9" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
-<element name="C16" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="28.7" y="18.6" smashed="yes" rot="R180">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-173610-1-ND" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="445-173610-1-ND" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="TDK Corporation" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="C1005X7R1H104K050BE" x="28.7" y="18.6" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.7" y="17.9" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="28.7" y="19.3" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+<element name="C16" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="28.7" y="18.7" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-173610-1-ND" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="445-173610-1-ND" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="C1005X7R1H104K050BE" x="28.7" y="18.7" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.7" y="18" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="28.7" y="19.4" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C8" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="17.1" y="13.1" smashed="yes">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="17.1" y="13.1" size="1.778" layer="27" display="off"/>
@@ -8166,15 +8170,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="21.2" y="26.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="21.2" y="22.3" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="C17" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="28.7" y="17.2" smashed="yes" rot="R180">
-<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-13233-1-ND" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="490-13233-1-ND" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="GRM155C80J106ME11D" x="28.7" y="17.2" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="28.7" y="16.5" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="28.7" y="17.9" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+<element name="C17" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="28.7" y="17.3" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-13233-1-ND" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="490-13233-1-ND" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="GRM155C80J106ME11D" x="28.7" y="17.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="28.7" y="16.6" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="28.7" y="18" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C6" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="29.7" y="7.4" smashed="yes">
 <attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="29.7" y="7.4" size="1.778" layer="27" display="off"/>
@@ -8386,33 +8390,33 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="49.9" y="23.8" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="40.8" y="23.8" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="FLEX-PINKY" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="74.4" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="SEN-08606" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Spectra Symbol" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FS-L-0095-103-ST" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="74.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="74.4" y="39.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="74.4" y="38.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<element name="FLEX-PINKY" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="74.4" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SEN-08606" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Spectra Symbol" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="74.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="74.4" y="39.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="74.4" y="38.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="FLEX-THUMB2" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="56" y="31.3" smashed="yes">
 <attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="56" y="31.3" size="1.778" layer="27" display="off"/>
@@ -8442,117 +8446,117 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="56" y="33.7" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="56" y="29.8" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="FLEX-RING" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="69.8" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="SEN-08606" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Spectra Symbol" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FS-L-0095-103-ST" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="69.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="69.8" y="39.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="69.8" y="38.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<element name="FLEX-RING" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="69.8" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SEN-08606" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Spectra Symbol" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="69.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="69.8" y="39.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="69.8" y="38.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="FLEX-MIDDLE" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="65.2" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="SEN-08606" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Spectra Symbol" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FS-L-0095-103-ST" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="65.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="65.2" y="39.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="65.2" y="38.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<element name="FLEX-MIDDLE" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="65.2" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SEN-08606" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Spectra Symbol" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="65.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="65.2" y="39.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="65.2" y="38.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="FLEX-INDEX" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="60.6" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="SEN-08606" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Spectra Symbol" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FS-L-0095-103-ST" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="60.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="60.6" y="39.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="60.6" y="38.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<element name="FLEX-INDEX" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="60.6" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SEN-08606" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Spectra Symbol" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="60.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="60.6" y="39.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="60.6" y="38.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="FLEX-THUMB" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="56" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="SEN-08606" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Spectra Symbol" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="FS-L-0095-103-ST" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="56" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="56" y="39.1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="56" y="38.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<element name="FLEX-THUMB" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="56" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.sparkfun.com/products/8606" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="SEN-08606" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Spectra Symbol" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="FS-L-0095-103-ST" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="56" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="56" y="39.2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="56" y="38.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="FLEX-PINKY2" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="74.4" y="31.3" smashed="yes">
 <attribute name="DATASHEET" value="http://www.spectrasymbol.com/wp-content/uploads/2016/12/FLEX-SENSOR-DATA-SHEET-v2014-Rev-A.pdf" x="74.4" y="31.3" size="1.778" layer="27" display="off"/>
@@ -8716,21 +8720,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="4.3" y="33.2" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="1.7" y="33.2" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="FTDI" library="_connectors" package="FTDI_BASIC-6PIN-MALE-RA" package3d_urn="urn:adsk.eagle:package:2993075/7" value="FTDI" x="74.5" y="12" smashed="yes">
-<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/DEV-09873_Web.pdf" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/68015.pdf" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1568-1104-ND" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR" value="https://www.digikey.com/products/en?keywords=609-3327-ND" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1568-1104-ND" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR" value="609-3327-ND" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR" value="Digikey" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="SparkFun Electronics" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR" value="Amphenol FCI" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="DEV-09873" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR" value="68016-406HLF" x="74.5" y="12" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="67.0912" y="11.8938" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
-<attribute name="VALUE" x="68.493" y="11.87" size="1.27" layer="27" font="vector" rot="R90" align="center"/>
+<element name="FTDI" library="_connectors" package="FTDI_BASIC-6PIN-MALE-RA" package3d_urn="urn:adsk.eagle:package:2993075/7" value="FTDI" x="74.5" y="11.9" smashed="yes">
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Sparkfun%20PDFs/DEV-09873_Web.pdf" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR" value="https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/68015.pdf" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1568-1104-ND" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR" value="https://www.digikey.com/products/en?keywords=609-3327-ND" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1568-1104-ND" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR" value="609-3327-ND" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR" value="Digikey" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="SparkFun Electronics" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR" value="Amphenol FCI" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DEV-09873" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR" value="68016-406HLF" x="74.5" y="11.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="67.0912" y="11.7938" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="68.493" y="11.77" size="1.27" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="L2" library="_inductors" package="INDC1608X60-0603" package3d_urn="urn:adsk.eagle:package:2899745/1" value="10uH/380mA" x="40.892" y="12.7" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=CBMF1608T100K&amp;fileName=CBMF1608T100K_SS&amp;mode=specSheetDownload" x="40.892" y="12.7" size="1.778" layer="27" rot="R270" display="off"/>
@@ -9343,313 +9347,313 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="35.9" y="30.7" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="35.9" y="29.3" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="TEC-PINKY" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="22" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1681-1032-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Marlow Industries, Inc." x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="NL1025T-01AC" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="22" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="22" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="PELTIER" x="22" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="TEC-PINKY" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="22" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1681-1032-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Marlow Industries, Inc." x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NL1025T-01AC" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="22" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="22" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="PELTIER" x="22" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="TEC-RING" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="17.4" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1681-1032-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Marlow Industries, Inc." x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="NL1025T-01AC" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="17.4" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.4" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="PELTIER" x="17.4" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="TEC-RING" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="17.4" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1681-1032-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Marlow Industries, Inc." x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NL1025T-01AC" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="17.4" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.4" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="PELTIER" x="17.4" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="TEC-MIDDLE" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="12.8" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1681-1032-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Marlow Industries, Inc." x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="NL1025T-01AC" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="12.8" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12.8" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="PELTIER" x="12.8" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="TEC-MIDDLE" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="12.8" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1681-1032-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Marlow Industries, Inc." x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NL1025T-01AC" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="12.8" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="12.8" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="PELTIER" x="12.8" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="TEC-INDEX" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="8.2" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1681-1032-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Marlow Industries, Inc." x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="NL1025T-01AC" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="8.2" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="8.2" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="PELTIER" x="8.2" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="TEC-INDEX" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="8.2" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1681-1032-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Marlow Industries, Inc." x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NL1025T-01AC" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="8.2" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="8.2" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="PELTIER" x="8.2" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="TEC-THUMB" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="3.6" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1681-1032-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Marlow Industries, Inc." x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="NL1025T-01AC" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="3.6" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.6" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="PELTIER" x="3.6" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="TEC-THUMB" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="PELTIER" x="3.6" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/547732/Data_Sheets/NL1025T.pdf" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1681-1032-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1681-1032-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Marlow Industries, Inc." x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NL1025T-01AC" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="3.6" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="3.6" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="PELTIER" x="3.6" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-PINKY" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="50.5" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="50.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="50.5" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="50.5" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-PINKY" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="50.5" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="50.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="50.5" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="50.5" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-RING" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="45.9" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="45.9" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="45.9" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="45.9" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-RING" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="45.9" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="45.9" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.9" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="45.9" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-MIDDLE" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="41.3" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="41.3" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="41.3" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="41.3" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-MIDDLE" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="41.3" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="41.3" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="41.3" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="41.3" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-INDEX" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="36.7" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="36.7" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="36.7" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="36.7" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-INDEX" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="36.7" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="36.7" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="36.7" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="36.7" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-THUMB" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="32.1" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="32.1" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="32.1" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="32.1" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-THUMB" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="32.1" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="32.1" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="32.1" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="32.1" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
-<element name="VIBE-PALM" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="27.5" y="36.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1670-1002-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR1" value="Digikey" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CONNECTOR2" value="Digikey" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST_CRIMP" value="Digikey" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR_CRIMP" value="Molex, LLC" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0825B002F" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR1" value="0530470210" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CONNECTOR2" value="51021-0200" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN_CRIMP" value="0500798000" x="27.5" y="36.1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="27.5" y="34.83" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
-<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="27.5" y="37.243" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
+<element name="VIBE-PALM" library="_actuators" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="Molex VERT 1.25mm pitch" x="27.5" y="36.2" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vibration-motor.com/products/download/C0825B002F.pdf" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CRIMP" value="https://www.molex.com/pdm_docs/sd/500798000_sd.pdf" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1670-1002-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR1" value="https://www.digikey.com/products/en?keywords=WM1731-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CONNECTOR2" value="https://www.digikey.com/products/en?keywords=WM1720-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CRIMP" value="https://www.digikey.com/products/en?keywords=WM1142CT-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="1670-1002-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR1" value="WM1731-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CONNECTOR2" value="WM1720-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CRIMP" value="WM1142CT-ND" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR1" value="Digikey" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CONNECTOR2" value="Digikey" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CRIMP" value="Digikey" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Jinlong Machinery &amp; Electronics, Inc." x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR1" value="Molex, LLC" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CONNECTOR2" value="Molex, LLC" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CRIMP" value="Molex, LLC" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0825B002F" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR1" value="0530470210" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CONNECTOR2" value="51021-0200" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CRIMP" value="0500798000" x="27.5" y="36.2" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.5" y="34.93" size="0.5" layer="25" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="Molex VERT 1.25mm pitch" x="27.5" y="37.343" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center"/>
 </element>
 <element name="VREG-MCU" library="_ic_power" package="SOIC127P600X265-8" package3d_urn="urn:adsk.eagle:package:2899754/1" value="TPS76833QDR 1A/3.3V" x="44.3" y="5.9" smashed="yes">
 <attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/tps768.pdf" x="44.3" y="5.9" size="1.778" layer="27" display="off"/>
@@ -9669,7 +9673,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Texas Instruments" x="26.1" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TL1963A-33DCYR" x="26.1" y="13" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="21.782" y="13.254" size="0.5" layer="25" font="vector" ratio="10" rot="SR90" align="bottom-center"/>
-<attribute name="VALUE" x="26.1" y="13" size="0.25" layer="27" font="vector" ratio="10" rot="SR90" align="center"/>
+<attribute name="VALUE" x="27.1" y="13" size="0.25" layer="27" font="vector" ratio="10" rot="SR90" align="center"/>
 </element>
 <element name="VREG-TEC" library="_ic_power" package="TO170P1363X457-6" package3d_urn="urn:adsk.eagle:package:2899157/1" value="3A/1.8V" x="10.4" y="19.8" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="http://www.analog.com/media/en/technical-documentation/data-sheets/1764fb.pdf?domain=www.linear.com" x="10.4" y="19.8" size="1.778" layer="27" rot="R180" display="off"/>
@@ -9979,7 +9983,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="43.2" y="8.5"/>
 </polygon>
 <contactref element="BR_ANALOG" pad="P$1"/>
-<wire x1="18.2" y1="5.635" x2="18.575" y2="6.7" width="0.6096" layer="16"/>
+<wire x1="18.2" y1="5.635" x2="18.2" y2="6.325" width="0.6096" layer="16"/>
+<wire x1="18.2" y1="6.325" x2="18.575" y2="6.7" width="0.6096" layer="16"/>
 <via x="44.3" y="7.4" extent="1-16" drill="0.254"/>
 <via x="44.3" y="5.9" extent="1-16" drill="0.254"/>
 <via x="44.3" y="4.4" extent="1-16" drill="0.254"/>
@@ -10188,13 +10193,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="69.4" y="8.8" extent="1-16" drill="0.254"/>
 <wire x1="70.8" y1="9.6175" x2="70.8" y2="8.8" width="0.254" layer="1"/>
 <via x="70.8" y="8.8" extent="1-16" drill="0.254"/>
-<wire x1="40.992" y1="14.6" x2="39.5575" y2="17.7" width="0" layer="19" extent="1-1"/>
+<via x="40.4" y="17.7" extent="1-16" drill="0.254"/>
+<wire x1="39.5575" y1="17.7" x2="40.4" y2="17.7" width="0.254" layer="1"/>
 </signal>
 <signal name="FLEX-RING1">
 <contactref element="R9" pad="2"/>
 <contactref element="FLEX-RING" pad="2"/>
-<wire x1="70.4175" y1="34.2" x2="70.4175" y2="36.0925" width="0.254" layer="1"/>
-<wire x1="70.4175" y1="36.0925" x2="70.425" y2="36.1" width="0.1524" layer="1"/>
+<wire x1="70.4175" y1="34.2" x2="70.4175" y2="36.1925" width="0.254" layer="1"/>
+<wire x1="70.4175" y1="36.1925" x2="70.425" y2="36.2" width="0.1524" layer="1"/>
 <wire x1="70.4175" y1="34.2" x2="70.4175" y2="33.3175" width="0.1524" layer="1"/>
 <wire x1="70.4175" y1="33.3175" x2="69.4618" y2="32.3618" width="0.1524" layer="1"/>
 <wire x1="53.6206" y1="31.3981375" x2="54.5842625" y2="32.3618" width="0.1524" layer="1"/>
@@ -10209,8 +10215,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="FLEX-MIDDLE1">
 <contactref element="R8" pad="2"/>
 <contactref element="FLEX-MIDDLE" pad="2"/>
-<wire x1="65.8175" y1="34.2" x2="65.8175" y2="36.0925" width="0.254" layer="1"/>
-<wire x1="65.8175" y1="36.0925" x2="65.825" y2="36.1" width="0.1524" layer="1"/>
+<wire x1="65.8175" y1="34.2" x2="65.8175" y2="36.1925" width="0.254" layer="1"/>
+<wire x1="65.8175" y1="36.1925" x2="65.825" y2="36.2" width="0.1524" layer="1"/>
 <wire x1="65.8175" y1="34.2" x2="65.8175" y2="33.3175" width="0.1524" layer="1"/>
 <wire x1="65.8175" y1="33.3175" x2="65.1412" y2="32.6412" width="0.1524" layer="1"/>
 <wire x1="54.468525" y1="32.6412" x2="53.3412" y2="31.513875" width="0.1524" layer="1"/>
@@ -10237,8 +10243,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="FLEX-INDEX1">
 <contactref element="R7" pad="2"/>
 <contactref element="FLEX-INDEX" pad="2"/>
-<wire x1="61.2175" y1="34.2" x2="61.2175" y2="36.0925" width="0.254" layer="1"/>
-<wire x1="61.2175" y1="36.0925" x2="61.225" y2="36.1" width="0.1524" layer="1"/>
+<wire x1="61.2175" y1="34.2" x2="61.2175" y2="36.1925" width="0.254" layer="1"/>
+<wire x1="61.2175" y1="36.1925" x2="61.225" y2="36.2" width="0.1524" layer="1"/>
 <wire x1="61.2175" y1="34.2" x2="61.2175" y2="33.3175" width="0.1524" layer="1"/>
 <wire x1="61.2175" y1="33.3175" x2="60.8206" y2="32.9206" width="0.1524" layer="1"/>
 <wire x1="54.3527875" y1="32.9206" x2="53.0618" y2="31.6296125" width="0.1524" layer="1"/>
@@ -10420,7 +10426,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="36.6412" y1="28.8412" x2="39.631475" y2="28.8412" width="0.1524" layer="1"/>
 <wire x1="36.375" y1="25.7258" x2="36.375" y2="28.575" width="0.1524" layer="1"/>
 <wire x1="36.375" y1="28.575" x2="36.6412" y2="28.8412" width="0.1524" layer="1"/>
-<wire x1="50.2" y1="28.6" x2="50.5175" y2="28.6" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5175" y1="28.6" x2="50.2" y2="28.6" width="0.1524" layer="1"/>
 </signal>
 <signal name="VIBE-RING">
 <contactref element="R17" pad="1"/>
@@ -10433,7 +10439,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="36.5254625" y1="29.1206" x2="35.725" y2="28.3201375" width="0.1524" layer="1"/>
 <wire x1="35.725" y1="28.3201375" x2="35.725" y2="25.7258" width="0.1524" layer="1"/>
 <wire x1="39.5157375" y1="29.1206" x2="36.5254625" y2="29.1206" width="0.1524" layer="1"/>
-<wire x1="44.2" y1="30" x2="44.6175" y2="30" width="0" layer="19" extent="1-1"/>
+<wire x1="44.6175" y1="30" x2="44.2" y2="30" width="0.1524" layer="1"/>
 </signal>
 <signal name="VIBE-MIDDLE">
 <contactref element="R18" pad="1"/>
@@ -10444,7 +10450,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="36.409725" y1="29.4" x2="35.075" y2="28.065275" width="0.1524" layer="1"/>
 <wire x1="35.075" y1="28.065275" x2="35.075" y2="25.7258" width="0.1524" layer="1"/>
 <wire x1="39.4" y1="29.4" x2="36.409725" y2="29.4" width="0.1524" layer="1"/>
-<wire x1="39.6" y1="30" x2="40.0175" y2="30" width="0" layer="19" extent="1-1"/>
+<wire x1="40.0175" y1="30" x2="39.6" y2="30" width="0.1524" layer="1"/>
 </signal>
 <signal name="VIBE-INDEX">
 <contactref element="R19" pad="1"/>
@@ -10459,8 +10465,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D7" pad="A"/>
 <contactref element="VIBE-MIDDLE" pad="2"/>
 <contactref element="Q3" pad="3"/>
-<wire x1="41.6701" y1="34.2" x2="41.6701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="41.6701" y1="35.8451" x2="41.925" y2="36.1" width="0.254" layer="1"/>
+<wire x1="41.6701" y1="34.2" x2="41.6701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="41.6701" y1="35.9451" x2="41.925" y2="36.2" width="0.254" layer="1"/>
 <wire x1="41.6701" y1="34.2" x2="42" y2="34.2" width="0.254" layer="1"/>
 <wire x1="42.2575" y1="33.9425" x2="42.2575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="42" y1="34.2" x2="42.2575" y2="33.9425" width="0.254" layer="1"/>
@@ -10469,8 +10475,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="VIBE-INDEX" pad="2"/>
 <contactref element="Q4" pad="3"/>
 <contactref element="D8" pad="A"/>
-<wire x1="37.0701" y1="34.2" x2="37.0701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="37.0701" y1="35.8451" x2="37.325" y2="36.1" width="0.254" layer="1"/>
+<wire x1="37.0701" y1="34.2" x2="37.0701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="37.0701" y1="35.9451" x2="37.325" y2="36.2" width="0.254" layer="1"/>
 <wire x1="37.0701" y1="34.2" x2="37.4" y2="34.2" width="0.254" layer="1"/>
 <wire x1="37.6575" y1="33.9425" x2="37.6575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="37.4" y1="34.2" x2="37.6575" y2="33.9425" width="0.254" layer="1"/>
@@ -10479,8 +10485,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="Q2" pad="3"/>
 <contactref element="VIBE-RING" pad="2"/>
 <contactref element="D6" pad="A"/>
-<wire x1="46.2701" y1="34.2" x2="46.2701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="46.2701" y1="35.8451" x2="46.525" y2="36.1" width="0.254" layer="1"/>
+<wire x1="46.2701" y1="34.2" x2="46.2701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="46.2701" y1="35.9451" x2="46.525" y2="36.2" width="0.254" layer="1"/>
 <wire x1="46.2701" y1="34.2" x2="46.6" y2="34.2" width="0.254" layer="1"/>
 <wire x1="46.8575" y1="33.9425" x2="46.8575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="46.6" y1="34.2" x2="46.8575" y2="33.9425" width="0.254" layer="1"/>
@@ -10489,8 +10495,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="Q1" pad="3"/>
 <contactref element="VIBE-PINKY" pad="2"/>
 <contactref element="D5" pad="A"/>
-<wire x1="50.8701" y1="34.2" x2="50.8701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="50.8701" y1="35.8451" x2="51.125" y2="36.1" width="0.254" layer="1"/>
+<wire x1="50.8701" y1="34.2" x2="50.8701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="50.8701" y1="35.9451" x2="51.125" y2="36.2" width="0.254" layer="1"/>
 <wire x1="50.8701" y1="34.2" x2="51.2" y2="34.2" width="0.254" layer="1"/>
 <wire x1="51.4575" y1="33.9425" x2="51.4575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="51.2" y1="34.2" x2="51.4575" y2="33.9425" width="0.254" layer="1"/>
@@ -10499,8 +10505,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="Q5" pad="3"/>
 <contactref element="VIBE-THUMB" pad="2"/>
 <contactref element="D9" pad="A"/>
-<wire x1="32.4701" y1="34.2" x2="32.4701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="32.4701" y1="35.8451" x2="32.725" y2="36.1" width="0.254" layer="1"/>
+<wire x1="32.4701" y1="34.2" x2="32.4701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="32.4701" y1="35.9451" x2="32.725" y2="36.2" width="0.254" layer="1"/>
 <wire x1="32.4701" y1="34.2" x2="32.8" y2="34.2" width="0.254" layer="1"/>
 <wire x1="33.0575" y1="33.9425" x2="33.0575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="32.8" y1="34.2" x2="33.0575" y2="33.9425" width="0.254" layer="1"/>
@@ -10825,36 +10831,33 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="AVR_ISP" pad="SCK"/>
 <wire x1="64.25" y1="20.9447" x2="64.25" y2="23.25" width="0.1524" layer="1"/>
 <wire x1="65.3318" y1="24.3318" x2="64.25" y2="23.25" width="0.1524" layer="1"/>
-<wire x1="71.20665625" y1="20.1076" x2="73.3" y2="21.53" width="0.1524" layer="1"/>
-<wire x1="69.9924" y1="20.1076" x2="71.20665625" y2="20.1076" width="0.1524" layer="1"/>
-<wire x1="69.9924" y1="20.1076" x2="69.3412" y2="20.7588" width="0.1524" layer="1"/>
-<wire x1="69.3412" y1="20.7588" x2="69.0206" y2="21.0794" width="0.1524" layer="1"/>
-<wire x1="69.0206" y1="21.0794" x2="69.0206" y2="22.479125" width="0.1524" layer="1"/>
-<wire x1="69.0206" y1="22.479125" x2="67.167925" y2="24.3318" width="0.1524" layer="1"/>
-<wire x1="67.167925" y1="24.3318" x2="65.3318" y2="24.3318" width="0.1524" layer="1"/>
+<wire x1="70.0924" y1="20.0076" x2="69.0206" y2="21.0794" width="0.1524" layer="1"/>
+<wire x1="69.0206" y1="21.0794" x2="69.0206" y2="22.379125" width="0.1524" layer="1"/>
+<wire x1="69.0206" y1="22.379125" x2="67.067925" y2="24.3318" width="0.1524" layer="1"/>
+<wire x1="67.067925" y1="24.3318" x2="65.3318" y2="24.3318" width="0.1524" layer="1"/>
+<wire x1="73.3" y1="21.43" x2="71.8776" y2="20.0076" width="0.1524" layer="1"/>
+<wire x1="71.8776" y1="20.0076" x2="70.0924" y2="20.0076" width="0.1524" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="MCU" pad="38"/>
 <contactref element="AVR_ISP" pad="MOSI"/>
-<wire x1="72" y1="23.199946875" x2="73.3" y2="24.07" width="0.1524" layer="1"/>
-<wire x1="72" y1="23.199946875" x2="72" y2="20.9" width="0.1524" layer="1"/>
-<wire x1="72" y1="20.9" x2="71.487" y2="20.387" width="0.1524" layer="1"/>
-<wire x1="71.487" y1="20.387" x2="70.1081375" y2="20.387" width="0.1524" layer="1"/>
+<wire x1="72" y1="20.9" x2="71.387" y2="20.287" width="0.1524" layer="1"/>
+<wire x1="71.387" y1="20.287" x2="70.2081375" y2="20.287" width="0.1524" layer="1"/>
 <wire x1="63.75" y1="20.9447" x2="63.75" y2="23.1451375" width="0.1524" layer="1"/>
 <wire x1="65.2160625" y1="24.6112" x2="63.75" y2="23.1451375" width="0.1524" layer="1"/>
-<wire x1="70.1081375" y1="20.387" x2="69.49756875" y2="20.99756875" width="0.1524" layer="1"/>
-<wire x1="69.49756875" y1="20.99756875" x2="69.4206" y2="21.0745375" width="0.1524" layer="1"/>
-<wire x1="69.4206" y1="21.0745375" x2="69.3" y2="21.1951375" width="0.1524" layer="1"/>
-<wire x1="69.3" y1="21.1951375" x2="69.3" y2="22.5948625" width="0.1524" layer="1"/>
-<wire x1="69.3" y1="22.5948625" x2="67.2836625" y2="24.6112" width="0.1524" layer="1"/>
-<wire x1="67.2836625" y1="24.6112" x2="65.2160625" y2="24.6112" width="0.1524" layer="1"/>
+<wire x1="70.2081375" y1="20.287" x2="69.3" y2="21.1951375" width="0.1524" layer="1"/>
+<wire x1="69.3" y1="21.1951375" x2="69.3" y2="22.4948625" width="0.1524" layer="1"/>
+<wire x1="69.3" y1="22.4948625" x2="67.1836625" y2="24.6112" width="0.1524" layer="1"/>
+<wire x1="67.1836625" y1="24.6112" x2="65.2160625" y2="24.6112" width="0.1524" layer="1"/>
+<wire x1="73.3" y1="23.97" x2="72" y2="22.67" width="0.1524" layer="1"/>
+<wire x1="72" y1="22.67" x2="72" y2="20.9" width="0.1524" layer="1"/>
 </signal>
 <signal name="MISO">
 <contactref element="MCU" pad="39"/>
 <contactref element="AVR_ISP" pad="MISO"/>
 <wire x1="63.25" y1="23.040275" x2="63.25" y2="20.9447" width="0.1524" layer="1"/>
-<wire x1="70.76" y1="21.53" x2="67.3994" y2="24.8906" width="0.1524" layer="1"/>
-<wire x1="67.3994" y1="24.8906" x2="65.100325" y2="24.8906" width="0.1524" layer="1"/>
+<wire x1="70.76" y1="21.43" x2="67.2994" y2="24.8906" width="0.1524" layer="1"/>
+<wire x1="67.2994" y1="24.8906" x2="65.100325" y2="24.8906" width="0.1524" layer="1"/>
 <wire x1="65.100325" y1="24.8906" x2="63.25" y2="23.040275" width="0.1524" layer="1"/>
 </signal>
 <signal name="LED_RX">
@@ -10929,8 +10932,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="MCU" pad="46"/>
 <contactref element="FTDI" pad="TXO"/>
 <wire x1="71.42108125" y1="18.27891875" x2="73.1" y2="16.6" width="0.1524" layer="16"/>
-<wire x1="73.1" y1="16.6" x2="73.1" y2="12.08" width="0.1524" layer="16"/>
-<wire x1="73.1" y1="12.08" x2="74.5" y2="10.68" width="0.1524" layer="16"/>
+<wire x1="73.1" y1="16.6" x2="73.1" y2="11.98" width="0.1524" layer="16"/>
+<wire x1="73.1" y1="11.98" x2="74.5" y2="10.58" width="0.1524" layer="16"/>
 <wire x1="69.28928125" y1="18.27891875" x2="71.42108125" y2="18.27891875" width="0.1524" layer="16"/>
 <wire x1="59.75" y1="20.9447" x2="59.75" y2="21.95" width="0.1524" layer="1"/>
 <wire x1="59.75" y1="21.95" x2="59.3" y2="22.4" width="0.1524" layer="1"/>
@@ -10944,8 +10947,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="TX0">
 <contactref element="MCU" pad="47"/>
 <contactref element="FTDI" pad="RXI"/>
-<wire x1="74.5" y1="8.14" x2="72.8206" y2="9.8194" width="0.1524" layer="16"/>
-<wire x1="72.8206" y1="9.8194" x2="72.8206" y2="16.4842625" width="0.1524" layer="16"/>
+<wire x1="74.5" y1="8.04" x2="72.8206" y2="9.7194" width="0.1524" layer="16"/>
+<wire x1="72.8206" y1="9.7194" x2="72.8206" y2="16.4842625" width="0.1524" layer="16"/>
 <wire x1="71.30534375" y1="17.99951875" x2="72.8206" y2="16.4842625" width="0.1524" layer="16"/>
 <wire x1="69.17354375" y1="17.99951875" x2="71.30534375" y2="17.99951875" width="0.1524" layer="16"/>
 <wire x1="59.25" y1="20.9447" x2="59.25" y2="21.6238125" width="0.1524" layer="1"/>
@@ -10955,10 +10958,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="62.09885" y1="22.3206" x2="64.13705" y2="20.2824" width="0.1524" layer="16"/>
 <wire x1="64.13705" y1="20.2824" x2="66.8906625" y2="20.2824" width="0.1524" layer="16"/>
 <wire x1="66.8906625" y1="20.2824" x2="69.17354375" y2="17.99951875" width="0.1524" layer="16"/>
-<wire x1="58.93690625" y1="21.93690625" x2="60.5" y2="21.93690625" width="0.1524" layer="16"/>
-<wire x1="60.5" y1="21.93690625" x2="60.598009375" y2="21.93690625" width="0.1524" layer="16"/>
+<wire x1="58.93690625" y1="21.93690625" x2="60.74756875" y2="21.93690625" width="0.1524" layer="16"/>
 <wire x1="61.1312625" y1="22.3206" x2="60.74756875" y2="21.93690625" width="0.1524" layer="16"/>
-<wire x1="60.74756875" y1="21.93690625" x2="60.598009375" y2="21.93690625" width="0.1524" layer="16"/>
 </signal>
 <signal name="SIG" class="3">
 <contactref element="MCU" pad="63"/>
@@ -10989,24 +10990,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="D4" pad="A"/>
 <contactref element="AVR_ISP" pad="RESET"/>
 <contactref element="C22" pad="2"/>
-<wire x1="69.4" y1="11" x2="69.4" y2="10.4701" width="0.1524" layer="1"/>
-<wire x1="75.84" y1="21.53" x2="73.1" y2="19.449053125" width="0.1524" layer="1"/>
-<wire x1="73.1" y1="10.9" x2="73.1" y2="19.449053125" width="0.1524" layer="1"/>
+<wire x1="69.4" y1="11.3" x2="69.4" y2="10.4701" width="0.1524" layer="1"/>
 <wire x1="72.2" y1="10.5575" x2="70.825" y2="10.5575" width="0.1524" layer="1"/>
 <wire x1="70.825" y1="10.5575" x2="70.8" y2="10.5825" width="0.1524" layer="1"/>
 <wire x1="69.4" y1="10.4701" x2="70.6876" y2="10.4701" width="0.1524" layer="1"/>
 <wire x1="70.6876" y1="10.4701" x2="70.8" y2="10.5825" width="0.1524" layer="1"/>
 <wire x1="72.2" y1="10.5575" x2="72.7575" y2="10.5575" width="0.1524" layer="1"/>
-<wire x1="72.7575" y1="10.5575" x2="73.1" y2="10.9" width="0.1524" layer="1"/>
+<wire x1="73.1" y1="10.9" x2="72.7575" y2="10.5575" width="0.1524" layer="1"/>
 <wire x1="64.25" y1="11.6553" x2="64.25" y2="12.5674" width="0.1524" layer="1"/>
 <wire x1="64.25" y1="12.5674" x2="64.4" y2="12.7174" width="0.1524" layer="1"/>
 <via x="64.4" y="12.7174" extent="1-16" drill="0.254"/>
 <wire x1="64.4" y1="12.7174" x2="66.0826" y2="12.7174" width="0.1524" layer="16"/>
-<wire x1="67.5" y1="11.3" x2="69.1" y2="11.3" width="0.1524" layer="16"/>
+<wire x1="67.5" y1="11.3" x2="69.4" y2="11.3" width="0.1524" layer="16"/>
 <via x="69.4" y="11.3" extent="1-16" drill="0.254"/>
 <wire x1="66.0826" y1="12.7174" x2="67.5" y2="11.3" width="0.1524" layer="16"/>
-<wire x1="69.4" y1="11.3" x2="69.4" y2="11" width="0.1524" layer="1"/>
-<wire x1="69.4" y1="11.3" x2="69.1" y2="11.3" width="0.1524" layer="16"/>
+<wire x1="75.84" y1="21.43" x2="73.1" y2="18.69" width="0.1524" layer="1"/>
+<wire x1="73.1" y1="18.69" x2="73.1" y2="10.9" width="0.1524" layer="1"/>
 </signal>
 <signal name="NGND" class="5">
 <contactref element="HBRIDGE-THUMB" pad="4"/>
@@ -11079,10 +11078,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="0" y="9.5"/>
 </polygon>
 <via x="26.1" y="13" extent="1-16" drill="0.254"/>
-<wire x1="28.2425" y1="17.2" x2="27.4" y2="17.2" width="0.508" layer="1"/>
-<via x="27.4" y="17.2" extent="1-16" drill="0.254"/>
-<wire x1="28.2425" y1="18.6" x2="27.4" y2="18.6" width="0.508" layer="1"/>
-<via x="27.4" y="18.6" extent="1-16" drill="0.254"/>
+<wire x1="28.2425" y1="17.3" x2="27.4" y2="17.3" width="0.508" layer="1"/>
+<via x="27.4" y="17.3" extent="1-16" drill="0.254"/>
+<wire x1="28.2425" y1="18.7" x2="27.4" y2="18.7" width="0.508" layer="1"/>
+<via x="27.4" y="18.7" extent="1-16" drill="0.254"/>
 <wire x1="35.6" y1="17" x2="34.375" y2="17" width="0.508" layer="1"/>
 <via x="35.6" y="17" extent="1-16" drill="0.254"/>
 <wire x1="8" y1="19.8" x2="7.8652" y2="19.8" width="1.016" layer="1"/>
@@ -11278,46 +11277,46 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C16" pad="1"/>
 <contactref element="C17" pad="1"/>
 <contactref element="C18" pad="A"/>
-<wire x1="50.1299" y1="34.2" x2="50.1299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="50.1299" y1="35.8451" x2="49.875" y2="36.1" width="0.254" layer="1"/>
-<wire x1="45.5299" y1="34.2" x2="45.5299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="45.5299" y1="35.8451" x2="45.275" y2="36.1" width="0.254" layer="1"/>
-<wire x1="40.9299" y1="34.2" x2="40.9299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="40.9299" y1="35.8451" x2="40.675" y2="36.1" width="0.254" layer="1"/>
-<wire x1="36.3299" y1="34.2" x2="36.3299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="36.3299" y1="35.8451" x2="36.075" y2="36.1" width="0.254" layer="1"/>
-<wire x1="31.7299" y1="34.2" x2="31.7299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="31.7299" y1="35.8451" x2="31.475" y2="36.1" width="0.254" layer="1"/>
-<wire x1="27.1299" y1="34.2" x2="27.1299" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="27.1299" y1="35.8451" x2="26.875" y2="36.1" width="0.254" layer="1"/>
+<wire x1="50.1299" y1="34.2" x2="50.1299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="50.1299" y1="35.9451" x2="49.875" y2="36.2" width="0.254" layer="1"/>
+<wire x1="45.5299" y1="34.2" x2="45.5299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="45.5299" y1="35.9451" x2="45.275" y2="36.2" width="0.254" layer="1"/>
+<wire x1="40.9299" y1="34.2" x2="40.9299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="40.9299" y1="35.9451" x2="40.675" y2="36.2" width="0.254" layer="1"/>
+<wire x1="36.3299" y1="34.2" x2="36.3299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="36.3299" y1="35.9451" x2="36.075" y2="36.2" width="0.254" layer="1"/>
+<wire x1="31.7299" y1="34.2" x2="31.7299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="31.7299" y1="35.9451" x2="31.475" y2="36.2" width="0.254" layer="1"/>
+<wire x1="27.1299" y1="34.2" x2="27.1299" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="27.1299" y1="35.9451" x2="26.875" y2="36.2" width="0.254" layer="1"/>
 <wire x1="29.225" y1="15.3" x2="29.1575" y2="15.3" width="0.1524" layer="1"/>
-<wire x1="29.1575" y1="15.3" x2="29.1575" y2="17.2" width="0.4064" layer="1"/>
-<wire x1="29.1575" y1="17.2" x2="29.1575" y2="18.6" width="0.4064" layer="1"/>
+<wire x1="29.1575" y1="15.3" x2="29.1575" y2="17.3" width="0.4064" layer="1"/>
+<wire x1="29.1575" y1="17.3" x2="29.1575" y2="18.7" width="0.4064" layer="1"/>
 <via x="29.1" y="20.4" extent="1-16" drill="0.254"/>
 <wire x1="29.225" y1="15.3" x2="31.0894" y2="15.3" width="0.4064" layer="1"/>
 <wire x1="31.0894" y1="15.3" x2="31.9" y2="14.4894" width="0.4064" layer="1"/>
 <wire x1="26.875" y1="22.625" x2="29.1" y2="20.4" width="0.4064" layer="16"/>
-<wire x1="49.875" y1="36.1" x2="48.8684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="43.7684" y1="37.1066" x2="39.5" y2="37.1066" width="0.3048" layer="1"/>
-<wire x1="39.5" y1="37.1066" x2="35" y2="37.1066" width="0.3048" layer="1"/>
-<wire x1="35" y1="37.1066" x2="30.5" y2="37.1066" width="0.3048" layer="1"/>
-<wire x1="30.5" y1="37.1066" x2="27.8816" y2="37.1066" width="0.3048" layer="1"/>
-<wire x1="26.875" y1="36.1" x2="26.875" y2="31.775" width="0.4064" layer="2"/>
+<wire x1="49.875" y1="36.2" x2="48.8684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="43.7684" y1="37.2066" x2="39.5" y2="37.2066" width="0.3048" layer="1"/>
+<wire x1="39.5" y1="37.2066" x2="35" y2="37.2066" width="0.3048" layer="1"/>
+<wire x1="35" y1="37.2066" x2="30.5" y2="37.2066" width="0.3048" layer="1"/>
+<wire x1="30.5" y1="37.2066" x2="27.8816" y2="37.2066" width="0.3048" layer="1"/>
+<wire x1="26.875" y1="36.2" x2="26.875" y2="31.775" width="0.4064" layer="2"/>
 <wire x1="26.875" y1="31.775" x2="25.6" y2="30.7" width="0.4064" layer="2"/>
 <via x="25.6" y="30.7" extent="1-16" drill="0.254"/>
 <wire x1="25.6" y1="30.7" x2="26.875" y2="29.425" width="0.4064" layer="16"/>
 <wire x1="26.875" y1="29.425" x2="26.875" y2="22.625" width="0.4064" layer="16"/>
-<wire x1="48.8684" y1="37.1066" x2="44.2684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="26.875" y1="36.1" x2="27.8816" y2="37.1066" width="0.3048" layer="1"/>
-<wire x1="45.275" y1="36.1" x2="44.2684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="44.2684" y1="37.1066" x2="43.7684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="40.675" y1="36.1" x2="39.6684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="39.6684" y1="37.1066" x2="39.5" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="36.075" y1="36.1" x2="35.0684" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="35.0684" y1="37.1066" x2="35" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="31.475" y1="36.1" x2="30.5" y2="37.075" width="0.254" layer="1"/>
-<wire x1="30.5" y1="37.075" x2="30.5" y2="37.1066" width="0.254" layer="1"/>
-<wire x1="29.1575" y1="18.6" x2="29.1575" y2="20.3425" width="0.4064" layer="1"/>
+<wire x1="48.8684" y1="37.2066" x2="44.2684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="26.875" y1="36.2" x2="27.8816" y2="37.2066" width="0.3048" layer="1"/>
+<wire x1="45.275" y1="36.2" x2="44.2684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="44.2684" y1="37.2066" x2="43.7684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="40.675" y1="36.2" x2="39.6684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="39.6684" y1="37.2066" x2="39.5" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="36.075" y1="36.2" x2="35.0684" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="35.0684" y1="37.2066" x2="35" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="31.475" y1="36.2" x2="30.5" y2="37.175" width="0.254" layer="1"/>
+<wire x1="30.5" y1="37.175" x2="30.5" y2="37.2066" width="0.254" layer="1"/>
+<wire x1="29.1575" y1="18.7" x2="29.1575" y2="20.3425" width="0.4064" layer="1"/>
 <wire x1="29.1575" y1="20.3425" x2="29.1" y2="20.4" width="0.4064" layer="1"/>
 <wire x1="31.9" y1="14.4894" x2="31.9" y2="16.985528125" width="0.4064" layer="1"/>
 <wire x1="31.9" y1="16.985528125" x2="31.625" y2="17" width="0.4064" layer="1"/>
@@ -11346,8 +11345,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$50">
 <contactref element="FTDI" pad="DTR"/>
 <contactref element="C22" pad="1"/>
-<wire x1="74.5" y1="5.6" x2="72.9" y2="5.6" width="0.1524" layer="1"/>
-<wire x1="72.9" y1="5.6" x2="72.2" y2="6.3" width="0.1524" layer="1"/>
+<wire x1="74.5" y1="5.5" x2="73" y2="5.5" width="0.1524" layer="1"/>
+<wire x1="73" y1="5.5" x2="72.2" y2="6.3" width="0.1524" layer="1"/>
 <wire x1="72.2" y1="6.3" x2="72.2" y2="9.6425" width="0.1524" layer="1"/>
 </signal>
 <signal name="AGND" class="3">
@@ -11625,40 +11624,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="67.3" y1="27.1" x2="67.3" y2="26.72" width="0.254" layer="1"/>
 <wire x1="62.3" y1="26.9" x2="62.3" y2="26.52" width="0.254" layer="1"/>
 <wire x1="56.9" y1="26.8" x2="56.9" y2="26.42" width="0.254" layer="1"/>
-<wire x1="65.3" y1="19.2" x2="64" y2="17.8" width="0" layer="19" extent="1-15"/>
-<wire x1="60.8" y1="10.1" x2="60.7" y2="10.6" width="0" layer="19" extent="1-1"/>
-<wire x1="60.2" y1="9.5" x2="60.2" y2="10.1" width="0" layer="19" extent="1-1"/>
-<wire x1="60.2" y1="8.9" x2="60.2" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="60.2" y1="8.3" x2="60.2" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="60.8" y1="8.3" x2="60.2" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="60.8" y1="8.9" x2="60.2" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="60.8" y1="9.4" x2="60.8" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="59.6" y1="8.3" x2="60.2" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="59" y1="8.3" x2="59.6" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="59.6" y1="8.9" x2="60.2" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="59" y1="8.9" x2="59" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="59.6" y1="9.5" x2="60.2" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="59" y1="9.5" x2="59" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="59.6" y1="10.1" x2="60.2" y2="10.1" width="0" layer="19" extent="1-1"/>
-<wire x1="59" y1="10.1" x2="59" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="58.4" y1="8.3" x2="59" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="57.8" y1="8.3" x2="58.4" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="58.4" y1="8.9" x2="59" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="57.2" y1="8.3" x2="57.8" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="57.8" y1="8.9" x2="57.8" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="58.4" y1="9.5" x2="59" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="62.5" y1="10.4" x2="61.75" y2="11.00610625" width="0" layer="19" extent="1-1"/>
-<wire x1="63.25" y1="10.95" x2="62.5" y2="10.4" width="0" layer="19" extent="1-1"/>
-<wire x1="66.4" y1="9.5" x2="65.6575" y2="10" width="0" layer="19" extent="1-1"/>
-<wire x1="66.4" y1="8.9" x2="66.4" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="66.4" y1="8.3" x2="66.4" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="67" y1="8.3" x2="66.4" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="67.6" y1="8.3" x2="67" y2="8.3" width="0" layer="19" extent="1-1"/>
-<wire x1="67" y1="8.9" x2="66.4" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="65.6575" y1="8.6" x2="66.4" y2="8.9" width="0" layer="19" extent="1-1"/>
-<wire x1="61" y1="17.8" x2="59.7" y2="19.2" width="0" layer="19" extent="1-15"/>
-<wire x1="62.5" y1="16.3" x2="64" y2="17.8" width="0" layer="19" extent="1-1"/>
-<wire x1="64" y1="14.8" x2="62.5" y2="16.3" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AVCC" class="3">
 <contactref element="MCU" pad="59"/>
@@ -11726,8 +11691,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="FLEX-THUMB1">
 <contactref element="R6" pad="2"/>
 <contactref element="FLEX-THUMB" pad="2"/>
-<wire x1="56.6175" y1="34.2" x2="56.6175" y2="36.0925" width="0.254" layer="1"/>
-<wire x1="56.6175" y1="36.0925" x2="56.625" y2="36.1" width="0.1524" layer="1"/>
+<wire x1="56.6175" y1="34.2" x2="56.6175" y2="36.1925" width="0.254" layer="1"/>
+<wire x1="56.6175" y1="36.1925" x2="56.625" y2="36.2" width="0.1524" layer="1"/>
 <wire x1="56.6175" y1="34.2" x2="56.6175" y2="33.3175" width="0.1524" layer="1"/>
 <wire x1="56.6175" y1="33.3175" x2="56.5" y2="33.2" width="0.1524" layer="1"/>
 <wire x1="54.23705" y1="33.2" x2="52.7824" y2="31.74535" width="0.1524" layer="1"/>
@@ -11756,8 +11721,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="FLEX-PINKY1">
 <contactref element="R10" pad="2"/>
 <contactref element="FLEX-PINKY" pad="2"/>
-<wire x1="75.0175" y1="34.2" x2="75.0175" y2="36.0925" width="0.254" layer="1"/>
-<wire x1="75.0175" y1="36.0925" x2="75.025" y2="36.1" width="0.1524" layer="1"/>
+<wire x1="75.0175" y1="34.2" x2="75.0175" y2="36.1925" width="0.254" layer="1"/>
+<wire x1="75.0175" y1="36.1925" x2="75.025" y2="36.2" width="0.1524" layer="1"/>
 <wire x1="75.0175" y1="34.2" x2="75.0175" y2="33.3175" width="0.1524" layer="1"/>
 <wire x1="75.0175" y1="33.3175" x2="73.7824" y2="32.0824" width="0.1524" layer="1"/>
 <wire x1="73.7824" y1="32.0824" x2="54.7" y2="32.0824" width="0.1524" layer="1"/>
@@ -11796,8 +11761,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="Q6" pad="3"/>
 <contactref element="VIBE-PALM" pad="2"/>
 <contactref element="D10" pad="A"/>
-<wire x1="27.8701" y1="34.2" x2="27.8701" y2="35.8451" width="0.254" layer="1"/>
-<wire x1="27.8701" y1="35.8451" x2="28.125" y2="36.1" width="0.254" layer="1"/>
+<wire x1="27.8701" y1="34.2" x2="27.8701" y2="35.9451" width="0.254" layer="1"/>
+<wire x1="27.8701" y1="35.9451" x2="28.125" y2="36.2" width="0.254" layer="1"/>
 <wire x1="27.8701" y1="34.2" x2="28.2" y2="34.2" width="0.254" layer="1"/>
 <wire x1="28.4575" y1="33.9425" x2="28.4575" y2="32.1" width="0.254" layer="1"/>
 <wire x1="28.2" y1="34.2" x2="28.4575" y2="33.9425" width="0.254" layer="1"/>
@@ -11816,56 +11781,56 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$1">
 <contactref element="HBRIDGE-THUMB" pad="3"/>
 <contactref element="TEC-THUMB" pad="1"/>
-<wire x1="2.75" y1="34.235" x2="2.75" y2="35.875" width="0.254" layer="1"/>
-<wire x1="2.75" y1="35.875" x2="2.975" y2="36.1" width="0.254" layer="1"/>
+<wire x1="2.75" y1="34.235" x2="2.75" y2="35.975" width="0.254" layer="1"/>
+<wire x1="2.75" y1="35.975" x2="2.975" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="TEC-THUMB" pad="2"/>
 <contactref element="HBRIDGE-THUMB" pad="2"/>
-<wire x1="3.25" y1="34.235" x2="3.25" y2="35.125" width="0.254" layer="1"/>
-<wire x1="3.25" y1="35.125" x2="4.225" y2="36.1" width="0.254" layer="1"/>
+<wire x1="3.25" y1="34.235" x2="3.25" y2="35.225" width="0.254" layer="1"/>
+<wire x1="3.25" y1="35.225" x2="4.225" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="HBRIDGE-INDEX" pad="2"/>
 <contactref element="TEC-INDEX" pad="2"/>
-<wire x1="7.85" y1="34.235" x2="7.85" y2="35.125" width="0.254" layer="1"/>
-<wire x1="7.85" y1="35.125" x2="8.825" y2="36.1" width="0.254" layer="1"/>
+<wire x1="7.85" y1="34.235" x2="7.85" y2="35.225" width="0.254" layer="1"/>
+<wire x1="7.85" y1="35.225" x2="8.825" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="TEC-INDEX" pad="1"/>
 <contactref element="HBRIDGE-INDEX" pad="3"/>
-<wire x1="7.35" y1="34.235" x2="7.35" y2="35.875" width="0.254" layer="1"/>
-<wire x1="7.35" y1="35.875" x2="7.575" y2="36.1" width="0.254" layer="1"/>
+<wire x1="7.35" y1="34.235" x2="7.35" y2="35.975" width="0.254" layer="1"/>
+<wire x1="7.35" y1="35.975" x2="7.575" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="HBRIDGE-MIDDLE" pad="3"/>
 <contactref element="TEC-MIDDLE" pad="1"/>
-<wire x1="11.95" y1="34.235" x2="11.95" y2="35.875" width="0.254" layer="1"/>
-<wire x1="11.95" y1="35.875" x2="12.175" y2="36.1" width="0.254" layer="1"/>
+<wire x1="11.95" y1="34.235" x2="11.95" y2="35.975" width="0.254" layer="1"/>
+<wire x1="11.95" y1="35.975" x2="12.175" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$16">
 <contactref element="HBRIDGE-MIDDLE" pad="2"/>
 <contactref element="TEC-MIDDLE" pad="2"/>
-<wire x1="12.45" y1="34.235" x2="12.45" y2="35.125" width="0.254" layer="1"/>
-<wire x1="12.45" y1="35.125" x2="13.425" y2="36.1" width="0.254" layer="1"/>
+<wire x1="12.45" y1="34.235" x2="12.45" y2="35.225" width="0.254" layer="1"/>
+<wire x1="12.45" y1="35.225" x2="13.425" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="HBRIDGE-RING" pad="3"/>
 <contactref element="TEC-RING" pad="1"/>
-<wire x1="16.55" y1="34.235" x2="16.55" y2="35.875" width="0.254" layer="1"/>
-<wire x1="16.55" y1="35.875" x2="16.775" y2="36.1" width="0.254" layer="1"/>
+<wire x1="16.55" y1="34.235" x2="16.55" y2="35.975" width="0.254" layer="1"/>
+<wire x1="16.55" y1="35.975" x2="16.775" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$23">
 <contactref element="HBRIDGE-RING" pad="2"/>
 <contactref element="TEC-RING" pad="2"/>
-<wire x1="17.05" y1="34.235" x2="17.05" y2="35.125" width="0.254" layer="1"/>
-<wire x1="17.05" y1="35.125" x2="18.025" y2="36.1" width="0.254" layer="1"/>
+<wire x1="17.05" y1="34.235" x2="17.05" y2="35.225" width="0.254" layer="1"/>
+<wire x1="17.05" y1="35.225" x2="18.025" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="HBRIDGE-PINKY" pad="3"/>
 <contactref element="TEC-PINKY" pad="1"/>
-<wire x1="21.15" y1="34.235" x2="21.15" y2="35.875" width="0.254" layer="1"/>
-<wire x1="21.15" y1="35.875" x2="21.375" y2="36.1" width="0.254" layer="1"/>
+<wire x1="21.15" y1="34.235" x2="21.15" y2="35.975" width="0.254" layer="1"/>
+<wire x1="21.15" y1="35.975" x2="21.375" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="1.8V">
 <contactref element="C21" pad="A"/>
@@ -11944,7 +11909,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="33.125" y1="26.8798625" x2="30.6048625" y2="29.4" width="0.1524" layer="1"/>
 <wire x1="30.6048625" y1="29.4" x2="26.4" y2="29.4" width="0.1524" layer="1"/>
 <wire x1="33.125" y1="25.7258" x2="33.125" y2="26.8798625" width="0.1524" layer="1"/>
-<wire x1="26.2175" y1="29.5825" x2="26.2175" y2="30" width="0" layer="19" extent="1-1"/>
+<wire x1="26.2175" y1="29.5825" x2="26.2175" y2="30" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$28">
 <contactref element="R16" pad="2"/>
@@ -11996,9 +11961,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="+">
 <contactref element="LIPO1" pad="+"/>
 <contactref element="SW1" pad="P"/>
-<wire x1="19.825" y1="6.7" x2="20.2" y2="6.8" width="1.016" layer="1"/>
-<wire x1="20.2" y1="6.8" x2="18.9" y2="8.1" width="1.016" layer="1"/>
-<wire x1="18.9" y1="8.1" x2="10.6" y2="8.1" width="1.016" layer="1"/>
+<wire x1="19.825" y1="6.7" x2="19.825" y2="7.191778125" width="1.016" layer="1"/>
+<wire x1="19.825" y1="7.191778125" x2="19.722009375" y2="7.577990625" width="1.016" layer="1"/>
+<wire x1="19.722009375" y1="7.577990625" x2="19.2" y2="8.1" width="1.016" layer="1"/>
+<wire x1="19.2" y1="8.1" x2="10.6" y2="8.1" width="1.016" layer="1"/>
 <wire x1="7.9" y1="10.8" x2="7.9" y2="10.865" width="1.016" layer="1"/>
 <wire x1="10.6" y1="8.1" x2="7.9" y2="10.8" width="1.016" layer="1"/>
 </signal>
@@ -12075,21 +12041,21 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="77.5" y="4.5" extent="1-16" drill="0.254"/>
 <wire x1="77.5" y1="4.5" x2="77.7238" y2="4.7238" width="0.4064" layer="1"/>
 <wire x1="73.3" y1="4" x2="77" y2="4" width="0.4064" layer="2"/>
-<wire x1="76" y1="37.1" x2="77.7238" y2="35.3762" width="0.4064" layer="1"/>
-<wire x1="77.7238" y1="4.7238" x2="77.7238" y2="35.3762" width="0.4064" layer="1"/>
-<wire x1="60.975" y1="37.1" x2="56.375" y2="37.1" width="0.254" layer="1"/>
-<wire x1="56.375" y1="37.1" x2="55.375" y2="36.1" width="0.254" layer="1"/>
-<wire x1="60.975" y1="37.1" x2="65.5" y2="37.1" width="0.3048" layer="1"/>
-<wire x1="65.5" y1="37.1" x2="70.175" y2="37.1" width="0.3048" layer="1"/>
-<wire x1="70.175" y1="37.1" x2="75" y2="37.1" width="0.3048" layer="1"/>
-<wire x1="75" y1="37.1" x2="76" y2="37.1" width="0.4064" layer="1"/>
-<wire x1="73.775" y1="36.1" x2="74.775" y2="37.1" width="0.254" layer="1"/>
-<wire x1="74.775" y1="37.1" x2="75" y2="37.1" width="0.254" layer="1"/>
-<wire x1="64.575" y1="36.1" x2="65.5" y2="37.025" width="0.254" layer="1"/>
-<wire x1="65.5" y1="37.025" x2="65.5" y2="37.1" width="0.254" layer="1"/>
-<wire x1="55.375" y1="31.3" x2="55.375" y2="36.1" width="0.254" layer="2"/>
-<wire x1="64.575" y1="31.3" x2="64.575" y2="36.1" width="0.254" layer="2"/>
-<wire x1="73.775" y1="31.3" x2="73.775" y2="36.1" width="0.254" layer="2"/>
+<wire x1="76" y1="37.2" x2="77.7238" y2="35.4762" width="0.4064" layer="1"/>
+<wire x1="77.7238" y1="4.7238" x2="77.7238" y2="35.4762" width="0.4064" layer="1"/>
+<wire x1="60.975" y1="37.2" x2="56.375" y2="37.2" width="0.254" layer="1"/>
+<wire x1="56.375" y1="37.2" x2="55.375" y2="36.2" width="0.254" layer="1"/>
+<wire x1="60.975" y1="37.2" x2="65.5" y2="37.2" width="0.3048" layer="1"/>
+<wire x1="65.5" y1="37.2" x2="70.175" y2="37.2" width="0.3048" layer="1"/>
+<wire x1="70.175" y1="37.2" x2="75" y2="37.2" width="0.3048" layer="1"/>
+<wire x1="75" y1="37.2" x2="76" y2="37.2" width="0.4064" layer="1"/>
+<wire x1="73.775" y1="36.2" x2="74.775" y2="37.2" width="0.254" layer="1"/>
+<wire x1="74.775" y1="37.2" x2="75" y2="37.2" width="0.254" layer="1"/>
+<wire x1="64.575" y1="36.2" x2="65.5" y2="37.125" width="0.254" layer="1"/>
+<wire x1="65.5" y1="37.125" x2="65.5" y2="37.2" width="0.254" layer="1"/>
+<wire x1="55.375" y1="31.3" x2="55.375" y2="36.2" width="0.254" layer="2"/>
+<wire x1="64.575" y1="31.3" x2="64.575" y2="36.2" width="0.254" layer="2"/>
+<wire x1="73.775" y1="31.3" x2="73.775" y2="36.2" width="0.254" layer="2"/>
 <wire x1="73.7575" y1="29.3" x2="73.7575" y2="31.2825" width="0.254" layer="1"/>
 <wire x1="73.7575" y1="31.2825" x2="73.775" y2="31.3" width="0.254" layer="1"/>
 <wire x1="69.1575" y1="29.3" x2="69.1575" y2="31.2825" width="0.254" layer="1"/>
@@ -12100,20 +12066,20 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="59.9575" y1="31.2825" x2="59.975" y2="31.3" width="0.254" layer="1"/>
 <wire x1="55.3575" y1="29.3" x2="55.3575" y2="31.2825" width="0.254" layer="1"/>
 <wire x1="55.3575" y1="31.2825" x2="55.375" y2="31.3" width="0.254" layer="1"/>
-<wire x1="73.7575" y1="34.2" x2="73.7575" y2="36.0825" width="0.254" layer="1"/>
-<wire x1="73.7575" y1="36.0825" x2="73.775" y2="36.1" width="0.254" layer="1"/>
-<wire x1="64.5575" y1="34.2" x2="64.5575" y2="36.0825" width="0.254" layer="1"/>
-<wire x1="64.5575" y1="36.0825" x2="64.575" y2="36.1" width="0.254" layer="1"/>
-<wire x1="55.3575" y1="34.2" x2="55.3575" y2="36.0825" width="0.254" layer="1"/>
-<wire x1="55.3575" y1="36.0825" x2="55.375" y2="36.1" width="0.254" layer="1"/>
-<wire x1="59.9575" y1="34.2" x2="59.9575" y2="36.0825" width="0.254" layer="1"/>
-<wire x1="59.9575" y1="36.0825" x2="59.975" y2="36.1" width="0.254" layer="1"/>
-<wire x1="59.975" y1="36.1" x2="60.975" y2="37.1" width="0.254" layer="1"/>
-<wire x1="59.975" y1="31.3" x2="59.975" y2="36.1" width="0.254" layer="2"/>
-<wire x1="69.1575" y1="34.2" x2="69.1575" y2="36.0825" width="0.254" layer="1"/>
-<wire x1="69.1575" y1="36.0825" x2="69.175" y2="36.1" width="0.254" layer="1"/>
-<wire x1="69.175" y1="31.3" x2="69.175" y2="36.1" width="0.254" layer="2"/>
-<wire x1="69.175" y1="36.1" x2="70.175" y2="37.1" width="0.254" layer="1"/>
+<wire x1="73.7575" y1="34.2" x2="73.7575" y2="36.1825" width="0.254" layer="1"/>
+<wire x1="73.7575" y1="36.1825" x2="73.775" y2="36.2" width="0.254" layer="1"/>
+<wire x1="64.5575" y1="34.2" x2="64.5575" y2="36.1825" width="0.254" layer="1"/>
+<wire x1="64.5575" y1="36.1825" x2="64.575" y2="36.2" width="0.254" layer="1"/>
+<wire x1="55.3575" y1="34.2" x2="55.3575" y2="36.1825" width="0.254" layer="1"/>
+<wire x1="55.3575" y1="36.1825" x2="55.375" y2="36.2" width="0.254" layer="1"/>
+<wire x1="59.9575" y1="34.2" x2="59.9575" y2="36.1825" width="0.254" layer="1"/>
+<wire x1="59.9575" y1="36.1825" x2="59.975" y2="36.2" width="0.254" layer="1"/>
+<wire x1="59.975" y1="36.2" x2="60.975" y2="37.2" width="0.254" layer="1"/>
+<wire x1="59.975" y1="31.3" x2="59.975" y2="36.2" width="0.254" layer="2"/>
+<wire x1="69.1575" y1="34.2" x2="69.1575" y2="36.1825" width="0.254" layer="1"/>
+<wire x1="69.1575" y1="36.1825" x2="69.175" y2="36.2" width="0.254" layer="1"/>
+<wire x1="69.175" y1="31.3" x2="69.175" y2="36.2" width="0.254" layer="2"/>
+<wire x1="69.175" y1="36.2" x2="70.175" y2="37.2" width="0.254" layer="1"/>
 <contactref element="JP2" pad="1"/>
 <wire x1="57.4064" y1="12.5" x2="57.4064" y2="11.5556" width="0.254" layer="16"/>
 <wire x1="57.4064" y1="11.5556" x2="57.662" y2="11.3" width="0.254" layer="16"/>
@@ -12126,7 +12092,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="50.7" y1="10" x2="49.6" y2="10" width="0.4064" layer="16"/>
 <wire x1="49" y1="10.6" x2="49" y2="15.5" width="0.4064" layer="16"/>
 <via x="49" y="15.5" extent="1-16" drill="0.254"/>
-<wire x1="49" y1="15.5" x2="48.9575" y2="15.5425" width="0.4064" layer="1"/>
+<wire x1="48.9575" y1="15.5425" x2="49" y2="15.5" width="0.4064" layer="1"/>
 <wire x1="49.6" y1="10" x2="49" y2="10.6" width="0.4064" layer="16"/>
 <contactref element="OPAMP1" pad="8"/>
 <contactref element="OPAMP2" pad="8"/>
@@ -12147,13 +12113,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="58.7" y1="27.7" x2="59.975" y2="28.975" width="0.254" layer="2"/>
 <wire x1="59.975" y1="28.975" x2="59.975" y2="31.3" width="0.254" layer="2"/>
 <wire x1="64.375" y1="31.1" x2="64.575" y2="31.3" width="0.254" layer="2"/>
-<wire x1="48.9575" y1="15.5425" x2="48.9575" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="48.9575" y1="18" x2="48.9575" y2="15.5425" width="0.381" layer="1"/>
 </signal>
 <signal name="AREF">
 <contactref element="JP2" pad="2"/>
 <contactref element="MCU" pad="62"/>
 <via x="56.4" y="11.3" extent="1-16" drill="0.254"/>
-<wire x1="56.5936" y1="12.5" x2="56.6" y2="12.4936" width="0.254" layer="16"/>
 <wire x1="57.8553" y1="13.55" x2="57.15" y2="13.55" width="0.254" layer="1"/>
 <wire x1="57.15" y1="13.55" x2="56.4" y2="12.8" width="0.254" layer="1"/>
 <wire x1="56.4" y1="12.8" x2="56.4" y2="11.3" width="0.254" layer="1"/>
@@ -12179,8 +12144,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="N$27">
 <contactref element="TEC-PINKY" pad="2"/>
 <contactref element="HBRIDGE-PINKY" pad="2"/>
-<wire x1="21.65" y1="34.235" x2="21.65" y2="35.125" width="0.254" layer="1"/>
-<wire x1="21.65" y1="35.125" x2="22.625" y2="36.1" width="0.254" layer="1"/>
+<wire x1="21.65" y1="34.235" x2="21.65" y2="35.225" width="0.254" layer="1"/>
+<wire x1="21.65" y1="35.225" x2="22.625" y2="36.2" width="0.254" layer="1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="C2" pad="A"/>
@@ -12434,6 +12399,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <approved hash="19,16,d598feb6921832c9"/>
 <approved hash="19,16,41de40bc78b479d6"/>
 <approved hash="19,16,fd98eac2611425b5"/>
+<approved hash="7,39,feed5dcc9dcc3eed"/>
+<approved hash="7,39,44afdb8e1b8184a0"/>
 </errors>
 </board>
 </drawing>

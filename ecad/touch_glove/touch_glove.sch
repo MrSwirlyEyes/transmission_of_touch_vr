@@ -489,75 +489,6 @@
 <text x="0" y="5.08" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.08" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
-<package name="TSSOP-28">
-<wire x1="-2.2" y1="4.85" x2="-2.2" y2="-4.85" width="0.1524" layer="21"/>
-<wire x1="2.2" y1="-4.85" x2="-2.2" y2="-4.85" width="0.1524" layer="21"/>
-<wire x1="2.2" y1="-4.85" x2="2.2" y2="4.85" width="0.1524" layer="21"/>
-<wire x1="-2.2" y1="4.85" x2="2.2" y2="4.85" width="0.1524" layer="21"/>
-<circle x="-1.7002" y="4.3296" radius="0.254" width="0.1524" layer="21"/>
-<smd name="1" x="-3.1" y="4.225" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="-3.1" y="3.575" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="3" x="-3.1" y="2.925" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="4" x="-3.1" y="2.275" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="5" x="-3.1" y="1.625" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="6" x="-3.1" y="0.975" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="7" x="-3.1" y="0.325" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="8" x="-3.1" y="-0.325" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="21" x="3.1" y="-0.325" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="22" x="3.1" y="0.325" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="23" x="3.1" y="0.975" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="24" x="3.1" y="1.625" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="25" x="3.1" y="2.275" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="26" x="3.1" y="2.925" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="27" x="3.1" y="3.575" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="28" x="3.1" y="4.225" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="9" x="-3.1" y="-0.975" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="10" x="-3.1" y="-1.625" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="20" x="3.1" y="-0.975" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="19" x="3.1" y="-1.625" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="11" x="-3.1" y="-2.275" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="12" x="-3.1" y="-2.925" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="13" x="-3.1" y="-3.575" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="14" x="-3.1" y="-4.225" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="15" x="3.1" y="-4.225" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="16" x="3.1" y="-3.575" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="17" x="3.1" y="-2.925" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<smd name="18" x="3.1" y="-2.275" dx="0.3" dy="1.4" layer="1" roundness="50" rot="R270"/>
-<rectangle x1="-3.2" y1="4.1025" x2="-2.2" y2="4.3475" layer="51"/>
-<rectangle x1="-3.2" y1="3.4525" x2="-2.2" y2="3.6975" layer="51"/>
-<rectangle x1="-3.2" y1="2.8025" x2="-2.2" y2="3.0475" layer="51"/>
-<rectangle x1="-3.2" y1="2.1525" x2="-2.2" y2="2.3975" layer="51"/>
-<rectangle x1="-3.2" y1="1.5025" x2="-2.2" y2="1.7475" layer="51"/>
-<rectangle x1="-3.2" y1="0.2025" x2="-2.2" y2="0.4475" layer="51"/>
-<rectangle x1="-3.2" y1="0.8525" x2="-2.2" y2="1.0975" layer="51"/>
-<rectangle x1="-3.2" y1="-0.4475" x2="-2.2" y2="-0.2025" layer="51"/>
-<rectangle x1="-3.2" y1="-1.0975" x2="-2.2" y2="-0.8525" layer="51"/>
-<rectangle x1="-3.2" y1="-1.7475" x2="-2.2" y2="-1.5025" layer="51"/>
-<rectangle x1="-3.2" y1="-2.3975" x2="-2.2" y2="-2.1525" layer="51"/>
-<rectangle x1="-3.2" y1="-3.0475" x2="-2.2" y2="-2.8025" layer="51"/>
-<rectangle x1="-3.2" y1="-3.6975" x2="-2.2" y2="-3.4525" layer="51"/>
-<rectangle x1="-3.2" y1="-4.3475" x2="-2.2" y2="-4.1025" layer="51"/>
-<rectangle x1="2.2" y1="-4.3475" x2="3.2" y2="-4.1025" layer="51"/>
-<rectangle x1="2.2" y1="-3.6975" x2="3.2" y2="-3.4525" layer="51"/>
-<rectangle x1="2.2" y1="-3.0475" x2="3.2" y2="-2.8025" layer="51"/>
-<rectangle x1="2.2" y1="-2.3975" x2="3.2" y2="-2.1525" layer="51"/>
-<rectangle x1="2.2" y1="-1.7475" x2="3.2" y2="-1.5025" layer="51"/>
-<rectangle x1="2.2" y1="-1.0975" x2="3.2" y2="-0.8525" layer="51"/>
-<rectangle x1="2.2" y1="-0.4475" x2="3.2" y2="-0.2025" layer="51"/>
-<rectangle x1="2.2" y1="0.2025" x2="3.2" y2="0.4475" layer="51"/>
-<rectangle x1="2.2" y1="0.8525" x2="3.2" y2="1.0975" layer="51"/>
-<rectangle x1="2.2" y1="1.5025" x2="3.2" y2="1.7475" layer="51"/>
-<rectangle x1="2.2" y1="2.1525" x2="3.2" y2="2.3975" layer="51"/>
-<rectangle x1="2.2" y1="2.8025" x2="3.2" y2="3.0475" layer="51"/>
-<rectangle x1="2.2" y1="3.4525" x2="3.2" y2="3.6975" layer="51"/>
-<rectangle x1="2.2" y1="4.1025" x2="3.2" y2="4.3475" layer="51"/>
-<text x="0" y="5.588" size="0.8128" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<text x="0" y="-5.334" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
-<wire x1="-4.064" y1="-5.08" x2="4.064" y2="-5.08" width="0.1524" layer="39"/>
-<wire x1="4.064" y1="-5.08" x2="4.064" y2="5.08" width="0.1524" layer="39"/>
-<wire x1="4.064" y1="5.08" x2="-4.064" y2="5.08" width="0.1524" layer="39"/>
-<wire x1="-4.064" y1="5.08" x2="-4.064" y2="-5.08" width="0.1524" layer="39"/>
-</package>
 <package name="WSON-8-PPAD" urn="urn:adsk.eagle:footprint:2992775/2" locally_modified="yes">
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="51"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.1" layer="51"/>
@@ -765,50 +696,6 @@
 <gate name="G$1" symbol="PCA9685_16-CH_12-BIT_PWM-DRIVER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TSSOP-28">
-<connects>
-<connect gate="G$1" pin="!OE" pad="23"/>
-<connect gate="G$1" pin="A0" pad="1"/>
-<connect gate="G$1" pin="A1" pad="2"/>
-<connect gate="G$1" pin="A2" pad="3"/>
-<connect gate="G$1" pin="A3" pad="4"/>
-<connect gate="G$1" pin="A4" pad="5"/>
-<connect gate="G$1" pin="A5" pad="24"/>
-<connect gate="G$1" pin="EXTCLK" pad="25"/>
-<connect gate="G$1" pin="GND" pad="14"/>
-<connect gate="G$1" pin="PWM0" pad="6"/>
-<connect gate="G$1" pin="PWM1" pad="7"/>
-<connect gate="G$1" pin="PWM10" pad="17"/>
-<connect gate="G$1" pin="PWM11" pad="18"/>
-<connect gate="G$1" pin="PWM12" pad="19"/>
-<connect gate="G$1" pin="PWM13" pad="20"/>
-<connect gate="G$1" pin="PWM14" pad="21"/>
-<connect gate="G$1" pin="PWM15" pad="22"/>
-<connect gate="G$1" pin="PWM2" pad="8"/>
-<connect gate="G$1" pin="PWM3" pad="9"/>
-<connect gate="G$1" pin="PWM4" pad="10"/>
-<connect gate="G$1" pin="PWM5" pad="11"/>
-<connect gate="G$1" pin="PWM6" pad="12"/>
-<connect gate="G$1" pin="PWM7" pad="13"/>
-<connect gate="G$1" pin="PWM8" pad="15"/>
-<connect gate="G$1" pin="PWM9" pad="16"/>
-<connect gate="G$1" pin="SCL" pad="26"/>
-<connect gate="G$1" pin="SDA" pad="27"/>
-<connect gate="G$1" pin="VCC" pad="28"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
-<attribute name="DATASHEET" value="http://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=568-11925-1-ND" constant="no"/>
-<attribute name="DISTPN" value="568-11925-1-ND" constant="no"/>
-<attribute name="MFR" value="NXP USA Inc." constant="no"/>
-<attribute name="MPN" value="PCA9685PW,118" constant="no"/>
-<attribute name="VALUE" value="PCA9685" constant="no"/>
-</technology>
-</technologies>
-</device>
 <device name="_TSSOP-28_PWM-DRIVER_16CH" package="SOP65P650X110-28">
 <connects>
 <connect gate="G$1" pin="!OE" pad="23"/>
@@ -2323,10 +2210,10 @@
 <wire x1="1.525" y1="-0.75" x2="1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="1.525" y1="1.65" x2="-1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="-1.525" y1="1.65" x2="-1.525" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-2.286" y1="2.159" x2="-2.286" y2="-1.27" width="0.127" layer="39"/>
-<wire x1="-2.286" y1="-1.27" x2="2.286" y2="-1.27" width="0.127" layer="39"/>
-<wire x1="2.286" y1="-1.27" x2="2.286" y2="2.159" width="0.127" layer="39"/>
-<wire x1="2.286" y1="2.159" x2="-2.286" y2="2.159" width="0.127" layer="39"/>
+<wire x1="-2.186" y1="2.159" x2="-2.186" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="-2.186" y1="-1.27" x2="2.186" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="2.186" y1="-1.27" x2="2.186" y2="2.159" width="0.127" layer="39"/>
+<wire x1="2.186" y1="2.159" x2="-2.186" y2="2.159" width="0.127" layer="39"/>
 <text x="0" y="-1.27" size="0.5" layer="25" font="vector" ratio="10" align="top-center">&gt;NAME</text>
 <text x="0" y="0.762" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.397" y1="-0.762" x2="1.397" y2="-0.762" width="0.127" layer="40"/>
@@ -4991,16 +4878,20 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="2" x="-3.125" y="0" dx="1.7603" dy="0.9319" layer="1"/>
 <smd name="3" x="-3.125" y="-2.3" dx="1.7603" dy="0.9319" layer="1"/>
 <smd name="TAB" x="3.125" y="0" dx="1.7603" dy="3.1891" layer="1"/>
-<text x="4.318" y="-0.254" size="0.5" layer="25" font="vector" ratio="10" rot="SR270" align="bottom-center">&gt;NAME</text>
-<text x="0" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="SR270" align="center">&gt;VALUE</text>
-<wire x1="-4.318" y1="3.556" x2="-4.318" y2="-3.556" width="0.127" layer="39"/>
-<wire x1="-4.318" y1="-3.556" x2="2.032" y2="-3.556" width="0.127" layer="39"/>
-<wire x1="4.318" y1="-1.905" x2="4.318" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="3.556" x2="-4.318" y2="3.556" width="0.127" layer="39"/>
-<wire x1="2.032" y1="3.556" x2="2.032" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="1.905" x2="4.318" y2="1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="-3.556" x2="2.032" y2="-1.905" width="0.127" layer="39"/>
-<wire x1="2.032" y1="-1.905" x2="4.318" y2="-1.905" width="0.127" layer="39"/>
+<text x="1" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="SR270" align="bottom-center">&gt;NAME</text>
+<text x="-1" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="SR270" align="top-center">&gt;VALUE</text>
+<wire x1="-4.2" y1="3" x2="-4.2" y2="-3" width="0.127" layer="39"/>
+<wire x1="-2" y1="-3.5" x2="2" y2="-3.5" width="0.127" layer="39"/>
+<wire x1="4.2" y1="-1.8" x2="4.2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="3.5" x2="-2" y2="3.5" width="0.127" layer="39"/>
+<wire x1="2" y1="3.5" x2="2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="1.8" x2="4.2" y2="1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="-3.5" x2="2" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="2" y1="-1.8" x2="4.2" y2="-1.8" width="0.127" layer="39"/>
+<wire x1="-4.2" y1="3" x2="-2" y2="3" width="0.127" layer="39"/>
+<wire x1="-2" y1="3" x2="-2" y2="3.5" width="0.127" layer="39"/>
+<wire x1="-4.2" y1="-3" x2="-2" y2="-3" width="0.127" layer="39"/>
+<wire x1="-2" y1="-3" x2="-2" y2="-3.5" width="0.127" layer="39"/>
 </package>
 <package name="SOIC127P600X265-8" urn="urn:adsk.eagle:footprint:2899755/1" locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6 mm span, 4.9 X 3.9 X 2.65 mm body
@@ -6745,7 +6636,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="347.98" y="266.7" size="0.8128" layer="97" font="vector" ratio="10">NC</text>
 <text x="264.16" y="548.64" size="20.32" layer="97" font="vector" ratio="20" align="bottom-center">TRANSMISSION OF TOUCH VR</text>
 <text x="264.16" y="528.32" size="12.7" layer="97" font="vector" ratio="20" align="bottom-center">TOUCH GLOVE</text>
-<text x="264.16" y="515.62" size="8.128" layer="97" font="vector" ratio="20" align="bottom-center">Rev 2</text>
+<text x="264.16" y="515.62" size="8.128" layer="97" font="vector" ratio="20" align="bottom-center">Rev 3</text>
 <text x="350.52" y="238.76" size="1.778" layer="97">VIBROTACTILES</text>
 <text x="347.98" y="193.04" size="1.778" layer="97">THERMOELECTRICS</text>
 <wire x1="510.54" y1="175.26" x2="510.54" y2="370.84" width="0.1524" layer="97" style="shortdash"/>
