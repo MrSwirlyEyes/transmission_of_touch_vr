@@ -250,14 +250,14 @@ void actuate_thermoelectrics() {
 
 
 void test_vibe() {
-  for (int j = VIBE_MIN; j < VIBE_MAX; j++) {
+  for (int j = VIBE_MIN; j < VIBE_MAX; j+=3) {
     for (int i = VIBE_INITIAL; i < VIBE_FINAL; i++) {    
       pwm.setPWM(i, 0, j);
     }
 //    delay(1);
   }
   delay(500);
-  for (int j = VIBE_MAX; j > VIBE_MIN; j--) {
+  for (int j = VIBE_MAX; j > VIBE_MIN; j-=3) {
     for (int i = VIBE_INITIAL; i < VIBE_FINAL; i++) {    
       pwm.setPWM(i, 0, j);
     }
@@ -278,7 +278,7 @@ void test_thermoelectrics() {
   pwm.setPWM(TEC_INDEX_COLD,0,TECMAX_HOT);
   pwm.setPWM(TEC_THUMB_HOT,0,0);
   pwm.setPWM(TEC_THUMB_COLD,0,TECMAX_HOT);
-  delay(30000);
+  delay(20000);
   pwm.setPWM(TEC_PINKY_HOT,0,0);
   pwm.setPWM(TEC_PINKY_COLD,0,0);
   pwm.setPWM(TEC_RING_HOT,0,0);
