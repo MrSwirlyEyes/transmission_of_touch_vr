@@ -7215,16 +7215,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="54.7" y="44.045" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="54.7" y="35.155" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="C18" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="58.7" y="46.1" smashed="yes">
-<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-13233-1-ND" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="490-13233-1-ND" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="GRM155C80J106ME11D" x="-36.55" y="167.512" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="58.7" y="46.735" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="58.7" y="45.465" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
-</element>
 <element name="PWM_DRIVER" library="_special" package="SOP65P650X110-28" package3d_urn="urn:adsk.eagle:package:2900279/2" value="PCA9685" x="5.1" y="46.5" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://www.nxp.com/docs/en/data-sheet/PCA9685.pdf" x="95.27" y="115.588" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digikey" x="95.27" y="115.588" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7274,16 +7264,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="RCS1005J472CS" x="24.152" y="225.914" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="27.835" y="37.7" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" value="4.7K" x="26.565" y="37.7" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="C25" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="10uF/6.3V" x="12.3" y="44" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-13233-1-ND" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="490-13233-1-ND" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Murata Electronics North America" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="GRM155C80J106ME11D" x="25.508" y="-177.488" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.665" y="44" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="12.935" y="44" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
 <element name="C26" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V" x="58.7" y="44.7" smashed="yes">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-98.526" y="26.412" size="1.778" layer="27" display="off"/>
@@ -7962,106 +7942,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="23.765" y="46.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="25.035" y="46.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="R4" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="2.2" y="20.8" smashed="yes" rot="R270">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="YAG1281CT-ND" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Yageo" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RC0402JR-0710KP" x="2.2" y="20.8" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.835" y="20.8" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="1.565" y="20.8" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="R5" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="2.2" y="18.6" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="YAG3516CT-ND" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="AC0402JR-07100RL" x="2.2" y="18.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.565" y="18.6" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.835" y="18.6" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
-</element>
-<element name="R6" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="2.2" y="29" smashed="yes" rot="R270">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="2.2" y="29" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="9.82" y="34.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" x="9.82" y="34.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="YAG1281CT-ND" x="9.82" y="34.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Yageo" x="9.82" y="34.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RC0402JR-0710KP" x="9.82" y="34.08" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.835" y="29" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="1.565" y="29" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="R7" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="2.2" y="26.8" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="2.2" y="26.8" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-10.5" y="16.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" x="-10.5" y="16.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="YAG3516CT-ND" x="-10.5" y="16.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="-10.5" y="16.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="AC0402JR-07100RL" x="-10.5" y="16.64" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.565" y="26.8" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.835" y="26.8" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
-</element>
-<element name="R8" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="2.2" y="37.2" smashed="yes" rot="R270">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="2.2" y="37.2" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="7.28" y="42.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" x="7.28" y="42.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="YAG1281CT-ND" x="7.28" y="42.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Yageo" x="7.28" y="42.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RC0402JR-0710KP" x="7.28" y="42.28" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.835" y="37.2" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="1.565" y="37.2" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="R9" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="2.2" y="35" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="2.2" y="35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.96" y="24.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" x="-7.96" y="24.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="YAG3516CT-ND" x="-7.96" y="24.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="-7.96" y="24.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="AC0402JR-07100RL" x="-7.96" y="24.84" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.565" y="35" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.835" y="35" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
-</element>
-<element name="R12" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="2.2" y="4.4" smashed="yes" rot="R270">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="2.2" y="4.4" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="7.28" y="9.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" x="7.28" y="9.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="YAG1281CT-ND" x="7.28" y="9.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Yageo" x="7.28" y="9.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RC0402JR-0710KP" x="7.28" y="9.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.835" y="4.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="1.565" y="4.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="R13" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="2.2" y="2.2" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="2.2" y="2.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.96" y="-7.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" x="-7.96" y="-7.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="YAG3516CT-ND" x="-7.96" y="-7.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="-7.96" y="-7.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="AC0402JR-07100RL" x="-7.96" y="-7.96" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.565" y="2.2" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.835" y="2.2" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
-</element>
-<element name="R14" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K" x="2.2" y="12.6" smashed="yes" rot="R270">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_51_RoHS_P_0.pdf" x="2.2" y="12.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="7.28" y="17.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG1281CT-ND" x="7.28" y="17.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="YAG1281CT-ND" x="7.28" y="17.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Yageo" x="7.28" y="17.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="RC0402JR-0710KP" x="7.28" y="17.68" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="2.835" y="12.6" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
-<attribute name="VALUE" x="1.565" y="12.6" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
-</element>
-<element name="R15" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100" x="2.2" y="10.4" smashed="yes" rot="R90">
-<attribute name="DATASHEET" value="http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-AC_51_RoHS_L_6.pdf" x="2.2" y="10.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.96" y="0.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=YAG3516CT-ND" x="-7.96" y="0.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="YAG3516CT-ND" x="-7.96" y="0.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="-7.96" y="0.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="AC0402JR-07100RL" x="-7.96" y="0.24" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="1.565" y="10.4" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="2.835" y="10.4" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
-</element>
 <element name="C21" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V" x="29.6" y="43.2" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_lowprofile_en.pdf" x="29.6" y="43.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="29.6" y="43.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -8538,7 +8418,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="PWM_DRIVER" pad="5"/>
 <contactref element="PWM_DRIVER" pad="24"/>
 <contactref element="C19" pad="2"/>
-<contactref element="C25" pad="2"/>
 <contactref element="C63" pad="2"/>
 <contactref element="C53" pad="2"/>
 <contactref element="C54" pad="2"/>
@@ -8566,21 +8445,11 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R1" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="R2" pad="1"/>
-<contactref element="R4" pad="1"/>
-<contactref element="R6" pad="1"/>
-<contactref element="R8" pad="1"/>
-<contactref element="R12" pad="1"/>
-<contactref element="R14" pad="1"/>
 <contactref element="C21" pad="2"/>
 <contactref element="C27" pad="-"/>
 <contactref element="J1" pad="GND_JACK"/>
 <contactref element="C60" pad="1"/>
 <contactref element="C59" pad="1"/>
-<via x="2.2" y="5.7" extent="1-16" drill="0.254"/>
-<via x="2.2" y="13.9" extent="1-16" drill="0.254"/>
-<via x="2.2" y="22.1" extent="1-16" drill="0.254"/>
-<via x="2.2" y="30.3" extent="1-16" drill="0.254"/>
-<via x="2.2" y="38.5" extent="1-16" drill="0.254"/>
 <via x="48.4" y="38.4" extent="1-16" drill="0.254" diameter="0.254"/>
 <via x="48.4" y="43.8" extent="1-16" drill="0.254" diameter="0.254"/>
 <via x="0.9" y="50.8" extent="1-16" drill="0.254" diameter="0.254"/>
@@ -8601,11 +8470,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="28.3" y="43.2" extent="1-16" drill="0.254" diameter="0.254"/>
 <via x="28.3" y="41.8" extent="1-16" drill="0.254" diameter="0.254"/>
 <via x="28.3" y="40.4" extent="1-16" drill="0.254" diameter="0.254"/>
-<wire x1="2.2" y1="37.6825" x2="2.2" y2="38.5" width="0.254" layer="1"/>
-<wire x1="2.2" y1="29.4825" x2="2.2" y2="30.3" width="0.254" layer="1"/>
-<wire x1="2.2" y1="21.2825" x2="2.2" y2="22.1" width="0.254" layer="1"/>
-<wire x1="2.2" y1="13.0825" x2="2.2" y2="13.9" width="0.254" layer="1"/>
-<wire x1="2.2" y1="4.8825" x2="2.2" y2="5.7" width="0.254" layer="1"/>
 <wire x1="9.325" y1="49.4258" x2="9.325" y2="50.725" width="0.254" layer="1"/>
 <wire x1="9.325" y1="50.725" x2="9.4" y2="50.8" width="0.254" layer="1"/>
 <wire x1="8.675" y1="49.4258" x2="8.675" y2="50.775" width="0.254" layer="1"/>
@@ -8619,9 +8483,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="0.875" y1="49.4258" x2="0.875" y2="50.775" width="0.254" layer="1"/>
 <wire x1="0.875" y1="50.775" x2="0.9" y2="50.8" width="0.254" layer="1"/>
 <via x="10.9" y="45.3" extent="1-16" drill="0.254" diameter="0.254"/>
-<via x="12.3" y="45.3" extent="1-16" drill="0.254" diameter="0.254"/>
 <wire x1="10.9" y1="44.4575" x2="10.9" y2="45.3" width="0.254" layer="1"/>
-<wire x1="12.3" y1="44.4575" x2="12.3" y2="45.3" width="0.254" layer="1"/>
 <wire x1="48.4" y1="38.4" x2="48.4" y2="39.2425" width="0.254" layer="1"/>
 <wire x1="48.4" y1="42.9575" x2="48.4" y2="43.8" width="0.254" layer="1"/>
 <contactref element="NOISE_BR1" pad="P$1"/>
@@ -8747,59 +8609,54 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="14.6157375" y1="44.2794" x2="23.9206" y2="44.2794" width="0.1524" layer="1"/>
 </signal>
 <signal name="SERVO_PINKY">
-<contactref element="R12" pad="2"/>
-<contactref element="R13" pad="2"/>
-<wire x1="2.2" y1="2.6825" x2="2.2" y2="3.9175" width="0.1524" layer="1"/>
-<wire x1="2.2" y1="3.9175" x2="1.7825" y2="3.9175" width="0.1524" layer="1"/>
 <wire x1="1.7825" y1="3.9175" x2="0.503" y2="5.197" width="0.1524" layer="1"/>
 <contactref element="PWM_DRIVER" pad="15"/>
 <wire x1="0.875" y1="41.775" x2="0.875" y2="43.5742" width="0.1524" layer="1"/>
 <wire x1="0.503" y1="5.197" x2="0.503" y2="41.403" width="0.1524" layer="1"/>
 <wire x1="0.503" y1="41.403" x2="0.875" y2="41.775" width="0.1524" layer="1"/>
+<contactref element="SERVO_PINKY" pad="SIG"/>
+<wire x1="4.3825" y1="1.7175" x2="4.4" y2="1.7" width="0.1524" layer="1"/>
+<wire x1="4.3825" y1="1.7175" x2="1.7825" y2="3.9175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO_RING">
-<contactref element="R14" pad="2"/>
-<contactref element="R15" pad="2"/>
-<wire x1="2.2" y1="10.8825" x2="2.2" y2="12.1175" width="0.1524" layer="1"/>
-<wire x1="2.2" y1="12.1175" x2="1.7825" y2="12.1175" width="0.1524" layer="1"/>
 <wire x1="1.7825" y1="12.1175" x2="0.7824" y2="13.1176" width="0.1524" layer="1"/>
 <wire x1="0.7824" y1="13.1176" x2="0.7824" y2="41.2" width="0.1524" layer="1"/>
 <contactref element="PWM_DRIVER" pad="16"/>
 <wire x1="0.7824" y1="41.2" x2="1.525" y2="41.9426" width="0.1524" layer="1"/>
 <wire x1="1.525" y1="41.9426" x2="1.525" y2="43.5742" width="0.1524" layer="1"/>
+<contactref element="SERVO_RING" pad="SIG"/>
+<wire x1="4.3825" y1="9.9175" x2="4.4" y2="9.9" width="0.1524" layer="1"/>
+<wire x1="4.3825" y1="9.9175" x2="1.7825" y2="12.1175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO_MIDDLE">
-<contactref element="R4" pad="2"/>
-<contactref element="R5" pad="2"/>
-<wire x1="2.2" y1="19.0825" x2="2.2" y2="20.3175" width="0.1524" layer="1"/>
-<wire x1="2.2" y1="20.3175" x2="1.7825" y2="20.3175" width="0.1524" layer="1"/>
 <wire x1="1.0618" y1="21.0382" x2="1.7825" y2="20.3175" width="0.1524" layer="1"/>
 <contactref element="PWM_DRIVER" pad="17"/>
 <wire x1="2.175" y1="43.5742" x2="2.175" y2="42.175" width="0.1524" layer="1"/>
 <wire x1="1.0618" y1="41.0618" x2="2.175" y2="42.175" width="0.1524" layer="1"/>
 <wire x1="1.0618" y1="41.0618" x2="1.0618" y2="21.0382" width="0.1524" layer="1"/>
+<contactref element="SERVO_MIDDLE" pad="SIG"/>
+<wire x1="4.3825" y1="18.1175" x2="4.4" y2="18.1" width="0.1524" layer="1"/>
+<wire x1="1.7825" y1="20.3175" x2="4.3825" y2="18.1175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO_INDEX">
-<contactref element="R6" pad="2"/>
-<contactref element="R7" pad="2"/>
-<wire x1="2.2" y1="27.2825" x2="2.2" y2="28.5175" width="0.1524" layer="1"/>
-<wire x1="2.2" y1="28.5175" x2="1.7825" y2="28.5175" width="0.1524" layer="1"/>
 <wire x1="1.3412" y1="28.9588" x2="1.7825" y2="28.5175" width="0.1524" layer="1"/>
 <contactref element="PWM_DRIVER" pad="18"/>
 <wire x1="2.825" y1="43.5742" x2="2.825" y2="42.425" width="0.1524" layer="1"/>
 <wire x1="1.3412" y1="40.9412" x2="2.825" y2="42.425" width="0.1524" layer="1"/>
 <wire x1="1.3412" y1="40.9412" x2="1.3412" y2="28.9588" width="0.1524" layer="1"/>
+<contactref element="SERVO_INDEX" pad="SIG"/>
+<wire x1="4.3825" y1="26.3175" x2="4.4" y2="26.3" width="0.1524" layer="1"/>
+<wire x1="4.3825" y1="26.3175" x2="1.7825" y2="28.5175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SERVO_THUMB">
-<contactref element="R8" pad="2"/>
-<contactref element="R9" pad="2"/>
-<wire x1="2.2" y1="35.4825" x2="2.2" y2="36.7175" width="0.1524" layer="1"/>
-<wire x1="2.2" y1="36.7175" x2="1.7825" y2="36.7175" width="0.1524" layer="1"/>
 <wire x1="1.6206" y1="36.8794" x2="1.7825" y2="36.7175" width="0.1524" layer="1"/>
 <contactref element="PWM_DRIVER" pad="19"/>
 <wire x1="3.475" y1="43.5742" x2="3.475" y2="42.675" width="0.1524" layer="1"/>
 <wire x1="3.475" y1="42.675" x2="1.6206" y2="40.8206" width="0.1524" layer="1"/>
 <wire x1="1.6206" y1="40.8206" x2="1.6206" y2="36.8794" width="0.1524" layer="1"/>
+<contactref element="SERVO_THUMB" pad="SIG"/>
+<wire x1="4.3825" y1="34.5175" x2="4.4" y2="34.5" width="0.1524" layer="1"/>
+<wire x1="4.3825" y1="34.5175" x2="1.7825" y2="36.7175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FSR_PINKY">
 <contactref element="R42" pad="2"/>
@@ -9399,7 +9256,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R16" pad="1"/>
 <contactref element="C47" pad="2"/>
 <contactref element="C85" pad="2"/>
-<contactref element="C18" pad="2"/>
 <contactref element="C26" pad="2"/>
 <contactref element="DEMUX1" pad="15"/>
 <contactref element="DEMUX1" pad="12"/>
@@ -9485,8 +9341,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="B1" pad="5"/>
 <contactref element="C62" pad="2"/>
 <via x="60" y="44.7" extent="1-16" drill="0.254"/>
-<via x="60" y="46.1" extent="1-16" drill="0.254"/>
-<wire x1="59.1575" y1="46.1" x2="60" y2="46.1" width="0.254" layer="1"/>
 <wire x1="59.1575" y1="44.7" x2="60" y2="44.7" width="0.254" layer="1"/>
 <via x="45.9" y="46.2" extent="1-16" drill="0.254"/>
 <via x="45.9" y="44.8" extent="1-16" drill="0.254"/>
@@ -9625,36 +9479,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="R2" pad="2"/>
 <wire x1="23" y1="46.6825" x2="23" y2="48" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$4">
-<contactref element="R9" pad="1"/>
-<contactref element="SERVO_THUMB" pad="SIG"/>
-<wire x1="2.2" y1="34.5175" x2="4.3825" y2="34.5175" width="0.1524" layer="1"/>
-<wire x1="4.3825" y1="34.5175" x2="4.4" y2="34.5" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$6">
-<contactref element="R7" pad="1"/>
-<contactref element="SERVO_INDEX" pad="SIG"/>
-<wire x1="2.2" y1="26.3175" x2="4.3825" y2="26.3175" width="0.1524" layer="1"/>
-<wire x1="4.3825" y1="26.3175" x2="4.4" y2="26.3" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$7">
-<contactref element="R5" pad="1"/>
-<contactref element="SERVO_MIDDLE" pad="SIG"/>
-<wire x1="2.2" y1="18.1175" x2="4.3825" y2="18.1175" width="0.1524" layer="1"/>
-<wire x1="4.3825" y1="18.1175" x2="4.4" y2="18.1" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$8">
-<contactref element="R15" pad="1"/>
-<contactref element="SERVO_RING" pad="SIG"/>
-<wire x1="2.2" y1="9.9175" x2="4.3825" y2="9.9175" width="0.1524" layer="1"/>
-<wire x1="4.3825" y1="9.9175" x2="4.4" y2="9.9" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$9">
-<contactref element="R13" pad="1"/>
-<contactref element="SERVO_PINKY" pad="SIG"/>
-<wire x1="2.2" y1="1.7175" x2="4.3825" y2="1.7175" width="0.1524" layer="1"/>
-<wire x1="4.3825" y1="1.7175" x2="4.4" y2="1.7" width="0.1524" layer="1"/>
-</signal>
 <signal name="N$10">
 <contactref element="MCU" pad="21"/>
 <contactref element="MCU" pad="22"/>
@@ -9721,7 +9545,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="-1" y="-1"/>
 </polygon>
 <contactref element="PWM_DRIVER" pad="28"/>
-<contactref element="C25" pad="1"/>
 <contactref element="C19" pad="1"/>
 <contactref element="MCU" pad="23"/>
 <contactref element="MCU" pad="54"/>
@@ -9892,7 +9715,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <contactref element="C2" pad="1"/>
 <contactref element="C8" pad="1"/>
 <contactref element="VREG-ANALOG" pad="3"/>
-<contactref element="C18" pad="1"/>
 <contactref element="C26" pad="1"/>
 <contactref element="DEMUX1" pad="24"/>
 <via x="58.1" y="47.4" extent="1-16" drill="0.254"/>
