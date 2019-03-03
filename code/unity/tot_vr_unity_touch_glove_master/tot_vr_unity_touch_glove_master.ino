@@ -51,6 +51,7 @@ byte numRead;
 //     PWM DRIVER     //
 ////////////////////////
 #define PWM_FREQUENCY 60
+
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 
@@ -58,7 +59,6 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 ///////////////////////////
 //     VIBROTACTILES     //
 ///////////////////////////
-
 #define NUM_VIBE 5
 
 #define VIBMIN 0
@@ -74,7 +74,6 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 /////////////////////////////
 //     THERMOELECTRICS     //
 /////////////////////////////
-
 //#define PHASE_COLD 0
 //#define PHASE_HOT 1
 
@@ -121,7 +120,6 @@ CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 //////////////////////////
 //     FLEX SENSORS     //
 //////////////////////////
-
 #define NUM_FLEX 5
 
 #define FLEX_PINKY 8

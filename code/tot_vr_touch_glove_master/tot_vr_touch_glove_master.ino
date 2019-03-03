@@ -3,11 +3,18 @@
 #include "Adafruit_PWMServoDriver.h"
 #include "TEC.h"
 
+
+
 //#define DEBUG
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
 
+
+
+////////////////////////////////
+//     ANALOG MULTIPLEXER     //
+////////////////////////////////
 #define s0 22
 #define s1 23
 #define s2 25
@@ -16,10 +23,18 @@
 
 CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 
-#define NUM_FLEX 5
-//#define FLEX_INITIAL 8
-//#define FLEX_FINAL 2
 
+
+//////////////////////////
+//     FLEX SENSORS     //
+//////////////////////////
+#define NUM_FLEX 5
+
+#define FLEX_PINKY 8
+#define FLEX_RING 9
+#define FLEX_MIDDLE 0
+#define FLEX_INDEX 1
+#define FLEX_THUMB 2
 
 //pinky  119 276
 //ring   190 300
@@ -55,12 +70,30 @@ int flex_max[NUM_FLEX] = {
                             FLEX_MAX_THUMB,
                           };
 
-byte flex_pin[NUM_FLEX] = {8,9,0,1,2};
+byte flex_pin[NUM_FLEX] = {
+                            FLEX_PINKY,
+                            FLEX_RING,
+                            FLEX_MIDDLE,
+                            FLEX_INDEX,
+                            FLEX_THUMB,
+                          };
+
 int flex[NUM_FLEX] = {0,};
 
+
+
+////////////////////////
+//     PWM DRIVER     //
+////////////////////////
 #define PWM_FREQUENCY 60
+
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
+
+
+///////////////////////////
+//     VIBROTACTILES     //
+///////////////////////////
 #define NUM_VIBE 5
 #define VIBE_INITIAL 0
 #define VIBE_FINAL VIBE_INITIAL + NUM_VIBE
@@ -73,6 +106,12 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 
 
+/////////////////////////////
+//     THERMOELECTRICS     //
+/////////////////////////////
+#define PHASE_COLD 0
+#define PHASE_HOT 1
+
 #define NUM_TEC 5
 
 #define TECMIN 0
@@ -81,10 +120,6 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define TECMAX_HOT 4095
 #define TECMAX_COLD 4095
 
-#define PHASE_COLD 0
-#define PHASE_HOT 1
-
-//TEC tec_pinky(pwm,6,7);
 #define TEC_PINKY_HOT 6
 #define TEC_PINKY_COLD 7
 
@@ -100,6 +135,11 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define TEC_THUMB_HOT 9
 #define TEC_THUMB_COLD 8
 
+
+
+////////////////////////////
+//     COMMUNICATIONS     //
+////////////////////////////
 struct PacketTX {    
   int flex[NUM_FLEX] = {0,};
   int checksum = 0;
@@ -114,6 +154,11 @@ struct PacketRX {
 float checksum = 0.0;
 
 
+
+
+////////////?//////
+//     SETUP     //
+/////////////?/////
 void setup() {  
   #ifdef DEBUG
     Serial.begin(BAUDRATE);
@@ -130,6 +175,11 @@ void setup() {
   delay(5000);
 }
 
+
+
+//////////////////
+//     LOOP     //
+//////////////////
 void loop() {  
 
   read_flex_sensors();
@@ -177,9 +227,15 @@ void loop() {
   delay(5);  
 }
 
+
+
+
+
+///////////////////////
+//     FUNCTIONS     //
+///////////////////////
 void read_flex_sensors() {  
-  for (int i = 0; i < NUM_FLEX; i++) {
-//    flex[i] = demux.read_channel(i);  
+  for (int i = 0; i < NUM_FLEX; i++) { 
     pkt_tx.flex[i] = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
   }
 }
