@@ -3,11 +3,18 @@
 #include "TMP36.h"
 #include "Adafruit_PWMServoDriver.h"
 
+
+
 //#define DEBUG
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
 
+
+
+////////////////////////////////
+//     ANALOG MULTIPLEXER     //
+////////////////////////////////
 #define s0 4
 #define s1 3
 #define s2 6
@@ -16,10 +23,20 @@
 
 CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 
+
+
+///////////////////////////////////////
+//     FORCE SENSITIVE RESISTORS     //
+///////////////////////////////////////
 #define NUM_FSR 5
 
 int fsr[NUM_FSR] = {0,};
 
+
+
+/////////////////////////////////
+//     TEMPERATURE SENSORS     //
+/////////////////////////////////
 #define NUM_TEMP 5
 #define VCC 1.8
 
@@ -47,8 +64,18 @@ TMP36 temp[NUM_TEMP] = {
 
 
 
+////////////////////////
+//     PWM DRIVER     //
+////////////////////////
+#define PWM_FREQUENCY 60
+
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
 
+
+////////////////////
+//     SERVOS     //
+////////////////////
 #define NUM_SERVO 5
 #define SERVO_INITIAL 8
 #define SERVO_FINAL (SERVO_INITIAL + NUM_SERVO)
@@ -85,9 +112,11 @@ int flex_max[NUM_SERVO] = {
 #define SERVO_MAX 450 //350 (light settings)
 #define SERVO_CENTER ((SERVO_MAX + SERVO_MIN) / 2.0)
 
-#define PWM_FREQUENCY 60
-Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 
+
+////////////////////////////
+//     COMMUNICATIONS     //
+////////////////////////////
 struct PacketTX {    
   int fsr[NUM_FSR] = {0,};
   float temp[NUM_TEMP] = {0.0,};
@@ -101,6 +130,13 @@ struct PacketRX {
 
 int checksum;
 
+
+
+
+
+///////////////////
+//     SETUP     //
+///////////////////
 void setup() {
   #ifdef DEBUG
     Serial.begin(BAUDRATE);
@@ -120,6 +156,11 @@ void setup() {
   delay(5000);
 }
 
+
+
+//////////////////
+//     LOOP     //
+//////////////////
 void loop() {
 
   read_fsr_sensors();
@@ -173,6 +214,13 @@ void loop() {
   delay(5);
 }
 
+
+
+
+
+///////////////////////
+//     FUNCTIONS     //
+///////////////////////
 void read_fsr_sensors() {
   for (int i = 0; i < NUM_FSR; i++) {
 //    fsr[i] = demux.read_channel(i);

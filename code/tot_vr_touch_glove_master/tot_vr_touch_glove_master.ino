@@ -156,9 +156,10 @@ float checksum = 0.0;
 
 
 
-////////////?//////
+
+///////////////////
 //     SETUP     //
-/////////////?/////
+///////////////////
 void setup() {  
   #ifdef DEBUG
     Serial.begin(BAUDRATE);
@@ -181,7 +182,6 @@ void setup() {
 //     LOOP     //
 //////////////////
 void loop() {  
-
   read_flex_sensors();
   
   pkt_tx.checksum = 0;
@@ -240,6 +240,8 @@ void read_flex_sensors() {
   }
 }
 
+
+
 void actuate_vibrotactiles() {
 //  for (int i = 0; i < NUM_VIBE; i++) {    
 //    pwm.setPWM(i, 0, map(j, 0, 255, VIBE_MIN, VIBE_MAX));    
@@ -248,6 +250,8 @@ void actuate_vibrotactiles() {
     pwm.setPWM(i, 0, constrain(map(pkt_rx.vibe[i - VIBE_INITIAL],FSR_MIN,FSR_MAX,VIBE_MIN,VIBE_MAX),VIBE_MIN,VIBE_MAX));
   }
 }
+
+
 
 void actuate_thermoelectrics() {
   // TODO!!
@@ -261,48 +265,7 @@ void actuate_thermoelectrics() {
 
 
 
-#ifdef DEBUG
-//  void print_fsr_sensors() {
-//    Serial.print("TX: (fsr0,fsr1,fsr2,fsr3,fsr4,fsr5)=(");
-//    for (byte i = 0 ; i < NUM_FSR ; i++) {
-//      Serial.print(fsr[i]);
-//      if (i < NUM_FSR - 1)
-//        Serial.print(",");
-//    }  
-//    Serial.println(")");
-//  }
-//  
-//  void print_temp_sensors() {
-//      Serial.print("TX: (temp0,temp1,temp2,temp3,temp4,temp5)=(");
-//    for (byte i = 0 ; i < NUM_TEMP ; i++) {
-//      Serial.print(temp[i].get_temperature_C());
-//      if (i < NUM_TEMP - 1)
-//        Serial.print(",");
-//    }  
-//      Serial.println(")");
-//  }
 
-  void print_tx_pkt() {
-    Serial.print("TX: (flex_pinky,flex_ring,flex_middle,flex_index,flex_thumb)=(");
-    for(int i = 0; i < NUM_FLEX; i++) {
-      Serial.print(pkt_tx.flex[i]); Serial.print(",");  
-    }    
-    Serial.print(pkt_tx.checksum); 
-    Serial.println(")");
-  }
-  
-  void print_rx_pkt() {
-    Serial.print("RX: (vibe_pinky,vibe_ring,vibe_middle,vibe_index,vibe_thumb,tec_pinky,tec_ring,tec_middle,tec_index,tec_thumb)=(");
-    for(int i = 0; i < NUM_VIBE; i++) {
-      Serial.print(pkt_rx.vibe[i]); Serial.print(",");      
-    }
-    for(int i = 0; i < NUM_TEC; i++) {
-      Serial.print(pkt_rx.tec[i]); Serial.print(",");      
-    }
-    Serial.print(pkt_rx.checksum); 
-    Serial.println(")");
-  }
-#endif
 
 
 void test_vibe() {
@@ -347,3 +310,47 @@ void test_thermoelectrics() {
   pwm.setPWM(TEC_THUMB_COLD,0,0);
   delay(1000);
 }
+
+
+#ifdef DEBUG
+//  void print_fsr_sensors() {
+//    Serial.print("TX: (fsr0,fsr1,fsr2,fsr3,fsr4,fsr5)=(");
+//    for (byte i = 0 ; i < NUM_FSR ; i++) {
+//      Serial.print(fsr[i]);
+//      if (i < NUM_FSR - 1)
+//        Serial.print(",");
+//    }  
+//    Serial.println(")");
+//  }
+//  
+//  void print_temp_sensors() {
+//      Serial.print("TX: (temp0,temp1,temp2,temp3,temp4,temp5)=(");
+//    for (byte i = 0 ; i < NUM_TEMP ; i++) {
+//      Serial.print(temp[i].get_temperature_C());
+//      if (i < NUM_TEMP - 1)
+//        Serial.print(",");
+//    }  
+//      Serial.println(")");
+//  }
+
+  void print_tx_pkt() {
+    Serial.print("TX: (flex_pinky,flex_ring,flex_middle,flex_index,flex_thumb)=(");
+    for(int i = 0; i < NUM_FLEX; i++) {
+      Serial.print(pkt_tx.flex[i]); Serial.print(",");  
+    }    
+    Serial.print(pkt_tx.checksum); 
+    Serial.println(")");
+  }
+  
+  void print_rx_pkt() {
+    Serial.print("RX: (vibe_pinky,vibe_ring,vibe_middle,vibe_index,vibe_thumb,tec_pinky,tec_ring,tec_middle,tec_index,tec_thumb)=(");
+    for(int i = 0; i < NUM_VIBE; i++) {
+      Serial.print(pkt_rx.vibe[i]); Serial.print(",");      
+    }
+    for(int i = 0; i < NUM_TEC; i++) {
+      Serial.print(pkt_rx.tec[i]); Serial.print(",");      
+    }
+    Serial.print(pkt_rx.checksum); 
+    Serial.println(")");
+  }
+#endif
