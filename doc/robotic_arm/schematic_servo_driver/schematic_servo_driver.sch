@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -410,6 +410,206 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="_capacitors">
+<packages>
+<package name="_AE_SMD_L6.6-W6.6">
+<wire x1="3.3" y1="-3.3" x2="-2.2" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-3.3" x2="-3.3" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-2.2" x2="-3.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="2.2" x2="-2.2" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="3.3" x2="3.3" y2="3.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-3.3" x2="3.3" y2="3.3" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.15" width="0.127" layer="21"/>
+<text x="-2" y="1.5" size="1.27" layer="21" font="vector" ratio="10" rot="R180" align="center">+</text>
+<smd name="A" x="-2.65" y="0" dx="3.5" dy="1.6" layer="1" roundness="50" rot="R180"/>
+<smd name="K" x="2.65" y="0" dx="3.5" dy="1.6" layer="1" roundness="50" rot="R180"/>
+<text x="2" y="1.5" size="1.27" layer="21" font="vector" ratio="10" align="center">-</text>
+<text x="0.127" y="-1.8542" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="0" y="2.032" size="0.8128" layer="25" font="vector" ratio="10" rot="R180" align="center">&gt;NAME</text>
+<rectangle x1="-3.75" y1="-0.325" x2="-0.9" y2="0.325" layer="51"/>
+<rectangle x1="0.9" y1="-0.325" x2="3.75" y2="0.325" layer="51"/>
+<wire x1="-1.27" y1="0" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.762" x2="-0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0" x2="-0.254" y2="0.762" width="0.127" layer="21"/>
+<wire x1="0.4445" y1="-0.762" x2="0.4445" y2="0.762" width="0.127" layer="21" curve="-68.760689"/>
+<wire x1="3.556" y1="-3.556" x2="-2.286" y2="-3.556" width="0.127" layer="39"/>
+<wire x1="-2.286" y1="-3.556" x2="-4.572" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="-4.572" y1="-1.27" x2="-4.572" y2="1.27" width="0.127" layer="39"/>
+<wire x1="-4.572" y1="1.27" x2="-2.286" y2="3.556" width="0.127" layer="39"/>
+<wire x1="-2.286" y1="3.556" x2="3.556" y2="3.556" width="0.127" layer="39"/>
+<wire x1="3.556" y1="3.556" x2="3.556" y2="2.286" width="0.127" layer="39"/>
+<wire x1="3.556" y1="2.286" x2="4.572" y2="1.27" width="0.127" layer="39"/>
+<wire x1="4.572" y1="1.27" x2="4.572" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="4.572" y1="-1.27" x2="3.556" y2="-2.286" width="0.127" layer="39"/>
+<wire x1="3.556" y1="-2.286" x2="3.556" y2="-3.556" width="0.127" layer="39"/>
+</package>
+<package name="_AE_PTH_DIA8-LS3.5-H12.5">
+<wire x1="-1.524" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.016" x2="-0.254" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.016" x2="-0.762" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.016" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-3.397" y1="0" x2="-2.889" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.143" y1="-0.254" x2="-3.143" y2="0.254" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
+<pad name="-" x="1.75" y="0" drill="0.65" diameter="1.3"/>
+<pad name="+" x="-1.75" y="0" drill="0.65" diameter="1.3" shape="square"/>
+<rectangle x1="0.254" y1="-1.016" x2="0.762" y2="1.016" layer="51"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="2.889" y1="0" x2="3.397" y2="0" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4.25" width="0.1524" layer="39"/>
+</package>
+<package name="_AE_PTH-DIA5-LS2-H11" urn="urn:adsk.eagle:footprint:5948116/1" locally_modified="yes">
+<wire x1="-3.556" y1="0" x2="-3.048" y2="0" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="-0.254" x2="-3.302" y2="0.254" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0" x2="3.556" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.127" layer="40"/>
+<wire x1="2.032" y1="-1.016" x2="2.032" y2="1.016" width="0.127" layer="40"/>
+<wire x1="2.032" y1="1.016" x2="-2.032" y2="1.016" width="0.127" layer="40"/>
+<wire x1="-2.032" y1="1.016" x2="-2.032" y2="-1.016" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="2.7658625" width="0.127" layer="39"/>
+<pad name="-" x="1.016" y="0" drill="0.75" diameter="1.5"/>
+<pad name="+" x="-1.016" y="0" drill="0.75" diameter="1.5" shape="square"/>
+<text x="0" y="1.016" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.016" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+</package>
+<package name="CAPCP3216X160" urn="urn:adsk.eagle:footprint:6906991/1" locally_modified="yes">
+<description>Chip, 3.20 X 1.60 X 1.60 mm body
+&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
+<wire x1="1.6" y1="1.1699" x2="-2.2599" y2="1.1699" width="0.12" layer="21"/>
+<wire x1="-2.2599" y1="1.1699" x2="-2.2599" y2="-1.1699" width="0.12" layer="21"/>
+<wire x1="-2.2599" y1="-1.1699" x2="1.6" y2="-1.1699" width="0.12" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.12" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.12" layer="51"/>
+<smd name="A" x="-1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
+<smd name="K" x="1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
+<text x="0" y="1.3" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.3" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<circle x="-2.8" y="0" radius="0.3" width="0" layer="21"/>
+<wire x1="-2.4" y1="1.3" x2="-2.4" y2="-1.3" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="-1.3" x2="2.4" y2="-1.3" width="0.127" layer="39"/>
+<wire x1="2.4" y1="-1.3" x2="2.4" y2="1.3" width="0.127" layer="39"/>
+<wire x1="2.4" y1="1.3" x2="-2.4" y2="1.3" width="0.127" layer="39"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="_AE_PTH-DIA5-LS2-H11" urn="urn:adsk.eagle:package:5948134/2" locally_modified="yes" type="model">
+<packageinstances>
+<packageinstance name="_AE_PTH-DIA5-LS2-H11"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPCP3216X160" urn="urn:adsk.eagle:package:6906990/1" locally_modified="yes" type="model">
+<description>Chip, 3.20 X 1.60 X 1.60 mm body
+&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPCP3216X160"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="CAPACITOR_POLARIZED">
+<wire x1="2.54" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="K" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="0" y="-0.254" size="1.27" layer="95" font="vector" ratio="10" align="top-center">&gt;NAME</text>
+<text x="-2.794" y="1.016" size="1.27" layer="94" ratio="10" rot="R270" align="bottom-center">+</text>
+<wire x1="-2.54" y1="-3.2004" x2="2.54" y2="-3.2004" width="0.254" layer="94" curve="-63.50962"/>
+<text x="0" y="-2.286" size="0.635" layer="96" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="100UF-POLARIZED" prefix="C" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="CAPACITOR_POLARIZED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SMD_16V-20%_L6.6-W6.6" package="_AE_SMD_L6.6-W6.6">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="MrSwirlyEyes" constant="no"/>
+<attribute name="DATASHEET" value="http://industrial.panasonic.com/www-cgi/jvcr13pz.cgi?E+PZ+3+ABA0120+EEEFK1C101P+7+WW" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=PCE3783CT-ND" constant="no"/>
+<attribute name="DISTPN" value="PCE3783CT-ND" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="EEE-FK1C101P" constant="no"/>
+<attribute name="TESTED" value="NO" constant="no"/>
+<attribute name="VALUE" value="100UF/16V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH_100UF-20%_DIA8-LS3.5-H12.5" package="_AE_PTH_DIA8-LS3.5-H12.5">
+<connects>
+<connect gate="G$1" pin="A" pad="+"/>
+<connect gate="G$1" pin="K" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electronic%20Components/ECA-xxM%20Series,TypeA.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=P5182-ND" constant="no"/>
+<attribute name="DISTPN" value="P5182-ND" constant="no"/>
+<attribute name="MFR" value="Panasonic Electronic Components" constant="no"/>
+<attribute name="MPN" value="ECA-1HM101" constant="no"/>
+<attribute name="VALUE" value="100uF/50V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD_25V-20%_DIA5-LS2-H11" package="_AE_PTH-DIA5-LS2-H11">
+<connects>
+<connect gate="G$1" pin="A" pad="+"/>
+<connect gate="G$1" pin="K" pad="-"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:5948134/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://nichicon-us.com/english/products/pdfs/e-uvy.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=UVY1E101MDD-ND" constant="no"/>
+<attribute name="DISTPN" value="UVY1E101MDD-ND" constant="no"/>
+<attribute name="MFR" value="Nichicon" constant="no"/>
+<attribute name="MPN" value="UVY1E101MDD" constant="no"/>
+<attribute name="VALUE" value="100uF/25V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_TANT_SMD-1206_10V-20%" package="CAPCP3216X160">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6906990/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://datasheets.avx.com/TLJ.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=478-5651-1-ND" constant="no"/>
+<attribute name="DISTPN" value="478-5651-1-ND" constant="no"/>
+<attribute name="MFR" value="AVX Corporation" constant="no"/>
+<attribute name="MPN" value="TLJA107M010R1400" constant="no"/>
+<attribute name="VALUE" value="100uF/10V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -423,6 +623,9 @@
 <part name="SERVO" library="_motors" deviceset="SERVO" device="_HK15298B_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B"/>
 <part name="SUPPLY1" library="_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY2" library="_power_symbols" deviceset="5V" device=""/>
+<part name="C1" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
+<part name="SUPPLY3" library="_power_symbols" deviceset="5V" device=""/>
+<part name="SUPPLY4" library="_power_symbols" deviceset="NGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -435,6 +638,12 @@
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="35.56" y="17.78" smashed="yes"/>
 <instance part="SUPPLY2" gate="5V" x="35.56" y="30.48" smashed="yes"/>
+<instance part="C1" gate="G$1" x="50.8" y="25.4" smashed="yes">
+<attribute name="NAME" x="50.8" y="25.146" size="1.27" layer="95" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" x="50.8" y="23.114" size="0.635" layer="96" font="vector" ratio="10" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY3" gate="5V" x="50.8" y="30.48" smashed="yes"/>
+<instance part="SUPPLY4" gate="G$1" x="50.8" y="15.24" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -446,6 +655,11 @@
 <wire x1="33.02" y1="27.94" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="27.94" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="A"/>
+<pinref part="SUPPLY3" gate="5V" pin="5V"/>
+<wire x1="50.8" y1="27.94" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="NGND" class="0">
 <segment>
@@ -453,6 +667,11 @@
 <pinref part="SUPPLY1" gate="G$1" pin="NGND"/>
 <wire x1="33.02" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="22.86" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="NGND"/>
+<pinref part="C1" gate="G$1" pin="K"/>
+<wire x1="50.8" y1="17.78" x2="50.8" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SERVO" class="0">
