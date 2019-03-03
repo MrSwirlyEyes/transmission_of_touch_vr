@@ -23,6 +23,12 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 #define ringVibe 1
 #define pinkyVibe 0
 
+#define thumbTec 4
+#define indexTec 3
+#define middleTec 2
+#define ringTec 1
+#define pinkyTec 0
+
 CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 
 #define NUM_FLEX 10
@@ -38,6 +44,11 @@ int flex[NUM_FLEX] = {0,};
 #define SERVOMIN  130
 #define SERVOMAX  290 // Need another define for wrist servo
 
+// Type of Touch Glove
+// Cols - how do I make an enumeration?
+// 0 for no electrotactiles, 1 for has electrotactile
+#define HAS_ET 0
+
 struct SensorPacket {
   int flex1 = 0;
   int flex2 = 0;
@@ -47,11 +58,27 @@ struct SensorPacket {
 } outpkt;
 
 struct ActuatorPacket {
-  int pwm1 = 0;
-  int pwm2 = 0;
-  int pwm3 = 0;
-  int pwm4 = 0;
-  int pwm5 = 0;
+  int vibeThumb = 0;
+  int vibeIndex = 0;
+  int vibeMiddle = 0;
+  int vibeRing = 0;
+  int vibePinky = 0;
+
+  int tecThumb = 0;
+  int tecIndex = 0;
+  int tecMiddle = 0;
+  int tecRing = 0;
+  int tecPinky = 0;
+
+  /*
+  int dirThumb = -1;
+  int dirIndex = -1;
+  int dirMiddle = -1;
+  int dirRing = -1;
+  int dirPinky = -1;
+  int dirWrist = -1;
+  */
+  
 } inpkt;
 
 //byte * stuff;
@@ -125,11 +152,22 @@ void updateSensors() {
 
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
-  pwm.setPWM(thumbVibe,0,inpkt.pwm1);
-  pwm.setPWM(indexVibe,0,inpkt.pwm2);
-  pwm.setPWM(middleVibe,0,inpkt.pwm3);
-  pwm.setPWM(ringVibe,0,inpkt.pwm4);
-  pwm.setPWM(pinkyVibe,0,inpkt.pwm5);
+  pwm.setPWM(thumbVibe,0,inpkt.vibeThumb);
+  pwm.setPWM(indexVibe,0,inpkt.vibeIndex);
+  pwm.setPWM(middleVibe,0,inpkt.vibeMiddle);
+  pwm.setPWM(ringVibe,0,inpkt.vibeRing);
+  pwm.setPWM(pinkyVibe,0,inpkt.vibePinky);
+
+  pwm.setPWM(thumbTec,0,inpkt.tecThumb);
+  pwm.setPWM(indexTec,0,inpkt.tecIndex);
+  pwm.setPWM(middleTec,0,inpkt.tecMiddle);
+  pwm.setPWM(ringTec,0,inpkt.tecRing);
+  pwm.setPWM(pinkyTec,0,inpkt.tecPinky);
+
+  if (HAS_ET) {
+    // set the electrotaciles to do their thing
+    // based on the direction of movement for each finger
+  }
 }
 
 
