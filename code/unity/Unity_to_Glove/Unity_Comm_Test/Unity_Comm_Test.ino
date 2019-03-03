@@ -1,48 +1,10 @@
 #include "Adafruit_PWMServoDriver.h" //download library from adafruit website
 #include "CD74HC4067.h" //include this library from github
 
-Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
-
-//defined vib motor values
-#define VIBMIN 0
-#define VIBMAX 4095
-#define NUM_VIBE 5
 
 
-// PCB Demux pins
-#define s0 22  // 2
-#define s1 23  // 6
-#define s2 25  // 7
-#define s3 24 // 10
-// signal Demux pin
-#define sig_pin 0
+#define BAUDRATE 9600
 
-#define thumbVibe 4
-#define indexVibe 3
-#define middleVibe 2
-#define ringVibe 1
-#define pinkyVibe 0
-
-#define thumbTec 4
-#define indexTec 3
-#define middleTec 2
-#define ringTec 1
-#define pinkyTec 0
-
-CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
-
-#define NUM_FLEX 10
-int flex[NUM_FLEX] = {0,};
-
-//#define led 3
-
-//defined flex sensor values
-#define FLEXMIN 0
-#define FLEXMAX 255
-
-//defined servo values
-#define SERVOMIN  130
-#define SERVOMAX  290 // Need another define for wrist servo
 
 // Type of Touch Glove
 // Cols - how do I make an enumeration?
@@ -50,11 +12,11 @@ int flex[NUM_FLEX] = {0,};
 #define HAS_ET 0
 
 struct SensorPacket {
-  int flex1 = 0;
-  int flex2 = 0;
-  int flex3 = 0;
-  int flex4 = 0;
-  int flex5 = 0;
+  int flexThumb = 0;
+  int flexIndex = 0;
+  int flexMiddle = 0;
+  int flexRing = 0;
+  int flexPinky = 0;
 } outpkt;
 
 struct ActuatorPacket {
@@ -81,66 +43,194 @@ struct ActuatorPacket {
   
 } inpkt;
 
-//byte * stuff;
-
 byte numRead;
 
-//byte ledVal = 0;
 
+
+////////////////////////
+//     PWM DRIVER     //
+////////////////////////
+#define PWM_FREQUENCY 60
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+
+
+
+///////////////////////////
+//     VIBROTACTILES     //
+///////////////////////////
+
+#define NUM_VIBE 5
+
+#define VIBMIN 0
+#define VIBMAX 4095
+
+#define thumbVibe 4
+#define indexVibe 3
+#define middleVibe 2
+#define ringVibe 1
+#define pinkyVibe 0
+
+
+/////////////////////////////
+//     THERMOELECTRICS     //
+/////////////////////////////
+
+//#define PHASE_COLD 0
+//#define PHASE_HOT 1
+
+#define TECMIN 0
+#define TECMAX 4095
+
+#define TECMAX_HOT 4095
+#define TECMAX_COLD 4095
+
+#define TEC_PINKY_HOT 6
+#define TEC_PINKY_COLD 7
+
+#define TEC_RING_HOT 15
+#define TEC_RING_COLD 14
+
+#define TEC_MIDDLE_HOT 13
+#define TEC_MIDDLE_COLD 12
+
+#define TEC_INDEX_HOT 11
+#define TEC_INDEX_COLD 10
+
+#define TEC_THUMB_HOT 9
+#define TEC_THUMB_COLD 8
+
+
+
+////////////////////////////////
+//     ANALOG MULTIPLEXER     //
+////////////////////////////////
+
+// Select pins
+#define s0 22  // 2
+#define s1 23  // 6
+#define s2 25  // 7
+#define s3 24 // 10
+
+// Signal pin
+#define sig_pin 0
+
+CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
+
+
+
+//////////////////////////
+//     FLEX SENSORS     //
+//////////////////////////
+
+#define NUM_FLEX 5
+
+#define FLEX_PINKY 8
+#define FLEX_RING 9
+#define FLEX_MIDDLE 0
+#define FLEX_INDEX 1
+#define FLEX_THUMB 2
+
+int flex[NUM_FLEX] = {0,};
+
+byte flex_pin[NUM_FLEX] = {
+                            FLEX_PINKY,
+                            FLEX_RING,
+                            FLEX_MIDDLE,
+                            FLEX_INDEX,
+                            FLEX_THUMB,
+                          };
+
+#define FLEX_MIN_PINKY  119
+#define FLEX_MIN_RING   190
+#define FLEX_MIN_MIDDLE 236
+#define FLEX_MIN_INDEX  236
+#define FLEX_MIN_THUMB   90
+
+#define FLEX_MAX_PINKY  276
+#define FLEX_MAX_RING   300
+#define FLEX_MAX_MIDDLE 300
+#define FLEX_MAX_INDEX  308
+#define FLEX_MAX_THUMB  235
+
+int flex_min[NUM_FLEX] = {
+                            FLEX_MIN_THUMB,
+                            FLEX_MIN_INDEX,
+                            FLEX_MIN_MIDDLE,
+                            FLEX_MIN_RING,
+                            FLEX_MIN_PINKY,
+                          };
+
+int flex_max[NUM_FLEX] = {
+                            FLEX_MAX_THUMB,
+                            FLEX_MAX_INDEX,
+                            FLEX_MAX_MIDDLE,
+                            FLEX_MAX_RING,
+                            FLEX_MAX_PINKY,
+                          };
+
+
+
+///////////////////
+//     SETUP     //
+///////////////////
 void setup() {
-
-//  pinMode(sig_pin,INPUT);
-
-//  pinMode(s0,OUTPUT);
-//  pinMode(s1,OUTPUT);
-//  pinMode(s2,OUTPUT);
-//  pinMode(s3,OUTPUT);
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  Serial.begin(BAUDRATE);
 //  while (!Serial);
 //  Serial.println("ON");
 
   pwm.begin();
-  pwm.setPWMFreq(40);
+  pwm.setPWMFreq(PWM_FREQUENCY);
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 16; i++) {
     pwm.setPin(i, 0); 
   }
-
-//  analogReference(EXTERNAL);
-
-//  numRead = sizeof(int);
 }
 
-void loop() {
-//  // put your main code here, to run repeatedly:
-  if (Serial.available() > 0) {
-      numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
-      sendFingers();
-      updateActuators();
-  }
 
+
+//////////////////
+//     LOOP     //
+//////////////////
+void loop() {
   updateSensors();
+//  // put your main code here, to run repeatedly:
+  if (Serial.available() > sizeof(inpkt)) {
+    numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+    sendFingers();
+    updateActuators();
+  }  
 
 //read_flex_sensors();
 ////
 //  print_flex_sensors();
 }
 
+
+
+///////////////////////
+//     FUNCTIONS     //
+///////////////////////
 void sendFingers() {
-    String data = (String) outpkt.flex1 + "," + outpkt.flex2 + "," + outpkt.flex3 + "," + outpkt.flex4 + "," + outpkt.flex5;
+    String data = (String) outpkt.flexThumb + "," + outpkt.flexIndex + "," + outpkt.flexMiddle + "," + outpkt.flexRing + "," + outpkt.flexPinky;
 //    String data = (String) numRead;
     Serial.println(data);
 }
 
-void updateSensors() {
 
+
+void updateSensors() {
+  int i = 0;
   // Op amp (row "2") flex channels (vert row)
-  outpkt.flex1 = demux.read_channel(2);
-  outpkt.flex2 = demux.read_channel(1);
-  outpkt.flex3 = demux.read_channel(0);
-  outpkt.flex4 = demux.read_channel(9);
-  outpkt.flex5 = demux.read_channel(8);
+  outpkt.flexThumb = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
+  i++;
+  outpkt.flexIndex = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
+  i++;
+  outpkt.flexMiddle = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
+  i++;
+  outpkt.flexRing = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
+  i++;
+  outpkt.flexPinky = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
 
   // Non-op amp (row "1") flex channels (horiz row)
 //  outpkt.s1 = demux.read_channel(7);
@@ -150,6 +240,8 @@ void updateSensors() {
 //  outpkt.s5 = demux.read_channel(3);
 }
 
+
+
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
   pwm.setPWM(thumbVibe,0,inpkt.vibeThumb);
@@ -158,11 +250,62 @@ void updateActuators() {
   pwm.setPWM(ringVibe,0,inpkt.vibeRing);
   pwm.setPWM(pinkyVibe,0,inpkt.vibePinky);
 
-  pwm.setPWM(thumbTec,0,inpkt.tecThumb);
-  pwm.setPWM(indexTec,0,inpkt.tecIndex);
-  pwm.setPWM(middleTec,0,inpkt.tecMiddle);
-  pwm.setPWM(ringTec,0,inpkt.tecRing);
-  pwm.setPWM(pinkyTec,0,inpkt.tecPinky);
+  // Writes to the thermoelectrics [-4095 - 4095]
+  //  Where a (-) value denotes COLD; (+) value denotes HOT
+  if(inpkt.tecThumb < 0) {
+    pwm.setPWM(TEC_THUMB_HOT,0,0);
+    pwm.setPWM(TEC_THUMB_COLD,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+  } else if(inpkt.tecThumb > 0) {
+    pwm.setPWM(TEC_THUMB_COLD,0,0);
+    pwm.setPWM(TEC_THUMB_HOT,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+  } else {
+    pwm.setPWM(TEC_THUMB_HOT,0,0);
+    pwm.setPWM(TEC_THUMB_COLD,0,0);
+  }
+  
+  if(inpkt.tecIndex < 0) {
+    pwm.setPWM(TEC_INDEX_HOT,0,0);
+    pwm.setPWM(TEC_INDEX_COLD,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+  } else if(inpkt.tecIndex > 0) {
+    pwm.setPWM(TEC_INDEX_COLD,0,0);
+    pwm.setPWM(TEC_INDEX_HOT,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+  } else {
+    pwm.setPWM(TEC_INDEX_HOT,0,0);
+    pwm.setPWM(TEC_INDEX_COLD,0,0);
+  }
+  
+  if(inpkt.tecMiddle < 0) {
+    pwm.setPWM(TEC_MIDDLE_HOT,0,0);
+    pwm.setPWM(TEC_MIDDLE_COLD,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+  } else if(inpkt.tecMiddle > 0) {
+    pwm.setPWM(TEC_MIDDLE_COLD,0,0);
+    pwm.setPWM(TEC_MIDDLE_HOT,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+  } else {
+    pwm.setPWM(TEC_MIDDLE_HOT,0,0);
+    pwm.setPWM(TEC_MIDDLE_COLD,0,0);
+  }
+  
+  if(inpkt.tecRing < 0) {
+    pwm.setPWM(TEC_RING_HOT,0,0);
+    pwm.setPWM(TEC_RING_COLD,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+  } else if(inpkt.tecRing > 0) {
+    pwm.setPWM(TEC_RING_COLD,0,0);
+    pwm.setPWM(TEC_RING_HOT,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+  } else {
+    pwm.setPWM(TEC_RING_HOT,0,0);
+    pwm.setPWM(TEC_RING_COLD,0,0);
+  }
+  
+  if(inpkt.tecPinky < 0) {
+    pwm.setPWM(TEC_PINKY_HOT,0,0);
+    pwm.setPWM(TEC_PINKY_COLD,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+  } else if(inpkt.tecPinky > 0) {
+    pwm.setPWM(TEC_PINKY_COLD,0,0);
+    pwm.setPWM(TEC_PINKY_HOT,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+  } else {
+    pwm.setPWM(TEC_PINKY_HOT,0,0);
+    pwm.setPWM(TEC_PINKY_COLD,0,0);
+  }
 
   if (HAS_ET) {
     // set the electrotaciles to do their thing
@@ -171,8 +314,9 @@ void updateActuators() {
 }
 
 
+
 void print_flex_sensors() {
-    Serial.print("(flex0,flex1,flex2,flex3,flex4,flex5,flex6,flex7,flex8,flex9)=(");
+    Serial.print("(flex0,flexThumb,flexIndex,flexMiddle,flexRing,flexPinky,flex6,flex7,flex8,flex9)=(");
   for (byte i = 0 ; i < NUM_FLEX ; i++) {
     Serial.print(flex[i]);
     if (i < NUM_FLEX - 1)
@@ -182,7 +326,13 @@ void print_flex_sensors() {
 }
 
 
+
+//void read_flex_sensors() {  
+//  for (int i = 0; i < NUM_FLEX; i++)
+//    flex[i] = demux.read_channel(i);
+//}
 void read_flex_sensors() {  
-  for (int i = 0; i < NUM_FLEX; i++)
-    flex[i] = demux.read_channel(i);
+  for (int i = 0; i < NUM_FLEX; i++) { 
+    flex[i] = constrain(demux.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
+  }
 }
