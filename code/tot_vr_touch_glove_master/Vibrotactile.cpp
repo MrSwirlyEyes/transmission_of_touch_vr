@@ -5,11 +5,8 @@ Vibrotactile::Vibrotactile(Adafruit_PWMServoDriver _pwm_driver,byte _pin,int _mi
 
   this->_pin = _pin;
 
-  this->_min = _min;
-  this->_max = _max;
-
-  // initialize
-//  off();
+  this->_min = constrain(_min,PWM_DRIVER_MIN,PWM_DRIVER_MAX);
+  this->_max = constrain(_max,PWM_DRIVER_MIN,PWM_DRIVER_MAX);
 }
 
 void Vibrotactile::actuate(int intensity) {

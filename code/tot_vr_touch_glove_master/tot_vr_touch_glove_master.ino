@@ -1,7 +1,7 @@
 #include "radio.h"
 #include "CD74HC4067.h"
 #include "Adafruit_PWMServoDriver.h"
-#include "TEC.h"
+#include "Thermoelectric.h"
 #include "FSR.h"
 #include "Vibrotactile.h"
 
@@ -92,7 +92,7 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 #define VIBE_MIN 0
 #define VIBE_MAX 4095
 
-Vibrotactile vibrotactiles[NUM_VIBE] = {
+Vibrotactile vibrotactile[NUM_VIBE] = {
                                           Vibrotactile(pwm_driver,VIBE_PINKY,VIBE_MIN,VIBE_MAX),
                                           Vibrotactile(pwm_driver,VIBE_RING,VIBE_MIN,VIBE_MAX),
                                           Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
@@ -105,16 +105,16 @@ Vibrotactile vibrotactiles[NUM_VIBE] = {
 /////////////////////////////
 //     THERMOELECTRICS     //
 /////////////////////////////
-#define PHASE_COLD 0
-#define PHASE_HOT 1
+#define PHASE_COLD 1
+#define PHASE_HOT 0
 
 #define NUM_TEC 5
 
-#define TECMIN 0
-#define TECMAX 4095
+#define TEC_MIN 0
+#define TEC_MAX 4095
 
-#define TECMAX_HOT 4095
-#define TECMAX_COLD 4095
+#define TEC_MAX_HOT 4095
+#define TEC_MAX_COLD 4095
 
 #define TEC_PINKY_HOT 6
 #define TEC_PINKY_COLD 7
@@ -130,6 +130,14 @@ Vibrotactile vibrotactiles[NUM_VIBE] = {
 
 #define TEC_THUMB_HOT 9
 #define TEC_THUMB_COLD 8
+
+Thermoelectric tec[NUM_TEC] = {
+                                Thermoelectric(pwm_driver,TEC_PINKY_HOT,TEC_PINKY_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_RING_HOT,TEC_RING_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_MIDDLE_HOT,TEC_MIDDLE_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_INDEX_HOT,TEC_INDEX_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_THUMB_HOT,TEC_THUMB_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                              };
 
 
 
@@ -167,8 +175,8 @@ void setup() {
   rfBegin(RF_CHANNEL);
 
   delay(10000);
-//  test_vibe();
-//  test_thermoelectrics();
+  test_vibe();
+  test_thermoelectrics();
   delay(5000);
 }
 
@@ -243,7 +251,7 @@ void read_flex_sensors() {
 
 void actuate_vibrotactiles() {
   for (int i = 0; i < NUM_VIBE; i++) {    
-    vibrotactiles[i].actuate(pkt_rx.vibe[i]);
+    vibrotactile[i].actuate(pkt_rx.vibe[i]);
   }
 }
 
@@ -267,7 +275,7 @@ void actuate_thermoelectrics() {
 void test_vibe() {
   for (int j = VIBE_MIN; j < VIBE_MAX; j+=3) {
     for (int i = 0; i < NUM_VIBE; i++) {    
-      vibrotactiles[i].actuate(j);
+      vibrotactile[i].actuate(j);
     }
     delay(1);
   }
@@ -276,9 +284,13 @@ void test_vibe() {
   
   for (int j = VIBE_MAX; j > VIBE_MIN; j-=3) {
     for (int i = 0; i < NUM_VIBE; i++) {    
-      vibrotactiles[i].actuate(j);
+      vibrotactile[i].actuate(j);
     }
     delay(1);
+  }
+
+  for (int i = 0; i < NUM_VIBE; i++) {    
+    vibrotactile[i].off();
   }
   
   delay(500);
@@ -286,52 +298,21 @@ void test_vibe() {
 
 void test_thermoelectrics() {
 //  tec_pinky.actuate(TECMAX_HOT,PHASE_HOT);
-  pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-  pwm_driver.setPWM(TEC_PINKY_COLD,0,TECMAX_HOT);
-  pwm_driver.setPWM(TEC_RING_HOT,0,0);
-  pwm_driver.setPWM(TEC_RING_COLD,0,TECMAX_HOT);
-  pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-  pwm_driver.setPWM(TEC_MIDDLE_COLD,0,TECMAX_HOT);
-  pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-  pwm_driver.setPWM(TEC_INDEX_COLD,0,TECMAX_HOT);
-  pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-  pwm_driver.setPWM(TEC_THUMB_COLD,0,TECMAX_HOT);
-  delay(20000);
-  pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-  pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
-  pwm_driver.setPWM(TEC_RING_HOT,0,0);
-  pwm_driver.setPWM(TEC_RING_COLD,0,0);
-  pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-  pwm_driver.setPWM(TEC_MIDDLE_COLD,0,0);
-  pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-  pwm_driver.setPWM(TEC_INDEX_COLD,0,0);
-  pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-  pwm_driver.setPWM(TEC_THUMB_COLD,0,0);
+  for (int i = 0; i < NUM_TEC; i++) {    
+    tec[i].actuate(TEC_MAX_HOT,PHASE_HOT);
+  }
+
+  delay(10000);
+
+  for (int i = 0; i < NUM_VIBE; i++) {    
+    tec[i].off();
+  }
+  
   delay(1000);
 }
 
 
 #ifdef DEBUG
-//  void print_fsr_sensors() {
-//    Serial.print("TX: (fsr0,fsr1,fsr2,fsr3,fsr4,fsr5)=(");
-//    for (byte i = 0 ; i < NUM_FSR ; i++) {
-//      Serial.print(fsr[i]);
-//      if (i < NUM_FSR - 1)
-//        Serial.print(",");
-//    }  
-//    Serial.println(")");
-//  }
-//  
-//  void print_temp_sensors() {
-//      Serial.print("TX: (temp0,temp1,temp2,temp3,temp4,temp5)=(");
-//    for (byte i = 0 ; i < NUM_TEMP ; i++) {
-//      Serial.print(temp[i].get_temperature_C());
-//      if (i < NUM_TEMP - 1)
-//        Serial.print(",");
-//    }  
-//      Serial.println(")");
-//  }
-
   void print_tx_pkt() {
     Serial.print("TX: (flex_pinky,flex_ring,flex_middle,flex_index,flex_thumb)=(");
     for(int i = 0; i < NUM_FLEX; i++) {
