@@ -1,6 +1,7 @@
 #include "radio.h"
 #include "CD74HC4067.h"
 #include "TMP36.h"
+#include "FSR.h"
 #include "Adafruit_PWMServoDriver.h"
 
 
@@ -30,7 +31,52 @@ CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 ///////////////////////////////////////
 #define NUM_FSR 5
 
-int fsr[NUM_FSR] = {0,};
+#define FSR_PINKY  0
+#define FSR_RING   1
+#define FSR_MIDDLE 2
+#define FSR_INDEX  3
+#define FSR_THUMB  4
+
+//int fsr[NUM_FSR] = {0,};
+
+#define FSR_MIN    0
+#define FSR_MAX 4095
+
+#define FSR_MIN_PINKY     0
+#define FSR_MIN_RING      0
+#define FSR_MIN_MIDDLE    0
+#define FSR_MIN_INDEX     0
+#define FSR_MIN_THUMB     0
+
+#define FSR_MAX_PINKY  1023
+#define FSR_MAX_RING   1023
+#define FSR_MAX_MIDDLE 1023
+#define FSR_MAX_INDEX  1023
+#define FSR_MAX_THUMB  1023
+
+//int fsr_min[NUM_FSR] = {
+//                            FSR_MIN_PINKY,
+//                            FSR_MIN_RING,
+//                            FSR_MIN_MIDDLE,
+//                            FSR_MIN_INDEX,
+//                            FSR_MIN_THUMB,
+//                          };
+//
+//int fsr_max[NUM_FSR] = {
+//                            FSR_MAX_PINKY,
+//                            FSR_MAX_RING,
+//                            FSR_MAX_MIDDLE,
+//                            FSR_MAX_INDEX,
+//                            FSR_MAX_THUMB,
+//                          };
+
+FSR fsr[NUM_FSR] = {
+                      FSR(demux,FSR_PINKY,FSR_MIN_PINKY,FSR_MAX_PINKY),
+                      FSR(demux,FSR_RING,FSR_MIN_RING,FSR_MAX_RING),
+                      FSR(demux,FSR_MIDDLE,FSR_MIN_MIDDLE,FSR_MAX_MIDDLE),
+                      FSR(demux,FSR_INDEX,FSR_MIN_INDEX,FSR_MAX_INDEX),
+                      FSR(demux,FSR_THUMB,FSR_MIN_THUMB,FSR_MAX_THUMB),
+                    };
 
 
 
@@ -77,40 +123,58 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 //     SERVOS     //
 ////////////////////
 #define NUM_SERVO 5
+
+#define FLEX_MIN 0
+#define FLEX_MAX 1023
+
 #define SERVO_INITIAL 8
 #define SERVO_FINAL (SERVO_INITIAL + NUM_SERVO)
 
-#define FLEX_MIN_PINKY  119
-#define FLEX_MIN_RING   190
-#define FLEX_MIN_MIDDLE 236
-#define FLEX_MIN_INDEX  236
-#define FLEX_MIN_THUMB   90
-
-#define FLEX_MAX_PINKY  276
-#define FLEX_MAX_RING   300
-#define FLEX_MAX_MIDDLE 300
-#define FLEX_MAX_INDEX  308
-#define FLEX_MAX_THUMB  235
-
-int flex_min[NUM_SERVO] = {
-                            FLEX_MIN_PINKY,
-                            FLEX_MIN_RING,
-                            FLEX_MIN_MIDDLE,
-                            FLEX_MIN_INDEX,
-                            FLEX_MIN_THUMB,
-                          };
-
-int flex_max[NUM_SERVO] = {
-                            FLEX_MAX_PINKY,
-                            FLEX_MAX_RING,
-                            FLEX_MAX_MIDDLE,
-                            FLEX_MAX_INDEX,
-                            FLEX_MAX_THUMB,
-                          };
+#define SERVO_PINKY   8
+#define SERVO_RING    9
+#define SERVO_MIDDLE 10
+#define SERVO_INDEX  11
+#define SERVO_THUMB  12
 
 #define SERVO_MIN 185 //225 (light settings)
 #define SERVO_MAX 450 //350 (light settings)
 #define SERVO_CENTER ((SERVO_MAX + SERVO_MIN) / 2.0)
+
+#define SERVO_MIN_PINKY  185
+#define SERVO_MIN_RING   185
+#define SERVO_MIN_MIDDLE 185
+#define SERVO_MIN_INDEX  185
+#define SERVO_MIN_THUMB  185
+
+#define SERVO_MAX_PINKY  450
+#define SERVO_MAX_RING   450
+#define SERVO_MAX_MIDDLE 450
+#define SERVO_MAX_INDEX  450
+#define SERVO_MAX_THUMB  450
+
+byte servo_pin[NUM_SERVO] = {
+                              SERVO_PINKY,
+                              SERVO_RING,
+                              SERVO_MIDDLE,
+                              SERVO_INDEX,
+                              SERVO_THUMB,
+                            };
+
+int servo_min[NUM_SERVO] = {
+                            SERVO_MIN_PINKY,
+                            SERVO_MIN_RING,
+                            SERVO_MIN_MIDDLE,
+                            SERVO_MIN_INDEX,
+                            SERVO_MIN_THUMB,
+                          };
+
+int servo_max[NUM_SERVO] = {
+                            SERVO_MAX_PINKY,
+                            SERVO_MAX_RING,
+                            SERVO_MAX_MIDDLE,
+                            SERVO_MAX_INDEX,
+                            SERVO_MAX_THUMB,
+                          };
 
 
 
@@ -224,8 +288,9 @@ void loop() {
 void read_fsr_sensors() {
   for (int i = 0; i < NUM_FSR; i++) {
 //    fsr[i] = demux.read_channel(i);
-    pkt_tx.fsr[i] = demux.read_channel(i);
-//    pkt_tx.fsr[i] = constrain(map(pkt_rx.servo[i],flex_max[i],flex_min[i],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX);
+//    pkt_tx.fsr[i] = demux.read_channel(i);
+//    pkt_tx.fsr[i] = constrain(map(demux.read_channel(i),fsr_min[i],fsr_max[i],FSR_MIN,FSR_MAX),FSR_MIN,FSR_MAX);
+    pkt_tx.fsr[i] = fsr[i].read();
   }
 }
 
@@ -238,14 +303,37 @@ void read_temp_sensors() {
 
 void actuate_servos() {
   
-  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-//    pwm.setPWM(i, 0, SERVO_CENTER);
-    pwm.setPWM(i, 0, constrain(map(pkt_rx.servo[i - SERVO_INITIAL],flex_max[i - SERVO_INITIAL],flex_min[i - SERVO_INITIAL],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX));
-    
+//  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
+////    pwm.setPWM(i, 0, SERVO_CENTER);
+//    pwm.setPWM(i, 0, constrain(map(pkt_rx.servo[i - SERVO_INITIAL],flex_max[i - SERVO_INITIAL],flex_min[i - SERVO_INITIAL],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX));
+//  }
+  for (int i = 0; i < NUM_SERVO; i++) {
+    pwm.setPWM(servo_pin[i], 0, constrain(map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]));
   }
 }
 
 
+
+void test_servo() {
+  for (int j = SERVO_MIN; j < SERVO_MAX; j++) {
+    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
+      pwm.setPWM(i, 0, j);
+    }
+    delay(1);
+  }
+  delay(500);
+  for (int j = SERVO_MAX; j > SERVO_MIN; j--) {
+    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
+      pwm.setPWM(i, 0, j);
+    }
+    delay(1);
+  }
+  delay(500);
+  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
+    pwm.setPWM(i, 0, SERVO_CENTER);
+  }
+  delay(500);
+}
 
 
 
@@ -292,27 +380,3 @@ void actuate_servos() {
     Serial.println(")");
   }
 #endif
-
-
-
-
-void test_servo() {
-  for (int j = SERVO_MIN; j < SERVO_MAX; j++) {
-    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm.setPWM(i, 0, j);
-    }
-    delay(1);
-  }
-  delay(500);
-  for (int j = SERVO_MAX; j > SERVO_MIN; j--) {
-    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm.setPWM(i, 0, j);
-    }
-    delay(1);
-  }
-  delay(500);
-  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-    pwm.setPWM(i, 0, SERVO_CENTER);
-  }
-  delay(500);
-}
