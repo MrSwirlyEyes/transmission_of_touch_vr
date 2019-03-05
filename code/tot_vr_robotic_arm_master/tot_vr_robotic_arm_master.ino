@@ -3,6 +3,7 @@
 #include "TMP36.h"
 #include "FSR.h"
 #include "Adafruit_PWMServoDriver.h"
+#include "PCA9685Servo.h"
 
 
 
