@@ -14,25 +14,28 @@
 #define HAS_ET 0
 
 struct SensorPacket {
-  int flexThumb = 0;
-  int flexIndex = 0;
-  int flexMiddle = 0;
-  int flexRing = 0;
-  int flexPinky = 0;
+  int flexThumb   = 0;
+  int flexIndex   = 0;
+  int flexMiddle  = 0;
+  int flexRing    = 0;
+  int flexPinky   = 0;
 } outpkt;
 
 struct ActuatorPacket {
-  int vibeThumb = 0;
-  int vibeIndex = 0;
-  int vibeMiddle = 0;
-  int vibeRing = 0;
-  int vibePinky = 0;
 
-  int tecThumb = 0;
-  int tecIndex = 0;
-  int tecMiddle = 0;
-  int tecRing = 0;
-  int tecPinky = 0;
+  int msgType;
+  
+  int vibeThumb   = 0;
+  int vibeIndex   = 0;
+  int vibeMiddle  = 0;
+  int vibeRing    = 0;
+  int vibePinky   = 0;
+
+  int tecThumb    = 0;
+  int tecIndex    = 0;
+  int tecMiddle   = 0;
+  int tecRing     = 0;
+  int tecPinky    = 0;
 
   /*
   int dirThumb = -1;
@@ -208,8 +211,22 @@ void loop() {
 //  // put your main code here, to run repeatedly:
   if (Serial.available() > sizeof(inpkt)) {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
-    sendFingers();
-    updateActuators();
+
+    switch(inpkt.msgType) {
+      case 0xBEEF:
+        sendFingers();
+        updateActuators();
+        break;
+      case 0xDEAD:
+        calibrate(0);
+        Serial.println("Done");
+        break;
+       case 0xFEED:
+        calibrate(1);
+        Serial.println("Done");
+        break;
+    }
+    
   }  
 
 //read_flex_sensors();
@@ -385,4 +402,22 @@ void read_flex_sensors() {
       Serial.println(flex[i].read_raw());
     #endif
   }
+}
+
+void calibrate(byte _min) {
+  int numReadings = 1000;
+  int flex_sums[NUM_FLEX] = {0,};
+  for (int i = 0; i < numReadings; i++) {
+    for (int j = 0; j < NUM_FLEX; j++) {
+      flex_sums[j] += flex[j].read_raw();
+    }
+  }
+
+  for (int i = 0; i < NUM_FLEX; i++) {
+    if (_min)
+      flex[i].set_min(flex_sums[i]/numReadings);
+    else
+      flex[i].set_max(flex_sums[i]/numReadings);
+  }
+  
 }
