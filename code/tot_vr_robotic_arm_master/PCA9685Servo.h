@@ -21,8 +21,10 @@ class PCA9685Servo {
   private:
     Adafruit_PWMServoDriver _pwm_driver;
     byte _pin;
-    int _min;
-    int _max;
+    int _min_limit;
+    int _max_limit;
+    int _min_mapping;
+    int _max_mapping;
 };
 
 #endif

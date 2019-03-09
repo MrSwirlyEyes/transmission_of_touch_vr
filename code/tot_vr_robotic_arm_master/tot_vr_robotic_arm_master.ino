@@ -7,7 +7,7 @@
 
 
 
-//#define DEBUG
+#define DEBUG 1
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
@@ -23,7 +23,7 @@
 #define s3 5
 #define sig_pin 2
 
-CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
+CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 
 
 
@@ -72,11 +72,11 @@ CD74HC4067 demux(s0, s1, s2, s3, sig_pin);
 //                          };
 
 FSR fsr[NUM_FSR] = {
-                      FSR(demux,FSR_PINKY,FSR_MIN_PINKY,FSR_MAX_PINKY),
-                      FSR(demux,FSR_RING,FSR_MIN_RING,FSR_MAX_RING),
-                      FSR(demux,FSR_MIDDLE,FSR_MIN_MIDDLE,FSR_MAX_MIDDLE),
-                      FSR(demux,FSR_INDEX,FSR_MIN_INDEX,FSR_MAX_INDEX),
-                      FSR(demux,FSR_THUMB,FSR_MIN_THUMB,FSR_MAX_THUMB),
+                      FSR(multiplexer,FSR_PINKY,FSR_MIN_PINKY,FSR_MAX_PINKY,FSR_MIN,FSR_MAX),
+                      FSR(multiplexer,FSR_RING,FSR_MIN_RING,FSR_MAX_RING,FSR_MIN,FSR_MAX),
+                      FSR(multiplexer,FSR_MIDDLE,FSR_MIN_MIDDLE,FSR_MAX_MIDDLE,FSR_MIN,FSR_MAX),
+                      FSR(multiplexer,FSR_INDEX,FSR_MIN_INDEX,FSR_MAX_INDEX,FSR_MIN,FSR_MAX),
+                      FSR(multiplexer,FSR_THUMB,FSR_MIN_THUMB,FSR_MAX_THUMB,FSR_MIN,FSR_MAX),
                     };
 
 
@@ -112,11 +112,11 @@ TMP36 temp[NUM_TEMP] = {
 
 
 ////////////////////////
-//     PWM DRIVER     //
+//     pwm_driver DRIVER     //
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 
 
 
@@ -177,6 +177,13 @@ int servo_max[NUM_SERVO] = {
                             SERVO_MAX_THUMB,
                           };
 
+PCA9685Servo servo[NUM_SERVO] = {
+                            PCA9685Servo(pwm_driver,SERVO_PINKY,SERVO_MIN_PINKY,SERVO_MAX_PINKY),
+                            PCA9685Servo(pwm_driver,SERVO_RING,SERVO_MIN_RING,SERVO_MAX_RING),
+                            PCA9685Servo(pwm_driver,SERVO_MIDDLE,SERVO_MIN_MIDDLE,SERVO_MAX_MIDDLE),
+                            PCA9685Servo(pwm_driver,SERVO_INDEX,SERVO_MIN_INDEX,SERVO_MAX_INDEX),
+                            PCA9685Servo(pwm_driver,SERVO_THUMB,SERVO_MIN_THUMB,SERVO_MAX_THUMB),
+                          };
 
 
 ////////////////////////////
@@ -207,11 +214,11 @@ void setup() {
     Serial.begin(BAUDRATE);
   #endif
 
-  pwm.begin();
-  pwm.setPWMFreq(PWM_FREQUENCY);
+  pwm_driver.begin();
+  pwm_driver.setPWMFreq(PWM_FREQUENCY);
 
   for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-    pwm.setPWM(i, 0, SERVO_CENTER);
+    servo[i].actuate(SERVO_CENTER);
   }
 
   rfBegin(RF_CHANNEL);
@@ -229,14 +236,14 @@ void setup() {
 void loop() {
 
   read_fsr_sensors();
-//  #ifdef DEBUG
-//    print_fsr_sensors();
-//  #endif
+  #ifdef DEBUG
+    print_fsr_sensors();
+  #endif
   
   read_temp_sensors();
-//  #ifdef DEBUG
-//    print_temp_sensors();
-//  #endif
+  #ifdef DEBUG
+    print_temp_sensors();
+  #endif
 
   pkt_tx.checksum = 0.0;
 
@@ -288,16 +295,16 @@ void loop() {
 ///////////////////////
 void read_fsr_sensors() {
   for (int i = 0; i < NUM_FSR; i++) {
-//    fsr[i] = demux.read_channel(i);
-//    pkt_tx.fsr[i] = demux.read_channel(i);
-//    pkt_tx.fsr[i] = constrain(map(demux.read_channel(i),fsr_min[i],fsr_max[i],FSR_MIN,FSR_MAX),FSR_MIN,FSR_MAX);
+//    fsr[i] = multiplexer.read_channel(i);
+//    pkt_tx.fsr[i] = multiplexer.read_channel(i);
+//    pkt_tx.fsr[i] = constrain(map(multiplexer.read_channel(i),fsr_min[i],fsr_max[i],FSR_MIN,FSR_MAX),FSR_MIN,FSR_MAX);
     pkt_tx.fsr[i] = fsr[i].read();
   }
 }
 
 void read_temp_sensors() {
   for (int i = 0; i < NUM_TEMP; i++) {
-    temp[i].demux_read(demux.read_channel(temp_pin[i]));
+    temp[i].read(multiplexer.read_channel(temp_pin[i]));
     pkt_tx.temp[i]=temp[i].get_temperature_C();
   }
 }
@@ -305,11 +312,13 @@ void read_temp_sensors() {
 void actuate_servos() {
   
 //  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-////    pwm.setPWM(i, 0, SERVO_CENTER);
-//    pwm.setPWM(i, 0, constrain(map(pkt_rx.servo[i - SERVO_INITIAL],flex_max[i - SERVO_INITIAL],flex_min[i - SERVO_INITIAL],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX));
+////    pwm_driver.setpwm_driver(i, 0, SERVO_CENTER);
+//    pwm_driver.setpwm_driver(i, 0, constrain(map(pkt_rx.servo[i - SERVO_INITIAL],flex_max[i - SERVO_INITIAL],flex_min[i - SERVO_INITIAL],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX));
 //  }
   for (int i = 0; i < NUM_SERVO; i++) {
-    pwm.setPWM(servo_pin[i], 0, constrain(map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]));
+//    pwm_driver.setPWM(servo_pin[i], 0, constrain(map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]));
+    pwm_driver.setPWM(servo_pin[i], 0,map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]);
+    servo[i].actuate(SERVO_CENTER);
   }
 }
 
@@ -318,20 +327,20 @@ void actuate_servos() {
 void test_servo() {
   for (int j = SERVO_MIN; j < SERVO_MAX; j++) {
     for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm.setPWM(i, 0, j);
+      pwm_driver.setPWM(i, 0, j);
     }
     delay(1);
   }
   delay(500);
   for (int j = SERVO_MAX; j > SERVO_MIN; j--) {
     for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm.setPWM(i, 0, j);
+      pwm_driver.setPWM(i, 0, j);
     }
     delay(1);
   }
   delay(500);
   for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-    pwm.setPWM(i, 0, SERVO_CENTER);
+    pwm_driver.setPWM(i, 0, SERVO_CENTER);
   }
   delay(500);
 }
@@ -342,7 +351,7 @@ void test_servo() {
   void print_fsr_sensors() {
     Serial.print("TX: (fsr0,fsr1,fsr2,fsr3,fsr4,fsr5)=(");
     for (byte i = 0 ; i < NUM_FSR ; i++) {
-      Serial.print(fsr[i]);
+      Serial.print(fsr[i].read());
       if (i < NUM_FSR - 1)
         Serial.print(",");
     }  
