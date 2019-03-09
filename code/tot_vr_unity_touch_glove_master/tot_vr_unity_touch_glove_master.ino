@@ -27,14 +27,14 @@ struct ActuatorPacket {
   int vibeMiddle = 0;
   int vibeRing = 0;
   int vibePinky = 0;
-
+/*
   int tecThumb = 0;
   int tecIndex = 0;
   int tecMiddle = 0;
   int tecRing = 0;
   int tecPinky = 0;
-
-  /*
+  */
+/*
   int dirThumb = -1;
   int dirIndex = -1;
   int dirMiddle = -1;
@@ -42,7 +42,6 @@ struct ActuatorPacket {
   int dirPinky = -1;
   int dirWrist = -1;
   */
-  
 } inpkt;
 
 byte numRead;
@@ -74,7 +73,7 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 int flex_mapped[NUM_FLEX] = {0,};
 
 #define FLEX_MIN 0
-#define FLEX_MAX 1023
+#define FLEX_MAX 90
 
 #define FLEX_PINKY 8
 #define FLEX_RING 9
@@ -205,16 +204,13 @@ void setup() {
 //////////////////
 void loop() {
   updateSensors();
+//  print_flex_sensors();
 //  // put your main code here, to run repeatedly:
-  if (Serial.available() > sizeof(inpkt)) {
+  if (Serial.available() > 0) {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
     sendFingers();
     updateActuators();
-  }  
-
-//read_flex_sensors();
-////
-//  print_flex_sensors();
+  }
 }
 
 
@@ -273,7 +269,7 @@ void updateActuators() {
   vibrotactile[i].actuate(inpkt.vibePinky);
 
   i=0;
-
+/*
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
   if(inpkt.tecThumb < 0) {
@@ -358,6 +354,7 @@ void updateActuators() {
     // set the electrotaciles to do their thing
     // based on the direction of movement for each finger
   }
+  */
 }
 
 
@@ -365,7 +362,7 @@ void updateActuators() {
 void print_flex_sensors() {
     Serial.print("(flex0,flexThumb,flexIndex,flexMiddle,flexRing,flexPinky,flex6,flex7,flex8,flex9)=(");
   for (byte i = 0 ; i < NUM_FLEX ; i++) {
-    Serial.print(flex_mapped[i]);
+    Serial.print(flex[i].read());
     if (i < NUM_FLEX - 1)
       Serial.print(",");
   }  
