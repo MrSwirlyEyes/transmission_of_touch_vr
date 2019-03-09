@@ -45,7 +45,6 @@ struct ActuatorPacket {
   int dirPinky = -1;
   int dirWrist = -1;
   */
-  
 } inpkt;
 
 byte numRead;
@@ -77,13 +76,13 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 int flex_mapped[NUM_FLEX] = {0,};
 
 #define FLEX_MIN 0
-#define FLEX_MAX 1023
+#define FLEX_MAX 90
 
-#define FLEX_PINKY 8
-#define FLEX_RING 9
-#define FLEX_MIDDLE 0
-#define FLEX_INDEX 1
-#define FLEX_THUMB 2
+#define FLEX_PINKY 3
+#define FLEX_RING 4
+#define FLEX_MIDDLE 5
+#define FLEX_INDEX 6
+#define FLEX_THUMB 7
 
 #define FLEX_MIN_PINKY  119
 #define FLEX_MIN_RING   190
@@ -208,30 +207,29 @@ void setup() {
 //////////////////
 void loop() {
   updateSensors();
+//  print_flex_sensors();
 //  // put your main code here, to run repeatedly:
-  if (Serial.available() > sizeof(inpkt)) {
+  if (Serial.available() > 0) {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+    sendFingers();
+    updateActuators();
 
     switch(inpkt.msgType) {
-      case 0xBEEF:
+      case 0x1000:
         sendFingers();
         updateActuators();
         break;
-      case 0xDEAD:
+      case 0x0100:
         calibrate(0);
         Serial.println("Done");
         break;
-       case 0xFEED:
+       case 0x0010:
         calibrate(1);
         Serial.println("Done");
         break;
     }
     
-  }  
-
-//read_flex_sensors();
-////
-//  print_flex_sensors();
+  }
 }
 
 
@@ -382,7 +380,7 @@ void updateActuators() {
 void print_flex_sensors() {
     Serial.print("(flex0,flexThumb,flexIndex,flexMiddle,flexRing,flexPinky,flex6,flex7,flex8,flex9)=(");
   for (byte i = 0 ; i < NUM_FLEX ; i++) {
-    Serial.print(flex_mapped[i]);
+    Serial.print(flex[i].read());
     if (i < NUM_FLEX - 1)
       Serial.print(",");
   }  
