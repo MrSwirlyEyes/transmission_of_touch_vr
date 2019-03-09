@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -915,10 +915,10 @@
 <smd name="2" x="0.4575" y="0" dx="0.5851" dy="0.6118" layer="1" thermals="no"/>
 <text x="0" y="0.635" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.635" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-1" y1="0.6" x2="-1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="-1" y1="-0.6" x2="1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="-0.6" x2="1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="0.6" x2="-1" y2="0.6" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="0.55" x2="-0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="-0.55" x2="0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="-0.55" x2="0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="0.55" x2="-0.95" y2="0.55" width="0.127" layer="39"/>
 </package>
 <package name="CAPC2012X95_SMD-0805" urn="urn:adsk.eagle:footprint:2940051/1" locally_modified="yes">
 <description>CHIP, 2 X 1.25 X 0.95 mm body
@@ -1128,6 +1128,40 @@
 <wire x1="3.778" y1="0" x2="4.286" y2="0" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="6.5" width="0.1524" layer="39"/>
 </package>
+<package name="CAPPRD200W50D500H1100B" urn="urn:adsk.eagle:footprint:9488073/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 2.00 mm pitch, 5.00 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.00 mm pitch, 0.50 mm lead diameter, 5.00 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="2.5" width="0.12" layer="21"/>
+<circle x="0" y="0" radius="2.5" width="0.12" layer="51"/>
+<wire x1="-2.3648" y1="2.3648" x2="-1.6148" y2="2.3648" width="0.12" layer="21"/>
+<wire x1="-1.9898" y1="2.7398" x2="-1.9898" y2="1.9898" width="0.12" layer="21"/>
+<pad name="A" x="-1" y="0" drill="0.7" diameter="1.5"/>
+<pad name="K" x="1" y="0" drill="0.7" diameter="1.5"/>
+<text x="0" y="1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="2.6" width="0.127" layer="39"/>
+<wire x1="-1.9" y1="-0.9" x2="1.9" y2="-0.9" width="0.127" layer="40"/>
+<wire x1="1.9" y1="-0.9" x2="1.9" y2="0.9" width="0.127" layer="40"/>
+<wire x1="1.9" y1="0.9" x2="-1.9" y2="0.9" width="0.127" layer="40"/>
+<wire x1="-1.9" y1="0.9" x2="-1.9" y2="-0.9" width="0.127" layer="40"/>
+</package>
+<package name="CAPPRD350W60D800H2000B" urn="urn:adsk.eagle:footprint:9488086/1" locally_modified="yes">
+<description>Radial Polarized Capacitor, 3.50 mm pitch, 8.00 mm body diameter, 20.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 3.50 mm pitch, 0.60 mm lead diameter, 8.00 mm body diameter and 20.00 mm body height&lt;/p&gt;</description>
+<circle x="0" y="0" radius="4" width="0.12" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.12" layer="51"/>
+<wire x1="-3.4254" y1="3.4255" x2="-2.6754" y2="3.4255" width="0.12" layer="21"/>
+<wire x1="-3.0504" y1="3.8005" x2="-3.0504" y2="3.0505" width="0.12" layer="21"/>
+<pad name="A" x="-1.75" y="0" drill="0.8" diameter="1.8"/>
+<pad name="K" x="1.75" y="0" drill="0.8" diameter="1.8"/>
+<text x="0" y="2" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<circle x="0" y="0" radius="4.1" width="0.127" layer="39"/>
+<wire x1="-2.8" y1="-1.1" x2="2.8" y2="-1.1" width="0.127" layer="40"/>
+<wire x1="2.8" y1="-1.1" x2="2.8" y2="1.1" width="0.127" layer="40"/>
+<wire x1="2.8" y1="1.1" x2="-2.8" y2="1.1" width="0.127" layer="40"/>
+<wire x1="-2.8" y1="1.1" x2="-2.8" y2="-1.1" width="0.127" layer="40"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPC1005X55" urn="urn:adsk.eagle:package:2886515/1" locally_modified="yes" type="model">
@@ -1171,6 +1205,20 @@
 <package3d name="_AE_PTH_DIA8-LS3.5-H21.50" urn="urn:adsk.eagle:package:3036236/2" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="_AE_PTH_DIA8-LS3.5-H21.50"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD200W50D500H1100B" urn="urn:adsk.eagle:package:9488069/1" locally_modified="yes" type="model">
+<description>Radial Polarized Capacitor, 2.00 mm pitch, 5.00 mm body diameter, 11.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 2.00 mm pitch, 0.50 mm lead diameter, 5.00 mm body diameter and 11.00 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPPRD200W50D500H1100B"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPPRD350W60D800H2000B" urn="urn:adsk.eagle:package:9488079/1" locally_modified="yes" type="model">
+<description>Radial Polarized Capacitor, 3.50 mm pitch, 8.00 mm body diameter, 20.00 mm body height
+&lt;p&gt;Radial Polarized Capacitor package with 3.50 mm pitch, 0.60 mm lead diameter, 8.00 mm body diameter and 20.00 mm body height&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPPRD350W60D800H2000B"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1446,6 +1494,26 @@
 <attribute name="MFR" value="AVX Corporation" constant="no"/>
 <attribute name="MPN" value="TLJA107M010R1400" constant="no"/>
 <attribute name="VALUE" value="100uF/10V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH_25V-20%_D5-LS2-H11" package="CAPPRD200W50D500H1100B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9488069/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="UVY1E101MDD" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=UVY1E101MDD-ND" constant="no"/>
+<attribute name="DISTPN" value="UVY1E101MDD-ND" constant="no"/>
+<attribute name="MFR" value="Nichicon" constant="no"/>
+<attribute name="MPN" value="UVY1E101MDD" constant="no"/>
+<attribute name="VALUE" value="100uF/25V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1801,13 +1869,33 @@
 </technology>
 </technologies>
 </device>
+<device name="_PTH_16V-20%_D8-LS3.5-H20" package="CAPPRD350W60D800H2000B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9488079/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="EKZM160ELL102MH20D" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=565-3567-ND" constant="no"/>
+<attribute name="DISTPN" value="565-3567-ND" constant="no"/>
+<attribute name="MFR" value="United Chemi-Con" constant="no"/>
+<attribute name="MPN" value="EKZM160ELL102MH20D" constant="no"/>
+<attribute name="VALUE" value="1000uF/16V" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
 </library>
 <library name="_resistors">
 <packages>
-<package name="RESC1005X35_SMD-0402" urn="urn:adsk.eagle:footprint:2899254/4">
+<package name="RESC1005X35_SMD-0402" urn="urn:adsk.eagle:footprint:2899254/4" locally_modified="yes">
 <description>CHIP, 1 X 0.5 X 0.35 mm body
 &lt;p&gt;CHIP package with body size 1 X 0.5 X 0.35 mm&lt;/p&gt;</description>
 <wire x1="0.525" y1="0.464" x2="-0.525" y2="0.464" width="0.12" layer="21"/>
@@ -1816,10 +1904,10 @@
 <wire x1="-0.525" y1="-0.275" x2="-0.525" y2="0.275" width="0.12" layer="51"/>
 <wire x1="-0.525" y1="0.275" x2="0.525" y2="0.275" width="0.12" layer="51"/>
 <wire x1="0.525" y1="0.275" x2="0.525" y2="-0.275" width="0.12" layer="51"/>
-<wire x1="-1" y1="0.6" x2="-1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="-1" y1="-0.6" x2="1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="-0.6" x2="1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="0.6" x2="-1" y2="0.6" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="0.55" x2="-0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="-0.55" x2="0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="-0.55" x2="0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="0.55" x2="-0.95" y2="0.55" width="0.127" layer="39"/>
 <smd name="1" x="-0.4825" y="0" dx="0.5351" dy="0.6" layer="1" thermals="no"/>
 <smd name="2" x="0.4825" y="0" dx="0.5351" dy="0.6" layer="1" thermals="no"/>
 <text x="0" y="0.635" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
@@ -2261,7 +2349,11 @@
 <text x="0" y="-8.89" size="0.5" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
 <text x="0" y="0" size="0.25" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
 <wire x1="-4.6228" y1="-12.192" x2="4.6228" y2="-12.192" width="0.127" layer="39"/>
-<wire x1="5.842" y1="-2.1336" x2="5.842" y2="2.1336" width="0.127" layer="39"/>
+<wire x1="4.6228" y1="-2.1336" x2="4.71198125" y2="-2.1336" width="0.127" layer="39"/>
+<wire x1="4.71198125" y1="-2.1336" x2="5.842" y2="-1.00358125" width="0.127" layer="39" curve="90"/>
+<wire x1="4.6228" y1="2.1336" x2="4.71198125" y2="2.1336" width="0.127" layer="39"/>
+<wire x1="4.71198125" y1="2.1336" x2="5.842" y2="1.00358125" width="0.127" layer="39" curve="-90"/>
+<wire x1="5.842" y1="1.00358125" x2="5.842" y2="-1.00358125" width="0.127" layer="39"/>
 <wire x1="4.6228" y1="4.1402" x2="-4.6228" y2="4.1402" width="0.127" layer="39"/>
 <wire x1="-4.6228" y1="4.1402" x2="-4.6228" y2="-12.192" width="0.127" layer="39"/>
 <wire x1="-4.5" y1="3.7" x2="-4.5" y2="-10.7" width="0.127" layer="21"/>
@@ -2270,21 +2362,25 @@
 <wire x1="4.5" y1="3.7" x2="-4.5" y2="3.7" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="-7.2" x2="4.5" y2="-7.2" width="0.127" layer="51"/>
 <wire x1="4.6228" y1="4.1402" x2="4.6228" y2="2.1336" width="0.127" layer="39"/>
-<wire x1="4.6228" y1="2.1336" x2="5.842" y2="2.1336" width="0.127" layer="39"/>
-<wire x1="4.6228" y1="-2.1336" x2="5.842" y2="-2.1336" width="0.127" layer="39"/>
 <wire x1="4.6228" y1="-2.1336" x2="4.6228" y2="-12.192" width="0.127" layer="39"/>
-<wire x1="-2.1336" y1="-4.1402" x2="2.1336" y2="-4.1402" width="0.127" layer="40"/>
-<wire x1="2.1336" y1="-4.1402" x2="2.1336" y2="-1.8542" width="0.127" layer="40"/>
-<wire x1="2.1336" y1="-1.8542" x2="-2.1336" y2="-1.8542" width="0.127" layer="40"/>
-<wire x1="-2.1336" y1="-1.8542" x2="-2.1336" y2="-4.1402" width="0.127" layer="40"/>
-<wire x1="3.556" y1="2.1336" x2="3.556" y2="-2.1336" width="0.127" layer="40"/>
-<wire x1="3.556" y1="-2.1336" x2="5.842" y2="-2.1336" width="0.127" layer="40"/>
-<wire x1="5.842" y1="-2.1336" x2="5.842" y2="2.1336" width="0.127" layer="40"/>
-<wire x1="5.842" y1="2.1336" x2="3.556" y2="2.1336" width="0.127" layer="40"/>
-<wire x1="-2.1336" y1="1.8542" x2="2.1336" y2="1.8542" width="0.127" layer="40"/>
-<wire x1="2.1336" y1="1.8542" x2="2.1336" y2="4.1402" width="0.127" layer="40"/>
-<wire x1="2.1336" y1="4.1402" x2="-2.1336" y2="4.1402" width="0.127" layer="40"/>
-<wire x1="-2.1336" y1="4.1402" x2="-2.1336" y2="1.8542" width="0.127" layer="40"/>
+<wire x1="-1.007321875" y1="-4.1402" x2="1.007321875" y2="-4.1402" width="0.127" layer="40"/>
+<wire x1="1.007321875" y1="-4.1402" x2="2.1336" y2="-3.013921875" width="0.127" layer="40" curve="90"/>
+<wire x1="2.1336" y1="-3.013921875" x2="0.973878125" y2="-1.8542" width="0.127" layer="40" curve="90"/>
+<wire x1="0.973878125" y1="-1.8542" x2="-0.973878125" y2="-1.8542" width="0.127" layer="40"/>
+<wire x1="-0.973878125" y1="-1.8542" x2="-2.1336" y2="-3.013921875" width="0.127" layer="40" curve="90"/>
+<wire x1="-2.1336" y1="-3.013921875" x2="-1.007321875" y2="-4.1402" width="0.127" layer="40" curve="90"/>
+<wire x1="5.842" y1="-0.98030625" x2="5.842" y2="1.004271875" width="0.127" layer="40"/>
+<wire x1="5.842" y1="1.004271875" x2="4.712671875" y2="2.1336" width="0.127" layer="40" curve="90"/>
+<wire x1="4.712671875" y1="2.1336" x2="3.556" y2="0.976928125" width="0.127" layer="40" curve="90"/>
+<wire x1="3.556" y1="0.976928125" x2="3.556" y2="-1.00089375" width="0.127" layer="40"/>
+<wire x1="3.556" y1="-1.00089375" x2="4.68870625" y2="-2.1336" width="0.127" layer="40" curve="90"/>
+<wire x1="4.68870625" y1="-2.1336" x2="5.842" y2="-0.98030625" width="0.127" layer="40" curve="90"/>
+<wire x1="2.1336" y1="3.013921875" x2="1.007321875" y2="4.1402" width="0.127" layer="40" curve="90"/>
+<wire x1="1.007321875" y1="4.1402" x2="-0.98868125" y2="4.1402" width="0.127" layer="40"/>
+<wire x1="-0.98868125" y1="4.1402" x2="-2.1336" y2="2.99528125" width="0.127" layer="40" curve="90"/>
+<wire x1="-2.1336" y1="2.99528125" x2="-0.99251875" y2="1.8542" width="0.127" layer="40" curve="90"/>
+<wire x1="-0.99251875" y1="1.8542" x2="0.973878125" y2="1.8542" width="0.127" layer="40"/>
+<wire x1="0.973878125" y1="1.8542" x2="2.1336" y2="3.013921875" width="0.127" layer="40" curve="90"/>
 </package>
 <package name="POWER_JACK_SLOT_ID2.1MM-OD5.5MM" urn="urn:adsk.eagle:footprint:3035492/1">
 <wire x1="-2.1" y1="6.18" x2="1.1" y2="6.18" width="0" layer="46"/>
@@ -3300,23 +3396,24 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="0" y="1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
-<package name="LED_PTH_T-1_3/4_5MM" urn="urn:adsk.eagle:footprint:4254822/1" locally_modified="yes">
-<wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-1.651" y1="0" x2="0" y2="1.651" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-1.651" x2="1.651" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="-2.159" y1="0" x2="0" y2="2.159" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<wire x1="0" y1="-2.159" x2="2.159" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
-<pad name="A" x="-1.27" y="0" drill="0.9" diameter="1.8"/>
-<pad name="K" x="1.27" y="0" drill="0.9" diameter="1.8"/>
-<text x="0" y="1.5" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<package name="LEDRD254W50D590H860B" urn="urn:adsk.eagle:footprint:8856570/1" locally_modified="yes">
+<description>Radial LED (Round), 2.54 mm pitch, 5.90 mm body diameter, 8.60 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.50 mm lead thickness, 5.90 mm body diameter and 8.60 mm body height&lt;/p&gt;</description>
+<wire x1="2.655" y1="1.2859" x2="-2.95" y2="0" width="0.12" layer="21" curve="154.1581"/>
+<wire x1="2.655" y1="-1.2859" x2="-2.95" y2="0" width="0.12" layer="21" curve="-154.1581"/>
+<wire x1="2.655" y1="1.2859" x2="2.655" y2="-1.2859" width="0.12" layer="21"/>
+<wire x1="-1.983" y1="-1.617" x2="-1.233" y2="-1.617" width="0.12" layer="21"/>
+<wire x1="-1.608" y1="-1.242" x2="-1.608" y2="-1.992" width="0.12" layer="21"/>
+<pad name="A" x="-1.27" y="0" drill="1" diameter="1.85"/>
+<pad name="K" x="1.27" y="0" drill="1" diameter="1.85"/>
+<circle x="0" y="0" radius="2.95" width="0.12" layer="51"/>
+<text x="0" y="1.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.5" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<text x="-1.27" y="-1.397" size="1" layer="21" font="vector" ratio="10" align="center">+</text>
-<text x="1.27" y="-1.397" size="1" layer="21" font="vector" ratio="10" align="center">-</text>
-<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="3.35" width="0.254" layer="39"/>
+<circle x="0" y="0" radius="3.1" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="2.4" y2="-1.1" width="0.127" layer="40"/>
+<wire x1="2.4" y1="-1.1" x2="2.4" y2="1.1" width="0.127" layer="40"/>
+<wire x1="2.4" y1="1.1" x2="-2.4" y2="1.1" width="0.127" layer="40"/>
+<wire x1="-2.4" y1="1.1" x2="-2.4" y2="-1.1" width="0.127" layer="40"/>
 </package>
 </packages>
 <packages3d>
@@ -3341,9 +3438,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <packageinstance name="LEDC2012X120_LED-0805"/>
 </packageinstances>
 </package3d>
-<package3d name="LED_PTH_T-1_3/4_5MM" urn="urn:adsk.eagle:package:4254847/2" locally_modified="yes" type="model">
+<package3d name="LEDRD254W50D590H860B" urn="urn:adsk.eagle:package:8856559/1" locally_modified="yes" type="model">
+<description>Radial LED (Round), 2.54 mm pitch, 5.90 mm body diameter, 8.60 mm body height
+&lt;p&gt;Radial LED (Round) package with 2.54 mm pitch, 0.50 mm lead width, 0.50 mm lead thickness, 5.90 mm body diameter and 8.60 mm body height&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="LED_PTH_T-1_3/4_5MM"/>
+<packageinstance name="LEDRD254W50D590H860B"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3518,78 +3617,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </technology>
 </technologies>
 </device>
-<device name="_PTH_T-1_3/4_5MM_NO-COLOR" package="LED_PTH_T-1_3/4_5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254847/2"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="_PTH_T-1_3/4_5MM_RED" package="LED_PTH_T-1_3/4_5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254847/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113SECK-J3.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=754-1761-ND" constant="no"/>
-<attribute name="DISTPN" value="754-1761-ND" constant="no"/>
-<attribute name="MFR" value="Kingbright" constant="no"/>
-<attribute name="MPN" value="WP7113SECK/J3" constant="no"/>
-<attribute name="VALUE" value="RED" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_PTH_T_1_3/4_5MM_GREEN" package="LED_PTH_T-1_3/4_5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254847/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113ZGCK.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=754-1808-ND" constant="no"/>
-<attribute name="DISTPN" value="754-1808-ND" constant="no"/>
-<attribute name="MFR" value="Kingbright" constant="no"/>
-<attribute name="MPN" value="WP7113ZGCK" constant="no"/>
-<attribute name="VALUE" value="GREEN" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="_PTH_T_1_3/4_5MM_BLUE" package="LED_PTH_T-1_3/4_5MM">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="K" pad="K"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4254847/2"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113VBC-D.pdf" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=754-1807-ND" constant="no"/>
-<attribute name="DISTPN" value="754-1807-ND" constant="no"/>
-<attribute name="MFR" value="Kingbright" constant="no"/>
-<attribute name="MPN" value="WP7113VBC/D" constant="no"/>
-<attribute name="VALUE" value="BLUE" constant="no"/>
-</technology>
-</technologies>
-</device>
 <device name="_SMD-0805_DISCRETE_RED" package="LEDC2012X120_LED-0805">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
@@ -3650,6 +3677,78 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </technology>
 </technologies>
 </device>
+<device name="_PTH_T-1-3/4_5MM_NO-COLOR" package="LEDRD254W50D590H860B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8856559/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_PTH_T-1-3/4_5MM_RED" package="LEDRD254W50D590H860B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8856559/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113SEC-J3.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=WP7113SEC%2FJ3" constant="no"/>
+<attribute name="DISTPN" value="754-1379-ND" constant="no"/>
+<attribute name="MFR" value="Kingbright" constant="no"/>
+<attribute name="MPN" value="WP7113SEC/J3" constant="no"/>
+<attribute name="VALUE" value="T-1-3/4 RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH_T-1-3/4_5MM_GREEN" package="LEDRD254W50D590H860B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8856559/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113SGC.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=WP7113SGC" constant="no"/>
+<attribute name="DISTPN" value="754-1273-ND" constant="no"/>
+<attribute name="MFR" value="Kingbright" constant="no"/>
+<attribute name="MPN" value="WP7113SGC" constant="no"/>
+<attribute name="VALUE" value="T-1-3/4 GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_PTH_T-1-3/4_5MM_BLUE" package="LEDRD254W50D590H860B">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:8856559/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="http://www.kingbrightusa.com/images/catalog/SPEC/WP7113QBC-D.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=WP7113QBC%2FD" constant="no"/>
+<attribute name="DISTPN" value="754-1489-ND" constant="no"/>
+<attribute name="MFR" value="Kingbright" constant="no"/>
+<attribute name="MPN" value="WP7113QBC/D" constant="no"/>
+<attribute name="VALUE" value="T-1-3/4 BLUE" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -3674,16 +3773,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="4.5" y1="4.5" x2="4.5" y2="-4.5" width="0.12" layer="51"/>
 <wire x1="-5" y1="-6" x2="5" y2="-6" width="0.127" layer="39"/>
 <wire x1="6" y1="-5" x2="6" y2="5" width="0.127" layer="39"/>
-<wire x1="5" y1="6" x2="-5" y2="6" width="0.127" layer="39"/>
-<wire x1="-6" y1="5" x2="-6" y2="-5" width="0.127" layer="39"/>
-<wire x1="-6" y1="5" x2="-5" y2="5" width="0.127" layer="39"/>
-<wire x1="-5" y1="5" x2="-5" y2="6" width="0.127" layer="39"/>
-<wire x1="5" y1="5" x2="5" y2="6" width="0.127" layer="39"/>
+<wire x1="5" y1="6.4" x2="-5" y2="6.4" width="0.127" layer="39"/>
+<wire x1="-6.1" y1="5" x2="-6.1" y2="-5" width="0.127" layer="39"/>
+<wire x1="-6.1" y1="5" x2="-5" y2="5" width="0.127" layer="39"/>
+<wire x1="-5" y1="5" x2="-5" y2="6.4" width="0.127" layer="39"/>
+<wire x1="5" y1="5" x2="5" y2="6.4" width="0.127" layer="39"/>
 <wire x1="5" y1="5" x2="6" y2="5" width="0.127" layer="39"/>
 <wire x1="5" y1="-6" x2="5" y2="-5" width="0.127" layer="39"/>
 <wire x1="5" y1="-5" x2="6" y2="-5" width="0.127" layer="39"/>
 <wire x1="-5" y1="-6" x2="-5" y2="-5" width="0.127" layer="39"/>
-<wire x1="-6" y1="-5" x2="-5" y2="-5" width="0.127" layer="39"/>
+<wire x1="-6.1" y1="-5" x2="-5" y2="-5" width="0.127" layer="39"/>
 <smd name="1" x="-4.45" y="3.75" dx="0.8118" dy="0.2818" layer="1" roundness="100"/>
 <smd name="2" x="-4.45" y="3.25" dx="0.8118" dy="0.2818" layer="1" roundness="100"/>
 <smd name="3" x="-4.45" y="2.75" dx="0.8118" dy="0.2818" layer="1" roundness="100"/>
@@ -4034,10 +4133,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="2.15" y1="-0.75" x2="2.15" y2="1.65" width="0.127" layer="51"/>
 <wire x1="2.15" y1="1.65" x2="-2.15" y2="1.65" width="0.127" layer="51"/>
 <wire x1="-2.15" y1="1.65" x2="-2.15" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-2.8194" y1="2.1336" x2="-2.8194" y2="-1.2192" width="0.127" layer="39"/>
-<wire x1="-2.8194" y1="-1.2192" x2="2.8194" y2="-1.2192" width="0.127" layer="39"/>
-<wire x1="2.8194" y1="-1.2192" x2="2.8194" y2="2.1336" width="0.127" layer="39"/>
-<wire x1="2.8194" y1="2.1336" x2="-2.8194" y2="2.1336" width="0.127" layer="39"/>
+<wire x1="-2.8" y1="2.1" x2="-2.8" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="-2.8" y1="-1.2" x2="2.8" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="2.8" y1="-1.2" x2="2.8" y2="2.1" width="0.127" layer="39"/>
+<wire x1="2.8" y1="2.1" x2="-2.8" y2="2.1" width="0.127" layer="39"/>
 <text x="0" y="-1.27" size="0.5" layer="25" font="vector" ratio="10" align="top-center">&gt;NAME</text>
 <text x="0" y="0.762" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.905" y1="0.635" x2="-1.905" y2="-0.635" width="0.127" layer="40"/>
@@ -4082,10 +4181,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="1.525" y1="-0.75" x2="1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="1.525" y1="1.65" x2="-1.525" y2="1.65" width="0.127" layer="51"/>
 <wire x1="-1.525" y1="1.65" x2="-1.525" y2="-0.75" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="2.2" x2="-2.2" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="-2.2" y1="-1.3" x2="2.2" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="2.2" y1="-1.3" x2="2.2" y2="2.2" width="0.127" layer="39"/>
-<wire x1="2.2" y1="2.2" x2="-2.2" y2="2.2" width="0.127" layer="39"/>
+<wire x1="-2.15" y1="2.1" x2="-2.15" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="-2.15" y1="-1.2" x2="2.15" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="2.15" y1="-1.2" x2="2.15" y2="2.1" width="0.127" layer="39"/>
+<wire x1="2.15" y1="2.1" x2="-2.15" y2="2.1" width="0.127" layer="39"/>
 <text x="0" y="2.159" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="0.635" size="0.25" layer="27" font="vector" ratio="10" align="bottom-center">&gt;VALUE</text>
 <wire x1="-1.397" y1="-0.762" x2="1.397" y2="-0.762" width="0.127" layer="40"/>
@@ -4451,10 +4550,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="2" x="0.8283" y="0" dx="0.8588" dy="1.0153" layer="1" thermals="no"/>
 <text x="0" y="0.889" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.889" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-1.524" y1="0.889" x2="1.524" y2="0.889" width="0.127" layer="39"/>
-<wire x1="1.524" y1="0.889" x2="1.524" y2="-0.889" width="0.127" layer="39"/>
-<wire x1="1.524" y1="-0.889" x2="-1.524" y2="-0.889" width="0.127" layer="39"/>
-<wire x1="-1.524" y1="-0.889" x2="-1.524" y2="0.889" width="0.127" layer="39"/>
+<wire x1="-1.474" y1="0.789" x2="1.474" y2="0.789" width="0.127" layer="39"/>
+<wire x1="1.474" y1="0.789" x2="1.474" y2="-0.789" width="0.127" layer="39"/>
+<wire x1="1.474" y1="-0.789" x2="-1.474" y2="-0.789" width="0.127" layer="39"/>
+<wire x1="-1.474" y1="-0.789" x2="-1.474" y2="0.789" width="0.127" layer="39"/>
 </package>
 <package name="INDC2012X145-0805" urn="urn:adsk.eagle:footprint:4582451/1" locally_modified="yes">
 <description>Chip, 2.00 X 1.25 X 1.45 mm body
@@ -4661,14 +4760,14 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="3" x="1.064" y="0" dx="1.2235" dy="0.6248" layer="1" thermals="no"/>
 <text x="0" y="1.905" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.778" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-1.8542" y1="-1.7018" x2="0.889" y2="-1.7018" width="0.127" layer="39"/>
-<wire x1="1.8542" y1="-0.508" x2="1.8542" y2="0.508" width="0.127" layer="39"/>
-<wire x1="0.889" y1="1.7018" x2="-1.8542" y2="1.7018" width="0.127" layer="39"/>
-<wire x1="-1.8542" y1="1.7018" x2="-1.8542" y2="-1.7018" width="0.127" layer="39"/>
-<wire x1="0.889" y1="-1.7018" x2="0.889" y2="-0.508" width="0.127" layer="39"/>
-<wire x1="0.889" y1="-0.508" x2="1.8542" y2="-0.508" width="0.127" layer="39"/>
-<wire x1="0.889" y1="1.7018" x2="0.889" y2="0.508" width="0.127" layer="39"/>
-<wire x1="0.889" y1="0.508" x2="1.8542" y2="0.508" width="0.127" layer="39"/>
+<wire x1="-1.8" y1="-1.65" x2="0.8" y2="-1.65" width="0.127" layer="39"/>
+<wire x1="1.8" y1="-0.5" x2="1.8" y2="0.5" width="0.127" layer="39"/>
+<wire x1="0.8" y1="1.65" x2="-1.8" y2="1.65" width="0.127" layer="39"/>
+<wire x1="-1.8" y1="1.65" x2="-1.8" y2="-1.65" width="0.127" layer="39"/>
+<wire x1="0.8" y1="-1.65" x2="0.8" y2="-0.5" width="0.127" layer="39"/>
+<wire x1="0.8" y1="-0.5" x2="1.8" y2="-0.5" width="0.127" layer="39"/>
+<wire x1="0.8" y1="1.65" x2="0.8" y2="0.5" width="0.127" layer="39"/>
+<wire x1="0.8" y1="0.5" x2="1.8" y2="0.5" width="0.127" layer="39"/>
 </package>
 <package name="SOIC127P600X265-8" urn="urn:adsk.eagle:footprint:2899755/1" locally_modified="yes">
 <description>8-SOIC, 1.27 mm pitch, 6 mm span, 4.9 X 3.9 X 2.65 mm body
@@ -4690,10 +4789,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="8" x="2.4734" y="1.905" dx="1.9685" dy="0.5991" layer="1" thermals="no"/>
 <text x="0" y="2.667" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.667" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-3.6322" y1="-2.6416" x2="-3.6322" y2="2.6416" width="0.127" layer="39"/>
-<wire x1="-3.6322" y1="2.6416" x2="3.6322" y2="2.6416" width="0.127" layer="39"/>
-<wire x1="3.6322" y1="2.6416" x2="3.6322" y2="-2.6416" width="0.127" layer="39"/>
-<wire x1="3.6322" y1="-2.6416" x2="-3.6322" y2="-2.6416" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="-2.6" x2="-3.6" y2="2.6" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="2.6" x2="3.6" y2="2.6" width="0.127" layer="39"/>
+<wire x1="3.6" y1="2.6" x2="3.6" y2="-2.6" width="0.127" layer="39"/>
+<wire x1="3.6" y1="-2.6" x2="-3.6" y2="-2.6" width="0.127" layer="39"/>
 </package>
 <package name="SOIC-8_W3.9MM">
 <wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.127" layer="21"/>
@@ -5011,10 +5110,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="0" y="1.27" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.27" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <circle x="-2.921" y="0" radius="0.25" width="0" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="39"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="39"/>
-<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.127" layer="39"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="39"/>
+<wire x1="-2.45" y1="-1.2" x2="2.45" y2="-1.2" width="0.127" layer="39"/>
+<wire x1="2.45" y1="-1.2" x2="2.45" y2="1.2" width="0.127" layer="39"/>
+<wire x1="2.45" y1="1.2" x2="-2.45" y2="1.2" width="0.127" layer="39"/>
+<wire x1="-2.45" y1="1.2" x2="-2.45" y2="-1.2" width="0.127" layer="39"/>
 </package>
 <package name="DFN100X60X55-2" urn="urn:adsk.eagle:footprint:2933441/1" locally_modified="yes">
 <description>DFN2, 1 X 0.6 X 0.55 mm body
@@ -5118,22 +5217,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </library>
 <library name="_switches">
 <packages>
-<package name="SW_TOGGLE_SPDT_5A-28V_13L-7W" urn="urn:adsk.eagle:footprint:3033348/6" locally_modified="yes">
-<pad name="S1" x="0" y="-4.7" drill="2.075" diameter="3.275" rot="R180"/>
-<pad name="P" x="0" y="0" drill="2.075" diameter="3.275" rot="R180"/>
-<pad name="S2" x="0" y="4.7" drill="2.075" diameter="3.275" rot="R180"/>
-<wire x1="3.5" y1="-6.5" x2="3.5" y2="6.5" width="0.1" layer="21"/>
-<wire x1="3.5" y1="6.5" x2="-3.5" y2="6.5" width="0.1" layer="21"/>
-<wire x1="-3.5" y1="6.5" x2="-3.5" y2="-6.5" width="0.1" layer="21"/>
-<wire x1="-3.5" y1="-6.5" x2="3.5" y2="-6.5" width="0.1" layer="21"/>
-<wire x1="3.6" y1="6.6" x2="3.6" y2="-6.6" width="0.127" layer="39"/>
-<wire x1="3.6" y1="-6.6" x2="-3.6" y2="-6.6" width="0.127" layer="39"/>
-<wire x1="-3.6" y1="-6.6" x2="-3.6" y2="6.6" width="0.127" layer="39"/>
-<wire x1="-3.6" y1="6.6" x2="3.6" y2="6.6" width="0.127" layer="39"/>
-<text x="-2" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2" y="0" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
-</package>
-<package name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" urn="urn:adsk.eagle:footprint:2959386/6">
+<package name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" urn="urn:adsk.eagle:footprint:2959386/6" locally_modified="yes">
 <wire x1="-1.3" y1="-3.35" x2="1.3" y2="-3.35" width="0.127" layer="51"/>
 <wire x1="1.3" y1="-3.35" x2="1.3" y2="3.35" width="0.127" layer="51"/>
 <wire x1="1.3" y1="3.35" x2="-1.3" y2="3.35" width="0.127" layer="51"/>
@@ -5153,7 +5237,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="-3.2" y1="-2.8" x2="-1.5" y2="-2.8" width="0.127" layer="39"/>
 <wire x1="-1.5" y1="-2.8" x2="-1.5" y2="-4.3" width="0.127" layer="39"/>
 <wire x1="-1.5" y1="-4.3" x2="1.7" y2="-4.3" width="0.127" layer="39"/>
-<wire x1="2.7" y1="-2.8" x2="2.7" y2="2.8" width="0.127" layer="39"/>
+<wire x1="2.7" y1="-2.8" x2="2.7" y2="-0.2" width="0.127" layer="39"/>
+<wire x1="2.7" y1="1.7" x2="2.7" y2="2.8" width="0.127" layer="39"/>
 <wire x1="1.7" y1="4.3" x2="-1.5" y2="4.3" width="0.127" layer="39"/>
 <wire x1="1.7" y1="4.3" x2="1.7" y2="2.8" width="0.127" layer="39" style="longdash"/>
 <wire x1="1.7" y1="2.8" x2="2.7" y2="2.8" width="0.127" layer="39" style="longdash"/>
@@ -5170,6 +5255,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <hole x="0" y="1.5" drill="0.9"/>
 <text x="2.794" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="top-center">&gt;NAME</text>
 <text x="-1.143" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
+<wire x1="2.7" y1="1.7" x2="1.6" y2="1.7" width="0.127" layer="39"/>
+<wire x1="1.6" y1="1.7" x2="1.6" y2="-0.2" width="0.127" layer="39"/>
+<wire x1="1.6" y1="-0.2" x2="2.7" y2="-0.2" width="0.127" layer="39"/>
 </package>
 <package name="SW_SLIDE_SPST_VERT_8.5L-3.5W" urn="urn:adsk.eagle:footprint:8465431/1">
 <wire x1="-4.25" y1="1.75" x2="4.25" y2="1.75" width="0.127" layer="21"/>
@@ -5238,6 +5326,21 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <text x="0" y="1" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SW_TOGGLE_SPDT_5A-28V_13L-7W" urn="urn:adsk.eagle:footprint:3033348/6">
+<pad name="S1" x="0" y="-4.7" drill="1.875" diameter="3.075" rot="R180"/>
+<pad name="P" x="0" y="0" drill="1.875" diameter="3.075" rot="R180"/>
+<pad name="S2" x="0" y="4.7" drill="1.875" diameter="3.075" rot="R180"/>
+<wire x1="3.5" y1="-6.5" x2="3.5" y2="6.5" width="0.1" layer="21"/>
+<wire x1="3.5" y1="6.5" x2="-3.5" y2="6.5" width="0.1" layer="21"/>
+<wire x1="-3.5" y1="6.5" x2="-3.5" y2="-6.5" width="0.1" layer="21"/>
+<wire x1="-3.5" y1="-6.5" x2="3.5" y2="-6.5" width="0.1" layer="21"/>
+<wire x1="3.6" y1="6.6" x2="3.6" y2="-6.6" width="0.127" layer="39"/>
+<wire x1="3.6" y1="-6.6" x2="-3.6" y2="-6.6" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="-6.6" x2="-3.6" y2="6.6" width="0.127" layer="39"/>
+<wire x1="-3.6" y1="6.6" x2="3.6" y2="6.6" width="0.127" layer="39"/>
+<text x="-2" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2" y="0" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
 <package name="SW_SLIDE_SPDT_VERT_8.6L-4.3W" urn="urn:adsk.eagle:footprint:3727005/4">
 <pad name="P" x="0" y="0" drill="0.825" diameter="1.5"/>
 <pad name="S1" x="0" y="2" drill="0.825" diameter="1.5"/>
@@ -5293,12 +5396,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </package>
 </packages>
 <packages3d>
-<package3d name="SW_TOGGLE_SPDT_5A-28V_13L-7W" urn="urn:adsk.eagle:package:3033359/4" locally_modified="yes" type="model">
-<packageinstances>
-<packageinstance name="SW_TOGGLE_SPDT_5A-28V_13L-7W"/>
-</packageinstances>
-</package3d>
-<package3d name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" urn="urn:adsk.eagle:package:2959400/3" locally_modified="yes" type="model">
+<package3d name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W" urn="urn:adsk.eagle:package:2959400/9" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W"/>
 </packageinstances>
@@ -5306,6 +5404,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <package3d name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W" urn="urn:adsk.eagle:package:2973750/2" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W"/>
+</packageinstances>
+</package3d>
+<package3d name="SW_TOGGLE_SPDT_5A-28V_13L-7W" urn="urn:adsk.eagle:package:3033359/8" type="model">
+<packageinstances>
+<packageinstance name="SW_TOGGLE_SPDT_5A-28V_13L-7W"/>
 </packageinstances>
 </package3d>
 <package3d name="SW_SLIDE_SPDT_VERT_8.6L-4.3W" urn="urn:adsk.eagle:package:3727012/2" locally_modified="yes" type="model">
@@ -5346,7 +5449,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="S2" pad="3"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2959400/3"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2959400/9"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -5409,7 +5512,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="S2" pad="S2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:3033359/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3033359/8"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -5561,10 +5664,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND123" library="_power_symbols" deviceset="GND" device=""/>
 <part name="GND124" library="_power_symbols" deviceset="GND" device=""/>
 <part name="NGND1" library="_power_symbols" deviceset="NGND" device="" value="NGND"/>
-<part name="SW1" library="_switches" deviceset="SWITCH_SPDT" device="_VERT_PTH_5A-28V_13L-7W_" package3d_urn="urn:adsk.eagle:package:3033359/4" value="5A/28V"/>
 <part name="GND125" library="_power_symbols" deviceset="GND" device=""/>
 <part name="D7" library="_discrete_semiconductors" deviceset="GENERAL-PURPOSE" device="_SMD_GP_1A-50V" package3d_urn="urn:adsk.eagle:package:2939213/1" value="1A/50V"/>
-<part name="C80" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V"/>
+<part name="C80" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%_D8-LS3.5-H20" package3d_urn="urn:adsk.eagle:package:9488079/1" value="1000uF/16V"/>
 <part name="GND127" library="_power_symbols" deviceset="GND" device=""/>
 <part name="L1" library="_inductors" deviceset="10UH" device="_SMD-0603_0.38A-0.468OHM-10%" package3d_urn="urn:adsk.eagle:package:2899745/1" value="10uH/380mA"/>
 <part name="C83" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
@@ -5641,7 +5743,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND8" library="_power_symbols" deviceset="GND" device=""/>
 <part name="C21" library="_capacitors" deviceset="1UF" device="_CER_SMD-0402_25V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V"/>
 <part name="GND17" library="_power_symbols" deviceset="GND" device=""/>
-<part name="C20" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V"/>
+<part name="C20" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%_D8-LS3.5-H20" package3d_urn="urn:adsk.eagle:package:9488079/1" value="1000uF/16V"/>
 <part name="C23" library="_capacitors" deviceset="1UF" device="_CER_SMD-0402_25V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="1uF/25V"/>
 <part name="SUPPLY51" library="_power_symbols" deviceset="AGND" device=""/>
 <part name="C22" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
@@ -5656,13 +5758,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SERVO_MIDDLE" library="_motors" deviceset="SERVO" device="_HK15298B_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B"/>
 <part name="SERVO_RING" library="_motors" deviceset="SERVO" device="_HK15298B_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B"/>
 <part name="SERVO_PINKY" library="_motors" deviceset="SERVO" device="_HK15298B_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781732/1" value="HK15298B"/>
-<part name="C27" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%" package3d_urn="urn:adsk.eagle:package:3036236/2" value="1000uF/16V"/>
+<part name="C27" library="_capacitors" deviceset="1000UF-POLARIZED" device="_PTH_16V-20%_D8-LS3.5-H20" package3d_urn="urn:adsk.eagle:package:9488079/1" value="1000uF/16V"/>
 <part name="J1" library="_connectors" deviceset="POWER_JACK-BARREL_ID2.1MM-OD5.5MM" device="_PTH_ID2.1MM-OD5.5MM" package3d_urn="urn:adsk.eagle:package:3034525/4" value="5A/28V"/>
-<part name="C9" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
-<part name="C11" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
-<part name="C13" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
-<part name="C15" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
-<part name="C17" library="_capacitors" deviceset="100UF-POLARIZED" device="_SMD_25V-20%_DIA5-LS2-H11" package3d_urn="urn:adsk.eagle:package:5948134/2" value="100uF/25V"/>
+<part name="C9" library="_capacitors" deviceset="100UF-POLARIZED" device="_PTH_25V-20%_D5-LS2-H11" package3d_urn="urn:adsk.eagle:package:9488069/1" value="100uF/25V"/>
+<part name="C11" library="_capacitors" deviceset="100UF-POLARIZED" device="_PTH_25V-20%_D5-LS2-H11" package3d_urn="urn:adsk.eagle:package:9488069/1" value="100uF/25V"/>
+<part name="C13" library="_capacitors" deviceset="100UF-POLARIZED" device="_PTH_25V-20%_D5-LS2-H11" package3d_urn="urn:adsk.eagle:package:9488069/1" value="100uF/25V"/>
+<part name="C15" library="_capacitors" deviceset="100UF-POLARIZED" device="_PTH_25V-20%_D5-LS2-H11" package3d_urn="urn:adsk.eagle:package:9488069/1" value="100uF/25V"/>
+<part name="C17" library="_capacitors" deviceset="100UF-POLARIZED" device="_PTH_25V-20%_D5-LS2-H11" package3d_urn="urn:adsk.eagle:package:9488069/1" value="100uF/25V"/>
 <part name="SUPPLY13" library="_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY19" library="_power_symbols" deviceset="3.3V" device=""/>
 <part name="SUPPLY28" library="_power_symbols" deviceset="3.3V" device=""/>
@@ -5727,6 +5829,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="U$19" library="_power_symbols" deviceset="A3.3V" device=""/>
 <part name="D2" library="_discrete_semiconductors" deviceset="GENERAL-PURPOSE" device="_SMD_GP_1A-50V" package3d_urn="urn:adsk.eagle:package:2939213/1" value="1A/50V"/>
 <part name="SUPPLY22" library="_power_symbols" deviceset="A1.8V" device=""/>
+<part name="SW1" library="_switches" deviceset="SWITCH_SPDT" device="_VERT_PTH_5A-28V_13L-7W_" package3d_urn="urn:adsk.eagle:package:3033359/8" value="5A/28V"/>
 </parts>
 <sheets>
 <sheet>
@@ -6011,10 +6114,6 @@ RESISTORS</text>
 <instance part="GND123" gate="GND" x="162.56" y="38.1" smashed="yes"/>
 <instance part="GND124" gate="GND" x="157.48" y="152.4" smashed="yes"/>
 <instance part="NGND1" gate="G$1" x="142.24" y="152.4" smashed="yes"/>
-<instance part="SW1" gate="G$1" x="182.88" y="182.88" smashed="yes" rot="R180">
-<attribute name="NAME" x="181.61" y="179.832" size="1.27" layer="95" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="181.61" y="186.182" size="0.635" layer="96" font="vector" ratio="10" rot="R180" align="top-center"/>
-</instance>
 <instance part="GND125" gate="GND" x="254" y="162.56" smashed="yes"/>
 <instance part="D7" gate="G$1" x="252.73" y="149.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="253.492" y="152.146" size="1.27" layer="95" font="vector" ratio="10" rot="R90"/>
@@ -6363,6 +6462,10 @@ RESISTORS</text>
 <attribute name="VALUE" x="254.254" y="192.786" size="0.635" layer="96" font="vector" ratio="10" rot="R90" align="top-left"/>
 </instance>
 <instance part="SUPPLY22" gate="G$1" x="205.74" y="330.2" smashed="yes"/>
+<instance part="SW1" gate="G$1" x="182.88" y="182.88" smashed="yes" rot="R180">
+<attribute name="NAME" x="181.61" y="179.832" size="1.27" layer="95" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="181.61" y="186.182" size="0.635" layer="96" font="vector" ratio="10" rot="R180" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7511,10 +7614,10 @@ RESISTORS</text>
 <wire x1="172.72" y1="177.8" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="180.34" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="PWR"/>
-<pinref part="SW1" gate="G$1" pin="S1"/>
 <wire x1="177.8" y1="180.34" x2="172.72" y2="180.34" width="0.1524" layer="91"/>
 <junction x="172.72" y="180.34"/>
 <pinref part="LIPO1" gate="G$1" pin="+"/>
+<pinref part="SW1" gate="G$1" pin="S1"/>
 </segment>
 </net>
 <net name="-" class="0">
@@ -7862,12 +7965,12 @@ RESISTORS</text>
 <wire x1="193.04" y1="185.42" x2="193.04" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="C27" gate="G$1" pin="A"/>
 <pinref part="SUPPLY5" gate="G$1" pin="VBAT"/>
-<pinref part="SW1" gate="G$1" pin="P"/>
 <wire x1="185.42" y1="182.88" x2="193.04" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="K"/>
 <wire x1="250.19" y1="190.5" x2="241.3" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="190.5" x2="241.3" y2="182.88" width="0.1524" layer="91"/>
 <junction x="241.3" y="182.88"/>
+<pinref part="SW1" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="N$1" class="0">

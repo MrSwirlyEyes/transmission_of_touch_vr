@@ -14,27 +14,30 @@
 #define HAS_ET 0
 
 struct SensorPacket {
-  int flexThumb = 0;
-  int flexIndex = 0;
-  int flexMiddle = 0;
-  int flexRing = 0;
-  int flexPinky = 0;
+  int flexThumb   = 0;
+  int flexIndex   = 0;
+  int flexMiddle  = 0;
+  int flexRing    = 0;
+  int flexPinky   = 0;
 } outpkt;
 
 struct ActuatorPacket {
-  int vibeThumb = 0;
-  int vibeIndex = 0;
-  int vibeMiddle = 0;
-  int vibeRing = 0;
-  int vibePinky = 0;
-/*
-  int tecThumb = 0;
-  int tecIndex = 0;
-  int tecMiddle = 0;
-  int tecRing = 0;
-  int tecPinky = 0;
-  */
-/*
+
+  int msgType;
+  
+  int vibeThumb   = 0;
+  int vibeIndex   = 0;
+  int vibeMiddle  = 0;
+  int vibeRing    = 0;
+  int vibePinky   = 0;
+
+  int tecThumb    = 0;
+  int tecIndex    = 0;
+  int tecMiddle   = 0;
+  int tecRing     = 0;
+  int tecPinky    = 0;
+
+  /*
   int dirThumb = -1;
   int dirIndex = -1;
   int dirMiddle = -1;
@@ -75,11 +78,11 @@ int flex_mapped[NUM_FLEX] = {0,};
 #define FLEX_MIN 0
 #define FLEX_MAX 90
 
-#define FLEX_PINKY 8
-#define FLEX_RING 9
-#define FLEX_MIDDLE 0
-#define FLEX_INDEX 1
-#define FLEX_THUMB 2
+#define FLEX_PINKY 3
+#define FLEX_RING 4
+#define FLEX_MIDDLE 5
+#define FLEX_INDEX 6
+#define FLEX_THUMB 7
 
 #define FLEX_MIN_PINKY  119
 #define FLEX_MIN_RING   190
@@ -210,6 +213,22 @@ void loop() {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
     sendFingers();
     updateActuators();
+
+    switch(inpkt.msgType) {
+      case 0x1000:
+        sendFingers();
+        updateActuators();
+        break;
+      case 0x0100:
+        calibrate(0);
+        Serial.println("Done");
+        break;
+       case 0x0010:
+        calibrate(1);
+        Serial.println("Done");
+        break;
+    }
+    
   }
 }
 
@@ -269,7 +288,7 @@ void updateActuators() {
   vibrotactile[i].actuate(inpkt.vibePinky);
 
   i=0;
-/*
+
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
   if(inpkt.tecThumb < 0) {
@@ -354,7 +373,6 @@ void updateActuators() {
     // set the electrotaciles to do their thing
     // based on the direction of movement for each finger
   }
-  */
 }
 
 
@@ -382,4 +400,22 @@ void read_flex_sensors() {
       Serial.println(flex[i].read_raw());
     #endif
   }
+}
+
+void calibrate(byte _min) {
+  int numReadings = 1000;
+  int flex_sums[NUM_FLEX] = {0,};
+  for (int i = 0; i < numReadings; i++) {
+    for (int j = 0; j < NUM_FLEX; j++) {
+      flex_sums[j] += flex[j].read_raw();
+    }
+  }
+
+  for (int i = 0; i < NUM_FLEX; i++) {
+    if (_min)
+      flex[i].set_min(flex_sums[i]/numReadings);
+    else
+      flex[i].set_max(flex_sums[i]/numReadings);
+  }
+  
 }
