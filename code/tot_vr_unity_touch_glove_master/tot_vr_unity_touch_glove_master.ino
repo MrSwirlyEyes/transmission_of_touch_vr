@@ -200,8 +200,6 @@ void setup() {
   for (int i = 0; i < 16; i++) {
     pwm_driver.setPWM(i, 0, 0); 
   }
-
-  inpkt.msgType = 0;
 }
 
 
@@ -215,6 +213,7 @@ void loop() {
   if (Serial.available() > 0) {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
 
+    String range;
     switch(inpkt.msgType) {
       case (64):
         sendFingers();
@@ -223,14 +222,14 @@ void loop() {
       case (256):
         // max, flat
         delay(2000);
-        calibrate(0);
-        Serial.println("Done Max");
+        range = calibrate(0);
+        Serial.println("Max " + range);
         break;
        case (128):
         // min, fist
         delay(2000);
-        calibrate(1);
-        Serial.println("Done Min");
+        range = calibrate(1);
+        Serial.println("Min " + range);
         break;
     }
   }
@@ -406,20 +405,27 @@ void read_flex_sensors() {
   }
 }
 
-void calibrate(byte _min) {
+String calibrate(byte _min) {
   int numReadings = 500;
-  int flex_sums[NUM_FLEX] = {0,};
+  long flex_sums[NUM_FLEX] = {0,};
   for (int i = 0; i < numReadings; i++) {
     for (int j = 0; j < NUM_FLEX; j++) {
       flex_sums[j] += flex[j].read_raw();
     }
   }
 
+  String range = "";
   for (int i = 0; i < NUM_FLEX; i++) {
-    if (_min)
+    if (_min) {
       flex[i].set_min(flex_sums[i]/numReadings);
-    else
+      range += flex[i].get_min();
+    } else {
       flex[i].set_max(flex_sums[i]/numReadings);
+      range += flex[i].get_max();
+    }
+
+    range += ',';
   }
-  
+
+  return range;
 }
