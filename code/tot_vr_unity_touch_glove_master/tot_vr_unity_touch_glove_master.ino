@@ -30,14 +30,12 @@ struct ActuatorPacket {
   int vibeMiddle  = 0;
   int vibeRing    = 0;
   int vibePinky   = 0;
-
-  /*
+  
   int tecThumb    = 0;
   int tecIndex    = 0;
   int tecMiddle   = 0;
   int tecRing     = 0;
   int tecPinky    = 0;
-  */
 
   /*
   int dirThumb = -1;
@@ -176,10 +174,10 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 
 Thermoelectric tec[NUM_TEC] = {
                                 Thermoelectric(pwm_driver,TEC_THUMB_HOT,TEC_THUMB_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_PINKY_HOT,TEC_INDEX_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_RING_HOT,TEC_MIDDLE_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_MIDDLE_HOT,TEC_RING_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_INDEX_HOT,TEC_PINKY_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_INDEX_HOT,TEC_INDEX_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_MIDDLE_HOT,TEC_MIDDLE_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_RING_HOT,TEC_RING_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_PINKY_HOT,TEC_PINKY_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
                               };
 
 
@@ -291,7 +289,7 @@ void updateActuators() {
   vibrotactile[i].actuate(inpkt.vibePinky);
 
   i=0;
-/*
+
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
   if(inpkt.tecThumb < 0) {
@@ -371,7 +369,7 @@ void updateActuators() {
 //    pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
     tec[i].off();
   }
-*/
+
   if (HAS_ET) {
     // set the electrotaciles to do their thing
     // based on the direction of movement for each finger
