@@ -1,4 +1,4 @@
-#include "Adafruit_PWMServoDriver.h" //download library from adafruit website
+#include "PCA9685.h" //download library from adafruit website
 #include "CD74HC4067.h" //include this library from github
 #include "Thermoelectric.h"
 #include "FSR.h"
@@ -111,7 +111,7 @@ FSR flex[NUM_FLEX] = {
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
+PCA9685 pwm_driver = PCA9685();
 
 
 
