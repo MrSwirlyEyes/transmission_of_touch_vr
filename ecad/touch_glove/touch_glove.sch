@@ -6667,9 +6667,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="SUPPLY123" library="_power_symbols" deviceset="VSENSOR" device=""/>
 <part name="SUPPLY83" library="_power_symbols" deviceset="VCC" device=""/>
 <part name="SUPPLY124" library="_power_symbols" deviceset="A1.8V" device=""/>
-<part name="J6" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
-<part name="J7" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
-<part name="J8" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
+<part name="BL_CONNECTOR" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
+<part name="BR_CONNECTOR" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
+<part name="TL_CONNECTOR" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
 <part name="J9" library="_connectors" deviceset="1X02" device="_PTH_VERT_MALE_2.54MM" package3d_urn="urn:adsk.eagle:package:4781708/8" value="PTH VERT MALE"/>
 <part name="SUPPLY51" library="_power_symbols" deviceset="NGND" device=""/>
 <part name="SUPPLY52" library="_power_symbols" deviceset="A1.8V" device=""/>
@@ -7466,15 +7466,15 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="SUPPLY123" gate="G$1" x="546.1" y="223.52" smashed="yes"/>
 <instance part="SUPPLY83" gate="VCC" x="299.72" y="449.58" smashed="yes"/>
 <instance part="SUPPLY124" gate="G$1" x="419.1" y="132.08" smashed="yes"/>
-<instance part="J6" gate="G$1" x="650.24" y="505.46" smashed="yes">
+<instance part="BL_CONNECTOR" gate="G$1" x="650.24" y="505.46" smashed="yes">
 <attribute name="VALUE" x="653.796" y="499.872" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 <attribute name="NAME" x="653.796" y="508.508" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 </instance>
-<instance part="J7" gate="G$1" x="652.78" y="487.68" smashed="yes">
+<instance part="BR_CONNECTOR" gate="G$1" x="652.78" y="487.68" smashed="yes">
 <attribute name="VALUE" x="656.336" y="482.092" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 <attribute name="NAME" x="656.336" y="490.728" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 </instance>
-<instance part="J8" gate="G$1" x="652.78" y="462.28" smashed="yes">
+<instance part="TL_CONNECTOR" gate="G$1" x="652.78" y="462.28" smashed="yes">
 <attribute name="VALUE" x="656.336" y="456.692" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 <attribute name="NAME" x="656.336" y="465.328" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 </instance>
@@ -7762,6 +7762,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="325.12" y1="124.46" x2="325.12" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="BL_CONNECTOR" gate="G$1" pin="2"/>
+<wire x1="660.4" y1="502.92" x2="657.86" y2="502.92" width="0.1524" layer="91"/>
+<label x="660.4" y="502.92" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
 </net>
 <net name="VCC" class="1">
 <segment>
@@ -7961,6 +7966,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <junction x="381" y="401.32"/>
 <wire x1="381" y1="401.32" x2="381" y2="406.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BR_CONNECTOR" gate="G$1" pin="1"/>
+<wire x1="662.94" y1="487.68" x2="660.4" y2="487.68" width="0.1524" layer="91"/>
+<label x="662.94" y="487.68" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -7976,6 +7986,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="375.92" y1="403.86" x2="360.68" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="375.92" y1="406.4" x2="375.92" y2="403.86" width="0.1524" layer="91"/>
 <junction x="375.92" y="403.86"/>
+</segment>
+<segment>
+<pinref part="BR_CONNECTOR" gate="G$1" pin="2"/>
+<wire x1="662.94" y1="485.14" x2="660.4" y2="485.14" width="0.1524" layer="91"/>
+<label x="662.94" y="485.14" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="TEC-PINKY-HOT" class="0">
@@ -8580,10 +8595,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SUPPLY114" gate="G$1" pin="NGND"/>
 </segment>
 <segment>
-<pinref part="J8" gate="G$1" pin="1"/>
+<pinref part="TL_CONNECTOR" gate="G$1" pin="1"/>
 <wire x1="660.4" y1="462.28" x2="662.94" y2="462.28" width="0.1524" layer="91"/>
 <wire x1="662.94" y1="462.28" x2="662.94" y2="459.74" width="0.1524" layer="91"/>
-<pinref part="J8" gate="G$1" pin="2"/>
+<pinref part="TL_CONNECTOR" gate="G$1" pin="2"/>
 <wire x1="662.94" y1="459.74" x2="662.94" y2="457.2" width="0.1524" layer="91"/>
 <wire x1="660.4" y1="459.74" x2="662.94" y2="459.74" width="0.1524" layer="91"/>
 <junction x="662.94" y="459.74"/>
@@ -9370,6 +9385,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="SW1" gate="G$1" pin="S1"/>
 <wire x1="266.7" y1="129.54" x2="274.32" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="VBAT"/>
+</segment>
+<segment>
+<pinref part="BL_CONNECTOR" gate="G$1" pin="1"/>
+<wire x1="660.4" y1="505.46" x2="657.86" y2="505.46" width="0.1524" layer="91"/>
+<label x="660.4" y="505.46" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
 </net>
 <net name="FLEX-PINKY2" class="0">

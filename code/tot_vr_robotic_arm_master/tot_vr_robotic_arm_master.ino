@@ -125,11 +125,11 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 ////////////////////
 #define NUM_SERVO 5
 
-#define FLEX_MIN 0
-#define FLEX_MAX 1023
+#define SERVO_MIN 0
+#define SERVO_MAX 1023
 
-#define SERVO_INITIAL 8
-#define SERVO_FINAL (SERVO_INITIAL + NUM_SERVO)
+//#define SERVO_INITIAL 8
+//#define SERVO_FINAL (SERVO_INITIAL + NUM_SERVO)
 
 #define SERVO_PINKY   8
 #define SERVO_RING    9
@@ -137,9 +137,7 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 #define SERVO_INDEX  11
 #define SERVO_THUMB  12
 
-#define SERVO_MIN 185 //225 (light settings)
-#define SERVO_MAX 450 //350 (light settings)
-#define SERVO_CENTER ((SERVO_MAX + SERVO_MIN) / 2.0)
+
 
 #define SERVO_MIN_PINKY  185
 #define SERVO_MIN_RING   185
@@ -153,36 +151,16 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 #define SERVO_MAX_INDEX  450
 #define SERVO_MAX_THUMB  450
 
-byte servo_pin[NUM_SERVO] = {
-                              SERVO_PINKY,
-                              SERVO_RING,
-                              SERVO_MIDDLE,
-                              SERVO_INDEX,
-                              SERVO_THUMB,
-                            };
-
-int servo_min[NUM_SERVO] = {
-                            SERVO_MIN_PINKY,
-                            SERVO_MIN_RING,
-                            SERVO_MIN_MIDDLE,
-                            SERVO_MIN_INDEX,
-                            SERVO_MIN_THUMB,
-                          };
-
-int servo_max[NUM_SERVO] = {
-                            SERVO_MAX_PINKY,
-                            SERVO_MAX_RING,
-                            SERVO_MAX_MIDDLE,
-                            SERVO_MAX_INDEX,
-                            SERVO_MAX_THUMB,
-                          };
+#define SERVO_MIN_CENTER ((SERVO_MIN_PINKY + SERVO_MIN_RING + SERVO_MIN_MIDDLE + SERVO_MIN_INDEX + SERVO_MIN_THUMB) / NUM_SERVO) //185 (hard settings); 225 (light settings)
+#define SERVO_MAX_CENTER ((SERVO_MIN_PINKY + SERVO_MIN_RING + SERVO_MIN_MIDDLE + SERVO_MIN_INDEX + SERVO_MIN_THUMB) / NUM_SERVO) //450 (hard settings); 350 (light settings)
+#define SERVO_CENTER ((SERVO_MAX_CENTER + SERVO_MIN_CENTER) / 2)
 
 PCA9685Servo servo[NUM_SERVO] = {
-                            PCA9685Servo(pwm_driver,SERVO_PINKY,SERVO_MIN_PINKY,SERVO_MAX_PINKY),
-                            PCA9685Servo(pwm_driver,SERVO_RING,SERVO_MIN_RING,SERVO_MAX_RING),
-                            PCA9685Servo(pwm_driver,SERVO_MIDDLE,SERVO_MIN_MIDDLE,SERVO_MAX_MIDDLE),
-                            PCA9685Servo(pwm_driver,SERVO_INDEX,SERVO_MIN_INDEX,SERVO_MAX_INDEX),
-                            PCA9685Servo(pwm_driver,SERVO_THUMB,SERVO_MIN_THUMB,SERVO_MAX_THUMB),
+                            PCA9685Servo(pwm_driver,SERVO_PINKY,SERVO_MIN,SERVO_MAX,SERVO_MIN_PINKY,SERVO_MAX_PINKY),
+                            PCA9685Servo(pwm_driver,SERVO_RING,SERVO_MIN,SERVO_MAX,SERVO_MIN_RING,SERVO_MAX_RING),
+                            PCA9685Servo(pwm_driver,SERVO_MIDDLE,SERVO_MIN,SERVO_MAX,SERVO_MIN_MIDDLE,SERVO_MAX_MIDDLE),
+                            PCA9685Servo(pwm_driver,SERVO_INDEX,SERVO_MIN,SERVO_MAX,SERVO_MIN_INDEX,SERVO_MAX_INDEX),
+                            PCA9685Servo(pwm_driver,SERVO_THUMB,SERVO_MIN,SERVO_MAX,SERVO_MIN_THUMB,SERVO_MAX_THUMB),
                           };
 
 
@@ -210,6 +188,7 @@ int checksum;
 //     SETUP     //
 ///////////////////
 void setup() {
+
   #ifdef DEBUG
     Serial.begin(BAUDRATE);
   #endif
@@ -217,7 +196,7 @@ void setup() {
   pwm_driver.begin();
   pwm_driver.setPWMFreq(PWM_FREQUENCY);
 
-  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
+  for (int i = 0; i < NUM_SERVO; i++) {
     servo[i].actuate(SERVO_CENTER);
   }
 
@@ -302,6 +281,8 @@ void read_fsr_sensors() {
   }
 }
 
+
+
 void read_temp_sensors() {
   for (int i = 0; i < NUM_TEMP; i++) {
     temp[i].read(multiplexer.read_channel(temp_pin[i]));
@@ -309,16 +290,11 @@ void read_temp_sensors() {
   }
 }
 
+
+
 void actuate_servos() {
-  
-//  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-////    pwm_driver.setpwm_driver(i, 0, SERVO_CENTER);
-//    pwm_driver.setpwm_driver(i, 0, constrain(map(pkt_rx.servo[i - SERVO_INITIAL],flex_max[i - SERVO_INITIAL],flex_min[i - SERVO_INITIAL],SERVO_MIN,SERVO_MAX),SERVO_MIN,SERVO_MAX));
-//  }
   for (int i = 0; i < NUM_SERVO; i++) {
-//    pwm_driver.setPWM(servo_pin[i], 0, constrain(map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]));
-    pwm_driver.setPWM(servo_pin[i], 0,map(pkt_rx.servo[i],FLEX_MIN,FLEX_MAX,servo_min[i],servo_max[i]),servo_min[i],servo_max[i]);
-    servo[i].actuate(SERVO_CENTER);
+    servo[i].actuate(pkt_rx.servo[i]);
   }
 }
 
@@ -326,21 +302,21 @@ void actuate_servos() {
 
 void test_servo() {
   for (int j = SERVO_MIN; j < SERVO_MAX; j++) {
-    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm_driver.setPWM(i, 0, j);
+    for (int i = 0; i < NUM_SERVO; i++) {  
+      servo[i].actuate(j);
     }
     delay(1);
   }
   delay(500);
   for (int j = SERVO_MAX; j > SERVO_MIN; j--) {
-    for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {  
-      pwm_driver.setPWM(i, 0, j);
+    for (int i = 0; i < NUM_SERVO; i++) {  
+      servo[i].actuate(j);
     }
     delay(1);
   }
   delay(500);
-  for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {
-    pwm_driver.setPWM(i, 0, SERVO_CENTER);
+  for (int i = 0; i < NUM_SERVO; i++) {
+    servo[i].actuate(SERVO_CENTER);
   }
   delay(500);
 }
