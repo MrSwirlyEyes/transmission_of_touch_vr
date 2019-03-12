@@ -113,8 +113,8 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 #define TEC_MIN 0
 #define TEC_MAX 4095
 
-#define TEC_MAX_HOT 4095
-#define TEC_MAX_COLD 4095
+#define TEC_MAX_HOT 2048
+#define TEC_MAX_COLD -4095
 
 #define TEC_PINKY_HOT 6
 #define TEC_PINKY_COLD 7
@@ -297,9 +297,9 @@ void test_vibe() {
 }
 
 void test_thermoelectrics() {
-//  tec_pinky.actuate(TECMAX_HOT,PHASE_HOT);
   for (int i = 0; i < NUM_TEC; i++) {    
-    tec[i].actuate(TEC_MAX_HOT,PHASE_HOT);
+//    tec[i].actuate(TEC_MAX_HOT,PHASE_HOT);
+    tec[i].actuate(TEC_MAX_HOT);
   }
 
   delay(10000);

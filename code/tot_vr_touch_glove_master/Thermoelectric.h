@@ -14,7 +14,7 @@ class Thermoelectric {
         int _min_cold,int _max_cold,
         boolean _dir=1);
 
-    void actuate(int intensity, boolean dir);
+    void actuate(int intensity);
 
     void off();
 

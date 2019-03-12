@@ -59,7 +59,7 @@ void Adafruit_PWMServoDriver::begin(void) {
   _i2c->begin();
   reset();
   // set a default frequency
-  setPWMFreq(1000);
+  set_pwm_freq(1000);
 }
 
 
@@ -79,7 +79,7 @@ void Adafruit_PWMServoDriver::reset(void) {
     @param  freq Floating point frequency that we will attempt to match
 */
 /**************************************************************************/
-void Adafruit_PWMServoDriver::setPWMFreq(float freq) {
+void Adafruit_PWMServoDriver::set_pwm_freq(float freq) {
 #ifdef ENABLE_DEBUG_OUTPUT
   Serial.print("Attempting to set freq ");
   Serial.println(freq);
@@ -121,7 +121,7 @@ void Adafruit_PWMServoDriver::setPWMFreq(float freq) {
     @param  off At what point in the 4096-part cycle to turn the PWM output OFF
 */
 /**************************************************************************/
-void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off) {
+void Adafruit_PWMServoDriver::set_pwm(uint8_t num, uint16_t on, uint16_t off) {
 #ifdef ENABLE_DEBUG_OUTPUT
   Serial.print("Setting PWM "); Serial.print(num); Serial.print(": "); Serial.print(on); Serial.print("->"); Serial.println(off);
 #endif
@@ -150,27 +150,27 @@ void Adafruit_PWMServoDriver::setPin(uint8_t num, uint16_t val, bool invert)
   if (invert) {
     if (val == 0) {
       // Special value for signal fully on.
-      setPWM(num, 4096, 0);
+      set_pwm(num, 4096, 0);
     }
     else if (val == 4095) {
       // Special value for signal fully off.
-      setPWM(num, 0, 4096);
+      set_pwm(num, 0, 4096);
     }
     else {
-      setPWM(num, 0, 4095-val);
+      set_pwm(num, 0, 4095-val);
     }
   }
   else {
     if (val == 4095) {
       // Special value for signal fully on.
-      setPWM(num, 4096, 0);
+      set_pwm(num, 4096, 0);
     }
     else if (val == 0) {
       // Special value for signal fully off.
-      setPWM(num, 0, 4096);
+      set_pwm(num, 0, 4096);
     }
     else {
-      setPWM(num, 0, val);
+      set_pwm(num, 0, val);
     }
   }
 }

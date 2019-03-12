@@ -193,10 +193,10 @@ void setup() {
 //  Serial.println("ON");
 
   pwm_driver.begin();
-  pwm_driver.setPWMFreq(PWM_FREQUENCY);
+  pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
   for (int i = 0; i < 16; i++) {
-    pwm_driver.setPWM(i, 0, 0); 
+    pwm_driver.set_pwm(i, 0, 0); 
   }
 }
 
@@ -276,99 +276,104 @@ void updateSensors() {
 
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
-//  pwm_driver.setPWM(thumbVibe,0,inpkt.vibeThumb);
+//  pwm_driver.set_pwm(thumbVibe,0,inpkt.vibeThumb);
   int i = 0;
   vibrotactile[i++].actuate(inpkt.vibeThumb);
-//  pwm_driver.setPWM(indexVibe,0,inpkt.vibeIndex);
+//  pwm_driver.set_pwm(indexVibe,0,inpkt.vibeIndex);
   vibrotactile[i++].actuate(inpkt.vibeIndex);
-//  pwm_driver.setPWM(middleVibe,0,inpkt.vibeMiddle);
+//  pwm_driver.set_pwm(middleVibe,0,inpkt.vibeMiddle);
   vibrotactile[i++].actuate(inpkt.vibeMiddle);
-//  pwm_driver.setPWM(ringVibe,0,inpkt.vibeRing);
+//  pwm_driver.set_pwm(ringVibe,0,inpkt.vibeRing);
   vibrotactile[i++].actuate(inpkt.vibeRing);
-//  pwm_driver.setPWM(pinkyVibe,0,inpkt.vibePinky);
+//  pwm_driver.set_pwm(pinkyVibe,0,inpkt.vibePinky);
   vibrotactile[i].actuate(inpkt.vibePinky);
 
   i=0;
 
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
-  if(inpkt.tecThumb < 0) {
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecThumb),PHASE_COLD);
-  } else if(inpkt.tecThumb > 0) {
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecThumb),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,0);
-    tec[i].off();
-  }
+//  if(inpkt.tecThumb < 0) {
+////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+//    tec[i].actuate(abs(inpkt.tecThumb),PHASE_COLD);
+//  } else if(inpkt.tecThumb > 0) {
+////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,0);
+////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+//    tec[i].actuate(abs(inpkt.tecThumb),PHASE_HOT);
+//  } else {
+////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,0);
+//    tec[i].off();
+//  }
+  tec[i].actuate(inpkt.tecThumb);
 
   i++;
   
-  if(inpkt.tecIndex < 0) {
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecIndex),PHASE_COLD);
-  } else if(inpkt.tecIndex > 0) {
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecIndex),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,0);
-    tec[i].off();
-  }
+//  if(inpkt.tecIndex < 0) {
+////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+//    tec[i].actuate(abs(inpkt.tecIndex),PHASE_COLD);
+//  } else if(inpkt.tecIndex > 0) {
+////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,0);
+////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+//    tec[i].actuate(abs(inpkt.tecIndex),PHASE_HOT);
+//  } else {
+////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,0);
+//    tec[i].off();
+//  }
+  tec[i].actuate(inpkt.tecIndex);
 
   i++;
   
-  if(inpkt.tecMiddle < 0) {
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_COLD);
-  } else if(inpkt.tecMiddle > 0) {
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,0);
-    tec[i].off();
-  }
+//  if(inpkt.tecMiddle < 0) {
+////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+//    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_COLD);
+//  } else if(inpkt.tecMiddle > 0) {
+////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,0);
+////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+//    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_HOT);
+//  } else {
+////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,0);
+//    tec[i].off();
+//  }
+  tec[i].actuate(inpkt.tecMiddle);
 
   i++;
   
-  if(inpkt.tecRing < 0) {
-//    pwm_driver.setPWM(TEC_RING_HOT,0,0);
-//    pwm_driver.setPWM(TEC_RING_COLD,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecRing),PHASE_COLD);
-  } else if(inpkt.tecRing > 0) {
-//    pwm_driver.setPWM(TEC_RING_COLD,0,0);
-//    pwm_driver.setPWM(TEC_RING_HOT,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecRing),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_RING_HOT,0,0);
-//    pwm_driver.setPWM(TEC_RING_COLD,0,0);
-    tec[i].off();
-  }
+//  if(inpkt.tecRing < 0) {
+////    pwm_driver.set_pwm(TEC_RING_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_RING_COLD,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+//    tec[i].actuate(abs(inpkt.tecRing),PHASE_COLD);
+//  } else if(inpkt.tecRing > 0) {
+////    pwm_driver.set_pwm(TEC_RING_COLD,0,0);
+////    pwm_driver.set_pwm(TEC_RING_HOT,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+//    tec[i].actuate(abs(inpkt.tecRing),PHASE_HOT);
+//  } else {
+////    pwm_driver.set_pwm(TEC_RING_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_RING_COLD,0,0);
+//    tec[i].off();
+//  }
+  tec[i].actuate(inpkt.tecRing);
 
   i++;
   
-  if(inpkt.tecPinky < 0) {
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecPinky),PHASE_COLD);
-  } else if(inpkt.tecPinky > 0) {
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecPinky),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
-    tec[i].off();
-  }
+//  if(inpkt.tecPinky < 0) {
+////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
+//    tec[i].actuate(abs(inpkt.tecPinky),PHASE_COLD);
+//  } else if(inpkt.tecPinky > 0) {
+////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,0);
+////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
+//    tec[i].actuate(abs(inpkt.tecPinky),PHASE_HOT);
+//  } else {
+////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,0);
+////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,0);
+//    tec[i].off();
+//  }
+  tec[i].actuate(inpkt.tecPinky);
 
   if (HAS_ET) {
     // set the electrotaciles to do their thing
