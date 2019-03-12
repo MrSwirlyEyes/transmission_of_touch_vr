@@ -8,7 +8,7 @@
 
 class Vibrotactile {
   public:
-    Vibrotactile(PCA9685 _pwm_driver,byte _pin,int _min, int _max);
+    Vibrotactile(PCA9685 & _pwm_driver,byte _pin,int _min, int _max);
 
     void actuate(int intensity);
 
@@ -19,8 +19,10 @@ class Vibrotactile {
     int get_max();
 
   private:
-    PCA9685 _pwm_driver;
+    PCA9685 & _pwm_driver;
+    
     byte _pin;
+    
     int _min;
     int _max;
 };

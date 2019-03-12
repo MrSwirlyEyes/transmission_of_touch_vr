@@ -19,7 +19,7 @@ class PCA9685Servo {
     int get_max();
 
   private:
-    PCA9685 _pwm_driver;
+    PCA9685 & _pwm_driver;
 
     byte _pin;
 
