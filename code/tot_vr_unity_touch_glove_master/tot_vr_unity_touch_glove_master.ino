@@ -23,14 +23,14 @@ struct SensorPacket {
 
 struct ActuatorPacket {
 
-  int msgType;
+  int msgType = 0;
   
   int vibeThumb   = 0;
   int vibeIndex   = 0;
   int vibeMiddle  = 0;
   int vibeRing    = 0;
   int vibePinky   = 0;
-
+  
   int tecThumb    = 0;
   int tecIndex    = 0;
   int tecMiddle   = 0;
@@ -78,11 +78,11 @@ int flex_mapped[NUM_FLEX] = {0,};
 #define FLEX_MIN 0
 #define FLEX_MAX 90
 
-#define FLEX_PINKY 3
-#define FLEX_RING 4
-#define FLEX_MIDDLE 5
-#define FLEX_INDEX 6
-#define FLEX_THUMB 7
+#define FLEX_PINKY 8
+#define FLEX_RING 9
+#define FLEX_MIDDLE 0
+#define FLEX_INDEX 1
+#define FLEX_THUMB 2
 
 #define FLEX_MIN_PINKY  119
 #define FLEX_MIN_RING   190
@@ -134,10 +134,10 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 
 Vibrotactile vibrotactile[NUM_VIBE] = {
                                           Vibrotactile(pwm_driver,VIBE_THUMB,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_PINKY,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_RING,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
                                           Vibrotactile(pwm_driver,VIBE_INDEX,VIBE_MIN,VIBE_MAX),
+                                          Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
+                                          Vibrotactile(pwm_driver,VIBE_RING,VIBE_MIN,VIBE_MAX),
+                                          Vibrotactile(pwm_driver,VIBE_PINKY,VIBE_MIN,VIBE_MAX),
                                         };
 
 
@@ -174,10 +174,10 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 
 Thermoelectric tec[NUM_TEC] = {
                                 Thermoelectric(pwm_driver,TEC_THUMB_HOT,TEC_THUMB_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_PINKY_HOT,TEC_PINKY_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_RING_HOT,TEC_RING_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
-                                Thermoelectric(pwm_driver,TEC_MIDDLE_HOT,TEC_MIDDLE_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
                                 Thermoelectric(pwm_driver,TEC_INDEX_HOT,TEC_INDEX_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_MIDDLE_HOT,TEC_MIDDLE_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_RING_HOT,TEC_RING_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
+                                Thermoelectric(pwm_driver,TEC_PINKY_HOT,TEC_PINKY_COLD,TEC_MIN,TEC_MAX_COLD,TEC_MIN,TEC_MAX_HOT,PHASE_HOT),
                               };
 
 
@@ -196,7 +196,7 @@ void setup() {
   pwm_driver.setPWMFreq(PWM_FREQUENCY);
 
   for (int i = 0; i < 16; i++) {
-    pwm_driver.setPin(i, 0); 
+    pwm_driver.setPWM(i, 0, 0); 
   }
 }
 
@@ -208,27 +208,28 @@ void setup() {
 void loop() {
   updateSensors();
 //  print_flex_sensors();
-//  // put your main code here, to run repeatedly:
   if (Serial.available() > 0) {
     numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
-    sendFingers();
-    updateActuators();
 
+    String range;
     switch(inpkt.msgType) {
-      case 0x1000:
+      case (64):
         sendFingers();
         updateActuators();
         break;
-      case 0x0100:
-        calibrate(0);
-        Serial.println("Done");
+      case (256):
+        // max, flat
+        delay(2000);
+        range = calibrate(0);
+        Serial.println("Max " + range);
         break;
-       case 0x0010:
-        calibrate(1);
-        Serial.println("Done");
+       case (128):
+        // min, fist
+        delay(2000);
+        range = calibrate(1);
+        Serial.println("Min " + range);
         break;
     }
-    
   }
 }
 
@@ -380,7 +381,7 @@ void updateActuators() {
 void print_flex_sensors() {
     Serial.print("(flex0,flexThumb,flexIndex,flexMiddle,flexRing,flexPinky,flex6,flex7,flex8,flex9)=(");
   for (byte i = 0 ; i < NUM_FLEX ; i++) {
-    Serial.print(flex[i].read());
+    Serial.print(flex[i].read_raw());
     if (i < NUM_FLEX - 1)
       Serial.print(",");
   }  
@@ -402,20 +403,27 @@ void read_flex_sensors() {
   }
 }
 
-void calibrate(byte _min) {
-  int numReadings = 1000;
-  int flex_sums[NUM_FLEX] = {0,};
+String calibrate(byte _min) {
+  int numReadings = 500;
+  long flex_sums[NUM_FLEX] = {0,};
   for (int i = 0; i < numReadings; i++) {
     for (int j = 0; j < NUM_FLEX; j++) {
       flex_sums[j] += flex[j].read_raw();
     }
   }
 
+  String range = "";
   for (int i = 0; i < NUM_FLEX; i++) {
-    if (_min)
+    if (_min) {
       flex[i].set_min(flex_sums[i]/numReadings);
-    else
+      range += flex[i].get_min();
+    } else {
       flex[i].set_max(flex_sums[i]/numReadings);
+      range += flex[i].get_max();
+    }
+
+    range += ',';
   }
-  
+
+  return range;
 }

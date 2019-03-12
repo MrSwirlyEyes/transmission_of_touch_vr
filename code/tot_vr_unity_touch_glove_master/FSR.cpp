@@ -25,3 +25,11 @@ void FSR::set_max(int _max) {
 void FSR::set_min(int _min) {
   this->_min_limit = _min;
 }
+
+int FSR::get_max() {
+  return this->_max_limit;
+}
+
+int FSR::get_min() {
+  return this->_min_limit;
+}
