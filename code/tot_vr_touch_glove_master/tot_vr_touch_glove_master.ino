@@ -1,6 +1,5 @@
 #include "radio.h"
 #include "CD74HC4067.h"
-//#include "PCA9685.h"
 #include "PCA9685.h"
 #include "Thermoelectric.h"
 #include "FSR.h"
@@ -94,12 +93,12 @@ PCA9685 pwm_driver = PCA9685();
 #define VIBE_MAX 4095
 
 Vibrotactile vibrotactile[NUM_VIBE] = {
-                                          Vibrotactile(pwm_driver,VIBE_PINKY,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_RING,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_INDEX,VIBE_MIN,VIBE_MAX),
-                                          Vibrotactile(pwm_driver,VIBE_THUMB,VIBE_MIN,VIBE_MAX),
-                                        };
+                                        Vibrotactile(pwm_driver,VIBE_PINKY,VIBE_MIN,VIBE_MAX),
+                                        Vibrotactile(pwm_driver,VIBE_RING,VIBE_MIN,VIBE_MAX),
+                                        Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
+                                        Vibrotactile(pwm_driver,VIBE_INDEX,VIBE_MIN,VIBE_MAX),
+                                        Vibrotactile(pwm_driver,VIBE_THUMB,VIBE_MIN,VIBE_MAX),
+                                      };
 
 
 
@@ -171,7 +170,7 @@ void setup() {
   #endif
 
   pwm_driver.begin();
-  pwm_driver.setPWMFreq(PWM_FREQUENCY);
+  pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
   rfBegin(RF_CHANNEL);
 
@@ -261,10 +260,10 @@ void actuate_vibrotactiles() {
 void actuate_thermoelectrics() {
   // TODO!!
 //  for (int i = 0; i < NUM_VIBE; i++) {    
-//    pwm.setPWM(i, 0, map(j, 0, 255, VIBE_MIN, VIBE_MAX));    
+//    pwm.set_pwm(i, 0, map(j, 0, 255, VIBE_MIN, VIBE_MAX));    
 //  }
 //  for (int i = VIBE_INITIAL; i < VIBE_FINAL; i++) {    
-//    pwm.setPWM(i, 0, constrain(map(pkt_rx.vibe[i],FSR_MIN,FSR_MAX,VIBE_MIN,VIBE_MAX),VIBE_MIN,VIBE_MAX));
+//    pwm.set_pwm(i, 0, constrain(map(pkt_rx.vibe[i],FSR_MIN,FSR_MAX,VIBE_MIN,VIBE_MAX),VIBE_MIN,VIBE_MAX));
 //  }
 }
 

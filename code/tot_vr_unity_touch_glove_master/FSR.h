@@ -14,12 +14,6 @@ class FSR {
 
     int read_raw();
 
-    void set_max(int _max);
-    void set_min(int _min);
-
-    int get_max();
-    int get_min();
-
   private:
     CD74HC4067& _multiplexer;
 

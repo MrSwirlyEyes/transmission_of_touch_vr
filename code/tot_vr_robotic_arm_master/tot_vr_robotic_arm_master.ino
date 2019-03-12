@@ -102,11 +102,11 @@ byte temp_pin[NUM_TEMP] = {
                           };
 
 TMP36 temp[NUM_TEMP] = {
-                          TMP36(TEMP_PINKY,VCC),
-                          TMP36(TEMP_RING,VCC),
-                          TMP36(TEMP_MIDDLE,VCC),
-                          TMP36(TEMP_INDEX,VCC),
-                          TMP36(TEMP_THUMB,VCC)
+                          TMP36(multiplexer,TEMP_PINKY,VCC),
+                          TMP36(multiplexer,TEMP_RING,VCC),
+                          TMP36(multiplexer,TEMP_MIDDLE,VCC),
+                          TMP36(multiplexer,TEMP_INDEX,VCC),
+                          TMP36(multiplexer,TEMP_THUMB,VCC)
                         };
 
 
@@ -189,7 +189,7 @@ void setup() {
   #endif
 
   pwm_driver.begin();
-  pwm_driver.setPWMFreq(PWM_FREQUENCY);
+  pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
   for (int i = 0; i < NUM_SERVO; i++) {
     servo[i].actuate(SERVO_CENTER);
@@ -280,8 +280,10 @@ void read_fsr_sensors() {
 
 void read_temp_sensors() {
   for (int i = 0; i < NUM_TEMP; i++) {
-    temp[i].read(multiplexer.read_channel(temp_pin[i]));
-    pkt_tx.temp[i]=temp[i].get_temperature_C();
+//    temp[i].read(multiplexer.read_channel(temp_pin[i]));
+//    temp[i].read();
+//    pkt_tx.temp[i]=temp[i].get_tempC();
+      pkt_tx.temp[i]=temp[i].get_tempC();
   }
 }
 
@@ -332,7 +334,7 @@ void test_servo() {
   void print_temp_sensors() {
       Serial.print("TX: (temp0,temp1,temp2,temp3,temp4,temp5)=(");
     for (byte i = 0 ; i < NUM_TEMP ; i++) {
-      Serial.print(temp[i].get_temperature_C());
+      Serial.print(temp[i].get_tempC());
       if (i < NUM_TEMP - 1)
         Serial.print(",");
     }  

@@ -1,6 +1,6 @@
 #include "FSR.h"
 
-FSR::FSR(CD74HC4067& _multiplexer,byte _pin,int _min_limit,int _max_limit,int _min_mapping,int _max_mapping) : _multiplexer(_multiplexer) {
+FSR::FSR(CD74HC4067 & _multiplexer,byte _pin,int _min_limit,int _max_limit,int _min_mapping,int _max_mapping) : _multiplexer(_multiplexer) {
   this->_pin = _pin;
 
   this->_min_limit = constrain(_min_limit,ANALOG_MIN,ANALOG_MAX);
@@ -15,5 +15,5 @@ int FSR::read() {
 }
 
 int FSR::read_raw() {
-  return this->_multiplexer.read_channel(_pin);
+  return this->_multiplexer.read_channel(this->_pin);
 }

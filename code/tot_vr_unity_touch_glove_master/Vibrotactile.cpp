@@ -1,6 +1,6 @@
 #include "Vibrotactile.h"
 
-Vibrotactile::Vibrotactile(Adafruit_PWMServoDriver _pwm_driver,byte _pin,int _min, int _max) {
+Vibrotactile::Vibrotactile(PCA9685 _pwm_driver,byte _pin,int _min, int _max) {
   this->_pwm_driver = _pwm_driver;
 
   this->_pin = _pin;

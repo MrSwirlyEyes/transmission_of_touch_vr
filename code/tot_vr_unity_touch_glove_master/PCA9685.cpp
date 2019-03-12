@@ -7,7 +7,8 @@
 
 
 
-PCA9685::PCA9685(uint8_t _i2c_addr) : _i2c_addr(_i2c_addr) {
+PCA9685::PCA9685(uint8_t addr) {
+  _i2caddr = addr;
 
 	#if defined(ARDUINO_SAM_DUE)
 		_i2c = &Wire1;
@@ -22,7 +23,7 @@ void PCA9685::begin(void) {
   _i2c->begin();
   reset();
   // set a default frequency
-  set_pwm_freq(1000);
+  setPWMFreq(1000);
 }
 
 
@@ -34,7 +35,7 @@ void PCA9685::reset(void) {
 
 
 
-void PCA9685::set_pwm_freq(float freq) {
+void PCA9685::setPWMFreq(float freq) {
 #ifdef ENABLE_DEBUG_OUTPUT
   Serial.print("Attempting to set freq ");
   Serial.println(freq);
@@ -70,12 +71,12 @@ void PCA9685::set_pwm_freq(float freq) {
 
 
 
-void PCA9685::set_pwm(uint8_t num, uint16_t on, uint16_t off) {
+void PCA9685::setPWM(uint8_t num, uint16_t on, uint16_t off) {
 #ifdef ENABLE_DEBUG_OUTPUT
   Serial.print("Setting PWM "); Serial.print(num); Serial.print(": "); Serial.print(on); Serial.print("->"); Serial.println(off);
 #endif
 
-  _i2c->beginTransmission(_i2c_addr);
+  _i2c->beginTransmission(_i2caddr);
   _i2c->write(LED0_ON_L+4*num);
   _i2c->write(on);
   _i2c->write(on>>8);
@@ -91,18 +92,18 @@ void PCA9685::set_pwm(uint8_t num, uint16_t on, uint16_t off) {
 ///////////////////////////////
 
 uint8_t PCA9685::read8(uint8_t addr) {
-  _i2c->beginTransmission(_i2c_addr);
+  _i2c->beginTransmission(_i2caddr);
   _i2c->write(addr);
   _i2c->endTransmission();
 
-  _i2c->requestFrom((uint8_t)_i2c_addr, (uint8_t)1);
+  _i2c->requestFrom((uint8_t)_i2caddr, (uint8_t)1);
   return _i2c->read();
 }
 
 
 
 void PCA9685::write8(uint8_t addr, uint8_t d) {
-  _i2c->beginTransmission(_i2c_addr);
+  _i2c->beginTransmission(_i2caddr);
   _i2c->write(addr);
   _i2c->write(d);
   _i2c->endTransmission();

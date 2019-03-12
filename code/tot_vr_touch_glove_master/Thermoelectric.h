@@ -8,7 +8,7 @@
 
 class Thermoelectric {
   public:
-    Thermoelectric(PCA9685 _pwm_driver,
+    Thermoelectric(PCA9685 & _pwm_driver,
         byte _hot_pin,byte _cold_pin,
         int _min_hot, int _max_hot,
         int _min_cold,int _max_cold,
