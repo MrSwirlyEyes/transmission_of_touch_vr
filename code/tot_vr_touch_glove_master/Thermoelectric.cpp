@@ -1,6 +1,6 @@
 #include "Thermoelectric.h"
 
-Thermoelectric::Thermoelectric(Adafruit_PWMServoDriver _pwm_driver,
+Thermoelectric::Thermoelectric(PCA9685 _pwm_driver,
         byte _hot_pin,byte _cold_pin,
         int _min_hot, int _max_hot,
         int _min_cold,int _max_cold,

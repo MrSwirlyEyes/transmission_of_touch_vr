@@ -1,6 +1,6 @@
 #include "PCA9685Servo.h"
 
-PCA9685Servo::PCA9685Servo(Adafruit_PWMServoDriver _pwm_driver,byte _pin,int _min_limit, int _max_limit,int _min_mapping, int _max_mapping) {
+PCA9685Servo::PCA9685Servo(PCA9685 _pwm_driver,byte _pin,int _min_limit, int _max_limit,int _min_mapping, int _max_mapping) {
   this->_pwm_driver = _pwm_driver;
 
   this->_pin = _pin;

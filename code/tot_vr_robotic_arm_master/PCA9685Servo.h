@@ -1,14 +1,14 @@
 #ifndef _PCA9685SERVO_H
 #define _PCA9685SERVO_H
 
-#include "Adafruit_PWMServoDriver.h"
+#include "PCA9685.h"
 
 #define PWM_DRIVER_MIN    0
 #define PWM_DRIVER_MAX 4095
 
 class PCA9685Servo {
   public:
-    PCA9685Servo(Adafruit_PWMServoDriver _pwm_driver,byte _pin,int _min_limit, int _max_limit,int _min_mapping, int _max_mapping);
+    PCA9685Servo(PCA9685 _pwm_driver,byte _pin,int _min_limit, int _max_limit,int _min_mapping, int _max_mapping);
 
     void actuate(int intensity);
 
@@ -19,7 +19,7 @@ class PCA9685Servo {
     int get_max();
 
   private:
-    Adafruit_PWMServoDriver _pwm_driver;
+    PCA9685 _pwm_driver;
 
     byte _pin;
 

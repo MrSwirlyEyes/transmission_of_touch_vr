@@ -2,7 +2,7 @@
 #include "CD74HC4067.h"
 #include "TMP36.h"
 #include "FSR.h"
-#include "Adafruit_PWMServoDriver.h"
+#include "PCA9685.h"
 #include "PCA9685Servo.h"
 
 
@@ -112,11 +112,11 @@ TMP36 temp[NUM_TEMP] = {
 
 
 ////////////////////////
-//     pwm_driver DRIVER     //
+//     PWM DRIVER     //
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
+PCA9685 pwm_driver = PCA9685();
 
 
 
@@ -128,16 +128,11 @@ Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
 #define SERVO_MIN 0
 #define SERVO_MAX 1023
 
-//#define SERVO_INITIAL 8
-//#define SERVO_FINAL (SERVO_INITIAL + NUM_SERVO)
-
 #define SERVO_PINKY   8
 #define SERVO_RING    9
 #define SERVO_MIDDLE 10
 #define SERVO_INDEX  11
 #define SERVO_THUMB  12
-
-
 
 #define SERVO_MIN_PINKY  185
 #define SERVO_MIN_RING   185

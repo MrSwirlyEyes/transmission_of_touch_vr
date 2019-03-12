@@ -1,6 +1,7 @@
 #include "radio.h"
 #include "CD74HC4067.h"
-#include "Adafruit_PWMServoDriver.h"
+//#include "PCA9685.h"
+#include "PCA9685.h"
 #include "Thermoelectric.h"
 #include "FSR.h"
 #include "Vibrotactile.h"
@@ -74,7 +75,7 @@ FSR flex[NUM_FLEX] = {
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
+PCA9685 pwm_driver = PCA9685();
 
 
 
