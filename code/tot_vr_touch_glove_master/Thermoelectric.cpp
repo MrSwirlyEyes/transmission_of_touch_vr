@@ -42,10 +42,10 @@ void Thermoelectric::actuate(int intensity,boolean dir) {
   // HOT dir = 1/true
   if(dir) {
     this->_pwm_driver.set_pwm(this->_cold_pin,0,0);
-    this->_pwm_driver.set_pwm(this->_hot_pin,0,constrain(intensity,this->_min_hot,this->_max_hot));
+    this->_pwm_driver.set_pwm(this->_hot_pin,0,constrain(abs(intensity),this->_min_hot,this->_max_hot));
   } else { // COLD dir = 0/false
     this->_pwm_driver.set_pwm(this->_hot_pin,0,0);
-    this->_pwm_driver.set_pwm(this->_cold_pin,0,constrain(intensity,this->_min_cold,this->_max_cold));
+    this->_pwm_driver.set_pwm(this->_cold_pin,0,constrain(abs(intensity),this->_min_cold,this->_max_cold));
   }
 }
 
