@@ -15,6 +15,7 @@ class Thermoelectric {
         boolean _dir=1);
 
     void actuate(int intensity);
+    void actuate(int intensity,boolean dir);
 
     void off();
 

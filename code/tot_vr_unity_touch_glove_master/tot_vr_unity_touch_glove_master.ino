@@ -183,6 +183,7 @@ Thermoelectric tec[NUM_TEC] = {
 
 
 
+
 ///////////////////
 //     SETUP     //
 ///////////////////
@@ -199,6 +200,8 @@ void setup() {
     pwm_driver.set_pwm(i, 0, 0); 
   }
 }
+
+
 
 
 
@@ -235,6 +238,8 @@ void loop() {
 
 
 
+
+
 ///////////////////////
 //     FUNCTIONS     //
 ///////////////////////
@@ -248,28 +253,12 @@ void sendFingers() {
 
 void updateSensors() {
   int i = 0;
-  // Op amp (row "2") flex channels (vert row)
-//  outpkt.flexThumb = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexThumb = flex[i].read();
-  i++;
-//  outpkt.flexIndex = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexIndex = flex[i].read();
-  i++;
-//  outpkt.flexMiddle = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexMiddle = flex[i].read();
-  i++;
-//  outpkt.flexRing = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexRing = flex[i].read();
-  i++;
-//  outpkt.flexPinky = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexPinky = flex[i].read();
 
-  // Non-op amp (row "1") flex channels (horiz row)
-//  outpkt.s1 = multiplexer.read_channel(7);
-//  outpkt.s2 = multiplexer.read_channel(6);
-//  outpkt.s3 = multiplexer.read_channel(5);
-//  outpkt.s4 = multiplexer.read_channel(4);
-//  outpkt.s5 = multiplexer.read_channel(3);
+  outpkt.flexThumb = flex[i++].read();
+  outpkt.flexIndex = flex[i++].read();
+  outpkt.flexMiddle = flex[i++].read();
+  outpkt.flexRing = flex[i++].read();
+  outpkt.flexPinky = flex[i].read();
 }
 
 
@@ -279,100 +268,19 @@ void updateActuators() {
 //  pwm_driver.set_pwm(thumbVibe,0,inpkt.vibeThumb);
   int i = 0;
   vibrotactile[i++].actuate(inpkt.vibeThumb);
-//  pwm_driver.set_pwm(indexVibe,0,inpkt.vibeIndex);
   vibrotactile[i++].actuate(inpkt.vibeIndex);
-//  pwm_driver.set_pwm(middleVibe,0,inpkt.vibeMiddle);
   vibrotactile[i++].actuate(inpkt.vibeMiddle);
-//  pwm_driver.set_pwm(ringVibe,0,inpkt.vibeRing);
   vibrotactile[i++].actuate(inpkt.vibeRing);
-//  pwm_driver.set_pwm(pinkyVibe,0,inpkt.vibePinky);
   vibrotactile[i].actuate(inpkt.vibePinky);
 
   i=0;
 
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
-//  if(inpkt.tecThumb < 0) {
-////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-//    tec[i].actuate(abs(inpkt.tecThumb),PHASE_COLD);
-//  } else if(inpkt.tecThumb > 0) {
-////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,0);
-////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-//    tec[i].actuate(abs(inpkt.tecThumb),PHASE_HOT);
-//  } else {
-////    pwm_driver.set_pwm(TEC_THUMB_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_THUMB_COLD,0,0);
-//    tec[i].off();
-//  }
-  tec[i].actuate(inpkt.tecThumb);
-
-  i++;
-  
-//  if(inpkt.tecIndex < 0) {
-////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-//    tec[i].actuate(abs(inpkt.tecIndex),PHASE_COLD);
-//  } else if(inpkt.tecIndex > 0) {
-////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,0);
-////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-//    tec[i].actuate(abs(inpkt.tecIndex),PHASE_HOT);
-//  } else {
-////    pwm_driver.set_pwm(TEC_INDEX_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_INDEX_COLD,0,0);
-//    tec[i].off();
-//  }
-  tec[i].actuate(inpkt.tecIndex);
-
-  i++;
-  
-//  if(inpkt.tecMiddle < 0) {
-////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-//    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_COLD);
-//  } else if(inpkt.tecMiddle > 0) {
-////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,0);
-////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-//    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_HOT);
-//  } else {
-////    pwm_driver.set_pwm(TEC_MIDDLE_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_MIDDLE_COLD,0,0);
-//    tec[i].off();
-//  }
-  tec[i].actuate(inpkt.tecMiddle);
-
-  i++;
-  
-//  if(inpkt.tecRing < 0) {
-////    pwm_driver.set_pwm(TEC_RING_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_RING_COLD,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-//    tec[i].actuate(abs(inpkt.tecRing),PHASE_COLD);
-//  } else if(inpkt.tecRing > 0) {
-////    pwm_driver.set_pwm(TEC_RING_COLD,0,0);
-////    pwm_driver.set_pwm(TEC_RING_HOT,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-//    tec[i].actuate(abs(inpkt.tecRing),PHASE_HOT);
-//  } else {
-////    pwm_driver.set_pwm(TEC_RING_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_RING_COLD,0,0);
-//    tec[i].off();
-//  }
-  tec[i].actuate(inpkt.tecRing);
-
-  i++;
-  
-//  if(inpkt.tecPinky < 0) {
-////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-//    tec[i].actuate(abs(inpkt.tecPinky),PHASE_COLD);
-//  } else if(inpkt.tecPinky > 0) {
-////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,0);
-////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-//    tec[i].actuate(abs(inpkt.tecPinky),PHASE_HOT);
-//  } else {
-////    pwm_driver.set_pwm(TEC_PINKY_HOT,0,0);
-////    pwm_driver.set_pwm(TEC_PINKY_COLD,0,0);
-//    tec[i].off();
-//  }
+  tec[i++].actuate(inpkt.tecThumb);
+  tec[i++].actuate(inpkt.tecIndex);
+  tec[i++].actuate(inpkt.tecMiddle);
+  tec[i++].actuate(inpkt.tecRing);
   tec[i].actuate(inpkt.tecPinky);
 
   if (HAS_ET) {
@@ -395,10 +303,6 @@ void print_flex_sensors() {
 
 
 
-//void read_flex_sensors() {  
-//  for (int i = 0; i < NUM_FLEX; i++)
-//    flex[i] = multiplexer.read_channel(i);
-//}
 void read_flex_sensors() {  
   for (int i = 0; i < NUM_FLEX; i++) { 
     flex_mapped[i] = flex[i].read();
@@ -407,6 +311,8 @@ void read_flex_sensors() {
     #endif
   }
 }
+
+
 
 String calibrate(byte _min) {
   int numReadings = 500;
