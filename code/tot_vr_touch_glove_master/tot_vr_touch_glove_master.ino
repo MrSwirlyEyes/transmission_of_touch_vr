@@ -297,18 +297,29 @@ void test_vibe() {
 }
 
 void test_thermoelectrics() {
+  for (int i = 0; i < NUM_TEC; i++) {
+    tec[i].actuate(TEC_MAX_COLD);
+  }
+
+  delay(10000);
+
   for (int i = 0; i < NUM_TEC; i++) {    
-//    tec[i].actuate(TEC_MAX_HOT,PHASE_HOT);
+    tec[i].off();
+  }
+  
+  delay(5000);
+
+  for (int i = 0; i < NUM_TEC; i++) {
     tec[i].actuate(TEC_MAX_HOT);
   }
 
   delay(10000);
 
-  for (int i = 0; i < NUM_VIBE; i++) {    
+  for (int i = 0; i < NUM_TEC; i++) {    
     tec[i].off();
   }
   
-  delay(1000);
+  delay(5000);
 }
 
 
