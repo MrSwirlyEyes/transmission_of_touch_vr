@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
@@ -174,7 +174,7 @@
 <wire x1="59.7" y1="57.9" x2="0" y2="57.9" width="0" layer="20"/>
 <text x="37.6" y="54.9" size="1" layer="21" font="vector" ratio="20">Transmission of Touch VR
 Robotic Arm     Rev 3</text>
-<text x="37.6" y="52.9" size="0.5" layer="21" font="vector" ratio="10">Designed by: MrSwirlyEyes</text>
+<text x="37.6" y="53.9" size="0.5" layer="21" font="vector" ratio="10">Designed by: MrSwirlyEyes</text>
 <text x="37.6" y="55.9" size="1" layer="22" font="vector" ratio="20" rot="MR180">Transmission of Touch VR
 Robotic Arm     Rev 3</text>
 <text x="27.6" y="36.3" size="0.5" layer="22" font="vector" ratio="10" rot="MR180">Designed by: MrSwirlyEyes</text>
@@ -6407,10 +6407,10 @@ BLK</text>
 <wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.12" layer="51"/>
 <wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.12" layer="51"/>
 <wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.12" layer="51"/>
-<wire x1="-1.1" y1="-0.6" x2="1.1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1.1" y1="-0.6" x2="1.1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1.1" y1="0.6" x2="-1.1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="-1.1" y1="0.6" x2="-1.1" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="-1.05" y1="-0.55" x2="1.05" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="1.05" y1="-0.55" x2="1.05" y2="0.55" width="0.127" layer="39"/>
+<wire x1="1.05" y1="0.55" x2="-1.05" y2="0.55" width="0.127" layer="39"/>
+<wire x1="-1.05" y1="0.55" x2="-1.05" y2="-0.55" width="0.127" layer="39"/>
 <smd name="A" x="-0.5" y="0" dx="0.4539" dy="0.5539" layer="1"/>
 <smd name="K" x="0.5" y="0" dx="0.4539" dy="0.5539" layer="1"/>
 <text x="0" y="0.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
@@ -6813,10 +6813,10 @@ BLK</text>
 <smd name="K" x="0.3701" y="0" dx="0.4098" dy="0.55" layer="1" thermals="no"/>
 <text x="0" y="0.7" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.7" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="-0.55" x2="-0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="0.55" x2="0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="0.55" x2="0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="-0.55" x2="-0.95" y2="-0.55" width="0.127" layer="39"/>
 <circle x="-1.143" y="0" radius="0.2" width="0" layer="21"/>
 </package>
 </packages>
@@ -7418,15 +7418,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="35.5" y="49.9" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="35.5" y="47.1" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="C61" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V" x="32.87" y="48.176" smashed="yes" rot="R180">
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=HMK105CG220JV-F&amp;fileName=HMK105CG220JV-F_SS&amp;mode=specSheetDownload" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C61" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V/0402" x="32.87" y="48.176" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/45071/vjhifreq.pdf" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5004-1-ND" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="587-5004-1-ND" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Taiyo Yuden" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="HMK105CG220JV-F" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=720-1286-1-ND" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="720-1286-1-ND" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Vishay Vitramon" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="VJ0402D220JXBAJ" x="557.634" y="272.712" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="32.87" y="47.541" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="32.87" y="48.811" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+<attribute name="VALUE" value="22pF/100V/0402" x="32.87" y="48.811" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="C62" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V" x="32.87" y="49.412" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/C1005C0G1HR75C050BA.pdf" x="539.346" y="273.948" size="1.778" layer="27" rot="R180" display="off"/>
@@ -7818,7 +7818,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR" value="Comchip Technology" x="28.3" y="46.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="CDSQR4148-HF" x="28.3" y="46.8" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="28.3" y="46.1" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="28.3" y="47.5" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+<attribute name="VALUE" x="28.3" y="47.5" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="NOISE_BR" library="_power_symbols" package="NET_BRIDGE" value="NET_BRIDGE" x="28.3" y="7.9" smashed="yes" rot="MR180"/>
 <element name="LED1" library="_leds" package="LEDC1005X40_LED-0402" package3d_urn="urn:adsk.eagle:package:2899303/3" value="BLUE" x="28.9" y="21.4" smashed="yes" rot="R270">
@@ -8330,7 +8330,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="50.25" y="11.885" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="U$20" library="PiB_logo" package="MRSWIRLYEYES-LOGO" value="" x="24.6" y="32.9" smashed="yes" rot="MR0"/>
-<element name="U$21" library="PiB_logo" package="LRG-LOGO" value="" x="19.5" y="5.2" smashed="yes" rot="MR0"/>
+<element name="U$21" library="PiB_logo" package="LRG-LOGO" value="" x="19.5" y="5.2" smashed="yes"/>
 <element name="D2" library="_discrete_semiconductors" package="SODFL3516X170" package3d_urn="urn:adsk.eagle:package:2939213/1" value="1A/50V" x="36.1" y="24.3" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="http://www.comchiptech.com/cms/UserFiles/CGRKM4001-HF%20Thru.%20CGRKM4007-HF%20RevG.pdf" x="36.1" y="24.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="36.1" y="24.3" size="1.778" layer="27" rot="R180" display="off"/>

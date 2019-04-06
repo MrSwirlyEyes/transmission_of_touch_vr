@@ -1,4 +1,4 @@
-#include "Adafruit_PWMServoDriver.h" //download library from adafruit website
+#include "PCA9685.h" //download library from adafruit website
 #include "CD74HC4067.h" //include this library from github
 #include "Thermoelectric.h"
 #include "FSR.h"
@@ -19,10 +19,9 @@ struct SensorPacket {
   int flexMiddle  = 0;
   int flexRing    = 0;
   int flexPinky   = 0;
-} outpkt;
+} pkt_tx;
 
 struct ActuatorPacket {
-
   int msgType = 0;
   
   int vibeThumb   = 0;
@@ -44,7 +43,7 @@ struct ActuatorPacket {
   int dirPinky = -1;
   int dirWrist = -1;
 
-} inpkt;
+} pkt_rx;
 
 byte numRead;
 
@@ -110,7 +109,7 @@ FSR flex[NUM_FLEX] = {
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-Adafruit_PWMServoDriver pwm_driver = Adafruit_PWMServoDriver();
+PCA9685 pwm_driver = PCA9685();
 
 
 
@@ -182,6 +181,7 @@ Thermoelectric tec[NUM_TEC] = {
 
 
 
+
 ///////////////////
 //     SETUP     //
 ///////////////////
@@ -192,12 +192,14 @@ void setup() {
 //  Serial.println("ON");
 
   pwm_driver.begin();
-  pwm_driver.setPWMFreq(PWM_FREQUENCY);
+  pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
   for (int i = 0; i < 16; i++) {
-    pwm_driver.setPWM(i, 0, 0); 
+    pwm_driver.set_pwm(i, 0, 0); 
   }
 }
+
+
 
 
 
@@ -208,10 +210,10 @@ void loop() {
   updateSensors();
 //  print_flex_sensors();
   if (Serial.available() > 0) {
-    numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+    numRead = Serial.readBytes((byte *) &pkt_rx, sizeof(pkt_rx));
 
     String range;
-    switch(inpkt.msgType) {
+    switch(pkt_rx.msgType) {
       case (64):
         sendFingers();
         updateActuators();
@@ -234,11 +236,13 @@ void loop() {
 
 
 
+
+
 ///////////////////////
 //     FUNCTIONS     //
 ///////////////////////
 void sendFingers() {
-    String data = (String) outpkt.flexThumb + "," + outpkt.flexIndex + "," + outpkt.flexMiddle + "," + outpkt.flexRing + "," + outpkt.flexPinky;
+    String data = (String) pkt_tx.flexThumb + "," + pkt_tx.flexIndex + "," + pkt_tx.flexMiddle + "," + pkt_tx.flexRing + "," + pkt_tx.flexPinky;
 //    String data = (String) numRead;
     Serial.println(data);
 }
@@ -247,127 +251,35 @@ void sendFingers() {
 
 void updateSensors() {
   int i = 0;
-  // Op amp (row "2") flex channels (vert row)
-//  outpkt.flexThumb = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexThumb = flex[i].read();
-  i++;
-//  outpkt.flexIndex = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexIndex = flex[i].read();
-  i++;
-//  outpkt.flexMiddle = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexMiddle = flex[i].read();
-  i++;
-//  outpkt.flexRing = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexRing = flex[i].read();
-  i++;
-//  outpkt.flexPinky = constrain(multiplexer.read_channel(flex_pin[i]),flex_min[i],flex_max[i]);
-  outpkt.flexPinky = flex[i].read();
 
-  // Non-op amp (row "1") flex channels (horiz row)
-//  outpkt.s1 = multiplexer.read_channel(7);
-//  outpkt.s2 = multiplexer.read_channel(6);
-//  outpkt.s3 = multiplexer.read_channel(5);
-//  outpkt.s4 = multiplexer.read_channel(4);
-//  outpkt.s5 = multiplexer.read_channel(3);
+  pkt_tx.flexThumb = flex[i++].read();
+  pkt_tx.flexIndex = flex[i++].read();
+  pkt_tx.flexMiddle = flex[i++].read();
+  pkt_tx.flexRing = flex[i++].read();
+  pkt_tx.flexPinky = flex[i].read();
 }
 
 
 
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
-//  pwm_driver.setPWM(thumbVibe,0,inpkt.vibeThumb);
+//  pwm_driver.set_pwm(thumbVibe,0,pkt_rx.vibeThumb);
   int i = 0;
-  vibrotactile[i++].actuate(inpkt.vibeThumb);
-//  pwm_driver.setPWM(indexVibe,0,inpkt.vibeIndex);
-  vibrotactile[i++].actuate(inpkt.vibeIndex);
-//  pwm_driver.setPWM(middleVibe,0,inpkt.vibeMiddle);
-  vibrotactile[i++].actuate(inpkt.vibeMiddle);
-//  pwm_driver.setPWM(ringVibe,0,inpkt.vibeRing);
-  vibrotactile[i++].actuate(inpkt.vibeRing);
-//  pwm_driver.setPWM(pinkyVibe,0,inpkt.vibePinky);
-  vibrotactile[i].actuate(inpkt.vibePinky);
+  vibrotactile[i++].actuate(pkt_rx.vibeThumb);
+  vibrotactile[i++].actuate(pkt_rx.vibeIndex);
+  vibrotactile[i++].actuate(pkt_rx.vibeMiddle);
+  vibrotactile[i++].actuate(pkt_rx.vibeRing);
+  vibrotactile[i].actuate(pkt_rx.vibePinky);
 
   i=0;
 
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
-  if(inpkt.tecThumb < 0) {
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecThumb),PHASE_COLD);
-  } else if(inpkt.tecThumb > 0) {
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,constrain(map(abs(inpkt.tecThumb),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecThumb),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_THUMB_HOT,0,0);
-//    pwm_driver.setPWM(TEC_THUMB_COLD,0,0);
-    tec[i].off();
-  }
-
-  i++;
-  
-  if(inpkt.tecIndex < 0) {
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecIndex),PHASE_COLD);
-  } else if(inpkt.tecIndex > 0) {
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,constrain(map(abs(inpkt.tecIndex),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecIndex),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_INDEX_HOT,0,0);
-//    pwm_driver.setPWM(TEC_INDEX_COLD,0,0);
-    tec[i].off();
-  }
-
-  i++;
-  
-  if(inpkt.tecMiddle < 0) {
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_COLD);
-  } else if(inpkt.tecMiddle > 0) {
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,constrain(map(abs(inpkt.tecMiddle),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecMiddle),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_MIDDLE_HOT,0,0);
-//    pwm_driver.setPWM(TEC_MIDDLE_COLD,0,0);
-    tec[i].off();
-  }
-
-  i++;
-  
-  if(inpkt.tecRing < 0) {
-//    pwm_driver.setPWM(TEC_RING_HOT,0,0);
-//    pwm_driver.setPWM(TEC_RING_COLD,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecRing),PHASE_COLD);
-  } else if(inpkt.tecRing > 0) {
-//    pwm_driver.setPWM(TEC_RING_COLD,0,0);
-//    pwm_driver.setPWM(TEC_RING_HOT,0,constrain(map(abs(inpkt.tecRing),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecRing),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_RING_HOT,0,0);
-//    pwm_driver.setPWM(TEC_RING_COLD,0,0);
-    tec[i].off();
-  }
-
-  i++;
-  
-  if(inpkt.tecPinky < 0) {
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_COLD),TECMIN,TECMAX_COLD));
-    tec[i].actuate(abs(inpkt.tecPinky),PHASE_COLD);
-  } else if(inpkt.tecPinky > 0) {
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,constrain(map(abs(inpkt.tecPinky),TECMIN,TECMAX,TECMIN,TECMAX_HOT),TECMIN,TECMAX_HOT));
-    tec[i].actuate(abs(inpkt.tecPinky),PHASE_HOT);
-  } else {
-//    pwm_driver.setPWM(TEC_PINKY_HOT,0,0);
-//    pwm_driver.setPWM(TEC_PINKY_COLD,0,0);
-    tec[i].off();
-  }
+  tec[i++].actuate(pkt_rx.tecThumb);
+  tec[i++].actuate(pkt_rx.tecIndex);
+  tec[i++].actuate(pkt_rx.tecMiddle);
+  tec[i++].actuate(pkt_rx.tecRing);
+  tec[i].actuate(pkt_rx.tecPinky);
 
   if (HAS_ET) {
     // set the electrotaciles to do their thing
@@ -389,10 +301,6 @@ void print_flex_sensors() {
 
 
 
-//void read_flex_sensors() {  
-//  for (int i = 0; i < NUM_FLEX; i++)
-//    flex[i] = multiplexer.read_channel(i);
-//}
 void read_flex_sensors() {  
   for (int i = 0; i < NUM_FLEX; i++) { 
     flex_mapped[i] = flex[i].read();
@@ -401,6 +309,8 @@ void read_flex_sensors() {
     #endif
   }
 }
+
+
 
 String calibrate(byte _min) {
   int numReadings = 500;

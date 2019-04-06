@@ -1040,26 +1040,6 @@
 <wire x1="2.889" y1="0" x2="3.397" y2="0" width="0.1524" layer="21"/>
 <circle x="0" y="0" radius="4.25" width="0.1524" layer="39"/>
 </package>
-<package name="CAPCP3216X160" urn="urn:adsk.eagle:footprint:6906991/1" locally_modified="yes">
-<description>Chip, 3.20 X 1.60 X 1.60 mm body
-&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
-<wire x1="1.6" y1="1.1699" x2="-2.2599" y2="1.1699" width="0.12" layer="21"/>
-<wire x1="-2.2599" y1="1.1699" x2="-2.2599" y2="-1.1699" width="0.12" layer="21"/>
-<wire x1="-2.2599" y1="-1.1699" x2="1.6" y2="-1.1699" width="0.12" layer="21"/>
-<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.12" layer="51"/>
-<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.12" layer="51"/>
-<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.12" layer="51"/>
-<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.12" layer="51"/>
-<smd name="A" x="-1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
-<smd name="K" x="1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
-<text x="0" y="1.3" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.3" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<circle x="-2.8" y="0" radius="0.3" width="0" layer="21"/>
-<wire x1="-2.4" y1="1.3" x2="-2.4" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="-2.4" y1="-1.3" x2="2.4" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="2.4" y1="-1.3" x2="2.4" y2="1.3" width="0.127" layer="39"/>
-<wire x1="2.4" y1="1.3" x2="-2.4" y2="1.3" width="0.127" layer="39"/>
-</package>
 <package name="_CER_SMD-805">
 <smd name="1" x="-1" y="0" dx="1" dy="1.45" layer="1" roundness="50"/>
 <smd name="2" x="1" y="0" dx="1" dy="1.45" layer="1" roundness="50"/>
@@ -1162,6 +1142,26 @@
 <wire x1="2.8" y1="1.1" x2="-2.8" y2="1.1" width="0.127" layer="40"/>
 <wire x1="-2.8" y1="1.1" x2="-2.8" y2="-1.1" width="0.127" layer="40"/>
 </package>
+<package name="CAPCP3216X160" urn="urn:adsk.eagle:footprint:6906991/1" locally_modified="yes">
+<description>Chip, 3.20 X 1.60 X 1.60 mm body
+&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
+<wire x1="1.6" y1="1.1699" x2="-2.2599" y2="1.1699" width="0.12" layer="21"/>
+<wire x1="-2.2599" y1="1.1699" x2="-2.2599" y2="-1.1699" width="0.12" layer="21"/>
+<wire x1="-2.2599" y1="-1.1699" x2="1.6" y2="-1.1699" width="0.12" layer="21"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.12" layer="51"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.12" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.12" layer="51"/>
+<smd name="A" x="-1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
+<smd name="K" x="1.375" y="0" dx="1.2618" dy="1.7118" layer="1" thermals="no"/>
+<text x="0" y="1.3" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.3" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
+<circle x="-2.8" y="0" radius="0.3" width="0" layer="21"/>
+<wire x1="-2.35" y1="1.25" x2="-2.35" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="-2.35" y1="-1.25" x2="2.35" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="2.35" y1="-1.25" x2="2.35" y2="1.25" width="0.127" layer="39"/>
+<wire x1="2.35" y1="1.25" x2="-2.35" y2="1.25" width="0.127" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="CAPC1005X55" urn="urn:adsk.eagle:package:2886515/1" locally_modified="yes" type="model">
@@ -1195,13 +1195,6 @@
 <packageinstance name="_AE_PTH-DIA5-LS2-H11"/>
 </packageinstances>
 </package3d>
-<package3d name="CAPCP3216X160" urn="urn:adsk.eagle:package:6906990/1" locally_modified="yes" type="model">
-<description>Chip, 3.20 X 1.60 X 1.60 mm body
-&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
-<packageinstances>
-<packageinstance name="CAPCP3216X160"/>
-</packageinstances>
-</package3d>
 <package3d name="_AE_PTH_DIA8-LS3.5-H21.50" urn="urn:adsk.eagle:package:3036236/2" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="_AE_PTH_DIA8-LS3.5-H21.50"/>
@@ -1219,6 +1212,13 @@
 &lt;p&gt;Radial Polarized Capacitor package with 3.50 mm pitch, 0.60 mm lead diameter, 8.00 mm body diameter and 20.00 mm body height&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPPRD350W60D800H2000B"/>
+</packageinstances>
+</package3d>
+<package3d name="CAPCP3216X160" urn="urn:adsk.eagle:package:6906990/1" locally_modified="yes" type="model">
+<description>Chip, 3.20 X 1.60 X 1.60 mm body
+&lt;p&gt;Chip package with body size 3.20 X 1.60 X 1.60 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="CAPCP3216X160"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1364,13 +1364,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_automotive_hightemp_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGA3E3X8R1H104K080AB.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-5885-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-5885-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-12606-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-12606-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="CGA3E2X8R1E104K080AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/25V" constant="no"/>
+<attribute name="MPN" value="CGA3E3X8R1H104K080AB" constant="no"/>
+<attribute name="VALUE" value="0.1uF/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1404,13 +1404,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-7749-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-7749-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-6808-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-6808-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="C2012X7T2E104K125AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/250V" constant="no"/>
+<attribute name="MPN" value="C2012X7T2E104M125AE" constant="no"/>
+<attribute name="VALUE" value="0.1uF/250V/0805" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1707,13 +1707,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=HMK105CG220JV-F&amp;fileName=HMK105CG220JV-F_SS&amp;mode=specSheetDownload" constant="no"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/45071/vjhifreq.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5004-1-ND" constant="no"/>
-<attribute name="DISTPN" value="587-5004-1-ND" constant="no"/>
-<attribute name="MFR" value="Taiyo Yuden" constant="no"/>
-<attribute name="MPN" value="HMK105CG220JV-F" constant="no"/>
-<attribute name="VALUE" value="22pF/100V" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=720-1286-1-ND" constant="no"/>
+<attribute name="DISTPN" value="720-1286-1-ND" constant="no"/>
+<attribute name="MFR" value="Vishay Vitramon" constant="no"/>
+<attribute name="MPN" value="VJ0402D220JXBAJ" constant="no"/>
+<attribute name="VALUE" value="22pF/100V/0402" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3347,10 +3347,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.12" layer="51"/>
 <wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.12" layer="51"/>
 <wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.12" layer="51"/>
-<wire x1="-1.1" y1="-0.6" x2="1.1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1.1" y1="-0.6" x2="1.1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1.1" y1="0.6" x2="-1.1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="-1.1" y1="0.6" x2="-1.1" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="-1.05" y1="-0.55" x2="1.05" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="1.05" y1="-0.55" x2="1.05" y2="0.55" width="0.127" layer="39"/>
+<wire x1="1.05" y1="0.55" x2="-1.05" y2="0.55" width="0.127" layer="39"/>
+<wire x1="-1.05" y1="0.55" x2="-1.05" y2="-0.55" width="0.127" layer="39"/>
 <smd name="A" x="-0.5" y="0" dx="0.4539" dy="0.5539" layer="1"/>
 <smd name="K" x="0.5" y="0" dx="0.4539" dy="0.5539" layer="1"/>
 <text x="0" y="0.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
@@ -5129,10 +5129,10 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <smd name="K" x="0.3701" y="0" dx="0.4098" dy="0.55" layer="1" thermals="no"/>
 <text x="0" y="0.7" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.7" size="0.5" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
-<wire x1="-1" y1="-0.6" x2="-1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="-1" y1="0.6" x2="1" y2="0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="0.6" x2="1" y2="-0.6" width="0.127" layer="39"/>
-<wire x1="1" y1="-0.6" x2="-1" y2="-0.6" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="-0.55" x2="-0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="-0.95" y1="0.55" x2="0.95" y2="0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="0.55" x2="0.95" y2="-0.55" width="0.127" layer="39"/>
+<wire x1="0.95" y1="-0.55" x2="-0.95" y2="-0.55" width="0.127" layer="39"/>
 <circle x="-1.143" y="0" radius="0.2" width="0" layer="21"/>
 </package>
 </packages>
@@ -5401,11 +5401,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <packageinstance name="SW_SLIDE_SPDT_RA_SMD_4V_300MA_6.7L-2.6W"/>
 </packageinstances>
 </package3d>
-<package3d name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W" urn="urn:adsk.eagle:package:2973750/2" locally_modified="yes" type="model">
-<packageinstances>
-<packageinstance name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W"/>
-</packageinstances>
-</package3d>
 <package3d name="SW_TOGGLE_SPDT_5A-28V_13L-7W" urn="urn:adsk.eagle:package:3033359/8" type="model">
 <packageinstances>
 <packageinstance name="SW_TOGGLE_SPDT_5A-28V_13L-7W"/>
@@ -5419,6 +5414,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <package3d name="SW_SLIDE_VERT_SMD_L8.5-W3.5-H5.5" urn="urn:adsk.eagle:package:7217975/2" locally_modified="yes" type="model">
 <packageinstances>
 <packageinstance name="SW_SLIDE_SPDT_VERT_SMD_L8.5-W3.5-H5.5"/>
+</packageinstances>
+</package3d>
+<package3d name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W" urn="urn:adsk.eagle:package:2973750/6" type="model">
+<packageinstances>
+<packageinstance name="SW_SLIDE_SPDT_RA_PTH_12.7L-9.5W"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -5491,7 +5491,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="S2" pad="S2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:2973750/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:2973750/6"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -5646,7 +5646,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND96" library="_power_symbols" deviceset="GND" device=""/>
 <part name="GND97" library="_power_symbols" deviceset="AGND" device=""/>
 <part name="B1" library="_radio_frequency" deviceset="BALUN" device="_SMD-0805_UNBAL/BAL-50/100" package3d_urn="urn:adsk.eagle:package:2933573/1" value="50/100"/>
-<part name="C61" library="_capacitors" deviceset="22PF" device="_CER_SMD-0402-100V-5%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V"/>
+<part name="C61" library="_capacitors" deviceset="22PF" device="_CER_SMD-0402-100V-5%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V/0402"/>
 <part name="C62" library="_capacitors" deviceset="0.75PF" device="_CER_SMD-0402_50V-33%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V"/>
 <part name="A6" library="_radio_frequency" deviceset="ANTENNA" device="_SMD_CHP-2.45GHZ-0.5DBI-3W" package3d_urn="urn:adsk.eagle:package:2933495/1" value="2.45GHz"/>
 <part name="R43" library="_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
@@ -6081,7 +6081,7 @@ RESISTORS</text>
 <attribute name="VALUE" x="167.64" y="265.684" size="0.635" layer="96" font="vector" ratio="10" align="bottom-center"/>
 </instance>
 <instance part="A6" gate="G$1" x="167.64" y="284.48" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="167.132" y="283.972" size="1.27" layer="96" font="vector" ratio="10" rot="MR0" align="top-left"/>
+<attribute name="VALUE" x="167.132" y="283.972" size="0.635" layer="96" font="vector" ratio="10" rot="MR0" align="top-left"/>
 <attribute name="NAME" x="167.132" y="284.988" size="1.27" layer="95" font="vector" ratio="10" rot="MR0"/>
 </instance>
 <instance part="R43" gate="G$1" x="208.28" y="350.52" smashed="yes" rot="R90">
