@@ -893,13 +893,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_automotive_hightemp_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGA3E3X8R1H104K080AB.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-5885-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-5885-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-12606-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-12606-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="CGA3E2X8R1E104K080AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/25V" constant="no"/>
+<attribute name="MPN" value="CGA3E3X8R1H104K080AB" constant="no"/>
+<attribute name="VALUE" value="0.1uF/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -933,13 +933,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-7749-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-7749-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-6808-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-6808-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="C2012X7T2E104K125AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/250V" constant="no"/>
+<attribute name="MPN" value="C2012X7T2E104M125AE" constant="no"/>
+<attribute name="VALUE" value="0.1uF/250V/0805" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2978,7 +2978,7 @@
 </technology>
 </technologies>
 </device>
-<device name="_SMD-2520_1.4A-0.216OHM-20%" package="INDC2520X100">
+<device name="_SMD-1008_1.4A-0.216OHM-20%" package="INDC2520X100">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2994,7 +2994,27 @@
 <attribute name="DISTPN" value="1276-6935-1-ND" constant="no"/>
 <attribute name="MFR" value="Samsung Electro-Mechanics" constant="no"/>
 <attribute name="MPN" value="CIGW252010GL4R7MNE" constant="no"/>
-<attribute name="VALUE" value="4.7uH/1.4A" constant="no"/>
+<attribute name="VALUE" value="4.7uH/1.4A/1008" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_SMD-1008_2A-0.200OHM-20%" package="INDC2520X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:6898949/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012p.ashx" constant="no"/>
+<attribute name="DIST" value="Digkey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-10651-1-ND" constant="no"/>
+<attribute name="DISTPN" value="490-10651-1-ND" constant="no"/>
+<attribute name="MFR" value="Murata Electronics North America" constant="no"/>
+<attribute name="MPN" value="DFE252012P-4R7M=P2" constant="no"/>
+<attribute name="VALUE" value="4.7uH/2A/1008" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3646,11 +3666,11 @@
 <part name="SUPPLY129" library="_power_symbols" deviceset="GND" device=""/>
 <part name="C49" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="SUPPLY132" library="_power_symbols" deviceset="GND" device=""/>
-<part name="L3" library="_inductors" deviceset="4.7UH" device="_SMD-2520_1.4A-0.216OHM-20%" package3d_urn="urn:adsk.eagle:package:6898949/1" value="4.7uH/1.4A"/>
-<part name="C61" library="_capacitors" deviceset="0.1UF" device="_SMD-0603_50V-20%" package3d_urn="urn:adsk.eagle:package:3041595/1" value="0.1uF/25V"/>
+<part name="L3" library="_inductors" deviceset="4.7UH" device="_SMD-1008_2A-0.200OHM-20%" package3d_urn="urn:adsk.eagle:package:6898949/1" value="4.7uH/2A/1008"/>
+<part name="C61" library="_capacitors" deviceset="0.1UF" device="_SMD-0603_50V-20%" package3d_urn="urn:adsk.eagle:package:3041595/1" value="0.1uF/50V"/>
 <part name="SUPPLY133" library="_power_symbols" deviceset="GND" device=""/>
 <part name="R50" library="_resistors" deviceset="768KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="768K"/>
-<part name="C62" library="_capacitors" deviceset="0.1UF" device="_SMD-0805_250V-10%" package3d_urn="urn:adsk.eagle:package:2940050/1" value="0.1uF/250V"/>
+<part name="C62" library="_capacitors" deviceset="0.1UF" device="_SMD-0805_250V-10%" package3d_urn="urn:adsk.eagle:package:2940050/1" value="0.1uF/250V/0805"/>
 <part name="SUPPLY135" library="_power_symbols" deviceset="GND" device=""/>
 <part name="NFET1" library="_transistors" deviceset="MOSFET_N-CHANNEL_2-ARRAY" device="_2N7002DW_115MA-60V" package3d_urn="urn:adsk.eagle:package:6899146/1" value="2N7002DW"/>
 <part name="SUPPLY137" library="_power_symbols" deviceset="GND" device=""/>

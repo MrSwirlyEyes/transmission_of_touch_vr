@@ -162,13 +162,13 @@ PCA9685Servo servo[NUM_SERVO] = {
 ////////////////////////////
 //     COMMUNICATIONS     //
 ////////////////////////////
-struct PacketTX {    
+struct RoboticArmPacket {    
   int fsr[NUM_FSR] = {0,};
   float temp[NUM_TEMP] = {0.0,};
   float checksum = 0.0;
 } pkt_tx;
 
-struct PacketRX {  
+struct TouchGlovePacket {
   int servo[NUM_SERVO] = {0,};
   int checksum = 0;
 } pkt_rx;
@@ -229,15 +229,15 @@ void loop() {
     pkt_tx.checksum += pkt_tx.temp[i];
   }
   
-  rfWrite((uint8_t *) & pkt_tx,sizeof(PacketTX));
+  rfWrite((uint8_t *) & pkt_tx,sizeof(RoboticArmPacket));
 
   #ifdef DEBUG
     print_tx_pkt();
   #endif
   
 
-  if(rfAvailable() >= sizeof(PacketRX)) {
-    rfRead((uint8_t *) & pkt_rx,sizeof(PacketRX));
+  if(rfAvailable() >= sizeof(TouchGlovePacket)) {
+    rfRead((uint8_t *) & pkt_rx,sizeof(TouchGlovePacket));
 
     checksum = 0;
     for (int i=0; i < NUM_SERVO; i++) {

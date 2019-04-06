@@ -19,10 +19,9 @@ struct SensorPacket {
   int flexMiddle  = 0;
   int flexRing    = 0;
   int flexPinky   = 0;
-} outpkt;
+} pkt_tx;
 
 struct ActuatorPacket {
-
   int msgType = 0;
   
   int vibeThumb   = 0;
@@ -45,7 +44,7 @@ struct ActuatorPacket {
   int dirPinky = -1;
   int dirWrist = -1;
   */
-} inpkt;
+} pkt_rx;
 
 byte numRead;
 
@@ -212,10 +211,10 @@ void loop() {
   updateSensors();
 //  print_flex_sensors();
   if (Serial.available() > 0) {
-    numRead = Serial.readBytes((byte *) &inpkt, sizeof(inpkt));
+    numRead = Serial.readBytes((byte *) &pkt_rx, sizeof(pkt_rx));
 
     String range;
-    switch(inpkt.msgType) {
+    switch(pkt_rx.msgType) {
       case (64):
         sendFingers();
         updateActuators();
@@ -244,7 +243,7 @@ void loop() {
 //     FUNCTIONS     //
 ///////////////////////
 void sendFingers() {
-    String data = (String) outpkt.flexThumb + "," + outpkt.flexIndex + "," + outpkt.flexMiddle + "," + outpkt.flexRing + "," + outpkt.flexPinky;
+    String data = (String) pkt_tx.flexThumb + "," + pkt_tx.flexIndex + "," + pkt_tx.flexMiddle + "," + pkt_tx.flexRing + "," + pkt_tx.flexPinky;
 //    String data = (String) numRead;
     Serial.println(data);
 }
@@ -254,34 +253,34 @@ void sendFingers() {
 void updateSensors() {
   int i = 0;
 
-  outpkt.flexThumb = flex[i++].read();
-  outpkt.flexIndex = flex[i++].read();
-  outpkt.flexMiddle = flex[i++].read();
-  outpkt.flexRing = flex[i++].read();
-  outpkt.flexPinky = flex[i].read();
+  pkt_tx.flexThumb = flex[i++].read();
+  pkt_tx.flexIndex = flex[i++].read();
+  pkt_tx.flexMiddle = flex[i++].read();
+  pkt_tx.flexRing = flex[i++].read();
+  pkt_tx.flexPinky = flex[i].read();
 }
 
 
 
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
-//  pwm_driver.set_pwm(thumbVibe,0,inpkt.vibeThumb);
+//  pwm_driver.set_pwm(thumbVibe,0,pkt_rx.vibeThumb);
   int i = 0;
-  vibrotactile[i++].actuate(inpkt.vibeThumb);
-  vibrotactile[i++].actuate(inpkt.vibeIndex);
-  vibrotactile[i++].actuate(inpkt.vibeMiddle);
-  vibrotactile[i++].actuate(inpkt.vibeRing);
-  vibrotactile[i].actuate(inpkt.vibePinky);
+  vibrotactile[i++].actuate(pkt_rx.vibeThumb);
+  vibrotactile[i++].actuate(pkt_rx.vibeIndex);
+  vibrotactile[i++].actuate(pkt_rx.vibeMiddle);
+  vibrotactile[i++].actuate(pkt_rx.vibeRing);
+  vibrotactile[i].actuate(pkt_rx.vibePinky);
 
   i=0;
 
   // Writes to the thermoelectrics [-4095 - 4095]
   //  Where a (-) value denotes COLD; (+) value denotes HOT
-  tec[i++].actuate(inpkt.tecThumb);
-  tec[i++].actuate(inpkt.tecIndex);
-  tec[i++].actuate(inpkt.tecMiddle);
-  tec[i++].actuate(inpkt.tecRing);
-  tec[i].actuate(inpkt.tecPinky);
+  tec[i++].actuate(pkt_rx.tecThumb);
+  tec[i++].actuate(pkt_rx.tecIndex);
+  tec[i++].actuate(pkt_rx.tecMiddle);
+  tec[i++].actuate(pkt_rx.tecRing);
+  tec[i].actuate(pkt_rx.tecPinky);
 
   if (HAS_ET) {
     // set the electrotaciles to do their thing

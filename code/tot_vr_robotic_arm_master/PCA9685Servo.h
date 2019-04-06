@@ -12,8 +12,6 @@ class PCA9685Servo {
 
     void actuate(int intensity);
 
-    void off();
-
     int get_min();
 
     int get_max();

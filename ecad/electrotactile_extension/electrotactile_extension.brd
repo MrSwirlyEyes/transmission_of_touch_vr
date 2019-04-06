@@ -7322,25 +7322,25 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="-1.765" y="6.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="-3.035" y="6.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="L3" library="_inductors" package="INDC2520X100" package3d_urn="urn:adsk.eagle:package:6898949/1" value="4.7uH/1.4A" x="4.9" y="10.1" smashed="yes">
-<attribute name="DATASHEET" value="http://www.samsungsem.com/kr/support/product-search/inductor/CIGW252010GL4R7MNE.jsp" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=1276-6935-1-ND" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="1276-6935-1-ND" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Samsung Electro-Mechanics" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CIGW252010GL4R7MNE" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<element name="L3" library="_inductors" package="INDC2520X100" package3d_urn="urn:adsk.eagle:package:6898949/1" value="4.7uH/2A/1008" x="4.9" y="10.1" smashed="yes">
+<attribute name="DATASHEET" value="https://www.murata.com/~/media/webrenewal/products/inductor/chip/tokoproducts/wirewoundmetalalloychiptype/m_dfe252012p.ashx" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digkey" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=490-10651-1-ND" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="490-10651-1-ND" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Murata Electronics North America" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DFE252012P-4R7M=P2" x="-12.1" y="9.1" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="4.9" y="11.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="4.9" y="8.6" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="4.7uH/2A/1008" x="4.9" y="8.6" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="C61" library="_capacitors" package="CAPC1608X95" package3d_urn="urn:adsk.eagle:package:3041595/1" value="0.1uF/25V" x="5.2" y="12.5" smashed="yes" rot="R180">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_automotive_hightemp_en.pdf" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C61" library="_capacitors" package="CAPC1608X95" package3d_urn="urn:adsk.eagle:package:3041595/1" value="0.1uF/50V" x="5.2" y="12.5" smashed="yes" rot="R180">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGA3E3X8R1H104K080AB.pdf" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-5885-1-ND" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="445-5885-1-ND" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-12606-1-ND" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="445-12606-1-ND" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="CGA3E2X8R1E104K080AA" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="CGA3E3X8R1H104K080AB" x="27.2" y="-1.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.2" y="11.5" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="5.2" y="13.5" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+<attribute name="VALUE" value="0.1uF/50V" x="5.2" y="13.5" size="0.5" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
 </element>
 <element name="R50" library="_resistors" package="RESC1005X35_SMD-0402" package3d_urn="urn:adsk.eagle:package:2899165/1" value="768K" x="0.2" y="6.4" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="http://www.yageo.com/documents/recent/PYu-RC_Group_51_RoHS_L_9.pdf" x="14.2" y="26.4" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7352,15 +7352,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="0.835" y="6.4" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="-0.435" y="6.4" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="C62" library="_capacitors" package="CAPC2012X95_SMD-0805" package3d_urn="urn:adsk.eagle:package:2940050/1" value="0.1uF/250V" x="2.4" y="14.5" smashed="yes">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
+<element name="C62" library="_capacitors" package="CAPC2012X95_SMD-0805" package3d_urn="urn:adsk.eagle:package:2940050/1" value="0.1uF/250V/0805" x="2.4" y="14.5" smashed="yes">
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-7749-1-ND" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="445-7749-1-ND" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-6808-1-ND" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="445-6808-1-ND" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C2012X7T2E104K125AA" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C2012X7T2E104M125AE" x="-27.6" y="9.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="2.4" y="15.7386" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="2.4" y="13.2614" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="0.1uF/250V/0805" x="2.4" y="13.2614" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="NFET1" library="_transistors" package="SOT65P230X110-6" package3d_urn="urn:adsk.eagle:package:6899146/1" value="2N7002DW" x="2.9" y="4" smashed="yes" rot="R180">
 <attribute name="DATASHEET" value="http://www.mccsemi.com/up_pdf/2N7002DW(SOT-363).PDF" x="31.9" y="1" size="1.778" layer="27" rot="R180" display="off"/>

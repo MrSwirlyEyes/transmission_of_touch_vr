@@ -235,18 +235,18 @@ char rfRead()
 // Read up to len bytes into buf.  Return the number of bytes read.
 char rfRead(uint8_t * buf, uint8_t len)
 {
-     uint8_t count = 0;
-     while (count <= len) {
-	  if (radioRXBuffer.head == radioRXBuffer.tail) {
-	       break;
-	  } else {
-	       // Read from the buffer tail, and update the tail pointer.
-	       char c = radioRXBuffer.buffer[radioRXBuffer.tail];
-	       radioRXBuffer.tail = (unsigned int)(radioRXBuffer.tail + 1) % RF_BUFFER_SIZE;
-	       buf[count++] = c;
-	  }
-     }
-     return count;
+  uint8_t count = 0;
+  while (count <= len) {
+    if (radioRXBuffer.head == radioRXBuffer.tail) {
+     break;
+    } else {
+      // Read from the buffer tail, and update the tail pointer.
+      char c = radioRXBuffer.buffer[radioRXBuffer.tail];
+      radioRXBuffer.tail = (unsigned int)(radioRXBuffer.tail + 1) % RF_BUFFER_SIZE;
+      buf[count++] = c;
+    }
+  }
+  return count;
 }
 
 // This interrupt is called when radio TX is complete. We'll just
@@ -298,4 +298,3 @@ ISR(TRX24_RX_END_vect)
 
   digitalWrite(RX_LED, LOW);  // Turn receive LED off, and we're out
 }
-

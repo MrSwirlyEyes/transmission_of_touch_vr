@@ -144,12 +144,12 @@ Thermoelectric tec[NUM_TEC] = {
 ////////////////////////////
 //     COMMUNICATIONS     //
 ////////////////////////////
-struct PacketTX {    
+struct TouchGlovePacket {    
   int flex[NUM_FLEX] = {0,};
   int checksum = 0;
 } pkt_tx;
 
-struct PacketRX {    
+struct RoboticArmPacket {    
   int vibe[NUM_VIBE] = {0,};
   float tec[NUM_TEC] = {0.0,};
   float checksum = 0.0;
@@ -193,14 +193,14 @@ void loop() {
     pkt_tx.checksum += pkt_tx.flex[i];
   }
   
-  rfWrite((uint8_t *) & pkt_tx,sizeof(PacketTX));
+  rfWrite((uint8_t *) & pkt_tx,sizeof(TouchGlovePacket));
 
   #ifdef DEBUG
     print_tx_pkt();
   #endif
 
-  if(rfAvailable() >= sizeof(PacketRX)) {    
-    rfRead((uint8_t *) & pkt_rx,sizeof(PacketRX));
+  if(rfAvailable() >= sizeof(RoboticArmPacket)) {   
+    rfRead((uint8_t *) & pkt_rx,sizeof(RoboticArmPacket));
     
     checksum = 0.0;
     for (int i=0; i < NUM_VIBE; i++) {

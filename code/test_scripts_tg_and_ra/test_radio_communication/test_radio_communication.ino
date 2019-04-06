@@ -12,8 +12,8 @@ void setup() {
 
   rfBegin(11);
 
-  pkt_tx.a = 3;
-  pkt_tx.b = 4;
+  pkt_tx.a = 1;
+  pkt_tx.b = 2;
 }
 
 void loop() {

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -973,10 +973,10 @@
 <text x="0" y="1.3" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.3" size="0.25" layer="27" font="vector" ratio="10" align="top-center">&gt;VALUE</text>
 <circle x="-2.8" y="0" radius="0.3" width="0" layer="21"/>
-<wire x1="-2.4" y1="1.3" x2="-2.4" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="-2.4" y1="-1.3" x2="2.4" y2="-1.3" width="0.127" layer="39"/>
-<wire x1="2.4" y1="-1.3" x2="2.4" y2="1.3" width="0.127" layer="39"/>
-<wire x1="2.4" y1="1.3" x2="-2.4" y2="1.3" width="0.127" layer="39"/>
+<wire x1="-2.35" y1="1.25" x2="-2.35" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="-2.35" y1="-1.25" x2="2.35" y2="-1.25" width="0.127" layer="39"/>
+<wire x1="2.35" y1="-1.25" x2="2.35" y2="1.25" width="0.127" layer="39"/>
+<wire x1="2.35" y1="1.25" x2="-2.35" y2="1.25" width="0.127" layer="39"/>
 </package>
 <package name="_AE_SMD_L6.6-W6.6">
 <wire x1="3.3" y1="-3.3" x2="-2.2" y2="-3.3" width="0.127" layer="21"/>
@@ -3109,30 +3109,30 @@ BLK</text>
 <text x="-2.921" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2.921" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="HDRVR2W64P254_1X2_558X254X850B" urn="urn:adsk.eagle:footprint:4781722/1" locally_modified="yes">
+<package name="HDRVR2W64P254_1X2_558X254X850B" urn="urn:adsk.eagle:footprint:9618161/1" locally_modified="yes">
 <description>Single-row, 2-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 8.50 mm insulator length, 5.58 X 2.54 X 8.50 mm body
-&lt;p&gt;Single-row (1X2), 2-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.20 mm tail length and 8.50 mm insulator length with overall size 5.58 X 2.54 X 8.50 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
-<circle x="-1.6" y="-1.4" radius="0.5" width="0" layer="21"/>
-<wire x1="4.06" y1="-1.3591" x2="-1.52" y2="-1.3591" width="0.12" layer="21"/>
-<wire x1="-1.52" y1="-1.3591" x2="-1.52" y2="1.3591" width="0.12" layer="21"/>
-<wire x1="-1.52" y1="1.3591" x2="4.06" y2="1.3591" width="0.12" layer="21"/>
-<wire x1="4.06" y1="1.3591" x2="4.06" y2="-1.3591" width="0.12" layer="21"/>
-<wire x1="4.06" y1="-1.27" x2="-1.52" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="-1.52" y1="-1.27" x2="-1.52" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-1.52" y1="1.27" x2="4.06" y2="1.27" width="0.12" layer="51"/>
-<wire x1="4.06" y1="1.27" x2="4.06" y2="-1.27" width="0.12" layer="51"/>
-<pad name="1" x="0" y="0" drill="1" diameter="1.85"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="1.85"/>
-<text x="-1.778" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="4.318" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="-1.651" y1="-1.524" x2="4.191" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="4.191" y1="-1.524" x2="4.191" y2="1.524" width="0.127" layer="39"/>
-<wire x1="4.191" y1="1.524" x2="-1.651" y2="1.524" width="0.127" layer="39"/>
-<wire x1="-1.651" y1="1.524" x2="-1.651" y2="-1.524" width="0.127" layer="39"/>
-<wire x1="-1.143" y1="-1.143" x2="3.683" y2="-1.143" width="0.127" layer="40"/>
-<wire x1="3.683" y1="-1.143" x2="3.683" y2="1.143" width="0.127" layer="40"/>
-<wire x1="3.683" y1="1.143" x2="-1.143" y2="1.143" width="0.127" layer="40"/>
-<wire x1="-1.143" y1="1.143" x2="-1.143" y2="-1.143" width="0.127" layer="40"/>
+&lt;p&gt;Single-row (1X2), 2-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.20 mm tail length and 8.50 mm insulator length with overall size 5.58 X 2.54 X 8.50 mm, pin pattern - zigzag from bottom left&lt;/p&gt;</description>
+<circle x="-2.9" y="-1.4" radius="0.5" width="0" layer="21"/>
+<wire x1="2.79" y1="-1.3591" x2="-2.79" y2="-1.3591" width="0.12" layer="21"/>
+<wire x1="-2.79" y1="-1.3591" x2="-2.79" y2="1.3591" width="0.12" layer="21"/>
+<wire x1="-2.79" y1="1.3591" x2="2.79" y2="1.3591" width="0.12" layer="21"/>
+<wire x1="2.79" y1="1.3591" x2="2.79" y2="-1.3591" width="0.12" layer="21"/>
+<wire x1="2.79" y1="-1.27" x2="-2.79" y2="-1.27" width="0.12" layer="51"/>
+<wire x1="-2.79" y1="-1.27" x2="-2.79" y2="1.27" width="0.12" layer="51"/>
+<wire x1="-2.79" y1="1.27" x2="2.79" y2="1.27" width="0.12" layer="51"/>
+<wire x1="2.79" y1="1.27" x2="2.79" y2="-1.27" width="0.12" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="1" diameter="1.85"/>
+<pad name="2" x="1.27" y="0" drill="1" diameter="1.85"/>
+<text x="-3" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="3" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="R90" align="top-center">&gt;VALUE</text>
+<wire x1="-2.9" y1="1.5" x2="-2.9" y2="-1.5" width="0.127" layer="39"/>
+<wire x1="-2.9" y1="-1.5" x2="2.9" y2="-1.5" width="0.127" layer="39"/>
+<wire x1="2.9" y1="-1.5" x2="2.9" y2="1.5" width="0.127" layer="39"/>
+<wire x1="2.9" y1="1.5" x2="-2.9" y2="1.5" width="0.127" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="2.4" y2="-1.1" width="0.127" layer="40"/>
+<wire x1="2.4" y1="-1.1" x2="2.4" y2="1.1" width="0.127" layer="40"/>
+<wire x1="2.4" y1="1.1" x2="-2.4" y2="1.1" width="0.127" layer="40"/>
+<wire x1="-2.4" y1="1.1" x2="-2.4" y2="-1.1" width="0.127" layer="40"/>
 </package>
 </packages>
 <packages3d>
@@ -3171,9 +3171,9 @@ BLK</text>
 <packageinstance name="HDRV2W64P254_1X2_508X254X838B"/>
 </packageinstances>
 </package3d>
-<package3d name="HDRVR2W64P254_1X2_558X254X850B" urn="urn:adsk.eagle:package:4781720/1" locally_modified="yes" type="model">
+<package3d name="HDRVR2W64P254_1X2_558X254X850B" urn="urn:adsk.eagle:package:9618160/1" locally_modified="yes" type="model">
 <description>Single-row, 2-pin Receptacle Header (Female) Straight, 2.54 mm (0.10 in) col pitch, 8.50 mm insulator length, 5.58 X 2.54 X 8.50 mm body
-&lt;p&gt;Single-row (1X2), 2-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.20 mm tail length and 8.50 mm insulator length with overall size 5.58 X 2.54 X 8.50 mm, pin pattern - clockwise from top left&lt;/p&gt;</description>
+&lt;p&gt;Single-row (1X2), 2-pin Receptacle Header (Female) Straight package with 2.54 mm (0.10 in) col pitch, 0.64 mm lead width, 3.20 mm tail length and 8.50 mm insulator length with overall size 5.58 X 2.54 X 8.50 mm, pin pattern - zigzag from bottom left&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="HDRVR2W64P254_1X2_558X254X850B"/>
 </packageinstances>
@@ -3516,7 +3516,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:4781720/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9618160/1"/>
 </package3dinstances>
 <technologies>
 <technology name="">
@@ -3526,7 +3526,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="S7000-ND" constant="no"/>
 <attribute name="MFR" value="Sullins Connector Solutions" constant="no"/>
 <attribute name="MPN" value="PPTC021LFBN-RC" constant="no"/>
-<attribute name="VALUE" value="PTH VERT FEMALE" constant="no"/>
+<attribute name="VALUE" value="1x02 PTH VERT FEMALE" constant="no"/>
 </technology>
 </technologies>
 </device>
