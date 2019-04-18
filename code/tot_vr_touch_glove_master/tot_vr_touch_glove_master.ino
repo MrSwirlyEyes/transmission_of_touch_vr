@@ -7,7 +7,7 @@
 
 
 
-#define DEBUG
+//#define DEBUG
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
@@ -30,16 +30,18 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 //////////////////////////
 //     FLEX SENSORS     //
 //////////////////////////
+#define CALIBRATION_SAMPLES 20
+
 #define NUM_FLEX 5
 
 #define FLEX_MIN 0
 #define FLEX_MAX 1023
 
-#define FLEX_PINKY 8
-#define FLEX_RING 9
-#define FLEX_MIDDLE 0
-#define FLEX_INDEX 1
-#define FLEX_THUMB 2
+#define FLEX_PINKY 3
+#define FLEX_RING 4
+#define FLEX_MIDDLE 5
+#define FLEX_INDEX 6
+#define FLEX_THUMB 7
 
 //pinky  119 276
 //ring   190 300
@@ -47,17 +49,19 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 //index  236 308
 //thumb   90 235
 
-#define FLEX_MIN_PINKY  119
-#define FLEX_MIN_RING   190
-#define FLEX_MIN_MIDDLE 236
-#define FLEX_MIN_INDEX  236
-#define FLEX_MIN_THUMB   90
+int FLEX_MIN_PINKY  = 276; // extension
+int FLEX_MIN_RING   = 300;
+int FLEX_MIN_MIDDLE = 300;
+int FLEX_MIN_INDEX  = 308;
+int FLEX_MIN_THUMB  = 235;
 
-#define FLEX_MAX_PINKY  276
-#define FLEX_MAX_RING   300
-#define FLEX_MAX_MIDDLE 300
-#define FLEX_MAX_INDEX  308
-#define FLEX_MAX_THUMB  235
+int FLEX_MAX_PINKY  = 119; // flexion
+int FLEX_MAX_RING   = 190;
+int FLEX_MAX_MIDDLE = 236;
+int FLEX_MAX_INDEX  = 236;
+int FLEX_MAX_THUMB  =  90;
+
+
 
 FSR flex[NUM_FLEX] = {
                       FSR(multiplexer,FLEX_PINKY,FLEX_MIN_PINKY,FLEX_MAX_PINKY,FLEX_MIN,FLEX_MAX),
@@ -74,20 +78,23 @@ FSR flex[NUM_FLEX] = {
 ////////////////////////
 #define PWM_FREQUENCY 60
 
-PCA9685 pwm_driver = PCA9685();
+PCA9685 pwm_driver = PCA9685(0x40);
+
+PCA9685 pwm_driver_et_1 = PCA9685(0x42);
 
 
 
 ///////////////////////////
 //     VIBROTACTILES     //
 ///////////////////////////
-#define NUM_VIBE 5
+#define NUM_VIBE 6
 
 #define VIBE_PINKY 0
 #define VIBE_RING 1
 #define VIBE_MIDDLE 2
 #define VIBE_INDEX 3
 #define VIBE_THUMB 4
+#define VIBE_PALM 5
 
 #define VIBE_MIN 0
 #define VIBE_MAX 4095
@@ -98,6 +105,7 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
                                         Vibrotactile(pwm_driver,VIBE_MIDDLE,VIBE_MIN,VIBE_MAX),
                                         Vibrotactile(pwm_driver,VIBE_INDEX,VIBE_MIN,VIBE_MAX),
                                         Vibrotactile(pwm_driver,VIBE_THUMB,VIBE_MIN,VIBE_MAX),
+                                        Vibrotactile(pwm_driver,VIBE_PALM,VIBE_MIN,VIBE_MAX),
                                       };
 
 
@@ -105,15 +113,15 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 /////////////////////////////
 //     THERMOELECTRICS     //
 /////////////////////////////
-#define PHASE_COLD 1
-#define PHASE_HOT 0
+#define PHASE_COLD 0
+#define PHASE_HOT 1
 
 #define NUM_TEC 5
 
 #define TEC_MIN 0
 #define TEC_MAX 4095
 
-#define TEC_MAX_HOT 2048
+#define TEC_MAX_HOT 1024
 #define TEC_MAX_COLD -4095
 
 #define TEC_PINKY_HOT 6
@@ -141,6 +149,52 @@ Thermoelectric tec[NUM_TEC] = {
 
 
 
+/////////////////////////////
+//     ELECTROTACTILES     //
+/////////////////////////////
+#define NUM_ET_PIXELS 16
+
+#define ET_1   0
+#define ET_2   1
+#define ET_3   2
+#define ET_4   3
+#define ET_5   4
+#define ET_6   5
+#define ET_7   6
+#define ET_8   7
+#define ET_9   8
+#define ET_10  9
+#define ET_11 10
+#define ET_12 11
+#define ET_13 12
+#define ET_14 13
+#define ET_15 14
+#define ET_16 15
+
+#define OFF 0
+#define ON 4095
+
+Vibrotactile electrotactile[NUM_ET_PIXELS] = {
+                                        Vibrotactile(pwm_driver_et_1,ET_1,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_2,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_3,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_4,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_5,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_6,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_7,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_8,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_9,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_10,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_11,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_12,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_13,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_14,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_15,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_16,OFF,ON),
+                                      };
+
+
+
 ////////////////////////////
 //     COMMUNICATIONS     //
 ////////////////////////////
@@ -151,11 +205,11 @@ struct TouchGlovePacket {
 
 struct RoboticArmPacket {    
   int vibe[NUM_VIBE] = {0,};
-  float tec[NUM_TEC] = {0.0,};
-  float checksum = 0.0;
+  int tec[NUM_TEC] = {0,};
+  int checksum = 0;
 } pkt_rx;
 
-float checksum = 0.0;
+int checksum = 0;
 
 
 
@@ -172,12 +226,17 @@ void setup() {
   pwm_driver.begin();
   pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
+  pwm_driver_et_1.begin();
+  pwm_driver_et_1.set_pwm_freq(PWM_FREQUENCY);
+
   rfBegin(RF_CHANNEL);
 
-  delay(10000);
-  test_vibe();
-  test_thermoelectrics();
-  delay(5000);
+  delay(10000);  
+//  test_vibe();
+//  test_thermoelectrics();
+//  test_electrotactiles();
+  calibrate_flex_sensors();
+  delay(1000);
 }
 
 
@@ -202,7 +261,7 @@ void loop() {
   if(rfAvailable() >= sizeof(RoboticArmPacket)) {   
     rfRead((uint8_t *) & pkt_rx,sizeof(RoboticArmPacket));
     
-    checksum = 0.0;
+    checksum = 0;
     for (int i=0; i < NUM_VIBE; i++) {
       checksum += pkt_rx.vibe[i];
     }
@@ -228,7 +287,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(5);  
+  delay(1);  
 }
 
 
@@ -241,9 +300,9 @@ void loop() {
 void read_flex_sensors() {  
   for (int i = 0; i < NUM_FLEX; i++) { 
     pkt_tx.flex[i] = flex[i].read();
-    #ifdef DEBUG
-      Serial.println(flex[i].read_raw());
-    #endif
+//    #ifdef DEBUG
+//      Serial.println(flex[i].read_raw());
+//    #endif
   }
 }
 
@@ -265,23 +324,34 @@ void actuate_thermoelectrics() {
 //  for (int i = VIBE_INITIAL; i < VIBE_FINAL; i++) {    
 //    pwm.set_pwm(i, 0, constrain(map(pkt_rx.vibe[i],FSR_MIN,FSR_MAX,VIBE_MIN,VIBE_MAX),VIBE_MIN,VIBE_MAX));
 //  }
+  for (int i = 0; i < NUM_TEC; i++) {
+    tec[i].actuate(pkt_rx.tec[i]);
+  }
 }
 
 
 
 
 
-
+//----- TEST FUNCTIONS -----//
 void test_vibe() {
+  #ifdef DEBUG
+    Serial.println("Testing vibrotactiles...");
+    Serial.println("\tVibrotactiles... ON (increasing)");
+  #endif
+
   for (int j = VIBE_MIN; j < VIBE_MAX; j+=3) {
     for (int i = 0; i < NUM_VIBE; i++) {    
       vibrotactile[i].actuate(j);
     }
     delay(1);
   }
-  
   delay(500);
-  
+
+  #ifdef DEBUG
+    Serial.println("\tVibrotactiles... ON (decreasing)");
+  #endif
+
   for (int j = VIBE_MAX; j > VIBE_MIN; j-=3) {
     for (int i = 0; i < NUM_VIBE; i++) {    
       vibrotactile[i].actuate(j);
@@ -289,43 +359,150 @@ void test_vibe() {
     delay(1);
   }
 
+  #ifdef DEBUG
+    Serial.println("\tVibrotactiles... OFF");
+  #endif
+
   for (int i = 0; i < NUM_VIBE; i++) {    
     vibrotactile[i].off();
   }
-  
   delay(500);
+
+  #ifdef DEBUG
+    Serial.println("\tTesting vibrotactiles...complete");
+  #endif
 }
 
 void test_thermoelectrics() {
+  #ifdef DEBUG
+    Serial.println("Testing thermoelectrics...");
+    Serial.println("\tThermoelectrics... ON");
+    Serial.println("\t\tThermoelectrics... COLD");
+  #endif
+
   for (int i = 0; i < NUM_TEC; i++) {
     tec[i].actuate(TEC_MAX_COLD);
   }
+  delay(5000);
 
-  delay(10000);
+  #ifdef DEBUG
+    Serial.println("\tThermoelectrics... OFF");
+  #endif
 
   for (int i = 0; i < NUM_TEC; i++) {    
     tec[i].off();
   }
-  
   delay(5000);
+
+  #ifdef DEBUG
+    Serial.println("\tThermoelectrics... ON");
+    Serial.println("\t\tThermoelectrics... HOT");
+  #endif
 
   for (int i = 0; i < NUM_TEC; i++) {
     tec[i].actuate(TEC_MAX_HOT);
   }
+  delay(5000);
 
-  delay(10000);
+  #ifdef DEBUG
+    Serial.println("\tThermoelectrics... OFF");
+  #endif
 
   for (int i = 0; i < NUM_TEC; i++) {    
     tec[i].off();
   }
-  
   delay(5000);
+
+  #ifdef DEBUG
+    Serial.println("\tTesting thermoelectrics...complete");
+  #endif
+}
+
+void test_electrotactiles() {
+  #ifdef DEBUG
+    Serial.println("Testing electrotactiles...");
+    Serial.println("\tElectrotactiles... ON");
+  #endif
+
+  for(int i = 0; i < NUM_ET_PIXELS; i++) {
+    electrotactile[i].actuate(ON);
+  }
+  delay(5000);
+
+  #ifdef DEBUG
+    Serial.println("\tElectrotactiles... OFF");
+  #endif
+
+  for(int i = 0; i < NUM_ET_PIXELS; i++) {
+    electrotactile[i].actuate(OFF);
+  }
+  delay(5000);
+
+  #ifdef DEBUG
+    Serial.println("\tTesting electrotactiles...complete");
+  #endif
+
+  delay(1000);
 }
 
 
+
+
+//----- CALIBRATION FUNCTIONS -----//
+void calibrate_flex_sensors() {  
+  unsigned int flex_avg[NUM_FLEX] = {0,};
+
+  for(int k = 0; k < 2; k++) {
+    vibe_signal();
+    delay(3000);
+
+    // extension
+    for(int j = 0; j < CALIBRATION_SAMPLES; j++) {
+      for (int i = 0; i < NUM_FLEX; i++) {    
+        flex_avg[i] += flex[i].read_raw();
+        delay(5);
+      }
+    }
+    
+    // set min
+    for (int i = 0; i < NUM_FLEX; i++) {    
+      Serial.print(flex_avg[i]); Serial.print("  -->  ");
+      Serial.println(flex_avg[i]/CALIBRATION_SAMPLES);
+      if(k == 0) {
+        flex[i].set_min(flex_avg[i]/CALIBRATION_SAMPLES);
+      } else { // k == 1
+        flex[i].set_max(flex_avg[i]/CALIBRATION_SAMPLES);
+      }
+      flex_avg[i]=0;
+    }
+  }
+
+  // signal end of calibration
+  vibe_signal();
+}
+
+void vibe_signal() {
+  for (int j = 0; j < 2; j++) {
+    for (int i = 0; i < NUM_VIBE; i++) {    
+      vibrotactile[i].actuate(VIBE_MAX);
+    }
+    delay(200);
+    for (int i = 0; i < NUM_VIBE; i++) {    
+      vibrotactile[i].off();
+    }
+    delay(200);
+  }
+}
+
+
+
+
+
+//----- PRINT FUNCTIONS -----//
 #ifdef DEBUG
   void print_tx_pkt() {
-    Serial.print("TX: (flex_pinky,flex_ring,flex_middle,flex_index,flex_thumb)=(");
+//    Serial.print("TX: (flex_pinky,flex_ring,flex_middle,flex_index,flex_thumb)=(");
+    Serial.print("TX: (");
     for(int i = 0; i < NUM_FLEX; i++) {
       Serial.print(pkt_tx.flex[i]); Serial.print(",");  
     }    
@@ -334,7 +511,7 @@ void test_thermoelectrics() {
   }
   
   void print_rx_pkt() {
-    Serial.print("RX: (vibe_pinky,vibe_ring,vibe_middle,vibe_index,vibe_thumb,tec_pinky,tec_ring,tec_middle,tec_index,tec_thumb)=(");
+    Serial.print("RX: (");
     for(int i = 0; i < NUM_VIBE; i++) {
       Serial.print(pkt_rx.vibe[i]); Serial.print(",");      
     }

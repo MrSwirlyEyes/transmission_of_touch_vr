@@ -165,7 +165,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTgwNTE1MTMyMDQwMDA2" f3durn="urn:adsk.wipprod:dm.lineage:BV8_dkhaR6yVWje6GJc8ag" pcbguid="eeba273b-519e-40e6-aef7-dc52009e201f" lastpulledtime="" lastsyncedchangeguid="37155c65-f2cb-0758-bd04-201c3b8eaef8"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTgwNTE1MTMyMDQwMDA2" f3durn="urn:adsk.wipprod:dm.lineage:BV8_dkhaR6yVWje6GJc8ag" pcbguid="eeba273b-519e-40e6-aef7-dc52009e201f" lastpulledtime="" lastsyncedchangeguid="2c0f9fad-1720-cee9-cd53-b6f6876c3a39"/>
 <plain>
 <wire x1="38.6992" y1="38.44" x2="-38.6992" y2="38.44" width="0" layer="20"/>
 <wire x1="-38.6992" y1="38.44" x2="-40" y2="37.1392" width="0" layer="20" curve="90"/>
@@ -7840,15 +7840,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="13.7" y="15.1" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="12.3" y="15.1" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="C36" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V" x="27" y="9.9" smashed="yes">
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=HMK105CG220JV-F&amp;fileName=HMK105CG220JV-F_SS&amp;mode=specSheetDownload" x="27" y="9.9" size="1.778" layer="27" display="off"/>
+<element name="C36" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V/0402" x="27" y="9.9" smashed="yes">
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/45071/vjhifreq.pdf" x="27" y="9.9" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Digikey" x="27" y="9.9" size="1.778" layer="27" display="off"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5004-1-ND" x="27" y="9.9" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="587-5004-1-ND" x="27" y="9.9" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Taiyo Yuden" x="27" y="9.9" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="HMK105CG220JV-F" x="27" y="9.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=720-1286-1-ND" x="27" y="9.9" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="720-1286-1-ND" x="27" y="9.9" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Vishay Vitramon" x="27" y="9.9" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="VJ0402D220JXBAJ" x="27" y="9.9" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="27" y="10.6" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
-<attribute name="VALUE" x="27" y="9.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
+<attribute name="VALUE" value="22pF/100V/0402" x="27" y="9.2" size="0.5" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
 <element name="C35" library="_capacitors" package="CAPC1005X55_SMD-0402" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V" x="27" y="8.6" smashed="yes">
 <attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/C1005C0G1HR75C050BA.pdf" x="27" y="8.6" size="1.778" layer="27" display="off"/>

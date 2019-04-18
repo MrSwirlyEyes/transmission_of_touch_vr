@@ -7,7 +7,7 @@
 
 
 
-#define DEBUG 1
+//#define DEBUG 1
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
@@ -30,15 +30,14 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 ///////////////////////////////////////
 //     FORCE SENSITIVE RESISTORS     //
 ///////////////////////////////////////
-#define NUM_FSR 5
+#define NUM_FSR 6
 
 #define FSR_PINKY  0
 #define FSR_RING   1
 #define FSR_MIDDLE 2
 #define FSR_INDEX  3
 #define FSR_THUMB  4
-
-//int fsr[NUM_FSR] = {0,};
+#define FSR_PALM   5
 
 #define FSR_MIN    0
 #define FSR_MAX 4095
@@ -48,28 +47,14 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 #define FSR_MIN_MIDDLE    0
 #define FSR_MIN_INDEX     0
 #define FSR_MIN_THUMB     0
+#define FSR_MIN_PALM      0
 
-#define FSR_MAX_PINKY  1023
-#define FSR_MAX_RING   1023
-#define FSR_MAX_MIDDLE 1023
-#define FSR_MAX_INDEX  1023
-#define FSR_MAX_THUMB  1023
-
-//int fsr_min[NUM_FSR] = {
-//                            FSR_MIN_PINKY,
-//                            FSR_MIN_RING,
-//                            FSR_MIN_MIDDLE,
-//                            FSR_MIN_INDEX,
-//                            FSR_MIN_THUMB,
-//                          };
-//
-//int fsr_max[NUM_FSR] = {
-//                            FSR_MAX_PINKY,
-//                            FSR_MAX_RING,
-//                            FSR_MAX_MIDDLE,
-//                            FSR_MAX_INDEX,
-//                            FSR_MAX_THUMB,
-//                          };
+#define FSR_MAX_PINKY  800 //900 (I physically cannot apply more force than this with my thumb + index)
+#define FSR_MAX_RING   800 //900
+#define FSR_MAX_MIDDLE 800 //900
+#define FSR_MAX_INDEX  800 //900
+#define FSR_MAX_THUMB  800 //900
+#define FSR_MAX_PALM   800 //900
 
 FSR fsr[NUM_FSR] = {
                       FSR(multiplexer,FSR_PINKY,FSR_MIN_PINKY,FSR_MAX_PINKY,FSR_MIN,FSR_MAX),
@@ -77,6 +62,7 @@ FSR fsr[NUM_FSR] = {
                       FSR(multiplexer,FSR_MIDDLE,FSR_MIN_MIDDLE,FSR_MAX_MIDDLE,FSR_MIN,FSR_MAX),
                       FSR(multiplexer,FSR_INDEX,FSR_MIN_INDEX,FSR_MAX_INDEX,FSR_MIN,FSR_MAX),
                       FSR(multiplexer,FSR_THUMB,FSR_MIN_THUMB,FSR_MAX_THUMB,FSR_MIN,FSR_MAX),
+                      FSR(multiplexer,FSR_PALM,FSR_MIN_PALM,FSR_MAX_PALM,FSR_MIN,FSR_MAX),
                     };
 
 
@@ -87,11 +73,22 @@ FSR fsr[NUM_FSR] = {
 #define NUM_TEMP 5
 #define VCC 1.8
 
-#define TEMP_PINKY 11
-#define TEMP_RING 12
+#define TEMP_PINKY  11
+#define TEMP_RING   12
 #define TEMP_MIDDLE 13
-#define TEMP_INDEX 14
-#define TEMP_THUMB 15
+#define TEMP_INDEX  14
+#define TEMP_THUMB  15
+
+#define TEC_MAX_HOT 1024
+#define TEC_MAX_COLD -4095
+
+#define TEMP_MAX_LIMIT_COLD 10.0
+#define TEMP_MIN_LIMIT_COLD 18.0
+
+#define TEMP_MIN_LIMIT_HOT 24.0
+#define TEMP_MAX_LIMIT_HOT 40.0
+
+// 32.0 C is approx max I could heat using fingers in ECE Makerspace
 
 byte temp_pin[NUM_TEMP] = {
                             TEMP_PINKY,
@@ -102,11 +99,11 @@ byte temp_pin[NUM_TEMP] = {
                           };
 
 TMP36 temp[NUM_TEMP] = {
-                          TMP36(multiplexer,TEMP_PINKY,VCC),
-                          TMP36(multiplexer,TEMP_RING,VCC),
-                          TMP36(multiplexer,TEMP_MIDDLE,VCC),
-                          TMP36(multiplexer,TEMP_INDEX,VCC),
-                          TMP36(multiplexer,TEMP_THUMB,VCC)
+                          TMP36(multiplexer,TEMP_PINKY,VCC,TEMP_MIN_LIMIT_COLD,TEMP_MAX_LIMIT_COLD,TEMP_MIN_LIMIT_HOT,TEMP_MAX_LIMIT_HOT,TEC_MAX_COLD,TEC_MAX_HOT),
+                          TMP36(multiplexer,TEMP_RING,VCC,TEMP_MIN_LIMIT_COLD,TEMP_MAX_LIMIT_COLD,TEMP_MIN_LIMIT_HOT,TEMP_MAX_LIMIT_HOT,TEC_MAX_COLD,TEC_MAX_HOT),
+                          TMP36(multiplexer,TEMP_MIDDLE,VCC,TEMP_MIN_LIMIT_COLD,TEMP_MAX_LIMIT_COLD,TEMP_MIN_LIMIT_HOT,TEMP_MAX_LIMIT_HOT,TEC_MAX_COLD,TEC_MAX_HOT),
+                          TMP36(multiplexer,TEMP_INDEX,VCC,TEMP_MIN_LIMIT_COLD,TEMP_MAX_LIMIT_COLD,TEMP_MIN_LIMIT_HOT,TEMP_MAX_LIMIT_HOT,TEC_MAX_COLD,TEC_MAX_HOT),
+                          TMP36(multiplexer,TEMP_THUMB,VCC,TEMP_MIN_LIMIT_COLD,TEMP_MAX_LIMIT_COLD,TEMP_MIN_LIMIT_HOT,TEMP_MAX_LIMIT_HOT,TEC_MAX_COLD,TEC_MAX_HOT)
                         };
 
 
@@ -134,11 +131,11 @@ PCA9685 pwm_driver = PCA9685();
 #define SERVO_INDEX  11
 #define SERVO_THUMB  12
 
-#define SERVO_MIN_PINKY  185
-#define SERVO_MIN_RING   185
-#define SERVO_MIN_MIDDLE 185
-#define SERVO_MIN_INDEX  185
-#define SERVO_MIN_THUMB  185
+#define SERVO_MIN_PINKY  180
+#define SERVO_MIN_RING   180
+#define SERVO_MIN_MIDDLE 180
+#define SERVO_MIN_INDEX  180
+#define SERVO_MIN_THUMB  180
 
 #define SERVO_MAX_PINKY  450
 #define SERVO_MAX_RING   450
@@ -164,8 +161,8 @@ PCA9685Servo servo[NUM_SERVO] = {
 ////////////////////////////
 struct RoboticArmPacket {    
   int fsr[NUM_FSR] = {0,};
-  float temp[NUM_TEMP] = {0.0,};
-  float checksum = 0.0;
+  int temp[NUM_TEMP] = {0,};
+  int checksum = 0;
 } pkt_tx;
 
 struct TouchGlovePacket {
@@ -173,7 +170,7 @@ struct TouchGlovePacket {
   int checksum = 0;
 } pkt_rx;
 
-int checksum;
+int checksum = 0;
 
 
 
@@ -183,7 +180,6 @@ int checksum;
 //     SETUP     //
 ///////////////////
 void setup() {
-
   #ifdef DEBUG
     Serial.begin(BAUDRATE);
   #endif
@@ -193,13 +189,14 @@ void setup() {
 
   for (int i = 0; i < NUM_SERVO; i++) {
     servo[i].actuate(SERVO_CENTER);
+//    servo[i].actuate(SERVO_MAX_PINKY);
   }
 
   rfBegin(RF_CHANNEL);
 
   delay(10000);
   test_servo();
-  delay(5000);
+  delay(1000);
 }
 
 
@@ -210,16 +207,16 @@ void setup() {
 void loop() {
 
   read_fsr_sensors();
-  #ifdef DEBUG
-    print_fsr_sensors();
-  #endif
+//  #ifdef DEBUG
+//    print_fsr_sensors();
+//  #endif
   
   read_temp_sensors();
   #ifdef DEBUG
     print_temp_sensors();
   #endif
 
-  pkt_tx.checksum = 0.0;
+  pkt_tx.checksum = 0;
 
   for(int i = 0; i < NUM_FSR; i++) {
     pkt_tx.checksum += pkt_tx.fsr[i];
@@ -257,7 +254,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(5);
+  delay(1);
 }
 
 
@@ -269,9 +266,6 @@ void loop() {
 ///////////////////////
 void read_fsr_sensors() {
   for (int i = 0; i < NUM_FSR; i++) {
-//    fsr[i] = multiplexer.read_channel(i);
-//    pkt_tx.fsr[i] = multiplexer.read_channel(i);
-//    pkt_tx.fsr[i] = constrain(map(multiplexer.read_channel(i),fsr_min[i],fsr_max[i],FSR_MIN,FSR_MAX),FSR_MIN,FSR_MAX);
     pkt_tx.fsr[i] = fsr[i].read();
   }
 }
@@ -280,10 +274,7 @@ void read_fsr_sensors() {
 
 void read_temp_sensors() {
   for (int i = 0; i < NUM_TEMP; i++) {
-//    temp[i].read(multiplexer.read_channel(temp_pin[i]));
-//    temp[i].read();
-//    pkt_tx.temp[i]=temp[i].get_tempC();
-      pkt_tx.temp[i]=temp[i].get_tempC();
+    pkt_tx.temp[i] = temp[i].get_tempC_mapped();
   }
 }
 
@@ -297,6 +288,9 @@ void actuate_servos() {
 
 
 
+
+
+//----- TEST FUNCTIONS -----//
 void test_servo() {
   for (int j = SERVO_MIN; j < SERVO_MAX; j++) {
     for (int i = 0; i < NUM_SERVO; i++) {  
@@ -305,6 +299,7 @@ void test_servo() {
     delay(1);
   }
   delay(500);
+
   for (int j = SERVO_MAX; j > SERVO_MIN; j--) {
     for (int i = 0; i < NUM_SERVO; i++) {  
       servo[i].actuate(j);
@@ -312,6 +307,7 @@ void test_servo() {
     delay(1);
   }
   delay(500);
+
   for (int i = 0; i < NUM_SERVO; i++) {
     servo[i].actuate(SERVO_CENTER);
   }
@@ -320,11 +316,14 @@ void test_servo() {
 
 
 
+
+
+//----- PRINT FUNCTIONS -----//
 #ifdef DEBUG
   void print_fsr_sensors() {
     Serial.print("TX: (fsr0,fsr1,fsr2,fsr3,fsr4,fsr5)=(");
     for (byte i = 0 ; i < NUM_FSR ; i++) {
-      Serial.print(fsr[i].read());
+      Serial.print(fsr[i].read_raw());
       if (i < NUM_FSR - 1)
         Serial.print(",");
     }  
@@ -332,7 +331,7 @@ void test_servo() {
   }
   
   void print_temp_sensors() {
-      Serial.print("TX: (temp0,temp1,temp2,temp3,temp4,temp5)=(");
+      Serial.print("TX: (temp0,temp1,temp2,temp3,temp4)=(");
     for (byte i = 0 ; i < NUM_TEMP ; i++) {
       Serial.print(temp[i].get_tempC());
       if (i < NUM_TEMP - 1)
@@ -342,7 +341,8 @@ void test_servo() {
   }
 
   void print_tx_pkt() {
-    Serial.print("TX: (fsr_pinky,fsr_ring,fsr_middle,fsr_index,fsr_thumb,temp_pinky,temp_ring,temp_middle,temp_index,temp_thumb)=(");
+//    Serial.print("TX: (fsr_pinky,fsr_ring,fsr_middle,fsr_index,fsr_thumb,temp_pinky,temp_ring,temp_middle,temp_index,temp_thumb)=(");
+    Serial.print("TX: (");
     for(int i = 0; i < NUM_FSR; i++) {
       Serial.print(pkt_tx.fsr[i]); Serial.print(",");  
     }
@@ -355,7 +355,8 @@ void test_servo() {
   }
   
   void print_rx_pkt() {
-    Serial.print("RX: (servo_pinky,servo_ring,servo_middle,servo_index,servo_thumb)=(");
+//    Serial.print("RX: (servo_pinky,servo_ring,servo_middle,servo_index,servo_thumb)=(");
+    Serial.print("RX: (");
     for(int i = 0; i < NUM_SERVO; i++) {
       Serial.print(pkt_rx.servo[i]); Serial.print(",");      
     }

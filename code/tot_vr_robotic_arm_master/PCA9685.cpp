@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 // Set to true to print some debug messages, or false to disable them.
- #define ENABLE_DEBUG_OUTPUT
+// #define ENABLE_DEBUG_OUTPUT
 
 
 

@@ -166,7 +166,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTgwNTE1MTMyMDQwMDA2" f3durn="urn:adsk.wipprod:dm.lineage:j3vuE3OiS_mCt6szVSR7Aw" pcbguid="7ab83d0f-2879-46d5-9d19-329c08f3fa45" lastpulledtime="" lastsyncedchangeguid="da6dde38-6ba1-632f-1d2d-d1609a38c80a"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTIwMzJm" projecturn="a.cGVyc29uYWw6dWUyOTIwMzJmIzIwMTgwNTE1MTMyMDQwMDA2" f3durn="urn:adsk.wipprod:dm.lineage:j3vuE3OiS_mCt6szVSR7Aw" pcbguid="7ab83d0f-2879-46d5-9d19-329c08f3fa45" lastpulledtime="" lastsyncedchangeguid="3b90e577-0645-c454-68ff-a75af2f08b4f"/>
 <plain>
 <wire x1="0" y1="57.9" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="59.7" y2="0" width="0" layer="20"/>
@@ -7650,7 +7650,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="36.1" y="30.967" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" value="TPS76833QDR 1A/3.3V" x="36.1" y="25.633" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
 </element>
-<element name="FSR_PINKY" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="32.85" smashed="yes" rot="R270">
+<element name="FSR_THUMB" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="32.85" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="52.55" y="32.85" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="52.55" y="32.85" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="52.55" y="32.85" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7678,7 +7678,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="54.709" y="32.85" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="53.185" y="32.85" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 </element>
-<element name="FSR_RING" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="28.4" smashed="yes" rot="R270">
+<element name="FSR_INDEX" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="28.4" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="52.55" y="28.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="52.55" y="28.4" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="52.55" y="28.4" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7734,7 +7734,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="54.709" y="23.95" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="53.185" y="23.95" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 </element>
-<element name="FSR_INDEX" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="19.5" smashed="yes" rot="R270">
+<element name="FSR_RING" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="19.5" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="52.55" y="19.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="52.55" y="19.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="52.55" y="19.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7762,7 +7762,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="54.709" y="19.5" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="53.185" y="19.5" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="bottom-center"/>
 </element>
-<element name="FSR_THUMB" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="15.05" smashed="yes" rot="R270">
+<element name="FSR_PINKY" library="_sensors" package="_MOLEX-0530470210_VERT_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K" x="52.55" y="15.05" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://cdn2.hubspot.net/hubfs/3899023/Interlinkelectronics%20November2017/Docs/Datasheet_FSR.pdf" x="52.55" y="15.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR1" value="https://www.molex.com/pdm_docs/sd/530470210_sd.pdf" x="52.55" y="15.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CONNECTOR2" value="https://www.molex.com/pdm_docs/sd/510210700_sd.pdf" x="52.55" y="15.05" size="1.778" layer="27" rot="R270" display="off"/>
@@ -8606,7 +8606,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="FSR_PINKY">
 <contactref element="R42" pad="2"/>
-<contactref element="FSR_THUMB" pad="2"/>
+<contactref element="FSR_PINKY" pad="2"/>
 <wire x1="50.7325" y1="14.4" x2="52.525" y2="14.4" width="0.1524" layer="1"/>
 <wire x1="52.525" y1="14.4" x2="52.55" y2="14.425" width="0.1524" layer="1"/>
 <wire x1="54.4676" y1="16.3426" x2="52.55" y2="14.425" width="0.1524" layer="1"/>
@@ -8617,7 +8617,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="FSR_RING">
 <contactref element="R41" pad="2"/>
-<contactref element="FSR_INDEX" pad="2"/>
+<contactref element="FSR_RING" pad="2"/>
 <wire x1="52.55" y1="18.875" x2="52.525" y2="18.9" width="0.1524" layer="1"/>
 <wire x1="52.525" y1="18.9" x2="50.7325" y2="18.9" width="0.1524" layer="1"/>
 <wire x1="54.1882" y1="20.5132" x2="52.55" y2="18.875" width="0.1524" layer="1"/>
@@ -8639,7 +8639,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="FSR_INDEX">
 <contactref element="R39" pad="2"/>
-<contactref element="FSR_RING" pad="2"/>
+<contactref element="FSR_INDEX" pad="2"/>
 <wire x1="50.7325" y1="27.75" x2="52.525" y2="27.75" width="0.1524" layer="1"/>
 <wire x1="52.525" y1="27.75" x2="52.55" y2="27.775" width="0.1524" layer="1"/>
 <wire x1="52.55" y1="27.775" x2="53.6294" y2="28.8544" width="0.1524" layer="1"/>
@@ -8650,7 +8650,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="FSR_THUMB">
 <contactref element="R16" pad="2"/>
-<contactref element="FSR_PINKY" pad="2"/>
+<contactref element="FSR_THUMB" pad="2"/>
 <wire x1="50.7325" y1="32.2" x2="52.525" y2="32.2" width="0.1524" layer="1"/>
 <wire x1="52.525" y1="32.2" x2="52.55" y2="32.225" width="0.1524" layer="1"/>
 <wire x1="53.35" y1="33.025" x2="52.55" y2="32.225" width="0.1524" layer="1"/>
@@ -9581,14 +9581,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="VSENSOR">
 <contactref element="JP3" pad="2"/>
-<contactref element="FSR_PINKY" pad="1"/>
+<contactref element="FSR_THUMB" pad="1"/>
 <contactref element="C47" pad="1"/>
-<contactref element="FSR_RING" pad="1"/>
+<contactref element="FSR_INDEX" pad="1"/>
 <contactref element="FSR_MIDDLE" pad="1"/>
 <contactref element="C49" pad="1"/>
-<contactref element="FSR_INDEX" pad="1"/>
+<contactref element="FSR_RING" pad="1"/>
 <contactref element="C50" pad="1"/>
-<contactref element="FSR_THUMB" pad="1"/>
+<contactref element="FSR_PINKY" pad="1"/>
 <contactref element="C51" pad="1"/>
 <contactref element="C48" pad="1"/>
 <wire x1="50.7075" y1="15.7" x2="52.525" y2="15.7" width="0.254" layer="1"/>

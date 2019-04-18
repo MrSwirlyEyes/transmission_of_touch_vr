@@ -5681,11 +5681,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C97" library="_capacitors" deviceset="10UF" device="_CER_SMD-0805_25V-10%" package3d_urn="urn:adsk.eagle:package:2940050/1" value="10uF/25V"/>
 <part name="C98" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="VREG-MCU" library="_ic_power" deviceset="VREG_TPS768XX_ULDO_FAST-TRANSIENT" device="_TPS76833QDR_1A-3.3V" package3d_urn="urn:adsk.eagle:package:2899754/1" value="TPS76833QDR 1A/3.3V"/>
-<part name="FSR_PINKY" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
-<part name="FSR_RING" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
-<part name="FSR_MIDDLE" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
-<part name="FSR_INDEX" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="FSR_THUMB" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FSR_INDEX" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FSR_MIDDLE" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FSR_RING" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
+<part name="FSR_PINKY" library="_sensors" deviceset="FORCE-SENSITIVE-RESISTOR_SENSOR" device="_FSR-5MM_0530470210_VERT-MALE_PITCH-1.25MM" package3d_urn="urn:adsk.eagle:package:2973718/2" value="10K"/>
 <part name="SUPPLY11" library="_power_symbols" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="_power_symbols" deviceset="5V" device=""/>
 <part name="SUPPLY20" library="_power_symbols" deviceset="5V" device=""/>
@@ -6173,11 +6173,11 @@ RESISTORS</text>
 <attribute name="NAME" x="254" y="185.674" size="1.27" layer="95" font="vector" ratio="10" align="bottom-center"/>
 <attribute name="VALUE" x="254" y="185.166" size="0.635" layer="95" font="vector" ratio="10" align="top-center"/>
 </instance>
-<instance part="FSR_PINKY" gate="G$1" x="340.36" y="218.44" smashed="yes">
+<instance part="FSR_THUMB" gate="G$1" x="340.36" y="218.44" smashed="yes">
 <attribute name="NAME" x="341.63" y="221.488" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="341.63" y="213.106" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 </instance>
-<instance part="FSR_RING" gate="G$1" x="340.36" y="185.42" smashed="yes">
+<instance part="FSR_INDEX" gate="G$1" x="340.36" y="185.42" smashed="yes">
 <attribute name="NAME" x="341.63" y="188.468" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="341.63" y="180.086" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 </instance>
@@ -6185,11 +6185,11 @@ RESISTORS</text>
 <attribute name="NAME" x="341.63" y="155.448" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="341.63" y="147.066" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 </instance>
-<instance part="FSR_INDEX" gate="G$1" x="340.36" y="119.38" smashed="yes">
+<instance part="FSR_RING" gate="G$1" x="340.36" y="119.38" smashed="yes">
 <attribute name="NAME" x="341.63" y="122.428" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="341.63" y="114.046" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 </instance>
-<instance part="FSR_THUMB" gate="G$1" x="340.36" y="86.36" smashed="yes">
+<instance part="FSR_PINKY" gate="G$1" x="340.36" y="86.36" smashed="yes">
 <attribute name="NAME" x="341.63" y="89.408" size="1.27" layer="95" font="vector" ratio="10" align="bottom-right"/>
 <attribute name="VALUE" x="341.63" y="81.026" size="0.635" layer="96" font="vector" ratio="10" align="top-right"/>
 </instance>
@@ -6751,7 +6751,7 @@ RESISTORS</text>
 <label x="347.98" y="83.82" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="347.98" y1="83.82" x2="345.44" y2="83.82" width="0.1524" layer="91"/>
 <junction x="345.44" y="83.82"/>
-<pinref part="FSR_THUMB" gate="G$1" pin="-"/>
+<pinref part="FSR_PINKY" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="DEMUX1" gate="G$1" pin="C4"/>
@@ -6767,7 +6767,7 @@ RESISTORS</text>
 <label x="347.98" y="116.84" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="347.98" y1="116.84" x2="345.44" y2="116.84" width="0.1524" layer="91"/>
 <junction x="345.44" y="116.84"/>
-<pinref part="FSR_INDEX" gate="G$1" pin="-"/>
+<pinref part="FSR_RING" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="DEMUX1" gate="G$1" pin="C3"/>
@@ -6799,7 +6799,7 @@ RESISTORS</text>
 <label x="347.98" y="182.88" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="347.98" y1="182.88" x2="345.44" y2="182.88" width="0.1524" layer="91"/>
 <junction x="345.44" y="182.88"/>
-<pinref part="FSR_RING" gate="G$1" pin="-"/>
+<pinref part="FSR_INDEX" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="DEMUX1" gate="G$1" pin="C1"/>
@@ -6815,7 +6815,7 @@ RESISTORS</text>
 <label x="347.98" y="215.9" size="1.27" layer="95" font="vector" ratio="10" xref="yes"/>
 <wire x1="347.98" y1="215.9" x2="345.44" y2="215.9" width="0.1524" layer="91"/>
 <junction x="345.44" y="215.9"/>
-<pinref part="FSR_PINKY" gate="G$1" pin="-"/>
+<pinref part="FSR_THUMB" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="DEMUX1" gate="G$1" pin="C0"/>
@@ -7723,7 +7723,7 @@ RESISTORS</text>
 <segment>
 <wire x1="342.9" y1="218.44" x2="345.44" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="218.44" x2="345.44" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="FSR_PINKY" gate="G$1" pin="+"/>
+<pinref part="FSR_THUMB" gate="G$1" pin="+"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VSENSOR"/>
 </segment>
 <segment>
@@ -7734,7 +7734,7 @@ RESISTORS</text>
 <segment>
 <wire x1="342.9" y1="185.42" x2="345.44" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="185.42" x2="345.44" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="FSR_RING" gate="G$1" pin="+"/>
+<pinref part="FSR_INDEX" gate="G$1" pin="+"/>
 <pinref part="SUPPLY3" gate="G$1" pin="VSENSOR"/>
 </segment>
 <segment>
@@ -7751,7 +7751,7 @@ RESISTORS</text>
 <segment>
 <wire x1="342.9" y1="119.38" x2="345.44" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="119.38" x2="345.44" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="FSR_INDEX" gate="G$1" pin="+"/>
+<pinref part="FSR_RING" gate="G$1" pin="+"/>
 <pinref part="SUPPLY38" gate="G$1" pin="VSENSOR"/>
 </segment>
 <segment>
@@ -7762,7 +7762,7 @@ RESISTORS</text>
 <segment>
 <wire x1="342.9" y1="86.36" x2="345.44" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="345.44" y1="86.36" x2="345.44" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="FSR_THUMB" gate="G$1" pin="+"/>
+<pinref part="FSR_PINKY" gate="G$1" pin="+"/>
 <pinref part="SUPPLY44" gate="G$1" pin="VSENSOR"/>
 </segment>
 <segment>

@@ -38,6 +38,7 @@ void loop() {
     for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {    
       pwm.setPWM(i, 0, j);
       delay(SERVO_DELAY);
+      Serial.println(j);
     }
   }
 
@@ -47,6 +48,7 @@ void loop() {
     for (int i = SERVO_INITIAL; i < SERVO_FINAL; i++) {    
       pwm.setPWM(i, 0, j);
       delay(SERVO_DELAY);
+      Serial.println(j);
     }
   }
 

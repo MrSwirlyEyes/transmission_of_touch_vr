@@ -4080,7 +4080,6 @@
 <wire x1="657.86" y1="325.12" x2="274.32" y2="325.12" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="657.86" y1="195.58" x2="657.86" y2="325.12" width="0.1524" layer="97" style="shortdash"/>
 <text x="482.6" y="327.66" size="5.08" layer="97" font="vector" ratio="20" align="bottom-center">ET ARRAY - PINKY</text>
-<text x="68.58" y="711.2" size="1.778" layer="91" rot="R180">TODO: CHECK VALUES (C1, POT1, R2,R3) AND VOLTAGE DIVIDER TO MAKE 1.8V</text>
 <wire x1="55.88" y1="701.04" x2="55.88" y2="764.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="701.04" x2="55.88" y2="701.04" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="111.76" y1="701.04" x2="111.76" y2="764.54" width="0.1524" layer="97" style="shortdash"/>
@@ -4094,7 +4093,6 @@
 <text x="88.9" y="795.02" size="1.778" layer="91">STAGE1</text>
 <text x="185.42" y="792.48" size="1.778" layer="91">STAGE2</text>
 <text x="472.44" y="800.1" size="1.778" layer="91">STAGE3</text>
-<text x="0" y="668.02" size="1.778" layer="91">Transfer: VBAT, SDA, SCL, GND</text>
 <wire x1="-152.4" y1="728.98" x2="-88.9" y2="728.98" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-88.9" y1="728.98" x2="-88.9" y2="764.54" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="-88.9" y1="764.54" x2="-152.4" y2="764.54" width="0.1524" layer="97" style="shortdash"/>

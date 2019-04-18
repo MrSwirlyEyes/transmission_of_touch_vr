@@ -1184,13 +1184,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_automotive_hightemp_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/documents/chara_sheet/CGA3E3X8R1H104K080AB.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-5885-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-5885-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-12606-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-12606-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="CGA3E2X8R1E104K080AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/25V" constant="no"/>
+<attribute name="MPN" value="CGA3E3X8R1H104K080AB" constant="no"/>
+<attribute name="VALUE" value="0.1uF/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1224,13 +1224,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf" constant="no"/>
+<attribute name="DATASHEET" value="https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_soft_en.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-7749-1-ND" constant="no"/>
-<attribute name="DISTPN" value="445-7749-1-ND" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=445-6808-1-ND" constant="no"/>
+<attribute name="DISTPN" value="445-6808-1-ND" constant="no"/>
 <attribute name="MFR" value="TDK Corporation" constant="no"/>
-<attribute name="MPN" value="C2012X7T2E104K125AA" constant="no"/>
-<attribute name="VALUE" value="0.1uF/250V" constant="no"/>
+<attribute name="MPN" value="C2012X7T2E104M125AE" constant="no"/>
+<attribute name="VALUE" value="0.1uF/250V/0805" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1424,13 +1424,13 @@
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="DATASHEET" value="http://ds.yuden.co.jp/TYCOMPAS/ut/detail.do?productNo=HMK105CG220JV-F&amp;fileName=HMK105CG220JV-F_SS&amp;mode=specSheetDownload" constant="no"/>
+<attribute name="DATASHEET" value="http://www.vishay.com/docs/45071/vjhifreq.pdf" constant="no"/>
 <attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=587-5004-1-ND" constant="no"/>
-<attribute name="DISTPN" value="587-5004-1-ND" constant="no"/>
-<attribute name="MFR" value="Taiyo Yuden" constant="no"/>
-<attribute name="MPN" value="HMK105CG220JV-F" constant="no"/>
-<attribute name="VALUE" value="22pF/100V" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=720-1286-1-ND" constant="no"/>
+<attribute name="DISTPN" value="720-1286-1-ND" constant="no"/>
+<attribute name="MFR" value="Vishay Vitramon" constant="no"/>
+<attribute name="MPN" value="VJ0402D220JXBAJ" constant="no"/>
+<attribute name="VALUE" value="22pF/100V/0402" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6480,7 +6480,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="C33" library="_capacitors" deviceset="12PF" device="_SMD-0402_100V-5%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="12pF/100V"/>
 <part name="GND116" library="_power_symbols" deviceset="GND" device=""/>
 <part name="BALUN1" library="_radio_frequency" deviceset="BALUN" device="_SMD-0805_UNBAL/BAL-50/100" package3d_urn="urn:adsk.eagle:package:2933573/1" value="50/100"/>
-<part name="C36" library="_capacitors" deviceset="22PF" device="_CER_SMD-0402-100V-5%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V"/>
+<part name="C36" library="_capacitors" deviceset="22PF" device="_CER_SMD-0402-100V-5%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="22pF/100V/0402"/>
 <part name="C35" library="_capacitors" deviceset="0.75PF" device="_CER_SMD-0402_50V-33%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.75pF/50V"/>
 <part name="ANT" library="_radio_frequency" deviceset="ANTENNA" device="_SMD_CHP-2.45GHZ-0.5DBI-3W" package3d_urn="urn:adsk.eagle:package:2933495/1" value="2.45GHz"/>
 <part name="R1" library="_resistors" deviceset="10KΩ" device="_SMD-0402_1/16W-5%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="10K"/>
