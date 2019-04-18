@@ -36,14 +36,13 @@ struct ActuatorPacket {
   int tecRing     = 0;
   int tecPinky    = 0;
 
-  /*
   int dirThumb = -1;
   int dirIndex = -1;
   int dirMiddle = -1;
   int dirRing = -1;
   int dirPinky = -1;
   int dirWrist = -1;
-  */
+
 } pkt_rx;
 
 byte numRead;
