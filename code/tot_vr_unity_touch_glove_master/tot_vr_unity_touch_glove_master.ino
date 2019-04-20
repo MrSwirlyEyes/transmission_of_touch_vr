@@ -14,34 +14,33 @@
 #define HAS_ET 0
 
 struct SensorPacket {
-  int flexThumb   = 0;
-  int flexIndex   = 0;
-  int flexMiddle  = 0;
-  int flexRing    = 0;
-  int flexPinky   = 0;
+  int flex[5] = {0, 0, 0, 0, 0};
 } pkt_tx;
 
 struct ActuatorPacket {
   int msgType = 0;
-  
-  int vibeThumb   = 0;
-  int vibeIndex   = 0;
-  int vibeMiddle  = 0;
-  int vibeRing    = 0;
-  int vibePinky   = 0;
-  
-  int tecThumb    = 0;
-  int tecIndex    = 0;
-  int tecMiddle   = 0;
-  int tecRing     = 0;
-  int tecPinky    = 0;
 
-  int dirThumb = -1;
+  int vibes[5] = {0, 0, 0, 0, 0};
+  int heats[5] = {0, 0, 0, 0, 0};
+  int dires[5] = {0, 0, 0, 0, 0};
+  
+//  int vibeThumb   = 0;
+//  int vibeIndex   = 0;
+//  int vibeMiddle  = 0;
+//  int vibeRing    = 0;
+//  int vibePinky   = 0;
+//  
+//  int tecThumb    = 0;
+//  int tecIndex    = 0;
+//  int tecMiddle   = 0;
+//  int tecRing     = 0;
+//  int tecPinky    = 0;
+
+/*  int dirThumb = -1;
   int dirIndex = -1;
   int dirMiddle = -1;
   int dirRing = -1;
-  int dirPinky = -1;
-  int dirWrist = -1;
+  int dirPinky = -1;*/
 
 } pkt_rx;
 
@@ -180,6 +179,49 @@ Thermoelectric tec[NUM_TEC] = {
 
 
 
+/////////////////////////////
+//     ELECTROTACTILES     //
+/////////////////////////////
+#define NUM_ET_PIXELS 16
+
+#define ET_1   0
+#define ET_2   1
+#define ET_3   2
+#define ET_4   3
+#define ET_5   4
+#define ET_6   5
+#define ET_7   6
+#define ET_8   7
+#define ET_9   8
+#define ET_10  9
+#define ET_11 10
+#define ET_12 11
+#define ET_13 12
+#define ET_14 13
+#define ET_15 14
+#define ET_16 15
+
+#define OFF 0
+#define ON 4095
+
+Vibrotactile electrotactile[NUM_ET_PIXELS] = {
+                                        Vibrotactile(pwm_driver_et_1,ET_1,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_2,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_3,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_4,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_5,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_6,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_7,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_8,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_9,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_10,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_11,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_12,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_13,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_14,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_15,OFF,ON),
+                                        Vibrotactile(pwm_driver_et_1,ET_16,OFF,ON),
+                                      };
 
 
 ///////////////////
@@ -242,7 +284,7 @@ void loop() {
 //     FUNCTIONS     //
 ///////////////////////
 void sendFingers() {
-    String data = (String) pkt_tx.flexThumb + "," + pkt_tx.flexIndex + "," + pkt_tx.flexMiddle + "," + pkt_tx.flexRing + "," + pkt_tx.flexPinky;
+    String data = (String) pkt_tx.flex[0] + "," + pkt_tx.flex[1] + "," + pkt_tx.flex[2] + "," + pkt_tx.flex[3] + "," + pkt_tx.flex[4];
 //    String data = (String) numRead;
     Serial.println(data);
 }
@@ -250,13 +292,16 @@ void sendFingers() {
 
 
 void updateSensors() {
-  int i = 0;
 
-  pkt_tx.flexThumb = flex[i++].read();
-  pkt_tx.flexIndex = flex[i++].read();
-  pkt_tx.flexMiddle = flex[i++].read();
-  pkt_tx.flexRing = flex[i++].read();
-  pkt_tx.flexPinky = flex[i].read();
+  for( int i = 0; i < NUM_FLEX; i++) {
+    pkt_tx.flex[i] = flex[i].read();
+  }
+
+//  pkt_tx.flexThumb = flex[i++].read();
+//  pkt_tx.flexIndex = flex[i++].read();
+//  pkt_tx.flexMiddle = flex[i++].read();
+//  pkt_tx.flexRing = flex[i++].read();
+//  pkt_tx.flexPinky = flex[i].read();
 }
 
 
@@ -264,27 +309,35 @@ void updateSensors() {
 void updateActuators() {
   // Writes to the vibe motors [0-4095]
 //  pwm_driver.set_pwm(thumbVibe,0,pkt_rx.vibeThumb);
-  int i = 0;
-  vibrotactile[i++].actuate(pkt_rx.vibeThumb);
-  vibrotactile[i++].actuate(pkt_rx.vibeIndex);
-  vibrotactile[i++].actuate(pkt_rx.vibeMiddle);
-  vibrotactile[i++].actuate(pkt_rx.vibeRing);
-  vibrotactile[i].actuate(pkt_rx.vibePinky);
 
-  i=0;
-
-  // Writes to the thermoelectrics [-4095 - 4095]
-  //  Where a (-) value denotes COLD; (+) value denotes HOT
-  tec[i++].actuate(pkt_rx.tecThumb);
-  tec[i++].actuate(pkt_rx.tecIndex);
-  tec[i++].actuate(pkt_rx.tecMiddle);
-  tec[i++].actuate(pkt_rx.tecRing);
-  tec[i].actuate(pkt_rx.tecPinky);
-
-  if (HAS_ET) {
-    // set the electrotaciles to do their thing
-    // based on the direction of movement for each finger
+  for (int i = 0; i < NUM_FLEX; i++) {
+    vibrotactile[i].actuate(pkt_rx.vibes[i]);
+    tec[i].actuate(pkt_rx.heats[i]);
+    if (HAS_ET) {
+      // set the electrotaciles to do their thing
+      // based on the direction of movement for each finger
+    }
   }
+//  int i = 0;
+//  vibrotactile[i++].actuate(pkt_rx.vibeThumb);
+//  vibrotactile[i++].actuate(pkt_rx.vibeIndex);
+//  vibrotactile[i++].actuate(pkt_rx.vibeMiddle);
+//  vibrotactile[i++].actuate(pkt_rx.vibeRing);
+//  vibrotactile[i].actuate(pkt_rx.vibePinky);
+//
+//  i=0;
+//
+//  // Writes to the thermoelectrics [-4095 - 4095]
+//  //  Where a (-) value denotes COLD; (+) value denotes HOT
+//  tec[i++].actuate(pkt_rx.tecThumb);
+//  tec[i++].actuate(pkt_rx.tecIndex);
+//  tec[i++].actuate(pkt_rx.tecMiddle);
+//  tec[i++].actuate(pkt_rx.tecRing);
+//  tec[i].actuate(pkt_rx.tecPinky);
+//
+//  if (HAS_ET) {
+//    
+//  }
 }
 
 
