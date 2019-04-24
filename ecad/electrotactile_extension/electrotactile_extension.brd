@@ -8,8 +8,8 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="4" fill="6" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -9169,7 +9169,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </elements>
 <signals>
 <signal name="GND" class="4">
-<polygon width="0.1524" layer="16" rank="6">
+<polygon width="0.1524" layer="15" rank="6">
 <vertex x="-40" y="23.14"/>
 <vertex x="-40" y="0"/>
 <vertex x="40" y="0"/>
@@ -9505,7 +9505,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="34.1" y="6.8" extent="1-16" drill="0.254"/>
 <via x="24.9" y="5.1" extent="1-16" drill="0.254"/>
 <via x="16.2" y="5.1" extent="1-16" drill="0.254"/>
-<polygon width="0.1524" layer="1" rank="6">
+<polygon width="0.1524" layer="16" rank="6">
 <vertex x="-40" y="23.14"/>
 <vertex x="-40" y="0"/>
 <vertex x="40" y="0"/>
@@ -9572,6 +9572,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </polygon>
 <via x="2.4" y="8" extent="1-16" drill="0.254"/>
 <via x="-2.3" y="12.8" extent="1-16" drill="0.254"/>
+<polygon width="0.1524" layer="1" rank="6">
+<vertex x="-40" y="23.14"/>
+<vertex x="-40" y="0"/>
+<vertex x="40" y="0"/>
+<vertex x="40" y="23.14"/>
+</polygon>
 </signal>
 <signal name="SDA">
 <contactref element="MUX_INDEX" pad="27"/>

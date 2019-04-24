@@ -121,7 +121,7 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 #define TEC_MIN 0
 #define TEC_MAX 4095
 
-#define TEC_MAX_HOT 1024
+#define TEC_MAX_HOT 2048
 #define TEC_MAX_COLD -4095
 
 #define TEC_PINKY_HOT 6
@@ -235,7 +235,7 @@ void setup() {
 //  test_vibe();
 //  test_thermoelectrics();
 //  test_electrotactiles();
-  calibrate_flex_sensors();
+//  calibrate_flex_sensors();
   delay(1000);
 }
 
@@ -287,7 +287,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(1);  
+  delay(3);  
 }
 
 

@@ -79,7 +79,7 @@ FSR fsr[NUM_FSR] = {
 #define TEMP_INDEX  14
 #define TEMP_THUMB  15
 
-#define TEC_MAX_HOT 1024
+#define TEC_MAX_HOT 2048
 #define TEC_MAX_COLD -4095
 
 #define TEMP_MAX_LIMIT_COLD 10.0
@@ -254,7 +254,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(1);
+  delay(3);
 }
 
 

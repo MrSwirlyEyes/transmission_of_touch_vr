@@ -37,16 +37,11 @@ int TMP36::get_tempC_mapped() {
   if(this->_pin == 11) {
     this->_tempC += 1.0;
   }
-//  Serial.print(this->_tempC);
-//  Serial.print(" --> ");
   if(this->_tempC < this->_min_limit_cold) { // COLD
-//    Serial.println(constrain(map(this->_tempC,this->_min_limit_cold,this->_max_limit_cold,0,this->_min_mapping),this->_min_mapping,this->_max_mapping));
     return constrain(map(this->_tempC,this->_min_limit_cold,this->_max_limit_cold,0,this->_min_mapping),this->_min_mapping,this->_max_mapping);
   } else if(this->_tempC > this->_min_limit_hot) { // HOT
-//    Serial.println(constrain(map(this->_tempC,this->_min_limit_hot,this->_max_limit_hot,0,this->_max_mapping),this->_min_mapping,this->_max_mapping));
     return constrain(map(this->_tempC,this->_min_limit_hot,this->_max_limit_hot,0,this->_max_mapping),this->_min_mapping,this->_max_mapping);
   } else {
-//    Serial.println(0);
     return 0;
   }
 }
