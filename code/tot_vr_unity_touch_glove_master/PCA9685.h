@@ -31,21 +31,21 @@
 
 
 class PCA9685 {
-  public:
-    PCA9685(uint8_t _i2c_addr = 0x40);
+	public:
+		PCA9685(uint8_t _i2c_addr = 0x40);
 
-    void begin(void);
-    void reset(void);
-    void set_pwm_freq(float freq);
-    void set_pwm(uint8_t num, uint16_t on, uint16_t off);
+		void begin(void);
+		void reset(void);
+		void set_pwm_freq(float freq);
+		void set_pwm(uint8_t num, uint16_t on, uint16_t off);
 
-  private:
-    uint8_t _i2c_addr;
+	private:
+		uint8_t _i2c_addr;
 
-    TwoWire * _i2c;
+		TwoWire * _i2c;
 
-    uint8_t read8(uint8_t addr);
-    void write8(uint8_t addr, uint8_t d);
+		uint8_t read8(uint8_t addr);
+		void write8(uint8_t addr, uint8_t d);
 };
 
 #endif

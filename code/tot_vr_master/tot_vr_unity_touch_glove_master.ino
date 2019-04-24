@@ -110,8 +110,6 @@ FSR flex[NUM_FLEX] = {
 
 PCA9685 pwm_driver = PCA9685();
 
-PCA9685 pwm_driver_et_1 = PCA9685(0x42);
-
 
 
 ///////////////////////////
@@ -147,14 +145,14 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 
 #define NUM_TEC 5
 
-#define PHASE_COLD 0
-#define PHASE_HOT 1
+#define PHASE_COLD 1
+#define PHASE_HOT 0
 
 #define TEC_MIN 0
 #define TEC_MAX 4095
 
-#define TEC_MAX_HOT 1024
-#define TEC_MAX_COLD 1024
+#define TEC_MAX_HOT 2048
+#define TEC_MAX_COLD 4095
 
 #define TEC_PINKY_HOT 6
 #define TEC_PINKY_COLD 7
@@ -238,12 +236,8 @@ void setup() {
   pwm_driver.begin();
   pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
-  pwm_driver_et_1.begin();
-  pwm_driver_et_1.set_pwm_freq(PWM_FREQUENCY);
-
   for (int i = 0; i < 16; i++) {
-    pwm_driver.set_pwm(i, 0, 0);
-    pwm_driver_et_1.set_pwm(i,0,0);
+    pwm_driver.set_pwm(i, 0, 0); 
   }
 }
 

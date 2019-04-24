@@ -9,11 +9,11 @@
 
 PCA9685::PCA9685(uint8_t _i2c_addr) : _i2c_addr(_i2c_addr) {
 
-  #if defined(ARDUINO_SAM_DUE)
-    _i2c = &Wire1;
-  #else
-    _i2c = &Wire;
-  #endif
+	#if defined(ARDUINO_SAM_DUE)
+		_i2c = &Wire1;
+	#else
+		_i2c = &Wire;
+	#endif
 }
 
 
