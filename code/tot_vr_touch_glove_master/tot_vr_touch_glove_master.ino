@@ -1,4 +1,4 @@
-#include "radio.h"
+//#include "radio.h"
 #include "CD74HC4067.h"
 #include "PCA9685.h"
 #include "Thermoelectric.h"
@@ -7,7 +7,7 @@
 
 
 
-//#define DEBUG
+#define DEBUG
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
@@ -229,11 +229,11 @@ void setup() {
   pwm_driver_et_1.begin();
   pwm_driver_et_1.set_pwm_freq(PWM_FREQUENCY);
 
-  rfBegin(RF_CHANNEL);
+//  rfBegin(RF_CHANNEL);
 
   delay(10000);  
-//  test_vibe();
-//  test_thermoelectrics();
+  test_vibe();
+  test_thermoelectrics();
 //  test_electrotactiles();
 //  calibrate_flex_sensors();
   delay(1000);
@@ -252,41 +252,41 @@ void loop() {
     pkt_tx.checksum += pkt_tx.flex[i];
   }
   
-  rfWrite((uint8_t *) & pkt_tx,sizeof(TouchGlovePacket));
+//  rfWrite((uint8_t *) & pkt_tx,sizeof(TouchGlovePacket));
 
   #ifdef DEBUG
     print_tx_pkt();
   #endif
 
-  if(rfAvailable() >= sizeof(RoboticArmPacket)) {   
-    rfRead((uint8_t *) & pkt_rx,sizeof(RoboticArmPacket));
-    
-    checksum = 0;
-    for (int i=0; i < NUM_VIBE; i++) {
-      checksum += pkt_rx.vibe[i];
-    }
-    for (int i=0; i < NUM_TEC; i++) {
-      checksum += pkt_rx.tec[i];
-    }
-
-    if(checksum == pkt_rx.checksum) {
-
-      #ifdef DEBUG
-        print_rx_pkt();
-      #endif
-  
-      actuate_vibrotactiles();
-  
-      actuate_thermoelectrics();
-
-    } else {
-      #ifdef DEBUG
-        Serial.println("ERROR");
-      #endif
-    }
-    
-    rfFlush();
-  }
+//  if(rfAvailable() >= sizeof(RoboticArmPacket)) {   
+//    rfRead((uint8_t *) & pkt_rx,sizeof(RoboticArmPacket));
+//    
+//    checksum = 0;
+//    for (int i=0; i < NUM_VIBE; i++) {
+//      checksum += pkt_rx.vibe[i];
+//    }
+//    for (int i=0; i < NUM_TEC; i++) {
+//      checksum += pkt_rx.tec[i];
+//    }
+//
+//    if(checksum == pkt_rx.checksum) {
+//
+//      #ifdef DEBUG
+//        print_rx_pkt();
+//      #endif
+//  
+//      actuate_vibrotactiles();
+//  
+//      actuate_thermoelectrics();
+//
+//    } else {
+//      #ifdef DEBUG
+//        Serial.println("ERROR");
+//      #endif
+//    }
+//    
+//    rfFlush();
+//  }
   delay(3);  
 }
 
