@@ -31,7 +31,7 @@ byte numRead;
 #define sig_pin 0
 
 CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
-#define DEBUG 0
+//#define DEBUG 0
 
 
 //////////////////////////
