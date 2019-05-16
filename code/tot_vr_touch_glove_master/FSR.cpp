@@ -24,7 +24,7 @@ int FSR::read_raw() {
 }
 
 void FSR::set_max(int _max) {
-  this->_max_limit = constrain(_max,ANALOG_MIN,ANALOG_MAX);;
+  this->_max_limit = constrain(_max,ANALOG_MIN,ANALOG_MAX);
 }
 
 void FSR::set_min(int _min) {

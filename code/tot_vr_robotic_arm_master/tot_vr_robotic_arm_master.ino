@@ -7,7 +7,7 @@
 
 
 
-//#define DEBUG 1
+#define DEBUG
 
 #define RF_CHANNEL 11
 #define BAUDRATE 9600
@@ -82,11 +82,11 @@ FSR fsr[NUM_FSR] = {
 #define TEC_MAX_HOT 2048
 #define TEC_MAX_COLD -4095
 
-#define TEMP_MAX_LIMIT_COLD 10.0
+#define TEMP_MAX_LIMIT_COLD 12.0
 #define TEMP_MIN_LIMIT_COLD 18.0
 
 #define TEMP_MIN_LIMIT_HOT 24.0
-#define TEMP_MAX_LIMIT_HOT 40.0
+#define TEMP_MAX_LIMIT_HOT 30.0
 
 // 32.0 C is approx max I could heat using fingers in ECE Makerspace
 
@@ -207,14 +207,14 @@ void setup() {
 void loop() {
 
   read_fsr_sensors();
-//  #ifdef DEBUG
-//    print_fsr_sensors();
-//  #endif
+  #ifdef DEBUG
+    print_fsr_sensors();
+  #endif
   
   read_temp_sensors();
-  #ifdef DEBUG
-    print_temp_sensors();
-  #endif
+//  #ifdef DEBUG
+//    print_temp_sensors();
+//  #endif
 
   pkt_tx.checksum = 0;
 

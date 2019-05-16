@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3669,7 +3669,7 @@
 <part name="L3" library="_inductors" deviceset="4.7UH" device="_SMD-1008_2A-0.200OHM-20%" package3d_urn="urn:adsk.eagle:package:6898949/1" value="4.7uH/2A/1008"/>
 <part name="C61" library="_capacitors" deviceset="0.1UF" device="_SMD-0603_50V-20%" package3d_urn="urn:adsk.eagle:package:3041595/1" value="0.1uF/50V"/>
 <part name="SUPPLY133" library="_power_symbols" deviceset="GND" device=""/>
-<part name="R50" library="_resistors" deviceset="768KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="768K"/>
+<part name="R1" library="_resistors" deviceset="768KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="768K"/>
 <part name="C62" library="_capacitors" deviceset="0.1UF" device="_SMD-0805_250V-10%" package3d_urn="urn:adsk.eagle:package:2940050/1" value="0.1uF/250V/0805"/>
 <part name="SUPPLY135" library="_power_symbols" deviceset="GND" device=""/>
 <part name="NFET1" library="_transistors" deviceset="MOSFET_N-CHANNEL_2-ARRAY" device="_2N7002DW_115MA-60V" package3d_urn="urn:adsk.eagle:package:6899146/1" value="2N7002DW"/>
@@ -3677,9 +3677,9 @@
 <part name="SUPPLY142" library="_power_symbols" deviceset="GND" device=""/>
 <part name="REXT" library="_resistors" deviceset="7.5KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="7.5K"/>
 <part name="SUPPLY148" library="_power_symbols" deviceset="GND" device=""/>
-<part name="R51" library="_resistors" deviceset="35.7KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="35.7K"/>
-<part name="R52" library="_resistors" deviceset="20KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="20K"/>
-<part name="R53" library="_resistors" deviceset="41.2KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="41.2K"/>
+<part name="R2" library="_resistors" deviceset="35.7KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="115K"/>
+<part name="R4" library="_resistors" deviceset="20KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="220K"/>
+<part name="R5" library="_resistors" deviceset="41.2KΩ" device="_SMD-0402_1/16W-1%" package3d_urn="urn:adsk.eagle:package:2899165/1" value="100K"/>
 <part name="SUPPLY149" library="_power_symbols" deviceset="GND" device=""/>
 <part name="C63" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
 <part name="C64" library="_capacitors" deviceset="0.1UF" device="_SMD-0402_50V-10%" package3d_urn="urn:adsk.eagle:package:2886515/1" value="0.1uF/50V"/>
@@ -4141,7 +4141,7 @@
 <attribute name="VALUE" x="223.52" y="741.934" size="0.635" layer="96" font="vector" ratio="10" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY133" gate="GND" x="223.52" y="734.06" smashed="yes"/>
-<instance part="R50" gate="G$1" x="205.74" y="739.14" smashed="yes" rot="R90">
+<instance part="R1" gate="G$1" x="205.74" y="739.14" smashed="yes" rot="R90">
 <attribute name="VALUE" x="206.883" y="739.14" size="0.635" layer="96" font="vector" ratio="10" rot="R90" align="top-center"/>
 <attribute name="NAME" x="204.6224" y="739.14" size="1.27" layer="95" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 </instance>
@@ -4161,15 +4161,15 @@
 <attribute name="NAME" x="204.6224" y="699.77" size="1.27" layer="95" font="vector" ratio="10" rot="R90" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY148" gate="GND" x="205.74" y="690.88" smashed="yes"/>
-<instance part="R51" gate="G$1" x="215.9" y="723.9" smashed="yes" rot="MR90">
+<instance part="R2" gate="G$1" x="215.9" y="723.9" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="214.757" y="723.9" size="0.635" layer="96" font="vector" ratio="10" rot="MR90" align="top-center"/>
 <attribute name="NAME" x="217.0176" y="723.9" size="1.27" layer="95" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
 </instance>
-<instance part="R52" gate="G$1" x="231.14" y="723.9" smashed="yes" rot="MR90">
+<instance part="R4" gate="G$1" x="231.14" y="723.9" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="229.997" y="723.9" size="0.635" layer="96" font="vector" ratio="10" rot="MR90" align="top-center"/>
 <attribute name="NAME" x="232.2576" y="723.9" size="1.27" layer="95" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
 </instance>
-<instance part="R53" gate="G$1" x="223.52" y="723.9" smashed="yes" rot="MR90">
+<instance part="R5" gate="G$1" x="223.52" y="723.9" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="222.377" y="723.9" size="0.635" layer="96" font="vector" ratio="10" rot="MR90" align="top-center"/>
 <attribute name="NAME" x="224.6376" y="723.9" size="1.27" layer="95" font="vector" ratio="10" rot="MR90" align="bottom-center"/>
 </instance>
@@ -5092,7 +5092,7 @@
 </segment>
 <segment>
 <pinref part="SUPPLY149" gate="GND" pin="GND"/>
-<pinref part="R51" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="716.28" x2="215.9" y2="718.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6059,7 +6059,7 @@
 <wire x1="205.74" y1="749.3" x2="205.74" y2="746.76" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="PVDD"/>
 <wire x1="205.74" y1="746.76" x2="203.2" y2="746.76" width="0.1524" layer="91"/>
-<pinref part="R50" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="746.76" x2="205.74" y2="744.22" width="0.1524" layer="91"/>
 <junction x="205.74" y="746.76"/>
 <pinref part="C62" gate="G$1" pin="1"/>
@@ -6070,16 +6070,16 @@
 </net>
 <net name="FB" class="0">
 <segment>
-<pinref part="R52" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="731.52" x2="223.52" y2="731.52" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="731.52" x2="215.9" y2="731.52" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="728.98" x2="231.14" y2="731.52" width="0.1524" layer="91"/>
-<pinref part="R53" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="223.52" y1="728.98" x2="223.52" y2="731.52" width="0.1524" layer="91"/>
 <junction x="223.52" y="731.52"/>
-<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="728.98" x2="215.9" y2="731.52" width="0.1524" layer="91"/>
-<pinref part="R50" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="734.06" x2="205.74" y2="731.52" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="FB"/>
 <wire x1="205.74" y1="731.52" x2="203.2" y2="731.52" width="0.1524" layer="91"/>
@@ -6099,7 +6099,7 @@
 <net name="N$49" class="0">
 <segment>
 <pinref part="NFET1" gate="G$1" pin="D1"/>
-<pinref part="R52" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="231.14" y1="716.28" x2="231.14" y2="718.82" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6108,7 +6108,7 @@
 <pinref part="NFET1" gate="G$1" pin="D2"/>
 <wire x1="231.14" y1="690.88" x2="231.14" y2="693.42" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="693.42" x2="223.52" y2="693.42" width="0.1524" layer="91"/>
-<pinref part="R53" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="693.42" x2="223.52" y2="718.82" width="0.1524" layer="91"/>
 </segment>
 </net>
