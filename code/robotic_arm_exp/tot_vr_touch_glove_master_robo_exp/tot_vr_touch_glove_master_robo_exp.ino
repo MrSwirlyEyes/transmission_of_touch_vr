@@ -7,14 +7,13 @@
 
 
 
-//#define DEBUG
-//#define BLACK
+#define DEBUG
 
 
 
 
 
-#define RF_CHANNEL 15
+#define RF_CHANNEL 11
 #define BAUDRATE 9600
 
 
@@ -111,6 +110,7 @@ PCA9685 pwm_driver_et_1 = PCA9685(0x42);
   #define VIBE_INDEX 3
   #define VIBE_THUMB 4
   #define VIBE_PALM 0
+
 #endif
 
 #define VIBE_MIN 0
@@ -138,8 +138,8 @@ Vibrotactile vibrotactile[NUM_VIBE] = {
 #define TEC_MIN 0
 #define TEC_MAX 4095
 
-#define TEC_MAX_HOT 800
-#define TEC_MAX_COLD -1500
+#define TEC_MAX_HOT 500
+#define TEC_MAX_COLD -2048
 
 #define TEC_PINKY_HOT 6
 #define TEC_PINKY_COLD 7
@@ -171,37 +171,14 @@ Thermoelectric tec[NUM_TEC] = {
 /////////////////////////////
 #define NUM_ET_PIXELS 5
 
-#ifdef BLACK
-  #define ET_1   1
-  #define ET_2   0
-  #define ET_3   2
-  #define ET_4   3
-  #define ET_5   4
-  #define ET_6   5
-#else
-//  #define ET_1   0
-//  #define ET_2   1
-//  #define ET_3   2
-//  #define ET_4   3
-//  #define ET_5   4
+
   #define ET_1   4
   #define ET_2   3
   #define ET_3   2
   #define ET_4   1
   #define ET_5   0
-#endif
 
-#define ET_6   5
-#define ET_7   6
-#define ET_8   7
-#define ET_9   8
-#define ET_10  9
-#define ET_11 10
-#define ET_12 11
-#define ET_13 12
-#define ET_14 13
-#define ET_15 14
-#define ET_16 15
+
 
 #define OFF 0
 #define ON 4095
@@ -256,8 +233,6 @@ void setup() {
     Serial.begin(BAUDRATE);
   #endif
 
-//  Wire.setClock(400000);
-
   pwm_driver.begin();
   pwm_driver.set_pwm_freq(PWM_FREQUENCY);
 
@@ -277,7 +252,7 @@ void setup() {
   delay(5000);  
 //  test_vibe();
 //  test_thermoelectrics();
-  test_electrotactiles();
+//  test_electrotactiles();
 //  calibrate_flex_sensors();
   delay(1000);
 }
@@ -322,8 +297,6 @@ void loop() {
   
       actuate_thermoelectrics();
 
-      actuate_electrotactiles();
-
     } else {
       #ifdef DEBUG
         Serial.println("ERROR");
@@ -332,7 +305,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(3);  
+  delay(10);  
 }
 
 
@@ -355,8 +328,13 @@ void read_flex_sensors() {
 
 void actuate_vibrotactiles() {
   for (int i = 0; i < NUM_VIBE; i++) {    
-//    vibrotactile[i].actuate(pkt_rx.vibe[i]);
-
+    vibrotactile[i].actuate(pkt_rx.vibe[i]);
+//    if (pkt_rx.vibe[i] > 2000) {
+//      electrotactile[i].actuate(ON);
+//    } else {
+//      electrotactile[i].actuate(OFF);
+//    }
+    electrotactile[i].actuate(pkt_rx.vibe[i]);
   }
 }
 
@@ -372,21 +350,6 @@ void actuate_thermoelectrics() {
 //  }
   for (int i = 0; i < NUM_TEC; i++) {
     tec[i].actuate(pkt_rx.tec[i]);
-  }
-}
-
-void actuate_electrotactiles() {
-  for (int i = 0; i < NUM_ET_PIXELS; i++) {    
-//    vibrotactile[i].actuate(pkt_rx.vibe[i]);
-    electrotactile[i].actuate(pkt_rx.vibe[i]);
-//    delay(5);
-//    delay(5);
-//    if(pkt_rx.vibe[i] > 2000) {
-//      electrotactile[i].actuate(ON);  
-//    } else {
-//      electrotactile[i].actuate(OFF);
-//    }
-//    delay(5);
   }
 }
 

@@ -9,7 +9,7 @@
 
 #define DEBUG
 
-#define RF_CHANNEL 15
+#define RF_CHANNEL 11
 #define BAUDRATE 9600
 
 
@@ -49,12 +49,14 @@ CD74HC4067 multiplexer(s0, s1, s2, s3, sig_pin);
 #define FSR_MIN_THUMB     0
 #define FSR_MIN_PALM      0
 
-#define FSR_MAX_PINKY  1 //900 (I physically cannot apply more force than this with my thumb + index)
-#define FSR_MAX_RING   1 //900
-#define FSR_MAX_MIDDLE 1 //900
-#define FSR_MAX_INDEX  1 //900
-#define FSR_MAX_THUMB  1 //900
-#define FSR_MAX_PALM   1 //900
+#define FSR_THRESHOLD 1
+
+#define FSR_MAX_PINKY  FSR_THRESHOLD //900 (I physically cannot apply more force than this with my thumb + index)
+#define FSR_MAX_RING   FSR_THRESHOLD //900
+#define FSR_MAX_MIDDLE FSR_THRESHOLD //900
+#define FSR_MAX_INDEX  FSR_THRESHOLD //900
+#define FSR_MAX_THUMB  FSR_THRESHOLD //900
+#define FSR_MAX_PALM   FSR_THRESHOLD //900
 
 FSR fsr[NUM_FSR] = {
                       FSR(multiplexer,FSR_PINKY,FSR_MIN_PINKY,FSR_MAX_PINKY,FSR_MIN,FSR_MAX),
@@ -82,8 +84,8 @@ FSR fsr[NUM_FSR] = {
 #define TEC_MAX_HOT 1024
 #define TEC_MAX_COLD -2048
 
-#define TEMP_MAX_LIMIT_COLD 17.0
-#define TEMP_MIN_LIMIT_COLD 19.0
+#define TEMP_MAX_LIMIT_COLD 16.0
+#define TEMP_MIN_LIMIT_COLD 18.0
 
 #define TEMP_MIN_LIMIT_HOT 22.0
 #define TEMP_MAX_LIMIT_HOT 24.0
@@ -193,9 +195,9 @@ void setup() {
   }
 
   rfBegin(RF_CHANNEL);
-
+  delay(1000);
 //  delay(10000);
-//  test_servo();
+  test_servo();
   delay(5000);
 }
 
@@ -212,9 +214,9 @@ void loop() {
 //  #endif
   
   read_temp_sensors();
-  #ifdef DEBUG
-    print_temp_sensors();
-  #endif
+//  #ifdef DEBUG
+//    print_temp_sensors();
+//  #endif
 
   pkt_tx.checksum = 0;
 
@@ -231,8 +233,8 @@ void loop() {
   #ifdef DEBUG
     print_tx_pkt();
   #endif
-  
-
+//  Serial.println(pkt_tx.checksum);
+//  Serial.println(rfAvailable());
   if(rfAvailable() >= sizeof(TouchGlovePacket)) {
     rfRead((uint8_t *) & pkt_rx,sizeof(TouchGlovePacket));
 
@@ -254,7 +256,7 @@ void loop() {
     
     rfFlush();
   }
-  delay(3);
+  delay(10);
 }
 
 
@@ -266,11 +268,11 @@ void loop() {
 ///////////////////////
 void read_fsr_sensors() {
   for (int i = 0; i < NUM_FSR; i++) {
-//    pkt_tx.fsr[i] = fsr[i].read();
-    if(fsr[i].read() > 4094) {
-      pkt_tx.fsr[i] = 4095;
+    pkt_tx.fsr[i] = fsr[i].read();
+    if(pkt_tx.fsr[i] > 2000) {
+      pkt_tx.fsr[i] = FSR_MAX;
     } else {
-      pkt_tx.fsr[i] = 0;
+      pkt_tx.fsr[i] = FSR_MIN;
     }
   }
 }
@@ -280,7 +282,6 @@ void read_fsr_sensors() {
 void read_temp_sensors() {
   for (int i = 0; i < NUM_TEMP; i++) {
     pkt_tx.temp[i] = temp[i].get_tempC_mapped();
-    pkt_tx.temp[0] = 0.0;
   }
 }
 
